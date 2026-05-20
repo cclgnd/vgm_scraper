@@ -14,7 +14,6 @@ env/
 *.db-wal
 logs/
 vgm_downloads/
-PLAYER/
 gui_output.txt
 gui_settings.json
 

@@ -1,0 +1,2470 @@
+{
+  "created_by": "tools/download_chiptune_fixtures.py",
+  "target_count_per_extension": 10,
+  "repositories": [
+    "Modland"
+  ],
+  "counts": {
+    ".ay": 10,
+    ".gbs": 10,
+    ".gym": 10,
+    ".hes": 10,
+    ".kss": 10,
+    ".nsf": 10,
+    ".nsfe": 10,
+    ".sap": 10,
+    ".spc": 10,
+    ".vgm": 10,
+    ".vgz": 10,
+    ".2sf": 8,
+    ".dsf": 10,
+    ".gsf": 10,
+    ".mini2sf": 10,
+    ".minidsf": 10,
+    ".minigsf": 10,
+    ".minipsf": 10,
+    ".minipsf2": 10,
+    ".miniqsf": 10,
+    ".minissf": 10,
+    ".miniusf": 10,
+    ".psf": 10,
+    ".psf2": 10,
+    ".ssf": 10,
+    ".usf": 2
+  },
+  "failures": [],
+  "files": [
+    {
+      "extension": ".sap",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Slight%20Atari%20Player/-%20unknown/221b%20baker%20street.sap",
+      "path": "chiptunes/Atari 8-bit/01_221b baker street.sap",
+      "bytes": 1948,
+      "sha256": "f211c9321f5ff3052a33974a4f646b5ea81e0e2799b795b9dee1f9487e25792b"
+    },
+    {
+      "extension": ".sap",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Slight%20Atari%20Player/-%20unknown/906090.sap",
+      "path": "chiptunes/Atari 8-bit/02_906090.sap",
+      "bytes": 3420,
+      "sha256": "99a985165ecce8f22a9d33be533236bce0e24a5b87579c02438011b74e5ee79c"
+    },
+    {
+      "extension": ".sap",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Slight%20Atari%20Player/-%20unknown/abbuc%2035.sap",
+      "path": "chiptunes/Atari 8-bit/03_abbuc 35.sap",
+      "bytes": 6211,
+      "sha256": "c30e52a1d3bba3816a8ec18b95d81b7e21ee99f1edce55f81e6948e82a31b75a"
+    },
+    {
+      "extension": ".sap",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Slight%20Atari%20Player/-%20unknown/action%20biker.sap",
+      "path": "chiptunes/Atari 8-bit/04_action biker.sap",
+      "bytes": 1109,
+      "sha256": "5514f844e19f1655673a438b67f87554e68999acf796db468ac7bdc8a06940c8"
+    },
+    {
+      "extension": ".sap",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Slight%20Atari%20Player/-%20unknown/aerobic%204.sap",
+      "path": "chiptunes/Atari 8-bit/05_aerobic 4.sap",
+      "bytes": 2796,
+      "sha256": "af0545453d6af4d5dc7807bae5f3d5e515c5d5ab0165232141ec69382c1d27a1"
+    },
+    {
+      "extension": ".sap",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Slight%20Atari%20Player/-%20unknown/airline.sap",
+      "path": "chiptunes/Atari 8-bit/06_airline.sap",
+      "bytes": 4714,
+      "sha256": "c2942416acb49e6d321ec8fcf5d494831ed5ba35bd5e0462afd2cd585225fe53"
+    },
+    {
+      "extension": ".sap",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Slight%20Atari%20Player/-%20unknown/alley%20cat.sap",
+      "path": "chiptunes/Atari 8-bit/07_alley cat.sap",
+      "bytes": 782,
+      "sha256": "44021f98694a26fd335cec895749f01fa3801cdd84e342e8c09738b0affa607b"
+    },
+    {
+      "extension": ".sap",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Slight%20Atari%20Player/-%20unknown/andermajnd.sap",
+      "path": "chiptunes/Atari 8-bit/08_andermajnd.sap",
+      "bytes": 4008,
+      "sha256": "5187954779ed781873fd77995b275df0addfdf65be1ca880119df72db6447875"
+    },
+    {
+      "extension": ".sap",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Slight%20Atari%20Player/-%20unknown/aquanaut.sap",
+      "path": "chiptunes/Atari 8-bit/09_aquanaut.sap",
+      "bytes": 1366,
+      "sha256": "09f6b838c0990b251cfe254c399f91f5c8b32bec0fd9b3fb68d938b5ff2565e1"
+    },
+    {
+      "extension": ".sap",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Slight%20Atari%20Player/-%20unknown/archon.sap",
+      "path": "chiptunes/Atari 8-bit/10_archon.sap",
+      "bytes": 1016,
+      "sha256": "9bbf97b8d677db8b93e3952b09bc635ffe8d4e393513a61300a9ab1737f6430e"
+    },
+    {
+      "extension": ".miniqsf",
+      "priority_group": "arcade and similar",
+      "backend": "QSF",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Capcom%20Q-Sound%20Format/-%20unknown/Cadillacs%20%26%20Dinosaurs/cd00.miniqsf",
+      "path": "chiptunes/Capcom CPS Arcade/01_cd00.miniqsf",
+      "bytes": 163,
+      "sha256": "0adf5af891091c32fef32473822d4b444fb8f43920deb643d1236f7933475cab"
+    },
+    {
+      "extension": ".miniqsf",
+      "priority_group": "arcade and similar",
+      "backend": "QSF",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Capcom%20Q-Sound%20Format/-%20unknown/Cadillacs%20%26%20Dinosaurs/cd01.miniqsf",
+      "path": "chiptunes/Capcom CPS Arcade/02_cd01.miniqsf",
+      "bytes": 163,
+      "sha256": "98cf09092865bf0eaca2026e081d164e0a5e1e2ec7ecbf9303d3765a345d023e"
+    },
+    {
+      "extension": ".miniqsf",
+      "priority_group": "arcade and similar",
+      "backend": "QSF",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Capcom%20Q-Sound%20Format/-%20unknown/Cadillacs%20%26%20Dinosaurs/cd02.miniqsf",
+      "path": "chiptunes/Capcom CPS Arcade/03_cd02.miniqsf",
+      "bytes": 163,
+      "sha256": "4bc3f6f586f8b92b923c09b2b505c19e1b53c092f9d7f9b4fbd8e8395d1fcba7"
+    },
+    {
+      "extension": ".miniqsf",
+      "priority_group": "arcade and similar",
+      "backend": "QSF",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Capcom%20Q-Sound%20Format/-%20unknown/Cadillacs%20%26%20Dinosaurs/cd03.miniqsf",
+      "path": "chiptunes/Capcom CPS Arcade/04_cd03.miniqsf",
+      "bytes": 163,
+      "sha256": "c88a2df8446a36bf3ebb9d461faa08539df0c3733ac07235b7bb60db4b5e6149"
+    },
+    {
+      "extension": ".miniqsf",
+      "priority_group": "arcade and similar",
+      "backend": "QSF",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Capcom%20Q-Sound%20Format/-%20unknown/Cadillacs%20%26%20Dinosaurs/cd04.miniqsf",
+      "path": "chiptunes/Capcom CPS Arcade/05_cd04.miniqsf",
+      "bytes": 163,
+      "sha256": "c99a0c4861c0198b33e85807f0d39eff0c910eb88b50fad6ea4cba8a718bf25b"
+    },
+    {
+      "extension": ".miniqsf",
+      "priority_group": "arcade and similar",
+      "backend": "QSF",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Capcom%20Q-Sound%20Format/-%20unknown/Cadillacs%20%26%20Dinosaurs/cd05.miniqsf",
+      "path": "chiptunes/Capcom CPS Arcade/06_cd05.miniqsf",
+      "bytes": 163,
+      "sha256": "0e95ded40ca9c22fe3c434bbe9419a29be0425e9ded8ce785162c1b971142f32"
+    },
+    {
+      "extension": ".miniqsf",
+      "priority_group": "arcade and similar",
+      "backend": "QSF",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Capcom%20Q-Sound%20Format/-%20unknown/Cadillacs%20%26%20Dinosaurs/cd06.miniqsf",
+      "path": "chiptunes/Capcom CPS Arcade/07_cd06.miniqsf",
+      "bytes": 163,
+      "sha256": "0e5a232d5505845934e0c64e3c4f61db67f034d7d3509f2b5dee9c4c5d0495be"
+    },
+    {
+      "extension": ".miniqsf",
+      "priority_group": "arcade and similar",
+      "backend": "QSF",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Capcom%20Q-Sound%20Format/-%20unknown/Cadillacs%20%26%20Dinosaurs/cd07.miniqsf",
+      "path": "chiptunes/Capcom CPS Arcade/08_cd07.miniqsf",
+      "bytes": 163,
+      "sha256": "8e04ddb5cb59850c391a09545c672c2c933d89098be6b607c0cbfdff08bcf40c"
+    },
+    {
+      "extension": ".miniqsf",
+      "priority_group": "arcade and similar",
+      "backend": "QSF",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Capcom%20Q-Sound%20Format/-%20unknown/Cadillacs%20%26%20Dinosaurs/cd08.miniqsf",
+      "path": "chiptunes/Capcom CPS Arcade/09_cd08.miniqsf",
+      "bytes": 163,
+      "sha256": "9b839ec84f224ecf64d5f589f13d3922537c1e4a528fc40e270e76268166f05c"
+    },
+    {
+      "extension": ".miniqsf",
+      "priority_group": "arcade and similar",
+      "backend": "QSF",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Capcom%20Q-Sound%20Format/-%20unknown/Cadillacs%20%26%20Dinosaurs/cd09.miniqsf",
+      "path": "chiptunes/Capcom CPS Arcade/10_cd09.miniqsf",
+      "bytes": 163,
+      "sha256": "1d784fe4ab355174144f7081693ca991eea66fcacf074aa4db01983f437192ed"
+    },
+    {
+      "extension": ".qsflib",
+      "priority_group": "arcade and similar",
+      "backend": "QSF",
+      "repository": "Modland companion library",
+      "source_url": "https://ftp.modland.com/pub/modules/Capcom%20Q-Sound%20Format/-%20unknown/Cadillacs%20%26%20Dinosaurs/Cadillacs%20%26%20Dinosaurs.qsflib",
+      "path": "chiptunes/Capcom CPS Arcade/Cadillacs & Dinosaurs.qsflib",
+      "bytes": 1483257,
+      "sha256": "f9ba41052ff37d7a425c25584317ee81c4730690dfbf4f8d576a7929b8eca49e",
+      "companion_library": true
+    },
+    {
+      "extension": ".kss",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/KSS/-%20unknown/akushu.kss",
+      "path": "chiptunes/MSX/01_akushu.kss",
+      "bytes": 73395,
+      "sha256": "1575ed7b4ad8eb8db3e0aae7b71b62888c82caddc7944d56b843c849486156e6"
+    },
+    {
+      "extension": ".kss",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/KSS/-%20unknown/aleste%202.kss",
+      "path": "chiptunes/MSX/02_aleste 2.kss",
+      "bytes": 24656,
+      "sha256": "47861edf8b12d36457d74b1a428cf345f25601d30b36aefc2efabbf06cdae48f"
+    },
+    {
+      "extension": ".kss",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/KSS/-%20unknown/aleste%20gaiden.kss",
+      "path": "chiptunes/MSX/03_aleste gaiden.kss",
+      "bytes": 16176,
+      "sha256": "4b3b63480de09410ecaf8405368608ca48f1ef74d0b277a410d7d156406a88d6"
+    },
+    {
+      "extension": ".kss",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/KSS/-%20unknown/aleste.kss",
+      "path": "chiptunes/MSX/04_aleste.kss",
+      "bytes": 16432,
+      "sha256": "6e2881efde02b20a45b82193e28c22df1c084ae2fd25f27ad30c538c43920fb5"
+    },
+    {
+      "extension": ".kss",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/KSS/-%20unknown/alex%20kidd%20in%20miracle%20world.kss",
+      "path": "chiptunes/MSX/05_alex kidd in miracle world.kss",
+      "bytes": 16432,
+      "sha256": "39dac6040f58fc01125b460fe64c715b33ff057a4cc7cf9a711725f6388ffd35"
+    },
+    {
+      "extension": ".kss",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/KSS/-%20unknown/alex%20kidd%20in%20shinobi%20world.kss",
+      "path": "chiptunes/MSX/06_alex kidd in shinobi world.kss",
+      "bytes": 8544,
+      "sha256": "0c59be191e3003f31aa399673fc0b61051a71eaf00ba39a17305e79ee38b2174"
+    },
+    {
+      "extension": ".kss",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/KSS/-%20unknown/algo%20wars.kss",
+      "path": "chiptunes/MSX/07_algo wars.kss",
+      "bytes": 6176,
+      "sha256": "5061f603ff20a8f50c5818608f104b16d3a185c3da46f73c77c0d00b1cab28e3"
+    },
+    {
+      "extension": ".kss",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/KSS/-%20unknown/aliens%202.kss",
+      "path": "chiptunes/MSX/08_aliens 2.kss",
+      "bytes": 9232,
+      "sha256": "d74a12720439846e0ae969d3c96932b7801903b446871d44624e891c89c7d91e"
+    },
+    {
+      "extension": ".kss",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/KSS/-%20unknown/amidar%20%28arcade%29.kss",
+      "path": "chiptunes/MSX/09_amidar (arcade).kss",
+      "bytes": 6408,
+      "sha256": "d0039fcd7a12c07d579efb0fd29a3220511ddafa6e317d554ebc6d5c7c690f97"
+    },
+    {
+      "extension": ".kss",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/KSS/-%20unknown/animal%20land%20murder%20case.kss",
+      "path": "chiptunes/MSX/10_animal land murder case.kss",
+      "bytes": 6032,
+      "sha256": "40f1d3b6bef5154f925be0d00f72020c2237118ea26381cd04701f34ce8057a0"
+    },
+    {
+      "extension": ".vgm",
+      "repository": "Derived losslessly from downloaded Modland VGZ",
+      "source_url": "chiptunes/vgz/01_ecco 2 - the tides of time (gg) - atlantis.vgz",
+      "path": "chiptunes/Multi-system VGM/01_ecco 2 - the tides of time (gg) - atlantis.vgm",
+      "bytes": 29285,
+      "sha256": "18c6142555d65559576c4e16f7fb1adec20de5e0330f58fcdd5f4bcdc3e35286"
+    },
+    {
+      "extension": ".vgz",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Video%20Game%20Music/Sega%20Game%20Gear/Gabor%20Foltan/ecco%202%20-%20the%20tides%20of%20time%20%28gg%29%20-%20atlantis.vgz",
+      "path": "chiptunes/Multi-system VGM/01_ecco 2 - the tides of time (gg) - atlantis.vgz",
+      "bytes": 2393,
+      "sha256": "213cf8cef349ee7f2d6f5cdf4694ba79fe71c194c7bc608108d783223ae0256d"
+    },
+    {
+      "extension": ".vgm",
+      "repository": "Derived losslessly from downloaded Modland VGZ",
+      "source_url": "chiptunes/vgz/02_ecco 2 - the tides of time (gg) - main theme.vgz",
+      "path": "chiptunes/Multi-system VGM/02_ecco 2 - the tides of time (gg) - main theme.vgm",
+      "bytes": 36991,
+      "sha256": "3ab93b6919d878782d26872c6419fe60afb90935f8b41fbf39aed361671427ec"
+    },
+    {
+      "extension": ".vgz",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Video%20Game%20Music/Sega%20Game%20Gear/Gabor%20Foltan/ecco%202%20-%20the%20tides%20of%20time%20%28gg%29%20-%20main%20theme.vgz",
+      "path": "chiptunes/Multi-system VGM/02_ecco 2 - the tides of time (gg) - main theme.vgz",
+      "bytes": 2363,
+      "sha256": "6a18503a8ea092963acbb4840821416824caef4fe0a8a942363f3ecd57c0370d"
+    },
+    {
+      "extension": ".vgm",
+      "repository": "Derived losslessly from downloaded Modland VGZ",
+      "source_url": "chiptunes/vgz/03_ecco 2 - the tides of time (gg) - maze of stone.vgz",
+      "path": "chiptunes/Multi-system VGM/03_ecco 2 - the tides of time (gg) - maze of stone.vgm",
+      "bytes": 69018,
+      "sha256": "2b9fbf71e19584e2025ecc25c9900a34f9f64847f191318db375eaabbf9c199c"
+    },
+    {
+      "extension": ".vgz",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Video%20Game%20Music/Sega%20Game%20Gear/Gabor%20Foltan/ecco%202%20-%20the%20tides%20of%20time%20%28gg%29%20-%20maze%20of%20stone.vgz",
+      "path": "chiptunes/Multi-system VGM/03_ecco 2 - the tides of time (gg) - maze of stone.vgz",
+      "bytes": 8247,
+      "sha256": "b561ba683c9b191c39ca7fb0a45dc2f2e78c72a0a88d093f2c5acca89834841f"
+    },
+    {
+      "extension": ".vgm",
+      "repository": "Derived losslessly from downloaded Modland VGZ",
+      "source_url": "chiptunes/vgz/04_ecco 2 - the tides of time (gg) - sea of darkness.vgz",
+      "path": "chiptunes/Multi-system VGM/04_ecco 2 - the tides of time (gg) - sea of darkness.vgm",
+      "bytes": 35692,
+      "sha256": "5b63a3a8376a22ee810eca5cf2ff8aa5708eef5a6d97737d19c288fc6dee8b28"
+    },
+    {
+      "extension": ".vgz",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Video%20Game%20Music/Sega%20Game%20Gear/Gabor%20Foltan/ecco%202%20-%20the%20tides%20of%20time%20%28gg%29%20-%20sea%20of%20darkness.vgz",
+      "path": "chiptunes/Multi-system VGM/04_ecco 2 - the tides of time (gg) - sea of darkness.vgz",
+      "bytes": 5371,
+      "sha256": "65ce77e209cc6c84257ab4b0c8f54bcabe81cfa1ce3217d0a1c106b5f0f5df3e"
+    },
+    {
+      "extension": ".vgm",
+      "repository": "Derived losslessly from downloaded Modland VGZ",
+      "source_url": "chiptunes/vgz/05_ecco 2 - the tides of time (gg) - vents of medusa.vgz",
+      "path": "chiptunes/Multi-system VGM/05_ecco 2 - the tides of time (gg) - vents of medusa.vgm",
+      "bytes": 25138,
+      "sha256": "90b547ce4dbd20d6089f5132be6e72588e7917abb5d94e8f89bc9c89569f5b1d"
+    },
+    {
+      "extension": ".vgz",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Video%20Game%20Music/Sega%20Game%20Gear/Gabor%20Foltan/ecco%202%20-%20the%20tides%20of%20time%20%28gg%29%20-%20vents%20of%20medusa.vgz",
+      "path": "chiptunes/Multi-system VGM/05_ecco 2 - the tides of time (gg) - vents of medusa.vgz",
+      "bytes": 1904,
+      "sha256": "64beb1d4d3daaad780d884574f10b75c162c44e4f377deafda5a347a42bb775e"
+    },
+    {
+      "extension": ".vgm",
+      "repository": "Derived losslessly from downloaded Modland VGZ",
+      "source_url": "chiptunes/vgz/06_ecco 2 - the tides of time (gg) - vortex future.vgz",
+      "path": "chiptunes/Multi-system VGM/06_ecco 2 - the tides of time (gg) - vortex future.vgm",
+      "bytes": 26060,
+      "sha256": "b5f022fdc18bfd27efe71dc9df89ad8902d983340f359cb003ae486784ca2c27"
+    },
+    {
+      "extension": ".vgz",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Video%20Game%20Music/Sega%20Game%20Gear/Gabor%20Foltan/ecco%202%20-%20the%20tides%20of%20time%20%28gg%29%20-%20vortex%20future.vgz",
+      "path": "chiptunes/Multi-system VGM/06_ecco 2 - the tides of time (gg) - vortex future.vgz",
+      "bytes": 3342,
+      "sha256": "daff07f06e991266bafee89cda4587a8ce19f1de161ee743dec935eee874fe98"
+    },
+    {
+      "extension": ".vgm",
+      "repository": "Derived losslessly from downloaded Modland VGZ",
+      "source_url": "chiptunes/vgz/07_labyrinth of no end (remake).vgz",
+      "path": "chiptunes/Multi-system VGM/07_labyrinth of no end (remake).vgm",
+      "bytes": 8213,
+      "sha256": "2c7e4d6d7ed66dc4dd4c9114440d6b8db0ba051aea9383b620905e20e61c8ec5"
+    },
+    {
+      "extension": ".vgz",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Video%20Game%20Music/Sega%20Master%20System/Chris%20Kelly/labyrinth%20of%20no%20end%20%28remake%29.vgz",
+      "path": "chiptunes/Multi-system VGM/07_labyrinth of no end (remake).vgz",
+      "bytes": 1612,
+      "sha256": "04a6e659762bfba0a60eab7e0ac536f9dce2efbce8f20299f28293380ff6730d"
+    },
+    {
+      "extension": ".vgm",
+      "repository": "Derived losslessly from downloaded Modland VGZ",
+      "source_url": "chiptunes/vgz/08_a 8 bit song.vgz",
+      "path": "chiptunes/Multi-system VGM/08_a 8 bit song.vgm",
+      "bytes": 228296,
+      "sha256": "eee6f1cfd270bdc77d8200dbda27ab60132db2c92d17efd91dd43061f32cf5a6"
+    },
+    {
+      "extension": ".vgz",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Video%20Game%20Music/Sega%20Master%20System/DJ%20SuperNova/a%208%20bit%20song.vgz",
+      "path": "chiptunes/Multi-system VGM/08_a 8 bit song.vgz",
+      "bytes": 12821,
+      "sha256": "38df35c532a59cccd76b386a6579db314cfb54a09ae78a28a62b2e0cafb26a59"
+    },
+    {
+      "extension": ".vgm",
+      "repository": "Derived losslessly from downloaded Modland VGZ",
+      "source_url": "chiptunes/vgz/09_spanish dream - remake 8 bit version.vgz",
+      "path": "chiptunes/Multi-system VGM/09_spanish dream - remake 8 bit version.vgm",
+      "bytes": 85023,
+      "sha256": "5bf066a90450788dec040d115d9695bc70cec3d31f13315ad28522669a81f2f6"
+    },
+    {
+      "extension": ".vgz",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Video%20Game%20Music/Sega%20Master%20System/DJ%20SuperNova/spanish%20dream%20-%20remake%208%20bit%20version.vgz",
+      "path": "chiptunes/Multi-system VGM/09_spanish dream - remake 8 bit version.vgz",
+      "bytes": 6938,
+      "sha256": "2f3272b3a47c48d708b1537dd8d3dad321484aa630fade60d3103687b7471a3c"
+    },
+    {
+      "extension": ".vgm",
+      "repository": "Derived losslessly from downloaded Modland VGZ",
+      "source_url": "chiptunes/vgz/10_labyrinth vs dungeon.vgz",
+      "path": "chiptunes/Multi-system VGM/10_labyrinth vs dungeon.vgm",
+      "bytes": 128828,
+      "sha256": "63a46cafaf731648b5567f56363298e9f9c9baa7512bf3049dbb96c2a7039468"
+    },
+    {
+      "extension": ".vgz",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Video%20Game%20Music/Sega%20Master%20System/Furanku/labyrinth%20vs%20dungeon.vgz",
+      "path": "chiptunes/Multi-system VGM/10_labyrinth vs dungeon.vgz",
+      "bytes": 13540,
+      "sha256": "ed228804d83e93e36e44cea62925921520e03264a20622072af8a3cc3d46435f"
+    },
+    {
+      "extension": ".hes",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/HES/-%20unknown/21%20emon%20-%20mezase%21%20hotel%20ou.hes",
+      "path": "chiptunes/NEC PC Engine/01_21 emon - mezase! hotel ou.hes",
+      "bytes": 32768,
+      "sha256": "349558cf80ef70cfcfde71dfda5749349e63ea2a54bcac9d5cdd714c3f044dc3"
+    },
+    {
+      "extension": ".hes",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/HES/-%20unknown/3x3%20eyes%20-%20sanjiyan%20henjou.hes",
+      "path": "chiptunes/NEC PC Engine/02_3x3 eyes - sanjiyan henjou.hes",
+      "bytes": 122880,
+      "sha256": "d67d69137c5f2cf198bb993ce552f435add4c799c011672bee61b34776e8586b"
+    },
+    {
+      "extension": ".hes",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/HES/-%20unknown/a-ressha%20de%20ikou%203.hes",
+      "path": "chiptunes/NEC PC Engine/03_a-ressha de ikou 3.hes",
+      "bytes": 73728,
+      "sha256": "ccb160c9ccb9b1f60ff97adb8e04f0bdd83597e10b25d797751f68a0bc39b18b"
+    },
+    {
+      "extension": ".hes",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/HES/-%20unknown/adventure%20quiz%20-%20world%20%26%20hatena%20no%20daibouken.hes",
+      "path": "chiptunes/NEC PC Engine/04_adventure quiz - world & hatena no daibouken.hes",
+      "bytes": 49152,
+      "sha256": "386fc0efd6959a8dfd69aeca43f23ca355c71db7d328a295671332da21aea0a9"
+    },
+    {
+      "extension": ".hes",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/HES/-%20unknown/after%20burner.hes",
+      "path": "chiptunes/NEC PC Engine/05_after burner.hes",
+      "bytes": 49152,
+      "sha256": "9d28b2c6de2d3694de3a5582fa23c956c9a65f7053ae21b5700013ee4ec0bcdb"
+    },
+    {
+      "extension": ".hes",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/HES/-%20unknown/alshark.hes",
+      "path": "chiptunes/NEC PC Engine/06_alshark.hes",
+      "bytes": 65536,
+      "sha256": "7643710fd6892a46d3eceae19342bc18a9c1cf54ae1ab07e98b40034461b1526"
+    },
+    {
+      "extension": ".hes",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/HES/-%20unknown/aoi%20%28blue%29%20blink.hes",
+      "path": "chiptunes/NEC PC Engine/07_aoi (blue) blink.hes",
+      "bytes": 32768,
+      "sha256": "2030840e91012c66e05bfab0874c8fdebadddb8dc5c23b0cfb4f4b952689fc54"
+    },
+    {
+      "extension": ".hes",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/HES/-%20unknown/artist%20tool.hes",
+      "path": "chiptunes/NEC PC Engine/08_artist tool.hes",
+      "bytes": 24576,
+      "sha256": "bae22fb922965fdae4f328435b7b8ac482d87c10051c56eede020389bac02785"
+    },
+    {
+      "extension": ".hes",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/HES/-%20unknown/atlas%20-%20renaissance%20voyager.hes",
+      "path": "chiptunes/NEC PC Engine/09_atlas - renaissance voyager.hes",
+      "bytes": 57344,
+      "sha256": "e2943e357c375f8f1eb4d627fc9a8babb3ec087b26e883ba9a530673b53ca6ee"
+    },
+    {
+      "extension": ".hes",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/HES/-%20unknown/atomic%20robokid%20special.hes",
+      "path": "chiptunes/NEC PC Engine/10_atomic robokid special.hes",
+      "bytes": 57344,
+      "sha256": "76220e9b32c9216c98b947ca3e3f06601ad853a5be7819496b8cd698ec947ed7"
+    },
+    {
+      "extension": ".usf",
+      "priority_group": "64-bit consoles",
+      "backend": "USF",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Ultra64%20Sound%20Format/-%20unknown/Dynamix%20Congrats%20Split/dnx%20congrats%20split.usf",
+      "path": "chiptunes/Nintendo 64/01_dnx congrats split.usf",
+      "bytes": 1474955,
+      "sha256": "6b3e37049a8045b52b332c53edd4bb44c676d0fa6ffd55db620f90a59609a3a7"
+    },
+    {
+      "extension": ".miniusf",
+      "priority_group": "64-bit consoles",
+      "backend": "USF",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Ultra64%20Sound%20Format/-%20unknown/64%20De%20Hakken%21%20Tamagotchi%20-%20Minna%20De%20Tamagotchi%20World/sparse01.miniusf",
+      "path": "chiptunes/Nintendo 64/01_sparse01.miniusf",
+      "bytes": 64,
+      "sha256": "a77f8d0a71de2fc4527565da7258b9864423740fbcfc3243b2767f6571cd3ed6"
+    },
+    {
+      "extension": ".usf",
+      "priority_group": "64-bit consoles",
+      "backend": "USF",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Ultra64%20Sound%20Format/Marcus%20Fielding/Monopoly/monopoly.usf",
+      "path": "chiptunes/Nintendo 64/02_monopoly.usf",
+      "bytes": 681429,
+      "sha256": "c7f870c0f026282409f82fbe43d8098ebd6e4342e6c20d417749b1d820403288"
+    },
+    {
+      "extension": ".miniusf",
+      "priority_group": "64-bit consoles",
+      "backend": "USF",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Ultra64%20Sound%20Format/-%20unknown/64%20De%20Hakken%21%20Tamagotchi%20-%20Minna%20De%20Tamagotchi%20World/sparse03.miniusf",
+      "path": "chiptunes/Nintendo 64/02_sparse03.miniusf",
+      "bytes": 64,
+      "sha256": "34c8f91ce9ae462b8602f4c555dc15f8655e8f54a483c0440fb2a1218945eaea"
+    },
+    {
+      "extension": ".miniusf",
+      "priority_group": "64-bit consoles",
+      "backend": "USF",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Ultra64%20Sound%20Format/-%20unknown/64%20De%20Hakken%21%20Tamagotchi%20-%20Minna%20De%20Tamagotchi%20World/sparse04.miniusf",
+      "path": "chiptunes/Nintendo 64/03_sparse04.miniusf",
+      "bytes": 64,
+      "sha256": "7767ce9a791229ab60b718eec4dc9bce18d3349e7af31747d169fa337704b7df"
+    },
+    {
+      "extension": ".miniusf",
+      "priority_group": "64-bit consoles",
+      "backend": "USF",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Ultra64%20Sound%20Format/-%20unknown/64%20De%20Hakken%21%20Tamagotchi%20-%20Minna%20De%20Tamagotchi%20World/sparse06.miniusf",
+      "path": "chiptunes/Nintendo 64/04_sparse06.miniusf",
+      "bytes": 64,
+      "sha256": "c74c62e887734a89f636060bbadf1494b0d6f9181def72e9933fa077e320c7ff"
+    },
+    {
+      "extension": ".miniusf",
+      "priority_group": "64-bit consoles",
+      "backend": "USF",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Ultra64%20Sound%20Format/-%20unknown/64%20De%20Hakken%21%20Tamagotchi%20-%20Minna%20De%20Tamagotchi%20World/sparse08.miniusf",
+      "path": "chiptunes/Nintendo 64/05_sparse08.miniusf",
+      "bytes": 64,
+      "sha256": "1deba87fc5c9d850d7291c568008048d069208ecd698ff3f00563fcf74af503f"
+    },
+    {
+      "extension": ".miniusf",
+      "priority_group": "64-bit consoles",
+      "backend": "USF",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Ultra64%20Sound%20Format/-%20unknown/64%20De%20Hakken%21%20Tamagotchi%20-%20Minna%20De%20Tamagotchi%20World/sparse09.miniusf",
+      "path": "chiptunes/Nintendo 64/06_sparse09.miniusf",
+      "bytes": 64,
+      "sha256": "b7b4a97e38da9a6a84dc078483db6f66c78b8ee5a1bc90a480fa3a7f06a92637"
+    },
+    {
+      "extension": ".miniusf",
+      "priority_group": "64-bit consoles",
+      "backend": "USF",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Ultra64%20Sound%20Format/-%20unknown/64%20De%20Hakken%21%20Tamagotchi%20-%20Minna%20De%20Tamagotchi%20World/sparse0a.miniusf",
+      "path": "chiptunes/Nintendo 64/07_sparse0a.miniusf",
+      "bytes": 64,
+      "sha256": "60877f4513024ae266008ee56ae339900384b4fe092dc9d88e489600a1810467"
+    },
+    {
+      "extension": ".miniusf",
+      "priority_group": "64-bit consoles",
+      "backend": "USF",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Ultra64%20Sound%20Format/-%20unknown/64%20De%20Hakken%21%20Tamagotchi%20-%20Minna%20De%20Tamagotchi%20World/sparse0b.miniusf",
+      "path": "chiptunes/Nintendo 64/08_sparse0b.miniusf",
+      "bytes": 64,
+      "sha256": "322aaa70287302b59d3a538de5fcaca0c82e4b7558f6e5ea1dd828a92d3e7f99"
+    },
+    {
+      "extension": ".miniusf",
+      "priority_group": "64-bit consoles",
+      "backend": "USF",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Ultra64%20Sound%20Format/-%20unknown/64%20De%20Hakken%21%20Tamagotchi%20-%20Minna%20De%20Tamagotchi%20World/sparse0c.miniusf",
+      "path": "chiptunes/Nintendo 64/09_sparse0c.miniusf",
+      "bytes": 64,
+      "sha256": "2fda41785a9cd8d2cbf632b8b85157d6155a51672bbfd858fec404946bd70f1c"
+    },
+    {
+      "extension": ".miniusf",
+      "priority_group": "64-bit consoles",
+      "backend": "USF",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Ultra64%20Sound%20Format/-%20unknown/64%20De%20Hakken%21%20Tamagotchi%20-%20Minna%20De%20Tamagotchi%20World/sparse0d.miniusf",
+      "path": "chiptunes/Nintendo 64/10_sparse0d.miniusf",
+      "bytes": 64,
+      "sha256": "a684efd43ffdedfaa13e64e99becb330382ddbd42f63a449a63eb183cd57d5e8"
+    },
+    {
+      "extension": ".usflib",
+      "priority_group": "64-bit consoles",
+      "backend": "USF",
+      "repository": "Modland companion library",
+      "source_url": "https://ftp.modland.com/pub/modules/Ultra64%20Sound%20Format/-%20unknown/64%20De%20Hakken%21%20Tamagotchi%20-%20Minna%20De%20Tamagotchi%20World/tama64.usflib",
+      "path": "chiptunes/Nintendo 64/tama64.usflib",
+      "bytes": 1549640,
+      "sha256": "99b5ecd6ca78a2ab6b9eeb47d75ca1a6720e0d66db89b9b3fcb15c1e737b96d0",
+      "companion_library": true
+    },
+    {
+      "extension": ".mini2sf",
+      "priority_group": "32-bit handhelds",
+      "backend": "2SF",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Nintendo%20DS%20Sound%20Format/-%20unknown/1500%20DS%20Spirits%20Vol.%201%20-%20Mahjong/ntr-a8aj-jpn-01h2-majang-qz-0000.mini2sf",
+      "path": "chiptunes/Nintendo DS/01_ntr-a8aj-jpn-01h2-majang-qz-0000.mini2sf",
+      "bytes": 235,
+      "sha256": "e65444806a4f667b6310b4bf6128daa7118cca89fb3ad8e274c173e550038d96"
+    },
+    {
+      "extension": ".2sf",
+      "priority_group": "32-bit handhelds",
+      "backend": "2SF",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Nintendo%20DS%20Sound%20Format/-%20unknown/1500%20DS%20Spirits%20Vol.%205%20-%20Hanafuda/ntr-a8yj-jpn.2sf",
+      "path": "chiptunes/Nintendo DS/01_ntr-a8yj-jpn.2sf",
+      "bytes": 577671,
+      "sha256": "95fdb578d7bf0478cc771560680e2240c2570403c16ba0e7488f45adcaacdfdd"
+    },
+    {
+      "extension": ".mini2sf",
+      "priority_group": "32-bit handhelds",
+      "backend": "2SF",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Nintendo%20DS%20Sound%20Format/-%20unknown/1500%20DS%20Spirits%20Vol.%201%20-%20Mahjong/ntr-a8aj-jpn-01h2-majang-qz-0001.mini2sf",
+      "path": "chiptunes/Nintendo DS/02_ntr-a8aj-jpn-01h2-majang-qz-0001.mini2sf",
+      "bytes": 237,
+      "sha256": "58d60fb26961ad7e6b89b80f7cb0db9535969608bb01c17f3074b23aaa064ba1"
+    },
+    {
+      "extension": ".2sf",
+      "priority_group": "32-bit handhelds",
+      "backend": "2SF",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Nintendo%20DS%20Sound%20Format/-%20unknown/Bleach%20-%20The%20Blade%20Of%20Fate/ntr-ablj-jpn.2sf",
+      "path": "chiptunes/Nintendo DS/02_ntr-ablj-jpn.2sf",
+      "bytes": 556302,
+      "sha256": "d3dceb65d7a3e9382cb23fef3c20fd0351be77755451e8ac57feb2d9a4d5a6f4"
+    },
+    {
+      "extension": ".mini2sf",
+      "priority_group": "32-bit handhelds",
+      "backend": "2SF",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Nintendo%20DS%20Sound%20Format/-%20unknown/1500%20DS%20Spirits%20Vol.%201%20-%20Mahjong/ntr-a8aj-jpn-02-chara-select.mini2sf",
+      "path": "chiptunes/Nintendo DS/03_ntr-a8aj-jpn-02-chara-select.mini2sf",
+      "bytes": 551492,
+      "sha256": "aa6fbee75fad83a2859cedc8f7de19d2f9cafb5863a57033a5059ba58d11cff9"
+    },
+    {
+      "extension": ".2sf",
+      "priority_group": "32-bit handhelds",
+      "backend": "2SF",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Nintendo%20DS%20Sound%20Format/-%20unknown/Chungjeon%21%20Hanguginui%20Sangsingnyeok%20DS/ntr-yc3k-kor.2sf",
+      "path": "chiptunes/Nintendo DS/03_ntr-yc3k-kor.2sf",
+      "bytes": 750373,
+      "sha256": "b4966b8b6a2ad6569733ee32babe0886a4d3d0b907814180132616d6820c35fe"
+    },
+    {
+      "extension": ".mini2sf",
+      "priority_group": "32-bit handhelds",
+      "backend": "2SF",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Nintendo%20DS%20Sound%20Format/-%20unknown/1500%20DS%20Spirits%20Vol.%201%20-%20Mahjong/ntr-a8aj-jpn-02-game-select.mini2sf",
+      "path": "chiptunes/Nintendo DS/04_ntr-a8aj-jpn-02-game-select.mini2sf",
+      "bytes": 577259,
+      "sha256": "804ebed7132960d956b35228f0461450263c64d74ff5171eceb9e2d993f29ca6"
+    },
+    {
+      "extension": ".2sf",
+      "priority_group": "32-bit handhelds",
+      "backend": "2SF",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Nintendo%20DS%20Sound%20Format/-%20unknown/Deep%20Labyrinth/ntr-adlj-jpn.2sf",
+      "path": "chiptunes/Nintendo DS/04_ntr-adlj-jpn.2sf",
+      "bytes": 527834,
+      "sha256": "a61d042270aac3f8d99fced73db8b37af7ff0561229b443f35919f4687ac0890"
+    },
+    {
+      "extension": ".mini2sf",
+      "priority_group": "32-bit handhelds",
+      "backend": "2SF",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Nintendo%20DS%20Sound%20Format/-%20unknown/1500%20DS%20Spirits%20Vol.%201%20-%20Mahjong/ntr-a8aj-jpn-02-play-select.mini2sf",
+      "path": "chiptunes/Nintendo DS/05_ntr-a8aj-jpn-02-play-select.mini2sf",
+      "bytes": 587957,
+      "sha256": "d75ac3bd2fba52aa764bbde52b2ea3cc87e7d8c158b02123b0b0761f4d73ca6e"
+    },
+    {
+      "extension": ".2sf",
+      "priority_group": "32-bit handhelds",
+      "backend": "2SF",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Nintendo%20DS%20Sound%20Format/-%20unknown/Game%20%26%20Watch%20Collection%202/ntr-cgwj-jpn.2sf",
+      "path": "chiptunes/Nintendo DS/05_ntr-cgwj-jpn.2sf",
+      "bytes": 551982,
+      "sha256": "b13201a861f5fbc6727094306690013f252422877c27983cb924fa7e5d2b5485"
+    },
+    {
+      "extension": ".mini2sf",
+      "priority_group": "32-bit handhelds",
+      "backend": "2SF",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Nintendo%20DS%20Sound%20Format/-%20unknown/1500%20DS%20Spirits%20Vol.%201%20-%20Mahjong/ntr-a8aj-jpn-majang-0000.mini2sf",
+      "path": "chiptunes/Nintendo DS/06_ntr-a8aj-jpn-majang-0000.mini2sf",
+      "bytes": 227,
+      "sha256": "600d03c57fa4d14f7f4d2e7c03715e984839bc9c6620b3a8155e261372f5c169"
+    },
+    {
+      "extension": ".2sf",
+      "priority_group": "32-bit handhelds",
+      "backend": "2SF",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Nintendo%20DS%20Sound%20Format/-%20unknown/Game%20%26%20Watch%20Collection/ntr-awtj-jpn.2sf",
+      "path": "chiptunes/Nintendo DS/06_ntr-awtj-jpn.2sf",
+      "bytes": 519101,
+      "sha256": "14a17240c19907c584c867274b0de7f1885415f10149520588e0435ec26651d7"
+    },
+    {
+      "extension": ".mini2sf",
+      "priority_group": "32-bit handhelds",
+      "backend": "2SF",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Nintendo%20DS%20Sound%20Format/-%20unknown/1500%20DS%20Spirits%20Vol.%201%20-%20Mahjong/ntr-a8aj-jpn-majang-0001.mini2sf",
+      "path": "chiptunes/Nintendo DS/07_ntr-a8aj-jpn-majang-0001.mini2sf",
+      "bytes": 230,
+      "sha256": "ad16569748f1e1a6ff3097905c0327f65378a0c92d023ec0f9448e6f715e27ba"
+    },
+    {
+      "extension": ".2sf",
+      "priority_group": "32-bit handhelds",
+      "backend": "2SF",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Nintendo%20DS%20Sound%20Format/-%20unknown/Great%20Empires%20-%20Rome/ntr-chxp-eur.2sf",
+      "path": "chiptunes/Nintendo DS/07_ntr-chxp-eur.2sf",
+      "bytes": 487947,
+      "sha256": "c4c6b8f17bfb29923cf98f4898433188048a9f3d1e24fa018a59001a27af3f51"
+    },
+    {
+      "extension": ".mini2sf",
+      "priority_group": "32-bit handhelds",
+      "backend": "2SF",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Nintendo%20DS%20Sound%20Format/-%20unknown/1500%20DS%20Spirits%20Vol.%201%20-%20Mahjong/ntr-a8aj-jpn-majang-0002.mini2sf",
+      "path": "chiptunes/Nintendo DS/08_ntr-a8aj-jpn-majang-0002.mini2sf",
+      "bytes": 228,
+      "sha256": "8cd24ff211b8bbccbe73dcde780e9b802f064198cf00f30472996b2931bada73"
+    },
+    {
+      "extension": ".2sf",
+      "priority_group": "32-bit handhelds",
+      "backend": "2SF",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Nintendo%20DS%20Sound%20Format/-%20unknown/Jewel%20Quest%20-%20Expeditions/ntr-yjqe-usa.2sf",
+      "path": "chiptunes/Nintendo DS/08_ntr-yjqe-usa.2sf",
+      "bytes": 514865,
+      "sha256": "29e14364b1cc33bba62609237d62293f654d9160930ee7ec8768ba0f3ebb8192"
+    },
+    {
+      "extension": ".mini2sf",
+      "priority_group": "32-bit handhelds",
+      "backend": "2SF",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Nintendo%20DS%20Sound%20Format/-%20unknown/1500%20DS%20Spirits%20Vol.%201%20-%20Mahjong/ntr-a8aj-jpn-majang-0003.mini2sf",
+      "path": "chiptunes/Nintendo DS/09_ntr-a8aj-jpn-majang-0003.mini2sf",
+      "bytes": 229,
+      "sha256": "b603e89795181be93e66844c22ec3c4e546d4e9b8363e2bc0e052121a024ddbe"
+    },
+    {
+      "extension": ".mini2sf",
+      "priority_group": "32-bit handhelds",
+      "backend": "2SF",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Nintendo%20DS%20Sound%20Format/-%20unknown/1500%20DS%20Spirits%20Vol.%201%20-%20Mahjong/ntr-a8aj-jpn-majang-0004.mini2sf",
+      "path": "chiptunes/Nintendo DS/10_ntr-a8aj-jpn-majang-0004.mini2sf",
+      "bytes": 229,
+      "sha256": "4f79b6ccca3df9bbc3a267382b8395a33508fa2903c7d83080c0d45a1771ba98"
+    },
+    {
+      "extension": ".2sflib",
+      "priority_group": "32-bit handhelds",
+      "backend": "2SF",
+      "repository": "Modland companion library",
+      "source_url": "https://ftp.modland.com/pub/modules/Nintendo%20DS%20Sound%20Format/-%20unknown/1500%20DS%20Spirits%20Vol.%201%20-%20Mahjong/NTR-A8AJ-JPN_01H2_MAJANG_QZ.2sflib",
+      "path": "chiptunes/Nintendo DS/NTR-A8AJ-JPN_01H2_MAJANG_QZ.2sflib",
+      "bytes": 548168,
+      "sha256": "8d1faf8ffb5ddf81eb6b3c35367b711ca9f94077bbd45039f2b8be30cd2ad9c0",
+      "companion_library": true
+    },
+    {
+      "extension": ".2sflib",
+      "priority_group": "32-bit handhelds",
+      "backend": "2SF",
+      "repository": "Modland companion library",
+      "source_url": "https://ftp.modland.com/pub/modules/Nintendo%20DS%20Sound%20Format/-%20unknown/1500%20DS%20Spirits%20Vol.%201%20-%20Mahjong/NTR-A8AJ-JPN_MAJANG.2sflib",
+      "path": "chiptunes/Nintendo DS/NTR-A8AJ-JPN_MAJANG.2sflib",
+      "bytes": 618057,
+      "sha256": "845d8c6950190629f1ac3a9e564584bd163167d533450f0e846fa4a4c11a0bb5",
+      "companion_library": true
+    },
+    {
+      "extension": ".gsf",
+      "priority_group": "32-bit consoles",
+      "backend": "GSF",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Gameboy%20Sound%20Format/-%20unknown/Card%20e-Reader/ereader-000c.gsf",
+      "path": "chiptunes/Nintendo Game Boy Advance/01_ereader-000c.gsf",
+      "bytes": 140,
+      "sha256": "233f129424332362b6e90c4f819e10ceefc651099a934ef1ea902fb2b31fd6ca"
+    },
+    {
+      "extension": ".minigsf",
+      "priority_group": "32-bit consoles",
+      "backend": "GSF",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Gameboy%20Sound%20Format/BIT/payback-0002.minigsf",
+      "path": "chiptunes/Nintendo Game Boy Advance/01_payback-0002.minigsf",
+      "bytes": 205,
+      "sha256": "7bd61a273097153cca8237f8941cd006253a5dcf56902284ca4e34a86c97301b"
+    },
+    {
+      "extension": ".minigsf",
+      "priority_group": "32-bit consoles",
+      "backend": "GSF",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Gameboy%20Sound%20Format/Bob%20Hass/aas-demo-0003.minigsf",
+      "path": "chiptunes/Nintendo Game Boy Advance/02_aas-demo-0003.minigsf",
+      "bytes": 216,
+      "sha256": "0ac8a7524422f88411aa0c88295c1e6b91d759fef384e2efd4a39e833cf499e9"
+    },
+    {
+      "extension": ".gsf",
+      "priority_group": "32-bit consoles",
+      "backend": "GSF",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Gameboy%20Sound%20Format/-%20unknown/Card%20e-Reader/ereader-000d.gsf",
+      "path": "chiptunes/Nintendo Game Boy Advance/02_ereader-000d.gsf",
+      "bytes": 140,
+      "sha256": "a85b59c6c1d658998dbf10c32b68e6b8fc4408c4ed86b1f2c35b5c7bd78b99d5"
+    },
+    {
+      "extension": ".minigsf",
+      "priority_group": "32-bit consoles",
+      "backend": "GSF",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Gameboy%20Sound%20Format/Estrayk/aas-demo-0002.minigsf",
+      "path": "chiptunes/Nintendo Game Boy Advance/03_aas-demo-0002.minigsf",
+      "bytes": 210,
+      "sha256": "252c3120636c3fb19f54ff62da50c028d5521560f94acbe3d7a0029c92a20d36"
+    },
+    {
+      "extension": ".gsf",
+      "priority_group": "32-bit consoles",
+      "backend": "GSF",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Gameboy%20Sound%20Format/-%20unknown/Card%20e-Reader/ereader-0016.gsf",
+      "path": "chiptunes/Nintendo Game Boy Advance/03_ereader-0016.gsf",
+      "bytes": 140,
+      "sha256": "85eb603d3b841d7d0a34c6623894992526fba5766195629bbc889782789987fb"
+    },
+    {
+      "extension": ".minigsf",
+      "priority_group": "32-bit consoles",
+      "backend": "GSF",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Gameboy%20Sound%20Format/Funktion/aas-demo-0001.minigsf",
+      "path": "chiptunes/Nintendo Game Boy Advance/04_aas-demo-0001.minigsf",
+      "bytes": 216,
+      "sha256": "3b84ef9f9327c2840f2aaa411fb68eb991371ab81960ed246240efc4e6d3870c"
+    },
+    {
+      "extension": ".gsf",
+      "priority_group": "32-bit consoles",
+      "backend": "GSF",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Gameboy%20Sound%20Format/-%20unknown/Card%20e-Reader/ereader-0022.gsf",
+      "path": "chiptunes/Nintendo Game Boy Advance/04_ereader-0022.gsf",
+      "bytes": 140,
+      "sha256": "c08286c257d6a71745352b585860fc4620d3b16d1561fbb4f5c6fbe758bb6871"
+    },
+    {
+      "extension": ".gsf",
+      "priority_group": "32-bit consoles",
+      "backend": "GSF",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Gameboy%20Sound%20Format/-%20unknown/Card%20e-Reader/ereader-003a.gsf",
+      "path": "chiptunes/Nintendo Game Boy Advance/05_ereader-003a.gsf",
+      "bytes": 140,
+      "sha256": "2fe66680520d206e4321745905075ce5c9aabb246985a99381a16dc7f465c483"
+    },
+    {
+      "extension": ".minigsf",
+      "priority_group": "32-bit consoles",
+      "backend": "GSF",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Gameboy%20Sound%20Format/Heywood/payback-0003.minigsf",
+      "path": "chiptunes/Nintendo Game Boy Advance/05_payback-0003.minigsf",
+      "bytes": 196,
+      "sha256": "7c9e0abd954075291b4e543d01a91a20cb516fff6aad3c10f18b7305b3db7828"
+    },
+    {
+      "extension": ".gsf",
+      "priority_group": "32-bit consoles",
+      "backend": "GSF",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Gameboy%20Sound%20Format/-%20unknown/Card%20e-Reader/ereader-003b.gsf",
+      "path": "chiptunes/Nintendo Game Boy Advance/06_ereader-003b.gsf",
+      "bytes": 140,
+      "sha256": "880154eebb4e69761dc5264822e7ef776e597d56d92646c83ef0d929233699ca"
+    },
+    {
+      "extension": ".minigsf",
+      "priority_group": "32-bit consoles",
+      "backend": "GSF",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Gameboy%20Sound%20Format/Outzider/payback-0001.minigsf",
+      "path": "chiptunes/Nintendo Game Boy Advance/06_payback-0001.minigsf",
+      "bytes": 221,
+      "sha256": "b8f0029f6af15cfce21774a0ead0a6eb7eeb5adf0ac65205a1dfd5af7d631e2a"
+    },
+    {
+      "extension": ".minigsf",
+      "priority_group": "32-bit consoles",
+      "backend": "GSF",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Gameboy%20Sound%20Format/Scorpik/aas-demo-0004.minigsf",
+      "path": "chiptunes/Nintendo Game Boy Advance/07_aas-demo-0004.minigsf",
+      "bytes": 211,
+      "sha256": "392ed5843a76bb321c67598d71cb8f22e3486725529c81780f92d4fd80274954"
+    },
+    {
+      "extension": ".gsf",
+      "priority_group": "32-bit consoles",
+      "backend": "GSF",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Gameboy%20Sound%20Format/-%20unknown/Card%20e-Reader/ereader-004c.gsf",
+      "path": "chiptunes/Nintendo Game Boy Advance/07_ereader-004c.gsf",
+      "bytes": 132,
+      "sha256": "85f8077802d0d703c15c8b5370eb70fbfaa5d530fcffb16c2c89d9977ebd5bdb"
+    },
+    {
+      "extension": ".gsf",
+      "priority_group": "32-bit consoles",
+      "backend": "GSF",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Gameboy%20Sound%20Format/-%20unknown/Card%20e-Reader/ereader-0051.gsf",
+      "path": "chiptunes/Nintendo Game Boy Advance/08_ereader-0051.gsf",
+      "bytes": 140,
+      "sha256": "abfad77c99894bde96dc46057f0b4ca67da23431795fafbf961dcd3136875022"
+    },
+    {
+      "extension": ".minigsf",
+      "priority_group": "32-bit consoles",
+      "backend": "GSF",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Gameboy%20Sound%20Format/Scorpik/payback-0000.minigsf",
+      "path": "chiptunes/Nintendo Game Boy Advance/08_payback-0000.minigsf",
+      "bytes": 226,
+      "sha256": "684a9a0cbcd28ddbb90de7e9d9b1ffc21551d4d62fab331beffeca0d24598b26"
+    },
+    {
+      "extension": ".gsf",
+      "priority_group": "32-bit consoles",
+      "backend": "GSF",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Gameboy%20Sound%20Format/-%20unknown/Card%20e-Reader/ereader-0052.gsf",
+      "path": "chiptunes/Nintendo Game Boy Advance/09_ereader-0052.gsf",
+      "bytes": 140,
+      "sha256": "cdfd5c50e004d2a35cd80bafe97894b852b3da2caef6e257e047cebbdd08c784"
+    },
+    {
+      "extension": ".minigsf",
+      "priority_group": "32-bit consoles",
+      "backend": "GSF",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Gameboy%20Sound%20Format/Sidewinder/payback-0004.minigsf",
+      "path": "chiptunes/Nintendo Game Boy Advance/09_payback-0004.minigsf",
+      "bytes": 219,
+      "sha256": "dd82c452d6116d95a3a024b4ed1db759589d3136a43f08fa0fd41350db3b24e4"
+    },
+    {
+      "extension": ".minigsf",
+      "priority_group": "32-bit consoles",
+      "backend": "GSF",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Gameboy%20Sound%20Format/XTD/aas-demo-0000.minigsf",
+      "path": "chiptunes/Nintendo Game Boy Advance/10_aas-demo-0000.minigsf",
+      "bytes": 201,
+      "sha256": "ba9f5bec7f0e74b289b2930817b43f697b75f46f841d1d1d6409e232cf6e182b"
+    },
+    {
+      "extension": ".gsf",
+      "priority_group": "32-bit consoles",
+      "backend": "GSF",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Gameboy%20Sound%20Format/-%20unknown/Card%20e-Reader/ereader-0053.gsf",
+      "path": "chiptunes/Nintendo Game Boy Advance/10_ereader-0053.gsf",
+      "bytes": 132,
+      "sha256": "ca18580a5b3733ff2491a20ccadf3092e25995e1dac459954e82a6d2fa4b1d48"
+    },
+    {
+      "extension": ".gsflib",
+      "priority_group": "32-bit consoles",
+      "backend": "GSF",
+      "repository": "Modland companion library",
+      "source_url": "https://ftp.modland.com/pub/modules/Gameboy%20Sound%20Format/Bob%20Hass/aas_demo.gsflib",
+      "path": "chiptunes/Nintendo Game Boy Advance/aas_demo.gsflib",
+      "bytes": 1319619,
+      "sha256": "67fd66c56c6a35f493c819b69c6bc099efefc72cabfc04b8c96890d3d1266838",
+      "companion_library": true
+    },
+    {
+      "extension": ".gsflib",
+      "priority_group": "32-bit consoles",
+      "backend": "GSF",
+      "repository": "Modland companion library",
+      "source_url": "https://ftp.modland.com/pub/modules/Gameboy%20Sound%20Format/-%20unknown/Card%20e-Reader/ereader.gsflib",
+      "path": "chiptunes/Nintendo Game Boy Advance/ereader.gsflib",
+      "bytes": 191581,
+      "sha256": "ef2a347461f5491ccffb6cb79238494e9c7b6a7c28515d15988e967db7a798ca",
+      "companion_library": true
+    },
+    {
+      "extension": ".gsflib",
+      "priority_group": "32-bit consoles",
+      "backend": "GSF",
+      "repository": "Modland companion library",
+      "source_url": "https://ftp.modland.com/pub/modules/Gameboy%20Sound%20Format/BIT/payback.gsflib",
+      "path": "chiptunes/Nintendo Game Boy Advance/payback.gsflib",
+      "bytes": 1139624,
+      "sha256": "fc8eca458248a25dc6f19515316b7da0c134cd8c20f3a53acc372379bed48b2d",
+      "companion_library": true
+    },
+    {
+      "extension": ".gbs",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Gameboy%20Sound%20System/-%20unknown/4-in-1%20funpak%201.gbs",
+      "path": "chiptunes/Nintendo Game Boy/01_4-in-1 funpak 1.gbs",
+      "bytes": 4780,
+      "sha256": "c556ab5248c2d6c437286c20c25cbee90c7c2ab1c9dbc2b4693eeaaa38f3bfca"
+    },
+    {
+      "extension": ".gbs",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Gameboy%20Sound%20System/-%20unknown/4-in-1%20funpak%202.gbs",
+      "path": "chiptunes/Nintendo Game Boy/02_4-in-1 funpak 2.gbs",
+      "bytes": 4280,
+      "sha256": "67db24003c25e647b7ccf536f30c1f909a8dc94ff2206252bd9dba485a7c2e8f"
+    },
+    {
+      "extension": ".gbs",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Gameboy%20Sound%20System/-%20unknown/action%20man%20-%20search%20for%20base%20x.gbs",
+      "path": "chiptunes/Nintendo Game Boy/03_action man - search for base x.gbs",
+      "bytes": 41704,
+      "sha256": "d0e2ccce0059fe4abc4bd380c0b240101619f1c426ffe587882384877b803b4f"
+    },
+    {
+      "extension": ".gbs",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Gameboy%20Sound%20System/-%20unknown/adventure%20island.gbs",
+      "path": "chiptunes/Nintendo Game Boy/04_adventure island.gbs",
+      "bytes": 16624,
+      "sha256": "d4074453ef697b453d1b8144c037276b63f54294837ddaa220a2b0a7c66ef01b"
+    },
+    {
+      "extension": ".gbs",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Gameboy%20Sound%20System/-%20unknown/aero%20star.gbs",
+      "path": "chiptunes/Nintendo Game Boy/05_aero star.gbs",
+      "bytes": 16272,
+      "sha256": "b97ed9d6fc1c88ad3121fa8e3712b01158591f8a0c8fe2dd33df04cae819abcf"
+    },
+    {
+      "extension": ".gbs",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Gameboy%20Sound%20System/-%20unknown/after%20burst.gbs",
+      "path": "chiptunes/Nintendo Game Boy/06_after burst.gbs",
+      "bytes": 16267,
+      "sha256": "ec95d17aac5b7faf3886f7dfeeb150bee69ef219203a594c776e58985b1286d7"
+    },
+    {
+      "extension": ".gbs",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Gameboy%20Sound%20System/-%20unknown/aladdin.gbs",
+      "path": "chiptunes/Nintendo Game Boy/07_aladdin.gbs",
+      "bytes": 12605,
+      "sha256": "3579abaeb5d224600e8d4b510c2c81443fff234abee210ad77eaa7da65bfa26e"
+    },
+    {
+      "extension": ".gbs",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Gameboy%20Sound%20System/-%20unknown/alice%20in%20wonderland.gbs",
+      "path": "chiptunes/Nintendo Game Boy/08_alice in wonderland.gbs",
+      "bytes": 56256,
+      "sha256": "bc0a178db59e353f7f654fff71a17c5a9b9d6b1372bc1bc0a7a7ad05cc8a2d2b"
+    },
+    {
+      "extension": ".gbs",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Gameboy%20Sound%20System/-%20unknown/alien%203.gbs",
+      "path": "chiptunes/Nintendo Game Boy/09_alien 3.gbs",
+      "bytes": 5136,
+      "sha256": "a45e88e8a6f457ba12a71e0bd30168c6bc2bffae7cd72f8416cbc301c46f6702"
+    },
+    {
+      "extension": ".gbs",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Gameboy%20Sound%20System/-%20unknown/alleyway.gbs",
+      "path": "chiptunes/Nintendo Game Boy/10_alleyway.gbs",
+      "bytes": 6032,
+      "sha256": "9b56c353cf596637b617eb5c825465ffb9c0009fab0d8273e8f7211c1d1a46f6"
+    },
+    {
+      "extension": ".nsf",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Nintendo%20Sound%20Format/-%20unknown/10-yard%20fight.nsf",
+      "path": "chiptunes/Nintendo NES/01_10-yard fight.nsf",
+      "bytes": 1380,
+      "sha256": "ce43a8a5c8b20bad910404ff3e9d0835bbc781537659eaaecd0131c886d9b57d"
+    },
+    {
+      "extension": ".nsfe",
+      "repository": "Disch NSFe Archive",
+      "source_url": "https://disch.zophar.net/nsfe/1943.rar",
+      "path": "chiptunes/Nintendo NES/01_1943.nsfe",
+      "bytes": 17055,
+      "sha256": "24520b9dffffcda59d7957013817d421970d99f535f81fb156078d1616a998c5"
+    },
+    {
+      "extension": ".nsf",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Nintendo%20Sound%20Format/-%20unknown/100%20man%20%24%20kid%20-%20maboroshi%20no%20teiou%20hen.nsf",
+      "path": "chiptunes/Nintendo NES/02_100 man $ kid - maboroshi no teiou hen.nsf",
+      "bytes": 14497,
+      "sha256": "5b7f183c5e62a9b8d42392e3ca909d210a713cc7af11923aef9e6fb3135210f6"
+    },
+    {
+      "extension": ".nsfe",
+      "repository": "Disch NSFe Archive",
+      "source_url": "https://disch.zophar.net/nsfe/AdventuresintheMagicKingdom.rar",
+      "path": "chiptunes/Nintendo NES/02_Adventures In The Magic Kingdom.nsfe",
+      "bytes": 16840,
+      "sha256": "35af0df6e4d6716d98442b523c14a8e8984972eac4d949c5127313caf6c5c2a7"
+    },
+    {
+      "extension": ".nsf",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Nintendo%20Sound%20Format/-%20unknown/100-in-1-contra%20function%2016.nsf",
+      "path": "chiptunes/Nintendo NES/03_100-in-1-contra function 16.nsf",
+      "bytes": 6743,
+      "sha256": "0bf2e9239d141861a44558c7fa9a4a991207b2c0b178766da60b5dae458dadf8"
+    },
+    {
+      "extension": ".nsfe",
+      "repository": "Disch NSFe Archive",
+      "source_url": "https://disch.zophar.net/nsfe/AdventuresofLolo.rar",
+      "path": "chiptunes/Nintendo NES/03_Adventures of Lolo.nsfe",
+      "bytes": 9211,
+      "sha256": "e9a1eacead17101c0eb702aba0221d3cfb75af01b0b8b2eadd387f7a3d0704fb"
+    },
+    {
+      "extension": ".nsf",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Nintendo%20Sound%20Format/-%20unknown/10000000-in-1%20%28menu%29.nsf",
+      "path": "chiptunes/Nintendo NES/04_10000000-in-1 (menu).nsf",
+      "bytes": 13402,
+      "sha256": "283e0ace83c31d5f5940c7a5c8c3ddf2404974790bb329db26fc393fbcc4a808"
+    },
+    {
+      "extension": ".nsfe",
+      "repository": "Disch NSFe Archive",
+      "source_url": "https://disch.zophar.net/nsfe/AIBomb.rar",
+      "path": "chiptunes/Nintendo NES/04_Artificial Intelligence Bomb.nsfe",
+      "bytes": 32747,
+      "sha256": "e5c3c75046252494aed5273b68cfbecde48ffc88e86c9eeb698d38e3393c484a"
+    },
+    {
+      "extension": ".nsf",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Nintendo%20Sound%20Format/-%20unknown/1942.nsf",
+      "path": "chiptunes/Nintendo NES/05_1942.nsf",
+      "bytes": 24800,
+      "sha256": "d6070e1daddc175f3bcaad758f283af5c8ed61c371ccc63e37b32ef7c4bedb7b"
+    },
+    {
+      "extension": ".nsfe",
+      "repository": "Disch NSFe Archive",
+      "source_url": "https://disch.zophar.net/nsfe/AISenshiNicole.rar",
+      "path": "chiptunes/Nintendo NES/05_T_AiSenshiNicole_BGM1.nsfe",
+      "bytes": 16363,
+      "sha256": "47b61693f9e3aff462a30b68a1011996d5d423af79b253334ec6c9ef2beb0c7c"
+    },
+    {
+      "extension": ".nsf",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Nintendo%20Sound%20Format/-%20unknown/1943%20-%20the%20battle%20of%20midway.nsf",
+      "path": "chiptunes/Nintendo NES/06_1943 - the battle of midway.nsf",
+      "bytes": 16512,
+      "sha256": "ae15da5ad1bb0730de14713797d7e3c17c035daaf59c004e6f2239ccbcadf690"
+    },
+    {
+      "extension": ".nsfe",
+      "repository": "Disch NSFe Archive",
+      "source_url": "https://disch.zophar.net/nsfe/AkumajouDensetsu.rar",
+      "path": "chiptunes/Nintendo NES/06_Akumajou Densetsu.nsfe",
+      "bytes": 54215,
+      "sha256": "1f33fac28afc0e4cecb4ef84f3c6fe7c08997a7bb739e5e9a344cddfca67fa9b"
+    },
+    {
+      "extension": ".nsf",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Nintendo%20Sound%20Format/-%20unknown/1943%20attack%20enemy%20ship%201.nsf",
+      "path": "chiptunes/Nintendo NES/07_1943 attack enemy ship 1.nsf",
+      "bytes": 8192,
+      "sha256": "5267597e074ebd3ed48c3e2244d9431a4df01602691173a9be2e554e53bd40a1"
+    },
+    {
+      "extension": ".nsfe",
+      "repository": "Disch NSFe Archive",
+      "source_url": "https://disch.zophar.net/nsfe/AkumajouDraculaVRC7.rar",
+      "path": "chiptunes/Nintendo NES/07_T_AkumajouDracula_CrossYourHeart_VRC7Ver.nsfe",
+      "bytes": 24628,
+      "sha256": "5bfbe744cec6e31c9de1066bc74fc95b10aa54b2964c1a8bd23febba1f82d681"
+    },
+    {
+      "extension": ".nsf",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Nintendo%20Sound%20Format/-%20unknown/1991%20du%20ma%20racing.nsf",
+      "path": "chiptunes/Nintendo NES/08_1991 du ma racing.nsf",
+      "bytes": 32890,
+      "sha256": "d7a6513e222325b9423c723067ba4d9a9ab78c28482aeacbc6f2a7941e3f5b10"
+    },
+    {
+      "extension": ".nsfe",
+      "repository": "Disch NSFe Archive",
+      "source_url": "https://disch.zophar.net/nsfe/ArgosNoSenshi.rar",
+      "path": "chiptunes/Nintendo NES/08_Argos No Senshi.nsfe",
+      "bytes": 8564,
+      "sha256": "bdf4f581ef2ad027df1429f7fdedd6989bdb2ee8710fbc4e2fee139fa9e07478"
+    },
+    {
+      "extension": ".nsf",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Nintendo%20Sound%20Format/-%20unknown/1999.nsf",
+      "path": "chiptunes/Nintendo NES/09_1999.nsf",
+      "bytes": 32895,
+      "sha256": "206d93ca7d2ccbb52aeb43488972455b7a36c87a1941410f5e4d50d11c2946f8"
+    },
+    {
+      "extension": ".nsfe",
+      "repository": "Disch NSFe Archive",
+      "source_url": "https://disch.zophar.net/nsfe/Astyanax.rar",
+      "path": "chiptunes/Nintendo NES/09_Astyanax.nsfe",
+      "bytes": 16108,
+      "sha256": "72d59d92f141ea9092abdeb6e6cc9f00a676a57953b90a5f25aedc2b6c5dce65"
+    },
+    {
+      "extension": ".nsf",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Nintendo%20Sound%20Format/-%20unknown/2in1%20cosmo%20cop%20light%20gun.nsf",
+      "path": "chiptunes/Nintendo NES/10_2in1 cosmo cop light gun.nsf",
+      "bytes": 16512,
+      "sha256": "098da05e6ad4971b8327417effe88de59a9bd7d53abc1cc18c0f862f630c8cf1"
+    },
+    {
+      "extension": ".nsfe",
+      "repository": "Disch NSFe Archive",
+      "source_url": "https://disch.zophar.net/nsfe/BakusoKyodai.rar",
+      "path": "chiptunes/Nintendo NES/10_T_GetTheWorld!_NesVersion.nsfe",
+      "bytes": 16439,
+      "sha256": "66fc4c21e55b428dc93048366374faf8bcc12f8c5e4bae2453bffac80ed412be"
+    },
+    {
+      "extension": ".spc",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Nintendo%20SPC/CTrix/smash%20it.spc",
+      "path": "chiptunes/Nintendo SNES/01_smash it.spc",
+      "bytes": 66048,
+      "sha256": "8e35fcef3a7d82738c1282a6680e39ec06361e94ffb1921270a940c04513f761"
+    },
+    {
+      "extension": ".spc",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Nintendo%20SPC/Lode%20Runner%20Twin/lrt-01.spc",
+      "path": "chiptunes/Nintendo SNES/02_lrt-01.spc",
+      "bytes": 66096,
+      "sha256": "24ddf016fca2e399917896ad503719c14fba5dc6ab8cbe2c27dc1c5d452c7485"
+    },
+    {
+      "extension": ".spc",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Nintendo%20SPC/Lode%20Runner%20Twin/lrt-02.spc",
+      "path": "chiptunes/Nintendo SNES/03_lrt-02.spc",
+      "bytes": 66096,
+      "sha256": "f62bd34d38cf2f7818071edf4cadf009897367ff588d3a5a696199751738f2b5"
+    },
+    {
+      "extension": ".spc",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Nintendo%20SPC/Lode%20Runner%20Twin/lrt-03.spc",
+      "path": "chiptunes/Nintendo SNES/04_lrt-03.spc",
+      "bytes": 66096,
+      "sha256": "f637e85f3754a61daed05efe60cae922f6aef9aebba0a39ba16a69ec73dc48af"
+    },
+    {
+      "extension": ".spc",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Nintendo%20SPC/Lode%20Runner%20Twin/lrt-04.spc",
+      "path": "chiptunes/Nintendo SNES/05_lrt-04.spc",
+      "bytes": 66096,
+      "sha256": "8ee72c8c18134140f5d5eecc9a5a69779a228e17f8c0dc546bb097c172dca31b"
+    },
+    {
+      "extension": ".spc",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Nintendo%20SPC/Lode%20Runner%20Twin/lrt-05.spc",
+      "path": "chiptunes/Nintendo SNES/06_lrt-05.spc",
+      "bytes": 66096,
+      "sha256": "6a56a6154d738142de78d756fc376488e43b8c1b7231085fc50f84aa0059b9e3"
+    },
+    {
+      "extension": ".spc",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Nintendo%20SPC/Lode%20Runner%20Twin/lrt-06.spc",
+      "path": "chiptunes/Nintendo SNES/07_lrt-06.spc",
+      "bytes": 66096,
+      "sha256": "0597e615df3211455f565967285773a55f901ba171433289a96b5d67d0809c3b"
+    },
+    {
+      "extension": ".spc",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Nintendo%20SPC/Lode%20Runner%20Twin/lrt-07.spc",
+      "path": "chiptunes/Nintendo SNES/08_lrt-07.spc",
+      "bytes": 66096,
+      "sha256": "b9d798d18d353210768c8b998fa535bfa46aee3760de60856b29cb39a0ebe9bf"
+    },
+    {
+      "extension": ".spc",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Nintendo%20SPC/Lode%20Runner%20Twin/lrt-08.spc",
+      "path": "chiptunes/Nintendo SNES/09_lrt-08.spc",
+      "bytes": 66096,
+      "sha256": "8977350225e3c205d2eebd9b52c19dfa4122ff9d4f09d6867a5cfdb50c07fddb"
+    },
+    {
+      "extension": ".spc",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Nintendo%20SPC/Lode%20Runner%20Twin/lrt-09.spc",
+      "path": "chiptunes/Nintendo SNES/10_lrt-09.spc",
+      "bytes": 66096,
+      "sha256": "1b4accd6f21c52bb726948bb04ea45906edaa5e75f890edf85d1ba17a24ea026"
+    },
+    {
+      "extension": ".dsf",
+      "priority_group": "arcade and similar",
+      "backend": "DSF",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Dreamcast%20Sound%20Format/-%20unknown/18%20Wheeler%20-%20American%20Pro%20Trucker%20%28Naomi%29/18wheelr-001-08.dsf",
+      "path": "chiptunes/Sega Dreamcast/01_18wheelr-001-08.dsf",
+      "bytes": 726299,
+      "sha256": "37e2c7b337b865fd4ef5d7c0f70e0f58fcd9d54667108a20bb7d522deafd8bd3"
+    },
+    {
+      "extension": ".minidsf",
+      "priority_group": "arcade and similar",
+      "backend": "DSF",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Dreamcast%20Sound%20Format/-%20unknown/Airline%20Pilots%20Deluxe%20%28Naomi%29/alpiltdx-001-02-00-00.minidsf",
+      "path": "chiptunes/Sega Dreamcast/01_alpiltdx-001-02-00-00.minidsf",
+      "bytes": 135,
+      "sha256": "aea824751681a658e54f4cebb94c7d0cf97ac4725272ca27b4a97ccc7430ac10"
+    },
+    {
+      "extension": ".dsf",
+      "priority_group": "arcade and similar",
+      "backend": "DSF",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Dreamcast%20Sound%20Format/-%20unknown/18%20Wheeler%20-%20American%20Pro%20Trucker%20%28Naomi%29/18wheelr-003-05.dsf",
+      "path": "chiptunes/Sega Dreamcast/02_18wheelr-003-05.dsf",
+      "bytes": 836021,
+      "sha256": "5c9a0c34f8580d39fa3834cb8285f0d30985ee70a9e5ca9dfa9bd9302b399e08"
+    },
+    {
+      "extension": ".minidsf",
+      "priority_group": "arcade and similar",
+      "backend": "DSF",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Dreamcast%20Sound%20Format/-%20unknown/Airline%20Pilots%20Deluxe%20%28Naomi%29/alpiltdx-001-02-00-01.minidsf",
+      "path": "chiptunes/Sega Dreamcast/02_alpiltdx-001-02-00-01.minidsf",
+      "bytes": 135,
+      "sha256": "4cd81e8ef1edb4cb940ef9a8c2f7789cb5700f00b8092bef43dd073ee7a7d8aa"
+    },
+    {
+      "extension": ".dsf",
+      "priority_group": "arcade and similar",
+      "backend": "DSF",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Dreamcast%20Sound%20Format/-%20unknown/18%20Wheeler%20-%20American%20Pro%20Trucker%20%28Naomi%29/18wheelr-004-01.dsf",
+      "path": "chiptunes/Sega Dreamcast/03_18wheelr-004-01.dsf",
+      "bytes": 519527,
+      "sha256": "b68dd8393e557ee155cf5fc380ac0d35f74bb111d0b26e7b7c08145183e25ced"
+    },
+    {
+      "extension": ".minidsf",
+      "priority_group": "arcade and similar",
+      "backend": "DSF",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Dreamcast%20Sound%20Format/-%20unknown/Airline%20Pilots%20Deluxe%20%28Naomi%29/alpiltdx-001-02-00-02.minidsf",
+      "path": "chiptunes/Sega Dreamcast/03_alpiltdx-001-02-00-02.minidsf",
+      "bytes": 135,
+      "sha256": "1f5303636cc16ba87e51808eb955a2f7991b917cded4f629096b61abc10d3934"
+    },
+    {
+      "extension": ".dsf",
+      "priority_group": "arcade and similar",
+      "backend": "DSF",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Dreamcast%20Sound%20Format/-%20unknown/18%20Wheeler%20-%20American%20Pro%20Trucker%20%28Naomi%29/18wheelr-005-07.dsf",
+      "path": "chiptunes/Sega Dreamcast/04_18wheelr-005-07.dsf",
+      "bytes": 725866,
+      "sha256": "0bc648b761bf579875386407229dd25707c1833941816e701a5cee46e4b579a6"
+    },
+    {
+      "extension": ".minidsf",
+      "priority_group": "arcade and similar",
+      "backend": "DSF",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Dreamcast%20Sound%20Format/-%20unknown/Airline%20Pilots%20Deluxe%20%28Naomi%29/alpiltdx-001-02-00-03.minidsf",
+      "path": "chiptunes/Sega Dreamcast/04_alpiltdx-001-02-00-03.minidsf",
+      "bytes": 135,
+      "sha256": "1b5e3d2139833865627104933bb967153e05e1caee4af7009eed994b7c0b22d7"
+    },
+    {
+      "extension": ".dsf",
+      "priority_group": "arcade and similar",
+      "backend": "DSF",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Dreamcast%20Sound%20Format/-%20unknown/18%20Wheeler%20-%20American%20Pro%20Trucker%20%28Naomi%29/18wheelr-006-27.dsf",
+      "path": "chiptunes/Sega Dreamcast/05_18wheelr-006-27.dsf",
+      "bytes": 918689,
+      "sha256": "c3ecdcb4d02dd44d9de0462417336c8176df3f16dbdecdc309f4d7b7922fdf20"
+    },
+    {
+      "extension": ".minidsf",
+      "priority_group": "arcade and similar",
+      "backend": "DSF",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Dreamcast%20Sound%20Format/-%20unknown/Airline%20Pilots%20Deluxe%20%28Naomi%29/alpiltdx-001-02-00-04.minidsf",
+      "path": "chiptunes/Sega Dreamcast/05_alpiltdx-001-02-00-04.minidsf",
+      "bytes": 135,
+      "sha256": "322c5c6f0579541562cb1552509caa87f885a28927ef8522325e43e7aea6adaf"
+    },
+    {
+      "extension": ".dsf",
+      "priority_group": "arcade and similar",
+      "backend": "DSF",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Dreamcast%20Sound%20Format/-%20unknown/18%20Wheeler%20-%20American%20Pro%20Trucker%20%28Naomi%29/18wheelr-007-26.dsf",
+      "path": "chiptunes/Sega Dreamcast/06_18wheelr-007-26.dsf",
+      "bytes": 310481,
+      "sha256": "c5c670b7bd666f206c210931e153fc835c384aa04e37f16e987e212207fbef75"
+    },
+    {
+      "extension": ".minidsf",
+      "priority_group": "arcade and similar",
+      "backend": "DSF",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Dreamcast%20Sound%20Format/-%20unknown/Airline%20Pilots%20Deluxe%20%28Naomi%29/alpiltdx-001-02-00-05.minidsf",
+      "path": "chiptunes/Sega Dreamcast/06_alpiltdx-001-02-00-05.minidsf",
+      "bytes": 135,
+      "sha256": "fad045cad03e64f09fae9153ded4ec9c2123c02b1f9072c1b6230dda29ac0ffe"
+    },
+    {
+      "extension": ".dsf",
+      "priority_group": "arcade and similar",
+      "backend": "DSF",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Dreamcast%20Sound%20Format/-%20unknown/18%20Wheeler%20-%20American%20Pro%20Trucker%20%28Naomi%29/18wheelr-008-24.dsf",
+      "path": "chiptunes/Sega Dreamcast/07_18wheelr-008-24.dsf",
+      "bytes": 215033,
+      "sha256": "037062c850c664f5eb169816e6c2798d16e35bba3269b6aeac21b3cf057752a8"
+    },
+    {
+      "extension": ".minidsf",
+      "priority_group": "arcade and similar",
+      "backend": "DSF",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Dreamcast%20Sound%20Format/-%20unknown/Airline%20Pilots%20Deluxe%20%28Naomi%29/alpiltdx-001-02-00-06.minidsf",
+      "path": "chiptunes/Sega Dreamcast/07_alpiltdx-001-02-00-06.minidsf",
+      "bytes": 135,
+      "sha256": "555ccba49a97cb02a7eb822f05e0dd4a5d6e819938ca28394ab3f986a1cbcb17"
+    },
+    {
+      "extension": ".dsf",
+      "priority_group": "arcade and similar",
+      "backend": "DSF",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Dreamcast%20Sound%20Format/-%20unknown/18%20Wheeler%20-%20American%20Pro%20Trucker%20%28Naomi%29/18wheelr-009-23.dsf",
+      "path": "chiptunes/Sega Dreamcast/08_18wheelr-009-23.dsf",
+      "bytes": 601676,
+      "sha256": "1a4dd156e06ce3202e611d09450997c5a2e3ab47245a46bf8a20f7972d005c55"
+    },
+    {
+      "extension": ".minidsf",
+      "priority_group": "arcade and similar",
+      "backend": "DSF",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Dreamcast%20Sound%20Format/-%20unknown/Airline%20Pilots%20Deluxe%20%28Naomi%29/alpiltdx-001-02-00-07.minidsf",
+      "path": "chiptunes/Sega Dreamcast/08_alpiltdx-001-02-00-07.minidsf",
+      "bytes": 135,
+      "sha256": "a7c0b24ed9f28ffbf09cf59ead6dfdfad34db2bc8c1e902f03ae3cdef3f1b3f4"
+    },
+    {
+      "extension": ".dsf",
+      "priority_group": "arcade and similar",
+      "backend": "DSF",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Dreamcast%20Sound%20Format/-%20unknown/18%20Wheeler%20-%20American%20Pro%20Trucker%20%28Naomi%29/18wheelr-010-0A.dsf",
+      "path": "chiptunes/Sega Dreamcast/09_18wheelr-010-0A.dsf",
+      "bytes": 928298,
+      "sha256": "5ca2ec59c2a6785a2c2384b0efbe25d094805ad474418df399bf02c44ceb4684"
+    },
+    {
+      "extension": ".minidsf",
+      "priority_group": "arcade and similar",
+      "backend": "DSF",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Dreamcast%20Sound%20Format/-%20unknown/Airline%20Pilots%20Deluxe%20%28Naomi%29/alpiltdx-001-02-00-08.minidsf",
+      "path": "chiptunes/Sega Dreamcast/09_alpiltdx-001-02-00-08.minidsf",
+      "bytes": 135,
+      "sha256": "6172c4ba4a3f196e97af9f26b73f0888cae128dc52cfc05722158bda4c723d2a"
+    },
+    {
+      "extension": ".dsf",
+      "priority_group": "arcade and similar",
+      "backend": "DSF",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Dreamcast%20Sound%20Format/-%20unknown/18%20Wheeler%20-%20American%20Pro%20Trucker%20%28Naomi%29/18wheelr-013-0B.dsf",
+      "path": "chiptunes/Sega Dreamcast/10_18wheelr-013-0B.dsf",
+      "bytes": 854993,
+      "sha256": "eefcd541fcf34a6ac02403114813da9a9781c2580593b9ab8af4323380acf8ba"
+    },
+    {
+      "extension": ".minidsf",
+      "priority_group": "arcade and similar",
+      "backend": "DSF",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Dreamcast%20Sound%20Format/-%20unknown/Airline%20Pilots%20Deluxe%20%28Naomi%29/alpiltdx-001-02-00-09.minidsf",
+      "path": "chiptunes/Sega Dreamcast/10_alpiltdx-001-02-00-09.minidsf",
+      "bytes": 135,
+      "sha256": "59482bf0df7c5cec25e530deecd41ef60519fe5675408f6327dcddff94ebf920"
+    },
+    {
+      "extension": ".dsflib",
+      "priority_group": "arcade and similar",
+      "backend": "DSF",
+      "repository": "Modland companion library",
+      "source_url": "https://ftp.modland.com/pub/modules/Dreamcast%20Sound%20Format/-%20unknown/Airline%20Pilots%20Deluxe%20%28Naomi%29/alpiltdx_001_02.dsflib",
+      "path": "chiptunes/Sega Dreamcast/alpiltdx_001_02.dsflib",
+      "bytes": 870617,
+      "sha256": "289f172d0f0f423dd4e63c858198c3991cb3d236f29e6dc2678dcfa77af623be",
+      "companion_library": true
+    },
+    {
+      "extension": ".gym",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Megadrive%20GYM/-%20unknown/-%20misc/sample.gym (GYMX zlib payload normalized)",
+      "path": "chiptunes/Sega Genesis/01_sample.gym",
+      "bytes": 460949,
+      "sha256": "0f7a6acfda5f880ac1b842c67d329ba345e9ac2aa9ded69894490d28efcb0ec4"
+    },
+    {
+      "extension": ".gym",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Megadrive%20GYM/-%20unknown/-%20misc/sega%20cd%20hoax%20bios.gym (GYMX zlib payload normalized)",
+      "path": "chiptunes/Sega Genesis/02_sega cd hoax bios.gym",
+      "bytes": 187307,
+      "sha256": "c1780db55a21761e54e7d7aebef18916f288f2ffbcf7c4cc04f1de1bbc173be6"
+    },
+    {
+      "extension": ".gym",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Megadrive%20GYM/-%20unknown/Art%20Alive/art%20alive.gym (GYMX zlib payload normalized)",
+      "path": "chiptunes/Sega Genesis/03_art alive.gym",
+      "bytes": 14084,
+      "sha256": "80a16592288bfa1328d7b05cbd5cccc7b03e3773c6cba66041097ec37cca38f0"
+    },
+    {
+      "extension": ".gym",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Megadrive%20GYM/-%20unknown/Awesome%20Possum/boss.gym (GYMX zlib payload normalized)",
+      "path": "chiptunes/Sega Genesis/04_boss.gym",
+      "bytes": 56643,
+      "sha256": "2844c64adc71e1cc0622d64f8952db5ae3bb6ed2603a3f8d018d6ef8bdfcfae2"
+    },
+    {
+      "extension": ".gym",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Megadrive%20GYM/-%20unknown/Awesome%20Possum/endlevel.gym (GYMX zlib payload normalized)",
+      "path": "chiptunes/Sega Genesis/05_endlevel.gym",
+      "bytes": 30244,
+      "sha256": "05cdfa0aa05585c31edef41ab288757ad56fb796a55d463cb071847567a02f64"
+    },
+    {
+      "extension": ".gym",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Megadrive%20GYM/-%20unknown/Awesome%20Possum/extra.gym (GYMX zlib payload normalized)",
+      "path": "chiptunes/Sega Genesis/06_extra.gym",
+      "bytes": 14371,
+      "sha256": "abe75110c092a827581557f19ce2b2ba17a9e53fffaf94d69cc8a39bce2fbbd3"
+    },
+    {
+      "extension": ".gym",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Megadrive%20GYM/-%20unknown/Awesome%20Possum/gameover.gym (GYMX zlib payload normalized)",
+      "path": "chiptunes/Sega Genesis/07_gameover.gym",
+      "bytes": 9842,
+      "sha256": "5be14d58806310b7ed24f32dfcecd255f806286676c9d109876baf6a8cea3e83"
+    },
+    {
+      "extension": ".gym",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Megadrive%20GYM/-%20unknown/Awesome%20Possum/level1.gym (GYMX zlib payload normalized)",
+      "path": "chiptunes/Sega Genesis/08_level1.gym",
+      "bytes": 102625,
+      "sha256": "7c61c47e2a9320bc8f4bd418497202b5e5872fdc04cb67d34f6f0eb0898d6f09"
+    },
+    {
+      "extension": ".gym",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Megadrive%20GYM/-%20unknown/Awesome%20Possum/level2.gym (GYMX zlib payload normalized)",
+      "path": "chiptunes/Sega Genesis/09_level2.gym",
+      "bytes": 96828,
+      "sha256": "6dcfa8afc1233df46c2281a7a9d5c3211b6107176da14b41f600af9ee1ad9be4"
+    },
+    {
+      "extension": ".gym",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Megadrive%20GYM/-%20unknown/Awesome%20Possum/level3.gym (GYMX zlib payload normalized)",
+      "path": "chiptunes/Sega Genesis/10_level3.gym",
+      "bytes": 97095,
+      "sha256": "aa2146b9fee916916dd535316bd3d2f087737f24e710092f03eb85d23115fff9"
+    },
+    {
+      "extension": ".ssf",
+      "priority_group": "arcade and similar",
+      "backend": "SSF",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Saturn%20Sound%20Format/-%20unknown/6%20Inch%20My%20Darling/bgm-000.ssf",
+      "path": "chiptunes/Sega Saturn/01_bgm-000.ssf",
+      "bytes": 153360,
+      "sha256": "4bdc8b16accc06ae008a07a8caa2f8f81a2b0e3945e79d8cc30d0bde1f950691"
+    },
+    {
+      "extension": ".minissf",
+      "priority_group": "arcade and similar",
+      "backend": "SSF",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Saturn%20Sound%20Format/-%20unknown/6%20Inch%20My%20Darling/bgm-069-00-00.minissf",
+      "path": "chiptunes/Sega Saturn/01_bgm-069-00-00.minissf",
+      "bytes": 169,
+      "sha256": "8c979782b4f56ac7e88247559487897101829ed5e47c2b82ea5f05f998575707"
+    },
+    {
+      "extension": ".ssf",
+      "priority_group": "arcade and similar",
+      "backend": "SSF",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Saturn%20Sound%20Format/-%20unknown/6%20Inch%20My%20Darling/bgm-001.ssf",
+      "path": "chiptunes/Sega Saturn/02_bgm-001.ssf",
+      "bytes": 97052,
+      "sha256": "44d71de3f9daa7b21ca1925b0769615c61ac13e38ccbac34d496a954c935805f"
+    },
+    {
+      "extension": ".minissf",
+      "priority_group": "arcade and similar",
+      "backend": "SSF",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Saturn%20Sound%20Format/-%20unknown/6%20Inch%20My%20Darling/bgm-069-00-01.minissf",
+      "path": "chiptunes/Sega Saturn/02_bgm-069-00-01.minissf",
+      "bytes": 170,
+      "sha256": "b0c54946f05b7ac4358c98cbd582a3c9f25ea73a93d64fd845658ec54c9017f5"
+    },
+    {
+      "extension": ".ssf",
+      "priority_group": "arcade and similar",
+      "backend": "SSF",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Saturn%20Sound%20Format/-%20unknown/6%20Inch%20My%20Darling/bgm-002.ssf",
+      "path": "chiptunes/Sega Saturn/03_bgm-002.ssf",
+      "bytes": 66402,
+      "sha256": "61f24bc585d3d78324595a0211747ac0687c633b2e84ee188002103aee5b5c25"
+    },
+    {
+      "extension": ".minissf",
+      "priority_group": "arcade and similar",
+      "backend": "SSF",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Saturn%20Sound%20Format/-%20unknown/6%20Inch%20My%20Darling/bgm-069-00-02.minissf",
+      "path": "chiptunes/Sega Saturn/03_bgm-069-00-02.minissf",
+      "bytes": 172,
+      "sha256": "47b6f8b46b4efaf4f3a9dc9de0b3bce1f986f654ace1e9b37befd21dfd40baec"
+    },
+    {
+      "extension": ".ssf",
+      "priority_group": "arcade and similar",
+      "backend": "SSF",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Saturn%20Sound%20Format/-%20unknown/6%20Inch%20My%20Darling/bgm-003.ssf",
+      "path": "chiptunes/Sega Saturn/04_bgm-003.ssf",
+      "bytes": 195071,
+      "sha256": "626dcefc8532eda50797a210c6febfbec0d830511d0df06ecd270faf0c347f5d"
+    },
+    {
+      "extension": ".minissf",
+      "priority_group": "arcade and similar",
+      "backend": "SSF",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Saturn%20Sound%20Format/-%20unknown/6%20Inch%20My%20Darling/bgm-069-00-03.minissf",
+      "path": "chiptunes/Sega Saturn/04_bgm-069-00-03.minissf",
+      "bytes": 172,
+      "sha256": "a270053e0b32bb871abdfc49c584958a74c6a21cca354706d69349c99d1f4a5e"
+    },
+    {
+      "extension": ".ssf",
+      "priority_group": "arcade and similar",
+      "backend": "SSF",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Saturn%20Sound%20Format/-%20unknown/6%20Inch%20My%20Darling/bgm-004.ssf",
+      "path": "chiptunes/Sega Saturn/05_bgm-004.ssf",
+      "bytes": 153988,
+      "sha256": "3484a4b1940ab11b0b62f23a2d5dcdf091312bc94ecff1f4f82baa7b66182342"
+    },
+    {
+      "extension": ".minissf",
+      "priority_group": "arcade and similar",
+      "backend": "SSF",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Saturn%20Sound%20Format/-%20unknown/Bomberman%20Wars/bgm-02-00-00.minissf",
+      "path": "chiptunes/Sega Saturn/05_bgm-02-00-00.minissf",
+      "bytes": 171,
+      "sha256": "66dac523785838be6aae343656ced8df78344b3ecc72691db0bb1575c8c3e900"
+    },
+    {
+      "extension": ".ssf",
+      "priority_group": "arcade and similar",
+      "backend": "SSF",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Saturn%20Sound%20Format/-%20unknown/6%20Inch%20My%20Darling/bgm-005.ssf",
+      "path": "chiptunes/Sega Saturn/06_bgm-005.ssf",
+      "bytes": 23319,
+      "sha256": "13d85d5b66b96546e5b5b70d36a7754b83ba129bc33ff5f5149b88f8996e4583"
+    },
+    {
+      "extension": ".minissf",
+      "priority_group": "arcade and similar",
+      "backend": "SSF",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Saturn%20Sound%20Format/-%20unknown/Bomberman%20Wars/bgm-02-00-01.minissf",
+      "path": "chiptunes/Sega Saturn/06_bgm-02-00-01.minissf",
+      "bytes": 172,
+      "sha256": "d000d4d2c0e6092a5cae8b6abf1aaface31dc8b01d715e6e40ee66005cfcb872"
+    },
+    {
+      "extension": ".ssf",
+      "priority_group": "arcade and similar",
+      "backend": "SSF",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Saturn%20Sound%20Format/-%20unknown/6%20Inch%20My%20Darling/bgm-006.ssf",
+      "path": "chiptunes/Sega Saturn/07_bgm-006.ssf",
+      "bytes": 155616,
+      "sha256": "d6dd1255312aa03f18de1b8066c1ef4224b8a45de9654103a2dc41fa47dd81a8"
+    },
+    {
+      "extension": ".minissf",
+      "priority_group": "arcade and similar",
+      "backend": "SSF",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Saturn%20Sound%20Format/-%20unknown/Bomberman%20Wars/bgm-02-00-02.minissf",
+      "path": "chiptunes/Sega Saturn/07_bgm-02-00-02.minissf",
+      "bytes": 173,
+      "sha256": "2b1bfbd42db7598e8279c83a7f2d528c88fe0e923e88103ad9d0756c914869f5"
+    },
+    {
+      "extension": ".ssf",
+      "priority_group": "arcade and similar",
+      "backend": "SSF",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Saturn%20Sound%20Format/-%20unknown/6%20Inch%20My%20Darling/bgm-007.ssf",
+      "path": "chiptunes/Sega Saturn/08_bgm-007.ssf",
+      "bytes": 77867,
+      "sha256": "6eeb66009b35c5bd4775a8b588b19f65d8dac85161998e41c1482a4d3153d7e3"
+    },
+    {
+      "extension": ".minissf",
+      "priority_group": "arcade and similar",
+      "backend": "SSF",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Saturn%20Sound%20Format/-%20unknown/Bomberman%20Wars/bgm-02-00-03.minissf",
+      "path": "chiptunes/Sega Saturn/08_bgm-02-00-03.minissf",
+      "bytes": 173,
+      "sha256": "69f0ba30d3e2bfce3c6413a5a2e7e5e2f6697b2a60ba92e9f5246705f02bd8ec"
+    },
+    {
+      "extension": ".ssf",
+      "priority_group": "arcade and similar",
+      "backend": "SSF",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Saturn%20Sound%20Format/-%20unknown/6%20Inch%20My%20Darling/bgm-008.ssf",
+      "path": "chiptunes/Sega Saturn/09_bgm-008.ssf",
+      "bytes": 198685,
+      "sha256": "b487a5dced0d69aa1e7a5dafe3a16185020a783af99888afc358f97c9404d72e"
+    },
+    {
+      "extension": ".minissf",
+      "priority_group": "arcade and similar",
+      "backend": "SSF",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Saturn%20Sound%20Format/-%20unknown/Bomberman%20Wars/bgm-02-00-04.minissf",
+      "path": "chiptunes/Sega Saturn/09_bgm-02-00-04.minissf",
+      "bytes": 174,
+      "sha256": "e1a376196f5888c2f210933aef1a611887389bb985d5f83e27a4244050e68659"
+    },
+    {
+      "extension": ".ssf",
+      "priority_group": "arcade and similar",
+      "backend": "SSF",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Saturn%20Sound%20Format/-%20unknown/6%20Inch%20My%20Darling/bgm-009.ssf",
+      "path": "chiptunes/Sega Saturn/10_bgm-009.ssf",
+      "bytes": 147013,
+      "sha256": "f19fbe92397676af71febea6882db8ae10dd57bd87a0c25573559993b24d45a3"
+    },
+    {
+      "extension": ".minissf",
+      "priority_group": "arcade and similar",
+      "backend": "SSF",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Saturn%20Sound%20Format/-%20unknown/Bomberman%20Wars/bgm-02-00-05.minissf",
+      "path": "chiptunes/Sega Saturn/10_bgm-02-00-05.minissf",
+      "bytes": 172,
+      "sha256": "4266813f924c832d4af7572c54cc36700a9f56dab8c796bc9735524ff028f7bb"
+    },
+    {
+      "extension": ".ssflib",
+      "priority_group": "arcade and similar",
+      "backend": "SSF",
+      "repository": "Modland companion library",
+      "source_url": "https://ftp.modland.com/pub/modules/Saturn%20Sound%20Format/-%20unknown/Bomberman%20Wars/BGM-02.ssflib",
+      "path": "chiptunes/Sega Saturn/BGM-02.ssflib",
+      "bytes": 359585,
+      "sha256": "84c86b7c07f45845711332b95741cba42d664b8ecc78143983b6be9b7caff47c",
+      "companion_library": true
+    },
+    {
+      "extension": ".ssflib",
+      "priority_group": "arcade and similar",
+      "backend": "SSF",
+      "repository": "Modland companion library",
+      "source_url": "https://ftp.modland.com/pub/modules/Saturn%20Sound%20Format/-%20unknown/6%20Inch%20My%20Darling/BGM-069.ssflib",
+      "path": "chiptunes/Sega Saturn/BGM-069.ssflib",
+      "bytes": 149128,
+      "sha256": "5c08485a1147d42035168ddfa0579ee0231f52bea6c53db7567db5a50c31d502",
+      "companion_library": true
+    },
+    {
+      "extension": ".ssflib",
+      "priority_group": "arcade and similar",
+      "backend": "SSF",
+      "repository": "Modland companion library",
+      "source_url": "https://ftp.modland.com/pub/modules/Saturn%20Sound%20Format/-%20unknown/6%20Inch%20My%20Darling/BGM-069.ssflib",
+      "path": "chiptunes/Sega Saturn/BGM-069.ssflib",
+      "bytes": 149128,
+      "sha256": "5c08485a1147d42035168ddfa0579ee0231f52bea6c53db7567db5a50c31d502",
+      "companion_library": true
+    },
+    {
+      "extension": ".minipsf2",
+      "priority_group": "32-bit consoles",
+      "backend": "PSF2",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Playstation%202%20Sound%20Format/-%20unknown/Bomberman%20Land%202/cddata0-001.minipsf2",
+      "path": "chiptunes/Sony PlayStation 2/01_cddata0-001.minipsf2",
+      "bytes": 300,
+      "sha256": "005339dfc73fa5181777a2d40bdc4dd4d8159d0d5c190de04de6bc3a710a4112"
+    },
+    {
+      "extension": ".psf2",
+      "priority_group": "32-bit consoles",
+      "backend": "PSF2",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Playstation%202%20Sound%20Format/-%20unknown/Ai%20Yori%20Aoshi/sound-0000.psf2",
+      "path": "chiptunes/Sony PlayStation 2/01_sound-0000.psf2",
+      "bytes": 415497,
+      "sha256": "aaac7255bab76753ec8af0d47a7b358911ab887019334f325ce5689c2f63fb3a"
+    },
+    {
+      "extension": ".minipsf2",
+      "priority_group": "32-bit consoles",
+      "backend": "PSF2",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Playstation%202%20Sound%20Format/-%20unknown/Bomberman%20Land%202/cddata0-002.minipsf2",
+      "path": "chiptunes/Sony PlayStation 2/02_cddata0-002.minipsf2",
+      "bytes": 300,
+      "sha256": "4ccef092a541bbb7ff63334da64f08ffadec5e6fce6bffd0527b37ce24238bfb"
+    },
+    {
+      "extension": ".psf2",
+      "priority_group": "32-bit consoles",
+      "backend": "PSF2",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Playstation%202%20Sound%20Format/-%20unknown/Ai%20Yori%20Aoshi/sound-0001.psf2",
+      "path": "chiptunes/Sony PlayStation 2/02_sound-0001.psf2",
+      "bytes": 444653,
+      "sha256": "f202407483e559cbf18dd4d10d9497b1191b306da240e7f1b1c9f4cec51f5c0e"
+    },
+    {
+      "extension": ".minipsf2",
+      "priority_group": "32-bit consoles",
+      "backend": "PSF2",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Playstation%202%20Sound%20Format/-%20unknown/Bomberman%20Land%202/cddata0-003.minipsf2",
+      "path": "chiptunes/Sony PlayStation 2/03_cddata0-003.minipsf2",
+      "bytes": 300,
+      "sha256": "322283fefd2dd1f82652f6b5b2a10cd1d33987feed3fda0b0c3460b5002d4eb8"
+    },
+    {
+      "extension": ".psf2",
+      "priority_group": "32-bit consoles",
+      "backend": "PSF2",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Playstation%202%20Sound%20Format/-%20unknown/Ai%20Yori%20Aoshi/sound-0002.psf2",
+      "path": "chiptunes/Sony PlayStation 2/03_sound-0002.psf2",
+      "bytes": 419165,
+      "sha256": "d6fc1f1d7b276dfcc5e40a3ff45aad9691c53905d6caed1f60199d6c159e8bdf"
+    },
+    {
+      "extension": ".minipsf2",
+      "priority_group": "32-bit consoles",
+      "backend": "PSF2",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Playstation%202%20Sound%20Format/-%20unknown/Bomberman%20Land%202/cddata0-004.minipsf2",
+      "path": "chiptunes/Sony PlayStation 2/04_cddata0-004.minipsf2",
+      "bytes": 300,
+      "sha256": "d9eda843bff57264796c18ea2e023081cdcb2b701941804177be5f714cf01a81"
+    },
+    {
+      "extension": ".psf2",
+      "priority_group": "32-bit consoles",
+      "backend": "PSF2",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Playstation%202%20Sound%20Format/-%20unknown/Ai%20Yori%20Aoshi/sound-0003.psf2",
+      "path": "chiptunes/Sony PlayStation 2/04_sound-0003.psf2",
+      "bytes": 420158,
+      "sha256": "e83eeab905d0ca724e2c9e6649d828ec8d8585658f63ba8149a2db7d15fa87ff"
+    },
+    {
+      "extension": ".minipsf2",
+      "priority_group": "32-bit consoles",
+      "backend": "PSF2",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Playstation%202%20Sound%20Format/-%20unknown/Bomberman%20Land%202/cddata0-005.minipsf2",
+      "path": "chiptunes/Sony PlayStation 2/05_cddata0-005.minipsf2",
+      "bytes": 302,
+      "sha256": "9ecde7ed2e742929caca0b3dba6bf66b0827dd562f886273a62abfe952a56681"
+    },
+    {
+      "extension": ".psf2",
+      "priority_group": "32-bit consoles",
+      "backend": "PSF2",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Playstation%202%20Sound%20Format/-%20unknown/Ai%20Yori%20Aoshi/sound-0004.psf2",
+      "path": "chiptunes/Sony PlayStation 2/05_sound-0004.psf2",
+      "bytes": 287260,
+      "sha256": "42f36aadeb96bb15364f5542608d5dd1f9ea85457bafda5e6ca513daf9ae8d6a"
+    },
+    {
+      "extension": ".minipsf2",
+      "priority_group": "32-bit consoles",
+      "backend": "PSF2",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Playstation%202%20Sound%20Format/-%20unknown/Bomberman%20Land%202/cddata0-006.minipsf2",
+      "path": "chiptunes/Sony PlayStation 2/06_cddata0-006.minipsf2",
+      "bytes": 300,
+      "sha256": "7ad6071d17493737af4f8568cd21d289e3d589772cdc8f1b9a0f16cb9c0a835b"
+    },
+    {
+      "extension": ".psf2",
+      "priority_group": "32-bit consoles",
+      "backend": "PSF2",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Playstation%202%20Sound%20Format/-%20unknown/Ai%20Yori%20Aoshi/sound-0005.psf2",
+      "path": "chiptunes/Sony PlayStation 2/06_sound-0005.psf2",
+      "bytes": 331722,
+      "sha256": "241cf8e959a309bb79d16127e545c02459494e76c9b73e9421078f3662c808c1"
+    },
+    {
+      "extension": ".minipsf2",
+      "priority_group": "32-bit consoles",
+      "backend": "PSF2",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Playstation%202%20Sound%20Format/-%20unknown/Bomberman%20Land%202/cddata0-007.minipsf2",
+      "path": "chiptunes/Sony PlayStation 2/07_cddata0-007.minipsf2",
+      "bytes": 302,
+      "sha256": "56de4c29e2c9596306896b222383db31b4f1dbb3997d0bf43b4e28393a4e66cf"
+    },
+    {
+      "extension": ".psf2",
+      "priority_group": "32-bit consoles",
+      "backend": "PSF2",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Playstation%202%20Sound%20Format/-%20unknown/Ai%20Yori%20Aoshi/sound-0006.psf2",
+      "path": "chiptunes/Sony PlayStation 2/07_sound-0006.psf2",
+      "bytes": 411119,
+      "sha256": "03eaa0367429390a3ebb0bc75f41c0a0507438068bdc7aa30ef32a61b7fc6598"
+    },
+    {
+      "extension": ".minipsf2",
+      "priority_group": "32-bit consoles",
+      "backend": "PSF2",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Playstation%202%20Sound%20Format/-%20unknown/Bomberman%20Land%202/cddata0-008.minipsf2",
+      "path": "chiptunes/Sony PlayStation 2/08_cddata0-008.minipsf2",
+      "bytes": 300,
+      "sha256": "811b7e47bcd3061b7e26e8f33849ecacfff1447dc9ea85d32c30ccd1bfd31ae5"
+    },
+    {
+      "extension": ".psf2",
+      "priority_group": "32-bit consoles",
+      "backend": "PSF2",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Playstation%202%20Sound%20Format/-%20unknown/Ai%20Yori%20Aoshi/sound-0007.psf2",
+      "path": "chiptunes/Sony PlayStation 2/08_sound-0007.psf2",
+      "bytes": 459624,
+      "sha256": "70e7d881ab0bbeec7f0d3698e65a92f27e6183d320c36869c8ffb3ce7ac3eb3f"
+    },
+    {
+      "extension": ".minipsf2",
+      "priority_group": "32-bit consoles",
+      "backend": "PSF2",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Playstation%202%20Sound%20Format/-%20unknown/Bomberman%20Land%202/cddata0-009.minipsf2",
+      "path": "chiptunes/Sony PlayStation 2/09_cddata0-009.minipsf2",
+      "bytes": 300,
+      "sha256": "2f797313eba6a4df22fe77ab29cfbf0901be22b16b2c52f3c8ed3ad2f16f64a8"
+    },
+    {
+      "extension": ".psf2",
+      "priority_group": "32-bit consoles",
+      "backend": "PSF2",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Playstation%202%20Sound%20Format/-%20unknown/Ai%20Yori%20Aoshi/sound-0008.psf2",
+      "path": "chiptunes/Sony PlayStation 2/09_sound-0008.psf2",
+      "bytes": 430829,
+      "sha256": "841b7e3f98177265bad3cf170ebf7ea524cb525c4efe86af76310330f9091555"
+    },
+    {
+      "extension": ".minipsf2",
+      "priority_group": "32-bit consoles",
+      "backend": "PSF2",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Playstation%202%20Sound%20Format/-%20unknown/Bomberman%20Land%202/cddata0-010.minipsf2",
+      "path": "chiptunes/Sony PlayStation 2/10_cddata0-010.minipsf2",
+      "bytes": 300,
+      "sha256": "b7daaeaa1fadf420b65ea35837e7dcc2d223c1e38447586cfef10f3bc8f795b5"
+    },
+    {
+      "extension": ".psf2",
+      "priority_group": "32-bit consoles",
+      "backend": "PSF2",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Playstation%202%20Sound%20Format/-%20unknown/Ai%20Yori%20Aoshi/sound-0009.psf2",
+      "path": "chiptunes/Sony PlayStation 2/10_sound-0009.psf2",
+      "bytes": 456811,
+      "sha256": "7977264c658890a9d2264a5dcbd9d2e0bfae91bdc14cecbf6b4320262f6d0757"
+    },
+    {
+      "extension": ".psf2lib",
+      "priority_group": "32-bit consoles",
+      "backend": "PSF2",
+      "repository": "Modland companion library",
+      "source_url": "https://ftp.modland.com/pub/modules/Playstation%202%20Sound%20Format/-%20unknown/Bomberman%20Land%202/BombermanLand2.psf2lib",
+      "path": "chiptunes/Sony PlayStation 2/BombermanLand2.psf2lib",
+      "bytes": 10870397,
+      "sha256": "f2769b5738245dd7c115beed51914d3052152059a628d9dcd35c88aae78e47a4",
+      "companion_library": true
+    },
+    {
+      "extension": ".minipsf",
+      "priority_group": "32-bit consoles",
+      "backend": "PSF",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Playstation%20Sound%20Format/Makikoh%20-%20Mystery%20Adventure/makikoh-00.minipsf",
+      "path": "chiptunes/Sony PlayStation/01_makikoh-00.minipsf",
+      "bytes": 389473,
+      "sha256": "48f512fb100217dd5b8241ed276a552ee46960bfdd12dd2dfd22b51db42ce053"
+    },
+    {
+      "extension": ".psf",
+      "priority_group": "32-bit consoles",
+      "backend": "PSF",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Playstation%20Sound%20Format/Kisou%20Jidaigeki%20Sugoroku%20-%20Shinobi%20No%20Roku/shinobinoroku-00.psf",
+      "path": "chiptunes/Sony PlayStation/01_shinobinoroku-00.psf",
+      "bytes": 173393,
+      "sha256": "426f9b0929a1ebd82f8b1f3105e6c3ed78861b42ed60a3ba9acd653b6decb080"
+    },
+    {
+      "extension": ".minipsf",
+      "priority_group": "32-bit consoles",
+      "backend": "PSF",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Playstation%20Sound%20Format/Makikoh%20-%20Mystery%20Adventure/makikoh-01.minipsf",
+      "path": "chiptunes/Sony PlayStation/02_makikoh-01.minipsf",
+      "bytes": 389197,
+      "sha256": "bf6ecf1ba2a15816774a7cbe91c1640ae310b487acfad1c11d3ac3795f9c4c19"
+    },
+    {
+      "extension": ".psf",
+      "priority_group": "32-bit consoles",
+      "backend": "PSF",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Playstation%20Sound%20Format/Kisou%20Jidaigeki%20Sugoroku%20-%20Shinobi%20No%20Roku/shinobinoroku-01.psf",
+      "path": "chiptunes/Sony PlayStation/02_shinobinoroku-01.psf",
+      "bytes": 203003,
+      "sha256": "b4aaf5b6d01f9b8047ba21150399853265304f5378e724e2e1149fc99696c50c"
+    },
+    {
+      "extension": ".minipsf",
+      "priority_group": "32-bit consoles",
+      "backend": "PSF",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Playstation%20Sound%20Format/Makikoh%20-%20Mystery%20Adventure/makikoh-02.minipsf",
+      "path": "chiptunes/Sony PlayStation/03_makikoh-02.minipsf",
+      "bytes": 389932,
+      "sha256": "9caaebe36b455f9ada8be8f583d90d65ca41288f726899d44ec57878e41b1171"
+    },
+    {
+      "extension": ".psf",
+      "priority_group": "32-bit consoles",
+      "backend": "PSF",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Playstation%20Sound%20Format/Kisou%20Jidaigeki%20Sugoroku%20-%20Shinobi%20No%20Roku/shinobinoroku-02.psf",
+      "path": "chiptunes/Sony PlayStation/03_shinobinoroku-02.psf",
+      "bytes": 203365,
+      "sha256": "cd576d3fe0ffd1d71ee320418a301ada89bb30480644f014fa66033bbc4bad20"
+    },
+    {
+      "extension": ".minipsf",
+      "priority_group": "32-bit consoles",
+      "backend": "PSF",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Playstation%20Sound%20Format/Makikoh%20-%20Mystery%20Adventure/makikoh-03.minipsf",
+      "path": "chiptunes/Sony PlayStation/04_makikoh-03.minipsf",
+      "bytes": 393189,
+      "sha256": "2001998b6395907bf993e2bd6df24fb81b5746074091a7c7040cb6087fe099d0"
+    },
+    {
+      "extension": ".psf",
+      "priority_group": "32-bit consoles",
+      "backend": "PSF",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Playstation%20Sound%20Format/Kisou%20Jidaigeki%20Sugoroku%20-%20Shinobi%20No%20Roku/shinobinoroku-03.psf",
+      "path": "chiptunes/Sony PlayStation/04_shinobinoroku-03.psf",
+      "bytes": 205758,
+      "sha256": "596206fb10e756493b77c10b9249c558f39076c3381a4837d636a415e3a9a33d"
+    },
+    {
+      "extension": ".minipsf",
+      "priority_group": "32-bit consoles",
+      "backend": "PSF",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Playstation%20Sound%20Format/Makikoh%20-%20Mystery%20Adventure/makikoh-04.minipsf",
+      "path": "chiptunes/Sony PlayStation/05_makikoh-04.minipsf",
+      "bytes": 390074,
+      "sha256": "c79c048e14c5eb07d7931fd089c6aa24e50b35092e654bc81e8d9f4843968c4b"
+    },
+    {
+      "extension": ".psf",
+      "priority_group": "32-bit consoles",
+      "backend": "PSF",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Playstation%20Sound%20Format/Kisou%20Jidaigeki%20Sugoroku%20-%20Shinobi%20No%20Roku/shinobinoroku-04.psf",
+      "path": "chiptunes/Sony PlayStation/05_shinobinoroku-04.psf",
+      "bytes": 201249,
+      "sha256": "c2d0db8ac054866ad85e66d1da6b00cf56d97ba7b72293173bc83109d79928f4"
+    },
+    {
+      "extension": ".minipsf",
+      "priority_group": "32-bit consoles",
+      "backend": "PSF",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Playstation%20Sound%20Format/Makikoh%20-%20Mystery%20Adventure/makikoh-05.minipsf",
+      "path": "chiptunes/Sony PlayStation/06_makikoh-05.minipsf",
+      "bytes": 388009,
+      "sha256": "20c177d14d38b9aaedc2a096763e3fc8c0559b296dbe0dce5470763f37155fb9"
+    },
+    {
+      "extension": ".psf",
+      "priority_group": "32-bit consoles",
+      "backend": "PSF",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Playstation%20Sound%20Format/Kisou%20Jidaigeki%20Sugoroku%20-%20Shinobi%20No%20Roku/shinobinoroku-05.psf",
+      "path": "chiptunes/Sony PlayStation/06_shinobinoroku-05.psf",
+      "bytes": 200752,
+      "sha256": "06eadc6b70caa042069c3f55727d2cfb498ddd2a28d4253fe7c52fd897be74e1"
+    },
+    {
+      "extension": ".minipsf",
+      "priority_group": "32-bit consoles",
+      "backend": "PSF",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Playstation%20Sound%20Format/Makikoh%20-%20Mystery%20Adventure/makikoh-06.minipsf",
+      "path": "chiptunes/Sony PlayStation/07_makikoh-06.minipsf",
+      "bytes": 393063,
+      "sha256": "8a930fc957345618a514331e08e64f6a1c9742e078656d8d3a236f674b027f0b"
+    },
+    {
+      "extension": ".psf",
+      "priority_group": "32-bit consoles",
+      "backend": "PSF",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Playstation%20Sound%20Format/Kisou%20Jidaigeki%20Sugoroku%20-%20Shinobi%20No%20Roku/shinobinoroku-06.psf",
+      "path": "chiptunes/Sony PlayStation/07_shinobinoroku-06.psf",
+      "bytes": 200625,
+      "sha256": "b4a979f958971f999545270dcd7bd8fcb2e949adac8d5e85c383142a42b22841"
+    },
+    {
+      "extension": ".minipsf",
+      "priority_group": "32-bit consoles",
+      "backend": "PSF",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Playstation%20Sound%20Format/Makikoh%20-%20Mystery%20Adventure/makikoh-07.minipsf",
+      "path": "chiptunes/Sony PlayStation/08_makikoh-07.minipsf",
+      "bytes": 388399,
+      "sha256": "83818b196cebe09a178294bc7e9b25c3e85bc00acf43fbfc9b0674517f898118"
+    },
+    {
+      "extension": ".psf",
+      "priority_group": "32-bit consoles",
+      "backend": "PSF",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Playstation%20Sound%20Format/Kisou%20Jidaigeki%20Sugoroku%20-%20Shinobi%20No%20Roku/shinobinoroku-07.psf",
+      "path": "chiptunes/Sony PlayStation/08_shinobinoroku-07.psf",
+      "bytes": 198396,
+      "sha256": "41c55d8cdc5a13e13b1cea787dcb2a13bc311ccb8bf546cf73c0430e2f0827af"
+    },
+    {
+      "extension": ".minipsf",
+      "priority_group": "32-bit consoles",
+      "backend": "PSF",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Playstation%20Sound%20Format/Makikoh%20-%20Mystery%20Adventure/makikoh-08.minipsf",
+      "path": "chiptunes/Sony PlayStation/09_makikoh-08.minipsf",
+      "bytes": 388239,
+      "sha256": "bd224efdfe85accb9cdc0d7c553a6a2bdaccef226f11606c67e419ff59e4d37f"
+    },
+    {
+      "extension": ".psf",
+      "priority_group": "32-bit consoles",
+      "backend": "PSF",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Playstation%20Sound%20Format/Kisou%20Jidaigeki%20Sugoroku%20-%20Shinobi%20No%20Roku/shinobinoroku-08.psf",
+      "path": "chiptunes/Sony PlayStation/09_shinobinoroku-08.psf",
+      "bytes": 200139,
+      "sha256": "e0cf76eccf76322bc8c9f0a195d9417481a9d1169483de6485b55f561441a5c0"
+    },
+    {
+      "extension": ".minipsf",
+      "priority_group": "32-bit consoles",
+      "backend": "PSF",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Playstation%20Sound%20Format/Makikoh%20-%20Mystery%20Adventure/makikoh-09.minipsf",
+      "path": "chiptunes/Sony PlayStation/10_makikoh-09.minipsf",
+      "bytes": 392462,
+      "sha256": "69a5ea0e37c00b14882466d651e2b422d038a16a0b224ceb960180207b9bc20e"
+    },
+    {
+      "extension": ".psf",
+      "priority_group": "32-bit consoles",
+      "backend": "PSF",
+      "repository": "Modland",
+      "source_url": "https://ftp.modland.com/pub/modules/Playstation%20Sound%20Format/Kisou%20Jidaigeki%20Sugoroku%20-%20Shinobi%20No%20Roku/shinobinoroku-09.psf",
+      "path": "chiptunes/Sony PlayStation/10_shinobinoroku-09.psf",
+      "bytes": 198392,
+      "sha256": "39c0808c4e0ecc66085eae7ce5c62b1ae85254b41981179a7508d53f9643e1c2"
+    },
+    {
+      "extension": ".psflib",
+      "priority_group": "32-bit consoles",
+      "backend": "PSF",
+      "repository": "Modland companion library",
+      "source_url": "https://ftp.modland.com/pub/modules/Playstation%20Sound%20Format/Makikoh%20-%20Mystery%20Adventure/driver.psflib",
+      "path": "chiptunes/Sony PlayStation/driver.psflib",
+      "bytes": 85837,
+      "sha256": "4884dc4516e20ab1be2f897f2e419cac26c07f9f3dc721dba1ce197a6ce5e575",
+      "companion_library": true
+    },
+    {
+      "extension": ".ay",
+      "repository": "Project AY via VGMRips mirror",
+      "source_url": "https://vgmrips.net/mirror/ProjectAY.zip#CPC/Demos/39kb shock intro.ay",
+      "path": "chiptunes/ZX Spectrum/01_39kb shock intro.ay",
+      "bytes": 9238,
+      "sha256": "674db2394c07f20c60167a0d397f39640eecf1eefe00d41fa015bf0126fb6939"
+    },
+    {
+      "extension": ".ay",
+      "repository": "Project AY via VGMRips mirror",
+      "source_url": "https://vgmrips.net/mirror/ProjectAY.zip#CPC/Demos/ARCHAOS.AY",
+      "path": "chiptunes/ZX Spectrum/02_ARCHAOS.AY",
+      "bytes": 5090,
+      "sha256": "644e1e951f42822c6776cbc8753c98e8382b57e6e9ea84873ec8407a167d1aff"
+    },
+    {
+      "extension": ".ay",
+      "repository": "Project AY via VGMRips mirror",
+      "source_url": "https://vgmrips.net/mirror/ProjectAY.zip#CPC/Demos/ARKINT.AY",
+      "path": "chiptunes/ZX Spectrum/03_ARKINT.AY",
+      "bytes": 4068,
+      "sha256": "d382a25f689c5c7940e845c21253a821c2a27a0d9b0aa64f11bac40618498716"
+    },
+    {
+      "extension": ".ay",
+      "repository": "Project AY via VGMRips mirror",
+      "source_url": "https://vgmrips.net/mirror/ProjectAY.zip#CPC/Demos/ASTEROID.AY",
+      "path": "chiptunes/ZX Spectrum/04_ASTEROID.AY",
+      "bytes": 6116,
+      "sha256": "7234bfae8c0df41a4d91f2750d0ff772024ebbf1f3509f6672b81e79218c0ae5"
+    },
+    {
+      "extension": ".ay",
+      "repository": "Project AY via VGMRips mirror",
+      "source_url": "https://vgmrips.net/mirror/ProjectAY.zip#CPC/Demos/BARTHY.AY",
+      "path": "chiptunes/ZX Spectrum/05_BARTHY.AY",
+      "bytes": 5146,
+      "sha256": "61bf2791be048046d54acd416d972676217270e7741bab5288865fa3c12c6863"
+    },
+    {
+      "extension": ".ay",
+      "repository": "Project AY via VGMRips mirror",
+      "source_url": "https://vgmrips.net/mirror/ProjectAY.zip#CPC/Demos/Babafan7_1.ay",
+      "path": "chiptunes/ZX Spectrum/06_Babafan7_1.ay",
+      "bytes": 6524,
+      "sha256": "c9f696796d2ea24ffa522da22da5f146ee80e858b70fc7067336499971515b86"
+    },
+    {
+      "extension": ".ay",
+      "repository": "Project AY via VGMRips mirror",
+      "source_url": "https://vgmrips.net/mirror/ProjectAY.zip#CPC/Demos/Babafan7_2.ay",
+      "path": "chiptunes/ZX Spectrum/07_Babafan7_2.ay",
+      "bytes": 5295,
+      "sha256": "743c0d29a9bded4a4978830759240655c90044322194d39934459e3d0612ea20"
+    },
+    {
+      "extension": ".ay",
+      "repository": "Project AY via VGMRips mirror",
+      "source_url": "https://vgmrips.net/mirror/ProjectAY.zip#CPC/Demos/Babafan7_3.ay",
+      "path": "chiptunes/ZX Spectrum/08_Babafan7_3.ay",
+      "bytes": 6422,
+      "sha256": "ab1ff8e2d402852b7123fa331ebd7d8aa32d2c723a518ec562bdb26b96b54cc6"
+    },
+    {
+      "extension": ".ay",
+      "repository": "Project AY via VGMRips mirror",
+      "source_url": "https://vgmrips.net/mirror/ProjectAY.zip#CPC/Demos/Bombastic_music1.ay",
+      "path": "chiptunes/ZX Spectrum/09_Bombastic_music1.ay",
+      "bytes": 3749,
+      "sha256": "fa3b382b5971dc4ea61c28bccda0c07d16cb1327ea6e58e231d02c7c436c30de"
+    },
+    {
+      "extension": ".ay",
+      "repository": "Project AY via VGMRips mirror",
+      "source_url": "https://vgmrips.net/mirror/ProjectAY.zip#CPC/Demos/Bombastic_music2.ay",
+      "path": "chiptunes/ZX Spectrum/10_Bombastic_music2.ay",
+      "bytes": 4507,
+      "sha256": "ac973ea24a7f973fd5d4bb6c8198a234ef71c8b7f83dc5a1065a044aade8ca20"
+    }
+  ],
+  "notes": [
+    "VGZ is gzipped VGM; .vgm fixtures were derived losslessly from downloaded .vgz files to exercise raw VGM loading.",
+    "Fixtures are for local development smoke tests of native emulated music formats.",
+    "GYM fixtures from GYMX containers were normalized by inflating the zlib payload, preserving the raw GYM event stream for libgme.",
+    "VGM/VGZ fixtures were selected by opening and rendering them with libgme to avoid unsupported chip variants in smoke tests.",
+    "Future backend fixtures; not expected to play until their engines are implemented.",
+    "Companion library files are staged in the same folders when discovered.",
+    "Use for local development; review redistribution terms before public bundling."
+  ]
+}

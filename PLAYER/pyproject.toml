@@ -1,0 +1,18 @@
+[project]
+name = "simpleplayer"
+version = "0.1.0"
+description = "Drag-and-drop real-time emulated console/arcade music player."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "numpy>=1.26",
+    "PySide6>=6.7",
+    "sounddevice>=0.5",
+]
+
+[project.gui-scripts]
+simpleplayer = "simpleplayer.app:main"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"

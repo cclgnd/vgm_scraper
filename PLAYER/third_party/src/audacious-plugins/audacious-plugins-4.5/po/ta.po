@@ -1,0 +1,4956 @@
+# Tamil translation for Audacious Plugins
+# Copyright (C) Audacious translators
+# This file is distributed under the same license as the Audacious Plugins package.
+#
+# Translators:
+# Gobikrishnan <gobikrishnant@gmail.com>, 2013
+# Gobikrishnan <gobikrishnant@gmail.com>, 2013
+# Nareshwar Raju Vaneshwar <rajnareshwar@gmail.com>, 2013
+# Nareshwar Raju Vaneshwar <rajnareshwar@gmail.com>, 2013
+msgid ""
+msgstr ""
+"Project-Id-Version: Audacious Plugins\n"
+"Report-Msgid-Bugs-To: https://github.com/audacious-media-player/audacious/"
+"issues\n"
+"POT-Creation-Date: 2025-07-16 00:23+0200\n"
+"PO-Revision-Date: 2011-10-10 17:43+0000\n"
+"Last-Translator: Nareshwar Raju Vaneshwar <rajnareshwar@gmail.com>, 2013\n"
+"Language-Team: Tamil (http://app.transifex.com/audacious/audacious/language/"
+"ta/)\n"
+"Language: ta\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: src/aac/aac.cc:19
+msgid "AAC (Raw) Decoder"
+msgstr "aac (மூல) டிகோடர்"
+
+#: src/adplug/adplug-xmms.cc:70
+msgid "AdPlug (AdLib Player)"
+msgstr "AdPlug (AdLib Player)"
+
+#: src/adplug/adplug-xmms.cc:168 src/modplug/modplugbmp.cc:321
+#: src/psf/plugin.cc:161 src/vtx/vtx.cc:89 src/xsf/plugin.cc:204
+msgid "sequenced"
+msgstr "வரிசைப்படுத்தப்பட்ட"
+
+#: src/adplug/adplug-xmms.cc:350 src/sid/xs_config.cc:61
+msgid "<b>Output</b>"
+msgstr "<b> வெளியீடு </b>"
+
+#: src/adplug/adplug-xmms.cc:351
+msgid "OPL Emulator:"
+msgstr "opl முன்மாதிரி:"
+
+#: src/adplug/adplug-xmms.cc:354 src/amidiplug/i_configure.cc:153
+#: src/console/plugin.cc:45 src/filewriter/filewriter.cc:481
+#: src/sid/xs_config.cc:65 src/xsf/plugin.cc:446
+msgid "Sample rate:"
+msgstr "மாதிரி விகிதம்:"
+
+#: src/adplug/adplug-xmms.cc:355 src/amidiplug/i_configure.cc:155
+#: src/bs2b/plugin.cc:141 src/console/plugin.cc:47
+#: src/modplug/plugin_main.cc:77 src/resample/resample.cc:201
+#: src/resample/resample.cc:207 src/resample/resample.cc:211
+#: src/resample/resample.cc:215 src/resample/resample.cc:219
+#: src/resample/resample.cc:223 src/resample/resample.cc:227
+#: src/resample/resample.cc:231 src/resample/resample.cc:235
+#: src/resample/resample.cc:239 src/resample/resample.cc:243
+#: src/sid/xs_config.cc:67 src/soxr/sox-resampler.cc:205
+msgid "Hz"
+msgstr "Hz"
+
+#: src/adplug/adplug-xmms.cc:356 src/gtkui/settings.cc:55
+#: src/modplug/plugin_main.cc:105 src/qtui/settings.cc:85
+#: src/skins-qt/skins_cfg.cc:302 src/skins/skins_cfg.cc:284
+msgid "<b>Miscellaneous</b>"
+msgstr "<b> இதர </b>"
+
+#: src/adplug/adplug-xmms.cc:357
+msgid "Repeat song in endless loop"
+msgstr "முடிவில்லாத வளையத்தில் பாடலை மீண்டும் செய்யவும்"
+
+#: src/albumart/albumart.cc:31 src/albumart-qt/albumart.cc:35
+msgid "Album Art"
+msgstr "குறுவட்டு வரைவு "
+
+#: src/alsa/alsa.h:64
+msgid "ALSA Output"
+msgstr "ALSA வெளியீடு"
+
+#: src/alsa/config.cc:28
+msgid ""
+"ALSA Output Plugin for Audacious\n"
+"Copyright 2009-2012 John Lindgren\n"
+"\n"
+"My thanks to William Pitcock, author of the ALSA Output Plugin NG, whose "
+"code served as a reference when the ALSA manual was not enough."
+msgstr ""
+"துணிச்சலுக்கான alsa வெளியீட்டு சொருகி \n"
+" பதிப்புரிமை 2009-2012 சான் லிண்ட்கிரென் \n"
+"\n"
+" alsa வெளியீட்டு சொருகி ng இன் ஆசிரியர் வில்லியம் பிட்காக்கிற்கு எனது நன்றி, alsa "
+"கையேடு போதுமானதாக இல்லாதபோது அதன் குறியீடு ஒரு குறிப்பாக செயல்பட்டது."
+
+#: src/alsa/config.cc:61
+msgid "(no description)"
+msgstr "(விளக்கம் இல்லை)"
+
+#: src/alsa/config.cc:166
+msgid "Default PCM device"
+msgstr "இயல்புநிலை துடிப்பு குறியீடு பண்பேற்ற சாதனம் "
+
+#: src/alsa/config.cc:188
+msgid "Default mixer device"
+msgstr "இயல்புநிலை கலவை சாதனம்"
+
+#: src/alsa/config.cc:296
+msgid "PCM device:"
+msgstr "துடிப்பு குறியீடு பண்பேற்ற சாதனம்:"
+
+#: src/alsa/config.cc:299
+msgid "Mixer device:"
+msgstr "கலவை சாதனம்:"
+
+#: src/alsa/config.cc:302
+msgid "Mixer element:"
+msgstr "கலவை உறுப்பு:"
+
+#: src/amidiplug/amidi-plug.cc:42
+msgid "AMIDI-Plug (MIDI Player)"
+msgstr "AMIDI-சொருகி  (MIDI இயக்கி )"
+
+#: src/amidiplug/amidi-plug.cc:445
+msgid ""
+"AMIDI-Plug\n"
+"modular MIDI music player\n"
+"http://www.develia.org/projects.php?p=amidiplug\n"
+"\n"
+"written by Giacomo Lozito\n"
+"<james@develia.org>\n"
+"\n"
+"special thanks to...\n"
+"\n"
+"Clemens Ladisch and Jaroslav Kysela\n"
+"for their cool programs aplaymidi and amixer; those\n"
+"were really useful, along with alsa-lib docs, in order\n"
+"to learn more about the ALSA API\n"
+"\n"
+"Alfredo Spadafina\n"
+"for the nice midi keyboard logo\n"
+"\n"
+"Tony Vroon\n"
+"for the good help with alpha testing"
+msgstr ""
+"அமிடி-பிளக் \n"
+" மட்டு மிடி மியூசிக் பிளேயர் \n"
+" http://www.develia.org/projects.php?p=amidiplug \n"
+"\n"
+" கியாகோமோ லோசிட்டோ எழுதியது \n"
+" <james@develia.org> \n"
+"\n"
+" சிறப்பு நன்றிகள்... \n"
+"\n"
+" கிளெமென்ச் லேடிச் மற்றும் சரோச்லாவ் கைசெலா \n"
+" அவர்களின் அருமையான நிரல்களுக்கு அப்லேமிடி மற்றும் அமிக்சர்; அவை \n"
+" அல்சா-லிப் டாக்சுடன், ஒழுங்காக மிகவும் பயனுள்ளதாக இருந்தது \n"
+" alsa பநிஇ பற்றி மேலும் அறிய \n"
+"\n"
+" ஆல்ஃபிரடோ ச்பாடாஃபினா \n"
+" நல்ல மிடி விசைப்பலகை லோகோவுக்கு \n"
+"\n"
+" டோனி வ்ரூன் \n"
+" ஆல்பா சோதனைக்கு நல்ல உதவிக்கு"
+
+#: src/amidiplug/i_configure.cc:94
+msgid "Override default gain:"
+msgstr "இயல்புநிலை ஆதாயத்தை மீறவும்:"
+
+#: src/amidiplug/i_configure.cc:102
+msgid "Override default polyphony:"
+msgstr "இயல்புநிலை பாலிஃபோனியை மேலெழுதவும்:"
+
+#: src/amidiplug/i_configure.cc:110
+msgid "Override default reverb:"
+msgstr "இயல்புநிலை எதிரொலியை மேலெழுதவும்:"
+
+#: src/amidiplug/i_configure.cc:112 src/amidiplug/i_configure.cc:120
+msgid "On"
+msgstr "ஆன்"
+
+#: src/amidiplug/i_configure.cc:118
+msgid "Override default chorus:"
+msgstr "இயல்புநிலை கோரசை மேலெழுதவும்:"
+
+#: src/amidiplug/i_configure.cc:128 src/console/plugin.cc:29
+msgid "<b>Playback</b>"
+msgstr "<b> பின்னணி </b>"
+
+#: src/amidiplug/i_configure.cc:129
+msgid "Transpose:"
+msgstr "இடமாற்றம்:"
+
+#: src/amidiplug/i_configure.cc:131 src/speedpitch/speed-pitch.cc:257
+msgid "semitones"
+msgstr "செமிடோன்கள்"
+
+#: src/amidiplug/i_configure.cc:132
+msgid "Drum shift:"
+msgstr "டிரம் சிப்ட்:"
+
+#: src/amidiplug/i_configure.cc:134
+msgid "note numbers"
+msgstr "குறிப்பு எண்கள்"
+
+#: src/amidiplug/i_configure.cc:135
+msgid "Skip leading silence"
+msgstr "முன்னணி ம .னத்தைத் தவிர்க்கவும்"
+
+#: src/amidiplug/i_configure.cc:137
+msgid "Skip trailing silence"
+msgstr "பின்னால் செல்லும் ம .னத்தைத் தவிர்க்கவும்"
+
+#: src/amidiplug/i_configure.cc:141
+msgid "<b>SoundFont</b>"
+msgstr "<b> சவுண்ட்ஃபோன்ட் </b>"
+
+#: src/amidiplug/i_configure.cc:148
+msgid "<b>Synthesizer</b>"
+msgstr "<b> சின்தசைசர் </b>"
+
+#: src/amidiplug/i_configure-fluidsynth.cc:58
+#: src/amidiplug/i_configure-fluidsynth.cc:527
+msgid "AMIDI-Plug - select SoundFont file"
+msgstr "AMIDI-சொருகி - ஒலி எழுத்துரு கோப்பினை தெரிவு செய்க "
+
+#: src/amidiplug/i_configure-fluidsynth.cc:61
+msgid "_Cancel"
+msgstr "_இரத்து செய் "
+
+#: src/amidiplug/i_configure-fluidsynth.cc:62
+msgid "_Open"
+msgstr "_திற "
+
+#: src/amidiplug/i_configure-fluidsynth.cc:233
+#: src/amidiplug/i_configure-fluidsynth.cc:461
+msgid "File name"
+msgstr "கோப்பின் பெயர் "
+
+#: src/amidiplug/i_configure-fluidsynth.cc:237
+#: src/amidiplug/i_configure-fluidsynth.cc:464
+msgid "Size (bytes)"
+msgstr "அளவு (பயிட்ச்)"
+
+#: src/amidiplug/i_fileinfo.cc:184
+msgid "Name:"
+msgstr "பெயர்: "
+
+#: src/amidiplug/i_fileinfo.cc:202
+msgid "<span size=\"smaller\"> MIDI Info </span>"
+msgstr "<span size=\"smaller\"> MIDI செய்தி </span>"
+
+#: src/amidiplug/i_fileinfo.cc:216
+msgid "Format:"
+msgstr "வடிவமைப்பு: "
+
+#: src/amidiplug/i_fileinfo.cc:219
+msgid "Length (msec):"
+msgstr "நீளம் (மில்லி வினாடிகள்): "
+
+#: src/amidiplug/i_fileinfo.cc:222
+msgid "No. of Tracks:"
+msgstr "பாடல்களின் இலக்கங்கள்:"
+
+#: src/amidiplug/i_fileinfo.cc:228
+msgid "variable"
+msgstr "மாறி "
+
+#: src/amidiplug/i_fileinfo.cc:230
+msgid "BPM:"
+msgstr "துடிப்புகள் ஒரு நிமிடத்திற்கு: "
+
+#: src/amidiplug/i_fileinfo.cc:238
+msgid "BPM (wavg):"
+msgstr "துடிப்புகள் ஒரு நிமிடத்திற்கு (wavg): "
+
+#: src/amidiplug/i_fileinfo.cc:241
+msgid "Time Div:"
+msgstr "நேரப் பிரிவு:"
+
+#: src/amidiplug/i_fileinfo.cc:252
+msgid "<span size=\"smaller\"> MIDI Comments and Lyrics </span>"
+msgstr "<span size=\"smaller\"> MIDI பின்னூட்டுகள் மற்றும் பாடல் வரிகள் </span>"
+
+#: src/amidiplug/i_fileinfo.cc:299
+msgid "* no comments available in this MIDI file *"
+msgstr "*இந்த MIDI கோப்பிற்கான எந்தவொரு பின்னூட்டும் கிடைக்கப்படவில்லை * "
+
+#: src/amidiplug/i_fileinfo.cc:311
+msgid "* no lyrics available in this MIDI file *"
+msgstr "*இந்த MIDI கோப்பிற்கான எந்தவொரு பாடல்வரிகளும் கிடைக்கப்படவில்லை * "
+
+#: src/amidiplug/i_fileinfo.cc:321 src/ladspa/plugin.cc:418
+#: src/ui-common/dialogs-qt.cc:32
+msgid "_Close"
+msgstr "_மூடவும்"
+
+#: src/amidiplug/i_fileinfo.cc:346
+msgid "  (invalid UTF-8)"
+msgstr "(செல்லுபடியற்ற UTF-8 )"
+
+#: src/ampache/ampache.cc:33
+msgid "Ampache Browser"
+msgstr "ஆம்பேச் உலாவி"
+
+#: src/ampache/ampache.cc:46
+msgid ""
+"Ampache Browser for Audacious\n"
+"http://ampache-browser.org/\n"
+"\n"
+"Copyright (C) Róbert Čerňanský and John Lindgren\n"
+"License: GNU GPLv3"
+msgstr ""
+"துணிச்சலான ஆம்பாச் உலாவி \n"
+" http://ampache-browser.org/ \n"
+"\n"
+" பதிப்புரிமை (இ) ராபர்ட் čerňanský மற்றும் சான் லிண்ட்கிரென் \n"
+" உரிமம்: gnu gplv3"
+
+#: src/aosd/aosd.cc:31
+msgid ""
+"Audacious OSD\n"
+"http://www.develia.org/projects.php?p=audacious#aosd\n"
+"\n"
+"Written by Giacomo Lozito <james@develia.org>\n"
+"\n"
+"Based in part on Evan Martin's Ghosd library:\n"
+"http://neugierig.org/software/ghosd/"
+msgstr ""
+"துணிச்சலான osd \n"
+" http://www.develia.org/projects.php? \n"
+"\n"
+" கியாகோமோ லோசிடோ <james@develia.org> எழுதியது \n"
+"\n"
+" இவான் மார்ட்டினின் கோச்ட் நூலகத்தை அடிப்படையாகக் கொண்டது: \n"
+" http://neugierig.org/software/ghosd/"
+
+#: src/aosd/aosd.h:37
+msgid "AOSD (On-Screen Display)"
+msgstr " AOSD ( திரையில் தோன்றும் காட்சி)"
+
+#: src/aosd/aosd_style.cc:54
+msgid "Rectangle"
+msgstr "செவ்வகம் "
+
+#: src/aosd/aosd_style.cc:59
+msgid "Rounded Rectangle"
+msgstr "வட்ட வடிவிலான செவ்வகம் "
+
+#: src/aosd/aosd_style.cc:64
+msgid "Concave Rectangle"
+msgstr "குழிவான செவ்வகம் "
+
+#: src/aosd/aosd_style.cc:69 src/openmpt/mptwrap.h:50 src/xsf/plugin.cc:436
+msgid "None"
+msgstr "ஏதுமில்லை "
+
+#: src/aosd/aosd_trigger.cc:49
+msgid "Playback Start"
+msgstr "மீள் இயக்கினை ஆரம்பிக்குக "
+
+#: src/aosd/aosd_trigger.cc:50
+msgid "Triggers OSD when a playlist entry is played."
+msgstr "பாடல் பட்டியல் இடுகை இயக்கப்படுகையில் திரையில் தோன்றும் காட்சி தூண்டப்படுகிறது. "
+
+#: src/aosd/aosd_trigger.cc:55
+msgid "Title Change"
+msgstr "தலைப்பு மாற்றம் "
+
+#: src/aosd/aosd_trigger.cc:56
+msgid "Triggers OSD when the song title changes (for internet streams)."
+msgstr "பாடல் தலைப்பு மாறும்போது (இணைய ச்ட்ரீம்களுக்கு) osd ஐ தூண்டுகிறது."
+
+#: src/aosd/aosd_trigger.cc:61
+msgid "Pause On"
+msgstr "இடைநிறுத்தத்தை ஆரம்பிக்க "
+
+#: src/aosd/aosd_trigger.cc:62
+msgid "Triggers OSD when playback is paused."
+msgstr "மீளியக்கம் இடைநிறுத்தப்படும் போது  திரையில் தோன்றும் காட்சி தூண்டப்படுகிறது."
+
+#: src/aosd/aosd_trigger.cc:67
+msgid "Pause Off"
+msgstr "இடைநிறுத்தத்தை நிறுத்துக"
+
+#: src/aosd/aosd_trigger.cc:68
+msgid "Triggers OSD when playback is unpaused."
+msgstr "மீளியக்கம் நிறுத்தப்படுகையில் திரையில் தோன்றும் காட்சி தூண்டப்படுகிறது. "
+
+#: src/aosd/aosd_ui.cc:204
+msgid "Placement"
+msgstr "ஒன்றின் நிறுத்தப்பட்ட நிலை "
+
+#: src/aosd/aosd_ui.cc:241
+msgid "Relative X offset:"
+msgstr "ஒப்பீட்டு ஃச் விலக்கம்:"
+
+#: src/aosd/aosd_ui.cc:245
+msgid "Relative Y offset:"
+msgstr "ஒப்பீட்டு ஒய் விலக்கம்: "
+
+#: src/aosd/aosd_ui.cc:249
+msgid "Max OSD width:"
+msgstr "அதிகூடிய  திரையில் தோன்றும் காட்சியின் அகலம்:"
+
+#: src/aosd/aosd_ui.cc:281
+msgid "Multi-Monitor options"
+msgstr "பல்-கணினித்திரை தேர்வுகள் "
+
+#: src/aosd/aosd_ui.cc:285
+msgid "Display OSD using:"
+msgstr "திரையில் தோன்றும் காட்சியினை காட்டுக இதனை பயன்படுத்தி: "
+
+#: src/aosd/aosd_ui.cc:287
+msgid "all monitors"
+msgstr "அனைத்து கணினித்திரைகள் "
+
+#: src/aosd/aosd_ui.cc:290
+#, c-format
+msgid "monitor %i"
+msgstr "கணினித்திரை %i"
+
+#: src/aosd/aosd_ui.cc:342
+msgid "Timing (ms)"
+msgstr "நேரம் (மில்லி வினாடிகளில்) "
+
+#: src/aosd/aosd_ui.cc:347
+msgid "Display:"
+msgstr "காட்சிப்படுத்துக:"
+
+#: src/aosd/aosd_ui.cc:352
+msgid "Fade in:"
+msgstr "உண்மங்கியடைதல்:"
+
+#: src/aosd/aosd_ui.cc:357
+msgid "Fade out:"
+msgstr "வெளிமங்குதல்:"
+
+#: src/aosd/aosd_ui.cc:442
+msgid "Fonts"
+msgstr "எழுத்துருக்கள் "
+
+#: src/aosd/aosd_ui.cc:449
+#, c-format
+msgid "Font %i:"
+msgstr "எழுத்துரு %i:"
+
+#: src/aosd/aosd_ui.cc:466
+msgid "Shadow"
+msgstr "நிழல் "
+
+#: src/aosd/aosd_ui.cc:589
+msgid "Render Style"
+msgstr "வழங்கும் பாங்கு "
+
+#: src/aosd/aosd_ui.cc:605
+msgid "Colors"
+msgstr "நிறங்கள் "
+
+#: src/aosd/aosd_ui.cc:616
+#, c-format
+msgid "Color %i:"
+msgstr "நிறம் %i "
+
+#: src/aosd/aosd_ui.cc:714
+msgid "Enable trigger"
+msgstr "தூண்டுதலினை செயல்படுத்துக "
+
+#: src/aosd/aosd_ui.cc:741
+msgid "Event"
+msgstr "நிகழ்வு "
+
+#: src/aosd/aosd_ui.cc:768
+msgid "Composite manager detected"
+msgstr "தொகுப்பு நிர்வாகி கண்டறியப்பட்டது"
+
+#: src/aosd/aosd_ui.cc:775
+msgid ""
+"Composite manager not detected;\n"
+"unless you know that you have one running, please activate a composite "
+"manager otherwise the OSD won't work properly"
+msgstr ""
+"தொகுப்பு நிர்வாகி கண்டறியப்படவில்லை;⏎\n"
+"\n"
+"கட்டாயமாக தொகுப்பு நிர்வாகியொன்று செயற்படுத்தப்பட வேண்டும். இல்லையெனில் திரையில் "
+"தோன்றும் காட்சி ஒழுங்காக இயங்காது. "
+
+#: src/aosd/aosd_ui.cc:783
+msgid "Composite manager not required for fake transparency"
+msgstr "போலி வெளிப்படைத்தன்மையிற்கு தொகுப்பு நிர்வாகியொன்று தேவையில்லை "
+
+#: src/aosd/aosd_ui.cc:820
+msgid "Transparency"
+msgstr "வெளிப்படைத்தன்மை "
+
+#: src/aosd/aosd_ui.cc:826
+msgid "Fake transparency"
+msgstr "போலி வெளிப்படைத்தன்மை "
+
+#: src/aosd/aosd_ui.cc:828
+msgid "Real transparency (requires X Composite Ext.)"
+msgstr "உண்மையான வெளிப்படைத்தன்மை ( ஃச் தொகுப்பு நீடிப்பு தேவைப்படுகிறது.)"
+
+#: src/aosd/aosd_ui.cc:875
+msgid "Composite extension not loaded"
+msgstr "தொகுப்பு நீட்டிப்பு ஏற்றப்படவில்லை "
+
+#: src/aosd/aosd_ui.cc:892
+#, c-format
+msgid "<span font_desc='%s'>Audacious OSD</span>"
+msgstr "<span font_desc='%s'>ஔடகிவச் திரையில் தோன்றும் காட்சி </span>"
+
+#: src/aosd/aosd_ui.cc:955
+msgid "Position"
+msgstr "இடம் "
+
+#: src/aosd/aosd_ui.cc:960
+msgid "Animation"
+msgstr "உயிரூட்டுதல் "
+
+#: src/aosd/aosd_ui.cc:965
+msgid "Text"
+msgstr "எழுத்து "
+
+#: src/aosd/aosd_ui.cc:970
+msgid "Decoration"
+msgstr "ஒப்பனை "
+
+#: src/aosd/aosd_ui.cc:975
+msgid "Trigger"
+msgstr "தூண்டுதல் "
+
+#: src/aosd/aosd_ui.cc:980 src/streamtuner/shoutcast-model.cc:202
+msgid "Misc"
+msgstr "மற்றவை"
+
+#: src/aosd/aosd_ui.cc:989
+msgid "Test"
+msgstr "பரீட்சிக்க "
+
+#: src/asx3/asx3.cc:35
+msgid "ASXv3 Playlists"
+msgstr "asxv3 பிளேலிச்ட்கள்"
+
+#: src/asx/asx.cc:33
+msgid "ASXv1/ASXv2 Playlists"
+msgstr "ASXv1/ASXv2 பாடல் பட்டியல் "
+
+#: src/audpl/audpl.cc:33
+msgid "Audacious Playlists (audpl)"
+msgstr "ஔடகிவச் பாடல் பட்டியல்கள் "
+
+#: src/background_music/background_music.cc:24
+msgid "<b>Background music</b>"
+msgstr "<b> பின்னணி இசை </b>"
+
+#: src/background_music/background_music.cc:25
+msgid "Target level:"
+msgstr "இலக்கு நிலை:"
+
+#: src/background_music/background_music.cc:28
+#: src/background_music/background_music.cc:33
+#: src/silence-removal/silence-removal.cc:70
+msgid "dB"
+msgstr "dB"
+
+#: src/background_music/background_music.cc:29
+msgid "Maximum amplification:"
+msgstr "அதிகபட்ச பெருக்கம்:"
+
+#: src/background_music/background_music.cc:34 src/mpg123/mpg123.cc:81
+msgid "<b>Advanced</b>"
+msgstr "<b> மேம்பட்ட </b>"
+
+#: src/background_music/background_music.cc:36
+msgid "Slow detection weight:"
+msgstr "மெதுவாக கண்டறிதல் எடை:"
+
+#: src/background_music/background_music.cc:39
+msgid "<b>Hint</b>"
+msgstr "<b> குறிப்பு </b>"
+
+#: src/background_music/background_music.cc:41
+msgid ""
+"Slow detection weight is the relative weight\n"
+"of a long term average detection when compared\n"
+"to the actual, faster loudness detection.\n"
+"A value of zero gives a more radio-like sound\n"
+"where soft passages get \"pulled up\" more quickly,\n"
+"a value of two makes the sound feel less compressed."
+msgstr ""
+"மெதுவான கண்டறிதல் எடை என்பது தொடர்புடைய எடை \n"
+" ஒப்பிடும்போது நீண்ட கால சராசரி கண்டறிதல் \n"
+" உண்மையான, வேகமான உரத்த கண்டறிதலுக்கு. \n"
+" பூச்சியத்தின் மதிப்பு மிகவும் வானொலி போன்ற ஒலியைக் கொடுக்கும் \n"
+" மென்மையான பத்திகள் விரைவாக \"இழுக்கப்படுகின்றன\", \n"
+" இரண்டின் மதிப்பு ஒலியை குறைவாக சுருக்குகிறது."
+
+#: src/background_music/background_music.cc:52
+msgid ""
+"Background Music Plugin for Audacious\n"
+"Copyright 2023;2024 Michel Fleur\n"
+"\n"
+"Controls the volume to make the sound equally loud within and between "
+"tracks.\n"
+" It uses accurate loudness measurement and tries to make the volume changes "
+"sound natural without audible peaks, yet without lowering the volume before "
+"a peak in advance."
+msgstr ""
+"துணிச்சலான பின்னணி இசை சொருகி \n"
+" பதிப்புரிமை 2023; 2024 மைக்கேல் ஃப்ளூர் \n"
+"\n"
+" தடங்களுக்கு உள்ளேயும் இடையில் ஒலியை சமமாக சத்தமாக மாற்ற அளவைக் கட்டுப்படுத்துகிறது. \n"
+"  இது துல்லியமான உரத்த அளவீட்டைப் பயன்படுத்துகிறது மற்றும் தொகுதி மாற்றங்களை கேட்கக்கூடிய "
+"சிகரங்கள் இல்லாமல் இயற்கையாக ஒலிக்க முயற்சிக்கிறது, ஆனால் முன்கூட்டியே உச்சத்திற்கு முன் "
+"அளவைக் குறைக்காமல்."
+
+#: src/background_music/background_music.cc:61
+msgid "Background Music"
+msgstr "பின்னணி இசை"
+
+#: src/bitcrusher/bitcrusher.cc:33
+msgid "<b>Bitcrusher</b>"
+msgstr "<b> பிட்ரூசர் </b>"
+
+#: src/bitcrusher/bitcrusher.cc:34
+msgid "Bit Depth:"
+msgstr "பிட் ஆழம்:"
+
+#: src/bitcrusher/bitcrusher.cc:37
+msgid "Downsample ratio:"
+msgstr "குறைந்த மாதிரி விகிதம்:"
+
+#: src/bitcrusher/bitcrusher.cc:48
+msgid "Bitcrusher"
+msgstr "பிட்ரூசர்"
+
+#: src/blur_scope/blur_scope.cc:40 src/blur_scope-qt/blur_scope.cc:45
+msgid "<b>Color</b>"
+msgstr "<b>நிறம்</b>"
+
+#: src/blur_scope/blur_scope.cc:56 src/blur_scope-qt/blur_scope.cc:158
+msgid "Blur Scope"
+msgstr "மங்கலான குறியிலக்கம்"
+
+#: src/bs2b/plugin.cc:38
+msgid "Bauer Stereophonic-to-Binaural (BS2B)"
+msgstr "பார் இசைப்பிரிப்பு முதல் இருசெவிக்குரியது (BS2B)"
+
+#: src/bs2b/plugin.cc:129
+msgid "Presets:"
+msgstr "முன்னமைப்புகள்:"
+
+#: src/bs2b/plugin.cc:130
+msgid "Default"
+msgstr "இயல்புநிலை"
+
+#: src/bs2b/plugin.cc:136
+msgid "Feed level:"
+msgstr "நிலை ஊட்டல்:"
+
+#: src/bs2b/plugin.cc:138
+msgid "x1/10 dB"
+msgstr "x1/10 db"
+
+#: src/bs2b/plugin.cc:139
+msgid "Cut frequency:"
+msgstr "குறை அதிர்வெண்:"
+
+#: src/cairo-spectrum/cairo-spectrum.cc:39 src/qt-spectrum/qt-spectrum.cc:107
+msgid "Spectrum Analyzer"
+msgstr "நிறமாலை பகுப்பாய்வி "
+
+#: src/cdaudio/cdaudio-ng.cc:74
+msgid "Audio CD Plugin"
+msgstr "ஒலி இறுவட்டு சொருகி"
+
+#: src/cdaudio/cdaudio-ng.cc:121
+msgid ""
+"Copyright (C) 2007-2012 Calin Crisan <ccrisan@gmail.com> and others.\n"
+"\n"
+"Many thanks to libcdio developers <http://www.gnu.org/software/libcdio/>\n"
+"and to libcddb developers <http://libcddb.sourceforge.net/>.\n"
+"\n"
+"Also thank you to Tony Vroon for mentoring and guiding me.\n"
+"\n"
+"This was a Google Summer of Code 2007 project."
+msgstr ""
+"பதிப்புரிமை (இ) 2007-2012 காலின் கிரிசன் <ccrisan@gmail.com> மற்றும் பிற. \n"
+"\n"
+" லிப்க்டியோ டெவலப்பர்களுக்கு பல நன்றி <http://www.gnu.org/software/libcdio/> \n"
+" மற்றும் libcddb டெவலப்பர்களுக்கு <http://libcddb.sourceforge.net/>. \n"
+"\n"
+" எனக்கு வழிகாட்டுதல் மற்றும் வழிகாட்டியதற்காக டோனி வ்ரூனுக்கும் நன்றி. \n"
+"\n"
+" இது கூகிள் சம்மர் ஆஃப் கோட் 2007 திட்டமாகும்."
+
+#: src/cdaudio/cdaudio-ng.cc:140
+msgid "<b>Device</b>"
+msgstr "<b>சாதனம்</b>"
+
+#: src/cdaudio/cdaudio-ng.cc:141
+msgid "Read speed:"
+msgstr "வாசிக்கும் விரைவு :"
+
+#: src/cdaudio/cdaudio-ng.cc:144
+msgid "Override device:"
+msgstr "சாதனம் மேலெழுது:"
+
+#: src/cdaudio/cdaudio-ng.cc:146
+msgid "<b>Metadata</b>"
+msgstr "<b>மீத்தரவு </b>"
+
+#: src/cdaudio/cdaudio-ng.cc:147
+msgid "Use CD-Text"
+msgstr "இறுவட்டு எழுத்துகளை உபயோகிக்க"
+
+#: src/cdaudio/cdaudio-ng.cc:150
+msgid "Use CDDB"
+msgstr "CDDB இனை உபயோகிக்க"
+
+#: src/cdaudio/cdaudio-ng.cc:152
+msgid "Use HTTP instead of CDDBP"
+msgstr "CDDBP இற்கு பதிலாக HTTP இனை பயன்படுத்துக "
+
+#: src/cdaudio/cdaudio-ng.cc:155
+msgid "Server:"
+msgstr "சேவையகம்:"
+
+#: src/cdaudio/cdaudio-ng.cc:159
+msgid "Path:"
+msgstr "வழி :"
+
+#: src/cdaudio/cdaudio-ng.cc:163
+msgid "Port:"
+msgstr "துறைமுகம் :"
+
+#: src/cdaudio/cdaudio-ng.cc:228
+msgid "Failed to initialize cdio subsystem."
+msgstr "சி.டி.ஐ.ஓ துணை அமைப்பைத் தொடங்குவதில் தோல்வி."
+
+#: src/cdaudio/cdaudio-ng.cc:260
+#, c-format
+msgid "Invalid URI %s."
+msgstr "தவறான யூரி %s."
+
+#: src/cdaudio/cdaudio-ng.cc:262
+#, c-format
+msgid "Track %d not found."
+msgstr "ட்ராக் %d கண்டுபிடிக்கப்படவில்லை."
+
+#: src/cdaudio/cdaudio-ng.cc:264
+#, c-format
+msgid "Track %d is a data track."
+msgstr "ட்ராக் %d என்பது தரவு பாடல்."
+
+#: src/cdaudio/cdaudio-ng.cc:339
+msgid "Error reading audio CD."
+msgstr "ஆடியோ சிடியை வாசிப்பதில் பிழை."
+
+#: src/cdaudio/cdaudio-ng.cc:410
+msgid "Audio CD"
+msgstr "ஒலி இறுவட்டு"
+
+#: src/cdaudio/cdaudio-ng.cc:446 src/cdaudio/cdaudio-ng.cc:455
+#, c-format
+msgid "Failed to open CD device %s."
+msgstr "குறுவட்டு சாதனம் %s திறக்கத் தவறிவிட்டது."
+
+#: src/cdaudio/cdaudio-ng.cc:458
+msgid "No audio capable CD drive found."
+msgstr "ஆடியோ திறன் கொண்ட சிடி இயக்கி எதுவும் கிடைக்கவில்லை."
+
+#: src/cdaudio/cdaudio-ng.cc:481
+msgid "Drive is empty."
+msgstr "வட்டு வெறுமையாக உள்ளது."
+
+#: src/cdaudio/cdaudio-ng.cc:483
+msgid "Unsupported disk type."
+msgstr "ஆதரவற்ற வட்டு வகை."
+
+#: src/cdaudio/cdaudio-ng.cc:507
+msgid "Failed to finish initializing opened CD drive."
+msgstr "திறந்த குறுவட்டு இயக்ககத்தைத் தொடங்குவதில் தோல்வி."
+
+#: src/cdaudio/cdaudio-ng.cc:520
+msgid "Failed to retrieve first/last track number."
+msgstr "முதல்/கடைசி தட எண்ணை மீட்டெடுப்பதில் தோல்வி."
+
+#: src/cdaudio/cdaudio-ng.cc:541
+#, c-format
+msgid "Cannot read start/end LSN for track %d."
+msgstr "ட்ராக் %d க்கு start/end lsn ஐப் படிக்க முடியாது."
+
+#: src/cdaudio/cdaudio-ng.cc:624
+msgid "Failed to create the CDDB connection."
+msgstr "சி.டி.டி.பி இணைப்பை உருவாக்குவதில் தோல்வி."
+
+#: src/cdaudio/cdaudio-ng.cc:690
+msgid "Failed to query the CDDB server"
+msgstr "சி.டி.டி.பி சேவையகத்தை வினவுவதில் தோல்வி"
+
+#: src/cdaudio/cdaudio-ng.cc:692
+#, c-format
+msgid "Failed to query the CDDB server: %s"
+msgstr "சி.டி.டி.பி சேவையகத்தை வினவுவதில் தோல்வி: %s"
+
+#: src/cdaudio/cdaudio-ng.cc:716
+#, c-format
+msgid "Failed to read the CDDB info: %s"
+msgstr "சி.டி.டி.பி தகவலைப் படிக்கத் தவறிவிட்டது: %s"
+
+#: src/cd-menu-items/cd-menu-items.cc:33
+msgid "Audio CD Menu Items"
+msgstr "ஒலி இறுவட்டு பட்டியல் உருப்படிகள்"
+
+#: src/cd-menu-items/cd-menu-items.cc:45
+msgid "Pla_y CD"
+msgstr "pla_y குறுவட்டு"
+
+#: src/cd-menu-items/cd-menu-items.cc:45
+msgid "_Add CD"
+msgstr "_add cd"
+
+#: src/compressor/compressor.cc:45
+msgid "<b>Compression</b>"
+msgstr "<b>சுருக்கம்</b>"
+
+#: src/compressor/compressor.cc:46
+msgid "Center volume:"
+msgstr "மைய சத்தம்: "
+
+#: src/compressor/compressor.cc:49
+msgid "Dynamic range:"
+msgstr "நிலைமாறும் வரம்பாக: "
+
+#: src/compressor/compressor.cc:57
+msgid ""
+"Dynamic Range Compression Plugin for Audacious\n"
+"Copyright 2010-2014 John Lindgren"
+msgstr ""
+"துணிச்சலுக்கான மாறும் ரேஞ்ச் சுருக்க சொருகி \n"
+" பதிப்புரிமை 2010-2014 சான் லிண்ட்கிரென்"
+
+#: src/compressor/compressor.cc:64
+msgid "Dynamic Range Compressor"
+msgstr "நிலைமாறும் வரம்பு சுருக்கி "
+
+#: src/console/plugin.cc:15
+msgid ""
+"Console music decoder engine based on Game_Music_Emu 0.5.2\n"
+"Supported formats: AY, GBS, GYM, HES, KSS, NSF, NSFE, SAP, SPC, VGM, VGZ\n"
+"\n"
+"Audacious plugin by:\n"
+"William Pitcock <nenolod@dereferenced.org>\n"
+"Shay Green <gblargg@gmail.com>"
+msgstr ""
+"came_music_emu 0.5.2 ஐ அடிப்படையாகக் கொண்ட கன்சோல் மியூசிக் டிகோடர் எஞ்சின் \n"
+" உதவி வடிவங்கள்: ay, gbs, gim, hes, kss, nsf, nsfe, sap, spc, vgm, vgz \n"
+"\n"
+" துணிச்சலான சொருகி வழங்கியவர்: \n"
+" வில்லியம் பிட்காக் <nenolod@derfered.org> \n"
+" சே கிரீன் <gblargg@gmail.com>"
+
+#: src/console/plugin.cc:30
+msgid "Bass:"
+msgstr "அடித்தொனி:"
+
+#: src/console/plugin.cc:33
+msgid "Treble:"
+msgstr "உயர் இறுதி அதிர்வெண்:"
+
+#: src/console/plugin.cc:36
+msgid "Echo:"
+msgstr "எதிரொலி:"
+
+#: src/console/plugin.cc:39
+msgid "Default song length:"
+msgstr "இயல்புநிலை பாடல் நீளம்:"
+
+#: src/console/plugin.cc:41 src/crossfade/crossfade.cc:56
+#: src/crossfade/crossfade.cc:62 src/lirc/lirc.cc:395 src/notify/notify.cc:113
+#: src/sid/xs_config.cc:85 src/sid/xs_config.cc:94 src/sid/xs_config.cc:103
+#: src/vumeter-qt/vumeter_qt.cc:39 src/vumeter/vumeter.cc:77
+msgid "seconds"
+msgstr "வினாடிகள் "
+
+#: src/console/plugin.cc:42 src/modplug/plugin_main.cc:58
+msgid "<b>Resampling</b>"
+msgstr "<b> மறுசீரமைப்பு </b>"
+
+#: src/console/plugin.cc:43
+msgid "Enable audio resampling"
+msgstr "ஒலி புதுப்பித்தலை செயல்படுத்தக "
+
+#: src/console/plugin.cc:49
+msgid "<b>SPC</b>"
+msgstr "<b> spc </b>"
+
+#: src/console/plugin.cc:50
+msgid "Ignore length from SPC tags"
+msgstr "SPC குறிச்சொற்களின் நீளத்தை புறக்கணிக்ககுக "
+
+#: src/console/plugin.cc:52
+msgid "Increase reverb"
+msgstr "எதிர்முழக்கத்தை அதிகரிக்குக "
+
+#: src/console/plugin.h:26
+msgid "Game Console Music Decoder"
+msgstr "விளையாட்டு பணியக இசை குறிவிலக்கி"
+
+#: src/coreaudio/coreaudio.cc:53
+msgid "CoreAudio output"
+msgstr "கோரியுடியோ வெளியீடு"
+
+#: src/coreaudio/coreaudio.cc:155
+msgid ""
+"CoreAudio Output Plugin for Audacious\n"
+"Copyright 2014 William Pitcock\n"
+"Copyright 2017,18 René J.V. Bertin\n"
+" (original code and code adapted from\n"
+"  Apple examples, (C) Apple 2013)\n"
+"\n"
+"Based on SDL Output Plugin for Audacious\n"
+"Copyright 2010 John Lindgren"
+msgstr ""
+"துணிச்சலுக்கான கோரியுடியோ வெளியீட்டு சொருகி \n"
+" பதிப்புரிமை 2014 வில்லியம் பிட்காக் \n"
+" பதிப்புரிமை 2017,18 ரெனே சே.வி. பெர்டின் \n"
+"  (அசல் குறியீடு மற்றும் குறியீடு தழுவி \n"
+"   ஆப்பிள் எடுத்துக்காட்டுகள், (இ) ஆப்பிள் 2013) \n"
+"\n"
+" துணிச்சலுக்கான எச்.டி.எல் வெளியீட்டு சொருகி அடிப்படையில் \n"
+" பதிப்புரிமை 2010 சான் லிண்ட்கிரென்"
+
+#: src/coreaudio/coreaudio.cc:171
+msgid "Use exclusive mode"
+msgstr "பிரத்யேக பயன்முறையைப் பயன்படுத்தவும்"
+
+#: src/coreaudio/coreaudio.cc:173
+msgid "Use bit perfect audio (adapt device sampling rate)"
+msgstr "பிட் சரியான ஆடியோவைப் பயன்படுத்தவும் (சாதன மாதிரி விகிதத்தை மாற்றியமைக்கவும்)"
+
+#: src/crossfade/crossfade.cc:47
+msgid ""
+"Crossfade Plugin for Audacious\n"
+"Copyright 2010-2014 John Lindgren"
+msgstr ""
+"துணிச்சலான கிராச்ஃபேட் சொருகி \n"
+" பதிப்புரிமை 2010-2014 சான் லிண்ட்கிரென்"
+
+#: src/crossfade/crossfade.cc:51
+msgid "<b>Crossfade</b>"
+msgstr "<b>குறுக்கு மங்கல்</b>"
+
+#: src/crossfade/crossfade.cc:52
+msgid "On automatic song change"
+msgstr "தானியங்கி பாடல் மாற்றத்தில்"
+
+#: src/crossfade/crossfade.cc:54 src/crossfade/crossfade.cc:60
+msgid "Overlap:"
+msgstr "மேற்பொருந்தல்:"
+
+#: src/crossfade/crossfade.cc:58
+msgid "On seek or manual song change"
+msgstr "தேடு அல்லது கையேடு பாடல் மாற்றத்தில்"
+
+#: src/crossfade/crossfade.cc:64
+msgid "No fade in"
+msgstr "மங்கவில்லை"
+
+#: src/crossfade/crossfade.cc:66
+msgid "Use S-curve fade"
+msgstr "எச்-வளைவு மங்கலைப் பயன்படுத்தவும்"
+
+#: src/crossfade/crossfade.cc:68
+msgid "S-curve steepness:"
+msgstr "எச்-கர்வ் செங்குத்தானது:"
+
+#: src/crossfade/crossfade.cc:70
+msgid "(higher is steeper)"
+msgstr "(உயர்ந்தது செங்குத்தானது)"
+
+#: src/crossfade/crossfade.cc:72
+msgid "<b>Tip</b>"
+msgstr "<b> உதவிக்குறிப்பு </b>"
+
+#: src/crossfade/crossfade.cc:73
+msgid ""
+"For better crossfading, enable\n"
+"the Silence Removal effect."
+msgstr ""
+"சிறந்த கிராச்ஃபேடிங்கிற்கு, இயக்கு \n"
+" ம silence னம் அகற்றும் விளைவு."
+
+#: src/crossfade/crossfade.cc:83
+msgid "Crossfade"
+msgstr "குறுக்கு மங்கல்"
+
+#: src/crystalizer/crystalizer.cc:31
+msgid "<b>Crystalizer</b>"
+msgstr "<b>பளிங்குருவாக்கl</b>"
+
+#: src/crystalizer/crystalizer.cc:32 src/stereo_plugin/stereo.cc:45
+msgid "Intensity:"
+msgstr "அடர்த்தி:"
+
+#: src/crystalizer/crystalizer.cc:43
+msgid "Crystalizer"
+msgstr "palinguruvaathal"
+
+#: src/cue/cue.cc:42
+msgid "Cue Sheet Plugin"
+msgstr "கோல் தாள் செருகுநிரல்"
+
+#: src/delete-files/delete-files.cc:53 src/delete-files/delete-files.cc:215
+#: src/delete-files/delete-files.cc:230
+msgid "Delete Files"
+msgstr "கோப்புகளை நீக்கு"
+
+#: src/delete-files/delete-files.cc:120
+msgid "No files are selected."
+msgstr "கோப்புகள் எதுவும் தேர்ந்தெடுக்கப்படவில்லை."
+
+#: src/delete-files/delete-files.cc:125
+#, c-format
+msgid "Do you want to move %s to the trash?"
+msgstr "நீங்கள் %s குப்பைக்கு நகர்த்த விரும்புகிறீர்களா?"
+
+#: src/delete-files/delete-files.cc:126
+#, c-format
+msgid "Do you want to permanently delete %s?"
+msgstr "%s நிரந்தரமாக நீக்க விரும்புகிறீர்களா?"
+
+#: src/delete-files/delete-files.cc:133
+#, c-format
+msgid "Do you want to move %d files to the trash?"
+msgstr "%d கோப்புகளை குப்பைக்கு நகர்த்த விரும்புகிறீர்களா?"
+
+#: src/delete-files/delete-files.cc:134
+#, c-format
+msgid "Do you want to permanently delete %d files?"
+msgstr "%d கோப்புகளை நிரந்தரமாக நீக்க விரும்புகிறீர்களா?"
+
+#: src/delete-files/delete-files.cc:146
+msgid "Move to trash"
+msgstr "குப்பைக்கு நகர்த்தவும்"
+
+#: src/delete-files/delete-files.cc:146
+msgid "Delete"
+msgstr "அழிக்குக "
+
+#: src/delete-files/delete-files.cc:213 src/delete-files/delete-files.cc:235
+#: src/skins-qt/search-select.cc:102 src/skins/search-select.cc:78
+msgid "Cancel"
+msgstr "ரத்து செய்க "
+
+#: src/delete-files/delete-files.cc:267
+msgid "Delete Selected Files"
+msgstr "தேர்ந்தெடுக்கப்பட்ட கோப்புகளை நீக்கு"
+
+#: src/delete-files/delete-files.cc:287
+msgid "<b>Delete Method</b>"
+msgstr "<b> முறை நீக்கு </b>"
+
+#: src/delete-files/delete-files.cc:288
+msgid "Move to trash instead of deleting immediately"
+msgstr "உடனடியாக நீக்குவதற்கு பதிலாக குப்பைக்கு நகர்த்தவும்"
+
+#: src/echo_plugin/echo.cc:9
+msgid ""
+"Echo Plugin\n"
+"By Johan Levin, 1999\n"
+"Surround echo by Carl van Schaik, 1999\n"
+"Updated for Audacious by William Pitcock and John Lindgren, 2010-2014"
+msgstr ""
+"எதிரொலி சொருகி \n"
+" எழுதியவர் சோஅன் லெவின், 1999 \n"
+" சரவுண்ட் எக்கோ கார்ல் வான் சைக், 1999 \n"
+" வில்லியம் பிட்காக் மற்றும் சான் லிண்ட்கிரென், 2010-2014 ஆல் ஆடியாசிட்டிக்கு "
+"புதுப்பிக்கப்பட்டது"
+
+#: src/echo_plugin/echo.cc:21
+msgid "<b>Echo</b>"
+msgstr "<b>ethiroli</b>"
+
+#: src/echo_plugin/echo.cc:22 src/modplug/plugin_main.cc:72
+#: src/modplug/plugin_main.cc:82
+msgid "Delay:"
+msgstr "நேரந்தவறுகை :"
+
+#: src/echo_plugin/echo.cc:24 src/modplug/plugin_main.cc:72
+#: src/modplug/plugin_main.cc:82 src/xsf/plugin.cc:445
+msgid "ms"
+msgstr "ms"
+
+#: src/echo_plugin/echo.cc:25
+msgid "Feedback:"
+msgstr "பின்னூட்டு :"
+
+#: src/echo_plugin/echo.cc:28 src/modplug/plugin_main.cc:86
+msgid "Volume:"
+msgstr "ஒலி அளவு "
+
+#: src/echo_plugin/echo.cc:39
+msgid "Echo"
+msgstr "எதிரொலி "
+
+#: src/ffaudio/ffaudio-core.cc:50
+msgid "FFmpeg Plugin"
+msgstr "FFmpeg நீட்சி"
+
+#: src/ffaudio/ffaudio-core.cc:649
+msgid ""
+"Multi-format audio decoding plugin for Audacious using\n"
+"FFmpeg multimedia framework (http://www.ffmpeg.org/)\n"
+"\n"
+"Audacious plugin by:\n"
+"William Pitcock <nenolod@nenolod.net>\n"
+"Matti Hämäläinen <ccr@tnsp.org>"
+msgstr ""
+"மல்டி ஃபார்மேட் ஆடியோ டிகோடிங் சொருகி ஆடம்பரத்தைப் பயன்படுத்தி \n"
+" ffmpeg மல்டிமீடியா கட்டமைப்பானது (http://www.ffmpeg.org/) \n"
+"\n"
+" துணிச்சலான சொருகி வழங்கியவர்: \n"
+" வில்லியம் பிட்காக் <nenolod@nenolod.net> \n"
+" matti hämäläinen <ccr@tnsp.org>"
+
+#: src/filewriter/filewriter.cc:48
+msgid "FileWriter Plugin"
+msgstr "FileWriter நீட்சி "
+
+#: src/filewriter/filewriter.cc:316
+#, c-format
+msgid ""
+"Error opening %s:\n"
+"%s"
+msgstr ""
+"பிழை திறப்பது %s: \n"
+" %s"
+
+#: src/filewriter/filewriter.cc:358
+msgid ""
+"This program is free software; you can redistribute it and/or modify it "
+"under the terms of the GNU General Public License as published by the Free "
+"Software Foundation; either version 2 of the License, or (at your option) "
+"any later version.\n"
+"\n"
+"This program is distributed in the hope that it will be useful, but WITHOUT "
+"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
+"FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for "
+"more details.\n"
+"\n"
+"You should have received a copy of the GNU General Public License along with "
+"this program; if not, write to the Free Software Foundation, Inc., 51 "
+"Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA."
+msgstr ""
+"இந்த நிரல் இலவச மென்பொருள்; இலவச மென்பொருள் அறக்கட்டளையால் வெளியிடப்பட்ட குனு பொது பொது "
+"உரிமத்தின் விதிமுறைகளின் கீழ் நீங்கள் அதை மறுபகிர்வு செய்யலாம் மற்றும்/அல்லது மாற்றலாம்; "
+"உரிமத்தின் பதிப்பு 2, அல்லது (உங்கள் விருப்பத்தில்) பின்னர் எந்த பதிப்பும். \n"
+"\n"
+" இந்த திட்டம் பயனுள்ளதாக இருக்கும் என்ற நம்பிக்கையில் விநியோகிக்கப்படுகிறது, ஆனால் எந்த "
+"உத்தரவாதமும் இல்லாமல்; ஒரு குறிப்பிட்ட நோக்கத்திற்காக வணிகத்தன்மை அல்லது உடற்தகுதி "
+"ஆகியவற்றின் மறைமுக பொறுப்பு கூட இல்லாமல். மேலும் விவரங்களுக்கு குனு பொது பொது "
+"உரிமத்தைப் பார்க்கவும். \n"
+"\n"
+" இந்த திட்டத்துடன் குனு பொது பொது உரிமத்தின் நகலை நீங்கள் பெற்றிருக்க வேண்டும்; "
+"இல்லையென்றால், இலவச மென்பொருள் அறக்கட்டளை, இன்க்., 51 பிராங்க்ளின் தெரு, ஐந்தாவது மாடி, "
+"பாச்டன், எம்.ஏ 02110-1301, அமெரிக்கா."
+
+#: src/filewriter/filewriter.cc:385
+msgid "Output file format:"
+msgstr "வெளியீட்டு கோப்பு வடிவம்:"
+
+#: src/filewriter/filewriter.cc:389
+msgid "Save into original directory"
+msgstr "அசல் கோப்பகத்தில் சேமிக்கவும்"
+
+#: src/filewriter/filewriter.cc:392
+msgid "Save into custom directory:"
+msgstr "தனிப்பயன் கோப்பகத்தில் சேமிக்கவும்:"
+
+#: src/filewriter/filewriter.cc:400
+msgid "Generate file name from:"
+msgstr "இதிலிருந்து கோப்பு பெயரை உருவாக்குங்கள்:"
+
+#: src/filewriter/filewriter.cc:401
+msgid "Original file name"
+msgstr "அசல் கோப்பு பெயர்"
+
+#: src/filewriter/filewriter.cc:404
+msgid "Original file name (no suffix)"
+msgstr "அசல் கோப்பு பெயர் (பின்னொட்டு இல்லை)"
+
+#: src/filewriter/filewriter.cc:407
+msgid "Original file tag"
+msgstr "அசல் கோப்பு குறிச்சொல்"
+
+#: src/filewriter/filewriter.cc:411
+msgid "Prepend track number to file name"
+msgstr "கோப்பு பெயருக்கு டிராக் எண்ணைத் தயாரிக்கவும்"
+
+#: src/filewriter/filewriter.cc:417 src/filewriter/filewriter.cc:449
+msgid "Auto"
+msgstr "தானியங்கு"
+
+#: src/filewriter/filewriter.cc:418
+msgid "8000 Hz"
+msgstr "8000 எர்ட்ச்"
+
+#: src/filewriter/filewriter.cc:419
+msgid "11025 Hz"
+msgstr "11025 எர்ட்ச்"
+
+#: src/filewriter/filewriter.cc:420
+msgid "12000 Hz"
+msgstr "12000 எர்ட்ச்"
+
+#: src/filewriter/filewriter.cc:421
+msgid "16000 Hz"
+msgstr "16000 எர்ட்ச்"
+
+#: src/filewriter/filewriter.cc:422
+msgid "22050 Hz"
+msgstr "22050 எர்ட்ச்"
+
+#: src/filewriter/filewriter.cc:423
+msgid "24000 Hz"
+msgstr "24000 எர்ட்ச்"
+
+#: src/filewriter/filewriter.cc:424
+msgid "32000 Hz"
+msgstr "32000 எர்ட்ச்"
+
+#: src/filewriter/filewriter.cc:425 src/xsf/plugin.cc:430
+msgid "44100 Hz"
+msgstr "44100 எர்ட்ச்"
+
+#: src/filewriter/filewriter.cc:426 src/xsf/plugin.cc:431
+msgid "48000 Hz"
+msgstr "48000 எர்ட்ச்"
+
+#: src/filewriter/filewriter.cc:430
+msgid "8 kbit/s"
+msgstr "8 kbit/s"
+
+#: src/filewriter/filewriter.cc:431
+msgid "16 kbit/s"
+msgstr "16 kbit/s"
+
+#: src/filewriter/filewriter.cc:432
+msgid "32 kbit/s"
+msgstr "32 kbit/s"
+
+#: src/filewriter/filewriter.cc:433
+msgid "40 kbit/s"
+msgstr "40 kbit/s"
+
+#: src/filewriter/filewriter.cc:434
+msgid "48 kbit/s"
+msgstr "48 kbit/s"
+
+#: src/filewriter/filewriter.cc:435
+msgid "56 kbit/s"
+msgstr "56 kbit/s"
+
+#: src/filewriter/filewriter.cc:436
+msgid "64 kbit/s"
+msgstr "64 kbit/s"
+
+#: src/filewriter/filewriter.cc:437
+msgid "80 kbit/s"
+msgstr "80 kbit/s"
+
+#: src/filewriter/filewriter.cc:438
+msgid "96 kbit/s"
+msgstr "96 kbit/s"
+
+#: src/filewriter/filewriter.cc:439
+msgid "112 kbit/s"
+msgstr "112 kbit/s"
+
+#: src/filewriter/filewriter.cc:440
+msgid "128 kbit/s"
+msgstr "128 kbit/s"
+
+#: src/filewriter/filewriter.cc:441
+msgid "160 kbit/s"
+msgstr "160 kbit/s"
+
+#: src/filewriter/filewriter.cc:442
+msgid "192 kbit/s"
+msgstr "192 kbit/s"
+
+#: src/filewriter/filewriter.cc:443
+msgid "224 kbit/s"
+msgstr "224 kbit/s"
+
+#: src/filewriter/filewriter.cc:444
+msgid "256 kbit/s"
+msgstr "256 kbit/s"
+
+#: src/filewriter/filewriter.cc:445
+msgid "320 kbit/s"
+msgstr "320 kbit/s"
+
+#: src/filewriter/filewriter.cc:450
+msgid "Joint Stereo"
+msgstr "கூட்டு பேரொலி"
+
+#: src/filewriter/filewriter.cc:451 src/modplug/plugin_main.cc:57
+#: src/mpg123/mpg123.cc:259
+msgid "Stereo"
+msgstr "பேரொலி"
+
+#: src/filewriter/filewriter.cc:452 src/modplug/plugin_main.cc:56
+#: src/mpg123/mpg123.cc:260
+msgid "Mono"
+msgstr "ஒற்றை"
+
+#: src/filewriter/filewriter.cc:456
+msgid "VBR"
+msgstr "vbr"
+
+#: src/filewriter/filewriter.cc:457
+msgid "ABR"
+msgstr "அப்"
+
+#: src/filewriter/filewriter.cc:478
+msgid "Algorithm quality:"
+msgstr "வழிமுறை தரம்:"
+
+#: src/filewriter/filewriter.cc:484
+msgid "Bitrate:"
+msgstr "Bit வீதம் "
+
+#: src/filewriter/filewriter.cc:491
+msgid "Compression ratio:"
+msgstr "அழுத்த விகிதம்:"
+
+#: src/filewriter/filewriter.cc:498
+msgid "Audio mode:"
+msgstr "ஆடியோ பயன்முறை:"
+
+#: src/filewriter/filewriter.cc:501
+msgid "Enforce strict ISO compliance"
+msgstr "கடுமையான ஐஎச்ஓ இணக்கத்தை செயல்படுத்தவும்"
+
+#: src/filewriter/filewriter.cc:503
+msgid "Error protection"
+msgstr "தவறு பாதுகாப்பு"
+
+#: src/filewriter/filewriter.cc:508
+msgid "Enable VBR/ABR"
+msgstr "VBR/ABR இனை செயல்படுத்துக "
+
+#: src/filewriter/filewriter.cc:510
+msgid "Type:"
+msgstr "வகை:"
+
+#: src/filewriter/filewriter.cc:514
+msgid "Minimum bitrate:"
+msgstr "குறைந்தபட்ச பிட்ரேட்:"
+
+#: src/filewriter/filewriter.cc:518
+msgid "Maximum bitrate:"
+msgstr "அதிகபட்ச பிட்ரேட்:"
+
+#: src/filewriter/filewriter.cc:522
+msgid "Average bitrate:"
+msgstr "சராசரி பிட்ரேட்:"
+
+#: src/filewriter/filewriter.cc:526
+msgid "VBR quality level:"
+msgstr "VBR தர நிலை:"
+
+#: src/filewriter/filewriter.cc:530
+msgid "Strictly enforce minimum bitrate"
+msgstr "கண்டிப்பாக குறைந்த பிட்வீதத்தை செயல்படுத்துக "
+
+#: src/filewriter/filewriter.cc:533
+msgid "Omit Xing VBR header"
+msgstr "xing vbr தலைப்பைத் தவிர்க்கவும்"
+
+#: src/filewriter/filewriter.cc:539
+msgid "<b>Frame Headers</b>"
+msgstr "<b> பிரேம் தலைப்புகள் </b>"
+
+#: src/filewriter/filewriter.cc:540
+msgid "Mark as copyright"
+msgstr "பதிப்புரிமை என குறிக்குக "
+
+#: src/filewriter/filewriter.cc:542
+msgid "Mark as original"
+msgstr "அசலென குriக்குக"
+
+#: src/filewriter/filewriter.cc:544
+msgid "<b>ID3 Tags</b>"
+msgstr "<b> ஐடி 3 குறிச்சொற்கள் </b>"
+
+#: src/filewriter/filewriter.cc:545
+msgid "Force addition of version 2 tag"
+msgstr "பதிப்பு 2 குறியை பலமாக உள்ளடக்குக "
+
+#: src/filewriter/filewriter.cc:547
+msgid "Only add v1 tag"
+msgstr "பதிப்பு 1 குறியை மாத்திரம் உள்ளடக்குக "
+
+#: src/filewriter/filewriter.cc:549
+msgid "Only add v2 tag"
+msgstr "பதிப்பு 2 குறியை மாத்திரம் உள்ளடக்குக "
+
+#: src/filewriter/filewriter.cc:554
+msgid "Quality"
+msgstr "தகுதி "
+
+#: src/filewriter/filewriter.cc:555
+msgid "VBR/ABR"
+msgstr "VBR/ABR"
+
+#: src/filewriter/filewriter.cc:556
+msgid "Tags"
+msgstr "குறி "
+
+#: src/filewriter/filewriter.cc:566
+msgid "Quality (0-1):"
+msgstr "தகுதி (0-1):"
+
+#: src/filewriter/filewriter.cc:573 src/skins-qt/skins_cfg.cc:307
+#: src/skins/skins_cfg.cc:289
+msgid "General"
+msgstr "பொதுவான"
+
+#: src/flac/flacng.h:36
+msgid "FLAC Decoder"
+msgstr "FLAC குறிவிலக்கி "
+
+#: src/flac/metadata.cc:296 src/wavpack/wavpack.cc:205
+msgid "lossless"
+msgstr "இழப்பற்றது"
+
+#: src/flac/plugin.cc:214
+msgid ""
+"Original code by\n"
+"Ralf Ertzinger <ralf@skytale.net>\n"
+"\n"
+"http://www.skytale.net/projects/bmp-flac2/"
+msgstr ""
+"அசல் குறியீடு மூலம் \n"
+" ralf ertzinger <ralf@skytale.net> \n"
+"\n"
+" http://www.skytale.net/projects/bmp-flac2/"
+
+#: src/gio/gio.cc:34
+msgid ""
+"GIO Plugin for Audacious\n"
+"Copyright 2009-2012 John Lindgren"
+msgstr ""
+"துணிச்சலுக்கான சியோ சொருகி \n"
+" பதிப்புரிமை 2009-2012 சான் லிண்ட்கிரென்"
+
+#: src/gio/gio.cc:42
+msgid "GIO Plugin"
+msgstr "GIO நீட்சி"
+
+#: src/gio/gio.cc:152
+msgid "Read-and-append mode not supported"
+msgstr "வாசிப்பு மற்றும் இடர் பயன்முறை ஆதரிக்கப்படவில்லை"
+
+#: src/gio/gio.cc:165
+msgid "Invalid open mode"
+msgstr "தவறான திறந்த பயன்முறை"
+
+#: src/glspectrum/gl-spectrum.cc:52
+msgid ""
+"OpenGL Spectrum Analyzer for Audacious\n"
+"Copyright 2013 Christophe Budé, John Lindgren, and Carlo Bramini\n"
+"\n"
+"Based on the XMMS plugin:\n"
+"Copyright 1998-2000 Peter Alm, Mikael Alm, Olle Hallnas, Thomas Nilsson, and "
+"4Front Technologies\n"
+"\n"
+"License: GPLv2+"
+msgstr ""
+"துணிச்சலுக்கான ஓபன்சிஎல் ச்பெக்ட்ரம் பகுப்பாய்வி \n"
+" பதிப்புரிமை 2013 கிறிச்டோஃப் புடே, சான் லிண்ட்கிரென் மற்றும் கார்லோ பிராமினி \n"
+"\n"
+" எக்ச்எம்எம்எச் சொருகி அடிப்படையில்: \n"
+" பதிப்புரிமை 1998-2000 பீட்டர் ஆல்ம், மைக்கேல் ஆல்ம், ஓலே ஆல்னாச், தாமச் நில்சன், மற்றும் 4 "
+"ஃப்ரண்ட் டெக்னாலசிச் \n"
+"\n"
+" உரிமம்: gplv2+"
+
+#: src/glspectrum/gl-spectrum.cc:63 src/qtglspectrum/gl-spectrum.cc:53
+msgid "OpenGL Spectrum Analyzer"
+msgstr "OpenGL நிறமாலை பகுப்பாய்வி"
+
+#: src/gtkui/columns.cc:36 src/qtui/playlist_model.cc:33
+msgid "Entry Number"
+msgstr "நுழைவு எண்"
+
+#: src/gtkui/columns.cc:37 src/playback-history-qt/playback-history.cc:372
+#: src/playlist-manager/playlist-manager.cc:200
+#: src/playlist-manager-qt/playlist-manager-qt.cc:188
+#: src/qtui/playlist_model.cc:33 src/streamtuner/icecast-model.cc:120
+#: src/streamtuner/ihr-model.cc:159 src/streamtuner/shoutcast-model.cc:122
+msgid "Title"
+msgstr "தலைப்பு"
+
+#: src/gtkui/columns.cc:38 src/qtui/playlist_model.cc:33
+msgid "Artist"
+msgstr "பாடகர்"
+
+#: src/gtkui/columns.cc:39 src/qtui/playlist_model.cc:33
+msgid "Year"
+msgstr "வருடம்"
+
+#: src/gtkui/columns.cc:40 src/playback-history-qt/playback-history.cc:374
+#: src/playback-history-qt/playback-history.cc:837
+#: src/qtui/playlist_model.cc:34
+msgid "Album"
+msgstr "குறுவட்டு"
+
+#: src/gtkui/columns.cc:41 src/qtui/playlist_model.cc:34
+msgid "Album Artist"
+msgstr "செருகேடு கலைஞர் "
+
+#: src/gtkui/columns.cc:42 src/qtui/playlist_model.cc:34
+msgid "Track"
+msgstr "பாடல் "
+
+#: src/gtkui/columns.cc:43 src/qtui/playlist_model.cc:34
+#: src/streamtuner/icecast-model.cc:123 src/streamtuner/shoutcast-model.cc:125
+#: src/streamtuner/shoutcast-model.cc:236
+msgid "Genre"
+msgstr "இலக்கியநடை"
+
+#: src/gtkui/columns.cc:44 src/qtui/playlist_model.cc:35
+msgid "Queue Position"
+msgstr "வரிசை நிலை"
+
+#: src/gtkui/columns.cc:45 src/qtui/playlist_model.cc:35
+msgid "Length"
+msgstr "நீளம்"
+
+#: src/gtkui/columns.cc:46 src/qtui/playlist_model.cc:35
+msgid "File Path"
+msgstr "கோப்பு பாதை"
+
+#: src/gtkui/columns.cc:47 src/qtui/playlist_model.cc:35
+msgid "File Name"
+msgstr "கோப்பு பெயர்"
+
+#: src/gtkui/columns.cc:48 src/qtui/playlist_model.cc:36
+msgid "Custom Title"
+msgstr "தனிப்பயன் தலைப்பு"
+
+#: src/gtkui/columns.cc:49 src/qtui/playlist_model.cc:36
+#: src/streamtuner/icecast-model.cc:129 src/streamtuner/shoutcast-model.cc:134
+msgid "Bitrate"
+msgstr "பிட்வீதம்"
+
+#: src/gtkui/columns.cc:50 src/qtui/playlist_model.cc:36
+msgid "Comment"
+msgstr "பின்னூட்டம்"
+
+#: src/gtkui/columns.cc:51 src/qtui/playlist_model.cc:36
+msgid "Publisher"
+msgstr "பதிப்பகத்தார்"
+
+#: src/gtkui/columns.cc:52 src/qtui/playlist_model.cc:37
+msgid "Catalog Number"
+msgstr "அட்டவணை எண்"
+
+#: src/gtkui/columns.cc:53 src/qtui/playlist_model.cc:37
+msgid "Disc"
+msgstr "வட்டு"
+
+#: src/gtkui/columns.cc:325
+msgid "Available columns"
+msgstr "கிடைக்கும் நெடுவரிசைகள்"
+
+#: src/gtkui/columns.cc:351
+msgid "Displayed columns"
+msgstr "காட்டப்பட்ட நெடுவரிசைகள்"
+
+#: src/gtkui/layout.cc:74 src/search-tool-qt/search-tool-qt.cc:58
+#: src/search-tool/search-tool.cc:49
+msgid "Search Tool"
+msgstr "தேடல் கருவி"
+
+#: src/gtkui/layout.cc:170
+msgid "Dock at Left"
+msgstr "இடது பக்கம் தரையிறக்குக "
+
+#: src/gtkui/layout.cc:170
+msgid "Dock at Right"
+msgstr "வலது பக்கம் தரையிறக்குக"
+
+#: src/gtkui/layout.cc:171
+msgid "Dock at Top"
+msgstr "மேல் பக்கம் தரையிறக்குக"
+
+#: src/gtkui/layout.cc:171
+msgid "Dock at Bottom"
+msgstr "கீழ் பக்கம் தரையிறக்குக"
+
+#: src/gtkui/layout.cc:171
+msgid "Undock"
+msgstr "தரையிறக்க வேண்டாம் "
+
+#: src/gtkui/layout.cc:171 src/ladspa/plugin.cc:540
+msgid "Disable"
+msgstr "முடக்குக "
+
+#: src/gtkui/menus.cc:79 src/qtui/menus.cc:111
+#: src/statusicon-qt/statusicon.cc:128 src/statusicon/statusicon.cc:300
+msgid "_Open Files ..."
+msgstr "_கோப்புக்களைத் திற ..."
+
+#: src/gtkui/menus.cc:80 src/qtui/menus.cc:115
+msgid "Open _URL ..."
+msgstr "முகவரியை_திற ..."
+
+#: src/gtkui/menus.cc:81 src/qtui/menus.cc:117
+msgid "_Add Files ..."
+msgstr "கோப்புக்களை _சேர் ..."
+
+#: src/gtkui/menus.cc:82 src/qtui/menus.cc:122
+msgid "Add U_RL ..."
+msgstr "முகவரியை சேர் ..."
+
+#: src/gtkui/menus.cc:84 src/qtui/menus.cc:124
+msgid "Search _Library"
+msgstr "தேடல் _ லைப்ரரியை"
+
+#: src/gtkui/menus.cc:86 src/qtui/menus.cc:127
+msgid "A_bout ..."
+msgstr "பற்றி ..."
+
+#: src/gtkui/menus.cc:87 src/qtui/menus.cc:129
+msgid "_Settings ..."
+msgstr "_செட்டிங்ச் ..."
+
+#: src/gtkui/menus.cc:88 src/qtui/menus.cc:135
+#: src/statusicon-qt/statusicon.cc:130 src/statusicon/statusicon.cc:302
+msgid "_Quit"
+msgstr "_விலகு "
+
+#: src/gtkui/menus.cc:92 src/gtkui/menus.cc:226 src/qtui/menus.cc:139
+#: src/qtui/playlist_tabs.cc:331 src/search-tool-qt/search-tool-qt.cc:499
+#: src/search-tool/search-tool.cc:339 src/statusicon-qt/statusicon.cc:122
+#: src/statusicon/statusicon.cc:294
+msgid "_Play"
+msgstr "_இயக்குக "
+
+#: src/gtkui/menus.cc:93 src/qtui/menus.cc:141
+#: src/statusicon-qt/statusicon.cc:123 src/statusicon/statusicon.cc:295
+msgid "Paus_e"
+msgstr "_இடைநிறுத்து"
+
+#: src/gtkui/menus.cc:94 src/qtui/menus.cc:143
+#: src/statusicon-qt/statusicon.cc:124 src/statusicon/statusicon.cc:296
+msgid "_Stop"
+msgstr "_நிறுத்துga"
+
+#: src/gtkui/menus.cc:95 src/qtui/menus.cc:145
+#: src/statusicon-qt/statusicon.cc:125 src/statusicon/statusicon.cc:297
+msgid "Pre_vious"
+msgstr "_முந்தைய"
+
+#: src/gtkui/menus.cc:96 src/qtui/menus.cc:147
+#: src/statusicon-qt/statusicon.cc:126 src/statusicon/statusicon.cc:298
+msgid "_Next"
+msgstr "_அடுத்து "
+
+#: src/gtkui/menus.cc:97 src/qtui/menus.cc:149 src/skins/menus.cc:114
+#: src/skins-qt/menus.cc:106
+msgid "Previous Album"
+msgstr "முந்தைய ஆல்பம்"
+
+#: src/gtkui/menus.cc:98 src/qtui/menus.cc:150 src/skins/menus.cc:115
+#: src/skins-qt/menus.cc:107
+msgid "Next Album"
+msgstr "அடுத்த ஆல்பம்"
+
+#: src/gtkui/menus.cc:100 src/qtui/menus.cc:152
+msgid "_Repeat"
+msgstr "_மறுபடியும்"
+
+#: src/gtkui/menus.cc:101 src/qtui/menus.cc:154
+msgid "S_huffle"
+msgstr "குலுக்குக "
+
+#: src/gtkui/menus.cc:102 src/qtui/menus.cc:156
+msgid "Shuffle by Albu_m"
+msgstr "அல்பு_எம் மூலம் கலக்கவும்"
+
+#: src/gtkui/menus.cc:103 src/qtui/menus.cc:159
+msgid "N_o Playlist Advance"
+msgstr "முன்னோக்கிய பாடல் பட்டியல் alla"
+
+#: src/gtkui/menus.cc:104 src/qtui/menus.cc:161
+msgid "Stop A_fter This Song"
+msgstr "இந்த பாடலுக்குப் பிறகு நிறுத்துங்கள்"
+
+#: src/gtkui/menus.cc:106 src/gtkui/menus.cc:210 src/qtui/menus.cc:166
+#: src/qtui/menus.cc:301
+msgid "Song _Info ..."
+msgstr "பாடல் செய்தி "
+
+#: src/gtkui/menus.cc:107
+msgid "Jump to _Time ..."
+msgstr "_நேரத்திற்கு தாவவும் "
+
+#: src/gtkui/menus.cc:108
+msgid "_Jump to Song ..."
+msgstr "பாடலுக்கு _தாவவும்"
+
+#: src/gtkui/menus.cc:110 src/qtui/menus.cc:172
+msgid "Set Repeat Point _A"
+msgstr "மீண்டும் புள்ளியை அமைக்கவும் _a"
+
+#: src/gtkui/menus.cc:111 src/qtui/menus.cc:174
+msgid "Set Repeat Point _B"
+msgstr "மீண்டும் புள்ளியை அமைக்கவும் b"
+
+#: src/gtkui/menus.cc:112 src/qtui/menus.cc:176
+msgid "_Clear Repeat Points"
+msgstr "_ கூல் மீண்டும் புள்ளிகள்"
+
+#: src/gtkui/menus.cc:116 src/gtkui/menus.cc:123 src/gtkui/menus.cc:141
+#: src/qtui/menus.cc:180 src/qtui/menus.cc:187 src/qtui/menus.cc:205
+msgid "By _Title"
+msgstr "_தலைப்பு  அடிப்படையில்"
+
+#: src/gtkui/menus.cc:117 src/qtui/menus.cc:181
+msgid "By _File Name"
+msgstr "_ பைல் பெயர்"
+
+#: src/gtkui/menus.cc:118 src/qtui/menus.cc:182
+msgid "By File _Path"
+msgstr "கோப்பு _ பாத்"
+
+#: src/gtkui/menus.cc:122 src/gtkui/menus.cc:140 src/qtui/menus.cc:186
+#: src/qtui/menus.cc:204
+msgid "By Track _Number"
+msgstr "பாடல் _இலக்க அடிப்படையில்  "
+
+#: src/gtkui/menus.cc:124 src/gtkui/menus.cc:142 src/qtui/menus.cc:188
+#: src/qtui/menus.cc:206
+msgid "By _Artist"
+msgstr "_பாடகர்  அடிப்படையில்"
+
+#: src/gtkui/menus.cc:125 src/gtkui/menus.cc:143 src/qtui/menus.cc:189
+#: src/qtui/menus.cc:207
+msgid "By Al_bum"
+msgstr "வழங்கியவர் அல்_பம்"
+
+#: src/gtkui/menus.cc:126 src/gtkui/menus.cc:144 src/qtui/menus.cc:190
+#: src/qtui/menus.cc:208
+msgid "By Albu_m Artist"
+msgstr "எழுதியவர் அல்பு_எம் கலைஞர்"
+
+#: src/gtkui/menus.cc:127 src/gtkui/menus.cc:145 src/qtui/menus.cc:191
+#: src/qtui/menus.cc:209
+msgid "By Release _Date"
+msgstr "வெளியிட்ட திகதி அடிப்படையில்"
+
+#: src/gtkui/menus.cc:128 src/gtkui/menus.cc:146 src/qtui/menus.cc:192
+#: src/qtui/menus.cc:210
+msgid "By _Genre"
+msgstr "வழங்கியவர் _சென்ரே"
+
+#: src/gtkui/menus.cc:129 src/gtkui/menus.cc:147 src/qtui/menus.cc:193
+#: src/qtui/menus.cc:211
+msgid "By _Length"
+msgstr "மூலம் _ நீளம்"
+
+#: src/gtkui/menus.cc:130 src/gtkui/menus.cc:148 src/qtui/menus.cc:194
+#: src/qtui/menus.cc:212
+msgid "By _File Path"
+msgstr "_கோப்பு வழி அடிப்படையில்"
+
+#: src/gtkui/menus.cc:131 src/gtkui/menus.cc:149 src/qtui/menus.cc:195
+#: src/qtui/menus.cc:213
+msgid "By _Custom Title"
+msgstr "_விருப்ப தலைப்பு அடிப்படையில்"
+
+#: src/gtkui/menus.cc:132 src/gtkui/menus.cc:150 src/qtui/menus.cc:196
+#: src/qtui/menus.cc:214
+msgid "By C_omment"
+msgstr "c_omment மூலம்"
+
+#: src/gtkui/menus.cc:133 src/gtkui/menus.cc:151 src/qtui/menus.cc:197
+#: src/qtui/menus.cc:215
+msgid "By D_isc Number"
+msgstr "மூலம் d_isc எண்"
+
+#: src/gtkui/menus.cc:135 src/gtkui/menus.cc:153 src/qtui/menus.cc:199
+#: src/qtui/menus.cc:217
+msgid "R_everse Order"
+msgstr "தலைகீழ் ஒழுங்கு"
+
+#: src/gtkui/menus.cc:136 src/gtkui/menus.cc:154 src/qtui/menus.cc:201
+#: src/qtui/menus.cc:219
+msgid "_Random Order"
+msgstr "_தற்போக்கு ஒழுங்கு"
+
+#: src/gtkui/menus.cc:158 src/qtui/menus.cc:223
+msgid "_Play/Resume"
+msgstr "_ பிளே/விண்ணப்பம்"
+
+#: src/gtkui/menus.cc:159 src/qtui/menus.cc:225
+msgid "_Refresh"
+msgstr "_புதுப்பிக்குக "
+
+#: src/gtkui/menus.cc:161 src/qtui/menus.cc:229
+msgid "_Sort"
+msgstr "_வரிசைப்படுத்துக "
+
+#: src/gtkui/menus.cc:162 src/qtui/menus.cc:230
+msgid "Sort Se_lected"
+msgstr "se_lected வரிசைப்படுத்துதல்"
+
+#: src/gtkui/menus.cc:163 src/qtui/menus.cc:232
+msgid "Remove _Duplicates"
+msgstr "_duplicates ஐ அகற்று"
+
+#: src/gtkui/menus.cc:164 src/qtui/menus.cc:233
+msgid "Remove _Unavailable Files"
+msgstr "_கிடைக்கப்பெறாத கோப்புகளை அகற்றுக"
+
+#: src/gtkui/menus.cc:166 src/playlist-manager/playlist-manager.cc:219
+#: src/playlist-manager-qt/playlist-manager-qt.cc:348 src/qtui/menus.cc:236
+msgid "_New"
+msgstr "_புதிய "
+
+#: src/gtkui/menus.cc:167 src/qtui/menus.cc:237
+msgid "Ren_ame ..."
+msgstr "ren_ame ..."
+
+#: src/gtkui/menus.cc:168 src/gtkui/menus.cc:228 src/qtui/menus.cc:238
+#: src/qtui/playlist_tabs.cc:336
+msgid "Remo_ve"
+msgstr "remo_ve"
+
+#: src/gtkui/menus.cc:170 src/qtui/menus.cc:240
+msgid "_Import ..."
+msgstr "_இறக்குமதி ..."
+
+#: src/gtkui/menus.cc:171 src/qtui/menus.cc:241
+msgid "_Export ..."
+msgstr "_ஏற்றுமதி ..."
+
+#: src/gtkui/menus.cc:173 src/qtui/menus.cc:244
+msgid "Playlist _Manager ..."
+msgstr "பிளேலிச்ட் _ மேனேசர் ..."
+
+#: src/gtkui/menus.cc:174 src/qtui/menus.cc:246
+msgid "_Queue Manager ..."
+msgstr "_வரிசை நிர்வாகி ..."
+
+#: src/gtkui/menus.cc:178 src/qtui/menus.cc:250
+msgid "Volume _Up"
+msgstr "ஒலிஉரப்பான் _அதிகரிக்குக "
+
+#: src/gtkui/menus.cc:179 src/qtui/menus.cc:252
+msgid "Volume _Down"
+msgstr "ஒலிஉரப்பான் _குறைக்குக "
+
+#: src/gtkui/menus.cc:181 src/qtui/menus.cc:256
+msgid "_Equalizer ..."
+msgstr "_ சமநிலை ..."
+
+#: src/gtkui/menus.cc:182 src/qtui/menus.cc:258
+msgid "E_ffects ..."
+msgstr "விளைவுகள் ..."
+
+#: src/gtkui/menus.cc:184
+msgid "_Record Stream"
+msgstr "_ ரெக்கார்ட் ச்ட்ரீம்"
+
+#: src/gtkui/menus.cc:185
+msgid "Audio _Settings ..."
+msgstr "ஆடியோ _செட்டிங்ச் ..."
+
+#: src/gtkui/menus.cc:189 src/qtui/menus.cc:267
+msgid "Show _Menu Bar"
+msgstr "_பட்டியல் பட்டியை காண்பிக்குக "
+
+#: src/gtkui/menus.cc:190 src/qtui/menus.cc:269
+msgid "Show I_nfo Bar"
+msgstr "செய்தி பட்டியை காண்பிக்குக "
+
+#: src/gtkui/menus.cc:191 src/qtui/menus.cc:271
+msgid "Show Info Bar _Album Art"
+msgstr "செய்தி பட்டி _ ஆல்பம் கலையைக் காட்டு"
+
+#: src/gtkui/menus.cc:192 src/qtui/menus.cc:273
+msgid "Show Info Bar Vis_ualization"
+msgstr "செய்தி பட்டி காட்சியாக்கத்தை காண்பிக்குக "
+
+#: src/gtkui/menus.cc:193 src/qtui/menus.cc:275
+msgid "Show _Status Bar"
+msgstr "_நிலைமை பட்டியை காண்பிக்குக"
+
+#: src/gtkui/menus.cc:195 src/qtui/menus.cc:279
+msgid "Show _Remaining Time"
+msgstr "மீதமுள்ள நேரத்தைக் காட்டு"
+
+#: src/gtkui/menus.cc:197 src/qtui/menus.cc:283 src/skins/menus.cc:157
+#: src/skins-qt/menus.cc:153
+msgid "_Visualizations ..."
+msgstr "_visualizations ..."
+
+#: src/gtkui/menus.cc:201 src/qtui/menus.cc:287
+msgid "_File"
+msgstr "கோப்பு "
+
+#: src/gtkui/menus.cc:202 src/qtui/menus.cc:288
+msgid "_Playback"
+msgstr "_மீள்இயக்குக "
+
+#: src/gtkui/menus.cc:203 src/qtui/menus.cc:289
+msgid "P_laylist"
+msgstr "பாடல் பட்டியல் "
+
+#: src/gtkui/menus.cc:204 src/gtkui/menus.cc:222 src/qtui/menus.cc:290
+#: src/qtui/menus.cc:319
+msgid "_Services"
+msgstr "_சேவைகள் "
+
+#: src/gtkui/menus.cc:205 src/qtui/menus.cc:291
+msgid "_Output"
+msgstr "_வெளியீடு"
+
+#: src/gtkui/menus.cc:206 src/qtui/menus.cc:292
+msgid "_View"
+msgstr "_paarvayiduga"
+
+#: src/gtkui/menus.cc:211 src/qtui/menus.cc:303
+msgid "_Queue/Unqueue"
+msgstr "_வரிசைப்படுத்துக/வரிசைப்படுத்தலை அகற்றுக "
+
+#: src/gtkui/menus.cc:213 src/qtui/menus.cc:306
+msgid "_Open Containing Folder"
+msgstr "_ கோப்புறை கொண்ட ஓபன்"
+
+#: src/gtkui/menus.cc:214 src/qtui/menus.cc:308
+msgid "_Refresh Selected"
+msgstr "_refresh தேர்ந்தெடுக்கப்பட்டது"
+
+#: src/gtkui/menus.cc:216 src/qtui/menus.cc:311
+msgid "Cu_t"
+msgstr "வெட்டுக "
+
+#: src/gtkui/menus.cc:217 src/qtui/menus.cc:312
+msgid "_Copy"
+msgstr "நகலெடுக்க "
+
+#: src/gtkui/menus.cc:218 src/qtui/menus.cc:313
+msgid "_Paste"
+msgstr "_ஒட்டவும்"
+
+#: src/gtkui/menus.cc:219 src/qtui/menus.cc:314
+msgid "Paste at _End"
+msgstr "_end இல் ஒட்டவும்"
+
+#: src/gtkui/menus.cc:220 src/qtui/menus.cc:316
+msgid "Select _All"
+msgstr "_அனைத்தையும் தேர்ந்தெடுக்குக "
+
+#: src/gtkui/menus.cc:227 src/qtui/playlist_tabs.cc:334
+msgid "_Rename ..."
+msgstr "மறுபெயர்"
+
+#: src/gtkui/settings.cc:35 src/qtui/settings.cc:59
+msgid "Always"
+msgstr "எப்போதும்"
+
+#: src/gtkui/settings.cc:36 src/qtui/settings.cc:60
+msgid "Auto-hide"
+msgstr "ஆட்டோ மறைவு"
+
+#: src/gtkui/settings.cc:37 src/qtui/settings.cc:61
+msgid "Never"
+msgstr "ஒருபோதும்"
+
+#: src/gtkui/settings.cc:41 src/qtui/settings.cc:64
+msgid "<b>Playlist Tabs</b>"
+msgstr "<b> பிளேலிச்ட் தாவல்கள் </b>"
+
+#: src/gtkui/settings.cc:42 src/qtui/settings.cc:65
+msgid "Show playlist tabs:"
+msgstr "பிளேலிச்ட் தாவல்களைக் காட்டு:"
+
+#: src/gtkui/settings.cc:45 src/qtui/settings.cc:69
+msgid "Show entry counts"
+msgstr "நுழைவு எண்ணிக்கையைக் காட்டு"
+
+#: src/gtkui/settings.cc:47 src/qtui/settings.cc:72
+msgid "Show close buttons"
+msgstr "மூடு பொத்தான்களைக் காட்டு"
+
+#: src/gtkui/settings.cc:49 src/qtui/settings.cc:75
+msgid "<b>Playlist Columns</b>"
+msgstr "<b> பிளேலிச்ட் நெடுவரிசைகள் </b>"
+
+#: src/gtkui/settings.cc:51 src/qtui/settings.cc:77
+msgid "Show column headers"
+msgstr "நெடுவரிசை தலைப்புகளைக் காட்டு"
+
+#: src/gtkui/settings.cc:53 src/qtui/settings.cc:82
+msgid "Make column headers clickable for sorting"
+msgstr "வரிசைப்படுத்த நெடுவரிசை தலைப்புகளை சொடுக்கு செய்யவும்"
+
+#: src/gtkui/settings.cc:56
+msgid "Use symbolic icons in toolbar"
+msgstr "கருவிப்பட்டியில் குறியீட்டு சின்னங்களைப் பயன்படுத்தவும்"
+
+#: src/gtkui/settings.cc:58 src/qtui/settings.cc:86
+msgid "Scroll on song change"
+msgstr "பாடல் மாற்றத்தை உருட்டவும்"
+
+#: src/gtkui/ui_gtk.cc:82
+msgid "GTK Interface"
+msgstr "GTK இடைமுகம் "
+
+#: src/gtkui/ui_gtk.cc:219 src/skins/main.cc:228 src/skins-qt/main.cc:231
+#, c-format
+msgid "%s - Audacious"
+msgstr "%s - ஔடகிவச்"
+
+#: src/gtkui/ui_gtk.cc:221 src/qtui/main_window.cc:386
+msgid "Buffering ..."
+msgstr "இடைநிலைப்படுத்துகிறது ..."
+
+#: src/gtkui/ui_gtk.cc:224 src/pipewire/pipewire.cc:450
+#: src/qtui/main_window.cc:364 src/qtui/main_window.cc:400
+#: src/sdlout/sdlout.cc:110 src/skins/main.cc:230 src/skins-qt/main.cc:233
+msgid "Audacious"
+msgstr "ஔடகிவச்"
+
+#: src/gtkui/ui_gtk.cc:487 src/gtkui/ui_gtk.cc:518 src/gtkui/ui_gtk.cc:882
+#: src/hotkey/gui.cc:72 src/notify/osd.cc:85 src/qthotkey/gui.cc:67
+#: src/qtui/main_window.cc:155 src/qtui/main_window.cc:348
+#: src/qtui/main_window.cc:349 src/skins/menus.cc:109 src/skins-qt/menus.cc:101
+msgid "Play"
+msgstr "இயக்குக "
+
+#: src/gtkui/ui_gtk.cc:487 src/notify/osd.cc:82 src/qtui/main_window.cc:354
+#: src/qtui/main_window.cc:355 src/skins/menus.cc:110 src/skins-qt/menus.cc:102
+msgid "Pause"
+msgstr "இடைநிறுத்துக "
+
+#: src/gtkui/ui_gtk.cc:868 src/qtui/main_window.cc:146 src/skins/menus.cc:86
+#: src/skins-qt/menus.cc:77
+msgid "Search Library"
+msgstr "தேடல் நூலகம்"
+
+#: src/gtkui/ui_gtk.cc:875 src/qtui/main_window.cc:148
+msgid "Open Files"
+msgstr "கோப்புக்களைத் திறkkavum"
+
+#: src/gtkui/ui_gtk.cc:876 src/qtui/main_window.cc:150
+msgid "Add Files"
+msgstr "கோப்புக்களை சேர்kkavum"
+
+#: src/gtkui/ui_gtk.cc:881 src/qtui/main_window.cc:153 src/skins/menus.cc:112
+#: src/skins-qt/menus.cc:104
+msgid "Previous"
+msgstr "முந்தைய"
+
+#: src/gtkui/ui_gtk.cc:883 src/hotkey/gui.cc:74 src/qthotkey/gui.cc:69
+#: src/qtui/main_window.cc:157 src/skins/menus.cc:111 src/skins-qt/menus.cc:103
+msgid "Stop"
+msgstr "நிறுத்துக "
+
+#: src/gtkui/ui_gtk.cc:884 src/notify/osd.cc:89 src/qtui/main_window.cc:164
+#: src/skins/menus.cc:113 src/skins-qt/menus.cc:105
+msgid "Next"
+msgstr "அடுத்தது "
+
+#: src/gtkui/ui_gtk.cc:886 src/qtui/main_window.cc:167 src/qtui/menus.cc:261
+#: src/skins/menus.cc:79 src/skins-qt/menus.cc:69
+msgid "Record Stream"
+msgstr "பதிவு ச்ட்ரீம்"
+
+#: src/gtkui/ui_gtk.cc:919 src/qtui/main_window.cc:174 src/skins/menus.cc:103
+#: src/skins-qt/menus.cc:95
+msgid "Repeat"
+msgstr "மறுமுறை"
+
+#: src/gtkui/ui_gtk.cc:922 src/qtui/main_window.cc:177 src/skins/menus.cc:104
+#: src/skins-qt/menus.cc:96
+msgid "Shuffle"
+msgstr "குலுக்குக "
+
+#: src/gtkui/ui_gtk.cc:1114 src/qtui/main_window.cc:123
+msgid "Menu"
+msgstr "பட்டியல்"
+
+#: src/gtkui/ui_statusbar.cc:64 src/qtui/status_bar.cc:155
+msgid "mono"
+msgstr "தனித்த "
+
+#: src/gtkui/ui_statusbar.cc:66 src/qtui/status_bar.cc:157
+msgid "stereo"
+msgstr "ஒலிப்பிரிப்பு"
+
+#: src/gtkui/ui_statusbar.cc:68 src/qtui/status_bar.cc:160
+#, c-format
+msgid "%d channel"
+msgid_plural "%d channels"
+msgstr[0] "%d சேனல்"
+msgstr[1] "%d சேனல்கள்"
+
+#: src/gtkui/ui_statusbar.cc:76 src/qtui/status_bar.cc:168
+#, c-format
+msgid "%d kHz"
+msgstr "%d khz"
+
+#: src/gtkui/ui_statusbar.cc:82 src/qtui/playlist_model.cc:132
+#: src/qtui/status_bar.cc:174
+#, c-format
+msgid "%d kbit/s"
+msgstr "%d kbit/s"
+
+#: src/gtkui/ui_statusbar.cc:108 src/skins/main.cc:478 src/skins-qt/main.cc:461
+msgid "Single mode."
+msgstr "ஒற்றை முறை."
+
+#: src/gtkui/ui_statusbar.cc:110 src/skins/main.cc:480 src/skins-qt/main.cc:463
+msgid "Playlist mode."
+msgstr "பாடல் பட்டியல் murai"
+
+#: src/gtkui/ui_statusbar.cc:118 src/skins/main.cc:486 src/skins-qt/main.cc:469
+msgid "Stopping after song."
+msgstr "பாடலின் பின்னர் நிறுத்துக."
+
+#: src/hotkey/gui.cc:71 src/qthotkey/gui.cc:66
+msgid "Previous track"
+msgstr "முந்தைய பாடல்"
+
+#: src/hotkey/gui.cc:73 src/qthotkey/gui.cc:68
+msgid "Pause/Resume"
+msgstr "இடைநிறுத்து / மீண்டும் இயக்கு "
+
+#: src/hotkey/gui.cc:75 src/qthotkey/gui.cc:70
+msgid "Next track"
+msgstr "அடுத்த பாடல்"
+
+#: src/hotkey/gui.cc:76 src/qthotkey/gui.cc:71
+msgid "Step forward"
+msgstr "முன்வரவேண்டும்"
+
+#: src/hotkey/gui.cc:77 src/qthotkey/gui.cc:72
+msgid "Step backward"
+msgstr "பின்தங்கிய நிலையில் செல்லுங்கள்"
+
+#: src/hotkey/gui.cc:78 src/qthotkey/gui.cc:73
+msgid "Mute"
+msgstr "ஒலியடக்கவும்"
+
+#: src/hotkey/gui.cc:79 src/qthotkey/gui.cc:74
+msgid "Volume up"
+msgstr "ஒலிஉரப்பான்  அதிகரிக்குக"
+
+#: src/hotkey/gui.cc:80 src/qthotkey/gui.cc:75
+msgid "Volume down"
+msgstr "ஒலிஉரப்பான்  குறைக்குக"
+
+#: src/hotkey/gui.cc:81 src/qthotkey/gui.cc:76
+msgid "Jump to file"
+msgstr "கோப்பிற்கு தாவவும்."
+
+#: src/hotkey/gui.cc:82 src/qthotkey/gui.cc:77
+msgid "Toggle player window(s)"
+msgstr "பிளேயர் சாளரங்களை மாற்றவும்)"
+
+#: src/hotkey/gui.cc:83 src/qthotkey/gui.cc:78
+msgid "Show On-Screen-Display"
+msgstr " திரையில் தோன்றும் காட்சியினை kaattuga"
+
+#: src/hotkey/gui.cc:84 src/qthotkey/gui.cc:79
+msgid "Toggle repeat"
+msgstr "மீண்டும்"
+
+#: src/hotkey/gui.cc:85 src/qthotkey/gui.cc:80
+msgid "Toggle shuffle"
+msgstr "கலக்கு மாற்று"
+
+#: src/hotkey/gui.cc:86 src/qthotkey/gui.cc:81
+msgid "Toggle stop after current"
+msgstr "மின்னோட்டத்திற்குப் பிறகு நிறுத்துங்கள்"
+
+#: src/hotkey/gui.cc:87 src/qthotkey/gui.cc:82
+msgid "Raise player window(s)"
+msgstr "பிளேயர் சாளரங்களை உயர்த்தவும்)"
+
+#: src/hotkey/gui.cc:98 src/qthotkey/gui.cc:100
+msgid "(none)"
+msgstr "(எதுவுமல்ல)"
+
+#: src/hotkey/gui.cc:261
+msgid ""
+"It is not recommended to bind the primary mouse buttons without modifiers.\n"
+"\n"
+"Do you want to continue?"
+msgstr ""
+"முதன்மை சுட்டி பொத்தான்களை மாற்றியமைப்பாளர்கள் இல்லாமல் பிணைக்க பரிந்துரைக்கப்படவில்லை. \n"
+"\n"
+" நீங்கள் தொடர விரும்புகிறீர்களா?"
+
+#: src/hotkey/gui.cc:264
+msgid "Binding mouse buttons"
+msgstr "சுட்டி பொத்தான்களை பிணைத்தல்"
+
+#: src/hotkey/gui.cc:434
+msgid ""
+"Press a key combination inside a text field.\n"
+"You can also bind mouse buttons."
+msgstr ""
+"எழுத்து புலத்தில் ஒரு விசை சேர்க்கையை அழுத்தவும்.⏎\n"
+"உங்களுக்கு சுட்டி பொத்தான்களை பிணைக்கவும் முடியும்."
+
+#: src/hotkey/gui.cc:444 src/qthotkey/gui.cc:179
+msgid "Hotkeys:"
+msgstr "குறுக்குவிசைகள்:"
+
+#: src/hotkey/gui.cc:457 src/qthotkey/gui.cc:181
+msgid "<b>Action:</b>"
+msgstr "<b>நடவடிக்கை: </b>"
+
+#: src/hotkey/gui.cc:461 src/qthotkey/gui.cc:182
+msgid "<b>Key Binding:</b>"
+msgstr "<b>சாவி பிணைத்தல்:</b>"
+
+#: src/hotkey/gui.cc:518 src/qthotkey/gui.cc:184
+msgid "_Add"
+msgstr "_சேர் "
+
+#: src/hotkey/plugin.cc:59 src/qthotkey/plugin.cc:78
+msgid "Global Hotkeys"
+msgstr "உலகளாவிய குறுக்குவிசைகள்:"
+
+#: src/hotkey/plugin.cc:74
+msgid ""
+"Global Hotkey Plugin\n"
+"Control the player with global key combinations or multimedia keys.\n"
+"\n"
+"Copyright (C) 2007-2008 Sascha Hlusiak <contact@saschahlusiak.de>\n"
+"\n"
+"Contributors include:\n"
+"Copyright (C) 2006-2007 Vladimir Paskov <vlado.paskov@gmail.com>\n"
+"Copyright (C) 2000-2002 Ville Syrjälä <syrjala@sci.fi>,\n"
+" Bryn Davies <curious@ihug.com.au>,\n"
+" Jonathan A. Davis <davis@jdhouse.org>,\n"
+" Jeremy Tan <nsx@nsx.homeip.net>"
+msgstr ""
+"உலகளாவிய ஆட்கி சொருகி \n"
+" உலகளாவிய விசை சேர்க்கைகள் அல்லது மல்டிமீடியா விசைகள் கொண்ட வீரரைக் கட்டுப்படுத்தவும். \n"
+"\n"
+" பதிப்புரிமை (சி) 2007-2008 சாச்சா அ்லூசியாக் <contact@saschahlusiak.de> \n"
+"\n"
+" பங்களிப்பாளர்கள் பின்வருமாறு: \n"
+" பதிப்புரிமை (சி) 2006-2007 விளாடிமிர் பாச்கோவ் <vlado.paskov@gmail.com> \n"
+" பதிப்புரிமை (இ) 2000-2002 வில்லே சிரசாலா <syrjala@sci.fi>, \n"
+"  பிரைன் டேவிச் <cicious@ihug.com.au>, \n"
+"  சொனாதன் ஏ. டேவிச் <davis@jdhouse.org>, \n"
+"  செர்மி டான் <nsx@nsx.homeip.net>"
+
+#: src/jack/jack-ng.cc:54
+msgid "JACK Output"
+msgstr "JACK வெளியீடு "
+
+#: src/jack/jack-ng.cc:126
+msgid "Client name:"
+msgstr "நுகர்வி பெயர்:"
+
+#: src/jack/jack-ng.cc:128
+msgid "Automatically connect to output ports"
+msgstr "வெளியீட்டு துறைமுகங்களுடன் தானாக இணைக்கவும்"
+
+#: src/jack/jack-ng.cc:130
+msgid "Filter ports (regex, use any port if blank):"
+msgstr "வடிகட்டி துறைமுகங்கள் (ரீசெக்ச், காலியாக இருந்தால் எந்த போர்ட்டையும் பயன்படுத்தவும்):"
+
+#: src/jack/jack-ng.cc:136
+msgid "Connect to physical ports only"
+msgstr "உடல் துறைமுகங்களுடன் மட்டுமே இணைக்கவும்"
+
+#: src/jack/jack-ng.cc:139
+msgid "Upmix to"
+msgstr "upmix பெறுநர்"
+
+#: src/jack/jack-ng.cc:141
+msgid "ports if input has fewer channels"
+msgstr "உள்ளீட்டில் குறைவான சேனல்கள் இருந்தால் துறைமுகங்கள்"
+
+#: src/jack/jack-ng.cc:143
+msgid "Ignore insufficient number of ports"
+msgstr "போதிய எண்ணிக்கையிலான துறைமுகங்களை புறக்கணிக்கவும்"
+
+#: src/jack/jack-ng.cc:181
+msgid "No JACK output ports were found. Please check settings."
+msgstr "சாக் வெளியீட்டு துறைமுகங்கள் எதுவும் காணப்படவில்லை. அமைப்புகளை சரிபார்க்கவும்."
+
+#: src/jack/jack-ng.cc:195
+#, c-format
+msgid "Only %d JACK output ports were found but %d are required."
+msgstr "%d சாக் வெளியீட்டு துறைமுகங்கள் மட்டுமே காணப்பட்டன, ஆனால் %d தேவை."
+
+#: src/jack/jack-ng.cc:210
+#, c-format
+msgid "Failed to connect to JACK port %s."
+msgstr "சாக் துறைமுகம் %s உடன் இணைக்கத் தவறிவிட்டது."
+
+#: src/jack/jack-ng.cc:230
+msgid ""
+"JACK supports only floating-point audio.  You must change the output bit "
+"depth to floating-point in Audacious settings."
+msgstr ""
+"சாக் மிதக்கும்-புள்ளி ஆடியோவை மட்டுமே ஆதரிக்கிறது. நீங்கள் வெளியீட்டு பிட் ஆழத்தை "
+"துணிச்சலான அமைப்புகளில் மிதக்கும் புள்ளியாக மாற்ற வேண்டும்."
+
+#: src/jack/jack-ng.cc:245
+msgid "Failed to connect to the JACK server; is it running?"
+msgstr "சாக் சேவையகத்துடன் இணைக்கத் தவறிவிட்டது; இது இயங்குகிறதா?"
+
+#: src/jack/jack-ng.cc:321
+#, c-format
+msgid ""
+"The JACK server requires a sample rate of %d Hz, but Audacious is playing at "
+"%d Hz.  Please use the Sample Rate Converter effect to correct the mismatch."
+msgstr ""
+"சாக் சேவையகத்திற்கு %d எர்ட்ச் மாதிரி வீதம் தேவைப்படுகிறது, ஆனால் துணிச்சலான %d எர்ட்சில் "
+"விளையாடுகிறது. பொருந்தாத தன்மையை சரிசெய்ய மாதிரி வீத மாற்றி விளைவைப் பயன்படுத்தவும்."
+
+#: src/ladspa/plugin.cc:416
+#, c-format
+msgid "%s Settings"
+msgstr "%s அமைப்புகள்"
+
+#: src/ladspa/plugin.cc:482
+msgid "Module paths:"
+msgstr "தொகுதிக்கூறு பாதைகள்:"
+
+#: src/ladspa/plugin.cc:487
+msgid ""
+"<small>Separate multiple paths with a colon.\n"
+"These paths are searched in addition to LADSPA_PATH.\n"
+"After adding new paths, press Enter to scan for new plugins.</small>"
+msgstr ""
+"பல பாதைகளினை ஒரு முக்காட்புள்ளி மூலம் வேறுபடுத்துக.⏎\n"
+"இவை LADSPA_PATH இனை விடவும் தேடப்படும், ⏎\n"
+"புதிய பாதைகள் சேர்த்ததன் பின்னர், புதிய செருகுநிரல்கள் வருட உள்ளிடுகவினை அழுத்தக.</"
+"small>"
+
+#: src/ladspa/plugin.cc:508
+msgid "Available plugins:"
+msgstr "இருப்பிலுள்ள செருகுநிரல்கள்:"
+
+#: src/ladspa/plugin.cc:521 src/modplug/plugin_main.cc:91
+#: src/modplug/plugin_main.cc:94 src/modplug/plugin_main.cc:97
+#: src/modplug/plugin_main.cc:100
+msgid "Enable"
+msgstr "செயல்படுத்துக "
+
+#: src/ladspa/plugin.cc:527
+msgid "Enabled plugins:"
+msgstr "செருகுநிரல்களினை செயல்ப்படுத்துக:"
+
+#: src/ladspa/plugin.cc:543
+msgid "Settings"
+msgstr "அமைப்புக்கள்"
+
+#: src/ladspa/plugin.cc:560
+msgid ""
+"LADSPA Host for Audacious\n"
+"Copyright 2011 John Lindgren"
+msgstr ""
+"துணிச்சலான லாட்ச்பா புரவலன் \n"
+" பதிப்புரிமை 2011 சான் லிண்ட்கிரென்"
+
+#: src/ladspa/plugin.h:78
+msgid "LADSPA Host"
+msgstr "LADSPA "
+
+#: src/lirc/lirc.cc:55
+msgid "LIRC Plugin"
+msgstr "LIRC "
+
+#: src/lirc/lirc.cc:379
+msgid ""
+"A simple plugin to control Audacious using the LIRC remote control daemon\n"
+"\n"
+"Adapted for Audacious by:\n"
+"Tony Vroon <chainsaw@gentoo.org>\n"
+"Joonas Harjumäki <jharjuma@gmail.com>\n"
+"\n"
+"Based on the XMMS LIRC plugin by:\n"
+"Carl van Schaik <carl@leg.uct.ac.za>\n"
+"Christoph Bartelmus <xmms@bartelmus.de>\n"
+"Andrew O. Shadoura <bugzilla@tut.by>\n"
+"\n"
+"For more information about LIRC, see http://lirc.org."
+msgstr ""
+"எல்.ஐ.ஆர்.சி ரிமோட் கண்ட்ரோல் டீமானைப் பயன்படுத்தி துணிச்சலைக் கட்டுப்படுத்த ஒரு எளிய "
+"சொருகி \n"
+"\n"
+" துணிச்சலுக்கு ஏற்றது: \n"
+" டோனி வ்ரூன் <sunansaw@gentoo.org> \n"
+" joonas harjuméki <jharjuma@gmail.com> \n"
+"\n"
+" எக்ச்எம்எம்எச் எல்.ஐ.ஆர்.சி சொருகி அடிப்படையில்: \n"
+" கார்ல் வான் சைக் <carl@leg.uct.ac.za> \n"
+" கிறிச்டோஃப் பார்டெல்மச் <xmms@bartelmus.de> \n"
+" ஆண்ட்ரூ ஓ \n"
+"\n"
+" lirc பற்றிய கூடுதல் தகவலுக்கு, http://lirc.org ஐப் பார்க்கவும்."
+
+#: src/lirc/lirc.cc:390
+msgid "<b>Connection</b>"
+msgstr "<b> இணைப்பு </b>"
+
+#: src/lirc/lirc.cc:391
+msgid "Reconnect to LIRC server"
+msgstr "LIRC சேவைகயத்துக்கு மீள் இணைக்குக "
+
+#: src/lirc/lirc.cc:393
+msgid "Wait before reconnecting:"
+msgstr "மீள் இணைக்க முன் பொறுக்க :"
+
+#: src/lyrics-common/chart_lyrics_provider.cc:93
+#: src/lyrics-common/chart_lyrics_provider.cc:150
+#: src/lyrics-common/lrclib_provider.cc:34
+#: src/lyrics-common/lyrics_ovh_provider.cc:35
+#, c-format
+msgid "Unable to fetch %s"
+msgstr "%s பெற முடியவில்லை"
+
+#: src/lyrics-common/chart_lyrics_provider.cc:100
+#: src/lyrics-common/chart_lyrics_provider.cc:157
+#: src/lyrics-common/lrclib_provider.cc:41
+#: src/lyrics-common/lyrics_ovh_provider.cc:42
+#, c-format
+msgid "Unable to parse %s"
+msgstr "%s ஐ பாகுபடுத்த முடியவில்லை"
+
+#: src/lyrics-common/chart_lyrics_provider.cc:121
+#: src/lyrics-common/chart_lyrics_provider.cc:194
+#: src/lyrics-common/lrclib_provider.cc:70
+#: src/lyrics-common/lyrics_ovh_provider.cc:70
+msgid "Looking for lyrics ..."
+msgstr "பாடல் தேடுகிறது ..."
+
+#: src/lyrics-common/preferences.h:43
+msgid "Nowhere"
+msgstr "எங்கும்"
+
+#: src/lyrics-common/preferences.h:50
+msgid "<small>Artist is truncated at the start, Title -- at the end</small>"
+msgstr "<mall> கலைஞர் தொடக்கத்தில் துண்டிக்கப்பட்டுள்ளார், தலைப்பு - இறுதியில் </சிறிய>"
+
+#: src/lyrics-common/preferences.h:51
+msgid "Chars to truncate on:"
+msgstr "துண்டிக்க எழுத்துக்கள்:"
+
+#: src/lyrics-common/preferences.h:55
+msgid "<small>Chars are ORed in RegExp, surrounded by whitespace</small>"
+msgstr ""
+"<small> எழுத்துக்கள் regexp இல் ஓரெச் செய்யப்படுகின்றன, அவை வைட்ச்பேசால் சூழப்பட்டுள்ளன </"
+"small>"
+
+#: src/lyrics-common/preferences.h:56
+msgid "Chars to split on:"
+msgstr "பிரிக்க சார்ச்:"
+
+#: src/lyrics-common/preferences.h:57
+msgid "Further truncate those on chars"
+msgstr "எழுத்தில் உள்ளவர்களை மேலும் துண்டிக்கவும்"
+
+#: src/lyrics-common/preferences.h:63
+msgid "<b>General</b>"
+msgstr "<b> பொது </b>"
+
+#: src/lyrics-common/preferences.h:64
+msgid "Split title into artist and title on chars"
+msgstr "பட்டத்தை கலைஞராகப் பிரிக்கவும், தலைப்பில் தலைப்பு"
+
+#: src/lyrics-common/preferences.h:67
+msgid "<b>Sources</b>"
+msgstr "<b> ஆதாரங்கள் </b>"
+
+#: src/lyrics-common/preferences.h:68
+msgid "Use embedded lyrics (from Lyrics tag)"
+msgstr "உட்பொதிக்கப்பட்ட பாடல்களைப் பயன்படுத்தவும் (பாடல் குறிச்சொல்லிலிருந்து)"
+
+#: src/lyrics-common/preferences.h:70
+msgid "Fetch lyrics from internet:"
+msgstr "இணையத்திலிருந்து வரிகளை பெறுங்கள்:"
+
+#: src/lyrics-common/preferences.h:73
+msgid "Store fetched lyrics in local cache"
+msgstr "உள்ளக தற்காலிக சேமிப்பில் கடை பெறப்பட்ட பாடல்"
+
+#: src/lyrics-common/preferences.h:75
+msgid "<b>Local Storage</b>"
+msgstr "<b> உள்ளக சேமிப்பு </b>"
+
+#: src/lyrics-common/preferences.h:76
+msgid "Load lyric files (.lrc) from local storage"
+msgstr "உள்ளக சேமிப்பகத்திலிருந்து பாடல் கோப்புகளை (.lrc) ஏற்றவும்"
+
+#: src/lyrics-common/utils.cc:57 src/ui-common/dialogs-qt.cc:63
+msgid "Error"
+msgstr "thavaruthal"
+
+#: src/lyrics-common/utils.cc:63
+msgid "Lyrics could not be found."
+msgstr "பாடல் வரிகளைக் கண்டுபிடிக்க முடியவில்லை."
+
+#: src/lyrics-common/utils.cc:145
+msgid "Missing title and/or artist."
+msgstr "தலைப்பு மற்றும்/அல்லது கலைஞரைக் காணவில்லை."
+
+#: src/lyrics-gtk/lyrics-gtk.cc:37 src/lyrics-qt/lyrics-qt.cc:50
+msgid "Lyrics"
+msgstr "பாடல் வரிகள்"
+
+#: src/lyrics-gtk/lyrics-gtk.cc:190 src/lyrics-qt/lyrics-qt.cc:172
+msgid "Edit Lyrics ..."
+msgstr "பாடல் திருத்து ..."
+
+#: src/lyrics-gtk/lyrics-gtk.cc:196 src/lyrics-qt/lyrics-qt.cc:179
+msgid "Save Locally"
+msgstr "உள்ளூரில் சேமிக்கவும்"
+
+#: src/lyrics-gtk/lyrics-gtk.cc:202 src/lyrics-qt/lyrics-qt.cc:187
+msgid "Refresh"
+msgstr "புதுப்பிப்பு"
+
+#: src/m3u/m3u.cc:33
+msgid "M3U Playlists"
+msgstr "M3U பாடல் பட்டியல்"
+
+#: src/metronom/metronom.cc:44
+msgid "Tact Generator"
+msgstr "திறமை பிறப்பாக்கி"
+
+#: src/metronom/metronom.cc:145
+#, c-format
+msgid "Tact generator: %d bpm"
+msgstr "திறமை பிறப்பாக்கி:% d நிமிடத்திற்கான துடிப்புகள் "
+
+#: src/metronom/metronom.cc:147
+#, c-format
+msgid "Tact generator: %d bpm %d/%d"
+msgstr "திறமை பிறப்பாக்கி:%d நிமிடத்திற்கான துடிப்புகள் %d %d"
+
+#: src/metronom/metronom.cc:235
+msgid ""
+"A Tact Generator by Martin Strauss <mys@faveve.uni-stuttgart.de>\n"
+"\n"
+"To use it, add a URL: tact://beats*num/den\n"
+"e.g. tact://77 to play 77 beats per minute\n"
+"or tact://60*3/4 to play 60 bpm in 3/4 tacts"
+msgstr ""
+"மார்ட்டின் ச்ட்ராச் <mys@faveve.uni-stuttgart.de> எழுதிய ஒரு தந்திரமான செனரேட்டர் \n"
+"\n"
+" இதைப் பயன்படுத்த, ஒரு முகவரி ஐச் சேர்க்கவும்: தந்திரம்: // பீட்ச்*எண்/டென் \n"
+" எ.கா. தந்திரம்: // 77 நிமிடத்திற்கு 77 துடிப்புகள் விளையாட \n"
+" அல்லது தந்திரம்: // 60*3/4 3/4 தந்திரங்களில் 60 பிபிஎம் விளையாட"
+
+#: src/mixer/mixer.cc:43
+msgid "Channel Mixer"
+msgstr "தட கலவைப்பான் "
+
+#: src/mixer/mixer.cc:255
+msgid ""
+"Channel Mixer Plugin for Audacious\n"
+"Copyright 2011-2012 John Lindgren and Michał Lipski"
+msgstr ""
+"துணிச்சலான சேனல் மிக்சர் சொருகி \n"
+" பதிப்புரிமை 2011-2012 சான் லிண்ட்கிரென் மற்றும் மைக்கேச் லிப்ச்கி"
+
+#: src/mixer/mixer.cc:259
+msgid "<b>Channel Mixer</b>"
+msgstr "<b>தட கலவை</b>"
+
+#: src/mixer/mixer.cc:260
+msgid "Output channels:"
+msgstr "வெளியீட்டு thadangal"
+
+#: src/mms/mms.cc:35
+msgid "MMS Plugin"
+msgstr "MMS நீட்சி"
+
+#: src/mms/mms.cc:82
+msgid "Error connecting to MMS server"
+msgstr "எம்.எம்.எச் சேவையகத்துடன் இணைப்பதில் பிழை"
+
+#: src/modplug/modplugbmp.h:57
+msgid "ModPlug (Module Player)"
+msgstr "ModPlug (தொகுதி இயக்கி )"
+
+#: src/modplug/plugin_main.cc:55
+msgid "<b>Channels</b>"
+msgstr "<b> சேனல்கள் </b>"
+
+#: src/modplug/plugin_main.cc:59
+msgid "Nearest (fastest)"
+msgstr "அருகிலுள்ள (வேகமான)"
+
+#: src/modplug/plugin_main.cc:60
+msgid "Linear (fast)"
+msgstr "நேரியல் (வேகமாக)"
+
+#: src/modplug/plugin_main.cc:61
+msgid "Spline (good)"
+msgstr "ச்ப்லைன் (நல்லது)"
+
+#: src/modplug/plugin_main.cc:62
+msgid "Polyphase (best)"
+msgstr "பாலிஃபேச் (சிறந்தது)"
+
+#: src/modplug/plugin_main.cc:63
+msgid "<b>Sample rate</b>"
+msgstr "<b> மாதிரி வீதம் </b>"
+
+#: src/modplug/plugin_main.cc:64
+msgid "22 kHz"
+msgstr "22 khz"
+
+#: src/modplug/plugin_main.cc:65
+msgid "44 kHz"
+msgstr "44 khz"
+
+#: src/modplug/plugin_main.cc:66
+msgid "48 kHz"
+msgstr "48 கிலோஎர்ட்ச்"
+
+#: src/modplug/plugin_main.cc:67
+msgid "96 kHz"
+msgstr "96 கிலோஎர்ட்ச்"
+
+#: src/modplug/plugin_main.cc:71 src/modplug/plugin_main.cc:76
+#: src/modplug/plugin_main.cc:81
+msgid "Level:"
+msgstr "நிலை:"
+
+#: src/modplug/plugin_main.cc:77
+msgid "Cutoff:"
+msgstr "வெட்டு:"
+
+#: src/modplug/plugin_main.cc:90
+msgid "<b>Reverb</b>"
+msgstr "<b> ரெவெர்ப் </b>"
+
+#: src/modplug/plugin_main.cc:93
+msgid "<b>Bass Boost</b>"
+msgstr "<b> பாச் பூச்ட் </b>"
+
+#: src/modplug/plugin_main.cc:96
+msgid "<b>Surround</b>"
+msgstr "<b> சரவுண்ட் </b>"
+
+#: src/modplug/plugin_main.cc:99
+msgid "<b>Preamp</b>"
+msgstr "<b> preamp </b>"
+
+#: src/modplug/plugin_main.cc:106
+msgid "Oversample"
+msgstr "மிகைப்படுத்தப்பட்ட மாதிரி"
+
+#: src/modplug/plugin_main.cc:107
+msgid "Noise reduction"
+msgstr "ஒலி குறைப்பு"
+
+#: src/modplug/plugin_main.cc:108
+msgid "Play Amiga MODs"
+msgstr "அமிகா மோட்ச் விளையாடுங்கள்"
+
+#: src/modplug/plugin_main.cc:109
+msgid "<b>Repeat</b>"
+msgstr "<b> மீண்டும் </b>"
+
+#: src/modplug/plugin_main.cc:110
+msgid "Repeat count:"
+msgstr "எண்ணிக்கை மீண்டும்:"
+
+#: src/modplug/plugin_main.cc:111
+msgid "To repeat forever, set the repeat count to -1."
+msgstr "என்றென்றும் மீண்டும் செய்ய, மீண்டும் எண்ணிக்கையை -1 ஆக அமைக்கவும்."
+
+#: src/modplug/plugin_main.cc:124 src/sid/xs_config.cc:106
+msgid "These settings will take effect when Audacious is restarted."
+msgstr "துணிச்சலான மறுதொடக்கம் செய்யப்படும்போது இந்த அமைப்புகள் நடைமுறைக்கு வரும்."
+
+#: src/mpg123/mpg123.cc:54
+msgid "MPG123 Plugin"
+msgstr "MPG123 நீட்சி"
+
+#: src/mpg123/mpg123.cc:82
+msgid "Use accurate length calculation (slow)"
+msgstr "துல்லியமான நீள கணக்கீட்டைப் பயன்படுத்தவும் (மெதுவாக)"
+
+#: src/mpg123/mpg123.cc:260
+msgid "Surround"
+msgstr "சூழ்ந்த"
+
+#: src/mpris2/plugin.cc:43
+msgid "MPRIS 2 Server"
+msgstr "MPRIS 2 சேவையகம் "
+
+#: src/mpris2/plugin.cc:362
+msgid ""
+"MPRIS Plugin for Audacious\n"
+"Copyright 2011-2012 John Lindgren\n"
+"\n"
+"This plugin implements the MPRIS D-Bus interface. It provides a mechanism "
+"for querying track information and basic playback control. Necessary for "
+"media controls in desktop environments, Bluetooth headsets and tools like "
+"\"playerctl\"."
+msgstr ""
+"துணிச்சலுக்கான MPRIS சொருகி \n"
+"பதிப்புரிமை 2011-2012 சான் லிண்ட்கிரென் \n"
+"\n"
+"இந்த சொருகி MPRIS D-PUS இடைமுகத்தை செயல்படுத்துகிறது. ட்ராக் செய்தி மற்றும் அடிப்படை "
+"பின்னணி கட்டுப்பாட்டை வினவுவதற்கான ஒரு பொறிமுறையை இது வழங்குகிறது. டெச்க்டாப் சூழல்கள், "
+"ஊடலை எட்செட்டுகள் மற்றும் \"Playerctl\" போன்ற கருவிகளில் ஊடக கட்டுப்பாடுகளுக்கு தேவை."
+
+#: src/neon/neon.cc:102
+msgid "Neon HTTP/HTTPS Plugin"
+msgstr "Neon HTTP/HTTPS நீட்சி "
+
+#: src/neon/neon.cc:526
+msgid "Error parsing redirect"
+msgstr "பிழையான பாகுபடுத்தல் திருப்பி விடப்படுகிறது"
+
+#: src/neon/neon.cc:540
+msgid "Unknown HTTP error"
+msgstr "தெரியாத http பிழை"
+
+#: src/neon/neon.cc:614
+msgid "Error parsing URL"
+msgstr "முகவரி ஐ பாகுபடுத்துகிறது"
+
+#: src/neon/neon.cc:687
+msgid "Too many redirects"
+msgstr "பல வழிமாற்றுகள்"
+
+#: src/notify/event.cc:97
+msgid "Stopped"
+msgstr "நிறுத்துப்பட்டது "
+
+#: src/notify/event.cc:97
+msgid "Audacious is not playing."
+msgstr "ஔடகிவச் இயங்கவில்லை "
+
+#: src/notify/notify.cc:39
+msgid "Desktop Notifications"
+msgstr "பணிமேடை அறிவிப்புகள்"
+
+#: src/notify/notify.cc:57
+msgid ""
+"Desktop Notifications Plugin for Audacious\n"
+"Copyright (C) 2010 Maximilian Bogner\n"
+"Copyright (C) 2011-2013 John Lindgren and Jean-Alexandre Anglès d'Auriac\n"
+"\n"
+"This plugin is free software: you can redistribute it and/or modify it under "
+"the terms of the GNU General Public License as published by the Free "
+"Software Foundation, either version 3 of the License, or (at your option) "
+"any later version.\n"
+"\n"
+"This plugin is distributed in the hope that it will be useful, but WITHOUT "
+"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
+"FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for "
+"more details.\n"
+"\n"
+"You should have received a copy of the GNU General Public License along with "
+"this program.  If not, see <http://www.gnu.org/licenses/>."
+msgstr ""
+"டெச்க்டாப் அறிவிப்புகள் துணிச்சலான சொருகி \n"
+" பதிப்புரிமை (இ) 2010 மாக்சிமிலியன் போக்னர் \n"
+" பதிப்புரிமை (சி) 2011-2013 சான் லிண்ட்கிரென் மற்றும் சீன்-அலெக்சாண்ட்ரே ஆங்கிலச் டி "
+"ஆரியாக் \n"
+"\n"
+" இந்த சொருகி இலவச மென்பொருள்: நீங்கள் அதை மறுபகிர்வு செய்யலாம் மற்றும்/அல்லது குனு பொது "
+"பொது உரிமத்தின் விதிமுறைகளின் கீழ் இலவச மென்பொருள் அறக்கட்டளையால் வெளியிடப்பட்டபடி, "
+"உரிமத்தின் பதிப்பு 3 அல்லது (உங்கள் விருப்பத்தில்) பின்னர் எந்த பதிப்பையும் மாற்றலாம். \n"
+"\n"
+" இந்த சொருகி இது பயனுள்ளதாக இருக்கும் என்ற நம்பிக்கையில் விநியோகிக்கப்படுகிறது, ஆனால் "
+"எந்த உத்தரவாதமும் இல்லாமல்; ஒரு குறிப்பிட்ட நோக்கத்திற்காக வணிகத்தன்மை அல்லது உடற்தகுதி "
+"ஆகியவற்றின் மறைமுக பொறுப்பு கூட இல்லாமல். மேலும் விவரங்களுக்கு குனு பொது பொது "
+"உரிமத்தைப் பார்க்கவும். \n"
+"\n"
+" இந்த திட்டத்துடன் குனு பொது பொது உரிமத்தின் நகலை நீங்கள் பெற்றிருக்க வேண்டும். "
+"இல்லையென்றால், <http://www.gnu.org/licenses/> ஐப் பார்க்கவும்."
+
+#: src/notify/notify.cc:104
+msgid "Show playback controls"
+msgstr "பிளேபேக் கட்டுப்பாடுகளைக் காட்டு"
+
+#: src/notify/notify.cc:106
+msgid "Always show notification"
+msgstr "எப்போதும் அறிவிப்பைக் காட்டுங்கள்"
+
+#: src/notify/notify.cc:108
+msgid "Include album name in notification"
+msgstr "அறிவிப்பில் ஆல்பத்தின் பெயரைச் சேர்க்கவும்"
+
+#: src/notify/notify.cc:110
+msgid "Custom notification duration:"
+msgstr "தனிப்பயன் அறிவிப்பு காலம்:"
+
+#: src/notify/osd.cc:74
+msgid "Show"
+msgstr "காண்பிக்குக "
+
+#: src/openmpt/mpt.cc:52
+msgid "OpenMPT (Module Player)"
+msgstr "openmpt (தொகுதி பிளேயர்)"
+
+#: src/openmpt/mpt.cc:136
+msgid ""
+"Module player based on libopenmpt\n"
+"\n"
+"Written by: Chris Spiegel <cspiegel@gmail.com>"
+msgstr ""
+"லிபோபெம்ப்டை அடிப்படையாகக் கொண்ட தொகுதி பிளேயர் \n"
+"\n"
+" எழுதியவர்: கிறிச் ச்பீகல் <cspiegel@gmail.com>"
+
+#: src/openmpt/mpt.cc:155
+msgid "Stereo separation:"
+msgstr "ச்டீரியோ பிரிப்பு:"
+
+#: src/openmpt/mpt.cc:157
+msgid "% (0=mono, 100=default, 200=full)"
+msgstr "% (0 = மோனோ, 100 = இயல்புநிலை, 200 = முழு)"
+
+#: src/openmpt/mpt.cc:160
+msgid "Interpolation:"
+msgstr "இடைக்கணிப்பு:"
+
+#: src/openmpt/mptwrap.h:51 src/soxr/sox-resampler.cc:189 src/xsf/plugin.cc:437
+msgid "Linear"
+msgstr "நேரியல்"
+
+#: src/openmpt/mptwrap.h:52
+msgid "Cubic"
+msgstr "கன"
+
+#: src/openmpt/mptwrap.h:53
+msgid "Windowed sinc"
+msgstr "சாளர சின்க்"
+
+#: src/opus/opus.cc:39
+msgid "Opus Decoder"
+msgstr "ஓபச் டிகோடர்"
+
+#: src/opus/opus.cc:371
+msgid ""
+"Opus Decoder Plugin for Audacious\n"
+"Copyright 2022 Thomas Lange"
+msgstr ""
+"துணிச்சலுக்கான ஓபச் டிகோடர் சொருகி \n"
+" பதிப்புரிமை 2022 தாமச் லாங்கே"
+
+#: src/oss4/oss.h:70
+msgid "OSS4 Output"
+msgstr "OSS4 வெளியீடு "
+
+#: src/oss4/oss.h:72
+msgid "OSS3 Output"
+msgstr "oss3 வெளியீடு"
+
+#: src/oss4/plugin.cc:35
+msgid "Default device"
+msgstr "இயல்புநிலை சாதனம்"
+
+#: src/oss4/plugin.cc:78
+msgid "Audio device:"
+msgstr "ஒலி சாதனம்:"
+
+#: src/oss4/plugin.cc:81
+msgid "Use alternate device:"
+msgstr "மாற்று சாதனம் பயன்படுத்துக:"
+
+#: src/oss4/plugin.cc:85
+msgid "Save volume between sessions."
+msgstr "அமர்வுகள் இடையே ஒலி அளவை சேமிக்குக."
+
+#: src/oss4/plugin.cc:87
+msgid "Enable format conversions made by the OSS software."
+msgstr "OSS மென்பொருள் மூலம் வடிவமைப்பு மாற்றத்தை செயல்படுத்துக."
+
+#: src/oss4/plugin.cc:89
+msgid "Enable exclusive mode to prevent virtual mixing."
+msgstr "மெய்நிகர் கலப்பினை தடுக்க பிரத்யேக முறையினை செயல்படுத்துக."
+
+#: src/oss4/plugin.cc:101
+msgid ""
+"OSS4 Output Plugin for Audacious\n"
+"Copyright 2010-2012 Michał Lipski\n"
+"\n"
+"I would like to thank people on #audacious, especially Tony Vroon and John "
+"Lindgren and of course the authors of the previous OSS plugin."
+msgstr ""
+"துணிச்சலுக்கான oss4 வெளியீட்டு சொருகி \n"
+" பதிப்புரிமை 2010-2012 மைக்கே லிப்ச்கி \n"
+"\n"
+" #audiacial, குறிப்பாக டோனி வ்ரூன் மற்றும் சான் லிண்ட்கிரென் ஆகியோருக்கு நான் நன்றி "
+"தெரிவிக்க விரும்புகிறேன், நிச்சயமாக முந்தைய oss சொருகி ஆசிரியர்கள்."
+
+#: src/pipewire/pipewire.cc:59
+msgid "PipeWire Output"
+msgstr "பைப்வேர் வெளியீடு"
+
+#: src/pipewire/pipewire.cc:132
+msgid ""
+"PipeWire Output Plugin for Audacious\n"
+"Copyright 2022 Thomas Lange\n"
+"\n"
+"Based on the PipeWire Output Plugin for Qmmp\n"
+"Copyright 2021 Ilya Kotov"
+msgstr ""
+"துணிச்சலுக்கான பைப்வேர் வெளியீட்டு சொருகி \n"
+" பதிப்புரிமை 2022 தாமச் லாங்கே \n"
+"\n"
+" qmmp க்கான பைப்வைர் வெளியீட்டு சொருகி அடிப்படையில் \n"
+" பதிப்புரிமை 2021 இலியா கோட்டோவ்"
+
+#: src/pipewire/pipewire.cc:456 src/sdlout/sdlout.cc:112 src/skins/menus.cc:88
+#: src/skins-qt/menus.cc:79
+msgid "Playback"
+msgstr "மீள் இயக்கு"
+
+#: src/playback-history-qt/playback-history.cc:52
+msgid ""
+"Playback History Plugin\n"
+"\n"
+"Copyright 2023-2024 Igor Kushnir <igorkuo@gmail.com>\n"
+"\n"
+"This plugin tracks and provides access to playback history.\n"
+"\n"
+"History entries are stored only in memory and are lost\n"
+"on Audacious exit. When the plugin is disabled,\n"
+"playback history is not tracked at all.\n"
+"History entries are only added, never removed automatically.\n"
+"The user can remove selected entries by pressing the Delete key.\n"
+"Restart Audacious or disable the plugin by closing\n"
+"Playback History view to clear the entries.\n"
+"\n"
+"Two history item granularities (modes) are supported.\n"
+"The user can select a mode in the plugin's settings.\n"
+"The Song mode is the default. Each played song is stored\n"
+"in history. Song titles are displayed in the list.\n"
+"When the Album mode is selected and multiple songs from\n"
+"a single album are played in a row, a single album entry\n"
+"is stored in history. Album names are displayed in the list."
+msgstr ""
+"பிளேபேக் வரலாறு சொருகி \n"
+"\n"
+"பதிப்புரிமை 2023-2024 இகோர் குச்னிர் <igorkuo@gmail.com> \n"
+"\n"
+"இந்த சொருகி கண்காணிக்கிறது மற்றும் பின்னணி வரலாற்றை அணுகுகிறது. \n"
+"\n"
+"வரலாற்று உள்ளீடுகள் நினைவகத்தில் மட்டுமே சேமிக்கப்பட்டு இழக்கப்படுகின்றன \n"
+"துணிச்சலான வெளியேறும் போது. சொருகி முடக்கப்பட்டால், \n"
+"பின்னணி வரலாறு கண்காணிக்கப்படவில்லை. \n"
+"வரலாற்று உள்ளீடுகள் மட்டுமே சேர்க்கப்படுகின்றன, ஒருபோதும் தானாக அகற்றப்படாது. \n"
+"நீக்கு விசையை அழுத்துவதன் மூலம் பயனர் தேர்ந்தெடுக்கப்பட்ட உள்ளீடுகளை அகற்றலாம். \n"
+"துணிச்சலான மறுதொடக்கம் அல்லது மூடுவதன் மூலம் சொருகி முடக்கவும் \n"
+"உள்ளீடுகளை அழிக்க பின்னணி வரலாறு பார்வை. \n"
+"\n"
+"இரண்டு வரலாற்று உருப்படி கிரானுலரிட்டிகள் (முறைகள்) ஆதரிக்கப்படுகின்றன. \n"
+"சொருகி அமைப்புகளில் பயனர் ஒரு பயன்முறையைத் தேர்ந்தெடுக்கலாம். \n"
+"பாடல் பயன்முறை இயல்புநிலை. வாசித்த ஒவ்வொரு பாடலும் சேமிக்கப்படுகிறது \n"
+"வரலாற்றில். பாடல் தலைப்புகள் பட்டியலில் காட்டப்படும். \n"
+"ஆல்பம் பயன்முறை தேர்ந்தெடுக்கப்பட்டதும், பல பாடல்களும் \n"
+"ஒற்றை ஆல்பம் ஒரு வரிசையில் இசைக்கப்படுகிறது, ஒரு ஆல்பம் நுழைவு \n"
+"வரலாற்றில் சேமிக்கப்படுகிறது. ஆல்பத்தின் பெயர்கள் பட்டியலில் காட்டப்படும்."
+
+#: src/playback-history-qt/playback-history.cc:77
+msgid "Playback History"
+msgstr "பின்னணி வரலாறு"
+
+#: src/playback-history-qt/playback-history.cc:528
+#, c-format
+msgid "<b>%s:</b> %s<br><b>Playlist:</b> %s<br><b>Entry Number:</b> %d"
+msgstr "<b> %s: </b> %s <br> <b> பிளேலிச்ட்: </b> %s <br> <b> நுழைவு எண்: </b> %d"
+
+#: src/playback-history-qt/playback-history.cc:834
+msgid "<b>History Item Granularity</b>"
+msgstr "<b> வரலாறு உருப்படி கிரானுலாரிட்டி </b>"
+
+#: src/playback-history-qt/playback-history.cc:835
+msgid "Song"
+msgstr "பாடல்"
+
+#: src/playlist-manager/playlist-manager.cc:38
+#: src/playlist-manager-qt/playlist-manager-qt.cc:42
+msgid "Playlist Manager"
+msgstr "பாடல் பட்டிய நிர்வாகி "
+
+#: src/playlist-manager/playlist-manager.cc:201
+#: src/playlist-manager-qt/playlist-manager-qt.cc:190
+msgid "Entries"
+msgstr "varavugal"
+
+#: src/playlist-manager/playlist-manager.cc:221
+#: src/playlist-manager-qt/playlist-manager-qt.cc:356
+msgid "_Remove"
+msgstr "நீக்கு "
+
+#: src/playlist-manager/playlist-manager.cc:222
+#: src/playlist-manager-qt/playlist-manager-qt.cc:351
+msgid "Ren_ame"
+msgstr "ren_ame"
+
+#: src/pls/pls.cc:35
+msgid "PLS Playlists"
+msgstr "PLS பாடல் பட்டியல்"
+
+#: src/psf/plugin.cc:53
+msgid "OpenPSF PSF1/PSF2 Decoder"
+msgstr "OpenPSF PSF1/PSF2 குறிவிலக்கி "
+
+#: src/psf/plugin.cc:270
+msgid "<b>OpenPSF Configuration</b>"
+msgstr "<b> openpsf உள்ளமைவு </b>"
+
+#: src/psf/plugin.cc:271 src/xsf/plugin.cc:444
+msgid "Ignore length from file"
+msgstr "கோப்பிலிருந்து நீளத்தை புறக்கணிக்கவும்"
+
+#: src/pulse/pulse_audio.cc:42
+msgid "PulseAudio Output"
+msgstr "PulseAudio வெளியீடு "
+
+#: src/pulse/pulse_audio.cc:72
+msgid "Context name:"
+msgstr "சூழல் பெயர்:"
+
+#: src/pulse/pulse_audio.cc:74
+msgid "Stream name:"
+msgstr "ச்ட்ரீம் பெயர்:"
+
+#: src/pulse/pulse_audio.cc:584
+msgid ""
+"Audacious PulseAudio Output Plugin\n"
+"\n"
+"This program is free software; you can redistribute it and/or modify it "
+"under the terms of the GNU General Public License as published by the Free "
+"Software Foundation; either version 2 of the License, or (at your option) "
+"any later version.\n"
+"\n"
+"This program is distributed in the hope that it will be useful, but WITHOUT "
+"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
+"FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for "
+"more details.\n"
+"\n"
+"You should have received a copy of the GNU General Public License along with "
+"this program; if not, write to the Free Software Foundation, Inc., 51 "
+"Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA."
+msgstr ""
+"துணிச்சலான துடிப்பு வெளியீட்டு சொருகி \n"
+"\n"
+" இந்த நிரல் இலவச மென்பொருள்; இலவச மென்பொருள் அறக்கட்டளையால் வெளியிடப்பட்ட குனு பொது "
+"பொது உரிமத்தின் விதிமுறைகளின் கீழ் நீங்கள் அதை மறுபகிர்வு செய்யலாம் மற்றும்/அல்லது "
+"மாற்றலாம்; உரிமத்தின் பதிப்பு 2, அல்லது (உங்கள் விருப்பத்தில்) பின்னர் எந்த பதிப்பும். \n"
+"\n"
+" இந்த திட்டம் பயனுள்ளதாக இருக்கும் என்ற நம்பிக்கையில் விநியோகிக்கப்படுகிறது, ஆனால் எந்த "
+"உத்தரவாதமும் இல்லாமல்; ஒரு குறிப்பிட்ட நோக்கத்திற்காக வணிகத்தன்மை அல்லது உடற்தகுதி "
+"ஆகியவற்றின் மறைமுக பொறுப்பு கூட இல்லாமல். மேலும் விவரங்களுக்கு குனு பொது பொது "
+"உரிமத்தைப் பார்க்கவும். \n"
+"\n"
+" இந்த திட்டத்துடன் குனு பொது பொது உரிமத்தின் நகலை நீங்கள் பெற்றிருக்க வேண்டும்; "
+"இல்லையென்றால், இலவச மென்பொருள் அறக்கட்டளை, இன்க்., 51 பிராங்க்ளின் தெரு, ஐந்தாவது மாடி, "
+"பாச்டன், எம்.ஏ 02110-1301, அமெரிக்கா."
+
+#: src/qtaudio/qtaudio.cc:53
+msgid "QtMultimedia Output"
+msgstr "qtmultimedia வெளியீடு"
+
+#: src/qtaudio/qtaudio.cc:84
+msgid ""
+"QtMultimedia Audio Output Plugin for Audacious\n"
+"Copyright 2014 William Pitcock\n"
+"\n"
+"Based on SDL Output Plugin for Audacious\n"
+"Copyright 2010 John Lindgren"
+msgstr ""
+"துணிச்சலுக்கான qtmultimedia ஆடியோ வெளியீட்டு சொருகி \n"
+" பதிப்புரிமை 2014 வில்லியம் பிட்காக் \n"
+"\n"
+" துணிச்சலுக்கான எச்.டி.எல் வெளியீட்டு சொருகி அடிப்படையில் \n"
+" பதிப்புரிமை 2010 சான் லிண்ட்கிரென்"
+
+#: src/qtglspectrum/gl-spectrum.cc:41
+msgid ""
+"OpenGL Spectrum Analyzer for Audacious\n"
+"Copyright 2013 Christophe Budé, John Lindgren, and Carlo Bramini\n"
+"Copyright 2014, 2020 Ariadne Conill\n"
+"\n"
+"Based on the XMMS plugin:\n"
+"Copyright 1998-2000 Peter Alm, Mikael Alm, Olle Hallnas, Thomas Nilsson, and "
+"4Front Technologies\n"
+"\n"
+"License: GPLv2+"
+msgstr ""
+"துணிச்சலுக்கான ஓபன்சிஎல் ச்பெக்ட்ரம் பகுப்பாய்வி \n"
+" பதிப்புரிமை 2013 கிறிச்டோஃப் புடே, சான் லிண்ட்கிரென் மற்றும் கார்லோ பிராமினி \n"
+" பதிப்புரிமை 2014, 2020 அரியட்னே கோனில் \n"
+"\n"
+" எக்ச்எம்எம்எச் சொருகி அடிப்படையில்: \n"
+" பதிப்புரிமை 1998-2000 பீட்டர் ஆல்ம், மைக்கேல் ஆல்ம், ஓலே ஆல்னாச், தாமச் நில்சன், மற்றும் 4 "
+"ஃப்ரண்ட் டெக்னாலசிச் \n"
+"\n"
+" உரிமம்: gplv2+"
+
+#: src/qthotkey/gui.cc:177
+msgid "Press a key combination inside a text field."
+msgstr "உரை புலத்திற்குள் ஒரு முக்கிய கலவையை அழுத்தவும்."
+
+#: src/qthotkey/plugin.cc:105
+msgid ""
+"Global Hotkey Plugin\n"
+"Control the player with global key combinations or multimedia keys.\n"
+"\n"
+"Copyright (C) 2020 i.Dark_Templar <darktemplar@dark-templar-archives.net>\n"
+"Copyright (C) 2007-2008 Sascha Hlusiak <contact@saschahlusiak.de>\n"
+"\n"
+"Contributors include:\n"
+"Copyright (C) 2006-2007 Vladimir Paskov <vlado.paskov@gmail.com>\n"
+"Copyright (C) 2000-2002 Ville Syrjälä <syrjala@sci.fi>,\n"
+" Bryn Davies <curious@ihug.com.au>,\n"
+" Jonathan A. Davis <davis@jdhouse.org>,\n"
+" Jeremy Tan <nsx@nsx.homeip.net>"
+msgstr ""
+"உலகளாவிய ஆட்கி சொருகி \n"
+" உலகளாவிய விசை சேர்க்கைகள் அல்லது மல்டிமீடியா விசைகள் கொண்ட வீரரைக் கட்டுப்படுத்தவும். \n"
+"\n"
+" பதிப்புரிமை (சி) 2020 i.dark_templar <slarktemplar@dark-templar-"
+"archives.net> \n"
+" பதிப்புரிமை (சி) 2007-2008 சாச்சா அ்லூசியாக் <contact@saschahlusiak.de> \n"
+"\n"
+" பங்களிப்பாளர்கள் பின்வருமாறு: \n"
+" பதிப்புரிமை (சி) 2006-2007 விளாடிமிர் பாச்கோவ் <vlado.paskov@gmail.com> \n"
+" பதிப்புரிமை (இ) 2000-2002 வில்லே சிரசாலா <syrjala@sci.fi>, \n"
+"  பிரைன் டேவிச் <cicious@ihug.com.au>, \n"
+"  சொனாதன் ஏ. டேவிச் <davis@jdhouse.org>, \n"
+"  செர்மி டான் <nsx@nsx.homeip.net>"
+
+#: src/qtui/main_window.cc:160 src/qtui/main_window.cc:161
+#: src/skins/menus.cc:107 src/skins-qt/menus.cc:99
+msgid "Stop After This Song"
+msgstr "இந்த பாடலுக்குப் பிறகு நிறுத்துங்கள்"
+
+#: src/qtui/menus.cc:113
+msgid "_Open Folder ..."
+msgstr "_ திறந்த கோப்புறை ..."
+
+#: src/qtui/menus.cc:119
+msgid "_Add Folder ..."
+msgstr "_add கோப்புறை ..."
+
+#: src/qtui/menus.cc:132
+msgid "_Log Inspector ..."
+msgstr "_ லாக் இன்ச்பெக்டர் ..."
+
+#: src/qtui/menus.cc:169
+msgid "Playback Histor_y ..."
+msgstr "பின்னணி வரலாறு_ஒய் ..."
+
+#: src/qtui/menus.cc:227
+msgid "_Find ..."
+msgstr "_ ஃபைண்ட் ..."
+
+#: src/qtui/menus.cc:263 src/skins/menus.cc:80 src/skins-qt/menus.cc:70
+msgid "Audio Settings ..."
+msgstr "ஆடியோ அமைப்புகள் ..."
+
+#: src/qtui/playlist_header.cc:232
+msgid "Now Playing"
+msgstr "தற்போது இயக்கப்படுவது"
+
+#: src/qtui/playlist_header.cc:258
+msgid "Reset to Defaults"
+msgstr "இயல்புநிலைகளுக்கு மீட்டமைக்கவும்"
+
+#: src/qtui/playlist_model.cc:190
+msgid "Q#"
+msgstr "கே#"
+
+#: src/qtui/playlist_model.cc:192
+msgid "T#"
+msgstr "டி#"
+
+#: src/qtui/playlist_model.cc:194
+msgid "C#"
+msgstr "சி#"
+
+#: src/qtui/playlist_model.cc:196
+msgid "D#"
+msgstr "டி#"
+
+#: src/qtui/qtui.cc:40
+msgid "Qt Interface"
+msgstr "கியுடி இடைமுகம்"
+
+#: src/qtui/search_bar.cc:46
+msgid "Search playlist"
+msgstr "பிளேலிச்ட்டைத் தேடுங்கள்"
+
+#: src/qtui/settings.cc:79
+msgid "Use bold font for column headers"
+msgstr "நெடுவரிசை தலைப்புகளுக்கு தைரியமான எழுத்துருவைப் பயன்படுத்தவும்"
+
+#: src/resample/resample.cc:43
+msgid "Sample Rate Converter"
+msgstr "மாதிரி விகிதம் பரிமாற்றி "
+
+#: src/resample/resample.cc:183
+msgid ""
+"Sample Rate Converter Plugin for Audacious\n"
+"Copyright 2010-2012 John Lindgren"
+msgstr ""
+"துணிச்சலான மாதிரி வீத மாற்றி சொருகி \n"
+" பதிப்புரிமை 2010-2012 சான் லிண்ட்கிரென்"
+
+#: src/resample/resample.cc:187
+msgid "Skip/repeat samples"
+msgstr "மாதிரிகளை தவிர்க்கவும் / மீlavum"
+
+#: src/resample/resample.cc:188
+msgid "Linear interpolation"
+msgstr "நேர்கோட்டு இடைக்கணிப்பு"
+
+#: src/resample/resample.cc:189
+msgid "Fast sinc interpolation"
+msgstr "வேகமாக sinc இடைச்செருகல்"
+
+#: src/resample/resample.cc:190
+msgid "Medium sinc interpolation"
+msgstr "மத்திமமான sinc இடைச்செருகல்"
+
+#: src/resample/resample.cc:191
+msgid "Best sinc interpolation"
+msgstr "சிறந்த sinc இடைச்செருகல்"
+
+#: src/resample/resample.cc:195
+msgid "<b>Conversion</b>"
+msgstr "<b> பரிமாற்றம் </b>"
+
+#: src/resample/resample.cc:196
+msgid "Method:"
+msgstr "முறைமை "
+
+#: src/resample/resample.cc:199 src/soxr/sox-resampler.cc:203
+msgid "Rate:"
+msgstr "வீதம்:"
+
+#: src/resample/resample.cc:202
+msgid "<b>Rate Mappings</b>"
+msgstr "<b>வீத வரைபடங்கள் </b>"
+
+#: src/resample/resample.cc:203
+msgid "Use rate mappings"
+msgstr "வீத வரைபடங்களினை உபயோகிக்குக "
+
+#: src/resample/resample.cc:205
+msgid "8 kHz:"
+msgstr "8 kHz: "
+
+#: src/resample/resample.cc:209
+msgid "16 kHz:"
+msgstr "16 kHz"
+
+#: src/resample/resample.cc:213
+msgid "22.05 kHz:"
+msgstr "22.05 kHz: "
+
+#: src/resample/resample.cc:217
+msgid "32.0 kHz:"
+msgstr "32.0 khz:"
+
+#: src/resample/resample.cc:221
+msgid "44.1 kHz:"
+msgstr "44.1 kHz: "
+
+#: src/resample/resample.cc:225
+msgid "48 kHz:"
+msgstr "48 kHz: "
+
+#: src/resample/resample.cc:229
+msgid "88.2 kHz:"
+msgstr "88.2 khz:"
+
+#: src/resample/resample.cc:233
+msgid "96 kHz:"
+msgstr "96 kHz: "
+
+#: src/resample/resample.cc:237
+msgid "176.4 kHz:"
+msgstr "176.4 khz:"
+
+#: src/resample/resample.cc:241
+msgid "192 kHz:"
+msgstr "192 kHz: "
+
+#: src/scrobbler2/config_window.cc:29
+msgid "Checking Last.fm access ..."
+msgstr "last.fm அணுகலைச் சரிபார்க்கிறது ..."
+
+#: src/scrobbler2/config_window.cc:35
+msgid ""
+"Your scrobbles are being saved on your computer temporarily.  They will be "
+"submitted as soon as Audacious is allowed access."
+msgstr ""
+"உங்கள் கணினியில் தற்காலிகமாக சேமிக்கப்படுகிறது. துணிச்சலான அணுகலை அனுமதித்தவுடன் அவை "
+"சமர்ப்பிக்கப்படும்."
+
+#: src/scrobbler2/config_window.cc:41
+#, c-format
+msgid "Permission granted.  Scrobbling for user %s."
+msgstr "இசைவு வழங்கப்பட்டது. பயனர் %s."
+
+#: src/scrobbler2/config_window.cc:44
+msgid ""
+"Permission denied.  Open the following URL in a browser, allow Audacious "
+"access to your account, and then click 'Check Permission' again:"
+msgstr ""
+"இசைவு மறுக்கப்பட்டது. உலாவியில் பின்வரும் முகவரி ஐத் திறந்து, உங்கள் கணக்கிற்கு "
+"துணிச்சலான அணுகலை அனுமதிக்கவும், பின்னர் 'இசைவு சரிபார்க்கவும்' என்பதைக் சொடுக்கு செய்க:"
+
+#: src/scrobbler2/config_window.cc:53
+msgid "There was a problem contacting Last.fm."
+msgstr "கடைசியாக தொடர்பு கொள்வதில் சிக்கல் ஏற்பட்டது."
+
+#: src/scrobbler2/config_window.cc:92
+msgid "Check Permission"
+msgstr "அனுமதியை சரிபார்க்கவும்"
+
+#: src/scrobbler2/config_window.cc:93
+msgid "Revoke Permission"
+msgstr "இசைவு ரத்து"
+
+#: src/scrobbler2/config_window.cc:97
+msgid "You need to allow Audacious to scrobble tracks to your Last.fm account."
+msgstr "உங்கள் கடைசி.fm கணக்கிற்கு துணிச்சலான தடங்களை நீங்கள் அனுமதிக்க வேண்டும்."
+
+#: src/scrobbler2/scrobbler.cc:29
+msgid "Scrobbler 2.0"
+msgstr "ச்க்ரோப்ளர் 2.0"
+
+#: src/scrobbler2/scrobbler.cc:200
+msgid ""
+"The Scrobbler plugin could not be started.\n"
+"There might be a problem with your installation."
+msgstr ""
+"ச்க்ரோப்ளர் சொருகி தொடங்க முடியவில்லை. \n"
+" உங்கள் நிறுவலில் சிக்கல் இருக்கலாம்."
+
+#: src/scrobbler2/scrobbler.cc:245
+msgid ""
+"Audacious Scrobbler Plugin 2.0 by Pitxyoki,\n"
+"\n"
+"Copyright © 2012-2013 Luís M. Picciochi Oliveira <Pitxyoki@Gmail.com>\n"
+"\n"
+"Thanks to John Lindgren for giving me a hand at the beginning of this "
+"project."
+msgstr ""
+"பிட்சிகோகி எழுதிய துணிச்சலான ச்க்ரோப்ளர் சொருகி 2.0, \n"
+"\n"
+" பதிப்புரிமை © 2012-2013 லுச் எம். \n"
+"\n"
+" இந்த திட்டத்தின் தொடக்கத்தில் எனக்கு ஒரு கை கொடுத்ததற்கு சான் லிண்ட்கிரெனுக்கு நன்றி."
+
+#: src/sdlout/sdlout.cc:46
+msgid "SDL Output"
+msgstr "SDL வெளியீடு "
+
+#: src/sdlout/sdlout.cc:75
+msgid ""
+"SDL Output Plugin for Audacious\n"
+"Copyright 2010 John Lindgren"
+msgstr ""
+"துணிச்சலுக்கான எச்.டி.எல் வெளியீட்டு சொருகி \n"
+" பதிப்புரிமை 2010 சான் லிண்ட்கிரென்"
+
+#: src/search-tool/library.cc:35 src/search-tool/library.cc:46
+#: src/search-tool-qt/library.cc:35 src/search-tool-qt/library.cc:46
+msgid "Library"
+msgstr "நூலகம்"
+
+#: src/search-tool-qt/search-model.cc:44 src/search-tool/search-tool.cc:287
+#, c-format
+msgid "%d song"
+msgid_plural "%d songs"
+msgstr[0] "%d பாடல்"
+msgstr[1] "%d பாடல்கள்"
+
+#: src/search-tool-qt/search-model.cc:53 src/search-tool/search-tool.cc:294
+msgid "of this genre"
+msgstr "இந்த வகையின்"
+
+#: src/search-tool-qt/search-model.h:47 src/search-tool/search-model.h:45
+msgid "on"
+msgstr "ஆன்"
+
+#: src/search-tool-qt/search-model.h:47 src/search-tool/search-model.h:45
+msgid "by"
+msgstr "மூலம்"
+
+#: src/search-tool-qt/search-tool-qt.cc:165 src/search-tool/search-tool.cc:74
+msgid "Number of results to show:"
+msgstr "காட்ட வேண்டிய முடிவுகளின் எண்ணிக்கை:"
+
+#: src/search-tool-qt/search-tool-qt.cc:168 src/search-tool/search-tool.cc:77
+msgid "Rescan library at startup"
+msgstr "தொடக்கத்தில் ரெச்கான் நூலகம்"
+
+#: src/search-tool-qt/search-tool-qt.cc:170
+msgid "Monitor library for changes"
+msgstr "மாற்றங்களுக்கு நூலகத்தை கண்காணிக்கவும்"
+
+#: src/search-tool-qt/search-tool-qt.cc:193 src/search-tool/search-tool.cc:450
+msgid ""
+"To import your music library into Audacious, choose a folder and then click "
+"the \"refresh\" icon."
+msgstr ""
+"ஔடகிவச் இல் இசை நூகலமொன்றை இறக்குமதி செய்ய கோப்பகமொன்றை தெரிவு செய்து புதுப்பிப்பு "
+"பொத்தானை அழுத்துக. "
+
+#: src/search-tool-qt/search-tool-qt.cc:195 src/search-tool/search-tool.cc:459
+msgid "Please wait ..."
+msgstr "தயவு செய்து பொருத்திருக்குக ..."
+
+#: src/search-tool-qt/search-tool-qt.cc:197 src/search-tool/search-tool.cc:487
+msgid "Choose Folder"
+msgstr "கோப்பகமொன்றை தேர்க "
+
+#: src/search-tool-qt/search-tool-qt.cc:201 src/search-tool/search-tool.cc:445
+msgid "Search library"
+msgstr "நூலகத்தில் தேடுக "
+
+#: src/search-tool-qt/search-tool-qt.cc:327 src/search-tool/search-tool.cc:156
+#, c-format
+msgid "%d of %d result shown"
+msgid_plural "%d of %d results shown"
+msgstr[0] "%d முடிவின் %d காட்டப்பட்டுள்ளது"
+msgstr[1] "%d முடிவுகளின் %d காட்டப்பட்டுள்ளது"
+
+#: src/search-tool-qt/search-tool-qt.cc:331 src/search-tool/search-tool.cc:160
+#, c-format
+msgid "%d result"
+msgid_plural "%d results"
+msgstr[0] "%d முடிவு"
+msgstr[1] "%d முடிவுகள்"
+
+#: src/search-tool-qt/search-tool-qt.cc:501 src/search-tool/search-tool.cc:341
+msgid "_Create Playlist"
+msgstr "பாடல் பட்டியலொன்றை _உருவாக்குக "
+
+#: src/search-tool-qt/search-tool-qt.cc:503 src/search-tool/search-tool.cc:343
+msgid "_Add to Playlist"
+msgstr "பாடல் பட்டியலிற்கு _சேர்க்க "
+
+#: src/sid/xmms-sid.cc:44
+msgid "SID Player"
+msgstr "sid பிளேயர்"
+
+#: src/sid/xs_config.cc:62
+msgid "Channels:"
+msgstr "சேனல்கள்:"
+
+#: src/sid/xs_config.cc:68
+msgid "<b>Emulation</b>"
+msgstr "<b> எமுலேசன் </b>"
+
+#: src/sid/xs_config.cc:69
+msgid "Emulate MOS 8580 (default: MOS 6581)"
+msgstr "mos 8580 ஐப் பின்பற்றுங்கள் (இயல்புநிலை: mos 6581)"
+
+#: src/sid/xs_config.cc:71
+msgid "Do not automatically select chip model"
+msgstr "சிப் மாதிரியை தானாகவே தேர்ந்தெடுக்க வேண்டாம்"
+
+#: src/sid/xs_config.cc:73
+msgid "Emulate filter"
+msgstr "வடிகட்டியைப் பின்பற்றுங்கள்"
+
+#: src/sid/xs_config.cc:75
+msgid "Clock speed:"
+msgstr "கடிகார வேகம்:"
+
+#: src/sid/xs_config.cc:78
+msgid "Do not automatically select clock speed"
+msgstr "கடிகார வேகத்தை தானாகவே தேர்ந்தெடுக்க வேண்டாம்"
+
+#: src/sid/xs_config.cc:80
+msgid "<b>Playback time</b>"
+msgstr "<b> பின்னணி நேரம் </b>"
+
+#: src/sid/xs_config.cc:81
+msgid "Set maximum playback time:"
+msgstr "அதிகபட்ச பின்னணி நேரத்தை அமைக்கவும்:"
+
+#: src/sid/xs_config.cc:87
+msgid "Use only when song length is unknown"
+msgstr "பாடல் நீளம் தெரியாதபோது மட்டுமே பயன்படுத்தவும்"
+
+#: src/sid/xs_config.cc:90
+msgid "Set minimum playback time:"
+msgstr "குறைந்தபட்ச பின்னணி நேரத்தை அமைக்கவும்:"
+
+#: src/sid/xs_config.cc:96
+msgid "<b>Subtunes</b>"
+msgstr "<b> சப்டூன்ச் </b>"
+
+#: src/sid/xs_config.cc:97
+msgid "Enable subtunes"
+msgstr "சப்டூன்களை இயக்கவும்"
+
+#: src/sid/xs_config.cc:99
+msgid "Ignore subtunes shorter than:"
+msgstr "விட குறைவான சப்டூன்களை புறக்கணிக்கவும்:"
+
+#: src/sid/xs_config.cc:105
+msgid "<b>Note</b>"
+msgstr "<b> குறிப்பு </b>"
+
+#: src/silence-removal/silence-removal.cc:39
+msgid "Silence Removal"
+msgstr "ம silence னத்தை அகற்றுதல்"
+
+#: src/silence-removal/silence-removal.cc:58
+msgid ""
+"Silence Removal Plugin for Audacious\n"
+"Copyright 2014 John Lindgren"
+msgstr ""
+"துணிச்சலான அகற்றுதல் சொருகி \n"
+" பதிப்புரிமை 2014 சான் லிண்ட்கிரென்"
+
+#: src/silence-removal/silence-removal.cc:67
+msgid "<b>Silence Removal</b>"
+msgstr "<b> ம silence னம் அகற்றுதல் </b>"
+
+#: src/silence-removal/silence-removal.cc:68
+msgid "Threshold:"
+msgstr "வாசல்:"
+
+#: src/skins/actions.cc:45 src/skins-qt/actions.cc:43
+msgid "Repeat points cleared."
+msgstr "புள்ளிகள் அழிக்க மீண்டும்."
+
+#: src/skins/actions.cc:60 src/skins-qt/actions.cc:58
+msgid "Repeat point A set."
+msgstr "ஒரு தொகுப்பை மீண்டும் செய்யவும்."
+
+#: src/skins/actions.cc:65 src/skins-qt/actions.cc:63
+msgid "Repeat point B set."
+msgstr "புள்ளி b கணம் ஐ மீண்டும் செய்யவும்."
+
+#: src/skins/equalizer.cc:223 src/skins-qt/equalizer.cc:223
+msgid "Preamp"
+msgstr "முன் விரிவாக்கி "
+
+#: src/skins/equalizer.cc:227 src/skins-qt/equalizer.cc:227
+msgid "31 Hz"
+msgstr "31 Hz"
+
+#: src/skins/equalizer.cc:228 src/skins-qt/equalizer.cc:228
+msgid "63 Hz"
+msgstr "63 Hz"
+
+#: src/skins/equalizer.cc:228 src/skins-qt/equalizer.cc:228
+msgid "125 Hz"
+msgstr "125 Hz"
+
+#: src/skins/equalizer.cc:228 src/skins-qt/equalizer.cc:228
+msgid "250 Hz"
+msgstr "250 Hz"
+
+#: src/skins/equalizer.cc:228 src/skins-qt/equalizer.cc:228
+msgid "500 Hz"
+msgstr "500 Hz"
+
+#: src/skins/equalizer.cc:228 src/skins-qt/equalizer.cc:228
+msgid "1 kHz"
+msgstr "1 kHz"
+
+#: src/skins/equalizer.cc:229 src/skins-qt/equalizer.cc:229
+msgid "2 kHz"
+msgstr "2 kHz"
+
+#: src/skins/equalizer.cc:229 src/skins-qt/equalizer.cc:229
+msgid "4 kHz"
+msgstr "4 kHz"
+
+#: src/skins/equalizer.cc:229 src/skins-qt/equalizer.cc:229
+msgid "8 kHz"
+msgstr "8 kHz"
+
+#: src/skins/equalizer.cc:229 src/skins-qt/equalizer.cc:229
+msgid "16 kHz"
+msgstr "16 kHz"
+
+#: src/skins/equalizer.cc:270 src/skins-qt/equalizer.cc:270
+msgid "Audacious Equalizer"
+msgstr "ஔடகிவச் சமமாக்கி "
+
+#: src/skins/main.cc:459 src/skins-qt/main.cc:442
+msgid "Recording on"
+msgstr "பதிவுசெய்தல்"
+
+#: src/skins/main.cc:461 src/skins-qt/main.cc:444
+msgid "Recording off"
+msgstr "பதிவுசெய்தல்"
+
+#: src/skins/main.cc:754 src/skins-qt/main.cc:701
+#, c-format
+msgid "Seek to %d:%-2.2d / %d:%-2.2d"
+msgstr "%d:%-2.2d / %d:%-2.2d இனை நாடுக"
+
+#: src/skins/main.cc:771 src/skins-qt/main.cc:718
+#, c-format
+msgid "Volume: %d%%"
+msgstr "ஒலி அளவு: %d%%"
+
+#: src/skins/main.cc:784 src/skins-qt/main.cc:731
+#, c-format
+msgid "Balance: %d%% left"
+msgstr "சமநிலை:% d%% இடது"
+
+#: src/skins/main.cc:786 src/skins-qt/main.cc:733
+msgid "Balance: center"
+msgstr "சமநிலை:மத்தி "
+
+#: src/skins/main.cc:788 src/skins-qt/main.cc:735
+#, c-format
+msgid "Balance: %d%% right"
+msgstr "சமநிலை:% d%% வலது "
+
+#: src/skins/main.cc:880 src/skins-qt/main.cc:827
+msgid "Options Menu"
+msgstr "தேர்வு பட்டியல்"
+
+#: src/skins/main.cc:884 src/skins-qt/main.cc:831
+msgid "Disable 'Always On Top'"
+msgstr "'எப்போதும் மேலே' என்பதை முடக்குக "
+
+#: src/skins/main.cc:886 src/skins-qt/main.cc:833
+msgid "Enable 'Always On Top'"
+msgstr "'எப்போதும் மேலே' என்பதை செயற்படுத்துக "
+
+#: src/skins/main.cc:889 src/skins-qt/main.cc:836
+msgid "File Info Box"
+msgstr "கோப்பு செய்தி பெட்டி"
+
+#: src/skins/main.cc:893 src/skins-qt/main.cc:840
+msgid "Disable 'Double Size'"
+msgstr "'இரட்டை அளவு' முடக்கு"
+
+#: src/skins/main.cc:895 src/skins-qt/main.cc:842
+msgid "Enable 'Double Size'"
+msgstr "'இரட்டை அளவு' இயக்கவும்"
+
+#: src/skins/main.cc:898 src/skins-qt/main.cc:845
+msgid "Visualizations"
+msgstr "காட்சிப்படுத்தல்"
+
+#: src/skins/menus.cc:74 src/skins-qt/menus.cc:64
+msgid "Volume Up"
+msgstr "ஒலியை பெருக்கு"
+
+#: src/skins/menus.cc:75 src/skins-qt/menus.cc:65
+msgid "Volume Down"
+msgstr "ஒலியை குறை"
+
+#: src/skins/menus.cc:77 src/skins-qt/menus.cc:67
+msgid "Effects ..."
+msgstr "விளைவுகள் ..."
+
+#: src/skins/menus.cc:84 src/skins-qt/menus.cc:74
+msgid "Open Files ..."
+msgstr "கோப்புகளைத் திறக்கவும் ..."
+
+#: src/skins/menus.cc:85 src/skins-qt/menus.cc:76
+msgid "Open URL ..."
+msgstr "திறந்த முகவரி ..."
+
+#: src/skins/menus.cc:89 src/skins-qt/menus.cc:80
+msgid "Playlist"
+msgstr "பாடல் பட்டியல்"
+
+#: src/skins/menus.cc:90 src/skins-qt/menus.cc:81
+msgid "Output"
+msgstr "வெளியீடு"
+
+#: src/skins/menus.cc:91 src/skins-qt/menus.cc:82
+msgid "View"
+msgstr "பார்வையிடுக "
+
+#: src/skins/menus.cc:93 src/skins/menus.cc:161 src/skins/menus.cc:174
+#: src/skins/menus.cc:245 src/skins-qt/menus.cc:84 src/skins-qt/menus.cc:157
+#: src/skins-qt/menus.cc:171 src/skins-qt/menus.cc:242
+msgid "Services"
+msgstr "சேவைகள் "
+
+#: src/skins/menus.cc:95 src/skins-qt/menus.cc:86
+msgid "About ..."
+msgstr "பற்றி ..."
+
+#: src/skins/menus.cc:96 src/skins-qt/menus.cc:87
+msgid "Settings ..."
+msgstr "அமைப்புகள் ..."
+
+#: src/skins/menus.cc:97 src/skins-qt/menus.cc:88
+msgid "Quit"
+msgstr "வெளியேறு"
+
+#: src/skins/menus.cc:101 src/skins/menus.cc:235 src/skins-qt/menus.cc:92
+#: src/skins-qt/menus.cc:232
+msgid "Song Info ..."
+msgstr "பாடல் செய்தி ..."
+
+#: src/skins/menus.cc:105 src/skins-qt/menus.cc:97
+msgid "Shuffle by Album"
+msgstr "ஆல்பத்தால் கலக்கு"
+
+#: src/skins/menus.cc:106 src/skins-qt/menus.cc:98
+msgid "No Playlist Advance"
+msgstr "முன்னோக்கிய பாடல் பட்டியலுக்கு செல்ல வேண்டாம்"
+
+#: src/skins/menus.cc:117 src/skins-qt/menus.cc:109
+msgid "Set A-B Repeat"
+msgstr "a-b மீண்டும் அமைக்கவும்"
+
+#: src/skins/menus.cc:118 src/skins-qt/menus.cc:110
+msgid "Clear A-B Repeat"
+msgstr "a-b ஐ மீண்டும் அழிக்கவும்"
+
+#: src/skins/menus.cc:120 src/skins-qt/menus.cc:112
+msgid "Jump to Song ..."
+msgstr "பாடலுக்கு செல்லவும் ..."
+
+#: src/skins/menus.cc:121 src/skins-qt/menus.cc:114
+msgid "Jump to Time ..."
+msgstr "சரியான நேரத்தில் செல்லவும் ..."
+
+#: src/skins/menus.cc:125 src/skins-qt/menus.cc:119
+msgid "Play/Resume"
+msgstr "விளையாடு/மீண்டும் தொடங்கவும்"
+
+#: src/skins/menus.cc:127 src/skins-qt/menus.cc:121
+msgid "New Playlist"
+msgstr "புதிய பாடல் பட்டியல்"
+
+#: src/skins/menus.cc:128 src/skins-qt/menus.cc:122
+msgid "Rename Playlist ..."
+msgstr "பிளேலிச்ட்டை மறுபெயரிடுங்கள் ..."
+
+#: src/skins/menus.cc:129 src/skins-qt/menus.cc:123
+msgid "Remove Playlist"
+msgstr "பாடல் பட்டியலை நீக்கு "
+
+#: src/skins/menus.cc:131 src/skins-qt/menus.cc:125
+msgid "Previous Playlist"
+msgstr "முந்தைய பிளேலிச்ட்"
+
+#: src/skins/menus.cc:132 src/skins-qt/menus.cc:126
+msgid "Next Playlist"
+msgstr "அடுத்த பிளேலிச்ட்"
+
+#: src/skins/menus.cc:134 src/skins-qt/menus.cc:128
+msgid "Import Playlist ..."
+msgstr "பிளேலிச்ட்டை இறக்குமதி செய்யுங்கள் ..."
+
+#: src/skins/menus.cc:135 src/skins-qt/menus.cc:129
+msgid "Export Playlist ..."
+msgstr "ஏற்றுமதி பிளேலிச்ட் ..."
+
+#: src/skins/menus.cc:137 src/skins-qt/menus.cc:131
+msgid "Playlist Manager ..."
+msgstr "பிளேலிச்ட் மேலாளர் ..."
+
+#: src/skins/menus.cc:138 src/skins-qt/menus.cc:132
+msgid "Queue Manager ..."
+msgstr "வரிசை மேலாளர் ..."
+
+#: src/skins/menus.cc:140 src/skins-qt/menus.cc:134
+msgid "Refresh Playlist"
+msgstr "பிளேலிச்ட்டைப் புதுப்பிக்கவும்"
+
+#: src/skins/menus.cc:144 src/skins-qt/menus.cc:138
+msgid "Show Playlist Editor"
+msgstr "பாடல் பட்டியல் திருத்தியை காண்பிக்க "
+
+#: src/skins/menus.cc:145 src/skins-qt/menus.cc:139
+msgid "Show Equalizer"
+msgstr "சமமாக்கியை காண்பிக்க "
+
+#: src/skins/menus.cc:147 src/skins-qt/menus.cc:141
+msgid "Show Remaining Time"
+msgstr "மீதமுள்ள நேரத்தைக் காட்டு"
+
+#: src/skins/menus.cc:149 src/skins-qt/menus.cc:143
+msgid "Double Size"
+msgstr "இரட்டை அளவு"
+
+#: src/skins/menus.cc:150 src/skins-qt/menus.cc:144
+msgid "Always on Top"
+msgstr "எப்பொழுதும் மேலே "
+
+#: src/skins/menus.cc:151 src/skins-qt/menus.cc:146
+msgid "On All Workspaces"
+msgstr "அனைத்து பணியிடங்களிலும்"
+
+#: src/skins/menus.cc:153 src/skins-qt/menus.cc:149
+msgid "Roll Up Player"
+msgstr "பிளேயரை உருட்டவும்"
+
+#: src/skins/menus.cc:154 src/skins-qt/menus.cc:150
+msgid "Roll Up Playlist Editor"
+msgstr "பிளேலிச்ட் எடிட்டரை உருட்டவும்"
+
+#: src/skins/menus.cc:155 src/skins-qt/menus.cc:151
+msgid "Roll Up Equalizer"
+msgstr "சமநிலைப்படுத்தியை உருட்டவும்"
+
+#: src/skins/menus.cc:163 src/skins-qt/menus.cc:159
+msgid "Add URL ..."
+msgstr "முகவரி ஐச் சேர்க்கவும் ..."
+
+#: src/skins/menus.cc:164 src/skins-qt/menus.cc:161
+msgid "Add Files ..."
+msgstr "கோப்புகளைச் சேர்க்கவும் ..."
+
+#: src/skins/menus.cc:168 src/skins/menus.cc:196 src/skins/menus.cc:212
+#: src/skins-qt/menus.cc:165 src/skins-qt/menus.cc:193
+#: src/skins-qt/menus.cc:209
+msgid "By Title"
+msgstr "தலைப்பின் படி "
+
+#: src/skins/menus.cc:169 src/skins/menus.cc:203 src/skins/menus.cc:219
+#: src/skins-qt/menus.cc:166 src/skins-qt/menus.cc:200
+#: src/skins-qt/menus.cc:216
+msgid "By File Name"
+msgstr "கோப்பு பெயர் மூலம்"
+
+#: src/skins/menus.cc:170 src/skins/menus.cc:204 src/skins/menus.cc:220
+#: src/skins-qt/menus.cc:167 src/skins-qt/menus.cc:201
+#: src/skins-qt/menus.cc:217
+msgid "By File Path"
+msgstr "கோப்பு பாதை மூலம்"
+
+#: src/skins/menus.cc:176 src/skins-qt/menus.cc:173
+msgid "Remove All"
+msgstr "அனைத்தையும் அகற்றுக. "
+
+#: src/skins/menus.cc:177 src/skins-qt/menus.cc:174
+msgid "Clear Queue"
+msgstr "வரிசையினை அழிக்குக. "
+
+#: src/skins/menus.cc:179 src/skins-qt/menus.cc:176
+msgid "Remove Unavailable Files"
+msgstr "கிடைக்கப்பெறாத கோப்புகளை அகற்றுக. "
+
+#: src/skins/menus.cc:180 src/skins-qt/menus.cc:177
+msgid "Remove Duplicates"
+msgstr "போலிகளை அகற்றுக "
+
+#: src/skins/menus.cc:182 src/skins-qt/menus.cc:179
+msgid "Remove Unselected"
+msgstr "தெரிவுசெய்யாதவற்றை அகற்றுக. "
+
+#: src/skins/menus.cc:183 src/skins-qt/menus.cc:180
+msgid "Remove Selected"
+msgstr "தெரிவுசெய்தவற்றை அகற்றுக"
+
+#: src/skins/menus.cc:187 src/skins-qt/menus.cc:184
+msgid "Search and Select"
+msgstr "தேடி தேர்ந்தெடுக்கவும்"
+
+#: src/skins/menus.cc:189 src/skins-qt/menus.cc:186
+msgid "Invert Selection"
+msgstr "தலைகீழ் தேர்ந்தெடுப்பு"
+
+#: src/skins/menus.cc:190 src/skins-qt/menus.cc:187
+msgid "Select None"
+msgstr "எதனையும் தேர்ந்தெடுக்க வேண்டாம்."
+
+#: src/skins/menus.cc:191 src/skins-qt/menus.cc:188
+msgid "Select All"
+msgstr "அனைத்தையும் தேர்ந்தெடுக்குக "
+
+#: src/skins/menus.cc:195 src/skins/menus.cc:211 src/skins-qt/menus.cc:192
+#: src/skins-qt/menus.cc:208
+msgid "By Track Number"
+msgstr "பாடல் இலக்க அடிப்படையில்  "
+
+#: src/skins/menus.cc:197 src/skins/menus.cc:213 src/skins-qt/menus.cc:194
+#: src/skins-qt/menus.cc:210
+msgid "By Artist"
+msgstr "பாடகர்களின் படி "
+
+#: src/skins/menus.cc:198 src/skins/menus.cc:214 src/skins-qt/menus.cc:195
+#: src/skins-qt/menus.cc:211
+msgid "By Album"
+msgstr "குறுவட்டின் படி "
+
+#: src/skins/menus.cc:199 src/skins/menus.cc:215 src/skins-qt/menus.cc:196
+#: src/skins-qt/menus.cc:212
+msgid "By Album Artist"
+msgstr "ஆல்பம் கலைஞரால்"
+
+#: src/skins/menus.cc:200 src/skins/menus.cc:216 src/skins-qt/menus.cc:197
+#: src/skins-qt/menus.cc:213
+msgid "By Release Date"
+msgstr "வெளியீட்டு தேதி மூலம்"
+
+#: src/skins/menus.cc:201 src/skins/menus.cc:217 src/skins-qt/menus.cc:198
+#: src/skins-qt/menus.cc:214
+msgid "By Genre"
+msgstr "வகையால்"
+
+#: src/skins/menus.cc:202 src/skins/menus.cc:218 src/skins-qt/menus.cc:199
+#: src/skins-qt/menus.cc:215
+msgid "By Length"
+msgstr "நீளத்தால்"
+
+#: src/skins/menus.cc:205 src/skins/menus.cc:221 src/skins-qt/menus.cc:202
+#: src/skins-qt/menus.cc:218
+msgid "By Custom Title"
+msgstr "தனிப்பயன் தலைப்பு மூலம்"
+
+#: src/skins/menus.cc:206 src/skins/menus.cc:222 src/skins-qt/menus.cc:203
+#: src/skins-qt/menus.cc:219
+msgid "By Comment"
+msgstr "கருத்து மூலம்"
+
+#: src/skins/menus.cc:207 src/skins/menus.cc:223 src/skins-qt/menus.cc:204
+#: src/skins-qt/menus.cc:220
+msgid "By Disc Number"
+msgstr "வட்டு எண் மூலம்"
+
+#: src/skins/menus.cc:227 src/skins-qt/menus.cc:224
+msgid "Randomize List"
+msgstr "பட்டியலினை தற்போக்காக தோன்றச்செய்க "
+
+#: src/skins/menus.cc:228 src/skins-qt/menus.cc:225
+msgid "Reverse List"
+msgstr "பட்டியலினை தலைகீழாக்குக"
+
+#: src/skins/menus.cc:230 src/skins-qt/menus.cc:227
+msgid "Sort Selected"
+msgstr "வரிசையானவற்றை தெரிக."
+
+#: src/skins/menus.cc:231 src/skins-qt/menus.cc:228
+msgid "Sort List"
+msgstr "பட்டியலை வரிசையாக்குக "
+
+#: src/skins/menus.cc:236 src/skins-qt/menus.cc:233
+msgid "Open Containing Folder"
+msgstr "கோப்புறை கொண்ட திறந்த"
+
+#: src/skins/menus.cc:238 src/skins-qt/menus.cc:235
+msgid "Cut"
+msgstr "வெட்டுக "
+
+#: src/skins/menus.cc:239 src/skins-qt/menus.cc:236
+msgid "Copy"
+msgstr "நகleடுக்குக"
+
+#: src/skins/menus.cc:240 src/skins-qt/menus.cc:237
+msgid "Paste"
+msgstr "ஒட்டுக "
+
+#: src/skins/menus.cc:241 src/skins-qt/menus.cc:238
+msgid "Paste at End"
+msgstr "இறுதியில் ஒட்டவும்"
+
+#: src/skins/menus.cc:243 src/skins-qt/menus.cc:240
+msgid "Queue/Unqueue"
+msgstr "வரிசை/அவிழ்த்து"
+
+#: src/skins/playlist-widget.cc:58 src/skins-qt/playlist-widget.cc:58
+#, c-format
+msgid "%s (%d of %d)"
+msgstr "%s (%d இன் %d)"
+
+#: src/skins/playlistwin.cc:491 src/skins-qt/playlistwin.cc:478
+msgid "Audacious Playlist Editor"
+msgstr "ஔடகிவச் பாடல் பட்டியல் திருத்தி"
+
+#: src/skins/plugin.cc:53 src/skins-qt/plugin.cc:65
+msgid "Winamp Classic Interface"
+msgstr "Winamp பாரம்பரிய இடைமுகம்"
+
+#: src/skins-qt/menus.cc:75
+msgid "Open Folder ..."
+msgstr "திறந்த கோப்புறை ..."
+
+#: src/skins-qt/menus.cc:93
+msgid "Playback History ..."
+msgstr "பின்னணி வரலாறு ..."
+
+#: src/skins-qt/menus.cc:160
+msgid "Add Folder ..."
+msgstr "கோப்புறையைச் சேர்க்கவும் ..."
+
+#: src/skins-qt/search-select.cc:62 src/skins/search-select.cc:77
+msgid "Search entries in active playlist"
+msgstr "செய்வினை பாடல் பட்டியலிலுள்ள பதிவுகளை தேடுக "
+
+#: src/skins-qt/search-select.cc:70 src/skins/search-select.cc:83
+msgid ""
+"Select entries in playlist by filling one or more fields. Fields use regular "
+"expressions syntax, case-insensitive. If you don't know how regular "
+"expressions work, simply insert a literal portion of what you're searching "
+"for."
+msgstr ""
+"ஒன்று அல்லது மேற்பட்ட வெற்றிடங்களை நிரப்புவதன் மூலம் பட்டியல் பதிவுகளை தெரிக. வெற்றிடங்கள் "
+"வழக்கமான வெளிப்பாடுகள் தொடரியலை கொண்டவை. வழக்கமான வெளிப்பாடுகள் எவ்வாறு இயங்கும் என "
+"தெரியாவிடின் நீங்கள் தேடுவதின் துல்லியமான பகுதியினை உள்ளிடுக. "
+
+#: src/skins-qt/search-select.cc:75 src/skins/search-select.cc:91
+msgid "Title:"
+msgstr "தலைப்பு:"
+
+#: src/skins-qt/search-select.cc:79 src/skins/search-select.cc:96
+msgid "Album:"
+msgstr "ஆல்பம்:"
+
+#: src/skins-qt/search-select.cc:82 src/skins/search-select.cc:101
+msgid "Artist:"
+msgstr "கலைஞர்:"
+
+#: src/skins-qt/search-select.cc:85 src/skins/search-select.cc:106
+msgid "File Name:"
+msgstr "கோப்பு பெயர்:"
+
+#: src/skins-qt/search-select.cc:88 src/skins/search-select.cc:134
+msgid "Clear previous selection before searching"
+msgstr "தேட முன் முன்னைய தெரிவுகளை துடைத்தழிக்குக "
+
+#: src/skins-qt/search-select.cc:89 src/skins/search-select.cc:137
+msgid "Automatically toggle queue for matching entries"
+msgstr "தேர்வடையும் பதிவுகளை தானாக நிலைமாற்று வரிசையாக்குக"
+
+#: src/skins-qt/search-select.cc:90 src/skins/search-select.cc:140
+msgid "Create a new playlist with matching entries"
+msgstr "தேர்வடையும் பதிவுகளுக்கு புதிய பாடல் பட்டியலொன்றை உருவாக்குக."
+
+#: src/skins-qt/search-select.cc:101 src/skins/search-select.cc:78
+msgid "Search"
+msgstr "தேடல்"
+
+#: src/skins-qt/skins_cfg.cc:198 src/skins/skins_cfg.cc:182
+msgid "Player:"
+msgstr "ஆட்டக்காரர்:"
+
+#: src/skins-qt/skins_cfg.cc:200 src/skins/skins_cfg.cc:184
+msgid "Select main player window font:"
+msgstr "முதன்மையான இயக்கி சாளரத்தின் எழுத்துருவை தெரிவு செய்க :"
+
+#: src/skins-qt/skins_cfg.cc:201 src/skins/skins_cfg.cc:185
+msgid "Playlist:"
+msgstr "பிளேலிச்ட்:"
+
+#: src/skins-qt/skins_cfg.cc:203 src/skins/skins_cfg.cc:187
+msgid "Select playlist font:"
+msgstr "பாடல் பட்டியலின் எழுத்துருவை தெரிவு செய்க :"
+
+#: src/skins-qt/skins_cfg.cc:207 src/skins/skins_cfg.cc:191
+msgid "<b>Skin</b>"
+msgstr "<b> தோல் </b>"
+
+#: src/skins-qt/skins_cfg.cc:211 src/skins/skins_cfg.cc:193
+msgid "Display active titlebar when any window is focused"
+msgstr "எந்த சாளரமும் கவனம் செலுத்தும்போது செயலில் உள்ள தலைப்பைக் காண்பி"
+
+#: src/skins-qt/skins_cfg.cc:213 src/skins/skins_cfg.cc:195
+msgid "<b>Fonts</b>"
+msgstr "<b> எழுத்துருக்கள் </b>"
+
+#: src/skins-qt/skins_cfg.cc:215 src/skins/skins_cfg.cc:197
+msgid "Use bitmap fonts (supports ASCII only)"
+msgstr "பிட்மாப் பட எழுத்துருக்களை உபயோகிக்க (ASCII இணை மட்டும் ஆதரிக்கிறது)"
+
+#: src/skins-qt/skins_cfg.cc:217 src/skins/skins_cfg.cc:199
+msgid "Scroll song title"
+msgstr "உருள் பாடல் தலைப்பு"
+
+#: src/skins-qt/skins_cfg.cc:219 src/skins/skins_cfg.cc:201
+msgid "Scroll song title in both directions"
+msgstr "இரு திசைகளிலும் பாடல் தலைப்பை ururavaikkuga "
+
+#: src/skins-qt/skins_cfg.cc:224 src/skins/skins_cfg.cc:206
+msgid "Analyzer"
+msgstr "பகுப்பாய்வி "
+
+#: src/skins-qt/skins_cfg.cc:225 src/skins/skins_cfg.cc:207
+msgid "Scope"
+msgstr "குறியிலக்கம்"
+
+#: src/skins-qt/skins_cfg.cc:226 src/skins/skins_cfg.cc:208
+msgid "Voiceprint / VU meter"
+msgstr "குரல் பிரிண்ட் / வு மீட்டர்"
+
+#: src/skins-qt/skins_cfg.cc:227 src/skins/skins_cfg.cc:209
+msgid "Off"
+msgstr "அணைக்குக "
+
+#: src/skins-qt/skins_cfg.cc:231 src/skins-qt/skins_cfg.cc:256
+#: src/skins-qt/skins_cfg.cc:262 src/skins/skins_cfg.cc:213
+#: src/skins/skins_cfg.cc:238 src/skins/skins_cfg.cc:244
+msgid "Normal"
+msgstr "இயல்பான"
+
+#: src/skins-qt/skins_cfg.cc:232 src/skins-qt/skins_cfg.cc:257
+#: src/skins/skins_cfg.cc:214 src/skins/skins_cfg.cc:239
+msgid "Fire"
+msgstr "நெருப்பு "
+
+#: src/skins-qt/skins_cfg.cc:233 src/skins/skins_cfg.cc:215
+msgid "Vertical lines"
+msgstr "செங்குத்து கோடுகள்"
+
+#: src/skins-qt/skins_cfg.cc:237 src/skins/skins_cfg.cc:219
+msgid "Lines"
+msgstr "கோடுகள் "
+
+#: src/skins-qt/skins_cfg.cc:238 src/skins/skins_cfg.cc:220
+msgid "Bars"
+msgstr "பட்டைகள்"
+
+#: src/skins-qt/skins_cfg.cc:242 src/skins/skins_cfg.cc:224
+msgid "Slowest"
+msgstr "மெதுவான "
+
+#: src/skins-qt/skins_cfg.cc:243 src/skins/skins_cfg.cc:225
+msgid "Slow"
+msgstr "மெதுவாய் "
+
+#: src/skins-qt/skins_cfg.cc:244 src/skins/skins_cfg.cc:226
+#: src/soxr/sox-resampler.cc:180
+msgid "Medium"
+msgstr "நடுத்தரம் "
+
+#: src/skins-qt/skins_cfg.cc:245 src/skins/skins_cfg.cc:227
+msgid "Fast"
+msgstr "விரைவு "
+
+#: src/skins-qt/skins_cfg.cc:246 src/skins/skins_cfg.cc:228
+msgid "Fastest"
+msgstr "மிக விரைவாக "
+
+#: src/skins-qt/skins_cfg.cc:250 src/skins/skins_cfg.cc:232
+msgid "Dots"
+msgstr "புள்ளிகள்"
+
+#: src/skins-qt/skins_cfg.cc:251 src/skins/skins_cfg.cc:233
+msgid "Line"
+msgstr "வரி"
+
+#: src/skins-qt/skins_cfg.cc:252 src/skins/skins_cfg.cc:234
+msgid "Solid"
+msgstr "திட"
+
+#: src/skins-qt/skins_cfg.cc:258 src/skins/skins_cfg.cc:240
+msgid "Ice"
+msgstr "பனி "
+
+#: src/skins-qt/skins_cfg.cc:263 src/skins/skins_cfg.cc:245
+msgid "Smooth"
+msgstr "மிருதுவான "
+
+#: src/skins-qt/skins_cfg.cc:267 src/skins/skins_cfg.cc:249
+msgid "Coloring:"
+msgstr "வண்ணமயமாக்கல்:"
+
+#: src/skins-qt/skins_cfg.cc:270 src/skins/skins_cfg.cc:252
+msgid "Style:"
+msgstr "ச்டைல்:"
+
+#: src/skins-qt/skins_cfg.cc:273 src/skins/skins_cfg.cc:255
+msgid "Falloff:"
+msgstr "வீழ்ச்சி:"
+
+#: src/skins-qt/skins_cfg.cc:276 src/skins/skins_cfg.cc:258
+msgid "Peak falloff:"
+msgstr "உச்ச வீழ்ச்சி:"
+
+#: src/skins-qt/skins_cfg.cc:282 src/skins/skins_cfg.cc:264
+msgid "Scope Style:"
+msgstr "நோக்கம் நடை:"
+
+#: src/skins-qt/skins_cfg.cc:285 src/skins/skins_cfg.cc:267
+msgid "Voiceprint Coloring:"
+msgstr "குரல் பிரிண்ட் வண்ணம்:"
+
+#: src/skins-qt/skins_cfg.cc:288 src/skins/skins_cfg.cc:270
+msgid "VU Meter Style:"
+msgstr "வு மீட்டர் பாணி:"
+
+#: src/skins-qt/skins_cfg.cc:294 src/skins/skins_cfg.cc:276
+msgid "<b>Type</b>"
+msgstr "<b> வகை </b>"
+
+#: src/skins-qt/skins_cfg.cc:295 src/skins/skins_cfg.cc:277
+msgid "Visualization type:"
+msgstr "காட்சிப்படுத்தல் வகை:"
+
+#: src/skins-qt/skins_cfg.cc:298 src/skins/skins_cfg.cc:280
+msgid "<b>Analyzer</b>"
+msgstr "<b> அனலைசர் </b>"
+
+#: src/skins-qt/skins_cfg.cc:299 src/skins/skins_cfg.cc:281
+msgid "Show peaks"
+msgstr "சிகரங்களைக் காட்டு"
+
+#: src/skins-qt/skins_cfg.cc:308 src/skins/skins_cfg.cc:290
+msgid "Visualization"
+msgstr "உருவக காட்சிப்படுத்தல் "
+
+#: src/skins-qt/skinselector.cc:98 src/skins/skinselector.cc:111
+msgid "Archived Winamp 2.x skin"
+msgstr "ஆவணப்படுத்தப்பட்ட Winamp 2.x தோல் "
+
+#: src/skins-qt/skinselector.cc:102 src/skins/skinselector.cc:115
+msgid "Unarchived Winamp 2.x skin"
+msgstr "ஆவணப்படுத்தப்படாத Winamp 2.x தோல் "
+
+#: src/sndfile/plugin.cc:38
+msgid "Sndfile Plugin"
+msgstr "sndfile சொருகி"
+
+#: src/sndfile/plugin.cc:372
+msgid ""
+"Based on the xmms_sndfile plugin:\n"
+"Copyright (C) 2000, 2002 Erik de Castro Lopo\n"
+"\n"
+"Adapted for Audacious by Tony Vroon <chainsaw@gentoo.org>\n"
+"\n"
+"This program is free software; you can redistribute it and/or modify it "
+"under the terms of the GNU General Public License as published by the Free "
+"Software Foundation; either version 2 of the License, or (at your option) "
+"any later version.\n"
+"\n"
+"This program is distributed in the hope that it will be useful, but WITHOUT "
+"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
+"FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for "
+"more details.\n"
+"\n"
+"You should have received a copy of the GNU General Public License along with "
+"this program; if not, write to the Free Software Foundation, Inc., 51 "
+"Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA."
+msgstr ""
+"xmms_sndfile சொருகி அடிப்படையில்: \n"
+" பதிப்புரிமை (சி) 2000, 2002 எரிக் டி காச்ட்ரோ லோபோ \n"
+"\n"
+" டோனி வ்ரூன் <sunainsaw@gentoo.org> ஆல் துணிச்சலுக்கு ஏற்றது \n"
+"\n"
+" இந்த நிரல் இலவச மென்பொருள்; இலவச மென்பொருள் அறக்கட்டளையால் வெளியிடப்பட்ட குனு பொது "
+"பொது உரிமத்தின் விதிமுறைகளின் கீழ் நீங்கள் அதை மறுபகிர்வு செய்யலாம் மற்றும்/அல்லது "
+"மாற்றலாம்; உரிமத்தின் பதிப்பு 2, அல்லது (உங்கள் விருப்பத்தில்) பின்னர் எந்த பதிப்பும். \n"
+"\n"
+" இந்த திட்டம் பயனுள்ளதாக இருக்கும் என்ற நம்பிக்கையில் விநியோகிக்கப்படுகிறது, ஆனால் எந்த "
+"உத்தரவாதமும் இல்லாமல்; ஒரு குறிப்பிட்ட நோக்கத்திற்காக வணிகத்தன்மை அல்லது உடற்தகுதி "
+"ஆகியவற்றின் மறைமுக பொறுப்பு கூட இல்லாமல். மேலும் விவரங்களுக்கு குனு பொது பொது "
+"உரிமத்தைப் பார்க்கவும். \n"
+"\n"
+" இந்த திட்டத்துடன் குனு பொது பொது உரிமத்தின் நகலை நீங்கள் பெற்றிருக்க வேண்டும்; "
+"இல்லையென்றால், இலவச மென்பொருள் அறக்கட்டளை, இன்க்., 51 பிராங்க்ளின் தெரு, ஐந்தாவது மாடி, "
+"பாச்டன், எம்.ஏ 02110-1301, அமெரிக்கா."
+
+#: src/sndio/sndio.cc:43
+msgid "Sndio Output"
+msgstr "sndio வெளியீடு"
+
+#: src/sndio/sndio.cc:98
+msgid "Device (blank for default):"
+msgstr "சாதனம் (இயல்புநிலைக்கு வெற்று):"
+
+#: src/sndio/sndio.cc:100
+msgid "Save and restore volume:"
+msgstr "அளவை சேமித்து மீட்டெடு:"
+
+#: src/sndio/sndio.cc:181
+#, c-format
+msgid "Sndio error: Unsupported audio format (%d)"
+msgstr "sndio பிழை: ஆதரிக்கப்படாத ஆடியோ வடிவம் (%d)"
+
+#: src/sndio/sndio.cc:192
+msgid "Sndio error: sio_open() failed"
+msgstr "sndio பிழை: sio_open () தோல்வியடைந்தது"
+
+#: src/sndio/sndio.cc:221
+msgid "Sndio error: sio_setpar() failed"
+msgstr "sndio பிழை: sio_setpar () தோல்வியுற்றது"
+
+#: src/sndio/sndio.cc:233
+msgid "Sndio error: sio_start() failed"
+msgstr "sndio பிழை: sio_start () தோல்வியுற்றது"
+
+#: src/songchange/song_change.cc:30
+msgid "Song Change"
+msgstr "பாடல் மாற்றம் "
+
+#: src/songchange/song_change.cc:256
+msgid "<b>Commands</b>"
+msgstr "<b> கட்டளைகள் </b>"
+
+#: src/songchange/song_change.cc:258
+msgid "Command to run when starting a new song:"
+msgstr "புதிய பாடலைத் தொடங்கும்போது இயக்க கட்டளை:"
+
+#: src/songchange/song_change.cc:261
+msgid "Command to run when stopping a song:"
+msgstr "ஒரு பாடலை நிறுத்தும்போது இயக்க கட்டளை:"
+
+#: src/songchange/song_change.cc:264
+msgid "Command to run at the end of a song:"
+msgstr "ஒரு பாடலின் முடிவில் இயக்க கட்டளை:"
+
+#: src/songchange/song_change.cc:267
+msgid "Command to run at the end of the playlist:"
+msgstr "பிளேலிச்ட்டின் முடிவில் இயக்க கட்டளை:"
+
+#: src/songchange/song_change.cc:270
+msgid "Command to run when song title changes (for network streams):"
+msgstr "பாடல் தலைப்பு மாறும்போது (பிணைய ச்ட்ரீம்களுக்கு) இயக்க கட்டளை:"
+
+#: src/songchange/song_change.cc:273
+msgid ""
+"You can use the following format codes, which will be replaced before "
+"running the command.\n"
+"Not all are useful though for the song-stopped or end-of-playlist command."
+msgstr ""
+"நீங்கள் பின்வரும் வடிவமைப்பு குறியீடுகளைப் பயன்படுத்தலாம், இது கட்டளையை இயக்குவதற்கு முன்பு "
+"மாற்றப்படும். \n"
+"பாடல் நிறுத்தப்பட்ட அல்லது பிளேலிச்ட் கட்டளைக்கு அனைத்தும் பயனுள்ளதாக இல்லை."
+
+#: src/songchange/song_change.cc:276
+msgid ""
+"%a: Artist\n"
+"%b: Album\n"
+"%c: Number of channels\n"
+"%f: File name (full path)\n"
+"%F: Frequency (Hertz)\n"
+"%l: Length (milliseconds)\n"
+"%n or %s: Formatted title (see playlist settings)\n"
+"%p: Currently playing (1 or 0)\n"
+"%r: Rate (bits per second)\n"
+"%t: Playlist position\n"
+"%T: Title (unformatted)"
+msgstr ""
+"%ஒரு: கலைஞர் \n"
+" %பி: ஆல்பம் \n"
+" %சி: சேனல்களின் எண்ணிக்கை \n"
+" %எஃப்: கோப்பு பெயர் (முழு பாதை) \n"
+" %எஃப்: அதிர்வெண் (எர்ட்ச்) \n"
+" %எல்: நீளம் (மில்லி விநாடிகள்) \n"
+" %n அல்லது %s: வடிவமைக்கப்பட்ட தலைப்பு (பிளேலிச்ட் அமைப்புகளைப் பார்க்கவும்) \n"
+" %பி: தற்போது விளையாடுகிறது (1 அல்லது 0) \n"
+" %r: வீதம் (வினாடிக்கு பிட்கள்) \n"
+" %டி: பிளேலிச்ட் நிலை \n"
+" %டி: தலைப்பு (வடிவமைக்கப்படாதது)"
+
+#: src/songchange/song_change.cc:287
+msgid ""
+"Parameters passed to the shell should be enclosed in quotation marks.\n"
+"Unquoted parameters may lead to unexpected results."
+msgstr ""
+"செல்லுக்கு அனுப்பப்பட்ட அளவுருக்கள் மேற்கோள் மதிப்பெண்களில் இணைக்கப்பட வேண்டும். \n"
+"குறிப்பிடப்படாத அளவுருக்கள் எதிர்பாராத முடிவுகளுக்கு வழிவகுக்கும்."
+
+#: src/song-info-qt/song-info.cc:30
+msgid "Song Info"
+msgstr "பாடல் விபரம்"
+
+#: src/soxr/sox-resampler.cc:44
+msgid "SoX Resampler"
+msgstr "சாக்ச் ரெசாம்ப்ளர்"
+
+#: src/soxr/sox-resampler.cc:172
+msgid ""
+"SoX Resampler Plugin for Audacious\n"
+"Copyright 2013 Michał Lipski\n"
+"\n"
+"Based on Sample Rate Converter Plugin:\n"
+"Copyright 2010-2012 John Lindgren"
+msgstr ""
+"துணிச்சலுக்கான சாக்ச் ரெசாம்ப்ளர் சொருகி \n"
+" பதிப்புரிமை 2013 மைக்கே லிப்ச்கி \n"
+"\n"
+" மாதிரி வீத மாற்றி சொருகி அடிப்படையில்: \n"
+" பதிப்புரிமை 2010-2012 சான் லிண்ட்கிரென்"
+
+#: src/soxr/sox-resampler.cc:178
+msgid "Quick"
+msgstr "விரைவு "
+
+#: src/soxr/sox-resampler.cc:179
+msgid "Low"
+msgstr "குறைவு "
+
+#: src/soxr/sox-resampler.cc:181
+msgid "High"
+msgstr "உயர்"
+
+#: src/soxr/sox-resampler.cc:182
+msgid "Very High"
+msgstr "மிக உயர் "
+
+#: src/soxr/sox-resampler.cc:183
+msgid "Ultra High"
+msgstr "அல்ட்ரா உயர்"
+
+#: src/soxr/sox-resampler.cc:187
+msgid "Minimum"
+msgstr "சிறுமம்"
+
+#: src/soxr/sox-resampler.cc:188
+msgid "Intermediate"
+msgstr "இடைநிலை"
+
+#: src/soxr/sox-resampler.cc:193
+msgid "Quality:"
+msgstr "தரம்:"
+
+#: src/soxr/sox-resampler.cc:196
+msgid "Phase:"
+msgstr "கட்டம்:"
+
+#: src/soxr/sox-resampler.cc:200
+msgid "Allow aliasing"
+msgstr "மாற்றுப்பெயரை அனுமதிக்கவும்"
+
+#: src/soxr/sox-resampler.cc:202
+msgid "Use steep filter"
+msgstr "செங்குத்தான வடிப்பானைப் பயன்படுத்தவும்"
+
+#: src/speedpitch/speed-pitch.cc:54
+msgid "Speed and Pitch"
+msgstr "விரைவு மற்றும் சுருதி"
+
+#: src/speedpitch/speed-pitch.cc:247
+msgid "<b>Speed</b>"
+msgstr "<b> விரைவு </b>"
+
+#: src/speedpitch/speed-pitch.cc:248
+msgid "Decouple from pitch"
+msgstr "சுருதியிலிருந்து விலகிச் செல்லுங்கள்"
+
+#: src/speedpitch/speed-pitch.cc:250 src/speedpitch/speed-pitch.cc:258
+msgid "Multiplier:"
+msgstr "பெருக்கி:"
+
+#: src/speedpitch/speed-pitch.cc:254
+msgid "<b>Pitch</b>"
+msgstr "<b> சுருதி </b>"
+
+#: src/statusicon-qt/statusicon.cc:45 src/statusicon/statusicon.cc:47
+msgid "Status Icon"
+msgstr "நிலை படவுரு"
+
+#: src/statusicon-qt/statusicon.cc:68
+msgid ""
+"Status Icon Plugin (partial port for Qt interface)\n"
+"\n"
+"Copyright 2005-2007 Giacomo Lozito <james@develia.org>\n"
+"Copyright 2010 Michał Lipski <tallica@o2.pl>\n"
+"Copyright 2015 Eugene Paskevich <eugene@raptor.kiev.ua>\n"
+"\n"
+"This plugin provides a status icon, placed in\n"
+"the system tray area of the window manager."
+msgstr ""
+"நிலை படவுரு சொருகி (qt இடைமுகத்திற்கான பகுதி போர்ட்) \n"
+"\n"
+" பதிப்புரிமை 2005-2007 கியாகோமோ லோசிடோ <james@develia.org> \n"
+" பதிப்புரிமை 2010 மைக்கேச் லிப்ச்கி <tallica@o2.pl> \n"
+" பதிப்புரிமை 2015 யூசின் பாச்கெவிச் <yugene@raptor.kiev.ua> \n"
+"\n"
+" இந்த சொருகி ஒரு நிலை ஐகானை வழங்குகிறது \n"
+" சாளர மேலாளரின் கணினி தட்டு பகுதி."
+
+#: src/statusicon-qt/statusicon.cc:95 src/statusicon/statusicon.cc:398
+msgid "<b>Mouse Scroll Action</b>"
+msgstr "<b> சுட்டி உருள் செயல் </b>"
+
+#: src/statusicon-qt/statusicon.cc:96 src/statusicon/statusicon.cc:399
+msgid "Change volume"
+msgstr "ஏழு அளவை மாற்றுக "
+
+#: src/statusicon-qt/statusicon.cc:99 src/statusicon/statusicon.cc:402
+msgid "Change playing song"
+msgstr "இயங்கும் பாடலை மாற்றுக "
+
+#: src/statusicon-qt/statusicon.cc:102 src/statusicon/statusicon.cc:405
+msgid "<b>Middle Click Action</b>"
+msgstr "<b> நடுத்தர சொடுக்கு நடவடிக்கை </b>"
+
+#: src/statusicon-qt/statusicon.cc:103 src/statusicon/statusicon.cc:406
+msgid "Pause/Resume playback"
+msgstr "இடைநிறுத்தம்/பின்னணி பின்னணி"
+
+#: src/statusicon-qt/statusicon.cc:106 src/statusicon/statusicon.cc:409
+msgid "Play next song"
+msgstr "அடுத்த பாடலை வாசிக்கவும்"
+
+#: src/statusicon-qt/statusicon.cc:109 src/statusicon/statusicon.cc:412
+msgid "<b>Other Settings</b>"
+msgstr "<b> பிற அமைப்புகள் </b>"
+
+#: src/statusicon-qt/statusicon.cc:110 src/statusicon/statusicon.cc:413
+msgid "Disable the popup window"
+msgstr "திடீர் சாளரத்தை செயலிழக்க செய்க."
+
+#: src/statusicon-qt/statusicon.cc:112 src/statusicon/statusicon.cc:415
+msgid "Close to the system tray"
+msgstr "கணினி தட்டுக்கு அருகில்"
+
+#: src/statusicon-qt/statusicon.cc:114 src/statusicon/statusicon.cc:417
+msgid "Advance in playlist when scrolling upward"
+msgstr "பாடல் பட்டியலினை உருட்டும் போது முன்னோக்கி செல்லவும் "
+
+#: src/statusicon-qt/statusicon.cc:129 src/statusicon/statusicon.cc:301
+msgid "Se_ttings ..."
+msgstr "se_ttings ..."
+
+#: src/statusicon/statusicon.cc:391
+msgid ""
+"Status Icon Plugin\n"
+"\n"
+"Copyright 2005-2007 Giacomo Lozito <james@develia.org>\n"
+"Copyright 2010 Michał Lipski <tallica@o2.pl>\n"
+"\n"
+"This plugin provides a status icon, placed in\n"
+"the system tray area of the window manager."
+msgstr ""
+"நிலை படவுரு சொருகி \n"
+"\n"
+" பதிப்புரிமை 2005-2007 கியாகோமோ லோசிடோ <james@develia.org> \n"
+" பதிப்புரிமை 2010 மைக்கேச் லிப்ச்கி <tallica@o2.pl> \n"
+"\n"
+" இந்த சொருகி ஒரு நிலை ஐகானை வழங்குகிறது \n"
+" சாளர மேலாளரின் கணினி தட்டு பகுதி."
+
+#: src/stereo_plugin/stereo.cc:19
+msgid "Extra Stereo"
+msgstr "கூடுதல் ச்டீரியோ"
+
+#: src/stereo_plugin/stereo.cc:36
+msgid ""
+"Extra Stereo Plugin\n"
+"\n"
+"By Johan Levin, 1999"
+msgstr ""
+"கூடுதல் ச்டீரியோ சொருகி \n"
+"\n"
+" எழுதியவர் சோஅன் லெவின், 1999"
+
+#: src/stereo_plugin/stereo.cc:44
+msgid "<b>Extra Stereo</b>"
+msgstr "<b>கூடுதல் பேரொலி </b>"
+
+#: src/streamtuner/icecast-model.cc:126 src/streamtuner/shoutcast-model.cc:131
+msgid "Type"
+msgstr "வகை"
+
+#: src/streamtuner/icecast-model.cc:132
+msgid "Current Song"
+msgstr "தற்போதைய பாடல்"
+
+#: src/streamtuner/icecast-model.cc:164
+msgid "Other"
+msgstr "மற்றொன்று"
+
+#: src/streamtuner/ihr-model.cc:63
+msgid "Market"
+msgstr "சந்தை"
+
+#: src/streamtuner/ihr-model.cc:156
+msgid "Call Letters"
+msgstr "அழைப்பு கடிதங்கள்"
+
+#: src/streamtuner/ihr-model.cc:162
+msgid "Description"
+msgstr "விளக்கம்"
+
+#: src/streamtuner/shoutcast-model.cc:128
+msgid "Listeners"
+msgstr "கேட்போர்"
+
+#: src/streamtuner/shoutcast-model.cc:188
+msgid "Top 500 Stations"
+msgstr "முதல் 500 நிலையங்கள்"
+
+#: src/streamtuner/shoutcast-model.cc:189
+msgid "Alternative"
+msgstr "மாற்று"
+
+#: src/streamtuner/shoutcast-model.cc:190
+msgid "Blues"
+msgstr "ப்ளூச்"
+
+#: src/streamtuner/shoutcast-model.cc:191
+msgid "Classical"
+msgstr "பாரம்பரிய இசை"
+
+#: src/streamtuner/shoutcast-model.cc:192
+msgid "Country"
+msgstr "கிராமப்புறப்பாடல்கள் "
+
+#: src/streamtuner/shoutcast-model.cc:193
+msgid "Decades"
+msgstr "பல தசாப்தங்கள்"
+
+#: src/streamtuner/shoutcast-model.cc:194
+msgid "Easy Listening"
+msgstr "எளிதாக கேட்கக் கூடியவை"
+
+#: src/streamtuner/shoutcast-model.cc:195
+msgid "Electronic"
+msgstr "மின்னணு"
+
+#: src/streamtuner/shoutcast-model.cc:196
+msgid "Folk"
+msgstr "நாட்டுப்புறப் பாடல்கள்"
+
+#: src/streamtuner/shoutcast-model.cc:197
+msgid "Inspirational"
+msgstr "ஊக்கம் அளிக்கும்"
+
+#: src/streamtuner/shoutcast-model.cc:198
+msgid "International"
+msgstr "பன்னாட்டு"
+
+#: src/streamtuner/shoutcast-model.cc:199
+msgid "Jazz"
+msgstr "jaas"
+
+#: src/streamtuner/shoutcast-model.cc:200
+msgid "Latin"
+msgstr "லத்தீன்"
+
+#: src/streamtuner/shoutcast-model.cc:201
+msgid "Metal"
+msgstr "mettal"
+
+#: src/streamtuner/shoutcast-model.cc:203
+msgid "New Age"
+msgstr "புதிய படிப்புகl"
+
+#: src/streamtuner/shoutcast-model.cc:204
+msgid "Pop"
+msgstr "போப் "
+
+#: src/streamtuner/shoutcast-model.cc:205
+msgid "Public Radio"
+msgstr "பொது வானொலி"
+
+#: src/streamtuner/shoutcast-model.cc:206
+msgid "R&B and Urban"
+msgstr "ஆர் & பி மற்றும் நகர்ப்புற"
+
+#: src/streamtuner/shoutcast-model.cc:207
+msgid "Rap"
+msgstr "ராப் "
+
+#: src/streamtuner/shoutcast-model.cc:208
+msgid "Reggae"
+msgstr "rage"
+
+#: src/streamtuner/shoutcast-model.cc:209
+msgid "Rock"
+msgstr "ராக் "
+
+#: src/streamtuner/shoutcast-model.cc:210
+msgid "Seasonal and Holiday"
+msgstr "பருவகால மற்றும் விடுமுறை"
+
+#: src/streamtuner/shoutcast-model.cc:211
+msgid "Soundtracks"
+msgstr "ஒலிப்பதிவுகள்"
+
+#: src/streamtuner/shoutcast-model.cc:212
+msgid "Talk"
+msgstr "பேச்சு"
+
+#: src/streamtuner/shoutcast-model.cc:213
+msgid "Themes"
+msgstr "கருப்பொருள்கள்"
+
+#: src/streamtuner/streamtuner.cc:59
+msgid "Shoutcast"
+msgstr "கத்தி"
+
+#: src/streamtuner/streamtuner.cc:60
+msgid "Icecast"
+msgstr "icecast"
+
+#: src/streamtuner/streamtuner.cc:71
+msgid "Stream Tuner"
+msgstr "ச்ட்ரீம் ட்யூனர்"
+
+#: src/tonegen/tonegen.cc:45
+msgid "Tone Generator"
+msgstr "ஒலி  உருவாக்கி "
+
+#: src/tonegen/tonegen.cc:92
+#, c-format
+msgid "%s %.1f Hz"
+msgstr "%s %.1f Hz"
+
+#: src/tonegen/tonegen.cc:92
+msgid "Tone Generator: "
+msgstr "தொனி பிறப்பாக்கி:"
+
+#: src/tonegen/tonegen.cc:161
+msgid ""
+"Sine tone generator by Håvard Kvålen <havardk@xmms.org>\n"
+"Modified by Daniel J. Peng <danielpeng@bigfoot.com>\n"
+"\n"
+"To use it, add a URL: tone://frequency1;frequency2;frequency3;...\n"
+"e.g. tone://2000;2005 to play a 2000 Hz tone and a 2005 Hz tone"
+msgstr ""
+"சைன் டோன் செனரேட்டர் எழுதியது அவார்ட் kválen <havardk@xmms.org> \n"
+" டேனியல் சே \n"
+"\n"
+" இதைப் பயன்படுத்த, ஒரு முகவரி ஐச் சேர்க்கவும்: தொனி: // அதிர்வெண் 1; அதிர்வெண் 2; "
+"அதிர்வெண் 3; ... \n"
+" எ.கா. தொனி: // 2000; 2005 2000 எர்ட்ச் தொனி மற்றும் 2005 எர்ட்ச் தொனியை இயக்க"
+
+#: src/ui-common/dialogs-qt.cc:40
+msgid ""
+"\n"
+"(Further messages have been hidden.)"
+msgstr ""
+"\n"
+"(மேலும் செய்திகள் மறைக்கப்பட்டுள்ளன.)"
+
+#: src/ui-common/dialogs-qt.cc:52
+msgid "Working ..."
+msgstr "வேலை ..."
+
+#: src/ui-common/dialogs-qt.cc:73
+msgid "Information"
+msgstr "செய்தி "
+
+#: src/ui-common/menu-ops-gtk.cc:132 src/ui-common/menu-ops-qt.cc:113
+#, c-format
+msgid "%s does not appear to be a valid folder."
+msgstr "%s செல்லுபடியாகும் கோப்புறையாகத் தெரியவில்லை."
+
+#: src/voice_removal/voice_removal.cc:28
+msgid "Voice Removal"
+msgstr "குரல் நீக்கம்"
+
+#: src/vorbis/vorbis.cc:433
+msgid ""
+"Audacious Ogg Vorbis Decoder\n"
+"\n"
+"Based on the Xiph.org Foundation's Ogg Vorbis Plugin:\n"
+"http://www.xiph.org/\n"
+"\n"
+"Original code by:\n"
+"Tony Arcieri <bascule@inferno.tusculum.edu>\n"
+"\n"
+"Contributions from:\n"
+"Chris Montgomery <monty@xiph.org>\n"
+"Peter Alm <peter@xmms.org>\n"
+"Michael Smith <msmith@labyrinth.edu.au>\n"
+"Jack Moffitt <jack@icecast.org>\n"
+"Jorn Baayen <jorn@nl.linux.org>\n"
+"Håvard Kvålen <havardk@xmms.org>\n"
+"Gian-Carlo Pascutto <gcp@sjeng.org>\n"
+"Eugene Zagidullin <e.asphyx@gmail.com>"
+msgstr ""
+"துணிச்சலான ஓக் வோர்பிச் டிகோடர் \n"
+"\n"
+" xiph.org அறக்கட்டளையின் ogg வோர்பிச் சொருகி அடிப்படையில்: \n"
+" http://www.xiph.org/ \n"
+"\n"
+" அசல் குறியீடு: \n"
+" டோனி ஆர்கீரி <bascule@inferno.tusculum.edu> \n"
+"\n"
+" இதிலிருந்து பங்களிப்புகள்: \n"
+" கிறிச் மாண்ட்கோமெரி <monty@xiph.org> \n"
+" பீட்டர் அல்ம் <peter@xmms.org> \n"
+" மைக்கேல் ச்மித் <msmith@labyrinth.edu.au> \n"
+" சாக் மொஃபிட் <jack@icecast.org> \n"
+" jorn baayen <jorn@nl.linux.org> \n"
+" அவார்ட் kválen <havardk@xmms.org> \n"
+" கியான்-கார்லோ பாச்கட்டோ <gcp@sjeng.org> \n"
+" யூசின் சாகிடுலின் <e.asphyx@gmail.com>"
+
+#: src/vorbis/vorbis.h:18
+msgid "Ogg Vorbis Decoder"
+msgstr "ஓக் வோர்பிச் டிகோடர்"
+
+#: src/vtx/info.cc:24
+#, c-format
+msgid "Details about %s"
+msgstr "%s பற்றிய விவரங்கள்"
+
+#: src/vtx/info.cc:26
+msgid ""
+"Title: %t\n"
+"Author: %a\n"
+"From: %f\n"
+"Tracker: %T\n"
+"Comment: %C\n"
+"Chip type: %c\n"
+"Stereo: %s\n"
+"Loop: %l\n"
+"Chip freq: %F\n"
+"Player Freq: %P\n"
+"Year: %y"
+msgstr ""
+"தலைப்பு: %டி \n"
+" ஆசிரியர்: %அ \n"
+" இருந்து: %எஃப் \n"
+" டிராக்கர்: %டி \n"
+" கருத்து: %சி \n"
+" சிப் வகை: %சி \n"
+" ச்டீரியோ: %s \n"
+" லூப்: %எல் \n"
+" சிப் ஃப்ரீக்: %எஃப் \n"
+" பிளேயர் ஃப்ரீக்: %ப \n"
+" ஆண்டு: %y"
+
+#: src/vtx/vtx.cc:38
+msgid "VTX Decoder"
+msgstr "வி.டி.எக்ச் டிகோடர்"
+
+#: src/vtx/vtx.cc:178
+msgid ""
+"Vortex file format player by Sashnov Alexander <sashnov@ngs.ru>\n"
+"Based on in_vtx.dll by Roman Sherbakov <v_soft@microfor.ru>\n"
+"Audacious plugin by Pavel Vymetalek <pvymetalek@seznam.cz>"
+msgstr ""
+"சாச்னோவ் அலெக்சாண்டர் <sashnov@ngs.ru> எழுதிய வோர்டெக்ச் கோப்பு வடிவமைப்பு பிளேயர் \n"
+" ரோமன் செர்பாகோவின் in_vtx.dll ஐ அடிப்படையாகக் கொண்டது <v_soft@microfor.ru> \n"
+" பாவெல் விமெட்டலெக் <pvymetaleek@seznam.cz> ஆல் துணிச்சலான சொருகி"
+
+#: src/vumeter-qt/vumeter_qt.cc:31 src/vumeter/vumeter.cc:69
+msgid ""
+"VU Meter Plugin for Audacious\n"
+"Copyright 2017-2019 Marc Sánchez Fauste"
+msgstr ""
+"துணிச்சலுக்கான வு மீட்டர் சொருகி \n"
+" பதிப்புரிமை 2017-2019 மார்க் சான்செச் ஃபாச்டே"
+
+#: src/vumeter-qt/vumeter_qt.cc:35 src/vumeter/vumeter.cc:73
+msgid "<b>VU Meter Settings</b>"
+msgstr "<b> வு மீட்டர் அமைப்புகள் </b>"
+
+#: src/vumeter-qt/vumeter_qt.cc:37 src/vumeter/vumeter.cc:75
+msgid "Peak hold time:"
+msgstr "உச்சி நேரம்:"
+
+#: src/vumeter-qt/vumeter_qt.cc:42 src/vumeter/vumeter.cc:80
+msgid "Fall-off time:"
+msgstr "வீழ்ச்சி நேரம்:"
+
+#: src/vumeter-qt/vumeter_qt.cc:44 src/vumeter/vumeter.cc:82
+msgid "dB/second"
+msgstr "டி.பி./இரண்டாவது"
+
+#: src/vumeter-qt/vumeter_qt.cc:46 src/vumeter/vumeter.cc:85
+msgid "Display legend"
+msgstr "காட்சி புராணக்கதை"
+
+#: src/vumeter-qt/vumeter_qt.h:37 src/vumeter/vumeter.cc:47
+msgid "VU Meter"
+msgstr "வு மீட்டர்"
+
+#: src/waveout/waveout.cc:43
+msgid "Win32 waveOut"
+msgstr "வின் 32 அலைவரிசை"
+
+#: src/waveout/waveout.cc:69
+msgid ""
+"Win32 waveOut Plugin for Audacious\n"
+"Copyright 2016 John Lindgren"
+msgstr ""
+"துணிச்சலான win32 அலைவரிசை சொருகி \n"
+" பதிப்புரிமை 2016 சான் லிண்ட்கிரென்"
+
+#: src/wavpack/wavpack.cc:25
+msgid "WavPack Decoder"
+msgstr "wavpack degoder"
+
+#: src/wavpack/wavpack.cc:207
+msgid "lossy (hybrid)"
+msgstr "இழப்பு (கலப்பின)"
+
+#: src/wavpack/wavpack.cc:209
+msgid "lossy"
+msgstr "இழப்பு"
+
+#: src/wavpack/wavpack.cc:247
+msgid ""
+"Copyright 2006 William Pitcock <nenolod@nenolod.net>\n"
+"\n"
+"Some of the plugin code was by Miles Egan."
+msgstr ""
+"பதிப்புரிமை 2006 வில்லியம் பிட்காக் <nenolod@nenolod.net> \n"
+"\n"
+" சில சொருகி குறியீடு மைல்ச் ஏகன்."
+
+#: src/xsf/plugin.cc:74
+msgid "2SF Decoder"
+msgstr "2sf டிகோடர்"
+
+#: src/xsf/plugin.cc:429
+msgid "32728 Hz"
+msgstr "32728 எர்ட்ச்"
+
+#: src/xsf/plugin.cc:432
+msgid "65456 Hz"
+msgstr "65456 எர்ட்ச்"
+
+#: src/xsf/plugin.cc:438
+msgid "Cosine"
+msgstr "துணைசெவ்வளைவு"
+
+#: src/xsf/plugin.cc:439
+msgid "Sharp"
+msgstr "கூர்மையான"
+
+#: src/xsf/plugin.cc:443
+msgid "<b>XSF Configuration</b>"
+msgstr "<b> xsf உள்ளமைவு </b>"
+
+#: src/xsf/plugin.cc:445
+msgid "Default fade time:"
+msgstr "இயல்புநிலை மங்கல் நேரம்:"
+
+#: src/xsf/plugin.cc:447
+msgid "Interpolation mode:"
+msgstr "இடைக்கணிப்பு முறை:"
+
+#: src/xspf/xspf.cc:95
+msgid "XML Shareable Playlists (XSPF)"
+msgstr "எக்ச்எம்எல் சேபிள் பிளேலிச்ட்கள் (எக்ச்எச்பிஎஃப்)"

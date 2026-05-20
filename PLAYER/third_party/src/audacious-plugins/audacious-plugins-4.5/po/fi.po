@@ -1,0 +1,4956 @@
+# Finnish translation for Audacious Plugins
+# Copyright (C) Audacious translators
+# This file is distributed under the same license as the Audacious Plugins package.
+#
+# Translators:
+# Jiri Grönroos <jiri.gronroos@iki.fi>, 2014-2016,2018,2020,2022-2023
+# a7748bcad10e5362cde501dd23ae3236_e731813 <24e2b45b257ca9fe69576dec7943da7e_49266>, 2013
+# a7748bcad10e5362cde501dd23ae3236_e731813 <24e2b45b257ca9fe69576dec7943da7e_49266>, 2013
+# Kimmo Kujansuu <mrkujansuu@gmail.com>, 2020,2022-2025
+msgid ""
+msgstr ""
+"Project-Id-Version: Audacious Plugins\n"
+"Report-Msgid-Bugs-To: https://github.com/audacious-media-player/audacious/"
+"issues\n"
+"POT-Creation-Date: 2025-07-16 00:23+0200\n"
+"PO-Revision-Date: 2011-10-10 17:43+0000\n"
+"Last-Translator: Kimmo Kujansuu <mrkujansuu@gmail.com>, 2020,2022-2025\n"
+"Language-Team: Finnish (http://app.transifex.com/audacious/audacious/"
+"language/fi/)\n"
+"Language: fi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: src/aac/aac.cc:19
+msgid "AAC (Raw) Decoder"
+msgstr "AAC (Raw) -dekooderi"
+
+#: src/adplug/adplug-xmms.cc:70
+msgid "AdPlug (AdLib Player)"
+msgstr "AdPlug (AdLib-soitin)"
+
+#: src/adplug/adplug-xmms.cc:168 src/modplug/modplugbmp.cc:321
+#: src/psf/plugin.cc:161 src/vtx/vtx.cc:89 src/xsf/plugin.cc:204
+msgid "sequenced"
+msgstr "sarjoitettu"
+
+#: src/adplug/adplug-xmms.cc:350 src/sid/xs_config.cc:61
+msgid "<b>Output</b>"
+msgstr "<b>Ulostulo</b>"
+
+#: src/adplug/adplug-xmms.cc:351
+msgid "OPL Emulator:"
+msgstr "OPL-emulaattori:"
+
+#: src/adplug/adplug-xmms.cc:354 src/amidiplug/i_configure.cc:153
+#: src/console/plugin.cc:45 src/filewriter/filewriter.cc:481
+#: src/sid/xs_config.cc:65 src/xsf/plugin.cc:446
+msgid "Sample rate:"
+msgstr "Näytteenottotaajuus:"
+
+#: src/adplug/adplug-xmms.cc:355 src/amidiplug/i_configure.cc:155
+#: src/bs2b/plugin.cc:141 src/console/plugin.cc:47
+#: src/modplug/plugin_main.cc:77 src/resample/resample.cc:201
+#: src/resample/resample.cc:207 src/resample/resample.cc:211
+#: src/resample/resample.cc:215 src/resample/resample.cc:219
+#: src/resample/resample.cc:223 src/resample/resample.cc:227
+#: src/resample/resample.cc:231 src/resample/resample.cc:235
+#: src/resample/resample.cc:239 src/resample/resample.cc:243
+#: src/sid/xs_config.cc:67 src/soxr/sox-resampler.cc:205
+msgid "Hz"
+msgstr "Hz"
+
+#: src/adplug/adplug-xmms.cc:356 src/gtkui/settings.cc:55
+#: src/modplug/plugin_main.cc:105 src/qtui/settings.cc:85
+#: src/skins-qt/skins_cfg.cc:302 src/skins/skins_cfg.cc:284
+msgid "<b>Miscellaneous</b>"
+msgstr "<b>Sekalaiset</b>"
+
+#: src/adplug/adplug-xmms.cc:357
+msgid "Repeat song in endless loop"
+msgstr "Toista kappale loputtomassa silmukassa"
+
+#: src/albumart/albumart.cc:31 src/albumart-qt/albumart.cc:35
+msgid "Album Art"
+msgstr "Levyn kansikuva"
+
+#: src/alsa/alsa.h:64
+msgid "ALSA Output"
+msgstr "ALSA-lähtö"
+
+#: src/alsa/config.cc:28
+msgid ""
+"ALSA Output Plugin for Audacious\n"
+"Copyright 2009-2012 John Lindgren\n"
+"\n"
+"My thanks to William Pitcock, author of the ALSA Output Plugin NG, whose "
+"code served as a reference when the ALSA manual was not enough."
+msgstr ""
+"ALSA Output Plugin for Audacious\n"
+"Copyright 2009-2012 John Lindgren\n"
+"\n"
+"Kiitokseni William Pitcock \"ALSA Output Plugin NG\"-kehittäjälle, jonka "
+"koodi toimi referenssinä silloin kun ALSA-manuaali ei riittänyt."
+
+#: src/alsa/config.cc:61
+msgid "(no description)"
+msgstr "(ei kuvausta)"
+
+#: src/alsa/config.cc:166
+msgid "Default PCM device"
+msgstr "Oletus PCM-laite"
+
+#: src/alsa/config.cc:188
+msgid "Default mixer device"
+msgstr "Oletus miksauslaite"
+
+#: src/alsa/config.cc:296
+msgid "PCM device:"
+msgstr "PCM-laite:"
+
+#: src/alsa/config.cc:299
+msgid "Mixer device:"
+msgstr "Miksauslaite:"
+
+#: src/alsa/config.cc:302
+msgid "Mixer element:"
+msgstr "Miksauskanava:"
+
+#: src/amidiplug/amidi-plug.cc:42
+msgid "AMIDI-Plug (MIDI Player)"
+msgstr "AMIDI-Plug (MIDI Player)"
+
+#: src/amidiplug/amidi-plug.cc:445
+msgid ""
+"AMIDI-Plug\n"
+"modular MIDI music player\n"
+"http://www.develia.org/projects.php?p=amidiplug\n"
+"\n"
+"written by Giacomo Lozito\n"
+"<james@develia.org>\n"
+"\n"
+"special thanks to...\n"
+"\n"
+"Clemens Ladisch and Jaroslav Kysela\n"
+"for their cool programs aplaymidi and amixer; those\n"
+"were really useful, along with alsa-lib docs, in order\n"
+"to learn more about the ALSA API\n"
+"\n"
+"Alfredo Spadafina\n"
+"for the nice midi keyboard logo\n"
+"\n"
+"Tony Vroon\n"
+"for the good help with alpha testing"
+msgstr ""
+"AMIDI-Plug\n"
+"modulaarinen MIDI musiikkisoitin\n"
+"http://www.develia.org/projects.php?p=amidiplug\n"
+"\n"
+"kirjoittanutu Giacomo Lozito\n"
+"<james@develia.org>\n"
+"\n"
+"erityinen kiitos...\n"
+"\n"
+"Clemens Ladisch ja Jaroslav Kysela\n"
+"heidän tyylikkäille ohjelmille aplaymidi ja amixer; nämä\n"
+"olivat todella hyödyllisiä, yhdessä alsa-lib ohjeiden kanssa,\n"
+"oppimaan ALSA API -toiminta\n"
+"\n"
+"Alfredo Spadafina\n"
+"hienosta midinäppäimistön logosta\n"
+"\n"
+"Tony Vroon\n"
+"kaikesta suuresta avusta testauksessa"
+
+#: src/amidiplug/i_configure.cc:94
+msgid "Override default gain:"
+msgstr "Ohita oletusvahvistus:"
+
+#: src/amidiplug/i_configure.cc:102
+msgid "Override default polyphony:"
+msgstr "Ohita oletus moniääni:"
+
+#: src/amidiplug/i_configure.cc:110
+msgid "Override default reverb:"
+msgstr "Ohita oletuskaiku:"
+
+#: src/amidiplug/i_configure.cc:112 src/amidiplug/i_configure.cc:120
+msgid "On"
+msgstr "On"
+
+#: src/amidiplug/i_configure.cc:118
+msgid "Override default chorus:"
+msgstr "Ohita oletuskertosäe:"
+
+#: src/amidiplug/i_configure.cc:128 src/console/plugin.cc:29
+msgid "<b>Playback</b>"
+msgstr "<b>Toisto</b>"
+
+#: src/amidiplug/i_configure.cc:129
+msgid "Transpose:"
+msgstr "Siirtäminen:"
+
+#: src/amidiplug/i_configure.cc:131 src/speedpitch/speed-pitch.cc:257
+msgid "semitones"
+msgstr "puolisävelaskeleen"
+
+#: src/amidiplug/i_configure.cc:132
+msgid "Drum shift:"
+msgstr "Rummun siirto:"
+
+#: src/amidiplug/i_configure.cc:134
+msgid "note numbers"
+msgstr "sisällysnumerot"
+
+#: src/amidiplug/i_configure.cc:135
+msgid "Skip leading silence"
+msgstr "Ohita edeltävä hiljaisuus"
+
+#: src/amidiplug/i_configure.cc:137
+msgid "Skip trailing silence"
+msgstr "Ohita lopussa oleva hiljaisuus"
+
+#: src/amidiplug/i_configure.cc:141
+msgid "<b>SoundFont</b>"
+msgstr "<b>Äänifontti</b>"
+
+#: src/amidiplug/i_configure.cc:148
+msgid "<b>Synthesizer</b>"
+msgstr "<b>Syntetisaattori</b>"
+
+#: src/amidiplug/i_configure-fluidsynth.cc:58
+#: src/amidiplug/i_configure-fluidsynth.cc:527
+msgid "AMIDI-Plug - select SoundFont file"
+msgstr "AMIDI-Plug - valitse SoundFont-tiedosto"
+
+#: src/amidiplug/i_configure-fluidsynth.cc:61
+msgid "_Cancel"
+msgstr "_Peru"
+
+#: src/amidiplug/i_configure-fluidsynth.cc:62
+msgid "_Open"
+msgstr "_Avaa"
+
+#: src/amidiplug/i_configure-fluidsynth.cc:233
+#: src/amidiplug/i_configure-fluidsynth.cc:461
+msgid "File name"
+msgstr "Tiedostonimi"
+
+#: src/amidiplug/i_configure-fluidsynth.cc:237
+#: src/amidiplug/i_configure-fluidsynth.cc:464
+msgid "Size (bytes)"
+msgstr "Koko (tavuina)"
+
+#: src/amidiplug/i_fileinfo.cc:184
+msgid "Name:"
+msgstr "Nimi:"
+
+#: src/amidiplug/i_fileinfo.cc:202
+msgid "<span size=\"smaller\"> MIDI Info </span>"
+msgstr "<span size=\"smaller\"> MIDI-tiedot </span>"
+
+#: src/amidiplug/i_fileinfo.cc:216
+msgid "Format:"
+msgstr "Muoto:"
+
+#: src/amidiplug/i_fileinfo.cc:219
+msgid "Length (msec):"
+msgstr "Kesto (ms):"
+
+#: src/amidiplug/i_fileinfo.cc:222
+msgid "No. of Tracks:"
+msgstr "Raitojen lukumäärä:"
+
+#: src/amidiplug/i_fileinfo.cc:228
+msgid "variable"
+msgstr "muuttuja"
+
+#: src/amidiplug/i_fileinfo.cc:230
+msgid "BPM:"
+msgstr "BPM:"
+
+#: src/amidiplug/i_fileinfo.cc:238
+msgid "BPM (wavg):"
+msgstr "BPM (wavg):"
+
+#: src/amidiplug/i_fileinfo.cc:241
+msgid "Time Div:"
+msgstr "Aikajako:"
+
+#: src/amidiplug/i_fileinfo.cc:252
+msgid "<span size=\"smaller\"> MIDI Comments and Lyrics </span>"
+msgstr "<span size=\"smaller\"> MIDI-kommentit ja -lyriikat </span>"
+
+#: src/amidiplug/i_fileinfo.cc:299
+msgid "* no comments available in this MIDI file *"
+msgstr "* MIDI-tiedostossa ei ollut kommentteja *"
+
+#: src/amidiplug/i_fileinfo.cc:311
+msgid "* no lyrics available in this MIDI file *"
+msgstr "* MIDI-tiedostossa ei ollut lyriikoita *"
+
+#: src/amidiplug/i_fileinfo.cc:321 src/ladspa/plugin.cc:418
+#: src/ui-common/dialogs-qt.cc:32
+msgid "_Close"
+msgstr "_Sulje"
+
+#: src/amidiplug/i_fileinfo.cc:346
+msgid "  (invalid UTF-8)"
+msgstr "  (virheellinen UTF-8)"
+
+#: src/ampache/ampache.cc:33
+msgid "Ampache Browser"
+msgstr "Ampache-selain"
+
+#: src/ampache/ampache.cc:46
+msgid ""
+"Ampache Browser for Audacious\n"
+"http://ampache-browser.org/\n"
+"\n"
+"Copyright (C) Róbert Čerňanský and John Lindgren\n"
+"License: GNU GPLv3"
+msgstr ""
+"Ampache Browser Audaciousille\n"
+"http://ampache-browser.org/\n"
+"\n"
+"Copyright (C) Róbert Čerňanský ja John Lindgren\n"
+"License: GNU GPLv3"
+
+#: src/aosd/aosd.cc:31
+msgid ""
+"Audacious OSD\n"
+"http://www.develia.org/projects.php?p=audacious#aosd\n"
+"\n"
+"Written by Giacomo Lozito <james@develia.org>\n"
+"\n"
+"Based in part on Evan Martin's Ghosd library:\n"
+"http://neugierig.org/software/ghosd/"
+msgstr ""
+"Audacious OSD\n"
+"http://www.develia.org/projects.php?p=audacious#aosd\n"
+"\n"
+"Kirjoittanut Giacomo Lozito <james@develia.org>\n"
+"\n"
+"Perustuu osittain Evan Martin's Ghosd kirjastoon:\n"
+"http://neugierig.org/software/ghosd/"
+
+#: src/aosd/aosd.h:37
+msgid "AOSD (On-Screen Display)"
+msgstr "AOSD (On-Screen Display)"
+
+#: src/aosd/aosd_style.cc:54
+msgid "Rectangle"
+msgstr "Suorakulmio"
+
+#: src/aosd/aosd_style.cc:59
+msgid "Rounded Rectangle"
+msgstr "Pyöristetty suorakulmio"
+
+#: src/aosd/aosd_style.cc:64
+msgid "Concave Rectangle"
+msgstr "Kovera suorakulmio"
+
+#: src/aosd/aosd_style.cc:69 src/openmpt/mptwrap.h:50 src/xsf/plugin.cc:436
+msgid "None"
+msgstr "Ei mitään"
+
+#: src/aosd/aosd_trigger.cc:49
+msgid "Playback Start"
+msgstr "Toiston aloitus"
+
+#: src/aosd/aosd_trigger.cc:50
+msgid "Triggers OSD when a playlist entry is played."
+msgstr "Näyttää OSD:n kun kappaleen toisto alkaa."
+
+#: src/aosd/aosd_trigger.cc:55
+msgid "Title Change"
+msgstr "Nimen muutos"
+
+#: src/aosd/aosd_trigger.cc:56
+msgid "Triggers OSD when the song title changes (for internet streams)."
+msgstr "Käynnistää OSD:n kun kappaleen nimi muuttuu (internet suoratoisto)."
+
+#: src/aosd/aosd_trigger.cc:61
+msgid "Pause On"
+msgstr "Keskeytys"
+
+#: src/aosd/aosd_trigger.cc:62
+msgid "Triggers OSD when playback is paused."
+msgstr "Näyttää OSD:n kun toisto keskeytetään."
+
+#: src/aosd/aosd_trigger.cc:67
+msgid "Pause Off"
+msgstr "Toisto jatkuu"
+
+#: src/aosd/aosd_trigger.cc:68
+msgid "Triggers OSD when playback is unpaused."
+msgstr "Näyttää OSD:n kun toisto jatkuu."
+
+#: src/aosd/aosd_ui.cc:204
+msgid "Placement"
+msgstr "Sijoitus"
+
+#: src/aosd/aosd_ui.cc:241
+msgid "Relative X offset:"
+msgstr "Suhteellinen X:n poikkeama:"
+
+#: src/aosd/aosd_ui.cc:245
+msgid "Relative Y offset:"
+msgstr "Suhteellinen Y:n poikkeama:"
+
+#: src/aosd/aosd_ui.cc:249
+msgid "Max OSD width:"
+msgstr "OSD:n maksimileveys:"
+
+#: src/aosd/aosd_ui.cc:281
+msgid "Multi-Monitor options"
+msgstr "Monen näytön asetukset"
+
+#: src/aosd/aosd_ui.cc:285
+msgid "Display OSD using:"
+msgstr "Näytä OSD käyttäen:"
+
+#: src/aosd/aosd_ui.cc:287
+msgid "all monitors"
+msgstr "kaikki näytöt"
+
+#: src/aosd/aosd_ui.cc:290
+#, c-format
+msgid "monitor %i"
+msgstr "näyttö %i"
+
+#: src/aosd/aosd_ui.cc:342
+msgid "Timing (ms)"
+msgstr "Ajoitus (ms)"
+
+#: src/aosd/aosd_ui.cc:347
+msgid "Display:"
+msgstr "Näytä:"
+
+#: src/aosd/aosd_ui.cc:352
+msgid "Fade in:"
+msgstr "Häivytä sisään:"
+
+#: src/aosd/aosd_ui.cc:357
+msgid "Fade out:"
+msgstr "Häivytä ulos:"
+
+#: src/aosd/aosd_ui.cc:442
+msgid "Fonts"
+msgstr "Kirjasimet"
+
+#: src/aosd/aosd_ui.cc:449
+#, c-format
+msgid "Font %i:"
+msgstr "Kirjasin %i:"
+
+#: src/aosd/aosd_ui.cc:466
+msgid "Shadow"
+msgstr "Varjo"
+
+#: src/aosd/aosd_ui.cc:589
+msgid "Render Style"
+msgstr "Esitystyyli"
+
+#: src/aosd/aosd_ui.cc:605
+msgid "Colors"
+msgstr "Värit"
+
+#: src/aosd/aosd_ui.cc:616
+#, c-format
+msgid "Color %i:"
+msgstr "Väri %i:"
+
+#: src/aosd/aosd_ui.cc:714
+msgid "Enable trigger"
+msgstr "Käytä liipaisinta"
+
+#: src/aosd/aosd_ui.cc:741
+msgid "Event"
+msgstr "Tapahtuma"
+
+#: src/aosd/aosd_ui.cc:768
+msgid "Composite manager detected"
+msgstr "Komposointimanageri havaittu"
+
+#: src/aosd/aosd_ui.cc:775
+msgid ""
+"Composite manager not detected;\n"
+"unless you know that you have one running, please activate a composite "
+"manager otherwise the OSD won't work properly"
+msgstr ""
+"Komposointimanageria ei havaittu.\n"
+"Jos komposointimanageri ei ole vielä päällä, aktivoi se tai muutoin OSD ei "
+"toimi kunnolla."
+
+#: src/aosd/aosd_ui.cc:783
+msgid "Composite manager not required for fake transparency"
+msgstr "Komposointimanageria ei tarvita jäljiteltyyn läpinäkyvyyteen"
+
+#: src/aosd/aosd_ui.cc:820
+msgid "Transparency"
+msgstr "Läpinäkyvyys"
+
+#: src/aosd/aosd_ui.cc:826
+msgid "Fake transparency"
+msgstr "Jäljitelty läpinäkyvyys"
+
+#: src/aosd/aosd_ui.cc:828
+msgid "Real transparency (requires X Composite Ext.)"
+msgstr "Oikea läpinäkyvyys (vaatii X:n komposointilaajennuksen)"
+
+#: src/aosd/aosd_ui.cc:875
+msgid "Composite extension not loaded"
+msgstr "Komposointilaajennusta ei ole ladattu"
+
+#: src/aosd/aosd_ui.cc:892
+#, c-format
+msgid "<span font_desc='%s'>Audacious OSD</span>"
+msgstr "<span font_desc='%s'>Audacious OSD</span>"
+
+#: src/aosd/aosd_ui.cc:955
+msgid "Position"
+msgstr "Sijainti"
+
+#: src/aosd/aosd_ui.cc:960
+msgid "Animation"
+msgstr "Animaatio"
+
+#: src/aosd/aosd_ui.cc:965
+msgid "Text"
+msgstr "Teksti"
+
+#: src/aosd/aosd_ui.cc:970
+msgid "Decoration"
+msgstr "Koristeet"
+
+#: src/aosd/aosd_ui.cc:975
+msgid "Trigger"
+msgstr "Liipaisin"
+
+#: src/aosd/aosd_ui.cc:980 src/streamtuner/shoutcast-model.cc:202
+msgid "Misc"
+msgstr "Muut"
+
+#: src/aosd/aosd_ui.cc:989
+msgid "Test"
+msgstr "Testaa"
+
+#: src/asx3/asx3.cc:35
+msgid "ASXv3 Playlists"
+msgstr "ASXv3-soittolista"
+
+#: src/asx/asx.cc:33
+msgid "ASXv1/ASXv2 Playlists"
+msgstr "ASXv1/ASXv2-soittolista"
+
+#: src/audpl/audpl.cc:33
+msgid "Audacious Playlists (audpl)"
+msgstr "Audacious soittolista (audpl)"
+
+#: src/background_music/background_music.cc:24
+msgid "<b>Background music</b>"
+msgstr "<b>Taustamusiikki</b>"
+
+#: src/background_music/background_music.cc:25
+msgid "Target level:"
+msgstr "Tavoitetaso:"
+
+#: src/background_music/background_music.cc:28
+#: src/background_music/background_music.cc:33
+#: src/silence-removal/silence-removal.cc:70
+msgid "dB"
+msgstr "dB"
+
+#: src/background_music/background_music.cc:29
+msgid "Maximum amplification:"
+msgstr "Maksimi vahvistus:"
+
+#: src/background_music/background_music.cc:34 src/mpg123/mpg123.cc:81
+msgid "<b>Advanced</b>"
+msgstr "<b>Lisäasetukset</b>"
+
+#: src/background_music/background_music.cc:36
+msgid "Slow detection weight:"
+msgstr "Hitaan havaitsemisen painotus:"
+
+#: src/background_music/background_music.cc:39
+msgid "<b>Hint</b>"
+msgstr "<b>Vihje</b>"
+
+#: src/background_music/background_music.cc:41
+msgid ""
+"Slow detection weight is the relative weight\n"
+"of a long term average detection when compared\n"
+"to the actual, faster loudness detection.\n"
+"A value of zero gives a more radio-like sound\n"
+"where soft passages get \"pulled up\" more quickly,\n"
+"a value of two makes the sound feel less compressed."
+msgstr ""
+"Hidas painotus on pitkän aikavälin keskimääräisen\n"
+"havaitsemisen suhteellinen painotus verrattuna todelliseen,\n"
+"nopeampaan voimakkuuden tunnistukseen.\n"
+"Nolla antaa radiomaisemman äänen, jossa pehmeät kohdat\n"
+"nopeammin \"vedetään ylös\", arvo kaksi saa äänen\n"
+"kuulostamaan vähemmän pakastetulta."
+
+#: src/background_music/background_music.cc:52
+msgid ""
+"Background Music Plugin for Audacious\n"
+"Copyright 2023;2024 Michel Fleur\n"
+"\n"
+"Controls the volume to make the sound equally loud within and between "
+"tracks.\n"
+" It uses accurate loudness measurement and tries to make the volume changes "
+"sound natural without audible peaks, yet without lowering the volume before "
+"a peak in advance."
+msgstr ""
+"Background Music Plugin for Audacious\n"
+"Copyright 2023;2024 Michel Fleur\n"
+"\n"
+"Säätää voimakkuutta siten, että ääni on yhtä kova raitojen sisällä ja "
+"välillä.\n"
+" Käyttää tarkkaa äänenvoimakkuuden mittausta ja yrittää saada voimakkuuden "
+"muutokset kuulostamaan luonnollisilta ilman kuultavia huippuja, mutta ilman "
+"voimakkuuden alentumista ennen huippua etukäteen."
+
+#: src/background_music/background_music.cc:61
+msgid "Background Music"
+msgstr "Taustamusiikki"
+
+#: src/bitcrusher/bitcrusher.cc:33
+msgid "<b>Bitcrusher</b>"
+msgstr "<b>Bitcrusher</b>"
+
+#: src/bitcrusher/bitcrusher.cc:34
+msgid "Bit Depth:"
+msgstr "Bittisyvyys:"
+
+#: src/bitcrusher/bitcrusher.cc:37
+msgid "Downsample ratio:"
+msgstr "Alataajuus:"
+
+#: src/bitcrusher/bitcrusher.cc:48
+msgid "Bitcrusher"
+msgstr "Bitcrusher"
+
+#: src/blur_scope/blur_scope.cc:40 src/blur_scope-qt/blur_scope.cc:45
+msgid "<b>Color</b>"
+msgstr "<b>Väri</b>"
+
+#: src/blur_scope/blur_scope.cc:56 src/blur_scope-qt/blur_scope.cc:158
+msgid "Blur Scope"
+msgstr "Sumenna alue"
+
+#: src/bs2b/plugin.cc:38
+msgid "Bauer Stereophonic-to-Binaural (BS2B)"
+msgstr "Bauer Stereophonic-to-Binaural (BS2B)"
+
+#: src/bs2b/plugin.cc:129
+msgid "Presets:"
+msgstr "Esiasetukset:"
+
+#: src/bs2b/plugin.cc:130
+msgid "Default"
+msgstr "Oletus"
+
+#: src/bs2b/plugin.cc:136
+msgid "Feed level:"
+msgstr "Syöttötaso:"
+
+#: src/bs2b/plugin.cc:138
+msgid "x1/10 dB"
+msgstr "x1/10 dB"
+
+#: src/bs2b/plugin.cc:139
+msgid "Cut frequency:"
+msgstr "Leikkaustaajuus:"
+
+#: src/cairo-spectrum/cairo-spectrum.cc:39 src/qt-spectrum/qt-spectrum.cc:107
+msgid "Spectrum Analyzer"
+msgstr "Spektri analysaattori"
+
+#: src/cdaudio/cdaudio-ng.cc:74
+msgid "Audio CD Plugin"
+msgstr "Audio CD Plugin"
+
+#: src/cdaudio/cdaudio-ng.cc:121
+msgid ""
+"Copyright (C) 2007-2012 Calin Crisan <ccrisan@gmail.com> and others.\n"
+"\n"
+"Many thanks to libcdio developers <http://www.gnu.org/software/libcdio/>\n"
+"and to libcddb developers <http://libcddb.sourceforge.net/>.\n"
+"\n"
+"Also thank you to Tony Vroon for mentoring and guiding me.\n"
+"\n"
+"This was a Google Summer of Code 2007 project."
+msgstr ""
+"Copyright (C) 2007-2012 Calin Crisan <ccrisan@gmail.com> ja muut.\n"
+"\n"
+"Kiitoket libcdio:n kehittäjille <http://www.gnu.org/software/libcdio/>\n"
+"sekä libcddb:n kehittäjille <http://libcddb.sourceforge.net/>.\n"
+"\n"
+"Kiitokset myös Tony Vroon:lle opastuksesta ja avusta.\n"
+"\n"
+"Tämä oli Google Summer of Code 2007 -projekti."
+
+#: src/cdaudio/cdaudio-ng.cc:140
+msgid "<b>Device</b>"
+msgstr "<b>Laite</b>"
+
+#: src/cdaudio/cdaudio-ng.cc:141
+msgid "Read speed:"
+msgstr "Lukunopeus:"
+
+#: src/cdaudio/cdaudio-ng.cc:144
+msgid "Override device:"
+msgstr "Laite:"
+
+#: src/cdaudio/cdaudio-ng.cc:146
+msgid "<b>Metadata</b>"
+msgstr "<b>Metatiedot</b>"
+
+#: src/cdaudio/cdaudio-ng.cc:147
+msgid "Use CD-Text"
+msgstr "Käytä CD-tekstiä"
+
+#: src/cdaudio/cdaudio-ng.cc:150
+msgid "Use CDDB"
+msgstr "Käytä CDDB:tä"
+
+#: src/cdaudio/cdaudio-ng.cc:152
+msgid "Use HTTP instead of CDDBP"
+msgstr "Käytä HTTP:tä CDDBP:n sijasta"
+
+#: src/cdaudio/cdaudio-ng.cc:155
+msgid "Server:"
+msgstr "Palvelin:"
+
+#: src/cdaudio/cdaudio-ng.cc:159
+msgid "Path:"
+msgstr "Polku:"
+
+#: src/cdaudio/cdaudio-ng.cc:163
+msgid "Port:"
+msgstr "Portti:"
+
+#: src/cdaudio/cdaudio-ng.cc:228
+msgid "Failed to initialize cdio subsystem."
+msgstr "Ei voitu alustaa cdio-alijärjestelmää."
+
+#: src/cdaudio/cdaudio-ng.cc:260
+#, c-format
+msgid "Invalid URI %s."
+msgstr "Viallinen URI %s."
+
+#: src/cdaudio/cdaudio-ng.cc:262
+#, c-format
+msgid "Track %d not found."
+msgstr "Raitaa %d ei löydetty."
+
+#: src/cdaudio/cdaudio-ng.cc:264
+#, c-format
+msgid "Track %d is a data track."
+msgstr "Raita %d on dataraita."
+
+#: src/cdaudio/cdaudio-ng.cc:339
+msgid "Error reading audio CD."
+msgstr "Virhe luettaessa ääni CD:tä."
+
+#: src/cdaudio/cdaudio-ng.cc:410
+msgid "Audio CD"
+msgstr "Ääni CD"
+
+#: src/cdaudio/cdaudio-ng.cc:446 src/cdaudio/cdaudio-ng.cc:455
+#, c-format
+msgid "Failed to open CD device %s."
+msgstr "Ei voitu avata CD-asemaa %s."
+
+#: src/cdaudio/cdaudio-ng.cc:458
+msgid "No audio capable CD drive found."
+msgstr "Ääneen kykenevää CD-asemaa ei löydetty."
+
+#: src/cdaudio/cdaudio-ng.cc:481
+msgid "Drive is empty."
+msgstr "Asema on tyhjä."
+
+#: src/cdaudio/cdaudio-ng.cc:483
+msgid "Unsupported disk type."
+msgstr "Levytyyppiä ei tueta."
+
+#: src/cdaudio/cdaudio-ng.cc:507
+msgid "Failed to finish initializing opened CD drive."
+msgstr "Avatun CD-aseman alustaminen epäonnistui."
+
+#: src/cdaudio/cdaudio-ng.cc:520
+msgid "Failed to retrieve first/last track number."
+msgstr "Ei voitu lukea ensimmäistä/viimeistä raitaa."
+
+#: src/cdaudio/cdaudio-ng.cc:541
+#, c-format
+msgid "Cannot read start/end LSN for track %d."
+msgstr "Ei voida lukea alku/loppu LSN:ää raidalle %d."
+
+#: src/cdaudio/cdaudio-ng.cc:624
+msgid "Failed to create the CDDB connection."
+msgstr "CDDB-yhteyden luominen epäonnistui."
+
+#: src/cdaudio/cdaudio-ng.cc:690
+msgid "Failed to query the CDDB server"
+msgstr "CDDB-palvelimen kysely epäonnistui."
+
+#: src/cdaudio/cdaudio-ng.cc:692
+#, c-format
+msgid "Failed to query the CDDB server: %s"
+msgstr "CDDB-palvelimen kysely epäonnistui: %s"
+
+#: src/cdaudio/cdaudio-ng.cc:716
+#, c-format
+msgid "Failed to read the CDDB info: %s"
+msgstr "CDDB-tietojen lukeminen epäonnistui: %s"
+
+#: src/cd-menu-items/cd-menu-items.cc:33
+msgid "Audio CD Menu Items"
+msgstr "Ääni CD -valikkonimikkeet"
+
+#: src/cd-menu-items/cd-menu-items.cc:45
+msgid "Pla_y CD"
+msgstr "Toista _CD"
+
+#: src/cd-menu-items/cd-menu-items.cc:45
+msgid "_Add CD"
+msgstr "Lisää C_D"
+
+#: src/compressor/compressor.cc:45
+msgid "<b>Compression</b>"
+msgstr "<b>Kompressio</b>"
+
+#: src/compressor/compressor.cc:46
+msgid "Center volume:"
+msgstr "Keskikanava:"
+
+#: src/compressor/compressor.cc:49
+msgid "Dynamic range:"
+msgstr "Dynaaminen alue:"
+
+#: src/compressor/compressor.cc:57
+msgid ""
+"Dynamic Range Compression Plugin for Audacious\n"
+"Copyright 2010-2014 John Lindgren"
+msgstr ""
+"Dynamic Range Compression Plugin for Audacious\n"
+"Copyright 2010-2014 John Lindgren"
+
+#: src/compressor/compressor.cc:64
+msgid "Dynamic Range Compressor"
+msgstr "Dynaamisen alueen kompressori"
+
+#: src/console/plugin.cc:15
+msgid ""
+"Console music decoder engine based on Game_Music_Emu 0.5.2\n"
+"Supported formats: AY, GBS, GYM, HES, KSS, NSF, NSFE, SAP, SPC, VGM, VGZ\n"
+"\n"
+"Audacious plugin by:\n"
+"William Pitcock <nenolod@dereferenced.org>\n"
+"Shay Green <gblargg@gmail.com>"
+msgstr ""
+"Pelikonsoli-dekooderi perustuu Game_Music_Emu 0.5.2:lle\n"
+"Tuetut formaatit: AY, GBS, GYM, HES, KSS, NSF, NSFE, SAP, SPC, VGM, VGZ\n"
+"\n"
+"Audacious liitännäisen kehittivät:\n"
+"William Pitcock <nenolod@dereferenced.org>\n"
+"Shay Green <gblargg@gmail.com>"
+
+#: src/console/plugin.cc:30
+msgid "Bass:"
+msgstr "Basso:"
+
+#: src/console/plugin.cc:33
+msgid "Treble:"
+msgstr "Diskantti:"
+
+#: src/console/plugin.cc:36
+msgid "Echo:"
+msgstr "Kaiku:"
+
+#: src/console/plugin.cc:39
+msgid "Default song length:"
+msgstr "Kappaleen oletuskesto:"
+
+#: src/console/plugin.cc:41 src/crossfade/crossfade.cc:56
+#: src/crossfade/crossfade.cc:62 src/lirc/lirc.cc:395 src/notify/notify.cc:113
+#: src/sid/xs_config.cc:85 src/sid/xs_config.cc:94 src/sid/xs_config.cc:103
+#: src/vumeter-qt/vumeter_qt.cc:39 src/vumeter/vumeter.cc:77
+msgid "seconds"
+msgstr "sekuntia"
+
+#: src/console/plugin.cc:42 src/modplug/plugin_main.cc:58
+msgid "<b>Resampling</b>"
+msgstr "<b>Uudelleennäytteistys</b>"
+
+#: src/console/plugin.cc:43
+msgid "Enable audio resampling"
+msgstr "Käytä äänen uudelleennäytteistystä"
+
+#: src/console/plugin.cc:49
+msgid "<b>SPC</b>"
+msgstr "<b>SPC</b>"
+
+#: src/console/plugin.cc:50
+msgid "Ignore length from SPC tags"
+msgstr "Sivuuta kesto SPC-tietueista"
+
+#: src/console/plugin.cc:52
+msgid "Increase reverb"
+msgstr "Lisää kaikuefektiä"
+
+#: src/console/plugin.h:26
+msgid "Game Console Music Decoder"
+msgstr "Pelikonsoli-dekooderi"
+
+#: src/coreaudio/coreaudio.cc:53
+msgid "CoreAudio output"
+msgstr "CoreAudio-lähtö"
+
+#: src/coreaudio/coreaudio.cc:155
+msgid ""
+"CoreAudio Output Plugin for Audacious\n"
+"Copyright 2014 William Pitcock\n"
+"Copyright 2017,18 René J.V. Bertin\n"
+" (original code and code adapted from\n"
+"  Apple examples, (C) Apple 2013)\n"
+"\n"
+"Based on SDL Output Plugin for Audacious\n"
+"Copyright 2010 John Lindgren"
+msgstr ""
+"CoreAudio ulostulon Audacious lisäosa\n"
+"Copyright 2014 William Pitcock\n"
+"Copyright 2017,18 René J.V. Bertin\n"
+" (alkuperäinen koodi on mukautettu\n"
+"  Applen esimerkeistä, (C) Apple 2013)\n"
+"\n"
+"Perustuu SDL ulostulon Audacious lisäosaan\n"
+"Copyright 2010 John Lindgren"
+
+#: src/coreaudio/coreaudio.cc:171
+msgid "Use exclusive mode"
+msgstr "Käytä varattua tilaa"
+
+#: src/coreaudio/coreaudio.cc:173
+msgid "Use bit perfect audio (adapt device sampling rate)"
+msgstr "Käytä täydellistä ääntä (mukauta laitteen näytteenottotaajuutta)"
+
+#: src/crossfade/crossfade.cc:47
+msgid ""
+"Crossfade Plugin for Audacious\n"
+"Copyright 2010-2014 John Lindgren"
+msgstr ""
+"Crossfade Plugin for Audacious\n"
+"Copyright 2010-2014 John Lindgren"
+
+#: src/crossfade/crossfade.cc:51
+msgid "<b>Crossfade</b>"
+msgstr "<b>Ristihäivytys</b>"
+
+#: src/crossfade/crossfade.cc:52
+msgid "On automatic song change"
+msgstr "Automaattinen kappaleenvaihto"
+
+#: src/crossfade/crossfade.cc:54 src/crossfade/crossfade.cc:60
+msgid "Overlap:"
+msgstr "Limittäisyys:"
+
+#: src/crossfade/crossfade.cc:58
+msgid "On seek or manual song change"
+msgstr "Etsittävällä tai manuaalisella kappaleenvaihdolla"
+
+#: src/crossfade/crossfade.cc:64
+msgid "No fade in"
+msgstr "Ei häivytystä"
+
+#: src/crossfade/crossfade.cc:66
+msgid "Use S-curve fade"
+msgstr "Käytä S-käyrän häivytystä"
+
+#: src/crossfade/crossfade.cc:68
+msgid "S-curve steepness:"
+msgstr "S-käyrän jyrkkyys:"
+
+#: src/crossfade/crossfade.cc:70
+msgid "(higher is steeper)"
+msgstr "(korkeampi on jyrkempi)"
+
+#: src/crossfade/crossfade.cc:72
+msgid "<b>Tip</b>"
+msgstr "<b>Vinkki</b>"
+
+#: src/crossfade/crossfade.cc:73
+msgid ""
+"For better crossfading, enable\n"
+"the Silence Removal effect."
+msgstr ""
+"Parantaaksesi ristihäivytystä, ota käyttöön\n"
+"Hiljaisuuden poisto -tehoste."
+
+#: src/crossfade/crossfade.cc:83
+msgid "Crossfade"
+msgstr "Ristihäivytys"
+
+#: src/crystalizer/crystalizer.cc:31
+msgid "<b>Crystalizer</b>"
+msgstr "<b>Crystalizer</b>"
+
+#: src/crystalizer/crystalizer.cc:32 src/stereo_plugin/stereo.cc:45
+msgid "Intensity:"
+msgstr "Vahvuus:"
+
+#: src/crystalizer/crystalizer.cc:43
+msgid "Crystalizer"
+msgstr "Crystalizer"
+
+#: src/cue/cue.cc:42
+msgid "Cue Sheet Plugin"
+msgstr "Cue Sheet Plugin"
+
+#: src/delete-files/delete-files.cc:53 src/delete-files/delete-files.cc:215
+#: src/delete-files/delete-files.cc:230
+msgid "Delete Files"
+msgstr "Poista tiedostot"
+
+#: src/delete-files/delete-files.cc:120
+msgid "No files are selected."
+msgstr "Tiedostoja ei ole valittu."
+
+#: src/delete-files/delete-files.cc:125
+#, c-format
+msgid "Do you want to move %s to the trash?"
+msgstr "Haluatko siirtää kohteen %s roskakoriin?"
+
+#: src/delete-files/delete-files.cc:126
+#, c-format
+msgid "Do you want to permanently delete %s?"
+msgstr "Haluatko varmasti poistaa kohteen %s lopullisesti?"
+
+#: src/delete-files/delete-files.cc:133
+#, c-format
+msgid "Do you want to move %d files to the trash?"
+msgstr "Haluatko siirtää %d tiedostoa roskakoriin?"
+
+#: src/delete-files/delete-files.cc:134
+#, c-format
+msgid "Do you want to permanently delete %d files?"
+msgstr "Haluatko poistaa pysyvästi %d tiedostoa?"
+
+#: src/delete-files/delete-files.cc:146
+msgid "Move to trash"
+msgstr "Siirrä roskakoriin"
+
+#: src/delete-files/delete-files.cc:146
+msgid "Delete"
+msgstr "Poista"
+
+#: src/delete-files/delete-files.cc:213 src/delete-files/delete-files.cc:235
+#: src/skins-qt/search-select.cc:102 src/skins/search-select.cc:78
+msgid "Cancel"
+msgstr "Peruuta"
+
+#: src/delete-files/delete-files.cc:267
+msgid "Delete Selected Files"
+msgstr "Poista valitut tiedostot"
+
+#: src/delete-files/delete-files.cc:287
+msgid "<b>Delete Method</b>"
+msgstr "<b>Poistamistapa</b>"
+
+#: src/delete-files/delete-files.cc:288
+msgid "Move to trash instead of deleting immediately"
+msgstr "Siirrä roskakoriin pysyvän poistamisen sijaan"
+
+#: src/echo_plugin/echo.cc:9
+msgid ""
+"Echo Plugin\n"
+"By Johan Levin, 1999\n"
+"Surround echo by Carl van Schaik, 1999\n"
+"Updated for Audacious by William Pitcock and John Lindgren, 2010-2014"
+msgstr ""
+"Kaiku lisäosa\n"
+"Tehnyt Johan Levin, 1999\n"
+"Surround-kaiku Carl van Schaik, 1999\n"
+"Päivitys Audacious:lle William Pitcock ja John Lindgren, 2010-2014"
+
+#: src/echo_plugin/echo.cc:21
+msgid "<b>Echo</b>"
+msgstr "<b>Kaikuefekti</b>"
+
+#: src/echo_plugin/echo.cc:22 src/modplug/plugin_main.cc:72
+#: src/modplug/plugin_main.cc:82
+msgid "Delay:"
+msgstr "Viive:"
+
+#: src/echo_plugin/echo.cc:24 src/modplug/plugin_main.cc:72
+#: src/modplug/plugin_main.cc:82 src/xsf/plugin.cc:445
+msgid "ms"
+msgstr "ms"
+
+#: src/echo_plugin/echo.cc:25
+msgid "Feedback:"
+msgstr "Feedback:"
+
+#: src/echo_plugin/echo.cc:28 src/modplug/plugin_main.cc:86
+msgid "Volume:"
+msgstr "Äänenvoimakkuus:"
+
+#: src/echo_plugin/echo.cc:39
+msgid "Echo"
+msgstr "Kaikuefekti"
+
+#: src/ffaudio/ffaudio-core.cc:50
+msgid "FFmpeg Plugin"
+msgstr "FFmpeg Plugin"
+
+#: src/ffaudio/ffaudio-core.cc:649
+msgid ""
+"Multi-format audio decoding plugin for Audacious using\n"
+"FFmpeg multimedia framework (http://www.ffmpeg.org/)\n"
+"\n"
+"Audacious plugin by:\n"
+"William Pitcock <nenolod@nenolod.net>\n"
+"Matti Hämäläinen <ccr@tnsp.org>"
+msgstr ""
+"Multi-format audio decoding plugin for Audacious using\n"
+"FFmpeg multimedia framework (http://www.ffmpeg.org/)\n"
+"\n"
+"Audacious lisäosan kehittivät:\n"
+"William Pitcock <nenolod@nenolod.net>\n"
+"Matti Hämäläinen <ccr@tnsp.org>"
+
+#: src/filewriter/filewriter.cc:48
+msgid "FileWriter Plugin"
+msgstr "FileWriter Plugin"
+
+#: src/filewriter/filewriter.cc:316
+#, c-format
+msgid ""
+"Error opening %s:\n"
+"%s"
+msgstr ""
+"Virhe avattaessa %s:\n"
+"%s"
+
+#: src/filewriter/filewriter.cc:358
+msgid ""
+"This program is free software; you can redistribute it and/or modify it "
+"under the terms of the GNU General Public License as published by the Free "
+"Software Foundation; either version 2 of the License, or (at your option) "
+"any later version.\n"
+"\n"
+"This program is distributed in the hope that it will be useful, but WITHOUT "
+"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
+"FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for "
+"more details.\n"
+"\n"
+"You should have received a copy of the GNU General Public License along with "
+"this program; if not, write to the Free Software Foundation, Inc., 51 "
+"Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA."
+msgstr ""
+"Tämä on ilmainen ohjelmisto; voit jakaa sitä edelleen ja/tai muokata\n"
+"GNU General Public License ehtojen mukaisesti, sellaisina kuin\n"
+"Free Software Foundation on ne määrittänyt, joko lisenssin versio 2 tai\n"
+"(sinun valintasi mukaan) minkä tahansa uudempi versio.\n"
+"\n"
+"Tämä ohjelma jaetaan siinä toivossa, että se on hyödyllinen,\n"
+"mutta ILMAN MITÄÄN TAKUUTA; ilman edes oletettua takuuta\n"
+"MYYNTIKELPOISUUTTA tai SOPIVUUTTA TIETTYYN TARKOITUKSEEN.\n"
+"Katso GNU General Public License -ehdot saadaksesi lisätietoja.\n"
+"\n"
+"Sinun olisi pitänyt saada kopio GNU General Public License -tiedostosta\n"
+"tämän ohjelman mukana; Jos et saanut, kirjoita kirje Free Software\n"
+"Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301,\n"
+"USA."
+
+#: src/filewriter/filewriter.cc:385
+msgid "Output file format:"
+msgstr "Tiedostoformaatti:"
+
+#: src/filewriter/filewriter.cc:389
+msgid "Save into original directory"
+msgstr "Tallenna alkuperäiseen kansioon"
+
+#: src/filewriter/filewriter.cc:392
+msgid "Save into custom directory:"
+msgstr "Tallenna omavalintaiseen kansioon:"
+
+#: src/filewriter/filewriter.cc:400
+msgid "Generate file name from:"
+msgstr "Tiedostonimen luomisen peruste:"
+
+#: src/filewriter/filewriter.cc:401
+msgid "Original file name"
+msgstr "Alkuperäinen tiedostonimi"
+
+#: src/filewriter/filewriter.cc:404
+msgid "Original file name (no suffix)"
+msgstr "Alkuperäinen tiedostonimi (ei jälkiliite)"
+
+#: src/filewriter/filewriter.cc:407
+msgid "Original file tag"
+msgstr "Alkuperäinen tiedostotunniste"
+
+#: src/filewriter/filewriter.cc:411
+msgid "Prepend track number to file name"
+msgstr "Lisää kappaleen numero tiedostonimeen"
+
+#: src/filewriter/filewriter.cc:417 src/filewriter/filewriter.cc:449
+msgid "Auto"
+msgstr "Automaattinen"
+
+#: src/filewriter/filewriter.cc:418
+msgid "8000 Hz"
+msgstr "8000 Hz"
+
+#: src/filewriter/filewriter.cc:419
+msgid "11025 Hz"
+msgstr "11025 Hz"
+
+#: src/filewriter/filewriter.cc:420
+msgid "12000 Hz"
+msgstr "12000 Hz"
+
+#: src/filewriter/filewriter.cc:421
+msgid "16000 Hz"
+msgstr "16000 Hz"
+
+#: src/filewriter/filewriter.cc:422
+msgid "22050 Hz"
+msgstr "22050 Hz"
+
+#: src/filewriter/filewriter.cc:423
+msgid "24000 Hz"
+msgstr "24000 Hz"
+
+#: src/filewriter/filewriter.cc:424
+msgid "32000 Hz"
+msgstr "32000 Hz"
+
+#: src/filewriter/filewriter.cc:425 src/xsf/plugin.cc:430
+msgid "44100 Hz"
+msgstr "44100 Hz"
+
+#: src/filewriter/filewriter.cc:426 src/xsf/plugin.cc:431
+msgid "48000 Hz"
+msgstr "48000 Hz"
+
+#: src/filewriter/filewriter.cc:430
+msgid "8 kbit/s"
+msgstr "8 kbit/s"
+
+#: src/filewriter/filewriter.cc:431
+msgid "16 kbit/s"
+msgstr "16 kbit/s"
+
+#: src/filewriter/filewriter.cc:432
+msgid "32 kbit/s"
+msgstr "32 kbit/s"
+
+#: src/filewriter/filewriter.cc:433
+msgid "40 kbit/s"
+msgstr "40 kbit/s"
+
+#: src/filewriter/filewriter.cc:434
+msgid "48 kbit/s"
+msgstr "48 kbit/s"
+
+#: src/filewriter/filewriter.cc:435
+msgid "56 kbit/s"
+msgstr "56 kbit/s"
+
+#: src/filewriter/filewriter.cc:436
+msgid "64 kbit/s"
+msgstr "64 kbit/s"
+
+#: src/filewriter/filewriter.cc:437
+msgid "80 kbit/s"
+msgstr "80 kbit/s"
+
+#: src/filewriter/filewriter.cc:438
+msgid "96 kbit/s"
+msgstr "96 kbit/s"
+
+#: src/filewriter/filewriter.cc:439
+msgid "112 kbit/s"
+msgstr "112 kbit/s"
+
+#: src/filewriter/filewriter.cc:440
+msgid "128 kbit/s"
+msgstr "128 kbit/s"
+
+#: src/filewriter/filewriter.cc:441
+msgid "160 kbit/s"
+msgstr "160 kbit/s"
+
+#: src/filewriter/filewriter.cc:442
+msgid "192 kbit/s"
+msgstr "192 kbit/s"
+
+#: src/filewriter/filewriter.cc:443
+msgid "224 kbit/s"
+msgstr "224 kbit/s"
+
+#: src/filewriter/filewriter.cc:444
+msgid "256 kbit/s"
+msgstr "256 kbit/s"
+
+#: src/filewriter/filewriter.cc:445
+msgid "320 kbit/s"
+msgstr "320 kbit/s"
+
+#: src/filewriter/filewriter.cc:450
+msgid "Joint Stereo"
+msgstr "Joint Stereo"
+
+#: src/filewriter/filewriter.cc:451 src/modplug/plugin_main.cc:57
+#: src/mpg123/mpg123.cc:259
+msgid "Stereo"
+msgstr "Stereo"
+
+#: src/filewriter/filewriter.cc:452 src/modplug/plugin_main.cc:56
+#: src/mpg123/mpg123.cc:260
+msgid "Mono"
+msgstr "Mono"
+
+#: src/filewriter/filewriter.cc:456
+msgid "VBR"
+msgstr "VBR"
+
+#: src/filewriter/filewriter.cc:457
+msgid "ABR"
+msgstr "ABR"
+
+#: src/filewriter/filewriter.cc:478
+msgid "Algorithm quality:"
+msgstr "Algoritmin laatu:"
+
+#: src/filewriter/filewriter.cc:484
+msgid "Bitrate:"
+msgstr "Bittinopeus:"
+
+#: src/filewriter/filewriter.cc:491
+msgid "Compression ratio:"
+msgstr "Pakkaussuhde:"
+
+#: src/filewriter/filewriter.cc:498
+msgid "Audio mode:"
+msgstr "Äänitila:"
+
+#: src/filewriter/filewriter.cc:501
+msgid "Enforce strict ISO compliance"
+msgstr "Pakota tarkka ISO-yhteensopivuus"
+
+#: src/filewriter/filewriter.cc:503
+msgid "Error protection"
+msgstr "Virhesuojaus"
+
+#: src/filewriter/filewriter.cc:508
+msgid "Enable VBR/ABR"
+msgstr "Käytä VBR/ABR"
+
+#: src/filewriter/filewriter.cc:510
+msgid "Type:"
+msgstr "Tyyppi:"
+
+#: src/filewriter/filewriter.cc:514
+msgid "Minimum bitrate:"
+msgstr "Vähimmäisbittinopeus:"
+
+#: src/filewriter/filewriter.cc:518
+msgid "Maximum bitrate:"
+msgstr "Enimmäisbittinopeus:"
+
+#: src/filewriter/filewriter.cc:522
+msgid "Average bitrate:"
+msgstr "Keskimääräinen bittinopeus:"
+
+#: src/filewriter/filewriter.cc:526
+msgid "VBR quality level:"
+msgstr "VBR:n laatutaso:"
+
+#: src/filewriter/filewriter.cc:530
+msgid "Strictly enforce minimum bitrate"
+msgstr "Valvo tiukasti minimi bittinopeutta"
+
+#: src/filewriter/filewriter.cc:533
+msgid "Omit Xing VBR header"
+msgstr "Ohita Xing VBR-otsake"
+
+#: src/filewriter/filewriter.cc:539
+msgid "<b>Frame Headers</b>"
+msgstr "<b>Kehyksen otsikot</b>"
+
+#: src/filewriter/filewriter.cc:540
+msgid "Mark as copyright"
+msgstr "Merkitse tekijänoikeudeksi"
+
+#: src/filewriter/filewriter.cc:542
+msgid "Mark as original"
+msgstr "Merkitse alkuperäiseksi"
+
+#: src/filewriter/filewriter.cc:544
+msgid "<b>ID3 Tags</b>"
+msgstr "<b>ID3-tunnisteet</b>"
+
+#: src/filewriter/filewriter.cc:545
+msgid "Force addition of version 2 tag"
+msgstr "Pakota v2-tagin lisäys"
+
+#: src/filewriter/filewriter.cc:547
+msgid "Only add v1 tag"
+msgstr "Lisää vain v1-tagi"
+
+#: src/filewriter/filewriter.cc:549
+msgid "Only add v2 tag"
+msgstr "Lisää vain v2-tagi"
+
+#: src/filewriter/filewriter.cc:554
+msgid "Quality"
+msgstr "Laatu"
+
+#: src/filewriter/filewriter.cc:555
+msgid "VBR/ABR"
+msgstr "VBR/ABR"
+
+#: src/filewriter/filewriter.cc:556
+msgid "Tags"
+msgstr "Tagit"
+
+#: src/filewriter/filewriter.cc:566
+msgid "Quality (0-1):"
+msgstr "Laatu (0-1):"
+
+#: src/filewriter/filewriter.cc:573 src/skins-qt/skins_cfg.cc:307
+#: src/skins/skins_cfg.cc:289
+msgid "General"
+msgstr "Yleiset"
+
+#: src/flac/flacng.h:36
+msgid "FLAC Decoder"
+msgstr "FLAC-dekooderi"
+
+#: src/flac/metadata.cc:296 src/wavpack/wavpack.cc:205
+msgid "lossless"
+msgstr "häviötön"
+
+#: src/flac/plugin.cc:214
+msgid ""
+"Original code by\n"
+"Ralf Ertzinger <ralf@skytale.net>\n"
+"\n"
+"http://www.skytale.net/projects/bmp-flac2/"
+msgstr ""
+"Alkuperäinen koodi\n"
+"Ralf Ertzinger <ralf@skytale.net>\n"
+"\n"
+"http://www.skytale.net/projects/bmp-flac2/"
+
+#: src/gio/gio.cc:34
+msgid ""
+"GIO Plugin for Audacious\n"
+"Copyright 2009-2012 John Lindgren"
+msgstr ""
+"GIO Plugin for Audacious\n"
+"Copyright 2009-2012 John Lindgren"
+
+#: src/gio/gio.cc:42
+msgid "GIO Plugin"
+msgstr "GIO Plugin"
+
+#: src/gio/gio.cc:152
+msgid "Read-and-append mode not supported"
+msgstr "Luku-/liittämistilaa ei tueta"
+
+#: src/gio/gio.cc:165
+msgid "Invalid open mode"
+msgstr "Virheellinen tila avata"
+
+#: src/glspectrum/gl-spectrum.cc:52
+msgid ""
+"OpenGL Spectrum Analyzer for Audacious\n"
+"Copyright 2013 Christophe Budé, John Lindgren, and Carlo Bramini\n"
+"\n"
+"Based on the XMMS plugin:\n"
+"Copyright 1998-2000 Peter Alm, Mikael Alm, Olle Hallnas, Thomas Nilsson, and "
+"4Front Technologies\n"
+"\n"
+"License: GPLv2+"
+msgstr ""
+"OpenGL Spectrum Analyzer Audaciousille\n"
+"Copyright 2013 Christophe Budé, John Lindgren ja Carlo Bramini\n"
+"\n"
+"Perustuu XMMS -lisäosaan:\n"
+"Copyright 1998-2000 Peter Alm, Mikael Alm, Olle Hallnas, Thomas Nilsson ja "
+"4Front Technologies\n"
+"\n"
+"Lisenssi: GPLv2+"
+
+#: src/glspectrum/gl-spectrum.cc:63 src/qtglspectrum/gl-spectrum.cc:53
+msgid "OpenGL Spectrum Analyzer"
+msgstr "Spektri analysaattori OpenGL"
+
+#: src/gtkui/columns.cc:36 src/qtui/playlist_model.cc:33
+msgid "Entry Number"
+msgstr "Tapahtuman numero"
+
+#: src/gtkui/columns.cc:37 src/playback-history-qt/playback-history.cc:372
+#: src/playlist-manager/playlist-manager.cc:200
+#: src/playlist-manager-qt/playlist-manager-qt.cc:188
+#: src/qtui/playlist_model.cc:33 src/streamtuner/icecast-model.cc:120
+#: src/streamtuner/ihr-model.cc:159 src/streamtuner/shoutcast-model.cc:122
+msgid "Title"
+msgstr "Nimi"
+
+#: src/gtkui/columns.cc:38 src/qtui/playlist_model.cc:33
+msgid "Artist"
+msgstr "Esittäjä"
+
+#: src/gtkui/columns.cc:39 src/qtui/playlist_model.cc:33
+msgid "Year"
+msgstr "Vuosi"
+
+#: src/gtkui/columns.cc:40 src/playback-history-qt/playback-history.cc:374
+#: src/playback-history-qt/playback-history.cc:837
+#: src/qtui/playlist_model.cc:34
+msgid "Album"
+msgstr "Levy"
+
+#: src/gtkui/columns.cc:41 src/qtui/playlist_model.cc:34
+msgid "Album Artist"
+msgstr "Levyn esittäjä"
+
+#: src/gtkui/columns.cc:42 src/qtui/playlist_model.cc:34
+msgid "Track"
+msgstr "Raita"
+
+#: src/gtkui/columns.cc:43 src/qtui/playlist_model.cc:34
+#: src/streamtuner/icecast-model.cc:123 src/streamtuner/shoutcast-model.cc:125
+#: src/streamtuner/shoutcast-model.cc:236
+msgid "Genre"
+msgstr "Tyylilaji"
+
+#: src/gtkui/columns.cc:44 src/qtui/playlist_model.cc:35
+msgid "Queue Position"
+msgstr "Sijainti jonossa"
+
+#: src/gtkui/columns.cc:45 src/qtui/playlist_model.cc:35
+msgid "Length"
+msgstr "Kesto"
+
+#: src/gtkui/columns.cc:46 src/qtui/playlist_model.cc:35
+msgid "File Path"
+msgstr "Tiedostopolku"
+
+#: src/gtkui/columns.cc:47 src/qtui/playlist_model.cc:35
+msgid "File Name"
+msgstr "Tiedostonimi"
+
+#: src/gtkui/columns.cc:48 src/qtui/playlist_model.cc:36
+msgid "Custom Title"
+msgstr "Mukautettu nimi"
+
+#: src/gtkui/columns.cc:49 src/qtui/playlist_model.cc:36
+#: src/streamtuner/icecast-model.cc:129 src/streamtuner/shoutcast-model.cc:134
+msgid "Bitrate"
+msgstr "Bittinopeus"
+
+#: src/gtkui/columns.cc:50 src/qtui/playlist_model.cc:36
+msgid "Comment"
+msgstr "Kommentti"
+
+#: src/gtkui/columns.cc:51 src/qtui/playlist_model.cc:36
+msgid "Publisher"
+msgstr "Julkaisija"
+
+#: src/gtkui/columns.cc:52 src/qtui/playlist_model.cc:37
+msgid "Catalog Number"
+msgstr "Kataloginumero"
+
+#: src/gtkui/columns.cc:53 src/qtui/playlist_model.cc:37
+msgid "Disc"
+msgstr "Levy"
+
+#: src/gtkui/columns.cc:325
+msgid "Available columns"
+msgstr "Käytettävissä olevat sarakkeet"
+
+#: src/gtkui/columns.cc:351
+msgid "Displayed columns"
+msgstr "Näytettävät sarakkeet"
+
+#: src/gtkui/layout.cc:74 src/search-tool-qt/search-tool-qt.cc:58
+#: src/search-tool/search-tool.cc:49
+msgid "Search Tool"
+msgstr "Haku"
+
+#: src/gtkui/layout.cc:170
+msgid "Dock at Left"
+msgstr "Telakoi vasemmalle"
+
+#: src/gtkui/layout.cc:170
+msgid "Dock at Right"
+msgstr "Telakoi oikealle"
+
+#: src/gtkui/layout.cc:171
+msgid "Dock at Top"
+msgstr "Telakoi ylhäälle"
+
+#: src/gtkui/layout.cc:171
+msgid "Dock at Bottom"
+msgstr "Telakoi alhaalle"
+
+#: src/gtkui/layout.cc:171
+msgid "Undock"
+msgstr "Poista telakointi"
+
+#: src/gtkui/layout.cc:171 src/ladspa/plugin.cc:540
+msgid "Disable"
+msgstr "Poista käytöstä"
+
+#: src/gtkui/menus.cc:79 src/qtui/menus.cc:111
+#: src/statusicon-qt/statusicon.cc:128 src/statusicon/statusicon.cc:300
+msgid "_Open Files ..."
+msgstr "Avaa tied_ostot..."
+
+#: src/gtkui/menus.cc:80 src/qtui/menus.cc:115
+msgid "Open _URL ..."
+msgstr "Avaa _URL..."
+
+#: src/gtkui/menus.cc:81 src/qtui/menus.cc:117
+msgid "_Add Files ..."
+msgstr "_Lisää tiedostoja..."
+
+#: src/gtkui/menus.cc:82 src/qtui/menus.cc:122
+msgid "Add U_RL ..."
+msgstr "Lisää U_RL..."
+
+#: src/gtkui/menus.cc:84 src/qtui/menus.cc:124
+msgid "Search _Library"
+msgstr "_Etsi kirjastosta"
+
+#: src/gtkui/menus.cc:86 src/qtui/menus.cc:127
+msgid "A_bout ..."
+msgstr "_Tietoja..."
+
+#: src/gtkui/menus.cc:87 src/qtui/menus.cc:129
+msgid "_Settings ..."
+msgstr "_Asetukset..."
+
+#: src/gtkui/menus.cc:88 src/qtui/menus.cc:135
+#: src/statusicon-qt/statusicon.cc:130 src/statusicon/statusicon.cc:302
+msgid "_Quit"
+msgstr "_Sulje"
+
+#: src/gtkui/menus.cc:92 src/gtkui/menus.cc:226 src/qtui/menus.cc:139
+#: src/qtui/playlist_tabs.cc:331 src/search-tool-qt/search-tool-qt.cc:499
+#: src/search-tool/search-tool.cc:339 src/statusicon-qt/statusicon.cc:122
+#: src/statusicon/statusicon.cc:294
+msgid "_Play"
+msgstr "_Toista"
+
+#: src/gtkui/menus.cc:93 src/qtui/menus.cc:141
+#: src/statusicon-qt/statusicon.cc:123 src/statusicon/statusicon.cc:295
+msgid "Paus_e"
+msgstr "_Keskeytä"
+
+#: src/gtkui/menus.cc:94 src/qtui/menus.cc:143
+#: src/statusicon-qt/statusicon.cc:124 src/statusicon/statusicon.cc:296
+msgid "_Stop"
+msgstr "_Pysäytä"
+
+#: src/gtkui/menus.cc:95 src/qtui/menus.cc:145
+#: src/statusicon-qt/statusicon.cc:125 src/statusicon/statusicon.cc:297
+msgid "Pre_vious"
+msgstr "_Edellinen"
+
+#: src/gtkui/menus.cc:96 src/qtui/menus.cc:147
+#: src/statusicon-qt/statusicon.cc:126 src/statusicon/statusicon.cc:298
+msgid "_Next"
+msgstr "_Seuraava"
+
+#: src/gtkui/menus.cc:97 src/qtui/menus.cc:149 src/skins/menus.cc:114
+#: src/skins-qt/menus.cc:106
+msgid "Previous Album"
+msgstr "Edellinen levy"
+
+#: src/gtkui/menus.cc:98 src/qtui/menus.cc:150 src/skins/menus.cc:115
+#: src/skins-qt/menus.cc:107
+msgid "Next Album"
+msgstr "Seuraava levy"
+
+#: src/gtkui/menus.cc:100 src/qtui/menus.cc:152
+msgid "_Repeat"
+msgstr "_Kertaus"
+
+#: src/gtkui/menus.cc:101 src/qtui/menus.cc:154
+msgid "S_huffle"
+msgstr "S_ekoitus"
+
+#: src/gtkui/menus.cc:102 src/qtui/menus.cc:156
+msgid "Shuffle by Albu_m"
+msgstr "Sekoita Albu_min mukaan"
+
+#: src/gtkui/menus.cc:103 src/qtui/menus.cc:159
+msgid "N_o Playlist Advance"
+msgstr "Älä _etene soittolistalla"
+
+#: src/gtkui/menus.cc:104 src/qtui/menus.cc:161
+msgid "Stop A_fter This Song"
+msgstr "_Pysäytä tämän kappaleen jälkeen"
+
+#: src/gtkui/menus.cc:106 src/gtkui/menus.cc:210 src/qtui/menus.cc:166
+#: src/qtui/menus.cc:301
+msgid "Song _Info ..."
+msgstr "K_appaleen tiedot..."
+
+#: src/gtkui/menus.cc:107
+msgid "Jump to _Time ..."
+msgstr "Hyppää _aikaan..."
+
+#: src/gtkui/menus.cc:108
+msgid "_Jump to Song ..."
+msgstr "_Hyppää kappaleeseen..."
+
+#: src/gtkui/menus.cc:110 src/qtui/menus.cc:172
+msgid "Set Repeat Point _A"
+msgstr "Aseta kertauksen alkupiste A"
+
+#: src/gtkui/menus.cc:111 src/qtui/menus.cc:174
+msgid "Set Repeat Point _B"
+msgstr "Aseta kertauksen loppupiste B"
+
+#: src/gtkui/menus.cc:112 src/qtui/menus.cc:176
+msgid "_Clear Repeat Points"
+msgstr "_Tyhjennä kertauspisteet"
+
+#: src/gtkui/menus.cc:116 src/gtkui/menus.cc:123 src/gtkui/menus.cc:141
+#: src/qtui/menus.cc:180 src/qtui/menus.cc:187 src/qtui/menus.cc:205
+msgid "By _Title"
+msgstr "_Nimen mukaan"
+
+#: src/gtkui/menus.cc:117 src/qtui/menus.cc:181
+msgid "By _File Name"
+msgstr "_Tiedostonimen mukaan"
+
+#: src/gtkui/menus.cc:118 src/qtui/menus.cc:182
+msgid "By File _Path"
+msgstr "Tiedosto_polun mukaan"
+
+#: src/gtkui/menus.cc:122 src/gtkui/menus.cc:140 src/qtui/menus.cc:186
+#: src/qtui/menus.cc:204
+msgid "By Track _Number"
+msgstr "Ka_ppalenumeron mukaan"
+
+#: src/gtkui/menus.cc:124 src/gtkui/menus.cc:142 src/qtui/menus.cc:188
+#: src/qtui/menus.cc:206
+msgid "By _Artist"
+msgstr "_Esittäjän mukaan"
+
+#: src/gtkui/menus.cc:125 src/gtkui/menus.cc:143 src/qtui/menus.cc:189
+#: src/qtui/menus.cc:207
+msgid "By Al_bum"
+msgstr "Al_bumin mukaan"
+
+#: src/gtkui/menus.cc:126 src/gtkui/menus.cc:144 src/qtui/menus.cc:190
+#: src/qtui/menus.cc:208
+msgid "By Albu_m Artist"
+msgstr "Albu_min Artistin"
+
+#: src/gtkui/menus.cc:127 src/gtkui/menus.cc:145 src/qtui/menus.cc:191
+#: src/qtui/menus.cc:209
+msgid "By Release _Date"
+msgstr "_Julkaisupäivämäärän mukaan"
+
+#: src/gtkui/menus.cc:128 src/gtkui/menus.cc:146 src/qtui/menus.cc:192
+#: src/qtui/menus.cc:210
+msgid "By _Genre"
+msgstr "T_yylilajon mukaan"
+
+#: src/gtkui/menus.cc:129 src/gtkui/menus.cc:147 src/qtui/menus.cc:193
+#: src/qtui/menus.cc:211
+msgid "By _Length"
+msgstr "_Keston mukaan"
+
+#: src/gtkui/menus.cc:130 src/gtkui/menus.cc:148 src/qtui/menus.cc:194
+#: src/qtui/menus.cc:212
+msgid "By _File Path"
+msgstr "_Tiedostopolun mukaan"
+
+#: src/gtkui/menus.cc:131 src/gtkui/menus.cc:149 src/qtui/menus.cc:195
+#: src/qtui/menus.cc:213
+msgid "By _Custom Title"
+msgstr "_Mukautetun nimen mukaan"
+
+#: src/gtkui/menus.cc:132 src/gtkui/menus.cc:150 src/qtui/menus.cc:196
+#: src/qtui/menus.cc:214
+msgid "By C_omment"
+msgstr "_Kommentin mukaan"
+
+#: src/gtkui/menus.cc:133 src/gtkui/menus.cc:151 src/qtui/menus.cc:197
+#: src/qtui/menus.cc:215
+msgid "By D_isc Number"
+msgstr "_Levynumeron mukaan"
+
+#: src/gtkui/menus.cc:135 src/gtkui/menus.cc:153 src/qtui/menus.cc:199
+#: src/qtui/menus.cc:217
+msgid "R_everse Order"
+msgstr "_Käänteinen järjestys"
+
+#: src/gtkui/menus.cc:136 src/gtkui/menus.cc:154 src/qtui/menus.cc:201
+#: src/qtui/menus.cc:219
+msgid "_Random Order"
+msgstr "_Satunnainen järjestys"
+
+#: src/gtkui/menus.cc:158 src/qtui/menus.cc:223
+msgid "_Play/Resume"
+msgstr "_Toista/jatka"
+
+#: src/gtkui/menus.cc:159 src/qtui/menus.cc:225
+msgid "_Refresh"
+msgstr "_Päivitä"
+
+#: src/gtkui/menus.cc:161 src/qtui/menus.cc:229
+msgid "_Sort"
+msgstr "_Lajittele"
+
+#: src/gtkui/menus.cc:162 src/qtui/menus.cc:230
+msgid "Sort Se_lected"
+msgstr "Järjestä _valitut"
+
+#: src/gtkui/menus.cc:163 src/qtui/menus.cc:232
+msgid "Remove _Duplicates"
+msgstr "Poista _kopiot"
+
+#: src/gtkui/menus.cc:164 src/qtui/menus.cc:233
+msgid "Remove _Unavailable Files"
+msgstr "Poista _ei saatavilla olevat tiedostot"
+
+#: src/gtkui/menus.cc:166 src/playlist-manager/playlist-manager.cc:219
+#: src/playlist-manager-qt/playlist-manager-qt.cc:348 src/qtui/menus.cc:236
+msgid "_New"
+msgstr "_Uusi"
+
+#: src/gtkui/menus.cc:167 src/qtui/menus.cc:237
+msgid "Ren_ame ..."
+msgstr "Nimeä _uudelleen..."
+
+#: src/gtkui/menus.cc:168 src/gtkui/menus.cc:228 src/qtui/menus.cc:238
+#: src/qtui/playlist_tabs.cc:336
+msgid "Remo_ve"
+msgstr "_Poista"
+
+#: src/gtkui/menus.cc:170 src/qtui/menus.cc:240
+msgid "_Import ..."
+msgstr "_Tuo..."
+
+#: src/gtkui/menus.cc:171 src/qtui/menus.cc:241
+msgid "_Export ..."
+msgstr "_Vie..."
+
+#: src/gtkui/menus.cc:173 src/qtui/menus.cc:244
+msgid "Playlist _Manager ..."
+msgstr "Soittolistojen _hallinta..."
+
+#: src/gtkui/menus.cc:174 src/qtui/menus.cc:246
+msgid "_Queue Manager ..."
+msgstr "_Jonomanageri..."
+
+#: src/gtkui/menus.cc:178 src/qtui/menus.cc:250
+msgid "Volume _Up"
+msgstr "_Nosta äänenvoimakkuutta"
+
+#: src/gtkui/menus.cc:179 src/qtui/menus.cc:252
+msgid "Volume _Down"
+msgstr "_Laske äänenvoimakkuutta"
+
+#: src/gtkui/menus.cc:181 src/qtui/menus.cc:256
+msgid "_Equalizer ..."
+msgstr "_Taajuuskorjain..."
+
+#: src/gtkui/menus.cc:182 src/qtui/menus.cc:258
+msgid "E_ffects ..."
+msgstr "_Tehosteet..."
+
+#: src/gtkui/menus.cc:184
+msgid "_Record Stream"
+msgstr "_Tallenna suoratoisto"
+
+#: src/gtkui/menus.cc:185
+msgid "Audio _Settings ..."
+msgstr "_Ääniasetukset..."
+
+#: src/gtkui/menus.cc:189 src/qtui/menus.cc:267
+msgid "Show _Menu Bar"
+msgstr "Näytä _valikkopalkki"
+
+#: src/gtkui/menus.cc:190 src/qtui/menus.cc:269
+msgid "Show I_nfo Bar"
+msgstr "Näytä _tietopalkki"
+
+#: src/gtkui/menus.cc:191 src/qtui/menus.cc:271
+msgid "Show Info Bar _Album Art"
+msgstr "Näytä tietopalkki _Levyn kansi"
+
+#: src/gtkui/menus.cc:192 src/qtui/menus.cc:273
+msgid "Show Info Bar Vis_ualization"
+msgstr "Näytä tietopalkin vis_ualisaatio"
+
+#: src/gtkui/menus.cc:193 src/qtui/menus.cc:275
+msgid "Show _Status Bar"
+msgstr "Näytä tila_rivi"
+
+#: src/gtkui/menus.cc:195 src/qtui/menus.cc:279
+msgid "Show _Remaining Time"
+msgstr "Näytä _jäljellä oleva aika"
+
+#: src/gtkui/menus.cc:197 src/qtui/menus.cc:283 src/skins/menus.cc:157
+#: src/skins-qt/menus.cc:153
+msgid "_Visualizations ..."
+msgstr "_Visualisoinnit..."
+
+#: src/gtkui/menus.cc:201 src/qtui/menus.cc:287
+msgid "_File"
+msgstr "_Tiedosto"
+
+#: src/gtkui/menus.cc:202 src/qtui/menus.cc:288
+msgid "_Playback"
+msgstr "T_oisto"
+
+#: src/gtkui/menus.cc:203 src/qtui/menus.cc:289
+msgid "P_laylist"
+msgstr "_Soittolista"
+
+#: src/gtkui/menus.cc:204 src/gtkui/menus.cc:222 src/qtui/menus.cc:290
+#: src/qtui/menus.cc:319
+msgid "_Services"
+msgstr "_Palvelut"
+
+#: src/gtkui/menus.cc:205 src/qtui/menus.cc:291
+msgid "_Output"
+msgstr "_Ääni"
+
+#: src/gtkui/menus.cc:206 src/qtui/menus.cc:292
+msgid "_View"
+msgstr "_Näkymä"
+
+#: src/gtkui/menus.cc:211 src/qtui/menus.cc:303
+msgid "_Queue/Unqueue"
+msgstr "_Lisää jonoon/Poista jonosta"
+
+#: src/gtkui/menus.cc:213 src/qtui/menus.cc:306
+msgid "_Open Containing Folder"
+msgstr "_Avaa sisältävä kansio"
+
+#: src/gtkui/menus.cc:214 src/qtui/menus.cc:308
+msgid "_Refresh Selected"
+msgstr "_Päivitä valittu"
+
+#: src/gtkui/menus.cc:216 src/qtui/menus.cc:311
+msgid "Cu_t"
+msgstr "L_eikkaa"
+
+#: src/gtkui/menus.cc:217 src/qtui/menus.cc:312
+msgid "_Copy"
+msgstr "_Kopioi"
+
+#: src/gtkui/menus.cc:218 src/qtui/menus.cc:313
+msgid "_Paste"
+msgstr "_Liitä"
+
+#: src/gtkui/menus.cc:219 src/qtui/menus.cc:314
+msgid "Paste at _End"
+msgstr "Liitä _loppuun"
+
+#: src/gtkui/menus.cc:220 src/qtui/menus.cc:316
+msgid "Select _All"
+msgstr "Valitse _kaikki"
+
+#: src/gtkui/menus.cc:227 src/qtui/playlist_tabs.cc:334
+msgid "_Rename ..."
+msgstr "_Nimeä uudelleen..."
+
+#: src/gtkui/settings.cc:35 src/qtui/settings.cc:59
+msgid "Always"
+msgstr "Aina"
+
+#: src/gtkui/settings.cc:36 src/qtui/settings.cc:60
+msgid "Auto-hide"
+msgstr "Piilota automaattisesti"
+
+#: src/gtkui/settings.cc:37 src/qtui/settings.cc:61
+msgid "Never"
+msgstr "Ei koskaan"
+
+#: src/gtkui/settings.cc:41 src/qtui/settings.cc:64
+msgid "<b>Playlist Tabs</b>"
+msgstr "<b>Soittolistan välilehdet</b>"
+
+#: src/gtkui/settings.cc:42 src/qtui/settings.cc:65
+msgid "Show playlist tabs:"
+msgstr "Näytä soittolistan välilehdet:"
+
+#: src/gtkui/settings.cc:45 src/qtui/settings.cc:69
+msgid "Show entry counts"
+msgstr "Näytä esiintymäkerrat"
+
+#: src/gtkui/settings.cc:47 src/qtui/settings.cc:72
+msgid "Show close buttons"
+msgstr "Näytä sulkemispainikkeet"
+
+#: src/gtkui/settings.cc:49 src/qtui/settings.cc:75
+msgid "<b>Playlist Columns</b>"
+msgstr "<b>Soittolistan sarakkeet</b>"
+
+#: src/gtkui/settings.cc:51 src/qtui/settings.cc:77
+msgid "Show column headers"
+msgstr "Näytä sarakkeiden otsakkeet"
+
+#: src/gtkui/settings.cc:53 src/qtui/settings.cc:82
+msgid "Make column headers clickable for sorting"
+msgstr "Tee sarakeotsikot klikattaviksi lajittelua varten"
+
+#: src/gtkui/settings.cc:56
+msgid "Use symbolic icons in toolbar"
+msgstr "Käytä symbolisia kuvakkeita työkalupalkissa"
+
+#: src/gtkui/settings.cc:58 src/qtui/settings.cc:86
+msgid "Scroll on song change"
+msgstr "Vieritä kappaleen vaihtuessa"
+
+#: src/gtkui/ui_gtk.cc:82
+msgid "GTK Interface"
+msgstr "GTK-käyttöliittymä"
+
+#: src/gtkui/ui_gtk.cc:219 src/skins/main.cc:228 src/skins-qt/main.cc:231
+#, c-format
+msgid "%s - Audacious"
+msgstr "%s - Audacious"
+
+#: src/gtkui/ui_gtk.cc:221 src/qtui/main_window.cc:386
+msgid "Buffering ..."
+msgstr "Puskuroidaan..."
+
+#: src/gtkui/ui_gtk.cc:224 src/pipewire/pipewire.cc:450
+#: src/qtui/main_window.cc:364 src/qtui/main_window.cc:400
+#: src/sdlout/sdlout.cc:110 src/skins/main.cc:230 src/skins-qt/main.cc:233
+msgid "Audacious"
+msgstr "Audacious"
+
+#: src/gtkui/ui_gtk.cc:487 src/gtkui/ui_gtk.cc:518 src/gtkui/ui_gtk.cc:882
+#: src/hotkey/gui.cc:72 src/notify/osd.cc:85 src/qthotkey/gui.cc:67
+#: src/qtui/main_window.cc:155 src/qtui/main_window.cc:348
+#: src/qtui/main_window.cc:349 src/skins/menus.cc:109 src/skins-qt/menus.cc:101
+msgid "Play"
+msgstr "Toista"
+
+#: src/gtkui/ui_gtk.cc:487 src/notify/osd.cc:82 src/qtui/main_window.cc:354
+#: src/qtui/main_window.cc:355 src/skins/menus.cc:110 src/skins-qt/menus.cc:102
+msgid "Pause"
+msgstr "Keskeytä"
+
+#: src/gtkui/ui_gtk.cc:868 src/qtui/main_window.cc:146 src/skins/menus.cc:86
+#: src/skins-qt/menus.cc:77
+msgid "Search Library"
+msgstr "Etsi kirjastosta"
+
+#: src/gtkui/ui_gtk.cc:875 src/qtui/main_window.cc:148
+msgid "Open Files"
+msgstr "Avaa tiedostoja"
+
+#: src/gtkui/ui_gtk.cc:876 src/qtui/main_window.cc:150
+msgid "Add Files"
+msgstr "Lisää tiedostoja"
+
+#: src/gtkui/ui_gtk.cc:881 src/qtui/main_window.cc:153 src/skins/menus.cc:112
+#: src/skins-qt/menus.cc:104
+msgid "Previous"
+msgstr "Edellinen"
+
+#: src/gtkui/ui_gtk.cc:883 src/hotkey/gui.cc:74 src/qthotkey/gui.cc:69
+#: src/qtui/main_window.cc:157 src/skins/menus.cc:111 src/skins-qt/menus.cc:103
+msgid "Stop"
+msgstr "Pysäytä"
+
+#: src/gtkui/ui_gtk.cc:884 src/notify/osd.cc:89 src/qtui/main_window.cc:164
+#: src/skins/menus.cc:113 src/skins-qt/menus.cc:105
+msgid "Next"
+msgstr "Seuraava"
+
+#: src/gtkui/ui_gtk.cc:886 src/qtui/main_window.cc:167 src/qtui/menus.cc:261
+#: src/skins/menus.cc:79 src/skins-qt/menus.cc:69
+msgid "Record Stream"
+msgstr "Tallenna suoratoisto"
+
+#: src/gtkui/ui_gtk.cc:919 src/qtui/main_window.cc:174 src/skins/menus.cc:103
+#: src/skins-qt/menus.cc:95
+msgid "Repeat"
+msgstr "Kertaus"
+
+#: src/gtkui/ui_gtk.cc:922 src/qtui/main_window.cc:177 src/skins/menus.cc:104
+#: src/skins-qt/menus.cc:96
+msgid "Shuffle"
+msgstr "Sekoitus"
+
+#: src/gtkui/ui_gtk.cc:1114 src/qtui/main_window.cc:123
+msgid "Menu"
+msgstr "Valikko"
+
+#: src/gtkui/ui_statusbar.cc:64 src/qtui/status_bar.cc:155
+msgid "mono"
+msgstr "mono"
+
+#: src/gtkui/ui_statusbar.cc:66 src/qtui/status_bar.cc:157
+msgid "stereo"
+msgstr "stereo"
+
+#: src/gtkui/ui_statusbar.cc:68 src/qtui/status_bar.cc:160
+#, c-format
+msgid "%d channel"
+msgid_plural "%d channels"
+msgstr[0] "%d kanava"
+msgstr[1] "%d kanavaa"
+
+#: src/gtkui/ui_statusbar.cc:76 src/qtui/status_bar.cc:168
+#, c-format
+msgid "%d kHz"
+msgstr "%d kHz"
+
+#: src/gtkui/ui_statusbar.cc:82 src/qtui/playlist_model.cc:132
+#: src/qtui/status_bar.cc:174
+#, c-format
+msgid "%d kbit/s"
+msgstr "%d kbit/s"
+
+#: src/gtkui/ui_statusbar.cc:108 src/skins/main.cc:478 src/skins-qt/main.cc:461
+msgid "Single mode."
+msgstr "Yksittäinen -tila."
+
+#: src/gtkui/ui_statusbar.cc:110 src/skins/main.cc:480 src/skins-qt/main.cc:463
+msgid "Playlist mode."
+msgstr "Soittolista -tila."
+
+#: src/gtkui/ui_statusbar.cc:118 src/skins/main.cc:486 src/skins-qt/main.cc:469
+msgid "Stopping after song."
+msgstr "Pysäytä kappaleen jälkeen."
+
+#: src/hotkey/gui.cc:71 src/qthotkey/gui.cc:66
+msgid "Previous track"
+msgstr "Edellinen raita"
+
+#: src/hotkey/gui.cc:73 src/qthotkey/gui.cc:68
+msgid "Pause/Resume"
+msgstr "Keskeytä/Jatka"
+
+#: src/hotkey/gui.cc:75 src/qthotkey/gui.cc:70
+msgid "Next track"
+msgstr "Seuraava raita"
+
+#: src/hotkey/gui.cc:76 src/qthotkey/gui.cc:71
+msgid "Step forward"
+msgstr "Askel eteenpäin"
+
+#: src/hotkey/gui.cc:77 src/qthotkey/gui.cc:72
+msgid "Step backward"
+msgstr "Askel taaksepäin"
+
+#: src/hotkey/gui.cc:78 src/qthotkey/gui.cc:73
+msgid "Mute"
+msgstr "Vaimenna"
+
+#: src/hotkey/gui.cc:79 src/qthotkey/gui.cc:74
+msgid "Volume up"
+msgstr "Nosta äänenvoimakkuutta"
+
+#: src/hotkey/gui.cc:80 src/qthotkey/gui.cc:75
+msgid "Volume down"
+msgstr "Laske äänenvoimakkuutta"
+
+#: src/hotkey/gui.cc:81 src/qthotkey/gui.cc:76
+msgid "Jump to file"
+msgstr "Hyppää tiedostoon"
+
+#: src/hotkey/gui.cc:82 src/qthotkey/gui.cc:77
+msgid "Toggle player window(s)"
+msgstr "Näytä/Piilota soittimen ikkunat"
+
+#: src/hotkey/gui.cc:83 src/qthotkey/gui.cc:78
+msgid "Show On-Screen-Display"
+msgstr "Näytä OSD"
+
+#: src/hotkey/gui.cc:84 src/qthotkey/gui.cc:79
+msgid "Toggle repeat"
+msgstr "Kertaus"
+
+#: src/hotkey/gui.cc:85 src/qthotkey/gui.cc:80
+msgid "Toggle shuffle"
+msgstr "Sekoitus"
+
+#: src/hotkey/gui.cc:86 src/qthotkey/gui.cc:81
+msgid "Toggle stop after current"
+msgstr "Pysäytä nykyisen jälkeen"
+
+#: src/hotkey/gui.cc:87 src/qthotkey/gui.cc:82
+msgid "Raise player window(s)"
+msgstr "Nosta soittimen ikkunat"
+
+#: src/hotkey/gui.cc:98 src/qthotkey/gui.cc:100
+msgid "(none)"
+msgstr "(ei mitään)"
+
+#: src/hotkey/gui.cc:261
+msgid ""
+"It is not recommended to bind the primary mouse buttons without modifiers.\n"
+"\n"
+"Do you want to continue?"
+msgstr ""
+"Ei ole suositeltavaa kytkeä hiiren painalluksia ilman muunnosnäppäimiä.\n"
+"\n"
+"Haluatko jatkaa?"
+
+#: src/hotkey/gui.cc:264
+msgid "Binding mouse buttons"
+msgstr "Kytketään hiiren painalluksia"
+
+#: src/hotkey/gui.cc:434
+msgid ""
+"Press a key combination inside a text field.\n"
+"You can also bind mouse buttons."
+msgstr ""
+"Paina näppäinyhdistelmää tekstikentän sisällä.\n"
+"Voit käyttää myös hiiren nappeja."
+
+#: src/hotkey/gui.cc:444 src/qthotkey/gui.cc:179
+msgid "Hotkeys:"
+msgstr "Pikanäppäimet:"
+
+#: src/hotkey/gui.cc:457 src/qthotkey/gui.cc:181
+msgid "<b>Action:</b>"
+msgstr "<b>Toiminto:</b>"
+
+#: src/hotkey/gui.cc:461 src/qthotkey/gui.cc:182
+msgid "<b>Key Binding:</b>"
+msgstr "<b>Näppäinsidos:</b>"
+
+#: src/hotkey/gui.cc:518 src/qthotkey/gui.cc:184
+msgid "_Add"
+msgstr "_Lisää"
+
+#: src/hotkey/plugin.cc:59 src/qthotkey/plugin.cc:78
+msgid "Global Hotkeys"
+msgstr "Yleiset pikanäppäimet"
+
+#: src/hotkey/plugin.cc:74
+msgid ""
+"Global Hotkey Plugin\n"
+"Control the player with global key combinations or multimedia keys.\n"
+"\n"
+"Copyright (C) 2007-2008 Sascha Hlusiak <contact@saschahlusiak.de>\n"
+"\n"
+"Contributors include:\n"
+"Copyright (C) 2006-2007 Vladimir Paskov <vlado.paskov@gmail.com>\n"
+"Copyright (C) 2000-2002 Ville Syrjälä <syrjala@sci.fi>,\n"
+" Bryn Davies <curious@ihug.com.au>,\n"
+" Jonathan A. Davis <davis@jdhouse.org>,\n"
+" Jeremy Tan <nsx@nsx.homeip.net>"
+msgstr ""
+"Global Hotkey -lisäoasa\n"
+"Ohjaa soitinta globaaleilla näppäinyhdistelmillä tai multimedianäppäimillä.\n"
+"\n"
+"Copyright (C) 2007-2008 Sascha Hlusiak <contact@saschahlusiak.de>\n"
+"\n"
+"Osallistujia ovat muun muassa:\n"
+"Copyright (C) 2006-2007 Vladimir Paskov <vlado.paskov@gmail.com>\n"
+"Copyright (C) 2000-2002 Ville Syrjälä <syrjala@sci.fi>,\n"
+" Bryn Davies <curious@ihug.com.au>,\n"
+" Jonathan A. Davis <davis@jdhouse.org>,\n"
+" Jeremy Tan <nsx@nsx.homeip.net>"
+
+#: src/jack/jack-ng.cc:54
+msgid "JACK Output"
+msgstr "JACK-lähtö"
+
+#: src/jack/jack-ng.cc:126
+msgid "Client name:"
+msgstr "Asiakasohjelman nimi:"
+
+#: src/jack/jack-ng.cc:128
+msgid "Automatically connect to output ports"
+msgstr "Yhdistä automaattisesti ulostuloportteihin"
+
+#: src/jack/jack-ng.cc:130
+msgid "Filter ports (regex, use any port if blank):"
+msgstr "Suodatinportit (regex, käytä mitä tahansa porttia, jos tyhjä):"
+
+#: src/jack/jack-ng.cc:136
+msgid "Connect to physical ports only"
+msgstr "Yhdistä ainoastaan fyysisiin portteihin"
+
+#: src/jack/jack-ng.cc:139
+msgid "Upmix to"
+msgstr "Sekoita"
+
+#: src/jack/jack-ng.cc:141
+msgid "ports if input has fewer channels"
+msgstr "portteja, jos sisääntulossa on vähemmän kanavia"
+
+#: src/jack/jack-ng.cc:143
+msgid "Ignore insufficient number of ports"
+msgstr "Ohita riittämätön määrä portteja"
+
+#: src/jack/jack-ng.cc:181
+msgid "No JACK output ports were found. Please check settings."
+msgstr "JACK-lähtöportteja ei löytynyt. Tarkista asetukset."
+
+#: src/jack/jack-ng.cc:195
+#, c-format
+msgid "Only %d JACK output ports were found but %d are required."
+msgstr "Vain %d JACK-lähtön portteja löytyi, %d mutta käyttää niitä."
+
+#: src/jack/jack-ng.cc:210
+#, c-format
+msgid "Failed to connect to JACK port %s."
+msgstr "Yhteys JACK-porttiin %s epäonnistui."
+
+#: src/jack/jack-ng.cc:230
+msgid ""
+"JACK supports only floating-point audio.  You must change the output bit "
+"depth to floating-point in Audacious settings."
+msgstr ""
+"JACK tukee vain liukulukujen ääntä. Lähtöbitin syvyys on vaihdettava "
+"liukulukuun Audacious-asetuksissa."
+
+#: src/jack/jack-ng.cc:245
+msgid "Failed to connect to the JACK server; is it running?"
+msgstr "Yhteys JACK-palvelimeen epäonnistui. Onhan se käynnissä?"
+
+#: src/jack/jack-ng.cc:321
+#, c-format
+msgid ""
+"The JACK server requires a sample rate of %d Hz, but Audacious is playing at "
+"%d Hz.  Please use the Sample Rate Converter effect to correct the mismatch."
+msgstr ""
+"JACK-palvelin vaatii %d Hz, näytteenottotaajuuden, mutta Audacious käyttää "
+"%d Hz.  Käytä Sample Rate Converter -ohjelmaa korjataksesi ongelman."
+
+#: src/ladspa/plugin.cc:416
+#, c-format
+msgid "%s Settings"
+msgstr "%s-asetukset"
+
+#: src/ladspa/plugin.cc:482
+msgid "Module paths:"
+msgstr "Moduulipolut:"
+
+#: src/ladspa/plugin.cc:487
+msgid ""
+"<small>Separate multiple paths with a colon.\n"
+"These paths are searched in addition to LADSPA_PATH.\n"
+"After adding new paths, press Enter to scan for new plugins.</small>"
+msgstr ""
+"<small>Erota useita polkuja kaksoispisteellä.\n"
+"Näistä poluista etsitään lisäosia, LADSPA-polun lisäksi.\n"
+"Uuden polun lisäämisen jälkeen paina enter ja etsi uusia lisäosia.</small>"
+
+#: src/ladspa/plugin.cc:508
+msgid "Available plugins:"
+msgstr "Saatavilla olevat liitännäiset:"
+
+#: src/ladspa/plugin.cc:521 src/modplug/plugin_main.cc:91
+#: src/modplug/plugin_main.cc:94 src/modplug/plugin_main.cc:97
+#: src/modplug/plugin_main.cc:100
+msgid "Enable"
+msgstr "Käytä"
+
+#: src/ladspa/plugin.cc:527
+msgid "Enabled plugins:"
+msgstr "Aktiiviset liitännäiset:"
+
+#: src/ladspa/plugin.cc:543
+msgid "Settings"
+msgstr "Asetukset"
+
+#: src/ladspa/plugin.cc:560
+msgid ""
+"LADSPA Host for Audacious\n"
+"Copyright 2011 John Lindgren"
+msgstr ""
+"LADSPA Host for Audacious\n"
+"Copyright 2011 John Lindgren"
+
+#: src/ladspa/plugin.h:78
+msgid "LADSPA Host"
+msgstr "Kone LADSPA"
+
+#: src/lirc/lirc.cc:55
+msgid "LIRC Plugin"
+msgstr "LIRC Plugin"
+
+#: src/lirc/lirc.cc:379
+msgid ""
+"A simple plugin to control Audacious using the LIRC remote control daemon\n"
+"\n"
+"Adapted for Audacious by:\n"
+"Tony Vroon <chainsaw@gentoo.org>\n"
+"Joonas Harjumäki <jharjuma@gmail.com>\n"
+"\n"
+"Based on the XMMS LIRC plugin by:\n"
+"Carl van Schaik <carl@leg.uct.ac.za>\n"
+"Christoph Bartelmus <xmms@bartelmus.de>\n"
+"Andrew O. Shadoura <bugzilla@tut.by>\n"
+"\n"
+"For more information about LIRC, see http://lirc.org."
+msgstr ""
+"Lisäosa Audaciouksen ohjaamiseen LIRC:n avulla.\n"
+"\n"
+"Muuntanut Audacioukselle:\n"
+"Tony Vroon <chainsaw@gentoo.org>\n"
+"Joonas Harjumäki <jharjuma@gmail.com>\n"
+"\n"
+"Perustuu XMMS LIRC Plugin, jonka kehittivät:\n"
+"Carl van Schaik <carl@leg.uct.ac.za>\n"
+"Christoph Bartelmus <xmms@bartelmus.de>\n"
+"Andrew O. Shadoura <bugzilla@tut.by>\n"
+"\n"
+"Lisätietoja LIRC:stä http://lirc.org."
+
+#: src/lirc/lirc.cc:390
+msgid "<b>Connection</b>"
+msgstr "<b>Yhteys</b>"
+
+#: src/lirc/lirc.cc:391
+msgid "Reconnect to LIRC server"
+msgstr "Yhdistä uudelleen LIRC-palvelimelle"
+
+#: src/lirc/lirc.cc:393
+msgid "Wait before reconnecting:"
+msgstr "Odota ennen uudelleenyhdistämistä:"
+
+#: src/lyrics-common/chart_lyrics_provider.cc:93
+#: src/lyrics-common/chart_lyrics_provider.cc:150
+#: src/lyrics-common/lrclib_provider.cc:34
+#: src/lyrics-common/lyrics_ovh_provider.cc:35
+#, c-format
+msgid "Unable to fetch %s"
+msgstr "Ei voitu hakea %s"
+
+#: src/lyrics-common/chart_lyrics_provider.cc:100
+#: src/lyrics-common/chart_lyrics_provider.cc:157
+#: src/lyrics-common/lrclib_provider.cc:41
+#: src/lyrics-common/lyrics_ovh_provider.cc:42
+#, c-format
+msgid "Unable to parse %s"
+msgstr "Ei voida jäsentää %s"
+
+#: src/lyrics-common/chart_lyrics_provider.cc:121
+#: src/lyrics-common/chart_lyrics_provider.cc:194
+#: src/lyrics-common/lrclib_provider.cc:70
+#: src/lyrics-common/lyrics_ovh_provider.cc:70
+msgid "Looking for lyrics ..."
+msgstr "Etsitään lyriikoita..."
+
+#: src/lyrics-common/preferences.h:43
+msgid "Nowhere"
+msgstr "Missään"
+
+#: src/lyrics-common/preferences.h:50
+msgid "<small>Artist is truncated at the start, Title -- at the end</small>"
+msgstr "<small>Artisti lyhenteenä alussa, koko nimi -- lopussa</small>"
+
+#: src/lyrics-common/preferences.h:51
+msgid "Chars to truncate on:"
+msgstr "Lyhennettävät sarakkeet:"
+
+#: src/lyrics-common/preferences.h:55
+msgid "<small>Chars are ORed in RegExp, surrounded by whitespace</small>"
+msgstr "<small>Sarakkeet ovat ORed RegExp, jota ympäröi välilyönti</small>"
+
+#: src/lyrics-common/preferences.h:56
+msgid "Chars to split on:"
+msgstr "Sarake jaetaan:"
+
+#: src/lyrics-common/preferences.h:57
+msgid "Further truncate those on chars"
+msgstr "Lyhennä edelleen saraketta"
+
+#: src/lyrics-common/preferences.h:63
+msgid "<b>General</b>"
+msgstr "<b>Yleiset</b>"
+
+#: src/lyrics-common/preferences.h:64
+msgid "Split title into artist and title on chars"
+msgstr "Jaa artistin ja nimikkeen sarake"
+
+#: src/lyrics-common/preferences.h:67
+msgid "<b>Sources</b>"
+msgstr "<b>Lähteet</b>"
+
+#: src/lyrics-common/preferences.h:68
+msgid "Use embedded lyrics (from Lyrics tag)"
+msgstr "Käytä upotettuja sanoituksia (lyrics tagista)"
+
+#: src/lyrics-common/preferences.h:70
+msgid "Fetch lyrics from internet:"
+msgstr "Nouda sanoitukset internetistä:"
+
+#: src/lyrics-common/preferences.h:73
+msgid "Store fetched lyrics in local cache"
+msgstr "Tallenna noudetut sanoitukset paikalliseen välimuistiin"
+
+#: src/lyrics-common/preferences.h:75
+msgid "<b>Local Storage</b>"
+msgstr "<b>Paikallinen tallennustila</b>"
+
+#: src/lyrics-common/preferences.h:76
+msgid "Load lyric files (.lrc) from local storage"
+msgstr "Lataa sanoitukset (.lrc) kiintolevyltä"
+
+#: src/lyrics-common/utils.cc:57 src/ui-common/dialogs-qt.cc:63
+msgid "Error"
+msgstr "Virhe"
+
+#: src/lyrics-common/utils.cc:63
+msgid "Lyrics could not be found."
+msgstr "Sanoituksia ei löytynyt."
+
+#: src/lyrics-common/utils.cc:145
+msgid "Missing title and/or artist."
+msgstr "Puuttuu otsikko tai esittäjä."
+
+#: src/lyrics-gtk/lyrics-gtk.cc:37 src/lyrics-qt/lyrics-qt.cc:50
+msgid "Lyrics"
+msgstr "Sanoitukset"
+
+#: src/lyrics-gtk/lyrics-gtk.cc:190 src/lyrics-qt/lyrics-qt.cc:172
+msgid "Edit Lyrics ..."
+msgstr "Muokkaa sanoituksia..."
+
+#: src/lyrics-gtk/lyrics-gtk.cc:196 src/lyrics-qt/lyrics-qt.cc:179
+msgid "Save Locally"
+msgstr "Tallenna paikallisesti"
+
+#: src/lyrics-gtk/lyrics-gtk.cc:202 src/lyrics-qt/lyrics-qt.cc:187
+msgid "Refresh"
+msgstr "Päivitä"
+
+#: src/m3u/m3u.cc:33
+msgid "M3U Playlists"
+msgstr "M3U-soittolista"
+
+#: src/metronom/metronom.cc:44
+msgid "Tact Generator"
+msgstr "Tahtigeneraattori"
+
+#: src/metronom/metronom.cc:145
+#, c-format
+msgid "Tact generator: %d bpm"
+msgstr "Tahtigeneraattori: %d bpm"
+
+#: src/metronom/metronom.cc:147
+#, c-format
+msgid "Tact generator: %d bpm %d/%d"
+msgstr "Tahtigeneraattori: %d bpm %d/%d"
+
+#: src/metronom/metronom.cc:235
+msgid ""
+"A Tact Generator by Martin Strauss <mys@faveve.uni-stuttgart.de>\n"
+"\n"
+"To use it, add a URL: tact://beats*num/den\n"
+"e.g. tact://77 to play 77 beats per minute\n"
+"or tact://60*3/4 to play 60 bpm in 3/4 tacts"
+msgstr ""
+"Tahtigeneraattori, luonut Martin Strauss <mys@faveve.uni-stuttgart.de>\n"
+"\n"
+"Käyttääksesi sitä, lisää URL: tact://beats*num/den\n"
+"esim. tact://77 soittaaksesi 77 iskua minuutissa.\n"
+"Tai tact://60*3/4 soittaaksesi 60 iskua minuutissa tahdilla 3/4"
+
+#: src/mixer/mixer.cc:43
+msgid "Channel Mixer"
+msgstr "Kanavamikseri"
+
+#: src/mixer/mixer.cc:255
+msgid ""
+"Channel Mixer Plugin for Audacious\n"
+"Copyright 2011-2012 John Lindgren and Michał Lipski"
+msgstr ""
+"Channel Mixer Plugin for Audacious\n"
+"Copyright 2011-2012 John Lindgren and Michał Lipski"
+
+#: src/mixer/mixer.cc:259
+msgid "<b>Channel Mixer</b>"
+msgstr "<b>Kanavamikseri</b>"
+
+#: src/mixer/mixer.cc:260
+msgid "Output channels:"
+msgstr "Kanavat:"
+
+#: src/mms/mms.cc:35
+msgid "MMS Plugin"
+msgstr "MMS Plugin"
+
+#: src/mms/mms.cc:82
+msgid "Error connecting to MMS server"
+msgstr "Virhe MMS-palvelimeen yhdistäessä"
+
+#: src/modplug/modplugbmp.h:57
+msgid "ModPlug (Module Player)"
+msgstr "ModPlug (Module Player)"
+
+#: src/modplug/plugin_main.cc:55
+msgid "<b>Channels</b>"
+msgstr "<b>Kanavat</b>"
+
+#: src/modplug/plugin_main.cc:59
+msgid "Nearest (fastest)"
+msgstr "Nearest (nopein)"
+
+#: src/modplug/plugin_main.cc:60
+msgid "Linear (fast)"
+msgstr "Linear (nopea)"
+
+#: src/modplug/plugin_main.cc:61
+msgid "Spline (good)"
+msgstr "Spline (hyvä)"
+
+#: src/modplug/plugin_main.cc:62
+msgid "Polyphase (best)"
+msgstr "Polyphase (paras)"
+
+#: src/modplug/plugin_main.cc:63
+msgid "<b>Sample rate</b>"
+msgstr "<b>Näytteenottotaajuus</b>"
+
+#: src/modplug/plugin_main.cc:64
+msgid "22 kHz"
+msgstr "22 kHz"
+
+#: src/modplug/plugin_main.cc:65
+msgid "44 kHz"
+msgstr "44 kHz"
+
+#: src/modplug/plugin_main.cc:66
+msgid "48 kHz"
+msgstr "48 kHz"
+
+#: src/modplug/plugin_main.cc:67
+msgid "96 kHz"
+msgstr "96 kHz"
+
+#: src/modplug/plugin_main.cc:71 src/modplug/plugin_main.cc:76
+#: src/modplug/plugin_main.cc:81
+msgid "Level:"
+msgstr "Taso:"
+
+#: src/modplug/plugin_main.cc:77
+msgid "Cutoff:"
+msgstr "Alaraja:"
+
+#: src/modplug/plugin_main.cc:90
+msgid "<b>Reverb</b>"
+msgstr "<b>Reverb</b>"
+
+#: src/modplug/plugin_main.cc:93
+msgid "<b>Bass Boost</b>"
+msgstr "<b>Bass Boost</b>"
+
+#: src/modplug/plugin_main.cc:96
+msgid "<b>Surround</b>"
+msgstr "<b>Surround</b>"
+
+#: src/modplug/plugin_main.cc:99
+msgid "<b>Preamp</b>"
+msgstr "<b>Preamp</b>"
+
+#: src/modplug/plugin_main.cc:106
+msgid "Oversample"
+msgstr "Ylinäytteistä"
+
+#: src/modplug/plugin_main.cc:107
+msgid "Noise reduction"
+msgstr "Kohinan vähennys"
+
+#: src/modplug/plugin_main.cc:108
+msgid "Play Amiga MODs"
+msgstr "Toista Amigan MOD-tiedostoja"
+
+#: src/modplug/plugin_main.cc:109
+msgid "<b>Repeat</b>"
+msgstr "<b>Kertaus</b>"
+
+#: src/modplug/plugin_main.cc:110
+msgid "Repeat count:"
+msgstr "Kertojen määrä:"
+
+#: src/modplug/plugin_main.cc:111
+msgid "To repeat forever, set the repeat count to -1."
+msgstr "Jos haluat kerrata ikuisesti, aseta kertojen määräksi -1."
+
+#: src/modplug/plugin_main.cc:124 src/sid/xs_config.cc:106
+msgid "These settings will take effect when Audacious is restarted."
+msgstr "Nämä asetukset tulevat voimaan, kun Audacious käynnistetään uudelleen."
+
+#: src/mpg123/mpg123.cc:54
+msgid "MPG123 Plugin"
+msgstr "MPG123 Plugin"
+
+#: src/mpg123/mpg123.cc:82
+msgid "Use accurate length calculation (slow)"
+msgstr "Käytä tarkkaa keston laskentaa (hidas)"
+
+#: src/mpg123/mpg123.cc:260
+msgid "Surround"
+msgstr "Surround"
+
+#: src/mpris2/plugin.cc:43
+msgid "MPRIS 2 Server"
+msgstr "MPRIS 2 -palvelin"
+
+#: src/mpris2/plugin.cc:362
+msgid ""
+"MPRIS Plugin for Audacious\n"
+"Copyright 2011-2012 John Lindgren\n"
+"\n"
+"This plugin implements the MPRIS D-Bus interface. It provides a mechanism "
+"for querying track information and basic playback control. Necessary for "
+"media controls in desktop environments, Bluetooth headsets and tools like "
+"\"playerctl\"."
+msgstr ""
+"MPRIS Plugin for Audacious\n"
+"Copyright 2011-2012 John Lindgren\n"
+"\n"
+"Tämä lisäosa toteuttaa MPRIS D-Bus -rajapinnan. Se tarjoaa kappaletietojen "
+"kyselyyn ja toiston ohjaukseen. Välttämätön työpöydän mediaohjaimille, "
+"Bluetooth-kuulokkeissa ja työkaluissa, kuten \"playerctl\"."
+
+#: src/neon/neon.cc:102
+msgid "Neon HTTP/HTTPS Plugin"
+msgstr "Neon HTTP/HTTPS Plugin"
+
+#: src/neon/neon.cc:526
+msgid "Error parsing redirect"
+msgstr "Virhe uudelleenohjauksen valmistelussa"
+
+#: src/neon/neon.cc:540
+msgid "Unknown HTTP error"
+msgstr "Tuntematon HTTP-virhe"
+
+#: src/neon/neon.cc:614
+msgid "Error parsing URL"
+msgstr "Virhe luettaessa URL"
+
+#: src/neon/neon.cc:687
+msgid "Too many redirects"
+msgstr "Liian monta uudelleenohjausta"
+
+#: src/notify/event.cc:97
+msgid "Stopped"
+msgstr "Pysäytetty"
+
+#: src/notify/event.cc:97
+msgid "Audacious is not playing."
+msgstr "Audacious ei tällä hetkellä soita mitään."
+
+#: src/notify/notify.cc:39
+msgid "Desktop Notifications"
+msgstr "Työpöytäilmoitukset"
+
+#: src/notify/notify.cc:57
+msgid ""
+"Desktop Notifications Plugin for Audacious\n"
+"Copyright (C) 2010 Maximilian Bogner\n"
+"Copyright (C) 2011-2013 John Lindgren and Jean-Alexandre Anglès d'Auriac\n"
+"\n"
+"This plugin is free software: you can redistribute it and/or modify it under "
+"the terms of the GNU General Public License as published by the Free "
+"Software Foundation, either version 3 of the License, or (at your option) "
+"any later version.\n"
+"\n"
+"This plugin is distributed in the hope that it will be useful, but WITHOUT "
+"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
+"FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for "
+"more details.\n"
+"\n"
+"You should have received a copy of the GNU General Public License along with "
+"this program.  If not, see <http://www.gnu.org/licenses/>."
+msgstr ""
+"Desktop Notifications Plugin for Audacious\n"
+"Copyright (C) 2010 Maximilian Bogner\n"
+"Copyright (C) 2011-2013 John Lindgren and Jean-Alexandre Anglès d'Auriac\n"
+"\n"
+"Tämä lisäosa on ilmainen ohjelma: voit jakaa sen uudelleen ja/tai muokata "
+"sitä Free Software Foundation julkaiseman GNU General Public License "
+"-ehtojen mukaisesti, joko lisenssin version 3 tai (valinnan mukaan) minkä "
+"tahansa myöhemmän version.\n"
+"\n"
+"Tämä lisäosa jaetaan siinä toivossa, että siitä on hyötyä, mutta ILMAN "
+"MITÄÄN TAKUUTA; ilman edes oletettua takuuta MYYNTIKELPOISUUDESTA tai "
+"SOVELTUVUUDESTA TIETTYYN TARKOITUKSEEN. Katso lisätietoja GNU General Public "
+"License.\n"
+"\n"
+"Sinun olisi pitänyt saada kopio lisenssistä GNU General Public License tämän "
+"ohjelman mukana. Jos ei, katso <http://www.gnu.org/licenses/>."
+
+#: src/notify/notify.cc:104
+msgid "Show playback controls"
+msgstr "Näytä toiston kontrollit"
+
+#: src/notify/notify.cc:106
+msgid "Always show notification"
+msgstr "Näytä ilmoitukset aina"
+
+#: src/notify/notify.cc:108
+msgid "Include album name in notification"
+msgstr "Levyn nimi lisätään ilmoitukseen"
+
+#: src/notify/notify.cc:110
+msgid "Custom notification duration:"
+msgstr "Mukautettu ilmoituksen kesto:"
+
+#: src/notify/osd.cc:74
+msgid "Show"
+msgstr "Näytä"
+
+#: src/openmpt/mpt.cc:52
+msgid "OpenMPT (Module Player)"
+msgstr "OpenMPT (moduulisoitin)"
+
+#: src/openmpt/mpt.cc:136
+msgid ""
+"Module player based on libopenmpt\n"
+"\n"
+"Written by: Chris Spiegel <cspiegel@gmail.com>"
+msgstr ""
+"Moduuli soitin perustuen libopenmpt\n"
+"\n"
+"Kirjoittanut: Chris Spiegel <cspiegel@gmail.com>"
+
+#: src/openmpt/mpt.cc:155
+msgid "Stereo separation:"
+msgstr "Stereoerottelu:"
+
+#: src/openmpt/mpt.cc:157
+msgid "% (0=mono, 100=default, 200=full)"
+msgstr "% (0=mono, 100=oletus, 200=täysi)"
+
+#: src/openmpt/mpt.cc:160
+msgid "Interpolation:"
+msgstr "Interpolointi:"
+
+#: src/openmpt/mptwrap.h:51 src/soxr/sox-resampler.cc:189 src/xsf/plugin.cc:437
+msgid "Linear"
+msgstr "Lineaarinen"
+
+#: src/openmpt/mptwrap.h:52
+msgid "Cubic"
+msgstr "Kuutio"
+
+#: src/openmpt/mptwrap.h:53
+msgid "Windowed sinc"
+msgstr "Ikkunoitu sinc"
+
+#: src/opus/opus.cc:39
+msgid "Opus Decoder"
+msgstr "Opus-dekooderi"
+
+#: src/opus/opus.cc:371
+msgid ""
+"Opus Decoder Plugin for Audacious\n"
+"Copyright 2022 Thomas Lange"
+msgstr ""
+"Opus Decoder lisäosa Audaciousille\n"
+"Copyright 2022 Thomas Lange"
+
+#: src/oss4/oss.h:70
+msgid "OSS4 Output"
+msgstr "OSS4-lähtö"
+
+#: src/oss4/oss.h:72
+msgid "OSS3 Output"
+msgstr "OSS3-lähtö"
+
+#: src/oss4/plugin.cc:35
+msgid "Default device"
+msgstr "Oletuslaite"
+
+#: src/oss4/plugin.cc:78
+msgid "Audio device:"
+msgstr "Äänilaite:"
+
+#: src/oss4/plugin.cc:81
+msgid "Use alternate device:"
+msgstr "Käytä vaihtoehtoista laitetta:"
+
+#: src/oss4/plugin.cc:85
+msgid "Save volume between sessions."
+msgstr "Tallenna äänenvoimakkuus eri sessioiden välillä."
+
+#: src/oss4/plugin.cc:87
+msgid "Enable format conversions made by the OSS software."
+msgstr "Käytä OSS:n luomia formaatin muutoksia."
+
+#: src/oss4/plugin.cc:89
+msgid "Enable exclusive mode to prevent virtual mixing."
+msgstr "Kytke eksklusiivinen tila päälle virtuaalisen miksauksen estämiseksi."
+
+#: src/oss4/plugin.cc:101
+msgid ""
+"OSS4 Output Plugin for Audacious\n"
+"Copyright 2010-2012 Michał Lipski\n"
+"\n"
+"I would like to thank people on #audacious, especially Tony Vroon and John "
+"Lindgren and of course the authors of the previous OSS plugin."
+msgstr ""
+"OSS4 Output Plugin for Audacious\n"
+"Copyright 2010-2012 Michał Lipski\n"
+"\n"
+"Haluaisin kiittää ihmisiä kanavalla #audacious, erityisesti Tony Vroonia "
+"sekä John Lindgreniä. Kiitokset myös edellisen OSS-lisäosan kehittäjille."
+
+#: src/pipewire/pipewire.cc:59
+msgid "PipeWire Output"
+msgstr "PipeWire ulostulo"
+
+#: src/pipewire/pipewire.cc:132
+msgid ""
+"PipeWire Output Plugin for Audacious\n"
+"Copyright 2022 Thomas Lange\n"
+"\n"
+"Based on the PipeWire Output Plugin for Qmmp\n"
+"Copyright 2021 Ilya Kotov"
+msgstr ""
+"PipeWire Output Plugin for Audacious\n"
+"Copyright 2022 Thomas Lange\n"
+"\n"
+"Based on the PipeWire Output Plugin for Qmmp\n"
+"Copyright 2021 Ilya Kotov"
+
+#: src/pipewire/pipewire.cc:456 src/sdlout/sdlout.cc:112 src/skins/menus.cc:88
+#: src/skins-qt/menus.cc:79
+msgid "Playback"
+msgstr "Toisto"
+
+#: src/playback-history-qt/playback-history.cc:52
+msgid ""
+"Playback History Plugin\n"
+"\n"
+"Copyright 2023-2024 Igor Kushnir <igorkuo@gmail.com>\n"
+"\n"
+"This plugin tracks and provides access to playback history.\n"
+"\n"
+"History entries are stored only in memory and are lost\n"
+"on Audacious exit. When the plugin is disabled,\n"
+"playback history is not tracked at all.\n"
+"History entries are only added, never removed automatically.\n"
+"The user can remove selected entries by pressing the Delete key.\n"
+"Restart Audacious or disable the plugin by closing\n"
+"Playback History view to clear the entries.\n"
+"\n"
+"Two history item granularities (modes) are supported.\n"
+"The user can select a mode in the plugin's settings.\n"
+"The Song mode is the default. Each played song is stored\n"
+"in history. Song titles are displayed in the list.\n"
+"When the Album mode is selected and multiple songs from\n"
+"a single album are played in a row, a single album entry\n"
+"is stored in history. Album names are displayed in the list."
+msgstr ""
+"Playback History Plugin\n"
+"\n"
+"Copyright 2023-2024 Igor Kushnir <igorkuo@gmail.com>\n"
+"\n"
+"This plugin tracks and provides access to playback history.\n"
+"\n"
+"History entries are stored only in memory and are lost\n"
+"on Audacious exit. When the plugin is disabled,\n"
+"playback history is not tracked at all.\n"
+"History entries are only added, never removed automatically.\n"
+"The user can remove selected entries by pressing the Delete key.\n"
+"Restart Audacious or disable the plugin by closing\n"
+"Playback History view to clear the entries.\n"
+"\n"
+"Two history item granularities (modes) are supported.\n"
+"The user can select a mode in the plugin's settings.\n"
+"The Song mode is the default. Each played song is stored\n"
+"in history. Song titles are displayed in the list.\n"
+"When the Album mode is selected and multiple songs from\n"
+"a single album are played in a row, a single album entry\n"
+"is stored in history. Album names are displayed in the list."
+
+#: src/playback-history-qt/playback-history.cc:77
+msgid "Playback History"
+msgstr "Soittohistoria"
+
+#: src/playback-history-qt/playback-history.cc:528
+#, c-format
+msgid "<b>%s:</b> %s<br><b>Playlist:</b> %s<br><b>Entry Number:</b> %d"
+msgstr "<b>%s:</b> %s<br><b>Soittolista:</b> %s<br><b>Nro:</b> %d"
+
+#: src/playback-history-qt/playback-history.cc:834
+msgid "<b>History Item Granularity</b>"
+msgstr "<b>Historian tarkkuus</b>"
+
+#: src/playback-history-qt/playback-history.cc:835
+msgid "Song"
+msgstr "Kappale"
+
+#: src/playlist-manager/playlist-manager.cc:38
+#: src/playlist-manager-qt/playlist-manager-qt.cc:42
+msgid "Playlist Manager"
+msgstr "Soittolistan hallinta"
+
+#: src/playlist-manager/playlist-manager.cc:201
+#: src/playlist-manager-qt/playlist-manager-qt.cc:190
+msgid "Entries"
+msgstr "Nimikkeitä"
+
+#: src/playlist-manager/playlist-manager.cc:221
+#: src/playlist-manager-qt/playlist-manager-qt.cc:356
+msgid "_Remove"
+msgstr "_Poista"
+
+#: src/playlist-manager/playlist-manager.cc:222
+#: src/playlist-manager-qt/playlist-manager-qt.cc:351
+msgid "Ren_ame"
+msgstr "_Nimeä uudelleen"
+
+#: src/pls/pls.cc:35
+msgid "PLS Playlists"
+msgstr "PLS-soittolista"
+
+#: src/psf/plugin.cc:53
+msgid "OpenPSF PSF1/PSF2 Decoder"
+msgstr "OpenPSF PSF1/PSF2 -dekooderi"
+
+#: src/psf/plugin.cc:270
+msgid "<b>OpenPSF Configuration</b>"
+msgstr "<b>OpenPSF-asetukset</b>"
+
+#: src/psf/plugin.cc:271 src/xsf/plugin.cc:444
+msgid "Ignore length from file"
+msgstr "Älä huomioi tiedoston ilmoittamaa kestoa"
+
+#: src/pulse/pulse_audio.cc:42
+msgid "PulseAudio Output"
+msgstr "PulseAudio-lähtö"
+
+#: src/pulse/pulse_audio.cc:72
+msgid "Context name:"
+msgstr "Sisällön nimi:"
+
+#: src/pulse/pulse_audio.cc:74
+msgid "Stream name:"
+msgstr "Suoratoiston nimi:"
+
+#: src/pulse/pulse_audio.cc:584
+msgid ""
+"Audacious PulseAudio Output Plugin\n"
+"\n"
+"This program is free software; you can redistribute it and/or modify it "
+"under the terms of the GNU General Public License as published by the Free "
+"Software Foundation; either version 2 of the License, or (at your option) "
+"any later version.\n"
+"\n"
+"This program is distributed in the hope that it will be useful, but WITHOUT "
+"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
+"FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for "
+"more details.\n"
+"\n"
+"You should have received a copy of the GNU General Public License along with "
+"this program; if not, write to the Free Software Foundation, Inc., 51 "
+"Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA."
+msgstr ""
+"Audaciouksen PulseAudio-lähdön lisäosa\n"
+"\n"
+"Tämä on ilmainen ohjelmisto; voit jakaa sitä edelleen ja/tai muokata\n"
+"GNU General Public License ehtojen mukaisesti, sellaisina kuin\n"
+"Free Software Foundation on ne määrittänyt, joko lisenssin versio 2 tai\n"
+"(sinun valintasi mukaan) minkä tahansa uudempi versio.\n"
+"\n"
+"Tämä ohjelma jaetaan siinä toivossa, että se on hyödyllinen,\n"
+"mutta ILMAN MITÄÄN TAKUUTA; ilman edes oletettua takuuta\n"
+"MYYNTIKELPOISUUTTA tai SOPIVUUTTA TIETTYYN TARKOITUKSEEN.\n"
+"Katso GNU General Public License -ehdot saadaksesi lisätietoja.\n"
+"\n"
+"Sinun olisi pitänyt saada kopio GNU General Public License -tiedostosta\n"
+"tämän ohjelman mukana; Jos et saanut, kirjoita kirje Free Software\n"
+"Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301,\n"
+"USA."
+
+#: src/qtaudio/qtaudio.cc:53
+msgid "QtMultimedia Output"
+msgstr "QtMultimedia-lähtö"
+
+#: src/qtaudio/qtaudio.cc:84
+msgid ""
+"QtMultimedia Audio Output Plugin for Audacious\n"
+"Copyright 2014 William Pitcock\n"
+"\n"
+"Based on SDL Output Plugin for Audacious\n"
+"Copyright 2010 John Lindgren"
+msgstr ""
+"QtMultimedia Audio Output Plugin Audaciousille\n"
+"Copyright 2014 William Pitcock\n"
+"\n"
+"Perustuu SDL Output -lisäosaan Audaciousille\n"
+"Copyright 2010 John Lindgren"
+
+#: src/qtglspectrum/gl-spectrum.cc:41
+msgid ""
+"OpenGL Spectrum Analyzer for Audacious\n"
+"Copyright 2013 Christophe Budé, John Lindgren, and Carlo Bramini\n"
+"Copyright 2014, 2020 Ariadne Conill\n"
+"\n"
+"Based on the XMMS plugin:\n"
+"Copyright 1998-2000 Peter Alm, Mikael Alm, Olle Hallnas, Thomas Nilsson, and "
+"4Front Technologies\n"
+"\n"
+"License: GPLv2+"
+msgstr ""
+"OpenGL Spectrum Analyzer Audacious\n"
+"Copyright 2013 Christophe Budé, John Lindgren ja Carlo Bramini\n"
+"Copyright 2014, 2020 Ariadne Conill\n"
+"\n"
+"Perustuu XMMS lisäosaan:\n"
+"Copyright 1998-2000 Peter Alm, Mikael Alm, Olle Hallnas, Thomas Nilsson ja "
+"4Front Technologies\n"
+"\n"
+"Lisenssi: GPLv2+"
+
+#: src/qthotkey/gui.cc:177
+msgid "Press a key combination inside a text field."
+msgstr "Paina näppäinyhdistelmää tekstikentän sisällä."
+
+#: src/qthotkey/plugin.cc:105
+msgid ""
+"Global Hotkey Plugin\n"
+"Control the player with global key combinations or multimedia keys.\n"
+"\n"
+"Copyright (C) 2020 i.Dark_Templar <darktemplar@dark-templar-archives.net>\n"
+"Copyright (C) 2007-2008 Sascha Hlusiak <contact@saschahlusiak.de>\n"
+"\n"
+"Contributors include:\n"
+"Copyright (C) 2006-2007 Vladimir Paskov <vlado.paskov@gmail.com>\n"
+"Copyright (C) 2000-2002 Ville Syrjälä <syrjala@sci.fi>,\n"
+" Bryn Davies <curious@ihug.com.au>,\n"
+" Jonathan A. Davis <davis@jdhouse.org>,\n"
+" Jeremy Tan <nsx@nsx.homeip.net>"
+msgstr ""
+"Global Hotkey Plugin\n"
+"Ohjaa soitinta pikanäppäimillä tai multimedia näppäimistä.\n"
+"\n"
+"Copyright (C) 2020 i.Dark_Templar <darktemplar@dark-templar-archives.net>\n"
+"Copyright (C) 2007-2008 Sascha Hlusiak <contact@saschahlusiak.de>\n"
+"\n"
+"Avustajat:\n"
+"Copyright (C) 2006-2007 Vladimir Paskov <vlado.paskov@gmail.com>\n"
+"Copyright (C) 2000-2002 Ville Syrjälä <syrjala@sci.fi>,\n"
+" Bryn Davies <curious@ihug.com.au>,\n"
+" Jonathan A. Davis <davis@jdhouse.org>,\n"
+" Jeremy Tan <nsx@nsx.homeip.net>"
+
+#: src/qtui/main_window.cc:160 src/qtui/main_window.cc:161
+#: src/skins/menus.cc:107 src/skins-qt/menus.cc:99
+msgid "Stop After This Song"
+msgstr "Lopeta kappaleen jälkeen"
+
+#: src/qtui/menus.cc:113
+msgid "_Open Folder ..."
+msgstr "_Avaa kansio..."
+
+#: src/qtui/menus.cc:119
+msgid "_Add Folder ..."
+msgstr "_Lisää kansio..."
+
+#: src/qtui/menus.cc:132
+msgid "_Log Inspector ..."
+msgstr "_Lokin tarkastaja ..."
+
+#: src/qtui/menus.cc:169
+msgid "Playback Histor_y ..."
+msgstr "Soitto_historia ..."
+
+#: src/qtui/menus.cc:227
+msgid "_Find ..."
+msgstr "_Etsi..."
+
+#: src/qtui/menus.cc:263 src/skins/menus.cc:80 src/skins-qt/menus.cc:70
+msgid "Audio Settings ..."
+msgstr "Ääniasetukset..."
+
+#: src/qtui/playlist_header.cc:232
+msgid "Now Playing"
+msgstr "Soi nyt"
+
+#: src/qtui/playlist_header.cc:258
+msgid "Reset to Defaults"
+msgstr "Palauta oletusarvoihin"
+
+#: src/qtui/playlist_model.cc:190
+msgid "Q#"
+msgstr "Q#"
+
+#: src/qtui/playlist_model.cc:192
+msgid "T#"
+msgstr "T#"
+
+#: src/qtui/playlist_model.cc:194
+msgid "C#"
+msgstr "C#"
+
+#: src/qtui/playlist_model.cc:196
+msgid "D#"
+msgstr "L#"
+
+#: src/qtui/qtui.cc:40
+msgid "Qt Interface"
+msgstr "Qt-käyttöliittymä"
+
+#: src/qtui/search_bar.cc:46
+msgid "Search playlist"
+msgstr "Etsi soittolista"
+
+#: src/qtui/settings.cc:79
+msgid "Use bold font for column headers"
+msgstr "Käytä lihavoitua fonttia sarakkeiden otsakkeille"
+
+#: src/resample/resample.cc:43
+msgid "Sample Rate Converter"
+msgstr "Sample Rate -muunnin"
+
+#: src/resample/resample.cc:183
+msgid ""
+"Sample Rate Converter Plugin for Audacious\n"
+"Copyright 2010-2012 John Lindgren"
+msgstr ""
+"Sample Rate Converter Plugin for Audacious\n"
+"Copyright 2010-2012 John Lindgren"
+
+#: src/resample/resample.cc:187
+msgid "Skip/repeat samples"
+msgstr "Sivuuta/kertaa näytteet"
+
+#: src/resample/resample.cc:188
+msgid "Linear interpolation"
+msgstr "Lineaarinen interpolaatio"
+
+#: src/resample/resample.cc:189
+msgid "Fast sinc interpolation"
+msgstr "Nopea sinc-interpolaatio"
+
+#: src/resample/resample.cc:190
+msgid "Medium sinc interpolation"
+msgstr "Kohtalainen sinc-interpolaatio"
+
+#: src/resample/resample.cc:191
+msgid "Best sinc interpolation"
+msgstr "Paras sinc-interpolaatio"
+
+#: src/resample/resample.cc:195
+msgid "<b>Conversion</b>"
+msgstr "<b>Muunnos</b>"
+
+#: src/resample/resample.cc:196
+msgid "Method:"
+msgstr "Metodi:"
+
+#: src/resample/resample.cc:199 src/soxr/sox-resampler.cc:203
+msgid "Rate:"
+msgstr "Näytteenottotaajuus:"
+
+#: src/resample/resample.cc:202
+msgid "<b>Rate Mappings</b>"
+msgstr "<b>Kartoitus</b>"
+
+#: src/resample/resample.cc:203
+msgid "Use rate mappings"
+msgstr "Käytä kartoituksia"
+
+#: src/resample/resample.cc:205
+msgid "8 kHz:"
+msgstr "8 kHz:"
+
+#: src/resample/resample.cc:209
+msgid "16 kHz:"
+msgstr "16 kHz:"
+
+#: src/resample/resample.cc:213
+msgid "22.05 kHz:"
+msgstr "22.05 kHz:"
+
+#: src/resample/resample.cc:217
+msgid "32.0 kHz:"
+msgstr "32.0 kHz:"
+
+#: src/resample/resample.cc:221
+msgid "44.1 kHz:"
+msgstr "44.1 kHz:"
+
+#: src/resample/resample.cc:225
+msgid "48 kHz:"
+msgstr "48 kHz:"
+
+#: src/resample/resample.cc:229
+msgid "88.2 kHz:"
+msgstr "88.2 kHz:"
+
+#: src/resample/resample.cc:233
+msgid "96 kHz:"
+msgstr "96 kHz:"
+
+#: src/resample/resample.cc:237
+msgid "176.4 kHz:"
+msgstr "176.4 kHz:"
+
+#: src/resample/resample.cc:241
+msgid "192 kHz:"
+msgstr "192 kHz:"
+
+#: src/scrobbler2/config_window.cc:29
+msgid "Checking Last.fm access ..."
+msgstr "Tarkistetaan Last.fm-käyttöoikeutta..."
+
+#: src/scrobbler2/config_window.cc:35
+msgid ""
+"Your scrobbles are being saved on your computer temporarily.  They will be "
+"submitted as soon as Audacious is allowed access."
+msgstr ""
+"Scrobblet tallennetaan tietokoneellesi väliaikaisesti. Siirretään heti, kun "
+"Audacious saa pääsyn."
+
+#: src/scrobbler2/config_window.cc:41
+#, c-format
+msgid "Permission granted.  Scrobbling for user %s."
+msgstr "Lupa myönnetty. Scrobbling käyttäjälle %s."
+
+#: src/scrobbler2/config_window.cc:44
+msgid ""
+"Permission denied.  Open the following URL in a browser, allow Audacious "
+"access to your account, and then click 'Check Permission' again:"
+msgstr ""
+"Lupa evätty. Avaa seuraava verkko-osoite selaimessa, salli Audacious-tilin "
+"käyttö ja valitse sitten 'Tarkista käyttöoikeus' uudelleen:"
+
+#: src/scrobbler2/config_window.cc:53
+msgid "There was a problem contacting Last.fm."
+msgstr "Ongelma Last.fm:ään yhdistäessä."
+
+#: src/scrobbler2/config_window.cc:92
+msgid "Check Permission"
+msgstr "Tarkista oikeus"
+
+#: src/scrobbler2/config_window.cc:93
+msgid "Revoke Permission"
+msgstr "Hylkää oikeus"
+
+#: src/scrobbler2/config_window.cc:97
+msgid "You need to allow Audacious to scrobble tracks to your Last.fm account."
+msgstr ""
+"Sinun täytyy antaa Audaciouksen päivittää kappaleet Last.fm -tilillesi."
+
+#: src/scrobbler2/scrobbler.cc:29
+msgid "Scrobbler 2.0"
+msgstr "Scrobbler 2.0"
+
+#: src/scrobbler2/scrobbler.cc:200
+msgid ""
+"The Scrobbler plugin could not be started.\n"
+"There might be a problem with your installation."
+msgstr ""
+"Scrobbler -liitännäistä ei voitu käynnistää.\n"
+"Asennuksessasi saattaa olla jotain vikaa."
+
+#: src/scrobbler2/scrobbler.cc:245
+msgid ""
+"Audacious Scrobbler Plugin 2.0 by Pitxyoki,\n"
+"\n"
+"Copyright © 2012-2013 Luís M. Picciochi Oliveira <Pitxyoki@Gmail.com>\n"
+"\n"
+"Thanks to John Lindgren for giving me a hand at the beginning of this "
+"project."
+msgstr ""
+"Audacious Scrobbler Plugin 2.0 by Pitxyoki,\n"
+"\n"
+"Copyright © 2012-2013 Luís M. Picciochi Oliveira <Pitxyoki@Gmail.com>\n"
+"\n"
+"Kiitos John Lindgrenille, että hän anusti minua tämän projektin alussa."
+
+#: src/sdlout/sdlout.cc:46
+msgid "SDL Output"
+msgstr "SDL-lähtö"
+
+#: src/sdlout/sdlout.cc:75
+msgid ""
+"SDL Output Plugin for Audacious\n"
+"Copyright 2010 John Lindgren"
+msgstr ""
+"SDL Output Plugin for Audacious\n"
+"Copyright 2010 John Lindgren"
+
+#: src/search-tool/library.cc:35 src/search-tool/library.cc:46
+#: src/search-tool-qt/library.cc:35 src/search-tool-qt/library.cc:46
+msgid "Library"
+msgstr "Kirjasto"
+
+#: src/search-tool-qt/search-model.cc:44 src/search-tool/search-tool.cc:287
+#, c-format
+msgid "%d song"
+msgid_plural "%d songs"
+msgstr[0] "%d kappale"
+msgstr[1] "%d kappaletta"
+
+#: src/search-tool-qt/search-model.cc:53 src/search-tool/search-tool.cc:294
+msgid "of this genre"
+msgstr "tämän tyylilajin"
+
+#: src/search-tool-qt/search-model.h:47 src/search-tool/search-model.h:45
+msgid "on"
+msgstr "on"
+
+#: src/search-tool-qt/search-model.h:47 src/search-tool/search-model.h:45
+msgid "by"
+msgstr "kautta"
+
+#: src/search-tool-qt/search-tool-qt.cc:165 src/search-tool/search-tool.cc:74
+msgid "Number of results to show:"
+msgstr "Näytettävien tulosten määrä:"
+
+#: src/search-tool-qt/search-tool-qt.cc:168 src/search-tool/search-tool.cc:77
+msgid "Rescan library at startup"
+msgstr "Tutki kirjasto uudelleen käynnistyksen yhteydessä"
+
+#: src/search-tool-qt/search-tool-qt.cc:170
+msgid "Monitor library for changes"
+msgstr "Seuraa kirjaston muutoksia"
+
+#: src/search-tool-qt/search-tool-qt.cc:193 src/search-tool/search-tool.cc:450
+msgid ""
+"To import your music library into Audacious, choose a folder and then click "
+"the \"refresh\" icon."
+msgstr ""
+"Tuodaksesi musiikkikirjastosi Audacioukseen, valitse kansio ja paina sen "
+"jälkeen päivitys painiketta."
+
+#: src/search-tool-qt/search-tool-qt.cc:195 src/search-tool/search-tool.cc:459
+msgid "Please wait ..."
+msgstr "Odota..."
+
+#: src/search-tool-qt/search-tool-qt.cc:197 src/search-tool/search-tool.cc:487
+msgid "Choose Folder"
+msgstr "Valitse kansio"
+
+#: src/search-tool-qt/search-tool-qt.cc:201 src/search-tool/search-tool.cc:445
+msgid "Search library"
+msgstr "Etsi kirjastosta"
+
+#: src/search-tool-qt/search-tool-qt.cc:327 src/search-tool/search-tool.cc:156
+#, c-format
+msgid "%d of %d result shown"
+msgid_plural "%d of %d results shown"
+msgstr[0] "Näytetään %d/%d tulos"
+msgstr[1] "Näytetään %d/%d tulosta"
+
+#: src/search-tool-qt/search-tool-qt.cc:331 src/search-tool/search-tool.cc:160
+#, c-format
+msgid "%d result"
+msgid_plural "%d results"
+msgstr[0] "%d tulos"
+msgstr[1] "%d tulosta"
+
+#: src/search-tool-qt/search-tool-qt.cc:501 src/search-tool/search-tool.cc:341
+msgid "_Create Playlist"
+msgstr "_Luo soittolista"
+
+#: src/search-tool-qt/search-tool-qt.cc:503 src/search-tool/search-tool.cc:343
+msgid "_Add to Playlist"
+msgstr "L_isää soittolistalle"
+
+#: src/sid/xmms-sid.cc:44
+msgid "SID Player"
+msgstr "SID soitin"
+
+#: src/sid/xs_config.cc:62
+msgid "Channels:"
+msgstr "Kanavat:"
+
+#: src/sid/xs_config.cc:68
+msgid "<b>Emulation</b>"
+msgstr "<b>Emulointi</b>"
+
+#: src/sid/xs_config.cc:69
+msgid "Emulate MOS 8580 (default: MOS 6581)"
+msgstr "Emuloi MOS 8580 (oletus: MOS 6581)"
+
+#: src/sid/xs_config.cc:71
+msgid "Do not automatically select chip model"
+msgstr "Älä valitse äänipiiriä automaattisesti"
+
+#: src/sid/xs_config.cc:73
+msgid "Emulate filter"
+msgstr "Emuloi suodatin"
+
+#: src/sid/xs_config.cc:75
+msgid "Clock speed:"
+msgstr "Kellon nopeus:"
+
+#: src/sid/xs_config.cc:78
+msgid "Do not automatically select clock speed"
+msgstr "Älä valitse kellon nopeutta automaattisesti"
+
+#: src/sid/xs_config.cc:80
+msgid "<b>Playback time</b>"
+msgstr "<b>Toistoaika</b>"
+
+#: src/sid/xs_config.cc:81
+msgid "Set maximum playback time:"
+msgstr "Aseta enimmäistoistoaika:"
+
+#: src/sid/xs_config.cc:87
+msgid "Use only when song length is unknown"
+msgstr "Käytä vain, kun kappaleen pituutta ei tunneta"
+
+#: src/sid/xs_config.cc:90
+msgid "Set minimum playback time:"
+msgstr "Aseta minimitoistoaika:"
+
+#: src/sid/xs_config.cc:96
+msgid "<b>Subtunes</b>"
+msgstr "<b>Subtunes</b>"
+
+#: src/sid/xs_config.cc:97
+msgid "Enable subtunes"
+msgstr "Käytä subtunesia"
+
+#: src/sid/xs_config.cc:99
+msgid "Ignore subtunes shorter than:"
+msgstr "Ohita sävelet, jotka ovat lyhyempiä kuin:"
+
+#: src/sid/xs_config.cc:105
+msgid "<b>Note</b>"
+msgstr "<b>Nuotti</b>"
+
+#: src/silence-removal/silence-removal.cc:39
+msgid "Silence Removal"
+msgstr "Hiljaisuuden poisto"
+
+#: src/silence-removal/silence-removal.cc:58
+msgid ""
+"Silence Removal Plugin for Audacious\n"
+"Copyright 2014 John Lindgren"
+msgstr ""
+"Hiljaisuuden poiston lisäosa Audaciousille\n"
+"Copyright 2014 John Lindgren"
+
+#: src/silence-removal/silence-removal.cc:67
+msgid "<b>Silence Removal</b>"
+msgstr "<b>Hiljaisuuden poisto</b>"
+
+#: src/silence-removal/silence-removal.cc:68
+msgid "Threshold:"
+msgstr "Raja-arvo:"
+
+#: src/skins/actions.cc:45 src/skins-qt/actions.cc:43
+msgid "Repeat points cleared."
+msgstr "Kertauspisteet tyhjennetty."
+
+#: src/skins/actions.cc:60 src/skins-qt/actions.cc:58
+msgid "Repeat point A set."
+msgstr "Kertauksen alkupiste A asetettu."
+
+#: src/skins/actions.cc:65 src/skins-qt/actions.cc:63
+msgid "Repeat point B set."
+msgstr "Kertauksen loppupiste B asetettu."
+
+#: src/skins/equalizer.cc:223 src/skins-qt/equalizer.cc:223
+msgid "Preamp"
+msgstr "Esivahvistus"
+
+#: src/skins/equalizer.cc:227 src/skins-qt/equalizer.cc:227
+msgid "31 Hz"
+msgstr "31 Hz"
+
+#: src/skins/equalizer.cc:228 src/skins-qt/equalizer.cc:228
+msgid "63 Hz"
+msgstr "63 Hz"
+
+#: src/skins/equalizer.cc:228 src/skins-qt/equalizer.cc:228
+msgid "125 Hz"
+msgstr "125 Hz"
+
+#: src/skins/equalizer.cc:228 src/skins-qt/equalizer.cc:228
+msgid "250 Hz"
+msgstr "250 Hz"
+
+#: src/skins/equalizer.cc:228 src/skins-qt/equalizer.cc:228
+msgid "500 Hz"
+msgstr "500 Hz"
+
+#: src/skins/equalizer.cc:228 src/skins-qt/equalizer.cc:228
+msgid "1 kHz"
+msgstr "1 kHz"
+
+#: src/skins/equalizer.cc:229 src/skins-qt/equalizer.cc:229
+msgid "2 kHz"
+msgstr "2 kHz"
+
+#: src/skins/equalizer.cc:229 src/skins-qt/equalizer.cc:229
+msgid "4 kHz"
+msgstr "4 kHz"
+
+#: src/skins/equalizer.cc:229 src/skins-qt/equalizer.cc:229
+msgid "8 kHz"
+msgstr "8 kHz"
+
+#: src/skins/equalizer.cc:229 src/skins-qt/equalizer.cc:229
+msgid "16 kHz"
+msgstr "16 kHz"
+
+#: src/skins/equalizer.cc:270 src/skins-qt/equalizer.cc:270
+msgid "Audacious Equalizer"
+msgstr "Audaciouksen taajuuskorjain"
+
+#: src/skins/main.cc:459 src/skins-qt/main.cc:442
+msgid "Recording on"
+msgstr "Äänitys"
+
+#: src/skins/main.cc:461 src/skins-qt/main.cc:444
+msgid "Recording off"
+msgstr "Äänitys pois"
+
+#: src/skins/main.cc:754 src/skins-qt/main.cc:701
+#, c-format
+msgid "Seek to %d:%-2.2d / %d:%-2.2d"
+msgstr "Siirry kohtaan %d:%-2.2d / %d:%-2.2d"
+
+#: src/skins/main.cc:771 src/skins-qt/main.cc:718
+#, c-format
+msgid "Volume: %d%%"
+msgstr "Äänenvoimakkuus: %d%%"
+
+#: src/skins/main.cc:784 src/skins-qt/main.cc:731
+#, c-format
+msgid "Balance: %d%% left"
+msgstr "Tasapaino: %d%% vasen"
+
+#: src/skins/main.cc:786 src/skins-qt/main.cc:733
+msgid "Balance: center"
+msgstr "Tasapaino: keskellä"
+
+#: src/skins/main.cc:788 src/skins-qt/main.cc:735
+#, c-format
+msgid "Balance: %d%% right"
+msgstr "Tasapaino: %d%% oikea"
+
+#: src/skins/main.cc:880 src/skins-qt/main.cc:827
+msgid "Options Menu"
+msgstr "Asetusvalikko"
+
+#: src/skins/main.cc:884 src/skins-qt/main.cc:831
+msgid "Disable 'Always On Top'"
+msgstr "Poista käytöstä 'Aina päällimmäisenä'"
+
+#: src/skins/main.cc:886 src/skins-qt/main.cc:833
+msgid "Enable 'Always On Top'"
+msgstr "Käytä 'Aina päällimmäisenä'"
+
+#: src/skins/main.cc:889 src/skins-qt/main.cc:836
+msgid "File Info Box"
+msgstr "Tiedoston tietolaatikko"
+
+#: src/skins/main.cc:893 src/skins-qt/main.cc:840
+msgid "Disable 'Double Size'"
+msgstr "Poista \"Tuplakoko\""
+
+#: src/skins/main.cc:895 src/skins-qt/main.cc:842
+msgid "Enable 'Double Size'"
+msgstr "Käytä \"Tuplakoko\""
+
+#: src/skins/main.cc:898 src/skins-qt/main.cc:845
+msgid "Visualizations"
+msgstr "Visualisoinnit"
+
+#: src/skins/menus.cc:74 src/skins-qt/menus.cc:64
+msgid "Volume Up"
+msgstr "Nosta äänenvoimakkuutta"
+
+#: src/skins/menus.cc:75 src/skins-qt/menus.cc:65
+msgid "Volume Down"
+msgstr "Laske äänenvoimakkuutta"
+
+#: src/skins/menus.cc:77 src/skins-qt/menus.cc:67
+msgid "Effects ..."
+msgstr "Tehosteet..."
+
+#: src/skins/menus.cc:84 src/skins-qt/menus.cc:74
+msgid "Open Files ..."
+msgstr "Avaa tiedostoja..."
+
+#: src/skins/menus.cc:85 src/skins-qt/menus.cc:76
+msgid "Open URL ..."
+msgstr "Avaa URL..."
+
+#: src/skins/menus.cc:89 src/skins-qt/menus.cc:80
+msgid "Playlist"
+msgstr "Soittolista"
+
+#: src/skins/menus.cc:90 src/skins-qt/menus.cc:81
+msgid "Output"
+msgstr "Ulostulo"
+
+#: src/skins/menus.cc:91 src/skins-qt/menus.cc:82
+msgid "View"
+msgstr "Näkymä"
+
+#: src/skins/menus.cc:93 src/skins/menus.cc:161 src/skins/menus.cc:174
+#: src/skins/menus.cc:245 src/skins-qt/menus.cc:84 src/skins-qt/menus.cc:157
+#: src/skins-qt/menus.cc:171 src/skins-qt/menus.cc:242
+msgid "Services"
+msgstr "Palvelut"
+
+#: src/skins/menus.cc:95 src/skins-qt/menus.cc:86
+msgid "About ..."
+msgstr "Tietoja..."
+
+#: src/skins/menus.cc:96 src/skins-qt/menus.cc:87
+msgid "Settings ..."
+msgstr "Asetukset..."
+
+#: src/skins/menus.cc:97 src/skins-qt/menus.cc:88
+msgid "Quit"
+msgstr "Lopeta"
+
+#: src/skins/menus.cc:101 src/skins/menus.cc:235 src/skins-qt/menus.cc:92
+#: src/skins-qt/menus.cc:232
+msgid "Song Info ..."
+msgstr "Kappaleen tiedot..."
+
+#: src/skins/menus.cc:105 src/skins-qt/menus.cc:97
+msgid "Shuffle by Album"
+msgstr "Sekoita levyn mukaan"
+
+#: src/skins/menus.cc:106 src/skins-qt/menus.cc:98
+msgid "No Playlist Advance"
+msgstr "Älä etene soittolistalla"
+
+#: src/skins/menus.cc:117 src/skins-qt/menus.cc:109
+msgid "Set A-B Repeat"
+msgstr "Aseta A-B-kertaus"
+
+#: src/skins/menus.cc:118 src/skins-qt/menus.cc:110
+msgid "Clear A-B Repeat"
+msgstr "Pyyhi A-B-kertaus"
+
+#: src/skins/menus.cc:120 src/skins-qt/menus.cc:112
+msgid "Jump to Song ..."
+msgstr "Siirry kappaleeseen..."
+
+#: src/skins/menus.cc:121 src/skins-qt/menus.cc:114
+msgid "Jump to Time ..."
+msgstr "Siirry kohtaan..."
+
+#: src/skins/menus.cc:125 src/skins-qt/menus.cc:119
+msgid "Play/Resume"
+msgstr "Toista/Jatka"
+
+#: src/skins/menus.cc:127 src/skins-qt/menus.cc:121
+msgid "New Playlist"
+msgstr "Uusi soittolista"
+
+#: src/skins/menus.cc:128 src/skins-qt/menus.cc:122
+msgid "Rename Playlist ..."
+msgstr "Nimeä uudelleen soittolista..."
+
+#: src/skins/menus.cc:129 src/skins-qt/menus.cc:123
+msgid "Remove Playlist"
+msgstr "Poista soittolista"
+
+#: src/skins/menus.cc:131 src/skins-qt/menus.cc:125
+msgid "Previous Playlist"
+msgstr "Edellinen soittolista"
+
+#: src/skins/menus.cc:132 src/skins-qt/menus.cc:126
+msgid "Next Playlist"
+msgstr "Seuraava soittolista"
+
+#: src/skins/menus.cc:134 src/skins-qt/menus.cc:128
+msgid "Import Playlist ..."
+msgstr "Tuo soittolista..."
+
+#: src/skins/menus.cc:135 src/skins-qt/menus.cc:129
+msgid "Export Playlist ..."
+msgstr "Vie soittolista..."
+
+#: src/skins/menus.cc:137 src/skins-qt/menus.cc:131
+msgid "Playlist Manager ..."
+msgstr "Soittolistan hallinta..."
+
+#: src/skins/menus.cc:138 src/skins-qt/menus.cc:132
+msgid "Queue Manager ..."
+msgstr "Jonohallinta..."
+
+#: src/skins/menus.cc:140 src/skins-qt/menus.cc:134
+msgid "Refresh Playlist"
+msgstr "Päivitä soittolista"
+
+#: src/skins/menus.cc:144 src/skins-qt/menus.cc:138
+msgid "Show Playlist Editor"
+msgstr "Näytä soittolistan muokkain"
+
+#: src/skins/menus.cc:145 src/skins-qt/menus.cc:139
+msgid "Show Equalizer"
+msgstr "Näytä taajuuskorjain"
+
+#: src/skins/menus.cc:147 src/skins-qt/menus.cc:141
+msgid "Show Remaining Time"
+msgstr "Näytä jäljellä oleva aika"
+
+#: src/skins/menus.cc:149 src/skins-qt/menus.cc:143
+msgid "Double Size"
+msgstr "Tuplakoko"
+
+#: src/skins/menus.cc:150 src/skins-qt/menus.cc:144
+msgid "Always on Top"
+msgstr "Aina päällimmäisenä"
+
+#: src/skins/menus.cc:151 src/skins-qt/menus.cc:146
+msgid "On All Workspaces"
+msgstr "Kaikissa työtiloissa"
+
+#: src/skins/menus.cc:153 src/skins-qt/menus.cc:149
+msgid "Roll Up Player"
+msgstr "Rullaa soitin ylös"
+
+#: src/skins/menus.cc:154 src/skins-qt/menus.cc:150
+msgid "Roll Up Playlist Editor"
+msgstr "Rullaa soittolistan muokkain ylös"
+
+#: src/skins/menus.cc:155 src/skins-qt/menus.cc:151
+msgid "Roll Up Equalizer"
+msgstr "Rullaa taajuuskorjain ylös"
+
+#: src/skins/menus.cc:163 src/skins-qt/menus.cc:159
+msgid "Add URL ..."
+msgstr "Lisää URL..."
+
+#: src/skins/menus.cc:164 src/skins-qt/menus.cc:161
+msgid "Add Files ..."
+msgstr "Lisää tiedostoja..."
+
+#: src/skins/menus.cc:168 src/skins/menus.cc:196 src/skins/menus.cc:212
+#: src/skins-qt/menus.cc:165 src/skins-qt/menus.cc:193
+#: src/skins-qt/menus.cc:209
+msgid "By Title"
+msgstr "Nimen mukaan"
+
+#: src/skins/menus.cc:169 src/skins/menus.cc:203 src/skins/menus.cc:219
+#: src/skins-qt/menus.cc:166 src/skins-qt/menus.cc:200
+#: src/skins-qt/menus.cc:216
+msgid "By File Name"
+msgstr "Tiedostonimen mukaan"
+
+#: src/skins/menus.cc:170 src/skins/menus.cc:204 src/skins/menus.cc:220
+#: src/skins-qt/menus.cc:167 src/skins-qt/menus.cc:201
+#: src/skins-qt/menus.cc:217
+msgid "By File Path"
+msgstr "Tiedostopolun mukaan"
+
+#: src/skins/menus.cc:176 src/skins-qt/menus.cc:173
+msgid "Remove All"
+msgstr "Poista kaikki"
+
+#: src/skins/menus.cc:177 src/skins-qt/menus.cc:174
+msgid "Clear Queue"
+msgstr "Tyhjennä jono"
+
+#: src/skins/menus.cc:179 src/skins-qt/menus.cc:176
+msgid "Remove Unavailable Files"
+msgstr "Poista ei saatavilla olevat tiedostot"
+
+#: src/skins/menus.cc:180 src/skins-qt/menus.cc:177
+msgid "Remove Duplicates"
+msgstr "Poista kopiot"
+
+#: src/skins/menus.cc:182 src/skins-qt/menus.cc:179
+msgid "Remove Unselected"
+msgstr "Poista ei valitut"
+
+#: src/skins/menus.cc:183 src/skins-qt/menus.cc:180
+msgid "Remove Selected"
+msgstr "Poista valitut"
+
+#: src/skins/menus.cc:187 src/skins-qt/menus.cc:184
+msgid "Search and Select"
+msgstr "Etsi ja valitse"
+
+#: src/skins/menus.cc:189 src/skins-qt/menus.cc:186
+msgid "Invert Selection"
+msgstr "Käänteinen valinta"
+
+#: src/skins/menus.cc:190 src/skins-qt/menus.cc:187
+msgid "Select None"
+msgstr "Ei mitään"
+
+#: src/skins/menus.cc:191 src/skins-qt/menus.cc:188
+msgid "Select All"
+msgstr "Valitse kaikki"
+
+#: src/skins/menus.cc:195 src/skins/menus.cc:211 src/skins-qt/menus.cc:192
+#: src/skins-qt/menus.cc:208
+msgid "By Track Number"
+msgstr "Raidan mukaan"
+
+#: src/skins/menus.cc:197 src/skins/menus.cc:213 src/skins-qt/menus.cc:194
+#: src/skins-qt/menus.cc:210
+msgid "By Artist"
+msgstr "Esittäjän mukaan"
+
+#: src/skins/menus.cc:198 src/skins/menus.cc:214 src/skins-qt/menus.cc:195
+#: src/skins-qt/menus.cc:211
+msgid "By Album"
+msgstr "Levyn mukaan"
+
+#: src/skins/menus.cc:199 src/skins/menus.cc:215 src/skins-qt/menus.cc:196
+#: src/skins-qt/menus.cc:212
+msgid "By Album Artist"
+msgstr "Levyn esittäjäjän mukaan"
+
+#: src/skins/menus.cc:200 src/skins/menus.cc:216 src/skins-qt/menus.cc:197
+#: src/skins-qt/menus.cc:213
+msgid "By Release Date"
+msgstr "Julkaisupäivän mukaan"
+
+#: src/skins/menus.cc:201 src/skins/menus.cc:217 src/skins-qt/menus.cc:198
+#: src/skins-qt/menus.cc:214
+msgid "By Genre"
+msgstr "Tyylilajin mukaan"
+
+#: src/skins/menus.cc:202 src/skins/menus.cc:218 src/skins-qt/menus.cc:199
+#: src/skins-qt/menus.cc:215
+msgid "By Length"
+msgstr "Keston mukaan"
+
+#: src/skins/menus.cc:205 src/skins/menus.cc:221 src/skins-qt/menus.cc:202
+#: src/skins-qt/menus.cc:218
+msgid "By Custom Title"
+msgstr "Mukautetun nimen mukaan"
+
+#: src/skins/menus.cc:206 src/skins/menus.cc:222 src/skins-qt/menus.cc:203
+#: src/skins-qt/menus.cc:219
+msgid "By Comment"
+msgstr "Kommentin mukaan"
+
+#: src/skins/menus.cc:207 src/skins/menus.cc:223 src/skins-qt/menus.cc:204
+#: src/skins-qt/menus.cc:220
+msgid "By Disc Number"
+msgstr "Levynumeron mukaan"
+
+#: src/skins/menus.cc:227 src/skins-qt/menus.cc:224
+msgid "Randomize List"
+msgstr "Sekoita lista"
+
+#: src/skins/menus.cc:228 src/skins-qt/menus.cc:225
+msgid "Reverse List"
+msgstr "Käännä lista"
+
+#: src/skins/menus.cc:230 src/skins-qt/menus.cc:227
+msgid "Sort Selected"
+msgstr "Järjestä valitut"
+
+#: src/skins/menus.cc:231 src/skins-qt/menus.cc:228
+msgid "Sort List"
+msgstr "Lajittele lista"
+
+#: src/skins/menus.cc:236 src/skins-qt/menus.cc:233
+msgid "Open Containing Folder"
+msgstr "Avaa sisältävä kansio"
+
+#: src/skins/menus.cc:238 src/skins-qt/menus.cc:235
+msgid "Cut"
+msgstr "Leikkaa"
+
+#: src/skins/menus.cc:239 src/skins-qt/menus.cc:236
+msgid "Copy"
+msgstr "Kopioi"
+
+#: src/skins/menus.cc:240 src/skins-qt/menus.cc:237
+msgid "Paste"
+msgstr "Liitä"
+
+#: src/skins/menus.cc:241 src/skins-qt/menus.cc:238
+msgid "Paste at End"
+msgstr "Liitä loppuun"
+
+#: src/skins/menus.cc:243 src/skins-qt/menus.cc:240
+msgid "Queue/Unqueue"
+msgstr "Jonoon/Jonosta"
+
+#: src/skins/playlist-widget.cc:58 src/skins-qt/playlist-widget.cc:58
+#, c-format
+msgid "%s (%d of %d)"
+msgstr "%s (%d / %d)"
+
+#: src/skins/playlistwin.cc:491 src/skins-qt/playlistwin.cc:478
+msgid "Audacious Playlist Editor"
+msgstr "Audaciouksen soittolistan muokkain"
+
+#: src/skins/plugin.cc:53 src/skins-qt/plugin.cc:65
+msgid "Winamp Classic Interface"
+msgstr "Winampin klassinen käyttöliittymä"
+
+#: src/skins-qt/menus.cc:75
+msgid "Open Folder ..."
+msgstr "Avaa kansio..."
+
+#: src/skins-qt/menus.cc:93
+msgid "Playback History ..."
+msgstr "Soittohistoria ..."
+
+#: src/skins-qt/menus.cc:160
+msgid "Add Folder ..."
+msgstr "Lisää kansio..."
+
+#: src/skins-qt/search-select.cc:62 src/skins/search-select.cc:77
+msgid "Search entries in active playlist"
+msgstr "Etsi kappaleita aktiivisesta soittolistasta"
+
+#: src/skins-qt/search-select.cc:70 src/skins/search-select.cc:83
+msgid ""
+"Select entries in playlist by filling one or more fields. Fields use regular "
+"expressions syntax, case-insensitive. If you don't know how regular "
+"expressions work, simply insert a literal portion of what you're searching "
+"for."
+msgstr ""
+"Etsi kappaleita soittolistalta täyttämällä yhden tai useamman kentistä. "
+"Kentät käyttävät säännöllisten lausekkeiden syntaksia, kirjainkoolla ei ole "
+"merkitystä. Jos et tiedä kuinka säännöllisiä lausekkeita käytetään, kirjoita "
+"kenttään suoraan se mitä haluat etsiä."
+
+#: src/skins-qt/search-select.cc:75 src/skins/search-select.cc:91
+msgid "Title:"
+msgstr "Nimi:"
+
+#: src/skins-qt/search-select.cc:79 src/skins/search-select.cc:96
+msgid "Album:"
+msgstr "Levy:"
+
+#: src/skins-qt/search-select.cc:82 src/skins/search-select.cc:101
+msgid "Artist:"
+msgstr "Esittäjä:"
+
+#: src/skins-qt/search-select.cc:85 src/skins/search-select.cc:106
+msgid "File Name:"
+msgstr "Tiedostonimi:"
+
+#: src/skins-qt/search-select.cc:88 src/skins/search-select.cc:134
+msgid "Clear previous selection before searching"
+msgstr "Tyhjennä aiempi valinta ennen hakemista"
+
+#: src/skins-qt/search-select.cc:89 src/skins/search-select.cc:137
+msgid "Automatically toggle queue for matching entries"
+msgstr "Lisää tai poista automaattisesti täsmäävät kappaleet jonosta"
+
+#: src/skins-qt/search-select.cc:90 src/skins/search-select.cc:140
+msgid "Create a new playlist with matching entries"
+msgstr "Luo uusi soittolista täsmäävistä kappaleista"
+
+#: src/skins-qt/search-select.cc:101 src/skins/search-select.cc:78
+msgid "Search"
+msgstr "Etsi"
+
+#: src/skins-qt/skins_cfg.cc:198 src/skins/skins_cfg.cc:182
+msgid "Player:"
+msgstr "Soitin:"
+
+#: src/skins-qt/skins_cfg.cc:200 src/skins/skins_cfg.cc:184
+msgid "Select main player window font:"
+msgstr "Valitse pääikkunan kirjasin:"
+
+#: src/skins-qt/skins_cfg.cc:201 src/skins/skins_cfg.cc:185
+msgid "Playlist:"
+msgstr "Soittolista:"
+
+#: src/skins-qt/skins_cfg.cc:203 src/skins/skins_cfg.cc:187
+msgid "Select playlist font:"
+msgstr "Valitse soittolistan kirjasin:"
+
+#: src/skins-qt/skins_cfg.cc:207 src/skins/skins_cfg.cc:191
+msgid "<b>Skin</b>"
+msgstr "<b>Ulkoasu</b>"
+
+#: src/skins-qt/skins_cfg.cc:211 src/skins/skins_cfg.cc:193
+msgid "Display active titlebar when any window is focused"
+msgstr "Näytä aktiivinen otsikkopalkki, kun jokin ikkuna on kohdistettu"
+
+#: src/skins-qt/skins_cfg.cc:213 src/skins/skins_cfg.cc:195
+msgid "<b>Fonts</b>"
+msgstr "<b>Fontit</b>"
+
+#: src/skins-qt/skins_cfg.cc:215 src/skins/skins_cfg.cc:197
+msgid "Use bitmap fonts (supports ASCII only)"
+msgstr "Käytä bittikartta-kirjasimia (vain ASCII)"
+
+#: src/skins-qt/skins_cfg.cc:217 src/skins/skins_cfg.cc:199
+msgid "Scroll song title"
+msgstr "Vieritä nimeä"
+
+#: src/skins-qt/skins_cfg.cc:219 src/skins/skins_cfg.cc:201
+msgid "Scroll song title in both directions"
+msgstr "Vieritä nimeä kumpaankin suuntaan"
+
+#: src/skins-qt/skins_cfg.cc:224 src/skins/skins_cfg.cc:206
+msgid "Analyzer"
+msgstr "Analyzer"
+
+#: src/skins-qt/skins_cfg.cc:225 src/skins/skins_cfg.cc:207
+msgid "Scope"
+msgstr "Soveltamisala"
+
+#: src/skins-qt/skins_cfg.cc:226 src/skins/skins_cfg.cc:208
+msgid "Voiceprint / VU meter"
+msgstr "Äänipainemittari / VU-mittari"
+
+#: src/skins-qt/skins_cfg.cc:227 src/skins/skins_cfg.cc:209
+msgid "Off"
+msgstr "Pois"
+
+#: src/skins-qt/skins_cfg.cc:231 src/skins-qt/skins_cfg.cc:256
+#: src/skins-qt/skins_cfg.cc:262 src/skins/skins_cfg.cc:213
+#: src/skins/skins_cfg.cc:238 src/skins/skins_cfg.cc:244
+msgid "Normal"
+msgstr "Normaali"
+
+#: src/skins-qt/skins_cfg.cc:232 src/skins-qt/skins_cfg.cc:257
+#: src/skins/skins_cfg.cc:214 src/skins/skins_cfg.cc:239
+msgid "Fire"
+msgstr "Tuli"
+
+#: src/skins-qt/skins_cfg.cc:233 src/skins/skins_cfg.cc:215
+msgid "Vertical lines"
+msgstr "Pystysuorat viivat"
+
+#: src/skins-qt/skins_cfg.cc:237 src/skins/skins_cfg.cc:219
+msgid "Lines"
+msgstr "Viivat"
+
+#: src/skins-qt/skins_cfg.cc:238 src/skins/skins_cfg.cc:220
+msgid "Bars"
+msgstr "Palkit"
+
+#: src/skins-qt/skins_cfg.cc:242 src/skins/skins_cfg.cc:224
+msgid "Slowest"
+msgstr "Hitain"
+
+#: src/skins-qt/skins_cfg.cc:243 src/skins/skins_cfg.cc:225
+msgid "Slow"
+msgstr "Hidas"
+
+#: src/skins-qt/skins_cfg.cc:244 src/skins/skins_cfg.cc:226
+#: src/soxr/sox-resampler.cc:180
+msgid "Medium"
+msgstr "Keskinkertainen"
+
+#: src/skins-qt/skins_cfg.cc:245 src/skins/skins_cfg.cc:227
+msgid "Fast"
+msgstr "Nopea"
+
+#: src/skins-qt/skins_cfg.cc:246 src/skins/skins_cfg.cc:228
+msgid "Fastest"
+msgstr "Nopein"
+
+#: src/skins-qt/skins_cfg.cc:250 src/skins/skins_cfg.cc:232
+msgid "Dots"
+msgstr "Pisteet"
+
+#: src/skins-qt/skins_cfg.cc:251 src/skins/skins_cfg.cc:233
+msgid "Line"
+msgstr "Viiva"
+
+#: src/skins-qt/skins_cfg.cc:252 src/skins/skins_cfg.cc:234
+msgid "Solid"
+msgstr "Kiinteä"
+
+#: src/skins-qt/skins_cfg.cc:258 src/skins/skins_cfg.cc:240
+msgid "Ice"
+msgstr "Jää"
+
+#: src/skins-qt/skins_cfg.cc:263 src/skins/skins_cfg.cc:245
+msgid "Smooth"
+msgstr "Tasainen"
+
+#: src/skins-qt/skins_cfg.cc:267 src/skins/skins_cfg.cc:249
+msgid "Coloring:"
+msgstr "Väritys:"
+
+#: src/skins-qt/skins_cfg.cc:270 src/skins/skins_cfg.cc:252
+msgid "Style:"
+msgstr "Tyyli:"
+
+#: src/skins-qt/skins_cfg.cc:273 src/skins/skins_cfg.cc:255
+msgid "Falloff:"
+msgstr "Pudotus:"
+
+#: src/skins-qt/skins_cfg.cc:276 src/skins/skins_cfg.cc:258
+msgid "Peak falloff:"
+msgstr "Huippujen pudotus:"
+
+#: src/skins-qt/skins_cfg.cc:282 src/skins/skins_cfg.cc:264
+msgid "Scope Style:"
+msgstr "Soveltamisala:"
+
+#: src/skins-qt/skins_cfg.cc:285 src/skins/skins_cfg.cc:267
+msgid "Voiceprint Coloring:"
+msgstr "Äänijäljen väritys:"
+
+#: src/skins-qt/skins_cfg.cc:288 src/skins/skins_cfg.cc:270
+msgid "VU Meter Style:"
+msgstr "VU-mittarin tyyli:"
+
+#: src/skins-qt/skins_cfg.cc:294 src/skins/skins_cfg.cc:276
+msgid "<b>Type</b>"
+msgstr "<b>Tyyppi</b>"
+
+#: src/skins-qt/skins_cfg.cc:295 src/skins/skins_cfg.cc:277
+msgid "Visualization type:"
+msgstr "Visualisoinnin tyyppi:"
+
+#: src/skins-qt/skins_cfg.cc:298 src/skins/skins_cfg.cc:280
+msgid "<b>Analyzer</b>"
+msgstr "<b>Analysaattori</b>"
+
+#: src/skins-qt/skins_cfg.cc:299 src/skins/skins_cfg.cc:281
+msgid "Show peaks"
+msgstr "Näytä piikit"
+
+#: src/skins-qt/skins_cfg.cc:308 src/skins/skins_cfg.cc:290
+msgid "Visualization"
+msgstr "Visualisaatio"
+
+#: src/skins-qt/skinselector.cc:98 src/skins/skinselector.cc:111
+msgid "Archived Winamp 2.x skin"
+msgstr "Pakattu Winamp 2.x skini"
+
+#: src/skins-qt/skinselector.cc:102 src/skins/skinselector.cc:115
+msgid "Unarchived Winamp 2.x skin"
+msgstr "Pakkaamaton Winamp 2.x skini"
+
+#: src/sndfile/plugin.cc:38
+msgid "Sndfile Plugin"
+msgstr "Sndfile Plugin"
+
+#: src/sndfile/plugin.cc:372
+msgid ""
+"Based on the xmms_sndfile plugin:\n"
+"Copyright (C) 2000, 2002 Erik de Castro Lopo\n"
+"\n"
+"Adapted for Audacious by Tony Vroon <chainsaw@gentoo.org>\n"
+"\n"
+"This program is free software; you can redistribute it and/or modify it "
+"under the terms of the GNU General Public License as published by the Free "
+"Software Foundation; either version 2 of the License, or (at your option) "
+"any later version.\n"
+"\n"
+"This program is distributed in the hope that it will be useful, but WITHOUT "
+"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
+"FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for "
+"more details.\n"
+"\n"
+"You should have received a copy of the GNU General Public License along with "
+"this program; if not, write to the Free Software Foundation, Inc., 51 "
+"Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA."
+msgstr ""
+"Perustuu xmms_sndfile-liitännäiselle:\n"
+"Copyright (C) 2000, 2002 Erik de Castro Lopo\n"
+"\n"
+"Muokannut Audacioukselle Tony Vroon <chainsaw@gentoo.org>\n"
+"\n"
+"This program is free software; you can redistribute it and/or modify it "
+"under the terms of the GNU General Public License as published by the Free "
+"Software Foundation; either version 2 of the License, or (at your option) "
+"any later version.\n"
+"\n"
+"This program is distributed in the hope that it will be useful, but WITHOUT "
+"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
+"FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for "
+"more details.\n"
+"\n"
+"You should have received a copy of the GNU General Public License along with "
+"this program; if not, write to the Free Software Foundation, Inc., 51 "
+"Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA."
+
+#: src/sndio/sndio.cc:43
+msgid "Sndio Output"
+msgstr "Sndio-lähtö"
+
+#: src/sndio/sndio.cc:98
+msgid "Device (blank for default):"
+msgstr "Laite (tyhjä oletusta varten):"
+
+#: src/sndio/sndio.cc:100
+msgid "Save and restore volume:"
+msgstr "Tallenna ja palauta voimakkuus:"
+
+#: src/sndio/sndio.cc:181
+#, c-format
+msgid "Sndio error: Unsupported audio format (%d)"
+msgstr "Sndio-virhe: äänimuoto ei ole tuettu (%d)"
+
+#: src/sndio/sndio.cc:192
+msgid "Sndio error: sio_open() failed"
+msgstr "Sndio-virhe: sio_open() epäonnistui"
+
+#: src/sndio/sndio.cc:221
+msgid "Sndio error: sio_setpar() failed"
+msgstr "Sndio-virhe: sio_setpar() epäonnistui"
+
+#: src/sndio/sndio.cc:233
+msgid "Sndio error: sio_start() failed"
+msgstr "Sndio-virhe: sio_start() epäonnistui"
+
+#: src/songchange/song_change.cc:30
+msgid "Song Change"
+msgstr "Kappaleen vaihto"
+
+#: src/songchange/song_change.cc:256
+msgid "<b>Commands</b>"
+msgstr "<b>Komennot</b>"
+
+#: src/songchange/song_change.cc:258
+msgid "Command to run when starting a new song:"
+msgstr "Komento, kun uusi kappale alkaa:"
+
+#: src/songchange/song_change.cc:261
+msgid "Command to run when stopping a song:"
+msgstr "Komento, kun kappale pysäytetään:"
+
+#: src/songchange/song_change.cc:264
+msgid "Command to run at the end of a song:"
+msgstr "Komento, kun kappale loppuu:"
+
+#: src/songchange/song_change.cc:267
+msgid "Command to run at the end of the playlist:"
+msgstr "Soittolistan päättyessä suoritettava komento:"
+
+#: src/songchange/song_change.cc:270
+msgid "Command to run when song title changes (for network streams):"
+msgstr "Komento suoritetaan, kun kappaleen nimi vaihtuu (toisto verkkosta):"
+
+#: src/songchange/song_change.cc:273
+msgid ""
+"You can use the following format codes, which will be replaced before "
+"running the command.\n"
+"Not all are useful though for the song-stopped or end-of-playlist command."
+msgstr ""
+"Voit käyttää seuraavia koodeja, jotka korvataan ennen komennon "
+"suorittamista.\n"
+"Kaikki eivät ole käytännöllisiä soittolistan lopetuskomennolle:"
+
+#: src/songchange/song_change.cc:276
+msgid ""
+"%a: Artist\n"
+"%b: Album\n"
+"%c: Number of channels\n"
+"%f: File name (full path)\n"
+"%F: Frequency (Hertz)\n"
+"%l: Length (milliseconds)\n"
+"%n or %s: Formatted title (see playlist settings)\n"
+"%p: Currently playing (1 or 0)\n"
+"%r: Rate (bits per second)\n"
+"%t: Playlist position\n"
+"%T: Title (unformatted)"
+msgstr ""
+"%a: Esittäjä\n"
+"%b: Levy\n"
+"%c: Kanavien määrä\n"
+"%f: Tiedoston nimi (täydellinen polku)\n"
+"%F: Taajuus (Hz)\n"
+"%l: Pituus (millisekunneissa)\n"
+"%n tai %s: Alustettu otsikko (katso soittolistan asetukset)\n"
+"%p: Tällä hetkellä soi (1 tai 0)\n"
+"%r: Taajuus (bittiä per sekunti)\n"
+"%t: Soittolistan sijainti\n"
+"%T: Nimi (nimeämätön)"
+
+#: src/songchange/song_change.cc:287
+msgid ""
+"Parameters passed to the shell should be enclosed in quotation marks.\n"
+"Unquoted parameters may lead to unexpected results."
+msgstr ""
+"Parametrit olisi parempi sulkea lainausmerkkeihin. Lainaamattomat\n"
+"parametrit voivat johtaa odottamattomaan tulokseen."
+
+#: src/song-info-qt/song-info.cc:30
+msgid "Song Info"
+msgstr "Kappaletieto"
+
+#: src/soxr/sox-resampler.cc:44
+msgid "SoX Resampler"
+msgstr "SoX Resampler"
+
+#: src/soxr/sox-resampler.cc:172
+msgid ""
+"SoX Resampler Plugin for Audacious\n"
+"Copyright 2013 Michał Lipski\n"
+"\n"
+"Based on Sample Rate Converter Plugin:\n"
+"Copyright 2010-2012 John Lindgren"
+msgstr ""
+"SoX Resampler Plugin for Audacious\n"
+"Copyright 2013 Michał Lipski\n"
+"\n"
+"Based on Sample Rate Converter Plugin:\n"
+"Copyright 2010-2012 John Lindgren"
+
+#: src/soxr/sox-resampler.cc:178
+msgid "Quick"
+msgstr "Nopea"
+
+#: src/soxr/sox-resampler.cc:179
+msgid "Low"
+msgstr "Matala"
+
+#: src/soxr/sox-resampler.cc:181
+msgid "High"
+msgstr "Korkea"
+
+#: src/soxr/sox-resampler.cc:182
+msgid "Very High"
+msgstr "Erittäin korkea"
+
+#: src/soxr/sox-resampler.cc:183
+msgid "Ultra High"
+msgstr "Erittäin korkea"
+
+#: src/soxr/sox-resampler.cc:187
+msgid "Minimum"
+msgstr "Minimi"
+
+#: src/soxr/sox-resampler.cc:188
+msgid "Intermediate"
+msgstr "Keskitaso"
+
+#: src/soxr/sox-resampler.cc:193
+msgid "Quality:"
+msgstr "Laatu:"
+
+#: src/soxr/sox-resampler.cc:196
+msgid "Phase:"
+msgstr "Tahti:"
+
+#: src/soxr/sox-resampler.cc:200
+msgid "Allow aliasing"
+msgstr "Salli aliaksia"
+
+#: src/soxr/sox-resampler.cc:202
+msgid "Use steep filter"
+msgstr "Käytä jyrkkää suodatinta"
+
+#: src/speedpitch/speed-pitch.cc:54
+msgid "Speed and Pitch"
+msgstr "Nopeus ja sävelkorkeus"
+
+#: src/speedpitch/speed-pitch.cc:247
+msgid "<b>Speed</b>"
+msgstr "<b>Nopeus</b>"
+
+#: src/speedpitch/speed-pitch.cc:248
+msgid "Decouple from pitch"
+msgstr "Irrota sävelkorkeudesta"
+
+#: src/speedpitch/speed-pitch.cc:250 src/speedpitch/speed-pitch.cc:258
+msgid "Multiplier:"
+msgstr "Vahvistin:"
+
+#: src/speedpitch/speed-pitch.cc:254
+msgid "<b>Pitch</b>"
+msgstr "<b>Sävelkorkeus</b>"
+
+#: src/statusicon-qt/statusicon.cc:45 src/statusicon/statusicon.cc:47
+msgid "Status Icon"
+msgstr "Tilakuvake"
+
+#: src/statusicon-qt/statusicon.cc:68
+msgid ""
+"Status Icon Plugin (partial port for Qt interface)\n"
+"\n"
+"Copyright 2005-2007 Giacomo Lozito <james@develia.org>\n"
+"Copyright 2010 Michał Lipski <tallica@o2.pl>\n"
+"Copyright 2015 Eugene Paskevich <eugene@raptor.kiev.ua>\n"
+"\n"
+"This plugin provides a status icon, placed in\n"
+"the system tray area of the window manager."
+msgstr ""
+"Status Icon Plugin (Qt-liittymän osittainen portti)\n"
+"\n"
+"Copyright 2005-2007 Giacomo Lozito <james@develia.org>\n"
+"Copyright 2010 Michał Lipski <tallica@o2.pl>\n"
+"Copyright 2015 Eugene Paskevich <eugene@raptor.kiev.ua>\n"
+"\n"
+"Tämä lisäosa tarjoaa tilakuvakkeen, joka sijoitetaan\n"
+"ikkunanhallinnan ilmoitusalueelle."
+
+#: src/statusicon-qt/statusicon.cc:95 src/statusicon/statusicon.cc:398
+msgid "<b>Mouse Scroll Action</b>"
+msgstr "<b>Hiiren rullan vieritystoiminto</b>"
+
+#: src/statusicon-qt/statusicon.cc:96 src/statusicon/statusicon.cc:399
+msgid "Change volume"
+msgstr "Muuta äänenvoimakkuutta"
+
+#: src/statusicon-qt/statusicon.cc:99 src/statusicon/statusicon.cc:402
+msgid "Change playing song"
+msgstr "Vaihda kappaletta"
+
+#: src/statusicon-qt/statusicon.cc:102 src/statusicon/statusicon.cc:405
+msgid "<b>Middle Click Action</b>"
+msgstr "<b>Keskipainikkeen toiminta</b>"
+
+#: src/statusicon-qt/statusicon.cc:103 src/statusicon/statusicon.cc:406
+msgid "Pause/Resume playback"
+msgstr "Keskeytä / Jatka toistoa"
+
+#: src/statusicon-qt/statusicon.cc:106 src/statusicon/statusicon.cc:409
+msgid "Play next song"
+msgstr "Toista seuraava"
+
+#: src/statusicon-qt/statusicon.cc:109 src/statusicon/statusicon.cc:412
+msgid "<b>Other Settings</b>"
+msgstr "<b>Muut asetukset</b>"
+
+#: src/statusicon-qt/statusicon.cc:110 src/statusicon/statusicon.cc:413
+msgid "Disable the popup window"
+msgstr "Poista ponnahdusikkuna käytöstä"
+
+#: src/statusicon-qt/statusicon.cc:112 src/statusicon/statusicon.cc:415
+msgid "Close to the system tray"
+msgstr "Sulje järjestelmäpalkkiin"
+
+#: src/statusicon-qt/statusicon.cc:114 src/statusicon/statusicon.cc:417
+msgid "Advance in playlist when scrolling upward"
+msgstr "Etene soittolistassa kun vieritetään ylöspäin"
+
+#: src/statusicon-qt/statusicon.cc:129 src/statusicon/statusicon.cc:301
+msgid "Se_ttings ..."
+msgstr "Ase_tukset..."
+
+#: src/statusicon/statusicon.cc:391
+msgid ""
+"Status Icon Plugin\n"
+"\n"
+"Copyright 2005-2007 Giacomo Lozito <james@develia.org>\n"
+"Copyright 2010 Michał Lipski <tallica@o2.pl>\n"
+"\n"
+"This plugin provides a status icon, placed in\n"
+"the system tray area of the window manager."
+msgstr ""
+"Status Icon Plugin\n"
+"\n"
+"Copyright 2005-2007 Giacomo Lozito <james@develia.org>\n"
+"Copyright 2010 Michał Lipski <tallica@o2.pl>\n"
+"\n"
+"Tämä liitännäinen tarjoaa järjestelmäpalkkiin\n"
+"sijoitettavan ikonin."
+
+#: src/stereo_plugin/stereo.cc:19
+msgid "Extra Stereo"
+msgstr "Extra Stereo"
+
+#: src/stereo_plugin/stereo.cc:36
+msgid ""
+"Extra Stereo Plugin\n"
+"\n"
+"By Johan Levin, 1999"
+msgstr ""
+"Extra Stereo Plugin\n"
+"\n"
+"By Johan Levin, 1999"
+
+#: src/stereo_plugin/stereo.cc:44
+msgid "<b>Extra Stereo</b>"
+msgstr "<b>Extra Stereo</b>"
+
+#: src/streamtuner/icecast-model.cc:126 src/streamtuner/shoutcast-model.cc:131
+msgid "Type"
+msgstr "Tyyppi"
+
+#: src/streamtuner/icecast-model.cc:132
+msgid "Current Song"
+msgstr "Nykyinen kappale"
+
+#: src/streamtuner/icecast-model.cc:164
+msgid "Other"
+msgstr "Muut"
+
+#: src/streamtuner/ihr-model.cc:63
+msgid "Market"
+msgstr "Markkinat"
+
+#: src/streamtuner/ihr-model.cc:156
+msgid "Call Letters"
+msgstr "Soita kirjaimet"
+
+#: src/streamtuner/ihr-model.cc:162
+msgid "Description"
+msgstr "Kuvaus"
+
+#: src/streamtuner/shoutcast-model.cc:128
+msgid "Listeners"
+msgstr "Kuuntelijoita"
+
+#: src/streamtuner/shoutcast-model.cc:188
+msgid "Top 500 Stations"
+msgstr "Top 500 -asemat"
+
+#: src/streamtuner/shoutcast-model.cc:189
+msgid "Alternative"
+msgstr "Vaihtoehto"
+
+#: src/streamtuner/shoutcast-model.cc:190
+msgid "Blues"
+msgstr "Blues"
+
+#: src/streamtuner/shoutcast-model.cc:191
+msgid "Classical"
+msgstr "Klassinen"
+
+#: src/streamtuner/shoutcast-model.cc:192
+msgid "Country"
+msgstr "Kantri"
+
+#: src/streamtuner/shoutcast-model.cc:193
+msgid "Decades"
+msgstr "Vuosikymmeniä"
+
+#: src/streamtuner/shoutcast-model.cc:194
+msgid "Easy Listening"
+msgstr "Kevyt kuunneltava"
+
+#: src/streamtuner/shoutcast-model.cc:195
+msgid "Electronic"
+msgstr "Elektroninen"
+
+#: src/streamtuner/shoutcast-model.cc:196
+msgid "Folk"
+msgstr "Folk"
+
+#: src/streamtuner/shoutcast-model.cc:197
+msgid "Inspirational"
+msgstr "Inspiroiva"
+
+#: src/streamtuner/shoutcast-model.cc:198
+msgid "International"
+msgstr "Kansainvälinen"
+
+#: src/streamtuner/shoutcast-model.cc:199
+msgid "Jazz"
+msgstr "Jazz"
+
+#: src/streamtuner/shoutcast-model.cc:200
+msgid "Latin"
+msgstr "Latinalainen"
+
+#: src/streamtuner/shoutcast-model.cc:201
+msgid "Metal"
+msgstr "Metalli"
+
+#: src/streamtuner/shoutcast-model.cc:203
+msgid "New Age"
+msgstr "New age"
+
+#: src/streamtuner/shoutcast-model.cc:204
+msgid "Pop"
+msgstr "Pop"
+
+#: src/streamtuner/shoutcast-model.cc:205
+msgid "Public Radio"
+msgstr "Julkinen Radio"
+
+#: src/streamtuner/shoutcast-model.cc:206
+msgid "R&B and Urban"
+msgstr "R&B ja kaupunki"
+
+#: src/streamtuner/shoutcast-model.cc:207
+msgid "Rap"
+msgstr "Rap"
+
+#: src/streamtuner/shoutcast-model.cc:208
+msgid "Reggae"
+msgstr "Reggae"
+
+#: src/streamtuner/shoutcast-model.cc:209
+msgid "Rock"
+msgstr "Rock"
+
+#: src/streamtuner/shoutcast-model.cc:210
+msgid "Seasonal and Holiday"
+msgstr "Kausi ja kesä"
+
+#: src/streamtuner/shoutcast-model.cc:211
+msgid "Soundtracks"
+msgstr "Ääniraidat"
+
+#: src/streamtuner/shoutcast-model.cc:212
+msgid "Talk"
+msgstr "Puhe"
+
+#: src/streamtuner/shoutcast-model.cc:213
+msgid "Themes"
+msgstr "Teemat"
+
+#: src/streamtuner/streamtuner.cc:59
+msgid "Shoutcast"
+msgstr "Shoutcast"
+
+#: src/streamtuner/streamtuner.cc:60
+msgid "Icecast"
+msgstr "Icecast"
+
+#: src/streamtuner/streamtuner.cc:71
+msgid "Stream Tuner"
+msgstr "Stream Tuner"
+
+#: src/tonegen/tonegen.cc:45
+msgid "Tone Generator"
+msgstr "Sointugeneraattori"
+
+#: src/tonegen/tonegen.cc:92
+#, c-format
+msgid "%s %.1f Hz"
+msgstr "%s %.1f Hz"
+
+#: src/tonegen/tonegen.cc:92
+msgid "Tone Generator: "
+msgstr "Sointugeneraattori: "
+
+#: src/tonegen/tonegen.cc:161
+msgid ""
+"Sine tone generator by Håvard Kvålen <havardk@xmms.org>\n"
+"Modified by Daniel J. Peng <danielpeng@bigfoot.com>\n"
+"\n"
+"To use it, add a URL: tone://frequency1;frequency2;frequency3;...\n"
+"e.g. tone://2000;2005 to play a 2000 Hz tone and a 2005 Hz tone"
+msgstr ""
+"Siniaaltogeneraattori, luonut Håvard Kvålen <havardk@xmms.org>\n"
+"Muokannut Daniel J. Peng <danielpeng@bigfoot.com>\n"
+"\n"
+"Käyttääksesi, lisää URL: tone://frequency1;frequency2;frequency3;...\n"
+"esim. tone://2000;2005 toistaaksesi 2000 Hz:n ja 2005 Hz:n soinnun"
+
+#: src/ui-common/dialogs-qt.cc:40
+msgid ""
+"\n"
+"(Further messages have been hidden.)"
+msgstr ""
+"\n"
+"(Seuraavat viestit ovat piilotettu.)"
+
+#: src/ui-common/dialogs-qt.cc:52
+msgid "Working ..."
+msgstr "Työskennellään..."
+
+#: src/ui-common/dialogs-qt.cc:73
+msgid "Information"
+msgstr "Tiedot"
+
+#: src/ui-common/menu-ops-gtk.cc:132 src/ui-common/menu-ops-qt.cc:113
+#, c-format
+msgid "%s does not appear to be a valid folder."
+msgstr "%s ei vaikuta olevan kelvollinen kansio"
+
+#: src/voice_removal/voice_removal.cc:28
+msgid "Voice Removal"
+msgstr "Äänen poisto"
+
+#: src/vorbis/vorbis.cc:433
+msgid ""
+"Audacious Ogg Vorbis Decoder\n"
+"\n"
+"Based on the Xiph.org Foundation's Ogg Vorbis Plugin:\n"
+"http://www.xiph.org/\n"
+"\n"
+"Original code by:\n"
+"Tony Arcieri <bascule@inferno.tusculum.edu>\n"
+"\n"
+"Contributions from:\n"
+"Chris Montgomery <monty@xiph.org>\n"
+"Peter Alm <peter@xmms.org>\n"
+"Michael Smith <msmith@labyrinth.edu.au>\n"
+"Jack Moffitt <jack@icecast.org>\n"
+"Jorn Baayen <jorn@nl.linux.org>\n"
+"Håvard Kvålen <havardk@xmms.org>\n"
+"Gian-Carlo Pascutto <gcp@sjeng.org>\n"
+"Eugene Zagidullin <e.asphyx@gmail.com>"
+msgstr ""
+"Audaciouksen Ogg Vorbis -dekooderi\n"
+"\n"
+"Perustuu Xiph.org säätiön Ogg Vorbis -liitännäiselle:\n"
+"http://www.xiph.org/\n"
+"\n"
+"Alkuperäinen kehittäjä:\n"
+"Tony Arcieri <bascule@inferno.tusculum.edu>\n"
+"\n"
+"Kontribuutiot:\n"
+"Chris Montgomery <monty@xiph.org>\n"
+"Peter Alm <peter@xmms.org>\n"
+"Michael Smith <msmith@labyrinth.edu.au>\n"
+"Jack Moffitt <jack@icecast.org>\n"
+"Jorn Baayen <jorn@nl.linux.org>\n"
+"Håvard Kvålen <havardk@xmms.org>\n"
+"Gian-Carlo Pascutto <gcp@sjeng.org>\n"
+"Eugene Zagidullin <e.asphyx@gmail.com>"
+
+#: src/vorbis/vorbis.h:18
+msgid "Ogg Vorbis Decoder"
+msgstr "Ogg Vorbis -dekooderi"
+
+#: src/vtx/info.cc:24
+#, c-format
+msgid "Details about %s"
+msgstr "Tietoja - %s"
+
+#: src/vtx/info.cc:26
+msgid ""
+"Title: %t\n"
+"Author: %a\n"
+"From: %f\n"
+"Tracker: %T\n"
+"Comment: %C\n"
+"Chip type: %c\n"
+"Stereo: %s\n"
+"Loop: %l\n"
+"Chip freq: %F\n"
+"Player Freq: %P\n"
+"Year: %y"
+msgstr ""
+"Nimi: %t\n"
+"Julkaisija: %a\n"
+"Alkaen: %f\n"
+"Tunnistin: %T\n"
+"Kommentti: %C\n"
+"Piirin tyypi: %c\n"
+"Stereo: %s\n"
+"Toisto: %l\n"
+"Piirin taajuus: %F\n"
+"Soitin: %P\n"
+"Vuosi: %y"
+
+#: src/vtx/vtx.cc:38
+msgid "VTX Decoder"
+msgstr "VTX-dekooderi"
+
+#: src/vtx/vtx.cc:178
+msgid ""
+"Vortex file format player by Sashnov Alexander <sashnov@ngs.ru>\n"
+"Based on in_vtx.dll by Roman Sherbakov <v_soft@microfor.ru>\n"
+"Audacious plugin by Pavel Vymetalek <pvymetalek@seznam.cz>"
+msgstr ""
+"Vortex tiedostoformaatin toistin, luonut Sashnov Alexander <sashnov@ngs.ru>\n"
+"Perustuu in_vtx.dll:ään, luonut Roman Sherbakov <v_soft@microfor.ru>\n"
+"Audacious liitännäisen luonut Pavel Vymetalek <pvymetalek@seznam.cz>"
+
+#: src/vumeter-qt/vumeter_qt.cc:31 src/vumeter/vumeter.cc:69
+msgid ""
+"VU Meter Plugin for Audacious\n"
+"Copyright 2017-2019 Marc Sánchez Fauste"
+msgstr ""
+"VU-mittarin lisäosa Audaciousille\n"
+"Copyright 2017-2019 Marc Sánchez Fauste"
+
+#: src/vumeter-qt/vumeter_qt.cc:35 src/vumeter/vumeter.cc:73
+msgid "<b>VU Meter Settings</b>"
+msgstr "<b>VU-mittarin asetukset</b>"
+
+#: src/vumeter-qt/vumeter_qt.cc:37 src/vumeter/vumeter.cc:75
+msgid "Peak hold time:"
+msgstr "Huipun pitoaika:"
+
+#: src/vumeter-qt/vumeter_qt.cc:42 src/vumeter/vumeter.cc:80
+msgid "Fall-off time:"
+msgstr "Poistumisaika:"
+
+#: src/vumeter-qt/vumeter_qt.cc:44 src/vumeter/vumeter.cc:82
+msgid "dB/second"
+msgstr "dB/sekunti"
+
+#: src/vumeter-qt/vumeter_qt.cc:46 src/vumeter/vumeter.cc:85
+msgid "Display legend"
+msgstr "Näytä selite"
+
+#: src/vumeter-qt/vumeter_qt.h:37 src/vumeter/vumeter.cc:47
+msgid "VU Meter"
+msgstr "VU-mittari"
+
+#: src/waveout/waveout.cc:43
+msgid "Win32 waveOut"
+msgstr "Win32 waveOut"
+
+#: src/waveout/waveout.cc:69
+msgid ""
+"Win32 waveOut Plugin for Audacious\n"
+"Copyright 2016 John Lindgren"
+msgstr ""
+"Win32 waveOut lisäosa Audaciousille\n"
+"Copyright 2016 John Lindgren"
+
+#: src/wavpack/wavpack.cc:25
+msgid "WavPack Decoder"
+msgstr "WavPack-dekooderi"
+
+#: src/wavpack/wavpack.cc:207
+msgid "lossy (hybrid)"
+msgstr "häviöllinen (hybridi)"
+
+#: src/wavpack/wavpack.cc:209
+msgid "lossy"
+msgstr "häviöllinen"
+
+#: src/wavpack/wavpack.cc:247
+msgid ""
+"Copyright 2006 William Pitcock <nenolod@nenolod.net>\n"
+"\n"
+"Some of the plugin code was by Miles Egan."
+msgstr ""
+"Copyright 2006 William Pitcock <nenolod@nenolod.net>\n"
+"\n"
+"Osan liitännäisen koodista kirjoittanut Miles Egan."
+
+#: src/xsf/plugin.cc:74
+msgid "2SF Decoder"
+msgstr "2SF-dekooderi"
+
+#: src/xsf/plugin.cc:429
+msgid "32728 Hz"
+msgstr "32728 Hz"
+
+#: src/xsf/plugin.cc:432
+msgid "65456 Hz"
+msgstr "65456 Hz"
+
+#: src/xsf/plugin.cc:438
+msgid "Cosine"
+msgstr "Kosini"
+
+#: src/xsf/plugin.cc:439
+msgid "Sharp"
+msgstr "Tarkka"
+
+#: src/xsf/plugin.cc:443
+msgid "<b>XSF Configuration</b>"
+msgstr "<b>XSF-asetukset</b>"
+
+#: src/xsf/plugin.cc:445
+msgid "Default fade time:"
+msgstr "Häivytysaika oletus:"
+
+#: src/xsf/plugin.cc:447
+msgid "Interpolation mode:"
+msgstr "Interpolointi moodi:"
+
+#: src/xspf/xspf.cc:95
+msgid "XML Shareable Playlists (XSPF)"
+msgstr "XML jaettava soittolista (XSPF)"

@@ -1,0 +1,5016 @@
+# Greek translation for Audacious Plugins
+# Copyright (C) Audacious translators
+# This file is distributed under the same license as the Audacious Plugins package.
+#
+# Translators:
+# 79353a696ad19dc202b261b3067b7640_bec941e, 2015
+# othon alexandros stamataras <alex.stam2000@gmail.com>, 2021
+# DImitrios Zakas <jim.thomas.zks@gmail.com>, 2013
+# Γιώργος Καρδάμης <kardamisgiorgos@gmail.com>, 2020
+# gis mapps <gismapps@gmail.com>, 2014
+# GreekLUG <info@greeklug.gr>, 2021
+# Ioannis LM, 2018,2020
+# Ioannis LM, 2018,2020-2025
+# Nick Tsakalidis <neorisionick@greeklug.gr>, 2021
+# DImitrios Zakas <jim.thomas.zks@gmail.com>, 2013
+# othon alexandros stamataras <alex.stam2000@gmail.com>, 2021
+# Thomas Lange, 2025
+# Wasilis Mandratzis-Walz, 2015
+# 79353a696ad19dc202b261b3067b7640_bec941e, 2015
+# Yannis Anthymidis, 2012-2013
+# Γιώργος Καρδάμης <kardamisgiorgos@gmail.com>, 2020
+msgid ""
+msgstr ""
+"Project-Id-Version: Audacious Plugins\n"
+"Report-Msgid-Bugs-To: https://github.com/audacious-media-player/audacious/"
+"issues\n"
+"POT-Creation-Date: 2025-07-16 00:23+0200\n"
+"PO-Revision-Date: 2011-10-10 17:43+0000\n"
+"Last-Translator: Thomas Lange, 2025\n"
+"Language-Team: Greek (http://app.transifex.com/audacious/audacious/language/"
+"el/)\n"
+"Language: el\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: src/aac/aac.cc:19
+msgid "AAC (Raw) Decoder"
+msgstr "Αποκωδικοποιητής AAC (Raw) "
+
+#: src/adplug/adplug-xmms.cc:70
+msgid "AdPlug (AdLib Player)"
+msgstr "AdPlug (Αναπαραγωγή AdLib)"
+
+#: src/adplug/adplug-xmms.cc:168 src/modplug/modplugbmp.cc:321
+#: src/psf/plugin.cc:161 src/vtx/vtx.cc:89 src/xsf/plugin.cc:204
+msgid "sequenced"
+msgstr "αλληλουχία"
+
+#: src/adplug/adplug-xmms.cc:350 src/sid/xs_config.cc:61
+msgid "<b>Output</b>"
+msgstr "<b>'Εξοδος</b>"
+
+#: src/adplug/adplug-xmms.cc:351
+msgid "OPL Emulator:"
+msgstr "Εξομοιωτής OPL:"
+
+#: src/adplug/adplug-xmms.cc:354 src/amidiplug/i_configure.cc:153
+#: src/console/plugin.cc:45 src/filewriter/filewriter.cc:481
+#: src/sid/xs_config.cc:65 src/xsf/plugin.cc:446
+msgid "Sample rate:"
+msgstr "Ρυθμός δειγματοληψίας:"
+
+#: src/adplug/adplug-xmms.cc:355 src/amidiplug/i_configure.cc:155
+#: src/bs2b/plugin.cc:141 src/console/plugin.cc:47
+#: src/modplug/plugin_main.cc:77 src/resample/resample.cc:201
+#: src/resample/resample.cc:207 src/resample/resample.cc:211
+#: src/resample/resample.cc:215 src/resample/resample.cc:219
+#: src/resample/resample.cc:223 src/resample/resample.cc:227
+#: src/resample/resample.cc:231 src/resample/resample.cc:235
+#: src/resample/resample.cc:239 src/resample/resample.cc:243
+#: src/sid/xs_config.cc:67 src/soxr/sox-resampler.cc:205
+msgid "Hz"
+msgstr "Hz"
+
+#: src/adplug/adplug-xmms.cc:356 src/gtkui/settings.cc:55
+#: src/modplug/plugin_main.cc:105 src/qtui/settings.cc:85
+#: src/skins-qt/skins_cfg.cc:302 src/skins/skins_cfg.cc:284
+msgid "<b>Miscellaneous</b>"
+msgstr "<b>Διάφορα</b>"
+
+#: src/adplug/adplug-xmms.cc:357
+msgid "Repeat song in endless loop"
+msgstr "Συνεχόμενη επανάληψη του τραγουδιού"
+
+#: src/albumart/albumart.cc:31 src/albumart-qt/albumart.cc:35
+msgid "Album Art"
+msgstr "Εξώφυλλο άλμπουμ"
+
+#: src/alsa/alsa.h:64
+msgid "ALSA Output"
+msgstr "Έξοδος ALSA"
+
+#: src/alsa/config.cc:28
+msgid ""
+"ALSA Output Plugin for Audacious\n"
+"Copyright 2009-2012 John Lindgren\n"
+"\n"
+"My thanks to William Pitcock, author of the ALSA Output Plugin NG, whose "
+"code served as a reference when the ALSA manual was not enough."
+msgstr ""
+"Πρόσθετο Έξοδος ALSA για το Audacious\n"
+"Πνευματικά δικαιώματα 2009-2012 John Lindgren\n"
+"\n"
+"Τις ευχαριστίες μου στον William Pitcock, δημιουργό του πρόσθετου Έξοδος "
+"ALSA NG, του οποίου ο κώδικας υπηρέτησε ως σημείο αναφοράς όταν το "
+"εγχειρίδιο ALSA δεν ήταν αρκετό."
+
+#: src/alsa/config.cc:61
+msgid "(no description)"
+msgstr "(χωρίς περιγραφή)"
+
+#: src/alsa/config.cc:166
+msgid "Default PCM device"
+msgstr "Προεπιλεγμένη συσκευή PCM "
+
+#: src/alsa/config.cc:188
+msgid "Default mixer device"
+msgstr "Προεπιλεγμένη συσκευή μείκτη"
+
+#: src/alsa/config.cc:296
+msgid "PCM device:"
+msgstr "Συσκευή PCM:"
+
+#: src/alsa/config.cc:299
+msgid "Mixer device:"
+msgstr "Συσκευή μείκτη:"
+
+#: src/alsa/config.cc:302
+msgid "Mixer element:"
+msgstr "Στοιχείο μείκτη:"
+
+#: src/amidiplug/amidi-plug.cc:42
+msgid "AMIDI-Plug (MIDI Player)"
+msgstr "AMIDI-Plug (Αναπαραγωγή MIDI)"
+
+#: src/amidiplug/amidi-plug.cc:445
+msgid ""
+"AMIDI-Plug\n"
+"modular MIDI music player\n"
+"http://www.develia.org/projects.php?p=amidiplug\n"
+"\n"
+"written by Giacomo Lozito\n"
+"<james@develia.org>\n"
+"\n"
+"special thanks to...\n"
+"\n"
+"Clemens Ladisch and Jaroslav Kysela\n"
+"for their cool programs aplaymidi and amixer; those\n"
+"were really useful, along with alsa-lib docs, in order\n"
+"to learn more about the ALSA API\n"
+"\n"
+"Alfredo Spadafina\n"
+"for the nice midi keyboard logo\n"
+"\n"
+"Tony Vroon\n"
+"for the good help with alpha testing"
+msgstr ""
+"Πρόσθετο AMIDI-Plug\n"
+"αρθρωτό πρόγραμμα αναπαραγωγής μουσικής MIDI\n"
+"http://www.develia.org/projects.php?p=amidiplug\n"
+"\n"
+"Γράφτηκε από τον Giacomo Lozito\n"
+"<james@develia.org>\n"
+"\n"
+"Ιδιαίτερες ευχαριστίες προς τους...\n"
+"\n"
+"Clemens Ladisch και Jaroslav Kysela\n"
+"για τα συναρπαστικά προγράμματα τους aplaymidi και amixer, που πραγματικά "
+"χρησίμευσαν μαζί με τα alsa-lib docs, προκειμένου να μάθουμε περισσότερα "
+"σχετικά με το API ALSA\n"
+"\n"
+"Alfredo Spadafina\n"
+"για το ωραίο λογότυπο του πληκτρολογίου midi\n"
+"\n"
+"Tony Vroon\n"
+"για την βοήθεια του στη δοκιμή άλφα"
+
+#: src/amidiplug/i_configure.cc:94
+msgid "Override default gain:"
+msgstr "Παράκαμψη προεπιλεγμένης αύξησης:"
+
+#: src/amidiplug/i_configure.cc:102
+msgid "Override default polyphony:"
+msgstr "Παράκαμψη προεπιλεγμένης πολυφωνίας:"
+
+#: src/amidiplug/i_configure.cc:110
+msgid "Override default reverb:"
+msgstr "Παράκαμψη προεπιλεγμένης αντήχησης:"
+
+#: src/amidiplug/i_configure.cc:112 src/amidiplug/i_configure.cc:120
+msgid "On"
+msgstr "Ενεργοποίηση"
+
+#: src/amidiplug/i_configure.cc:118
+msgid "Override default chorus:"
+msgstr "Παράκαμψη προεπιλεγμένου ρεφρέν:"
+
+#: src/amidiplug/i_configure.cc:128 src/console/plugin.cc:29
+msgid "<b>Playback</b>"
+msgstr "<b>Αναπαραγωγή</b>"
+
+#: src/amidiplug/i_configure.cc:129
+msgid "Transpose:"
+msgstr "Μετάθεση:"
+
+#: src/amidiplug/i_configure.cc:131 src/speedpitch/speed-pitch.cc:257
+msgid "semitones"
+msgstr "ημιτόνια"
+
+#: src/amidiplug/i_configure.cc:132
+msgid "Drum shift:"
+msgstr "Μετακίνηση Drum:"
+
+#: src/amidiplug/i_configure.cc:134
+msgid "note numbers"
+msgstr "αριθμοί"
+
+#: src/amidiplug/i_configure.cc:135
+msgid "Skip leading silence"
+msgstr "Παράληψη κύριας σιωπής"
+
+#: src/amidiplug/i_configure.cc:137
+msgid "Skip trailing silence"
+msgstr "Παράληψη ακολουθούμενης σιωπής"
+
+#: src/amidiplug/i_configure.cc:141
+msgid "<b>SoundFont</b>"
+msgstr "<b>SoundFont</b>"
+
+#: src/amidiplug/i_configure.cc:148
+msgid "<b>Synthesizer</b>"
+msgstr "<b>Synthesizer</b>"
+
+#: src/amidiplug/i_configure-fluidsynth.cc:58
+#: src/amidiplug/i_configure-fluidsynth.cc:527
+msgid "AMIDI-Plug - select SoundFont file"
+msgstr "Πρόσθετο AMIDI - επιλέξτε αρχείο SoundFont"
+
+#: src/amidiplug/i_configure-fluidsynth.cc:61
+msgid "_Cancel"
+msgstr "Άκ_υρο"
+
+#: src/amidiplug/i_configure-fluidsynth.cc:62
+msgid "_Open"
+msgstr "Άνοι_γμα"
+
+#: src/amidiplug/i_configure-fluidsynth.cc:233
+#: src/amidiplug/i_configure-fluidsynth.cc:461
+msgid "File name"
+msgstr "Όνομα αρχείου"
+
+#: src/amidiplug/i_configure-fluidsynth.cc:237
+#: src/amidiplug/i_configure-fluidsynth.cc:464
+msgid "Size (bytes)"
+msgstr "Μέγεθος (byte)"
+
+#: src/amidiplug/i_fileinfo.cc:184
+msgid "Name:"
+msgstr "Όνομα:"
+
+#: src/amidiplug/i_fileinfo.cc:202
+msgid "<span size=\"smaller\"> MIDI Info </span>"
+msgstr "<span size=\"smaller\"> Πληροφορίες MIDI </span>"
+
+#: src/amidiplug/i_fileinfo.cc:216
+msgid "Format:"
+msgstr "Μορφή:"
+
+#: src/amidiplug/i_fileinfo.cc:219
+msgid "Length (msec):"
+msgstr "Διάρκεια (ms):"
+
+#: src/amidiplug/i_fileinfo.cc:222
+msgid "No. of Tracks:"
+msgstr "Αρ. κομματιών:"
+
+#: src/amidiplug/i_fileinfo.cc:228
+msgid "variable"
+msgstr "μεταβλητή"
+
+#: src/amidiplug/i_fileinfo.cc:230
+msgid "BPM:"
+msgstr "BPM:"
+
+#: src/amidiplug/i_fileinfo.cc:238
+msgid "BPM (wavg):"
+msgstr "BPM (wavg):"
+
+#: src/amidiplug/i_fileinfo.cc:241
+msgid "Time Div:"
+msgstr "Χρόνος Div:"
+
+#: src/amidiplug/i_fileinfo.cc:252
+msgid "<span size=\"smaller\"> MIDI Comments and Lyrics </span>"
+msgstr "<span size=\"smaller\"> Σχόλια και Στοίχοι MIDI </span>"
+
+#: src/amidiplug/i_fileinfo.cc:299
+msgid "* no comments available in this MIDI file *"
+msgstr "* δεν υπάρχουν σχόλια σε αυτό το αρχείο MIDI *"
+
+#: src/amidiplug/i_fileinfo.cc:311
+msgid "* no lyrics available in this MIDI file *"
+msgstr "* δεν υπάρχουν στίχοι σε αυτό το αρχείο MIDI *"
+
+#: src/amidiplug/i_fileinfo.cc:321 src/ladspa/plugin.cc:418
+#: src/ui-common/dialogs-qt.cc:32
+msgid "_Close"
+msgstr "_Κλείσιμο"
+
+#: src/amidiplug/i_fileinfo.cc:346
+msgid "  (invalid UTF-8)"
+msgstr "  (μη έγκυρο UTF-8)"
+
+#: src/ampache/ampache.cc:33
+msgid "Ampache Browser"
+msgstr "Ampache Browser"
+
+#: src/ampache/ampache.cc:46
+msgid ""
+"Ampache Browser for Audacious\n"
+"http://ampache-browser.org/\n"
+"\n"
+"Copyright (C) Róbert Čerňanský and John Lindgren\n"
+"License: GNU GPLv3"
+msgstr ""
+"Ampache Browser για το Audacious\n"
+"http://ampache-browser.org/\n"
+"\n"
+"Πνευματικά δικαιώματα (C) Róbert Čerňanský και John Lindgren\n"
+"Άδεια: GNU GPLv3"
+
+#: src/aosd/aosd.cc:31
+msgid ""
+"Audacious OSD\n"
+"http://www.develia.org/projects.php?p=audacious#aosd\n"
+"\n"
+"Written by Giacomo Lozito <james@develia.org>\n"
+"\n"
+"Based in part on Evan Martin's Ghosd library:\n"
+"http://neugierig.org/software/ghosd/"
+msgstr ""
+"Audacious OSD\n"
+"http://www.develia.org/projects.php?p=audacious#aosd\n"
+"\n"
+"Συντάχθηκε από τον Giacomo Lozito <james@develia.org>\n"
+"\n"
+"Βασίζεται εν μέρει στη βιβλιοθήκη Ghosd του Evan Martin:\n"
+"http://neugierig.org/software/ghosd/"
+
+#: src/aosd/aosd.h:37
+msgid "AOSD (On-Screen Display)"
+msgstr "AOSD (Απεικόνιση στην οθόνη)"
+
+#: src/aosd/aosd_style.cc:54
+msgid "Rectangle"
+msgstr "Ορθογώνιο"
+
+#: src/aosd/aosd_style.cc:59
+msgid "Rounded Rectangle"
+msgstr "Στρογγυλεμένο ορθογώνιο"
+
+#: src/aosd/aosd_style.cc:64
+msgid "Concave Rectangle"
+msgstr "Κοίλο ορθογώνιο"
+
+#: src/aosd/aosd_style.cc:69 src/openmpt/mptwrap.h:50 src/xsf/plugin.cc:436
+msgid "None"
+msgstr "Κανένα"
+
+#: src/aosd/aosd_trigger.cc:49
+msgid "Playback Start"
+msgstr "Έναρξη αναπαραγωγής"
+
+#: src/aosd/aosd_trigger.cc:50
+msgid "Triggers OSD when a playlist entry is played."
+msgstr ""
+"Ενεργοποίηση απεικόνισης στην οθόνη (OSD) όταν αναπαράγεται η λίστα "
+"αναπαραγωγής."
+
+#: src/aosd/aosd_trigger.cc:55
+msgid "Title Change"
+msgstr "Αλλαγή τίτλου"
+
+#: src/aosd/aosd_trigger.cc:56
+msgid "Triggers OSD when the song title changes (for internet streams)."
+msgstr ""
+"Ενεργοποίηση απεικόνισης στην οθόνη (OSD) όταν αλλάζει ο τίτλος του "
+"τραγουδιού (για ροές στο διαδίκτυο)."
+
+#: src/aosd/aosd_trigger.cc:61
+msgid "Pause On"
+msgstr "Παύση ενεργή"
+
+#: src/aosd/aosd_trigger.cc:62
+msgid "Triggers OSD when playback is paused."
+msgstr ""
+"Ενεργοποίηση απεικόνισης στην οθόνη (OSD) όταν γίνεται παύση της "
+"αναπαραγωγής."
+
+#: src/aosd/aosd_trigger.cc:67
+msgid "Pause Off"
+msgstr "Παύση ανενεργή"
+
+#: src/aosd/aosd_trigger.cc:68
+msgid "Triggers OSD when playback is unpaused."
+msgstr ""
+"Ενεργοποίηση απεικόνισης στην οθόνη (OSD) όταν η αναπαραγωγή επανέρχεται από "
+"παύση."
+
+#: src/aosd/aosd_ui.cc:204
+msgid "Placement"
+msgstr "Τοποθέτηση"
+
+#: src/aosd/aosd_ui.cc:241
+msgid "Relative X offset:"
+msgstr "Σχετικός οριζόντιος άξονας Χ:"
+
+#: src/aosd/aosd_ui.cc:245
+msgid "Relative Y offset:"
+msgstr "Σχετικός κάθετος άξονας Y:"
+
+#: src/aosd/aosd_ui.cc:249
+msgid "Max OSD width:"
+msgstr "Μέγιστο πλάτος απεικόνισης στην οθόνη (OSD):"
+
+#: src/aosd/aosd_ui.cc:281
+msgid "Multi-Monitor options"
+msgstr "Επιλογές για πολλαπλές οθόνες"
+
+#: src/aosd/aosd_ui.cc:285
+msgid "Display OSD using:"
+msgstr "Προβολή απεικόνισης στην οθόνη (OSD) σε:"
+
+#: src/aosd/aosd_ui.cc:287
+msgid "all monitors"
+msgstr "όλες τις οθόνες"
+
+#: src/aosd/aosd_ui.cc:290
+#, c-format
+msgid "monitor %i"
+msgstr "οθόνη %i"
+
+#: src/aosd/aosd_ui.cc:342
+msgid "Timing (ms)"
+msgstr "Συγχρονισμός (ms)"
+
+#: src/aosd/aosd_ui.cc:347
+msgid "Display:"
+msgstr "Προβολή:"
+
+#: src/aosd/aosd_ui.cc:352
+msgid "Fade in:"
+msgstr "Σταδιακή είσοδος:"
+
+#: src/aosd/aosd_ui.cc:357
+msgid "Fade out:"
+msgstr "Βαθμιαίο σβήσιμο:"
+
+#: src/aosd/aosd_ui.cc:442
+msgid "Fonts"
+msgstr "Γραμματοσειρές"
+
+#: src/aosd/aosd_ui.cc:449
+#, c-format
+msgid "Font %i:"
+msgstr "Γραμματοσειρά %i:"
+
+#: src/aosd/aosd_ui.cc:466
+msgid "Shadow"
+msgstr "Σκιά"
+
+#: src/aosd/aosd_ui.cc:589
+msgid "Render Style"
+msgstr "Απόδοση ύφους"
+
+#: src/aosd/aosd_ui.cc:605
+msgid "Colors"
+msgstr "Χρώματα"
+
+#: src/aosd/aosd_ui.cc:616
+#, c-format
+msgid "Color %i:"
+msgstr "Χρώμα %i:"
+
+#: src/aosd/aosd_ui.cc:714
+msgid "Enable trigger"
+msgstr "Ενεργοποίηση εμφάνισης"
+
+#: src/aosd/aosd_ui.cc:741
+msgid "Event"
+msgstr "Συμβάν"
+
+#: src/aosd/aosd_ui.cc:768
+msgid "Composite manager detected"
+msgstr "Ανιχνεύθηκε διαχειριστής σύνθεσης"
+
+#: src/aosd/aosd_ui.cc:775
+msgid ""
+"Composite manager not detected;\n"
+"unless you know that you have one running, please activate a composite "
+"manager otherwise the OSD won't work properly"
+msgstr ""
+"Δεν ανιχνεύθηκε διαχειριστής σύνθεσης!\n"
+"αν γνωρίζετε ότι έχετε κάποιον σε λειτουργία παρακαλώ ενεργοποιήστε τον, "
+"διαφορετικά δεν θα λειτουργήσει σωστά η απεικόνιση στην οθόνη (OSD)"
+
+#: src/aosd/aosd_ui.cc:783
+msgid "Composite manager not required for fake transparency"
+msgstr "Δεν απαιτείται διαχειριστής σύνθεσης για ψεύτικη διαφάνεια"
+
+#: src/aosd/aosd_ui.cc:820
+msgid "Transparency"
+msgstr "Διαφάνεια"
+
+#: src/aosd/aosd_ui.cc:826
+msgid "Fake transparency"
+msgstr "Ψεύτικη διαφάνεια"
+
+#: src/aosd/aosd_ui.cc:828
+msgid "Real transparency (requires X Composite Ext.)"
+msgstr "Πραγματική διαφάνεια (χρειάζεται X Composite Ext.)"
+
+#: src/aosd/aosd_ui.cc:875
+msgid "Composite extension not loaded"
+msgstr "Η επέκταση σύνθεσης δεν φορτώθηκε"
+
+#: src/aosd/aosd_ui.cc:892
+#, c-format
+msgid "<span font_desc='%s'>Audacious OSD</span>"
+msgstr "<span font_desc='%s'>Audacious OSD</span>"
+
+#: src/aosd/aosd_ui.cc:955
+msgid "Position"
+msgstr "Θέση"
+
+#: src/aosd/aosd_ui.cc:960
+msgid "Animation"
+msgstr "Κίνηση"
+
+#: src/aosd/aosd_ui.cc:965
+msgid "Text"
+msgstr "Κείμενο"
+
+#: src/aosd/aosd_ui.cc:970
+msgid "Decoration"
+msgstr "Διακόσμηση"
+
+#: src/aosd/aosd_ui.cc:975
+msgid "Trigger"
+msgstr "Εμφάνιση"
+
+#: src/aosd/aosd_ui.cc:980 src/streamtuner/shoutcast-model.cc:202
+msgid "Misc"
+msgstr "Διάφορα"
+
+#: src/aosd/aosd_ui.cc:989
+msgid "Test"
+msgstr "Δοκιμή"
+
+#: src/asx3/asx3.cc:35
+msgid "ASXv3 Playlists"
+msgstr "Λίστες αναπαραγωγής ASXv3"
+
+#: src/asx/asx.cc:33
+msgid "ASXv1/ASXv2 Playlists"
+msgstr "Λίστες αναπαραγωγής ASXv1/ASXv2"
+
+#: src/audpl/audpl.cc:33
+msgid "Audacious Playlists (audpl)"
+msgstr "Λίστες αναπαραγωγής Audacious (audpl)"
+
+#: src/background_music/background_music.cc:24
+msgid "<b>Background music</b>"
+msgstr "<b>Υπόβαθρο μουσικής</b>"
+
+#: src/background_music/background_music.cc:25
+msgid "Target level:"
+msgstr "Επίπεδο:"
+
+#: src/background_music/background_music.cc:28
+#: src/background_music/background_music.cc:33
+#: src/silence-removal/silence-removal.cc:70
+msgid "dB"
+msgstr "dB"
+
+#: src/background_music/background_music.cc:29
+msgid "Maximum amplification:"
+msgstr "Μέγιστη ενίσχυση:"
+
+#: src/background_music/background_music.cc:34 src/mpg123/mpg123.cc:81
+msgid "<b>Advanced</b>"
+msgstr "<b>Προχωρημένα</b>"
+
+#: src/background_music/background_music.cc:36
+msgid "Slow detection weight:"
+msgstr "Στάθμιση αργής ανίχνευσης:"
+
+#: src/background_music/background_music.cc:39
+msgid "<b>Hint</b>"
+msgstr "<b>Υπόδειξη</b>"
+
+#: src/background_music/background_music.cc:41
+msgid ""
+"Slow detection weight is the relative weight\n"
+"of a long term average detection when compared\n"
+"to the actual, faster loudness detection.\n"
+"A value of zero gives a more radio-like sound\n"
+"where soft passages get \"pulled up\" more quickly,\n"
+"a value of two makes the sound feel less compressed."
+msgstr ""
+"Η στάθμιση αργής ανίχνευσης της έντασης του ήχου είναι,\n"
+"η σχετική στάθμιση μιας μεγάλης διάρκειας μέσης ανίχνευσης\n"
+"συγκριτικά με την πραγματική, ταχύτερη ανίχνευση.\n"
+"Μια τιμή μηδέν δίνει ήχο που μοιάζει περισσότερο ραδιοφωνικός\n"
+"όπου, τα σιγανά τμήματα \"ανεβαίνουν\" ταχύτερα ενώ, \n"
+"μια τιμή δύο κάνει τον ήχο να μοιάζει λιγότερο πιεσμένος."
+
+#: src/background_music/background_music.cc:52
+msgid ""
+"Background Music Plugin for Audacious\n"
+"Copyright 2023;2024 Michel Fleur\n"
+"\n"
+"Controls the volume to make the sound equally loud within and between "
+"tracks.\n"
+" It uses accurate loudness measurement and tries to make the volume changes "
+"sound natural without audible peaks, yet without lowering the volume before "
+"a peak in advance."
+msgstr ""
+"Πρόσθετο Υπόβαθρο μουσικής για το Audacious\n"
+"Πνευματικά δικαιώματα 2023;2024 Michel Fleur\n"
+"\n"
+"Ελέγχει την ένταση για να είναι ο ήχος εξίσου δυνατός εντός και μεταξύ των "
+"κομματιών.\n"
+" Χρησιμοποιεί ακριβή μέτρηση της έντασης του ήχου και προσπαθεί οι αλλαγές "
+"έντασης να ακούγονται φυσιολογικά χωρίς ηχητικές κορυφώσεις και χωρίς να "
+"μειώνεται προκαταβολικά η ένταση πριν από μια κορυφή."
+
+#: src/background_music/background_music.cc:61
+msgid "Background Music"
+msgstr "Υπόβαθρο μουσικής"
+
+#: src/bitcrusher/bitcrusher.cc:33
+msgid "<b>Bitcrusher</b>"
+msgstr "<b>Bitcrusher</b>"
+
+#: src/bitcrusher/bitcrusher.cc:34
+msgid "Bit Depth:"
+msgstr "Βάθος bit:"
+
+#: src/bitcrusher/bitcrusher.cc:37
+msgid "Downsample ratio:"
+msgstr "Αναλογία υποδειγματοληψίας:"
+
+#: src/bitcrusher/bitcrusher.cc:48
+msgid "Bitcrusher"
+msgstr "Bitcrusher (εφέ ήχου)"
+
+#: src/blur_scope/blur_scope.cc:40 src/blur_scope-qt/blur_scope.cc:45
+msgid "<b>Color</b>"
+msgstr "<b>Χρώμα</b>"
+
+#: src/blur_scope/blur_scope.cc:56 src/blur_scope-qt/blur_scope.cc:158
+msgid "Blur Scope"
+msgstr "Κυματομορφή θόλωσης"
+
+#: src/bs2b/plugin.cc:38
+msgid "Bauer Stereophonic-to-Binaural (BS2B)"
+msgstr "Bauer Stereophonic-to-Binaural (BS2B)"
+
+#: src/bs2b/plugin.cc:129
+msgid "Presets:"
+msgstr "Προρυθμίσεις:"
+
+#: src/bs2b/plugin.cc:130
+msgid "Default"
+msgstr "Προεπιλογή"
+
+#: src/bs2b/plugin.cc:136
+msgid "Feed level:"
+msgstr "Επίπεδο τροφοδοσίας:"
+
+#: src/bs2b/plugin.cc:138
+msgid "x1/10 dB"
+msgstr "x1/10 dB"
+
+#: src/bs2b/plugin.cc:139
+msgid "Cut frequency:"
+msgstr "Αποκοπή συχνότητας:"
+
+#: src/cairo-spectrum/cairo-spectrum.cc:39 src/qt-spectrum/qt-spectrum.cc:107
+msgid "Spectrum Analyzer"
+msgstr "Αναλυτής φάσματος"
+
+#: src/cdaudio/cdaudio-ng.cc:74
+msgid "Audio CD Plugin"
+msgstr "Πρόσθετο μουσικών CD"
+
+#: src/cdaudio/cdaudio-ng.cc:121
+msgid ""
+"Copyright (C) 2007-2012 Calin Crisan <ccrisan@gmail.com> and others.\n"
+"\n"
+"Many thanks to libcdio developers <http://www.gnu.org/software/libcdio/>\n"
+"and to libcddb developers <http://libcddb.sourceforge.net/>.\n"
+"\n"
+"Also thank you to Tony Vroon for mentoring and guiding me.\n"
+"\n"
+"This was a Google Summer of Code 2007 project."
+msgstr ""
+"Πνευματικά δικαιώματα (C) 2007-2012 Calin Crisan <ccrisan@gmail.com> και "
+"άλλοι.\n"
+"\n"
+"Πολλά ευχαριστώ στους δημιουργούς του \n"
+"libcdio <http://www.gnu.org/software/libcdio/> και του\n"
+"libcddb <http://libcddb.sourceforge.net/>.\n"
+"\n"
+"Επίσης ευχαριστώ τον Tony Vroon για την καθοδήγησή του.\n"
+"\n"
+"Δημιουργήθηκε κατά το Google Summer of Code 2007."
+
+#: src/cdaudio/cdaudio-ng.cc:140
+msgid "<b>Device</b>"
+msgstr "<b>Συσκευή</b>"
+
+#: src/cdaudio/cdaudio-ng.cc:141
+msgid "Read speed:"
+msgstr "Ταχύτητα ανάγνωσης:"
+
+#: src/cdaudio/cdaudio-ng.cc:144
+msgid "Override device:"
+msgstr "Παράκαμψη συσκευής:"
+
+#: src/cdaudio/cdaudio-ng.cc:146
+msgid "<b>Metadata</b>"
+msgstr "<b>Μεταδεδομένα</b>"
+
+#: src/cdaudio/cdaudio-ng.cc:147
+msgid "Use CD-Text"
+msgstr "Χρήση CD-Text"
+
+#: src/cdaudio/cdaudio-ng.cc:150
+msgid "Use CDDB"
+msgstr "Χρήση CDDB"
+
+#: src/cdaudio/cdaudio-ng.cc:152
+msgid "Use HTTP instead of CDDBP"
+msgstr "Χρήση HTTP αντί CDDBP"
+
+#: src/cdaudio/cdaudio-ng.cc:155
+msgid "Server:"
+msgstr "Διακομιστής:"
+
+#: src/cdaudio/cdaudio-ng.cc:159
+msgid "Path:"
+msgstr "Διαδρομή:"
+
+#: src/cdaudio/cdaudio-ng.cc:163
+msgid "Port:"
+msgstr "Θύρα:"
+
+#: src/cdaudio/cdaudio-ng.cc:228
+msgid "Failed to initialize cdio subsystem."
+msgstr "Αποτυχία αρχικοποίησης του υποσυστήματος cdio."
+
+#: src/cdaudio/cdaudio-ng.cc:260
+#, c-format
+msgid "Invalid URI %s."
+msgstr "Μη έγκυρο URI %s."
+
+#: src/cdaudio/cdaudio-ng.cc:262
+#, c-format
+msgid "Track %d not found."
+msgstr "Το κομμάτι %d δεν βρέθηκε."
+
+#: src/cdaudio/cdaudio-ng.cc:264
+#, c-format
+msgid "Track %d is a data track."
+msgstr "Το κομμάτι %d είναι κομμάτι δεδομένων."
+
+#: src/cdaudio/cdaudio-ng.cc:339
+msgid "Error reading audio CD."
+msgstr "Σφάλμα ανάγνωσης CD ήχου."
+
+#: src/cdaudio/cdaudio-ng.cc:410
+msgid "Audio CD"
+msgstr "Μουσικό CD"
+
+#: src/cdaudio/cdaudio-ng.cc:446 src/cdaudio/cdaudio-ng.cc:455
+#, c-format
+msgid "Failed to open CD device %s."
+msgstr "Αποτυχία ανοίγματος της συσκευή CD %s."
+
+#: src/cdaudio/cdaudio-ng.cc:458
+msgid "No audio capable CD drive found."
+msgstr "Δεν βρέθηκε συσκευή με CD ήχου."
+
+#: src/cdaudio/cdaudio-ng.cc:481
+msgid "Drive is empty."
+msgstr "Η μονάδα δίσκου είναι κενή."
+
+#: src/cdaudio/cdaudio-ng.cc:483
+msgid "Unsupported disk type."
+msgstr "Μη υποστηριζόμενος τύπος δίσκου."
+
+#: src/cdaudio/cdaudio-ng.cc:507
+msgid "Failed to finish initializing opened CD drive."
+msgstr "Δεν ολοκληρώθηκε η αρχικοποίηση της ανοιχτής μονάδας CD."
+
+#: src/cdaudio/cdaudio-ng.cc:520
+msgid "Failed to retrieve first/last track number."
+msgstr "Αποτυχία ανάκτησης του πρώτου/τελευταίου αριθμού κομματιού."
+
+#: src/cdaudio/cdaudio-ng.cc:541
+#, c-format
+msgid "Cannot read start/end LSN for track %d."
+msgstr "Αδύνατη η ανάγνωση έναρξης/λήξης του LSD για το κομμάτι %d."
+
+#: src/cdaudio/cdaudio-ng.cc:624
+msgid "Failed to create the CDDB connection."
+msgstr "Αποτυχία σύνδεσης με την CDDB."
+
+#: src/cdaudio/cdaudio-ng.cc:690
+msgid "Failed to query the CDDB server"
+msgstr "Αποτυχία ερώτησης στο διακομιστή CDDB"
+
+#: src/cdaudio/cdaudio-ng.cc:692
+#, c-format
+msgid "Failed to query the CDDB server: %s"
+msgstr "Αποτυχία ερώτησης στο διακομιστή CDDB: %s"
+
+#: src/cdaudio/cdaudio-ng.cc:716
+#, c-format
+msgid "Failed to read the CDDB info: %s"
+msgstr "Αποτυχία ανάκτησης πληροφοριών από CDDB: %s"
+
+#: src/cd-menu-items/cd-menu-items.cc:33
+msgid "Audio CD Menu Items"
+msgstr "Μενού αντικειμένων σε Audio CD"
+
+#: src/cd-menu-items/cd-menu-items.cc:45
+msgid "Pla_y CD"
+msgstr "_Αναπαραγωγή CD"
+
+#: src/cd-menu-items/cd-menu-items.cc:45
+msgid "_Add CD"
+msgstr "_Προσθήκη CD"
+
+#: src/compressor/compressor.cc:45
+msgid "<b>Compression</b>"
+msgstr "<b>Συμπίεση</b>"
+
+#: src/compressor/compressor.cc:46
+msgid "Center volume:"
+msgstr "Κέντρο έντασης:"
+
+#: src/compressor/compressor.cc:49
+msgid "Dynamic range:"
+msgstr "Δυναμικό εύρος:"
+
+#: src/compressor/compressor.cc:57
+msgid ""
+"Dynamic Range Compression Plugin for Audacious\n"
+"Copyright 2010-2014 John Lindgren"
+msgstr ""
+"Πρόσθετο Συμπιεστής δυναμικού εύρους για το Audacious\n"
+"Πνευματικά δικαιώματα 2010-2014 John Lindgren"
+
+#: src/compressor/compressor.cc:64
+msgid "Dynamic Range Compressor"
+msgstr "Συμπιεστής δυναμικού εύρους "
+
+#: src/console/plugin.cc:15
+msgid ""
+"Console music decoder engine based on Game_Music_Emu 0.5.2\n"
+"Supported formats: AY, GBS, GYM, HES, KSS, NSF, NSFE, SAP, SPC, VGM, VGZ\n"
+"\n"
+"Audacious plugin by:\n"
+"William Pitcock <nenolod@dereferenced.org>\n"
+"Shay Green <gblargg@gmail.com>"
+msgstr ""
+"Η μηχανή του Αποκωδικοποιητή μουσικής κονσόλας, βασίστηκε στο Game_Music_Emu "
+"0.5.2\n"
+"Υποστηριζόμενοι τύποι αρχείου: AY, GBS, GYM, HES, KSS, NSF, NSFE, SAP, SPC, "
+"VGM, VGZ\n"
+"\n"
+"Πρόσθετο για το Audacious από τους:\n"
+"William Pitcock <nenolod@dereferenced.org>\n"
+"Shay Green <gblargg@gmail.com>"
+
+#: src/console/plugin.cc:30
+msgid "Bass:"
+msgstr "Μπάσα:"
+
+#: src/console/plugin.cc:33
+msgid "Treble:"
+msgstr "Πρίμα:"
+
+#: src/console/plugin.cc:36
+msgid "Echo:"
+msgstr "Ηχώ:"
+
+#: src/console/plugin.cc:39
+msgid "Default song length:"
+msgstr "Προεπιλεγμένη διάρκεια τραγουδιού:"
+
+#: src/console/plugin.cc:41 src/crossfade/crossfade.cc:56
+#: src/crossfade/crossfade.cc:62 src/lirc/lirc.cc:395 src/notify/notify.cc:113
+#: src/sid/xs_config.cc:85 src/sid/xs_config.cc:94 src/sid/xs_config.cc:103
+#: src/vumeter-qt/vumeter_qt.cc:39 src/vumeter/vumeter.cc:77
+msgid "seconds"
+msgstr "δευτερόλεπτα"
+
+#: src/console/plugin.cc:42 src/modplug/plugin_main.cc:58
+msgid "<b>Resampling</b>"
+msgstr "<b>Αναδειγματοληψία</b>"
+
+#: src/console/plugin.cc:43
+msgid "Enable audio resampling"
+msgstr "Ενεργοποίηση ανασχεδίασης ήχου"
+
+#: src/console/plugin.cc:49
+msgid "<b>SPC</b>"
+msgstr "<b>SPC</b>"
+
+#: src/console/plugin.cc:50
+msgid "Ignore length from SPC tags"
+msgstr "Παράβλεψη διάρκειας από tags SPC"
+
+#: src/console/plugin.cc:52
+msgid "Increase reverb"
+msgstr "Αύξηση αντήχησης"
+
+#: src/console/plugin.h:26
+msgid "Game Console Music Decoder"
+msgstr "Αποκωδικοποιητής μουσικής κονσόλας παιχνιδιών"
+
+#: src/coreaudio/coreaudio.cc:53
+msgid "CoreAudio output"
+msgstr "Έξοδος CoreAudio"
+
+#: src/coreaudio/coreaudio.cc:155
+msgid ""
+"CoreAudio Output Plugin for Audacious\n"
+"Copyright 2014 William Pitcock\n"
+"Copyright 2017,18 René J.V. Bertin\n"
+" (original code and code adapted from\n"
+"  Apple examples, (C) Apple 2013)\n"
+"\n"
+"Based on SDL Output Plugin for Audacious\n"
+"Copyright 2010 John Lindgren"
+msgstr ""
+"Πρόσθετο Έξοδος CoreAudio για το Audacious\n"
+"Πνευματικά δικαιώματα 2014 William Pitcock\n"
+"Πνευματικά δικαιώματα 2017,18 René J.V. Bertin\n"
+"(αρχικός κώδικας και προσαρμογή από\n"
+"     Apple examples, (C) Apple 2013)\n"
+"\n"
+"Βασισμένο στο πρόσθετο SDL Output για το Audacious\n"
+"Πνευματικά δικαιώματα 2010 John Lindgren"
+
+#: src/coreaudio/coreaudio.cc:171
+msgid "Use exclusive mode"
+msgstr "Χρήση αποκλειστικής λειτουργίας"
+
+#: src/coreaudio/coreaudio.cc:173
+msgid "Use bit perfect audio (adapt device sampling rate)"
+msgstr ""
+"Χρήση bit για τέλειο ήχο (προσαρμογή του ρυθμού δειγματοληψίας της συσκευής)"
+
+#: src/crossfade/crossfade.cc:47
+msgid ""
+"Crossfade Plugin for Audacious\n"
+"Copyright 2010-2014 John Lindgren"
+msgstr ""
+"Πρόσθετο Σταδιακής μετάβασης (Crossfade) για το Audacious\n"
+"Πνευματικά δικαιώματα 2010-2014 John Lindgren"
+
+#: src/crossfade/crossfade.cc:51
+msgid "<b>Crossfade</b>"
+msgstr "<b>Σταδιακή μετάβαση</b>"
+
+#: src/crossfade/crossfade.cc:52
+msgid "On automatic song change"
+msgstr "Σε αυτόματη αλλαγή τραγουδιού"
+
+#: src/crossfade/crossfade.cc:54 src/crossfade/crossfade.cc:60
+msgid "Overlap:"
+msgstr "Επικάλυψη:"
+
+#: src/crossfade/crossfade.cc:58
+msgid "On seek or manual song change"
+msgstr "Κατά την αναζήτηση ή χειροκίνητη αλλαγή τραγουδιού"
+
+#: src/crossfade/crossfade.cc:64
+msgid "No fade in"
+msgstr "Χωρίς σταδιακή μετάβαση στο τέλος"
+
+#: src/crossfade/crossfade.cc:66
+msgid "Use S-curve fade"
+msgstr "Χρήση σταδιακής μετάβασης S-curve"
+
+#: src/crossfade/crossfade.cc:68
+msgid "S-curve steepness:"
+msgstr "Κλίση S-curve:"
+
+#: src/crossfade/crossfade.cc:70
+msgid "(higher is steeper)"
+msgstr "(υψηλότερα είναι πιό απότομα)"
+
+#: src/crossfade/crossfade.cc:72
+msgid "<b>Tip</b>"
+msgstr "<b>Υπόδειξη</b>"
+
+#: src/crossfade/crossfade.cc:73
+msgid ""
+"For better crossfading, enable\n"
+"the Silence Removal effect."
+msgstr ""
+"Για καλύτερη σταδιακή μετάβαση, ενεργοποιήσετε την \n"
+"Αφαίρεση σιωπής."
+
+#: src/crossfade/crossfade.cc:83
+msgid "Crossfade"
+msgstr "Σταδιακή μετάβαση (Crossfade)"
+
+#: src/crystalizer/crystalizer.cc:31
+msgid "<b>Crystalizer</b>"
+msgstr "<b>Crystalizer</b>"
+
+#: src/crystalizer/crystalizer.cc:32 src/stereo_plugin/stereo.cc:45
+msgid "Intensity:"
+msgstr "Ένταση:"
+
+#: src/crystalizer/crystalizer.cc:43
+msgid "Crystalizer"
+msgstr "Crystalizer"
+
+#: src/cue/cue.cc:42
+msgid "Cue Sheet Plugin"
+msgstr "Πρόσθετο Cue Sheet"
+
+#: src/delete-files/delete-files.cc:53 src/delete-files/delete-files.cc:215
+#: src/delete-files/delete-files.cc:230
+msgid "Delete Files"
+msgstr "Διαγραφή αρχείων"
+
+#: src/delete-files/delete-files.cc:120
+msgid "No files are selected."
+msgstr "Δεν έχουν επιλεγεί αρχεία."
+
+#: src/delete-files/delete-files.cc:125
+#, c-format
+msgid "Do you want to move %s to the trash?"
+msgstr "Θέλετε να μετακινήσετε %s στα απορρίμματα;"
+
+#: src/delete-files/delete-files.cc:126
+#, c-format
+msgid "Do you want to permanently delete %s?"
+msgstr "Θέλετε να διαγράψετε οριστικά το %s;"
+
+#: src/delete-files/delete-files.cc:133
+#, c-format
+msgid "Do you want to move %d files to the trash?"
+msgstr "Θέλετε να μετακινήσετε %d αρχεία στα απορρίμματα;"
+
+#: src/delete-files/delete-files.cc:134
+#, c-format
+msgid "Do you want to permanently delete %d files?"
+msgstr "Θέλετε να διαγράψετε οριστικά τα %d αρχεία;"
+
+#: src/delete-files/delete-files.cc:146
+msgid "Move to trash"
+msgstr "Μετακίνηση στα απορρίμματα"
+
+#: src/delete-files/delete-files.cc:146
+msgid "Delete"
+msgstr "Διαγραφή"
+
+#: src/delete-files/delete-files.cc:213 src/delete-files/delete-files.cc:235
+#: src/skins-qt/search-select.cc:102 src/skins/search-select.cc:78
+msgid "Cancel"
+msgstr "Άκυρο"
+
+#: src/delete-files/delete-files.cc:267
+msgid "Delete Selected Files"
+msgstr "Διαγραφή επιλεγμένων αρχείων"
+
+#: src/delete-files/delete-files.cc:287
+msgid "<b>Delete Method</b>"
+msgstr "<b>Μέθοδος διαγραφής</b>"
+
+#: src/delete-files/delete-files.cc:288
+msgid "Move to trash instead of deleting immediately"
+msgstr "Μετακίνηση στα απορρίμματα αντί για άμεση διαγραφή"
+
+#: src/echo_plugin/echo.cc:9
+msgid ""
+"Echo Plugin\n"
+"By Johan Levin, 1999\n"
+"Surround echo by Carl van Schaik, 1999\n"
+"Updated for Audacious by William Pitcock and John Lindgren, 2010-2014"
+msgstr ""
+"Πρόσθετο Ηχώ\n"
+"Από τον Johan Levin, 1999\n"
+"Ηχώ surround από τον Carl Van Schaik, 1999\n"
+"Ενημέρωση για το Audacious από τους William Pitcock και John  Lindgren, "
+"2010-2014"
+
+#: src/echo_plugin/echo.cc:21
+msgid "<b>Echo</b>"
+msgstr "<b>Ηχώ</b>"
+
+#: src/echo_plugin/echo.cc:22 src/modplug/plugin_main.cc:72
+#: src/modplug/plugin_main.cc:82
+msgid "Delay:"
+msgstr "Καθυστέρηση:"
+
+#: src/echo_plugin/echo.cc:24 src/modplug/plugin_main.cc:72
+#: src/modplug/plugin_main.cc:82 src/xsf/plugin.cc:445
+msgid "ms"
+msgstr "ms"
+
+#: src/echo_plugin/echo.cc:25
+msgid "Feedback:"
+msgstr "Ανάδραση:"
+
+#: src/echo_plugin/echo.cc:28 src/modplug/plugin_main.cc:86
+msgid "Volume:"
+msgstr "Ένταση:"
+
+#: src/echo_plugin/echo.cc:39
+msgid "Echo"
+msgstr "Ηχώ"
+
+#: src/ffaudio/ffaudio-core.cc:50
+msgid "FFmpeg Plugin"
+msgstr "Πρόσθετο FFmpeg"
+
+#: src/ffaudio/ffaudio-core.cc:649
+msgid ""
+"Multi-format audio decoding plugin for Audacious using\n"
+"FFmpeg multimedia framework (http://www.ffmpeg.org/)\n"
+"\n"
+"Audacious plugin by:\n"
+"William Pitcock <nenolod@nenolod.net>\n"
+"Matti Hämäläinen <ccr@tnsp.org>"
+msgstr ""
+"Πρόσθετο πολλαπλών μορφών αποκωδικοποίησης ήχου για το Audacious με χρήση\n"
+"πλαισίου πολυμέσων FFmpeg (http://www.ffmpeg.org/)\n"
+"\n"
+"Πρόσθετο για το Audacious από τους:\n"
+"William Pitcock <nenolod@nenolod.net>\n"
+"Matti Hämäläinen <ccr@tnsp.org>"
+
+#: src/filewriter/filewriter.cc:48
+msgid "FileWriter Plugin"
+msgstr "Πρόσθετο FileWriter"
+
+#: src/filewriter/filewriter.cc:316
+#, c-format
+msgid ""
+"Error opening %s:\n"
+"%s"
+msgstr ""
+"Σφάλμα ανοίγματος του %s:\n"
+"%s"
+
+#: src/filewriter/filewriter.cc:358
+msgid ""
+"This program is free software; you can redistribute it and/or modify it "
+"under the terms of the GNU General Public License as published by the Free "
+"Software Foundation; either version 2 of the License, or (at your option) "
+"any later version.\n"
+"\n"
+"This program is distributed in the hope that it will be useful, but WITHOUT "
+"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
+"FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for "
+"more details.\n"
+"\n"
+"You should have received a copy of the GNU General Public License along with "
+"this program; if not, write to the Free Software Foundation, Inc., 51 "
+"Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA."
+msgstr ""
+"Το πρόγραμμα αυτό είναι ελεύθερο λογισμικό. Επιτρέπεται η αναδιανομή ή/και η "
+"τροποποίησή του υπό τους όρους της άδειας GNU General Public όπως αυτή "
+"δημοσιεύεται από το Free Software Foundation, είτε την έκδοση 2 είτε (κατά "
+"την επιλογή σας) σε οποιαδήποτε μεταγενέστερη έκδοση της άδειας.\n"
+"\n"
+"Διανέμεται με την ελπίδα ότι θα είναι χρήσιμο, αλλά ΧΩΡΙΣ ΟΠΟΙΑΔΗΠΟΤΕ "
+"ΕΓΓΥΗΣΗ, χωρίς καν την σιωπηρή εγγύηση ΕΜΠΟΡΕΥΣΙΜΟΤΗΤΑΣ ή ΚΑΤΑΛΛΗΛΟΤΗΤΑΣ ΓΙΑ "
+"ΕΝΑ ΣΥΓΚΕΚΡΙΜΕΝΟ ΣΚΟΠΟ. Για περισσότερες λεπτομέρειες δείτε την άδεια GNU "
+"General Public.\n"
+"\n"
+"Μαζί με το πρόγραμμα αυτό θα πρέπει να έχετε λάβει ένα αντίγραφο της άδεια "
+"GNU General Public. Εάν όχι, γράψτε στο Free Software Foundation, Inc., 51 "
+"Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA."
+
+#: src/filewriter/filewriter.cc:385
+msgid "Output file format:"
+msgstr "Μορφή αρχείου εξόδου:"
+
+#: src/filewriter/filewriter.cc:389
+msgid "Save into original directory"
+msgstr "Αποθήκευση στον αρχικό κατάλογο"
+
+#: src/filewriter/filewriter.cc:392
+msgid "Save into custom directory:"
+msgstr "Αποθήκευση στον προσαρμοσμένο κατάλογο:"
+
+#: src/filewriter/filewriter.cc:400
+msgid "Generate file name from:"
+msgstr "Δημιουργία ονόματος αρχείου από:"
+
+#: src/filewriter/filewriter.cc:401
+msgid "Original file name"
+msgstr "Αρχικό όνομα αρχείου"
+
+#: src/filewriter/filewriter.cc:404
+msgid "Original file name (no suffix)"
+msgstr "Αρχικό όνομα αρχείου (χωρίς την επέκταση)"
+
+#: src/filewriter/filewriter.cc:407
+msgid "Original file tag"
+msgstr "Αρχικό tag αρχείου"
+
+#: src/filewriter/filewriter.cc:411
+msgid "Prepend track number to file name"
+msgstr "Προσθήκη του αριθμού κομματιού στο όνομα του αρχείου"
+
+#: src/filewriter/filewriter.cc:417 src/filewriter/filewriter.cc:449
+msgid "Auto"
+msgstr "Αυτόματα"
+
+#: src/filewriter/filewriter.cc:418
+msgid "8000 Hz"
+msgstr "8000 Hz"
+
+#: src/filewriter/filewriter.cc:419
+msgid "11025 Hz"
+msgstr "11025 Hz"
+
+#: src/filewriter/filewriter.cc:420
+msgid "12000 Hz"
+msgstr "12000 Hz"
+
+#: src/filewriter/filewriter.cc:421
+msgid "16000 Hz"
+msgstr "16000 Hz"
+
+#: src/filewriter/filewriter.cc:422
+msgid "22050 Hz"
+msgstr "22050 Hz"
+
+#: src/filewriter/filewriter.cc:423
+msgid "24000 Hz"
+msgstr "24000 Hz"
+
+#: src/filewriter/filewriter.cc:424
+msgid "32000 Hz"
+msgstr "32000 Hz"
+
+#: src/filewriter/filewriter.cc:425 src/xsf/plugin.cc:430
+msgid "44100 Hz"
+msgstr "44100 Hz"
+
+#: src/filewriter/filewriter.cc:426 src/xsf/plugin.cc:431
+msgid "48000 Hz"
+msgstr "48000 Hz"
+
+#: src/filewriter/filewriter.cc:430
+msgid "8 kbit/s"
+msgstr "8 kbit/s"
+
+#: src/filewriter/filewriter.cc:431
+msgid "16 kbit/s"
+msgstr "16 kbit/s"
+
+#: src/filewriter/filewriter.cc:432
+msgid "32 kbit/s"
+msgstr "32 kbit/s"
+
+#: src/filewriter/filewriter.cc:433
+msgid "40 kbit/s"
+msgstr "40 kbit/s"
+
+#: src/filewriter/filewriter.cc:434
+msgid "48 kbit/s"
+msgstr "48 kbit/s"
+
+#: src/filewriter/filewriter.cc:435
+msgid "56 kbit/s"
+msgstr "56 kbit/s"
+
+#: src/filewriter/filewriter.cc:436
+msgid "64 kbit/s"
+msgstr "64 kbit/s"
+
+#: src/filewriter/filewriter.cc:437
+msgid "80 kbit/s"
+msgstr "80 kbit/s"
+
+#: src/filewriter/filewriter.cc:438
+msgid "96 kbit/s"
+msgstr "96 kbit/s"
+
+#: src/filewriter/filewriter.cc:439
+msgid "112 kbit/s"
+msgstr "112 kbit/s"
+
+#: src/filewriter/filewriter.cc:440
+msgid "128 kbit/s"
+msgstr "128 kbit/s"
+
+#: src/filewriter/filewriter.cc:441
+msgid "160 kbit/s"
+msgstr "160 kbit/s"
+
+#: src/filewriter/filewriter.cc:442
+msgid "192 kbit/s"
+msgstr "192 kbit/s"
+
+#: src/filewriter/filewriter.cc:443
+msgid "224 kbit/s"
+msgstr "224 kbit/s"
+
+#: src/filewriter/filewriter.cc:444
+msgid "256 kbit/s"
+msgstr "256 kbit/s"
+
+#: src/filewriter/filewriter.cc:445
+msgid "320 kbit/s"
+msgstr "320 kbit/s"
+
+#: src/filewriter/filewriter.cc:450
+msgid "Joint Stereo"
+msgstr "Πολυπλεγμένο στερεοφωνικό"
+
+#: src/filewriter/filewriter.cc:451 src/modplug/plugin_main.cc:57
+#: src/mpg123/mpg123.cc:259
+msgid "Stereo"
+msgstr "Στερεοφωνικό"
+
+#: src/filewriter/filewriter.cc:452 src/modplug/plugin_main.cc:56
+#: src/mpg123/mpg123.cc:260
+msgid "Mono"
+msgstr "Μονοφωνικό"
+
+#: src/filewriter/filewriter.cc:456
+msgid "VBR"
+msgstr "VBR"
+
+#: src/filewriter/filewriter.cc:457
+msgid "ABR"
+msgstr "ABR"
+
+#: src/filewriter/filewriter.cc:478
+msgid "Algorithm quality:"
+msgstr "Ποιότητα αλγόριθμου:"
+
+#: src/filewriter/filewriter.cc:484
+msgid "Bitrate:"
+msgstr "Ρυθμός μετάδοσης (bitrate):"
+
+#: src/filewriter/filewriter.cc:491
+msgid "Compression ratio:"
+msgstr "Αναλογία συμπίεσης:"
+
+#: src/filewriter/filewriter.cc:498
+msgid "Audio mode:"
+msgstr "Λειτουργία ήχου:"
+
+#: src/filewriter/filewriter.cc:501
+msgid "Enforce strict ISO compliance"
+msgstr "Εξαναγκασμός αυστηρής συμμόρφωσης με ISO"
+
+#: src/filewriter/filewriter.cc:503
+msgid "Error protection"
+msgstr "Προστασία σφαλμάτων"
+
+#: src/filewriter/filewriter.cc:508
+msgid "Enable VBR/ABR"
+msgstr "Ενεργοποίηση VBR/ABR"
+
+#: src/filewriter/filewriter.cc:510
+msgid "Type:"
+msgstr "Τύπος:"
+
+#: src/filewriter/filewriter.cc:514
+msgid "Minimum bitrate:"
+msgstr "Ελάχιστος ρυθμός μετάδοσης:"
+
+#: src/filewriter/filewriter.cc:518
+msgid "Maximum bitrate:"
+msgstr "Μέγιστος ρυθμός μετάδοσης;"
+
+#: src/filewriter/filewriter.cc:522
+msgid "Average bitrate:"
+msgstr "Μέση τιμή ρυθμού μετάδοσης:"
+
+#: src/filewriter/filewriter.cc:526
+msgid "VBR quality level:"
+msgstr "Επίπεδο ποιότητας VBR:"
+
+#: src/filewriter/filewriter.cc:530
+msgid "Strictly enforce minimum bitrate"
+msgstr "Αυστηρή εφαρμογή του ελάχιστου ρυθμού μετάδοσης"
+
+#: src/filewriter/filewriter.cc:533
+msgid "Omit Xing VBR header"
+msgstr "Παράλειψη Xing VBR header"
+
+#: src/filewriter/filewriter.cc:539
+msgid "<b>Frame Headers</b>"
+msgstr "<b>Πλαίσιο επικεφαλίδων</b>"
+
+#: src/filewriter/filewriter.cc:540
+msgid "Mark as copyright"
+msgstr "Πνευματικά δικαιώματα"
+
+#: src/filewriter/filewriter.cc:542
+msgid "Mark as original"
+msgstr "Πρωτότυπο"
+
+#: src/filewriter/filewriter.cc:544
+msgid "<b>ID3 Tags</b>"
+msgstr "<b>Tags ID3</b>"
+
+#: src/filewriter/filewriter.cc:545
+msgid "Force addition of version 2 tag"
+msgstr "Δυναμική προσθήκη tag έκδοσης 2"
+
+#: src/filewriter/filewriter.cc:547
+msgid "Only add v1 tag"
+msgstr "Προσθήκη μόνο tag v1"
+
+#: src/filewriter/filewriter.cc:549
+msgid "Only add v2 tag"
+msgstr "Προσθήκη μόνο tag v2"
+
+#: src/filewriter/filewriter.cc:554
+msgid "Quality"
+msgstr "Ποιότητα"
+
+#: src/filewriter/filewriter.cc:555
+msgid "VBR/ABR"
+msgstr "VBR/ABR"
+
+#: src/filewriter/filewriter.cc:556
+msgid "Tags"
+msgstr "Tags"
+
+#: src/filewriter/filewriter.cc:566
+msgid "Quality (0-1):"
+msgstr "Ποιότητα (0-1):"
+
+#: src/filewriter/filewriter.cc:573 src/skins-qt/skins_cfg.cc:307
+#: src/skins/skins_cfg.cc:289
+msgid "General"
+msgstr "Γενικά"
+
+#: src/flac/flacng.h:36
+msgid "FLAC Decoder"
+msgstr "Αποκωδικοποιητής FLAC"
+
+#: src/flac/metadata.cc:296 src/wavpack/wavpack.cc:205
+msgid "lossless"
+msgstr "Χωρίς απώλειες"
+
+#: src/flac/plugin.cc:214
+msgid ""
+"Original code by\n"
+"Ralf Ertzinger <ralf@skytale.net>\n"
+"\n"
+"http://www.skytale.net/projects/bmp-flac2/"
+msgstr ""
+"Πρωτότυπος κώδικας από\n"
+"Ralf Ertzinger <ralf@skytale.net>\n"
+"\n"
+"http://www.skytale.net/projects/bmp-flac2/"
+
+#: src/gio/gio.cc:34
+msgid ""
+"GIO Plugin for Audacious\n"
+"Copyright 2009-2012 John Lindgren"
+msgstr ""
+"Πρόσθετο GIO για το Audacious\n"
+"Πνευματικά δικαιώματα 2009-2012 John Lindgren"
+
+#: src/gio/gio.cc:42
+msgid "GIO Plugin"
+msgstr "Πρόσθετο GIO"
+
+#: src/gio/gio.cc:152
+msgid "Read-and-append mode not supported"
+msgstr "Δεν υποστηρίζεται η λειτουργία ανάγνωση-και-προσάρτηση"
+
+#: src/gio/gio.cc:165
+msgid "Invalid open mode"
+msgstr "Άκυρη ανοικτή λειτουργία"
+
+#: src/glspectrum/gl-spectrum.cc:52
+msgid ""
+"OpenGL Spectrum Analyzer for Audacious\n"
+"Copyright 2013 Christophe Budé, John Lindgren, and Carlo Bramini\n"
+"\n"
+"Based on the XMMS plugin:\n"
+"Copyright 1998-2000 Peter Alm, Mikael Alm, Olle Hallnas, Thomas Nilsson, and "
+"4Front Technologies\n"
+"\n"
+"License: GPLv2+"
+msgstr ""
+"Πρόσθετο Αναλυτής φάσματος OpenGL για το Audacious\n"
+"Πνευματικά δικαιώματα 2013, Christophe Bude, John Lindgren και Carlo "
+"Bramini\n"
+"\n"
+"Με βάση το πρόσθετο XMMS:\n"
+"Πνευματικά δικαιώματα 1998-2000, Peter Alm, Mikael Alm, Olle Hallnas, Thomas "
+"Nilsson και 4Front Technologies\n"
+"\n"
+"Άδεια: GPLv2 +"
+
+#: src/glspectrum/gl-spectrum.cc:63 src/qtglspectrum/gl-spectrum.cc:53
+msgid "OpenGL Spectrum Analyzer"
+msgstr "Αναλυτής φάσματος OpenGL"
+
+#: src/gtkui/columns.cc:36 src/qtui/playlist_model.cc:33
+msgid "Entry Number"
+msgstr "Αριθμός καταχώρησης"
+
+#: src/gtkui/columns.cc:37 src/playback-history-qt/playback-history.cc:372
+#: src/playlist-manager/playlist-manager.cc:200
+#: src/playlist-manager-qt/playlist-manager-qt.cc:188
+#: src/qtui/playlist_model.cc:33 src/streamtuner/icecast-model.cc:120
+#: src/streamtuner/ihr-model.cc:159 src/streamtuner/shoutcast-model.cc:122
+msgid "Title"
+msgstr "Τίτλος"
+
+#: src/gtkui/columns.cc:38 src/qtui/playlist_model.cc:33
+msgid "Artist"
+msgstr "Καλλιτέχνης"
+
+#: src/gtkui/columns.cc:39 src/qtui/playlist_model.cc:33
+msgid "Year"
+msgstr "Έτος"
+
+#: src/gtkui/columns.cc:40 src/playback-history-qt/playback-history.cc:374
+#: src/playback-history-qt/playback-history.cc:837
+#: src/qtui/playlist_model.cc:34
+msgid "Album"
+msgstr "Άλμπουμ"
+
+#: src/gtkui/columns.cc:41 src/qtui/playlist_model.cc:34
+msgid "Album Artist"
+msgstr "Καλλιτέχνης άλμπουμ"
+
+#: src/gtkui/columns.cc:42 src/qtui/playlist_model.cc:34
+msgid "Track"
+msgstr "Κομμάτι"
+
+#: src/gtkui/columns.cc:43 src/qtui/playlist_model.cc:34
+#: src/streamtuner/icecast-model.cc:123 src/streamtuner/shoutcast-model.cc:125
+#: src/streamtuner/shoutcast-model.cc:236
+msgid "Genre"
+msgstr "Είδος"
+
+#: src/gtkui/columns.cc:44 src/qtui/playlist_model.cc:35
+msgid "Queue Position"
+msgstr "Θέση στην σειρά"
+
+#: src/gtkui/columns.cc:45 src/qtui/playlist_model.cc:35
+msgid "Length"
+msgstr "Διάρκεια"
+
+#: src/gtkui/columns.cc:46 src/qtui/playlist_model.cc:35
+msgid "File Path"
+msgstr "Διαδρομή αρχείου"
+
+#: src/gtkui/columns.cc:47 src/qtui/playlist_model.cc:35
+msgid "File Name"
+msgstr "Όνομα αρχείου"
+
+#: src/gtkui/columns.cc:48 src/qtui/playlist_model.cc:36
+msgid "Custom Title"
+msgstr "Προσαρμοσμένος τίτλος"
+
+#: src/gtkui/columns.cc:49 src/qtui/playlist_model.cc:36
+#: src/streamtuner/icecast-model.cc:129 src/streamtuner/shoutcast-model.cc:134
+msgid "Bitrate"
+msgstr "Ρυθμός μετάδοσης (bitrate)"
+
+#: src/gtkui/columns.cc:50 src/qtui/playlist_model.cc:36
+msgid "Comment"
+msgstr "Σχόλιο"
+
+#: src/gtkui/columns.cc:51 src/qtui/playlist_model.cc:36
+msgid "Publisher"
+msgstr "Εκδότης"
+
+#: src/gtkui/columns.cc:52 src/qtui/playlist_model.cc:37
+msgid "Catalog Number"
+msgstr "Αριθμός καταλόγου"
+
+#: src/gtkui/columns.cc:53 src/qtui/playlist_model.cc:37
+msgid "Disc"
+msgstr "Δίσκος"
+
+#: src/gtkui/columns.cc:325
+msgid "Available columns"
+msgstr "Διαθέσιμες στήλες"
+
+#: src/gtkui/columns.cc:351
+msgid "Displayed columns"
+msgstr "Εμφανιζόμενες στήλες"
+
+#: src/gtkui/layout.cc:74 src/search-tool-qt/search-tool-qt.cc:58
+#: src/search-tool/search-tool.cc:49
+msgid "Search Tool"
+msgstr "Εργαλείο αναζήτησης"
+
+#: src/gtkui/layout.cc:170
+msgid "Dock at Left"
+msgstr "Βάση σύνδεσης στα αριστερά"
+
+#: src/gtkui/layout.cc:170
+msgid "Dock at Right"
+msgstr "Βάση σύνδεσης στα δεξιά"
+
+#: src/gtkui/layout.cc:171
+msgid "Dock at Top"
+msgstr "Βάση σύνδεσης στην κορυφή"
+
+#: src/gtkui/layout.cc:171
+msgid "Dock at Bottom"
+msgstr "Βάση σύνδεσης στην κάτω πλευρά"
+
+#: src/gtkui/layout.cc:171
+msgid "Undock"
+msgstr "Αποσύνδεση"
+
+#: src/gtkui/layout.cc:171 src/ladspa/plugin.cc:540
+msgid "Disable"
+msgstr "Απενεργοποίηση"
+
+#: src/gtkui/menus.cc:79 src/qtui/menus.cc:111
+#: src/statusicon-qt/statusicon.cc:128 src/statusicon/statusicon.cc:300
+msgid "_Open Files ..."
+msgstr "Άνοι_γμα αρχείων..."
+
+#: src/gtkui/menus.cc:80 src/qtui/menus.cc:115
+msgid "Open _URL ..."
+msgstr "Ά_νοιγμα διεύθυνσης ..."
+
+#: src/gtkui/menus.cc:81 src/qtui/menus.cc:117
+msgid "_Add Files ..."
+msgstr "Π_ροσθήκη αρχείων..."
+
+#: src/gtkui/menus.cc:82 src/qtui/menus.cc:122
+msgid "Add U_RL ..."
+msgstr "Προσ_θήκη διεύθυνσης ..."
+
+#: src/gtkui/menus.cc:84 src/qtui/menus.cc:124
+msgid "Search _Library"
+msgstr "Έρευνα _δισκοθήκης"
+
+#: src/gtkui/menus.cc:86 src/qtui/menus.cc:127
+msgid "A_bout ..."
+msgstr "Σ_χετικά ..."
+
+#: src/gtkui/menus.cc:87 src/qtui/menus.cc:129
+msgid "_Settings ..."
+msgstr "Ρυθ_μίσεις ..."
+
+#: src/gtkui/menus.cc:88 src/qtui/menus.cc:135
+#: src/statusicon-qt/statusicon.cc:130 src/statusicon/statusicon.cc:302
+msgid "_Quit"
+msgstr "Έ_ξοδος"
+
+#: src/gtkui/menus.cc:92 src/gtkui/menus.cc:226 src/qtui/menus.cc:139
+#: src/qtui/playlist_tabs.cc:331 src/search-tool-qt/search-tool-qt.cc:499
+#: src/search-tool/search-tool.cc:339 src/statusicon-qt/statusicon.cc:122
+#: src/statusicon/statusicon.cc:294
+msgid "_Play"
+msgstr "_Αναπαραγωγή"
+
+#: src/gtkui/menus.cc:93 src/qtui/menus.cc:141
+#: src/statusicon-qt/statusicon.cc:123 src/statusicon/statusicon.cc:295
+msgid "Paus_e"
+msgstr "Παύσ_η"
+
+#: src/gtkui/menus.cc:94 src/qtui/menus.cc:143
+#: src/statusicon-qt/statusicon.cc:124 src/statusicon/statusicon.cc:296
+msgid "_Stop"
+msgstr "_Διακοπή"
+
+#: src/gtkui/menus.cc:95 src/qtui/menus.cc:145
+#: src/statusicon-qt/statusicon.cc:125 src/statusicon/statusicon.cc:297
+msgid "Pre_vious"
+msgstr "Πρ_οηγούμενο"
+
+#: src/gtkui/menus.cc:96 src/qtui/menus.cc:147
+#: src/statusicon-qt/statusicon.cc:126 src/statusicon/statusicon.cc:298
+msgid "_Next"
+msgstr "_Επόμενο"
+
+#: src/gtkui/menus.cc:97 src/qtui/menus.cc:149 src/skins/menus.cc:114
+#: src/skins-qt/menus.cc:106
+msgid "Previous Album"
+msgstr "Προηγούμενο άλμπουμ"
+
+#: src/gtkui/menus.cc:98 src/qtui/menus.cc:150 src/skins/menus.cc:115
+#: src/skins-qt/menus.cc:107
+msgid "Next Album"
+msgstr "Επόμενο άλμπουμ"
+
+#: src/gtkui/menus.cc:100 src/qtui/menus.cc:152
+msgid "_Repeat"
+msgstr "Επα_νάληψη"
+
+#: src/gtkui/menus.cc:101 src/qtui/menus.cc:154
+msgid "S_huffle"
+msgstr "Τυ_χαία εναλλαγή"
+
+#: src/gtkui/menus.cc:102 src/qtui/menus.cc:156
+msgid "Shuffle by Albu_m"
+msgstr "Τυχαία εναλλαγή κατά άλμπου_μ"
+
+#: src/gtkui/menus.cc:103 src/qtui/menus.cc:159
+msgid "N_o Playlist Advance"
+msgstr "Χωρίς π_ροώθηση στο επόμενο"
+
+#: src/gtkui/menus.cc:104 src/qtui/menus.cc:161
+msgid "Stop A_fter This Song"
+msgstr "Διακο_πή στο τέλος του τραγουδιού"
+
+#: src/gtkui/menus.cc:106 src/gtkui/menus.cc:210 src/qtui/menus.cc:166
+#: src/qtui/menus.cc:301
+msgid "Song _Info ..."
+msgstr "Πληρο_φορίες τραγουδιού ..."
+
+#: src/gtkui/menus.cc:107
+msgid "Jump to _Time ..."
+msgstr "Μετάβαση σε χ_ρόνο ..."
+
+#: src/gtkui/menus.cc:108
+msgid "_Jump to Song ..."
+msgstr "Μετάβαση στο _τραγούδι ..."
+
+#: src/gtkui/menus.cc:110 src/qtui/menus.cc:172
+msgid "Set Repeat Point _A"
+msgstr "Ορισμός σημείου επανάληψης _Α"
+
+#: src/gtkui/menus.cc:111 src/qtui/menus.cc:174
+msgid "Set Repeat Point _B"
+msgstr "Ορισμός σημείου επανάληψης _Β"
+
+#: src/gtkui/menus.cc:112 src/qtui/menus.cc:176
+msgid "_Clear Repeat Points"
+msgstr "Α_φαίρεση σημείων επανάληψης"
+
+#: src/gtkui/menus.cc:116 src/gtkui/menus.cc:123 src/gtkui/menus.cc:141
+#: src/qtui/menus.cc:180 src/qtui/menus.cc:187 src/qtui/menus.cc:205
+msgid "By _Title"
+msgstr "Κατά _τίτλο"
+
+#: src/gtkui/menus.cc:117 src/qtui/menus.cc:181
+msgid "By _File Name"
+msgstr "Κατά όνομα _αρχείου"
+
+#: src/gtkui/menus.cc:118 src/qtui/menus.cc:182
+msgid "By File _Path"
+msgstr "Κατά διαδ_ρομή αρχείου"
+
+#: src/gtkui/menus.cc:122 src/gtkui/menus.cc:140 src/qtui/menus.cc:186
+#: src/qtui/menus.cc:204
+msgid "By Track _Number"
+msgstr "Κατά _αριθμό κομματιού"
+
+#: src/gtkui/menus.cc:124 src/gtkui/menus.cc:142 src/qtui/menus.cc:188
+#: src/qtui/menus.cc:206
+msgid "By _Artist"
+msgstr "Κατά _καλλιτέχνη"
+
+#: src/gtkui/menus.cc:125 src/gtkui/menus.cc:143 src/qtui/menus.cc:189
+#: src/qtui/menus.cc:207
+msgid "By Al_bum"
+msgstr "Κατά ά_λμπουμ"
+
+#: src/gtkui/menus.cc:126 src/gtkui/menus.cc:144 src/qtui/menus.cc:190
+#: src/qtui/menus.cc:208
+msgid "By Albu_m Artist"
+msgstr "Κατά καλλιτέχνη άλ_μπουμ"
+
+#: src/gtkui/menus.cc:127 src/gtkui/menus.cc:145 src/qtui/menus.cc:191
+#: src/qtui/menus.cc:209
+msgid "By Release _Date"
+msgstr "Κατά _ημερομηνία έκδοσης"
+
+#: src/gtkui/menus.cc:128 src/gtkui/menus.cc:146 src/qtui/menus.cc:192
+#: src/qtui/menus.cc:210
+msgid "By _Genre"
+msgstr "Κατά _είδος μουσικής"
+
+#: src/gtkui/menus.cc:129 src/gtkui/menus.cc:147 src/qtui/menus.cc:193
+#: src/qtui/menus.cc:211
+msgid "By _Length"
+msgstr "Κατά _διάρκεια αρχείου"
+
+#: src/gtkui/menus.cc:130 src/gtkui/menus.cc:148 src/qtui/menus.cc:194
+#: src/qtui/menus.cc:212
+msgid "By _File Path"
+msgstr "Κατά διαδ_ρομή αρχείου"
+
+#: src/gtkui/menus.cc:131 src/gtkui/menus.cc:149 src/qtui/menus.cc:195
+#: src/qtui/menus.cc:213
+msgid "By _Custom Title"
+msgstr "Κατά _προσαρμοσμένο τίτλο"
+
+#: src/gtkui/menus.cc:132 src/gtkui/menus.cc:150 src/qtui/menus.cc:196
+#: src/qtui/menus.cc:214
+msgid "By C_omment"
+msgstr "Κατά _σχόλιο"
+
+#: src/gtkui/menus.cc:133 src/gtkui/menus.cc:151 src/qtui/menus.cc:197
+#: src/qtui/menus.cc:215
+msgid "By D_isc Number"
+msgstr "Κατά αριθμό δ_ίσκου"
+
+#: src/gtkui/menus.cc:135 src/gtkui/menus.cc:153 src/qtui/menus.cc:199
+#: src/qtui/menus.cc:217
+msgid "R_everse Order"
+msgstr "Α_ντίστροφη σειρά"
+
+#: src/gtkui/menus.cc:136 src/gtkui/menus.cc:154 src/qtui/menus.cc:201
+#: src/qtui/menus.cc:219
+msgid "_Random Order"
+msgstr "Τυ_χαία σειρά"
+
+#: src/gtkui/menus.cc:158 src/qtui/menus.cc:223
+msgid "_Play/Resume"
+msgstr "_Αναπαραγωγή/Συνέχεια"
+
+#: src/gtkui/menus.cc:159 src/qtui/menus.cc:225
+msgid "_Refresh"
+msgstr "Ανανέ_ωση"
+
+#: src/gtkui/menus.cc:161 src/qtui/menus.cc:229
+msgid "_Sort"
+msgstr "_Ταξινόμηση"
+
+#: src/gtkui/menus.cc:162 src/qtui/menus.cc:230
+msgid "Sort Se_lected"
+msgstr "Ταξινόμηση επιλε_γμένων"
+
+#: src/gtkui/menus.cc:163 src/qtui/menus.cc:232
+msgid "Remove _Duplicates"
+msgstr "Αφαίρεση _διπλότυπων"
+
+#: src/gtkui/menus.cc:164 src/qtui/menus.cc:233
+msgid "Remove _Unavailable Files"
+msgstr "Αφαίρεση μη δια_θέσιμων αρχείων"
+
+#: src/gtkui/menus.cc:166 src/playlist-manager/playlist-manager.cc:219
+#: src/playlist-manager-qt/playlist-manager-qt.cc:348 src/qtui/menus.cc:236
+msgid "_New"
+msgstr "_Νέα"
+
+#: src/gtkui/menus.cc:167 src/qtui/menus.cc:237
+msgid "Ren_ame ..."
+msgstr "Μετ_ονομασία ..."
+
+#: src/gtkui/menus.cc:168 src/gtkui/menus.cc:228 src/qtui/menus.cc:238
+#: src/qtui/playlist_tabs.cc:336
+msgid "Remo_ve"
+msgstr "Α_φαίρεση"
+
+#: src/gtkui/menus.cc:170 src/qtui/menus.cc:240
+msgid "_Import ..."
+msgstr "_Εισαγωγή..."
+
+#: src/gtkui/menus.cc:171 src/qtui/menus.cc:241
+msgid "_Export ..."
+msgstr "Ε_ξαγωγή..."
+
+#: src/gtkui/menus.cc:173 src/qtui/menus.cc:244
+msgid "Playlist _Manager ..."
+msgstr "Διαχειριστής λίστας αναπαρα_γωγής ..."
+
+#: src/gtkui/menus.cc:174 src/qtui/menus.cc:246
+msgid "_Queue Manager ..."
+msgstr "Διαχειριστής σειράς ανα_μονής ..."
+
+#: src/gtkui/menus.cc:178 src/qtui/menus.cc:250
+msgid "Volume _Up"
+msgstr "_Αύξηση έντασης"
+
+#: src/gtkui/menus.cc:179 src/qtui/menus.cc:252
+msgid "Volume _Down"
+msgstr "_Μείωση έντασης"
+
+#: src/gtkui/menus.cc:181 src/qtui/menus.cc:256
+msgid "_Equalizer ..."
+msgstr "_Ισοσταθμιστής ..."
+
+#: src/gtkui/menus.cc:182 src/qtui/menus.cc:258
+msgid "E_ffects ..."
+msgstr "Ε_φέ ..."
+
+#: src/gtkui/menus.cc:184
+msgid "_Record Stream"
+msgstr "_Εγγραφή ροής"
+
+#: src/gtkui/menus.cc:185
+msgid "Audio _Settings ..."
+msgstr "_Ρυθμίσεις ήχου ..."
+
+#: src/gtkui/menus.cc:189 src/qtui/menus.cc:267
+msgid "Show _Menu Bar"
+msgstr "Εμφάνιση _γραμμής μενού"
+
+#: src/gtkui/menus.cc:190 src/qtui/menus.cc:269
+msgid "Show I_nfo Bar"
+msgstr "Εμφάνιση _πληροφοριών"
+
+#: src/gtkui/menus.cc:191 src/qtui/menus.cc:271
+msgid "Show Info Bar _Album Art"
+msgstr "Εμφάνιση _εικόνας άλμπουμ"
+
+#: src/gtkui/menus.cc:192 src/qtui/menus.cc:273
+msgid "Show Info Bar Vis_ualization"
+msgstr "Εμφάνιση οπ_τικού εφέ"
+
+#: src/gtkui/menus.cc:193 src/qtui/menus.cc:275
+msgid "Show _Status Bar"
+msgstr "Εμφάνιση γραμμής _κατάστασης"
+
+#: src/gtkui/menus.cc:195 src/qtui/menus.cc:279
+msgid "Show _Remaining Time"
+msgstr "Εμφάνιση _χρόνου που απομένει"
+
+#: src/gtkui/menus.cc:197 src/qtui/menus.cc:283 src/skins/menus.cc:157
+#: src/skins-qt/menus.cc:153
+msgid "_Visualizations ..."
+msgstr "_Οπτικά εφέ ..."
+
+#: src/gtkui/menus.cc:201 src/qtui/menus.cc:287
+msgid "_File"
+msgstr "Α_ρχείο"
+
+#: src/gtkui/menus.cc:202 src/qtui/menus.cc:288
+msgid "_Playback"
+msgstr "Α_ναπαραγωγή"
+
+#: src/gtkui/menus.cc:203 src/qtui/menus.cc:289
+msgid "P_laylist"
+msgstr "_Λίστα αναπαραγωγής"
+
+#: src/gtkui/menus.cc:204 src/gtkui/menus.cc:222 src/qtui/menus.cc:290
+#: src/qtui/menus.cc:319
+msgid "_Services"
+msgstr "_Υπηρεσίες"
+
+#: src/gtkui/menus.cc:205 src/qtui/menus.cc:291
+msgid "_Output"
+msgstr "_Έξοδοι"
+
+#: src/gtkui/menus.cc:206 src/qtui/menus.cc:292
+msgid "_View"
+msgstr "_Προβολή"
+
+#: src/gtkui/menus.cc:211 src/qtui/menus.cc:303
+msgid "_Queue/Unqueue"
+msgstr "Εισα_γωγή/Αφαίρεση στην/από την σειρά"
+
+#: src/gtkui/menus.cc:213 src/qtui/menus.cc:306
+msgid "_Open Containing Folder"
+msgstr "Ά_νοιγμα του φακέλου που το περιέχει"
+
+#: src/gtkui/menus.cc:214 src/qtui/menus.cc:308
+msgid "_Refresh Selected"
+msgstr "Ανανέωση επι_λεγμένων"
+
+#: src/gtkui/menus.cc:216 src/qtui/menus.cc:311
+msgid "Cu_t"
+msgstr "Αποκο_πή"
+
+#: src/gtkui/menus.cc:217 src/qtui/menus.cc:312
+msgid "_Copy"
+msgstr "Αν_τιγραφή"
+
+#: src/gtkui/menus.cc:218 src/qtui/menus.cc:313
+msgid "_Paste"
+msgstr "Επικόλλ_ηση"
+
+#: src/gtkui/menus.cc:219 src/qtui/menus.cc:314
+msgid "Paste at _End"
+msgstr "Επικό_λληση στο τέλος"
+
+#: src/gtkui/menus.cc:220 src/qtui/menus.cc:316
+msgid "Select _All"
+msgstr "Επιλογή _όλων"
+
+#: src/gtkui/menus.cc:227 src/qtui/playlist_tabs.cc:334
+msgid "_Rename ..."
+msgstr "_Μετονομασία..."
+
+#: src/gtkui/settings.cc:35 src/qtui/settings.cc:59
+msgid "Always"
+msgstr "Πάντα"
+
+#: src/gtkui/settings.cc:36 src/qtui/settings.cc:60
+msgid "Auto-hide"
+msgstr "Αυτόματη απόκρυψη"
+
+#: src/gtkui/settings.cc:37 src/qtui/settings.cc:61
+msgid "Never"
+msgstr "Ποτέ"
+
+#: src/gtkui/settings.cc:41 src/qtui/settings.cc:64
+msgid "<b>Playlist Tabs</b>"
+msgstr "<b>Καρτέλες λίστας αναπαραγωγής</b>"
+
+#: src/gtkui/settings.cc:42 src/qtui/settings.cc:65
+msgid "Show playlist tabs:"
+msgstr "Εμφάνιση καρτέλας στις λίστες αναπαραγωγής:"
+
+#: src/gtkui/settings.cc:45 src/qtui/settings.cc:69
+msgid "Show entry counts"
+msgstr "Εμφάνιση αριθμού περιεχομένων"
+
+#: src/gtkui/settings.cc:47 src/qtui/settings.cc:72
+msgid "Show close buttons"
+msgstr "Εμφάνιση κουμπιών κλεισίματος"
+
+#: src/gtkui/settings.cc:49 src/qtui/settings.cc:75
+msgid "<b>Playlist Columns</b>"
+msgstr "<b>Στήλες λίστας αναπαραγωγής</b>"
+
+#: src/gtkui/settings.cc:51 src/qtui/settings.cc:77
+msgid "Show column headers"
+msgstr "Εμφάνιση επικεφαλίδας"
+
+#: src/gtkui/settings.cc:53 src/qtui/settings.cc:82
+msgid "Make column headers clickable for sorting"
+msgstr "Δυνατότητα ταξινόμησης με κλικ στις επικεφαλίδες"
+
+#: src/gtkui/settings.cc:56
+msgid "Use symbolic icons in toolbar"
+msgstr "Εμφάνιση συμβολικών εικονιδίων στην εργαλειοθήκη"
+
+#: src/gtkui/settings.cc:58 src/qtui/settings.cc:86
+msgid "Scroll on song change"
+msgstr "Μετακίνηση στην αλλαγή τραγουδιού"
+
+#: src/gtkui/ui_gtk.cc:82
+msgid "GTK Interface"
+msgstr "Διεπαφή GTK"
+
+#: src/gtkui/ui_gtk.cc:219 src/skins/main.cc:228 src/skins-qt/main.cc:231
+#, c-format
+msgid "%s - Audacious"
+msgstr "%s - Audacious"
+
+#: src/gtkui/ui_gtk.cc:221 src/qtui/main_window.cc:386
+msgid "Buffering ..."
+msgstr "Γέμισμα ενδιάμεσης μνήμης..."
+
+#: src/gtkui/ui_gtk.cc:224 src/pipewire/pipewire.cc:450
+#: src/qtui/main_window.cc:364 src/qtui/main_window.cc:400
+#: src/sdlout/sdlout.cc:110 src/skins/main.cc:230 src/skins-qt/main.cc:233
+msgid "Audacious"
+msgstr "Audacious"
+
+#: src/gtkui/ui_gtk.cc:487 src/gtkui/ui_gtk.cc:518 src/gtkui/ui_gtk.cc:882
+#: src/hotkey/gui.cc:72 src/notify/osd.cc:85 src/qthotkey/gui.cc:67
+#: src/qtui/main_window.cc:155 src/qtui/main_window.cc:348
+#: src/qtui/main_window.cc:349 src/skins/menus.cc:109 src/skins-qt/menus.cc:101
+msgid "Play"
+msgstr "Αναπαραγωγή"
+
+#: src/gtkui/ui_gtk.cc:487 src/notify/osd.cc:82 src/qtui/main_window.cc:354
+#: src/qtui/main_window.cc:355 src/skins/menus.cc:110 src/skins-qt/menus.cc:102
+msgid "Pause"
+msgstr "Παύση"
+
+#: src/gtkui/ui_gtk.cc:868 src/qtui/main_window.cc:146 src/skins/menus.cc:86
+#: src/skins-qt/menus.cc:77
+msgid "Search Library"
+msgstr "Έρευνα δισκοθήκης"
+
+#: src/gtkui/ui_gtk.cc:875 src/qtui/main_window.cc:148
+msgid "Open Files"
+msgstr "Άνοιγμα αρχείων"
+
+#: src/gtkui/ui_gtk.cc:876 src/qtui/main_window.cc:150
+msgid "Add Files"
+msgstr "Προσθήκη αρχείων"
+
+#: src/gtkui/ui_gtk.cc:881 src/qtui/main_window.cc:153 src/skins/menus.cc:112
+#: src/skins-qt/menus.cc:104
+msgid "Previous"
+msgstr "Προηγούμενο"
+
+#: src/gtkui/ui_gtk.cc:883 src/hotkey/gui.cc:74 src/qthotkey/gui.cc:69
+#: src/qtui/main_window.cc:157 src/skins/menus.cc:111 src/skins-qt/menus.cc:103
+msgid "Stop"
+msgstr "Διακοπή"
+
+#: src/gtkui/ui_gtk.cc:884 src/notify/osd.cc:89 src/qtui/main_window.cc:164
+#: src/skins/menus.cc:113 src/skins-qt/menus.cc:105
+msgid "Next"
+msgstr "Επόμενο"
+
+#: src/gtkui/ui_gtk.cc:886 src/qtui/main_window.cc:167 src/qtui/menus.cc:261
+#: src/skins/menus.cc:79 src/skins-qt/menus.cc:69
+msgid "Record Stream"
+msgstr "Εγγραφή ροής"
+
+#: src/gtkui/ui_gtk.cc:919 src/qtui/main_window.cc:174 src/skins/menus.cc:103
+#: src/skins-qt/menus.cc:95
+msgid "Repeat"
+msgstr "Επανάληψη"
+
+#: src/gtkui/ui_gtk.cc:922 src/qtui/main_window.cc:177 src/skins/menus.cc:104
+#: src/skins-qt/menus.cc:96
+msgid "Shuffle"
+msgstr "Τυχαία εναλλαγή"
+
+#: src/gtkui/ui_gtk.cc:1114 src/qtui/main_window.cc:123
+msgid "Menu"
+msgstr "Μενού"
+
+#: src/gtkui/ui_statusbar.cc:64 src/qtui/status_bar.cc:155
+msgid "mono"
+msgstr "μονοφωνικό"
+
+#: src/gtkui/ui_statusbar.cc:66 src/qtui/status_bar.cc:157
+msgid "stereo"
+msgstr "στερεοφωνικό"
+
+#: src/gtkui/ui_statusbar.cc:68 src/qtui/status_bar.cc:160
+#, c-format
+msgid "%d channel"
+msgid_plural "%d channels"
+msgstr[0] "%d κανάλι"
+msgstr[1] "%d κανάλια"
+
+#: src/gtkui/ui_statusbar.cc:76 src/qtui/status_bar.cc:168
+#, c-format
+msgid "%d kHz"
+msgstr "%d kHz"
+
+#: src/gtkui/ui_statusbar.cc:82 src/qtui/playlist_model.cc:132
+#: src/qtui/status_bar.cc:174
+#, c-format
+msgid "%d kbit/s"
+msgstr "%d kbit/s"
+
+#: src/gtkui/ui_statusbar.cc:108 src/skins/main.cc:478 src/skins-qt/main.cc:461
+msgid "Single mode."
+msgstr "Ενιαία λειτουργία."
+
+#: src/gtkui/ui_statusbar.cc:110 src/skins/main.cc:480 src/skins-qt/main.cc:463
+msgid "Playlist mode."
+msgstr "Λειτουργία λίστας αναπαραγωγής."
+
+#: src/gtkui/ui_statusbar.cc:118 src/skins/main.cc:486 src/skins-qt/main.cc:469
+msgid "Stopping after song."
+msgstr "Διακοπή στο τέλος του κομματιού."
+
+#: src/hotkey/gui.cc:71 src/qthotkey/gui.cc:66
+msgid "Previous track"
+msgstr "Προηγούμενο κομμάτι"
+
+#: src/hotkey/gui.cc:73 src/qthotkey/gui.cc:68
+msgid "Pause/Resume"
+msgstr "Παύση/Συνέχεια"
+
+#: src/hotkey/gui.cc:75 src/qthotkey/gui.cc:70
+msgid "Next track"
+msgstr "Επόμενο κομμάτι"
+
+#: src/hotkey/gui.cc:76 src/qthotkey/gui.cc:71
+msgid "Step forward"
+msgstr "Βήμα προς τα εμπρός"
+
+#: src/hotkey/gui.cc:77 src/qthotkey/gui.cc:72
+msgid "Step backward"
+msgstr "Βήμα προς τα πίσω"
+
+#: src/hotkey/gui.cc:78 src/qthotkey/gui.cc:73
+msgid "Mute"
+msgstr "Σίγαση"
+
+#: src/hotkey/gui.cc:79 src/qthotkey/gui.cc:74
+msgid "Volume up"
+msgstr "Αύξηση έντασης"
+
+#: src/hotkey/gui.cc:80 src/qthotkey/gui.cc:75
+msgid "Volume down"
+msgstr "Μείωση έντασης"
+
+#: src/hotkey/gui.cc:81 src/qthotkey/gui.cc:76
+msgid "Jump to file"
+msgstr "Μεταπήδηση στο αρχείο"
+
+#: src/hotkey/gui.cc:82 src/qthotkey/gui.cc:77
+msgid "Toggle player window(s)"
+msgstr "Τυχαία εναλλαγή παραθύρου(ων) αναπαραγωγής"
+
+#: src/hotkey/gui.cc:83 src/qthotkey/gui.cc:78
+msgid "Show On-Screen-Display"
+msgstr "Εμφάνιση απεικόνισης στην οθόνη"
+
+#: src/hotkey/gui.cc:84 src/qthotkey/gui.cc:79
+msgid "Toggle repeat"
+msgstr "Εναλλαγή επανάληψης"
+
+#: src/hotkey/gui.cc:85 src/qthotkey/gui.cc:80
+msgid "Toggle shuffle"
+msgstr "Τυχαία εναλλαγή σειράς"
+
+#: src/hotkey/gui.cc:86 src/qthotkey/gui.cc:81
+msgid "Toggle stop after current"
+msgstr "Εναλλαγή διακοπής μετά την τρέχουσα"
+
+#: src/hotkey/gui.cc:87 src/qthotkey/gui.cc:82
+msgid "Raise player window(s)"
+msgstr "Ανύψωση του παραθύρου(ων) αναπαραγωγής"
+
+#: src/hotkey/gui.cc:98 src/qthotkey/gui.cc:100
+msgid "(none)"
+msgstr "(κανένα)"
+
+#: src/hotkey/gui.cc:261
+msgid ""
+"It is not recommended to bind the primary mouse buttons without modifiers.\n"
+"\n"
+"Do you want to continue?"
+msgstr ""
+"Δεν συνιστάται να δεσμεύονται τα κυρίως πλήκτρα του ποντικιού χωρίς "
+"τροποποιήσεις.\n"
+"\n"
+"Θέλετε να συνεχίσετε;"
+
+#: src/hotkey/gui.cc:264
+msgid "Binding mouse buttons"
+msgstr "Δέσμευση κουμπιών του ποντικιού"
+
+#: src/hotkey/gui.cc:434
+msgid ""
+"Press a key combination inside a text field.\n"
+"You can also bind mouse buttons."
+msgstr ""
+"Πατήστε ένα συνδυασμό πλήκτρων μέσα σε ένα πεδίο κειμένου.\n"
+"Μπορείτε επίσης να δεσμεύσετε τα κουμπιά ποντικιού."
+
+#: src/hotkey/gui.cc:444 src/qthotkey/gui.cc:179
+msgid "Hotkeys:"
+msgstr "Συντομεύσεις:"
+
+#: src/hotkey/gui.cc:457 src/qthotkey/gui.cc:181
+msgid "<b>Action:</b>"
+msgstr "<b>Ενέργεια:</b>"
+
+#: src/hotkey/gui.cc:461 src/qthotkey/gui.cc:182
+msgid "<b>Key Binding:</b>"
+msgstr "<b> Πλήκτρο δέσμευσης:</b>"
+
+#: src/hotkey/gui.cc:518 src/qthotkey/gui.cc:184
+msgid "_Add"
+msgstr "_Προσθήκη"
+
+#: src/hotkey/plugin.cc:59 src/qthotkey/plugin.cc:78
+msgid "Global Hotkeys"
+msgstr "Γενικές συντομεύσεις"
+
+#: src/hotkey/plugin.cc:74
+msgid ""
+"Global Hotkey Plugin\n"
+"Control the player with global key combinations or multimedia keys.\n"
+"\n"
+"Copyright (C) 2007-2008 Sascha Hlusiak <contact@saschahlusiak.de>\n"
+"\n"
+"Contributors include:\n"
+"Copyright (C) 2006-2007 Vladimir Paskov <vlado.paskov@gmail.com>\n"
+"Copyright (C) 2000-2002 Ville Syrjälä <syrjala@sci.fi>,\n"
+" Bryn Davies <curious@ihug.com.au>,\n"
+" Jonathan A. Davis <davis@jdhouse.org>,\n"
+" Jeremy Tan <nsx@nsx.homeip.net>"
+msgstr ""
+"Πρόσθετο Γενικές συντομεύσεις\n"
+"Έλεγχος της αναπαραγωγής με συνδυασμούς πλήκτρων ή με τα πλήκτρα πολυμέσων.\n"
+"\n"
+"Πνευματικά δικαιώματα (C) 2007-2008 Sascha Hlusiak "
+"<contact@saschahlusiak.de>\n"
+"\n"
+"Στους συντελεστές περιλαμβάνονται:\n"
+"Πνευματικά δικαιώματα (C) 2006-2007 Vladimir Paskov "
+"<vlado.paskov@gmail.com>\n"
+"Πνευματικά δικαιώματα (C) 2000-2002 Ville Syrjälä <syrjala@sci.fi>,\n"
+"Bryn Davies <curious@ihug.com.au>,\n"
+"Jonathan A. Davis <davis@jdhouse.org>,\n"
+"Jeremy Tan <nsx@nsx.homeip.net>"
+
+#: src/jack/jack-ng.cc:54
+msgid "JACK Output"
+msgstr "Έξοδος JACK"
+
+#: src/jack/jack-ng.cc:126
+msgid "Client name:"
+msgstr "Όνομα υπηρεσίας:"
+
+#: src/jack/jack-ng.cc:128
+msgid "Automatically connect to output ports"
+msgstr "Αυτόματη σύνδεση σε θύρες εξόδου"
+
+#: src/jack/jack-ng.cc:130
+msgid "Filter ports (regex, use any port if blank):"
+msgstr "Φίλτρα για τις θύρες (regex, χρήση κάθε θύρας αν μείνει κενό):"
+
+#: src/jack/jack-ng.cc:136
+msgid "Connect to physical ports only"
+msgstr "Σύνδεση μόνο σε φυσικές θύρες"
+
+#: src/jack/jack-ng.cc:139
+msgid "Upmix to"
+msgstr "Ανάμειξη σε"
+
+#: src/jack/jack-ng.cc:141
+msgid "ports if input has fewer channels"
+msgstr "θύρες αν η είσοδος έχει λιγότερα κανάλια"
+
+#: src/jack/jack-ng.cc:143
+msgid "Ignore insufficient number of ports"
+msgstr "Παράβλεψη μη διαθέσιμου αριθμού θυρών"
+
+#: src/jack/jack-ng.cc:181
+msgid "No JACK output ports were found. Please check settings."
+msgstr "Δεν βρέθηκε θύρα εξόδου JACK. Παρακαλώ ελέγξτε τις ρυθμίσεις."
+
+#: src/jack/jack-ng.cc:195
+#, c-format
+msgid "Only %d JACK output ports were found but %d are required."
+msgstr "Βρέθηκαν μόνο %d θύρες εξόδου JACK αλλά απαιτούνται %d."
+
+#: src/jack/jack-ng.cc:210
+#, c-format
+msgid "Failed to connect to JACK port %s."
+msgstr "Αποτυχία σύνδεσης στην θύρα JACK %s."
+
+#: src/jack/jack-ng.cc:230
+msgid ""
+"JACK supports only floating-point audio.  You must change the output bit "
+"depth to floating-point in Audacious settings."
+msgstr ""
+"Το JACK υποστηρίζει μόνο ήχο κινητής υποδιαστολής. Πρέπει ν' αλλάξετε και το "
+"Βάθος bit σε κινητή υποδιαστολή."
+
+#: src/jack/jack-ng.cc:245
+msgid "Failed to connect to the JACK server; is it running?"
+msgstr "Αποτυχία σύνδεσης με το διακομιστή JACK; είναι σε λειτουργία;"
+
+#: src/jack/jack-ng.cc:321
+#, c-format
+msgid ""
+"The JACK server requires a sample rate of %d Hz, but Audacious is playing at "
+"%d Hz.  Please use the Sample Rate Converter effect to correct the mismatch."
+msgstr ""
+"Ο διακομιστής JACK απαιτεί ρυθμό δειγματοληψίας %d Hz, αλλά το Audacious "
+"αναπαράγεται σε %d Hz. Παρακαλούμε χρησιμοποιήστε τη Μετατροπή ρυθμού "
+"δειγματοληψίας για να διορθώσετε την αναντιστοιχία."
+
+#: src/ladspa/plugin.cc:416
+#, c-format
+msgid "%s Settings"
+msgstr "%s Ρυθμίσεις"
+
+#: src/ladspa/plugin.cc:482
+msgid "Module paths:"
+msgstr "Διαδρομές ενότητας:"
+
+#: src/ladspa/plugin.cc:487
+msgid ""
+"<small>Separate multiple paths with a colon.\n"
+"These paths are searched in addition to LADSPA_PATH.\n"
+"After adding new paths, press Enter to scan for new plugins.</small>"
+msgstr ""
+"<small>Διαχωρίστε τις πολλαπλές διαδρομές με άνω και κάτω τελεία.\n"
+"Αυτές οι διαδρομές αναζητούνται επιπροσθέτως στο LADSPA_PATH.\n"
+"Μετά την προσθήκη νέων διαδρομών, πατήστε Enter για να ανιχνεύσετε νέα "
+"πρόσθετα.</small>"
+
+#: src/ladspa/plugin.cc:508
+msgid "Available plugins:"
+msgstr "Διαθέσιμα πρόσθετα:"
+
+#: src/ladspa/plugin.cc:521 src/modplug/plugin_main.cc:91
+#: src/modplug/plugin_main.cc:94 src/modplug/plugin_main.cc:97
+#: src/modplug/plugin_main.cc:100
+msgid "Enable"
+msgstr "Ενεργοποίηση"
+
+#: src/ladspa/plugin.cc:527
+msgid "Enabled plugins:"
+msgstr "Ενεργοποιημένα πρόσθετα:"
+
+#: src/ladspa/plugin.cc:543
+msgid "Settings"
+msgstr "Ρυθμίσεις"
+
+#: src/ladspa/plugin.cc:560
+msgid ""
+"LADSPA Host for Audacious\n"
+"Copyright 2011 John Lindgren"
+msgstr ""
+"LADSPA Host για το Audacious\n"
+"Πνευματικά δικαιώματα 2011 John Lindgren"
+
+#: src/ladspa/plugin.h:78
+msgid "LADSPA Host"
+msgstr "LADSPA Host"
+
+#: src/lirc/lirc.cc:55
+msgid "LIRC Plugin"
+msgstr "Πρόσθετο LIRC"
+
+#: src/lirc/lirc.cc:379
+msgid ""
+"A simple plugin to control Audacious using the LIRC remote control daemon\n"
+"\n"
+"Adapted for Audacious by:\n"
+"Tony Vroon <chainsaw@gentoo.org>\n"
+"Joonas Harjumäki <jharjuma@gmail.com>\n"
+"\n"
+"Based on the XMMS LIRC plugin by:\n"
+"Carl van Schaik <carl@leg.uct.ac.za>\n"
+"Christoph Bartelmus <xmms@bartelmus.de>\n"
+"Andrew O. Shadoura <bugzilla@tut.by>\n"
+"\n"
+"For more information about LIRC, see http://lirc.org."
+msgstr ""
+"Ένα απλό πρόσθετο για τον έλεγχο του Audacious χρησιμοποιώντας τον εξ "
+"αποστάσεως έλεγχο LIRC\n"
+"\n"
+"Προσαρμοσμένος για το Audacious από τους:\n"
+"Tony Vroon <chainsaw@gentoo.org>\n"
+"Joonas Harjumäki <jharjuma@gmail.com>\n"
+"\n"
+"Με βάση το πρόσθετο XMMS LIRC από τους:\n"
+"Carl Van Schaik <carl@leg.uct.ac.za>\n"
+"Christoph Bartelmus <xmms@bartelmus.de>\n"
+"Andrew Shadoura <bugzilla@tut.by>\n"
+"\n"
+"Για περισσότερες πληροφορίες σχετικά με το LIRC, δείτε http://lirc.org."
+
+#: src/lirc/lirc.cc:390
+msgid "<b>Connection</b>"
+msgstr "<b>Σύνδεση</b>"
+
+#: src/lirc/lirc.cc:391
+msgid "Reconnect to LIRC server"
+msgstr "Επανασύνδεση με το διακομιστή LIRC"
+
+#: src/lirc/lirc.cc:393
+msgid "Wait before reconnecting:"
+msgstr "Αναμονή πριν την επανασύνδεση:"
+
+#: src/lyrics-common/chart_lyrics_provider.cc:93
+#: src/lyrics-common/chart_lyrics_provider.cc:150
+#: src/lyrics-common/lrclib_provider.cc:34
+#: src/lyrics-common/lyrics_ovh_provider.cc:35
+#, c-format
+msgid "Unable to fetch %s"
+msgstr "Αδύνατη η λήψη του %s"
+
+#: src/lyrics-common/chart_lyrics_provider.cc:100
+#: src/lyrics-common/chart_lyrics_provider.cc:157
+#: src/lyrics-common/lrclib_provider.cc:41
+#: src/lyrics-common/lyrics_ovh_provider.cc:42
+#, c-format
+msgid "Unable to parse %s"
+msgstr "Αδύνατη η ανάλυση του %s"
+
+#: src/lyrics-common/chart_lyrics_provider.cc:121
+#: src/lyrics-common/chart_lyrics_provider.cc:194
+#: src/lyrics-common/lrclib_provider.cc:70
+#: src/lyrics-common/lyrics_ovh_provider.cc:70
+msgid "Looking for lyrics ..."
+msgstr "Αναζήτηση για στίχους ..."
+
+#: src/lyrics-common/preferences.h:43
+msgid "Nowhere"
+msgstr "Πουθενά"
+
+#: src/lyrics-common/preferences.h:50
+msgid "<small>Artist is truncated at the start, Title -- at the end</small>"
+msgstr ""
+"<small> Ο καλλιτέχνης περικόπτεται στην αρχή, ο τίτλος -- στο τέλος  </small>"
+
+#: src/lyrics-common/preferences.h:51
+msgid "Chars to truncate on:"
+msgstr "Χαρακτήρες για περικοπή: "
+
+#: src/lyrics-common/preferences.h:55
+msgid "<small>Chars are ORed in RegExp, surrounded by whitespace</small>"
+msgstr ""
+"<small> Οι χαρακτήρες είναι ORed στο RegExp, περιτριγυρισμένοι από κενό "
+"διάστημα </small>"
+
+#: src/lyrics-common/preferences.h:56
+msgid "Chars to split on:"
+msgstr "Χαρακτήρες για διαχωρισμό:"
+
+#: src/lyrics-common/preferences.h:57
+msgid "Further truncate those on chars"
+msgstr "Πρόσθετη περικοπή αυτών των χαρακτήρων"
+
+#: src/lyrics-common/preferences.h:63
+msgid "<b>General</b>"
+msgstr "<b>Γενικά</b>"
+
+#: src/lyrics-common/preferences.h:64
+msgid "Split title into artist and title on chars"
+msgstr "Διαχωρισμός ονόματος καλλιτέχνη και χαρακτήρων τίτλου"
+
+#: src/lyrics-common/preferences.h:67
+msgid "<b>Sources</b>"
+msgstr "<b>Διαδικτυακές πηγές</b>"
+
+#: src/lyrics-common/preferences.h:68
+msgid "Use embedded lyrics (from Lyrics tag)"
+msgstr "Χρήση ενσωματωμένων στίχων (από Lyrics tag)"
+
+#: src/lyrics-common/preferences.h:70
+msgid "Fetch lyrics from internet:"
+msgstr "Κατέβασμα στίχων από το διαδίκτυο:"
+
+#: src/lyrics-common/preferences.h:73
+msgid "Store fetched lyrics in local cache"
+msgstr "Αποθήκευση στίχων σε τοπική μνήμη cache"
+
+#: src/lyrics-common/preferences.h:75
+msgid "<b>Local Storage</b>"
+msgstr "<b>Τοπική αποθήκευση</b>"
+
+#: src/lyrics-common/preferences.h:76
+msgid "Load lyric files (.lrc) from local storage"
+msgstr "Φόρτωση στίχων (.lrc) τοπικά"
+
+#: src/lyrics-common/utils.cc:57 src/ui-common/dialogs-qt.cc:63
+msgid "Error"
+msgstr "Σφάλμα"
+
+#: src/lyrics-common/utils.cc:63
+msgid "Lyrics could not be found."
+msgstr "Δεν βρέθηκαν στίχοι."
+
+#: src/lyrics-common/utils.cc:145
+msgid "Missing title and/or artist."
+msgstr "Λείπει ο τίτλος και/ή ο καλλιτέχνης. "
+
+#: src/lyrics-gtk/lyrics-gtk.cc:37 src/lyrics-qt/lyrics-qt.cc:50
+msgid "Lyrics"
+msgstr "Στίχοι"
+
+#: src/lyrics-gtk/lyrics-gtk.cc:190 src/lyrics-qt/lyrics-qt.cc:172
+msgid "Edit Lyrics ..."
+msgstr "Επεξεργασία στίχων ..."
+
+#: src/lyrics-gtk/lyrics-gtk.cc:196 src/lyrics-qt/lyrics-qt.cc:179
+msgid "Save Locally"
+msgstr "Αποθήκευση τοπικά"
+
+#: src/lyrics-gtk/lyrics-gtk.cc:202 src/lyrics-qt/lyrics-qt.cc:187
+msgid "Refresh"
+msgstr "Ανανέωση"
+
+#: src/m3u/m3u.cc:33
+msgid "M3U Playlists"
+msgstr "Λίστες αναπαραγωγής M3U"
+
+#: src/metronom/metronom.cc:44
+msgid "Tact Generator"
+msgstr "Tact Generator"
+
+#: src/metronom/metronom.cc:145
+#, c-format
+msgid "Tact generator: %d bpm"
+msgstr "Tact generator: %d bpm"
+
+#: src/metronom/metronom.cc:147
+#, c-format
+msgid "Tact generator: %d bpm %d/%d"
+msgstr "Tact generator: %d bpm %d/%d"
+
+#: src/metronom/metronom.cc:235
+msgid ""
+"A Tact Generator by Martin Strauss <mys@faveve.uni-stuttgart.de>\n"
+"\n"
+"To use it, add a URL: tact://beats*num/den\n"
+"e.g. tact://77 to play 77 beats per minute\n"
+"or tact://60*3/4 to play 60 bpm in 3/4 tacts"
+msgstr ""
+"Ένα Tact Generator από τον Martin Strauss <mys@faveve.uni-stuttgart.de>\n"
+"\n"
+"Για να το χρησιμοποιήσετε, προσθέστε ένα URL: tact://beats*num/den\n"
+"π.χ. tact://77 για να παίξει 77 beats ανά λεπτό\n"
+"ή tact://60*3/4 για να παίξει 60 bpm in 3/4 tacts"
+
+#: src/mixer/mixer.cc:43
+msgid "Channel Mixer"
+msgstr "Μείκτης καναλιών"
+
+#: src/mixer/mixer.cc:255
+msgid ""
+"Channel Mixer Plugin for Audacious\n"
+"Copyright 2011-2012 John Lindgren and Michał Lipski"
+msgstr ""
+"Πρόσθετο Μείκτης καναλιών για το Audacious\n"
+"Πνευματικά δικαιώματα 2011-2012 John Lindgren και Michał Lipski"
+
+#: src/mixer/mixer.cc:259
+msgid "<b>Channel Mixer</b>"
+msgstr "<b>Μείκτης καναλιών</b>"
+
+#: src/mixer/mixer.cc:260
+msgid "Output channels:"
+msgstr "Κανάλια εξόδου:"
+
+#: src/mms/mms.cc:35
+msgid "MMS Plugin"
+msgstr "Πρόσθετο MMS"
+
+#: src/mms/mms.cc:82
+msgid "Error connecting to MMS server"
+msgstr "Σφάλμα κατά τη σύνδεση με το διακομιστή MMS"
+
+#: src/modplug/modplugbmp.h:57
+msgid "ModPlug (Module Player)"
+msgstr "ModPlug (Αναπαραγωγή)"
+
+#: src/modplug/plugin_main.cc:55
+msgid "<b>Channels</b>"
+msgstr "<b>Κανάλια</b>"
+
+#: src/modplug/plugin_main.cc:59
+msgid "Nearest (fastest)"
+msgstr "Πλησιέστερη (γρηγορότερα)"
+
+#: src/modplug/plugin_main.cc:60
+msgid "Linear (fast)"
+msgstr "Γραμμική (γρήγορα)"
+
+#: src/modplug/plugin_main.cc:61
+msgid "Spline (good)"
+msgstr "Spline (καλά)"
+
+#: src/modplug/plugin_main.cc:62
+msgid "Polyphase (best)"
+msgstr "Πολυφασική (καλύτερη)"
+
+#: src/modplug/plugin_main.cc:63
+msgid "<b>Sample rate</b>"
+msgstr "<b>Ρυθμός δειγματοληψίας</b>"
+
+#: src/modplug/plugin_main.cc:64
+msgid "22 kHz"
+msgstr "22 kHz"
+
+#: src/modplug/plugin_main.cc:65
+msgid "44 kHz"
+msgstr "44 kHz"
+
+#: src/modplug/plugin_main.cc:66
+msgid "48 kHz"
+msgstr "48 kHz"
+
+#: src/modplug/plugin_main.cc:67
+msgid "96 kHz"
+msgstr "96 kHz"
+
+#: src/modplug/plugin_main.cc:71 src/modplug/plugin_main.cc:76
+#: src/modplug/plugin_main.cc:81
+msgid "Level:"
+msgstr "Επίπεδο:"
+
+#: src/modplug/plugin_main.cc:77
+msgid "Cutoff:"
+msgstr "Αποκοπή:"
+
+#: src/modplug/plugin_main.cc:90
+msgid "<b>Reverb</b>"
+msgstr "<b>Αντήχηση</b>"
+
+#: src/modplug/plugin_main.cc:93
+msgid "<b>Bass Boost</b>"
+msgstr "<b>Ενίσχυση μπάσων</b>"
+
+#: src/modplug/plugin_main.cc:96
+msgid "<b>Surround</b>"
+msgstr "<b>Surround</b>"
+
+#: src/modplug/plugin_main.cc:99
+msgid "<b>Preamp</b>"
+msgstr "<b>Προενισχυτής</b>"
+
+#: src/modplug/plugin_main.cc:106
+msgid "Oversample"
+msgstr "Oversample"
+
+#: src/modplug/plugin_main.cc:107
+msgid "Noise reduction"
+msgstr "Μείωση θορύβου"
+
+#: src/modplug/plugin_main.cc:108
+msgid "Play Amiga MODs"
+msgstr "Αναπαραγωγή MODs του Amiga"
+
+#: src/modplug/plugin_main.cc:109
+msgid "<b>Repeat</b>"
+msgstr "<b>Επανάληψη</b>"
+
+#: src/modplug/plugin_main.cc:110
+msgid "Repeat count:"
+msgstr "Αριθμός επαναλήψεων:"
+
+#: src/modplug/plugin_main.cc:111
+msgid "To repeat forever, set the repeat count to -1."
+msgstr "Για συνεχόμενη επανάληψη, ορίστε το μετρητή επαναλήψεων στο -1."
+
+#: src/modplug/plugin_main.cc:124 src/sid/xs_config.cc:106
+msgid "These settings will take effect when Audacious is restarted."
+msgstr "Αυτές οι ρυθμίσεις θα τεθούν σε ισχύ όταν επανεκκινηθεί το Audacious."
+
+#: src/mpg123/mpg123.cc:54
+msgid "MPG123 Plugin"
+msgstr "Πρόσθετο MPG123"
+
+#: src/mpg123/mpg123.cc:82
+msgid "Use accurate length calculation (slow)"
+msgstr "Χρήση υπολογισμού της διάρκειας με ακρίβεια (αργό)"
+
+#: src/mpg123/mpg123.cc:260
+msgid "Surround"
+msgstr "Surround"
+
+#: src/mpris2/plugin.cc:43
+msgid "MPRIS 2 Server"
+msgstr "Διακομιστής MPRIS 2"
+
+#: src/mpris2/plugin.cc:362
+msgid ""
+"MPRIS Plugin for Audacious\n"
+"Copyright 2011-2012 John Lindgren\n"
+"\n"
+"This plugin implements the MPRIS D-Bus interface. It provides a mechanism "
+"for querying track information and basic playback control. Necessary for "
+"media controls in desktop environments, Bluetooth headsets and tools like "
+"\"playerctl\"."
+msgstr ""
+"Πρόσθετο MPRIS για το Audacious\n"
+"Πνευματικά δικαιώματα 2011-2012 John Lindgren\n"
+"\n"
+"Το πρόσθετο υλοποιεί τη διασύνδεση MPRIS D-Bus. Παρέχει το μηχανισμό για την "
+"αναζήτηση πληροφοριών του κομματιού και το βασικό έλεγχο της αναπαραγωγής. "
+"Απαραίτητο για τον έλεγχο πολυμέσων σε περιβάλλοντα υπολογιστών εργασίας, "
+"ακουστικά Bluetooth και εργαλεία όπως το \"playerctl\"."
+
+#: src/neon/neon.cc:102
+msgid "Neon HTTP/HTTPS Plugin"
+msgstr "Πρόσθετο Neon HTTP/HTTPS"
+
+#: src/neon/neon.cc:526
+msgid "Error parsing redirect"
+msgstr "Σφάλμα ανάλυσης ανακατεύθυνσης"
+
+#: src/neon/neon.cc:540
+msgid "Unknown HTTP error"
+msgstr "Άγνωστο σφάλμα HTTP"
+
+#: src/neon/neon.cc:614
+msgid "Error parsing URL"
+msgstr "Άγνωστο σφάλμα URL"
+
+#: src/neon/neon.cc:687
+msgid "Too many redirects"
+msgstr "Πάρα πολλές ανακατευθύνσεις"
+
+#: src/notify/event.cc:97
+msgid "Stopped"
+msgstr "Διακόπηκε"
+
+#: src/notify/event.cc:97
+msgid "Audacious is not playing."
+msgstr "Το Audacious δεν αναπαράγει."
+
+#: src/notify/notify.cc:39
+msgid "Desktop Notifications"
+msgstr "Ειδοποιήσεις στην επιφάνεια εργασίας"
+
+#: src/notify/notify.cc:57
+msgid ""
+"Desktop Notifications Plugin for Audacious\n"
+"Copyright (C) 2010 Maximilian Bogner\n"
+"Copyright (C) 2011-2013 John Lindgren and Jean-Alexandre Anglès d'Auriac\n"
+"\n"
+"This plugin is free software: you can redistribute it and/or modify it under "
+"the terms of the GNU General Public License as published by the Free "
+"Software Foundation, either version 3 of the License, or (at your option) "
+"any later version.\n"
+"\n"
+"This plugin is distributed in the hope that it will be useful, but WITHOUT "
+"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
+"FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for "
+"more details.\n"
+"\n"
+"You should have received a copy of the GNU General Public License along with "
+"this program.  If not, see <http://www.gnu.org/licenses/>."
+msgstr ""
+"Πρόσθετο Ειδοποιήσεις στην επιφάνεια εργασίας, για το Audacious\n"
+"Πνευματικά δικαιώματα (C) 2010 Maximilian Bogner\n"
+"Πνευματικά δικαιώματα (C) 2011-2013  John Lindgren και ο Jean-Alexandre "
+"Anglès d'Auriac\n"
+"\n"
+"Το πρόσθετο αυτό είναι ελεύθερο λογισμικό. Επιτρέπεται η αναδιανομή ή/και η "
+"τροποποίησή του υπό τους όρους της άδειας GNU General Public, όπως αυτή "
+"δημοσιεύεται από το Free Software Foundation είτε την έκδοση 2 είτε (κατά "
+"την επιλογή σας) σε οποιαδήποτε μεταγενέστερη έκδοση της.\n"
+"\n"
+"Διανέμεται με την ελπίδα ότι θα είναι χρήσιμο, αλλά ΧΩΡΙΣ ΟΠΟΙΑΔΗΠΟΤΕ "
+"ΕΓΓΥΗΣΗ, χωρίς καν την σιωπηρή εγγύηση ΕΜΠΟΡΕΥΣΙΜΟΤΗΤΑΣ ή ΚΑΤΑΛΛΗΛΟΤΗΤΑΣ ΓΙΑ "
+"ΕΝΑ ΣΥΓΚΕΚΡΙΜΕΝΟ ΣΚΟΠΟ. Για περισσότερες λεπτομέρειες δείτε την άδεια GNU "
+"General Public.\n"
+"\n"
+"Μαζί με το πρόγραμμα αυτό θα πρέπει να έχετε λάβει ένα αντίγραφο της άδειας "
+"δημόσιας χρήσης GNU General. Εάν όχι, κοιτάξτε εδώ <http://www.gnu.org/"
+"licenses/>."
+
+#: src/notify/notify.cc:104
+msgid "Show playback controls"
+msgstr "Εμφάνιση κουμπιών αναπαραγωγής"
+
+#: src/notify/notify.cc:106
+msgid "Always show notification"
+msgstr "Να εμφανίζεται πάντα αναδυόμενη ειδοποίηση"
+
+#: src/notify/notify.cc:108
+msgid "Include album name in notification"
+msgstr "Να περιλαμβάνεται το όνομα του άλμπουμ στην ειδοποίηση"
+
+#: src/notify/notify.cc:110
+msgid "Custom notification duration:"
+msgstr "Διάρκεια ειδοποίησης:"
+
+#: src/notify/osd.cc:74
+msgid "Show"
+msgstr "Εμφάνιση"
+
+#: src/openmpt/mpt.cc:52
+msgid "OpenMPT (Module Player)"
+msgstr "Άνοιγμα MPT (Module Player)"
+
+#: src/openmpt/mpt.cc:136
+msgid ""
+"Module player based on libopenmpt\n"
+"\n"
+"Written by: Chris Spiegel <cspiegel@gmail.com>"
+msgstr ""
+"Ο Module player βασίζεται στο libopenmpt\n"
+"\n"
+"Γράφτηκε από τον: Chris Spiegel <cspiegel@gmail.com>"
+
+#: src/openmpt/mpt.cc:155
+msgid "Stereo separation:"
+msgstr "Διαχωρισμός στέρεο:"
+
+#: src/openmpt/mpt.cc:157
+msgid "% (0=mono, 100=default, 200=full)"
+msgstr "% (0=μονοφωνικό, 100=προεπιλογή, 200=πλήρες)"
+
+#: src/openmpt/mpt.cc:160
+msgid "Interpolation:"
+msgstr "Παρεμβολή:"
+
+#: src/openmpt/mptwrap.h:51 src/soxr/sox-resampler.cc:189 src/xsf/plugin.cc:437
+msgid "Linear"
+msgstr "Γραμμική"
+
+#: src/openmpt/mptwrap.h:52
+msgid "Cubic"
+msgstr "Κυβική"
+
+#: src/openmpt/mptwrap.h:53
+msgid "Windowed sinc"
+msgstr "Ημιτονοειδής παρεμβολή κορυφής (windowed)"
+
+#: src/opus/opus.cc:39
+msgid "Opus Decoder"
+msgstr "Αποκωδικοποιητής ήχου Opus"
+
+#: src/opus/opus.cc:371
+msgid ""
+"Opus Decoder Plugin for Audacious\n"
+"Copyright 2022 Thomas Lange"
+msgstr ""
+"Πρόσθετο Αποκωδικοποητής ήχου Opus για το Audacious\n"
+"Πνευματικά δικαιώματα 2022 Thomas Lange"
+
+#: src/oss4/oss.h:70
+msgid "OSS4 Output"
+msgstr "Έξοδος OSS4"
+
+#: src/oss4/oss.h:72
+msgid "OSS3 Output"
+msgstr "Έξοδος OSS3"
+
+#: src/oss4/plugin.cc:35
+msgid "Default device"
+msgstr "Προεπιλεγμένη συσκευή"
+
+#: src/oss4/plugin.cc:78
+msgid "Audio device:"
+msgstr "Συσκευή ήχου:"
+
+#: src/oss4/plugin.cc:81
+msgid "Use alternate device:"
+msgstr "Χρήση εναλλακτικής συσκευής:"
+
+#: src/oss4/plugin.cc:85
+msgid "Save volume between sessions."
+msgstr "Αποθήκευση της έντασης μεταξύ των συνεδριών."
+
+#: src/oss4/plugin.cc:87
+msgid "Enable format conversions made by the OSS software."
+msgstr ""
+"Ενεργοποίηση των μετατροπών μορφής που πραγματοποιούνται από το λογισμικό "
+"OSS."
+
+#: src/oss4/plugin.cc:89
+msgid "Enable exclusive mode to prevent virtual mixing."
+msgstr ""
+"Ενεργοποίηση της αποκλειστικής λειτουργίας για να αποφεύγεται η εικονική "
+"ανάμιξη."
+
+#: src/oss4/plugin.cc:101
+msgid ""
+"OSS4 Output Plugin for Audacious\n"
+"Copyright 2010-2012 Michał Lipski\n"
+"\n"
+"I would like to thank people on #audacious, especially Tony Vroon and John "
+"Lindgren and of course the authors of the previous OSS plugin."
+msgstr ""
+"Πρόσθετο Έξοδος OSS4 για το Audacious\n"
+"Πνευματικά δικαιώματα 2010-2012 Michał Lipski\n"
+"\n"
+"Θα ήθελα να ευχαριστήσω τους ανθρώπους του #audacious, ειδικά τους Tony "
+"Vroon και John Lindgren και φυσικά τους δημιουργούς του προηγούμενου "
+"πρόσθετου OSS."
+
+#: src/pipewire/pipewire.cc:59
+msgid "PipeWire Output"
+msgstr "Έξοδος PipeWire"
+
+#: src/pipewire/pipewire.cc:132
+msgid ""
+"PipeWire Output Plugin for Audacious\n"
+"Copyright 2022 Thomas Lange\n"
+"\n"
+"Based on the PipeWire Output Plugin for Qmmp\n"
+"Copyright 2021 Ilya Kotov"
+msgstr ""
+"Πρόσθετο Έξοδος PipeWire για το Audacious\n"
+"Πνευματικά δικαιώματα 2022 Thomas Lange\n"
+"\n"
+"Βασισμένο στο πρόσθετο Έξοδος PipeWire για το Qmmp\n"
+"Πνευματικά δικαιώματα 2021 Ilya Kotov"
+
+#: src/pipewire/pipewire.cc:456 src/sdlout/sdlout.cc:112 src/skins/menus.cc:88
+#: src/skins-qt/menus.cc:79
+msgid "Playback"
+msgstr "Αναπαραγωγή"
+
+#: src/playback-history-qt/playback-history.cc:52
+msgid ""
+"Playback History Plugin\n"
+"\n"
+"Copyright 2023-2024 Igor Kushnir <igorkuo@gmail.com>\n"
+"\n"
+"This plugin tracks and provides access to playback history.\n"
+"\n"
+"History entries are stored only in memory and are lost\n"
+"on Audacious exit. When the plugin is disabled,\n"
+"playback history is not tracked at all.\n"
+"History entries are only added, never removed automatically.\n"
+"The user can remove selected entries by pressing the Delete key.\n"
+"Restart Audacious or disable the plugin by closing\n"
+"Playback History view to clear the entries.\n"
+"\n"
+"Two history item granularities (modes) are supported.\n"
+"The user can select a mode in the plugin's settings.\n"
+"The Song mode is the default. Each played song is stored\n"
+"in history. Song titles are displayed in the list.\n"
+"When the Album mode is selected and multiple songs from\n"
+"a single album are played in a row, a single album entry\n"
+"is stored in history. Album names are displayed in the list."
+msgstr ""
+"Πρόσθετο Ιστορικό αναπαραγωγής\n"
+"\n"
+"Πνευματικά δικαιώματα 2023-2024 Igor Kushnir <igorkuo@gmail.com>\n"
+"\n"
+"Το πρόσθετο παρακολουθεί και παρέχει πρόσβαση στο ιστορικό αναπαραγωγής.\n"
+"\n"
+"Οι καταχωρήσεις ιστορικού αποθηκεύονται μόνο στη μνήμη και χάνονται\n"
+"κατά την έξοδο του Audacious. Όταν το πρόσθετο είναι απενεργοποιημένο,\n"
+"το ιστορικό αναπαραγωγής δεν καταγράφεται.\n"
+"Οι καταχωρήσεις ιστορικού μόνο προστίθενται και δεν αφαιρούνται ποτέ "
+"αυτόματα.\n"
+"Ο χρήστης μπορεί να αφαιρέσει επιλεγμένες καταχωρήσεις πατώντας το πλήκτρο "
+"Διαγραφή.\n"
+"Κάντε επανεκκίνηση του Audacious ή απενεργοποιήστε το πρόσθετο κλείνοντας "
+"την προβολή\n"
+"Ιστορικό αναπαραγωγής για να διαγράψετε τις καταχωρήσεις.\n"
+"\n"
+"Υποστηρίζονται δύο μορφές (τρόποι λειτουργίας) των στοιχείων του ιστορικού.\n"
+"Ο χρήστης μπορεί να επιλέξει το τρόπο λειτουργίας στις ρυθμίσεις του "
+"πρόσθετου.\n"
+"Η λειτουργία τραγουδιού είναι η προεπιλεγμένη. Κάθε αναπαραγόμενο τραγούδι "
+"αποθηκεύεται\n"
+"στο ιστορικό. Οι τίτλοι των τραγουδιών εμφανίζονται στη λίστα.\n"
+"Όταν επιλέγεται η λειτουργία Άλμπουμ και αναπαράγονται πολλά τραγούδια από\n"
+"ένα μόνο άλμπουμ στη σειρά, αποθηκεύεται στο ιστορικό μόνο μία εγγραφή "
+"άλμπουμ. Τα ονόματα των άλμπουμ εμφανίζονται στη λίστα."
+
+#: src/playback-history-qt/playback-history.cc:77
+msgid "Playback History"
+msgstr "Ιστορικό αναπαραγωγής"
+
+#: src/playback-history-qt/playback-history.cc:528
+#, c-format
+msgid "<b>%s:</b> %s<br><b>Playlist:</b> %s<br><b>Entry Number:</b> %d"
+msgstr ""
+"<b>%s:</b> %s<br><b>Λίστα αναπαραγωγής:</b> %s<br><b>Αριθμός καταχώρησης:</"
+"b> %d"
+
+#: src/playback-history-qt/playback-history.cc:834
+msgid "<b>History Item Granularity</b>"
+msgstr "<b>Μορφή ιστορικού</b>"
+
+#: src/playback-history-qt/playback-history.cc:835
+msgid "Song"
+msgstr "Τραγούδι"
+
+#: src/playlist-manager/playlist-manager.cc:38
+#: src/playlist-manager-qt/playlist-manager-qt.cc:42
+msgid "Playlist Manager"
+msgstr "Διαχείριση λίστας τραγουδιών"
+
+#: src/playlist-manager/playlist-manager.cc:201
+#: src/playlist-manager-qt/playlist-manager-qt.cc:190
+msgid "Entries"
+msgstr "Καταχωρήσεις"
+
+#: src/playlist-manager/playlist-manager.cc:221
+#: src/playlist-manager-qt/playlist-manager-qt.cc:356
+msgid "_Remove"
+msgstr "Α_φαίρεση"
+
+#: src/playlist-manager/playlist-manager.cc:222
+#: src/playlist-manager-qt/playlist-manager-qt.cc:351
+msgid "Ren_ame"
+msgstr "Μετ_ονομασία"
+
+#: src/pls/pls.cc:35
+msgid "PLS Playlists"
+msgstr "Λίστες αναπαραγωγής PLS"
+
+#: src/psf/plugin.cc:53
+msgid "OpenPSF PSF1/PSF2 Decoder"
+msgstr "Αποκωδικοποιητής OpenPSF PSF1/PSF2"
+
+#: src/psf/plugin.cc:270
+msgid "<b>OpenPSF Configuration</b>"
+msgstr "<b>OpenPSF Ρυθμίσεις</b>"
+
+#: src/psf/plugin.cc:271 src/xsf/plugin.cc:444
+msgid "Ignore length from file"
+msgstr "Παράβλεψη διάρκειας αρχείου"
+
+#: src/pulse/pulse_audio.cc:42
+msgid "PulseAudio Output"
+msgstr "Έξοδος PulseAudio"
+
+#: src/pulse/pulse_audio.cc:72
+msgid "Context name:"
+msgstr "Όνομα περιεχομένου:"
+
+#: src/pulse/pulse_audio.cc:74
+msgid "Stream name:"
+msgstr "Όνομα ροής:"
+
+#: src/pulse/pulse_audio.cc:584
+msgid ""
+"Audacious PulseAudio Output Plugin\n"
+"\n"
+"This program is free software; you can redistribute it and/or modify it "
+"under the terms of the GNU General Public License as published by the Free "
+"Software Foundation; either version 2 of the License, or (at your option) "
+"any later version.\n"
+"\n"
+"This program is distributed in the hope that it will be useful, but WITHOUT "
+"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
+"FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for "
+"more details.\n"
+"\n"
+"You should have received a copy of the GNU General Public License along with "
+"this program; if not, write to the Free Software Foundation, Inc., 51 "
+"Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA."
+msgstr ""
+"Πρόσθετο Έξοδος PulseAudio\n"
+"\n"
+"Το πρόσθετο αυτό είναι ελεύθερο λογισμικό. Επιτρέπεται η αναδιανομή ή/και η "
+"τροποποίησή του υπό τους όρους της άδειας GNU General Public, όπως αυτή "
+"δημοσιεύεται από το Free Software Foundation είτε την έκδοση 2 είτε (κατά "
+"την επιλογή σας) σε οποιαδήποτε μεταγενέστερη έκδοση της.\n"
+"\n"
+"Διανέμεται με την ελπίδα ότι θα είναι χρήσιμο, αλλά ΧΩΡΙΣ ΟΠΟΙΑΔΗΠΟΤΕ "
+"ΕΓΓΥΗΣΗ, χωρίς καν την σιωπηρή εγγύηση ΕΜΠΟΡΕΥΣΙΜΟΤΗΤΑΣ ή ΚΑΤΑΛΛΗΛΟΤΗΤΑΣ ΓΙΑ "
+"ΕΝΑ ΣΥΓΚΕΚΡΙΜΕΝΟ ΣΚΟΠΟ. Για περισσότερες λεπτομέρειες δείτε την άδεια GNU "
+"General Public.\n"
+"\n"
+"Μαζί με αυτό το πρόγραμμα θα πρέπει να έχετε λάβει ένα αντίγραφο της άδειας "
+"GNU General Public. Εάν όχι, γράψτε στο Free Software Foundation, Inc., 51 "
+"Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA."
+
+#: src/qtaudio/qtaudio.cc:53
+msgid "QtMultimedia Output"
+msgstr "Έξοδος QtMultimedia"
+
+#: src/qtaudio/qtaudio.cc:84
+msgid ""
+"QtMultimedia Audio Output Plugin for Audacious\n"
+"Copyright 2014 William Pitcock\n"
+"\n"
+"Based on SDL Output Plugin for Audacious\n"
+"Copyright 2010 John Lindgren"
+msgstr ""
+"Πρόσθετο Έξοδος QtMultimedia Audio για το Audacious\n"
+"Πνευματικά δικαιώματα 2014 William Pitcock\n"
+"\n"
+"Με βάση το Πρόσθετο SDL Output για το Audacious\n"
+"Πνευματικά δικαιώματα 2010 John Lindgren"
+
+#: src/qtglspectrum/gl-spectrum.cc:41
+msgid ""
+"OpenGL Spectrum Analyzer for Audacious\n"
+"Copyright 2013 Christophe Budé, John Lindgren, and Carlo Bramini\n"
+"Copyright 2014, 2020 Ariadne Conill\n"
+"\n"
+"Based on the XMMS plugin:\n"
+"Copyright 1998-2000 Peter Alm, Mikael Alm, Olle Hallnas, Thomas Nilsson, and "
+"4Front Technologies\n"
+"\n"
+"License: GPLv2+"
+msgstr ""
+"Πρόσθετο Αναλυτής φάσματος OpenGL για το Audacious\n"
+"Πνευματικά δικαιώματα 2013 Christophe Budé, John Lindgren, και Carlo "
+"Bramini\n"
+"Πνευματικά δικαιώματα 2014, 2020 Ariadne Conill\n"
+"\n"
+"Βασισμένο στο πρόσθετο XMMS:\n"
+"Πνευματικά δικαιώματα 1998-2000 Peter Alm, Mikael Alm, Olle Hallnas, Thomas "
+"Nilsson, και 4Front Technologies\n"
+"\n"
+"Άδεια: GPLv2+"
+
+#: src/qthotkey/gui.cc:177
+msgid "Press a key combination inside a text field."
+msgstr "Πατήστε έναν συνδυασμό πλήκτρων μέσα σε ένα πεδίο κειμένου."
+
+#: src/qthotkey/plugin.cc:105
+msgid ""
+"Global Hotkey Plugin\n"
+"Control the player with global key combinations or multimedia keys.\n"
+"\n"
+"Copyright (C) 2020 i.Dark_Templar <darktemplar@dark-templar-archives.net>\n"
+"Copyright (C) 2007-2008 Sascha Hlusiak <contact@saschahlusiak.de>\n"
+"\n"
+"Contributors include:\n"
+"Copyright (C) 2006-2007 Vladimir Paskov <vlado.paskov@gmail.com>\n"
+"Copyright (C) 2000-2002 Ville Syrjälä <syrjala@sci.fi>,\n"
+" Bryn Davies <curious@ihug.com.au>,\n"
+" Jonathan A. Davis <davis@jdhouse.org>,\n"
+" Jeremy Tan <nsx@nsx.homeip.net>"
+msgstr ""
+"Πρόσθετο Γενικές συντομεύσεις\n"
+"Έλεγχος της αναπαραγωγής με συνδυασμούς πλήκτρων ή με τα πλήκτρα πολυμέσων.\n"
+"\n"
+"Πνευματικά δικαιώματα  (C) 2020 i.Dark_Templar <darktemplar@dark-templar-"
+"archives.net>\n"
+"Πνευματικά δικαιώματα (C) 2007-2008 Sascha Hlusiak "
+"<contact@saschahlusiak.de>\n"
+"\n"
+"Στους συντελεστές περιλαμβάνονται:\n"
+"Πνευματικά δικαιώματα (C) 2006-2007 Vladimir Paskov "
+"<vlado.paskov@gmail.com>\n"
+"Πνευματικά δικαιώματα (C) 2000-2002 Ville Syrjälä <syrjala@sci.fi>,\n"
+"Bryn Davies <curious@ihug.com.au>,\n"
+"Jonathan A. Davis <davis@jdhouse.org>,\n"
+"Jeremy Tan <nsx@nsx.homeip.net>"
+
+#: src/qtui/main_window.cc:160 src/qtui/main_window.cc:161
+#: src/skins/menus.cc:107 src/skins-qt/menus.cc:99
+msgid "Stop After This Song"
+msgstr "Διακοπή στο τέλος του τραγουδιού"
+
+#: src/qtui/menus.cc:113
+msgid "_Open Folder ..."
+msgstr "Άνοι_γμα φακέλου ..."
+
+#: src/qtui/menus.cc:119
+msgid "_Add Folder ..."
+msgstr "Πρ_οσθήκη φακέλου ..."
+
+#: src/qtui/menus.cc:132
+msgid "_Log Inspector ..."
+msgstr "_Καταγραφές ..."
+
+#: src/qtui/menus.cc:169
+msgid "Playback Histor_y ..."
+msgstr "Ιστορικό α_ναπαραγωγής ..."
+
+#: src/qtui/menus.cc:227
+msgid "_Find ..."
+msgstr "Ανα_ζήτηση ..."
+
+#: src/qtui/menus.cc:263 src/skins/menus.cc:80 src/skins-qt/menus.cc:70
+msgid "Audio Settings ..."
+msgstr "Ρυθμίσεις ήχου ..."
+
+#: src/qtui/playlist_header.cc:232
+msgid "Now Playing"
+msgstr "Αναπαράγεται τώρα"
+
+#: src/qtui/playlist_header.cc:258
+msgid "Reset to Defaults"
+msgstr "Επαναφορά προεπιλογών"
+
+#: src/qtui/playlist_model.cc:190
+msgid "Q#"
+msgstr "Σ#"
+
+#: src/qtui/playlist_model.cc:192
+msgid "T#"
+msgstr "Κ#"
+
+#: src/qtui/playlist_model.cc:194
+msgid "C#"
+msgstr "Α#"
+
+#: src/qtui/playlist_model.cc:196
+msgid "D#"
+msgstr "Δ#"
+
+#: src/qtui/qtui.cc:40
+msgid "Qt Interface"
+msgstr "Διεπαφή Qt"
+
+#: src/qtui/search_bar.cc:46
+msgid "Search playlist"
+msgstr "Έρευνα λίστας αναπαραγωγής"
+
+#: src/qtui/settings.cc:79
+msgid "Use bold font for column headers"
+msgstr "Έντονη γραμματοσειρά στις επικεφαλίδες στηλών"
+
+#: src/resample/resample.cc:43
+msgid "Sample Rate Converter"
+msgstr "Μετατροπή ρυθμού δειγματοληψίας"
+
+#: src/resample/resample.cc:183
+msgid ""
+"Sample Rate Converter Plugin for Audacious\n"
+"Copyright 2010-2012 John Lindgren"
+msgstr ""
+"Πρόσθετο Μετατροπή ρυθμού δειγματοληψίας για το Audacious\n"
+"Πνευματικά δικαιώματα 2010-2012 John Lindgren"
+
+#: src/resample/resample.cc:187
+msgid "Skip/repeat samples"
+msgstr "Δείγματα παράληψης/επανάληψης"
+
+#: src/resample/resample.cc:188
+msgid "Linear interpolation"
+msgstr "Γραμμική παρεμβολή"
+
+#: src/resample/resample.cc:189
+msgid "Fast sinc interpolation"
+msgstr "Γρήγορη ημιτονοειδής παρεμβολή"
+
+#: src/resample/resample.cc:190
+msgid "Medium sinc interpolation"
+msgstr "Μεσαία ημιτονοειδής παρεμβολή"
+
+#: src/resample/resample.cc:191
+msgid "Best sinc interpolation"
+msgstr "Καλύτερη ημιτονοειδής παρεμβολή"
+
+#: src/resample/resample.cc:195
+msgid "<b>Conversion</b>"
+msgstr "<b>Μετατροπή</b>"
+
+#: src/resample/resample.cc:196
+msgid "Method:"
+msgstr "Μέθοδος:"
+
+#: src/resample/resample.cc:199 src/soxr/sox-resampler.cc:203
+msgid "Rate:"
+msgstr "Ρυθμός:"
+
+#: src/resample/resample.cc:202
+msgid "<b>Rate Mappings</b>"
+msgstr "<b>Αντιστοιχίσεις</b>"
+
+#: src/resample/resample.cc:203
+msgid "Use rate mappings"
+msgstr "Χρήση αντιστοιχίσεων"
+
+#: src/resample/resample.cc:205
+msgid "8 kHz:"
+msgstr "8 kHz:"
+
+#: src/resample/resample.cc:209
+msgid "16 kHz:"
+msgstr "16 kHz:"
+
+#: src/resample/resample.cc:213
+msgid "22.05 kHz:"
+msgstr "22.05 kHz:"
+
+#: src/resample/resample.cc:217
+msgid "32.0 kHz:"
+msgstr "32.0 kHz:"
+
+#: src/resample/resample.cc:221
+msgid "44.1 kHz:"
+msgstr "44.1 kHz:"
+
+#: src/resample/resample.cc:225
+msgid "48 kHz:"
+msgstr "48 kHz:"
+
+#: src/resample/resample.cc:229
+msgid "88.2 kHz:"
+msgstr "88.2 kHz:"
+
+#: src/resample/resample.cc:233
+msgid "96 kHz:"
+msgstr "96 kHz:"
+
+#: src/resample/resample.cc:237
+msgid "176.4 kHz:"
+msgstr "176.4 kHz:"
+
+#: src/resample/resample.cc:241
+msgid "192 kHz:"
+msgstr "192 kHz:"
+
+#: src/scrobbler2/config_window.cc:29
+msgid "Checking Last.fm access ..."
+msgstr "Έλεγχος πρόσβασης στο Last.fm ..."
+
+#: src/scrobbler2/config_window.cc:35
+msgid ""
+"Your scrobbles are being saved on your computer temporarily.  They will be "
+"submitted as soon as Audacious is allowed access."
+msgstr ""
+"Αποθηκεύτηκαν προσωρινά οι πληροφορίες του μουσικού προφίλ σας στον "
+"υπολογιστή. Θα υποβληθούν το συντομότερο όταν θα επιτραπεί η πρόσβαση στο "
+"Audacious."
+
+#: src/scrobbler2/config_window.cc:41
+#, c-format
+msgid "Permission granted.  Scrobbling for user %s."
+msgstr ""
+"Χορηγείται άδεια.  Μεταφορά πληροφοριών για το μουσικό προφίλ του χρήστη %s."
+
+#: src/scrobbler2/config_window.cc:44
+msgid ""
+"Permission denied.  Open the following URL in a browser, allow Audacious "
+"access to your account, and then click 'Check Permission' again:"
+msgstr ""
+"Απορρίφθηκε η άδεια. Ανοίξτε την ακόλουθη διεύθυνση, επιτρέψτε τη πρόσβαση "
+"του Audacious στον λογαριασμό σας και κάντε πάλι κλικ στο 'Έλεγχος άδειας': "
+
+#: src/scrobbler2/config_window.cc:53
+msgid "There was a problem contacting Last.fm."
+msgstr "Υπήρξε ένα πρόβλημα στη σύνδεση με το Last.fm."
+
+#: src/scrobbler2/config_window.cc:92
+msgid "Check Permission"
+msgstr "Έλεγχος άδειας"
+
+#: src/scrobbler2/config_window.cc:93
+msgid "Revoke Permission"
+msgstr "Ανάκληση άδειας"
+
+#: src/scrobbler2/config_window.cc:97
+msgid "You need to allow Audacious to scrobble tracks to your Last.fm account."
+msgstr ""
+"Πρέπει να επιτρέψετε στο Audacious να μεταφέρει τις πληροφορίες του μουσικού "
+"προφίλ σας στο λογαριασμό που διαθέτετε στο Last.fm."
+
+#: src/scrobbler2/scrobbler.cc:29
+msgid "Scrobbler 2.0"
+msgstr "Scrobbler 2.0"
+
+#: src/scrobbler2/scrobbler.cc:200
+msgid ""
+"The Scrobbler plugin could not be started.\n"
+"There might be a problem with your installation."
+msgstr ""
+"Το πρόσθετο Scrobbler δεν μπορεί να ξεκινήσει.\n"
+"Μπορεί να υπάρχει πρόβλημα με την εγκατάσταση του."
+
+#: src/scrobbler2/scrobbler.cc:245
+msgid ""
+"Audacious Scrobbler Plugin 2.0 by Pitxyoki,\n"
+"\n"
+"Copyright © 2012-2013 Luís M. Picciochi Oliveira <Pitxyoki@Gmail.com>\n"
+"\n"
+"Thanks to John Lindgren for giving me a hand at the beginning of this "
+"project."
+msgstr ""
+"Πρόσθετο Audacious Scrobbler 2.0 από τον Pitxyoki,\n"
+"\n"
+"Πνευματικά δικαιώματα © 2012-2013 Luís Μ. Picciochi Oliveira "
+"<Pitxyoki@Gmail.com>\n"
+"\n"
+"Ευχαριστώ τον John Lindgren που με βοήθησε στην αρχή του έργου."
+
+#: src/sdlout/sdlout.cc:46
+msgid "SDL Output"
+msgstr "Έξοδος SDL"
+
+#: src/sdlout/sdlout.cc:75
+msgid ""
+"SDL Output Plugin for Audacious\n"
+"Copyright 2010 John Lindgren"
+msgstr ""
+"Πρόσθετο Εξόδου SDL για το Audacious\n"
+"Πνευματικά δικαιώματα 2010 John Lindgren"
+
+#: src/search-tool/library.cc:35 src/search-tool/library.cc:46
+#: src/search-tool-qt/library.cc:35 src/search-tool-qt/library.cc:46
+msgid "Library"
+msgstr "Δισκοθήκη"
+
+#: src/search-tool-qt/search-model.cc:44 src/search-tool/search-tool.cc:287
+#, c-format
+msgid "%d song"
+msgid_plural "%d songs"
+msgstr[0] "Τραγούδι %d"
+msgstr[1] "Τραγούδια %d"
+
+#: src/search-tool-qt/search-model.cc:53 src/search-tool/search-tool.cc:294
+msgid "of this genre"
+msgstr "αυτού του είδους"
+
+#: src/search-tool-qt/search-model.h:47 src/search-tool/search-model.h:45
+msgid "on"
+msgstr "σε"
+
+#: src/search-tool-qt/search-model.h:47 src/search-tool/search-model.h:45
+msgid "by"
+msgstr "από"
+
+#: src/search-tool-qt/search-tool-qt.cc:165 src/search-tool/search-tool.cc:74
+msgid "Number of results to show:"
+msgstr "Αριθμός αποτελεσμάτων για εμφάνιση:"
+
+#: src/search-tool-qt/search-tool-qt.cc:168 src/search-tool/search-tool.cc:77
+msgid "Rescan library at startup"
+msgstr "Επανέλεγχος δισκοθήκης στην εκκίνηση"
+
+#: src/search-tool-qt/search-tool-qt.cc:170
+msgid "Monitor library for changes"
+msgstr "Παρακολούθηση αλλαγών από τη δισκοθήκη"
+
+#: src/search-tool-qt/search-tool-qt.cc:193 src/search-tool/search-tool.cc:450
+msgid ""
+"To import your music library into Audacious, choose a folder and then click "
+"the \"refresh\" icon."
+msgstr ""
+"Για να εισάγεται τη συλλογή μουσικής σας στο Audacious, διαλέξτε ένα φάκελο "
+"και κάνετε κλικ στο εικονίδιο \"ανανέωση\"."
+
+#: src/search-tool-qt/search-tool-qt.cc:195 src/search-tool/search-tool.cc:459
+msgid "Please wait ..."
+msgstr "Παρακαλώ περιμένετε ..."
+
+#: src/search-tool-qt/search-tool-qt.cc:197 src/search-tool/search-tool.cc:487
+msgid "Choose Folder"
+msgstr "Επιλογή φακέλου"
+
+#: src/search-tool-qt/search-tool-qt.cc:201 src/search-tool/search-tool.cc:445
+msgid "Search library"
+msgstr "Έρευνα δισκοθήκης"
+
+#: src/search-tool-qt/search-tool-qt.cc:327 src/search-tool/search-tool.cc:156
+#, c-format
+msgid "%d of %d result shown"
+msgid_plural "%d of %d results shown"
+msgstr[0] "Εμφανίζεται %d από %d"
+msgstr[1] "Εμφανίζονται %d από %d"
+
+#: src/search-tool-qt/search-tool-qt.cc:331 src/search-tool/search-tool.cc:160
+#, c-format
+msgid "%d result"
+msgid_plural "%d results"
+msgstr[0] "Βρέθηκε %d"
+msgstr[1] "Βρέθηκαν %d"
+
+#: src/search-tool-qt/search-tool-qt.cc:501 src/search-tool/search-tool.cc:341
+msgid "_Create Playlist"
+msgstr "_Δημιουργία λίστας αναπαραγωγής"
+
+#: src/search-tool-qt/search-tool-qt.cc:503 src/search-tool/search-tool.cc:343
+msgid "_Add to Playlist"
+msgstr "_Προσθήκη στη λίστα αναπαραγωγής"
+
+#: src/sid/xmms-sid.cc:44
+msgid "SID Player"
+msgstr "SID Πρόγραμμα αναπαραγωγής μουσικής"
+
+#: src/sid/xs_config.cc:62
+msgid "Channels:"
+msgstr "Κανάλια:"
+
+#: src/sid/xs_config.cc:68
+msgid "<b>Emulation</b>"
+msgstr "<b>Εξομοίωση</b>"
+
+#: src/sid/xs_config.cc:69
+msgid "Emulate MOS 8580 (default: MOS 6581)"
+msgstr "Εξομοίωση MOS 8580 (προεπιλεγμένο: MOS 6581)"
+
+#: src/sid/xs_config.cc:71
+msgid "Do not automatically select chip model"
+msgstr "Να μην επιλέγεται αυτόματα το μοντέλο του επεξεργαστή"
+
+#: src/sid/xs_config.cc:73
+msgid "Emulate filter"
+msgstr "Εξομοίωση φίλτρου"
+
+#: src/sid/xs_config.cc:75
+msgid "Clock speed:"
+msgstr "Ταχύτητα χρονισμού:"
+
+#: src/sid/xs_config.cc:78
+msgid "Do not automatically select clock speed"
+msgstr "Να μην επιλέγεται αυτόματα η ταχύτητα χρονισμού"
+
+#: src/sid/xs_config.cc:80
+msgid "<b>Playback time</b>"
+msgstr "<b>Διάρκεια αναπαραγωγής</b>"
+
+#: src/sid/xs_config.cc:81
+msgid "Set maximum playback time:"
+msgstr "Ρύθμιση μέγιστου χρόνου αναπαραγωγής:"
+
+#: src/sid/xs_config.cc:87
+msgid "Use only when song length is unknown"
+msgstr "Χρησιμοποιείται μόνο όταν το μήκος του τραγουδιού είναι άγνωστο"
+
+#: src/sid/xs_config.cc:90
+msgid "Set minimum playback time:"
+msgstr "Ρύθμιση ελάχιστου χρόνου αναπαραγωγής:"
+
+#: src/sid/xs_config.cc:96
+msgid "<b>Subtunes</b>"
+msgstr "<b>Υπο-μελωδίες</b>"
+
+#: src/sid/xs_config.cc:97
+msgid "Enable subtunes"
+msgstr "Ενεργοποίηση υπο-μελωδιών"
+
+#: src/sid/xs_config.cc:99
+msgid "Ignore subtunes shorter than:"
+msgstr "Αγνόησε υπο-μελωδίες μικρότερες από:"
+
+#: src/sid/xs_config.cc:105
+msgid "<b>Note</b>"
+msgstr "<b>Σημείωση</b>"
+
+#: src/silence-removal/silence-removal.cc:39
+msgid "Silence Removal"
+msgstr "Αφαίρεση σιωπής"
+
+#: src/silence-removal/silence-removal.cc:58
+msgid ""
+"Silence Removal Plugin for Audacious\n"
+"Copyright 2014 John Lindgren"
+msgstr ""
+"Πρόσθετο Αφαίρεση σιωπής για το Audacious\n"
+"Πνευματικά δικαιώματα 2014 John Lindgren"
+
+#: src/silence-removal/silence-removal.cc:67
+msgid "<b>Silence Removal</b>"
+msgstr "<b>Αφαίρεση σιωπής</b>"
+
+#: src/silence-removal/silence-removal.cc:68
+msgid "Threshold:"
+msgstr "Όριο:"
+
+#: src/skins/actions.cc:45 src/skins-qt/actions.cc:43
+msgid "Repeat points cleared."
+msgstr "Αφαίρεση σημείων επανάληψης."
+
+#: src/skins/actions.cc:60 src/skins-qt/actions.cc:58
+msgid "Repeat point A set."
+msgstr "Ορισμός του σημείου επανάληψης Α."
+
+#: src/skins/actions.cc:65 src/skins-qt/actions.cc:63
+msgid "Repeat point B set."
+msgstr "Ορισμός του σημείου επανάληψης Β."
+
+#: src/skins/equalizer.cc:223 src/skins-qt/equalizer.cc:223
+msgid "Preamp"
+msgstr "Προενίσχυση"
+
+#: src/skins/equalizer.cc:227 src/skins-qt/equalizer.cc:227
+msgid "31 Hz"
+msgstr "31 Hz"
+
+#: src/skins/equalizer.cc:228 src/skins-qt/equalizer.cc:228
+msgid "63 Hz"
+msgstr "63 Hz"
+
+#: src/skins/equalizer.cc:228 src/skins-qt/equalizer.cc:228
+msgid "125 Hz"
+msgstr "125 Hz"
+
+#: src/skins/equalizer.cc:228 src/skins-qt/equalizer.cc:228
+msgid "250 Hz"
+msgstr "250 Hz"
+
+#: src/skins/equalizer.cc:228 src/skins-qt/equalizer.cc:228
+msgid "500 Hz"
+msgstr "500 Hz"
+
+#: src/skins/equalizer.cc:228 src/skins-qt/equalizer.cc:228
+msgid "1 kHz"
+msgstr "1 kHz"
+
+#: src/skins/equalizer.cc:229 src/skins-qt/equalizer.cc:229
+msgid "2 kHz"
+msgstr "2 kHz"
+
+#: src/skins/equalizer.cc:229 src/skins-qt/equalizer.cc:229
+msgid "4 kHz"
+msgstr "4 kHz"
+
+#: src/skins/equalizer.cc:229 src/skins-qt/equalizer.cc:229
+msgid "8 kHz"
+msgstr "8 kHz"
+
+#: src/skins/equalizer.cc:229 src/skins-qt/equalizer.cc:229
+msgid "16 kHz"
+msgstr "16 kHz"
+
+#: src/skins/equalizer.cc:270 src/skins-qt/equalizer.cc:270
+msgid "Audacious Equalizer"
+msgstr "Ισοσταθμιστής Audacious"
+
+#: src/skins/main.cc:459 src/skins-qt/main.cc:442
+msgid "Recording on"
+msgstr "Ενεργή εγγραφή"
+
+#: src/skins/main.cc:461 src/skins-qt/main.cc:444
+msgid "Recording off"
+msgstr "Ανενεργή εγγραφή"
+
+#: src/skins/main.cc:754 src/skins-qt/main.cc:701
+#, c-format
+msgid "Seek to %d:%-2.2d / %d:%-2.2d"
+msgstr "Αναζήτηση σε %d:%-2.2d / %d:%-2.2d"
+
+#: src/skins/main.cc:771 src/skins-qt/main.cc:718
+#, c-format
+msgid "Volume: %d%%"
+msgstr "Ένταση: %d%%"
+
+#: src/skins/main.cc:784 src/skins-qt/main.cc:731
+#, c-format
+msgid "Balance: %d%% left"
+msgstr "Ισορροπία: %d%% αριστερά"
+
+#: src/skins/main.cc:786 src/skins-qt/main.cc:733
+msgid "Balance: center"
+msgstr "Ισορροπία: κέντρο"
+
+#: src/skins/main.cc:788 src/skins-qt/main.cc:735
+#, c-format
+msgid "Balance: %d%% right"
+msgstr "Ισορροπία: %d%% δεξιά"
+
+#: src/skins/main.cc:880 src/skins-qt/main.cc:827
+msgid "Options Menu"
+msgstr "Μενού επιλογών"
+
+#: src/skins/main.cc:884 src/skins-qt/main.cc:831
+msgid "Disable 'Always On Top'"
+msgstr "Απενεργοποίηση του 'Πάντα στην κορυφή'"
+
+#: src/skins/main.cc:886 src/skins-qt/main.cc:833
+msgid "Enable 'Always On Top'"
+msgstr "Ενεργοποίηση του 'Πάντα στην κορυφή'"
+
+#: src/skins/main.cc:889 src/skins-qt/main.cc:836
+msgid "File Info Box"
+msgstr "Πλαίσιο αρχείου πληροφοριών "
+
+#: src/skins/main.cc:893 src/skins-qt/main.cc:840
+msgid "Disable 'Double Size'"
+msgstr "Απενεργοποίηση 'Διπλό μέγεθος'"
+
+#: src/skins/main.cc:895 src/skins-qt/main.cc:842
+msgid "Enable 'Double Size'"
+msgstr "Ενεργοποίηση 'Διπλό μέγεθος'"
+
+#: src/skins/main.cc:898 src/skins-qt/main.cc:845
+msgid "Visualizations"
+msgstr "Οπτικά εφέ"
+
+#: src/skins/menus.cc:74 src/skins-qt/menus.cc:64
+msgid "Volume Up"
+msgstr "Αύξηση έντασης"
+
+#: src/skins/menus.cc:75 src/skins-qt/menus.cc:65
+msgid "Volume Down"
+msgstr "Μείωση έντασης"
+
+#: src/skins/menus.cc:77 src/skins-qt/menus.cc:67
+msgid "Effects ..."
+msgstr "Εφέ ..."
+
+#: src/skins/menus.cc:84 src/skins-qt/menus.cc:74
+msgid "Open Files ..."
+msgstr "Άνοιγμα αρχείων ..."
+
+#: src/skins/menus.cc:85 src/skins-qt/menus.cc:76
+msgid "Open URL ..."
+msgstr "Άνοιγμα διεύθυνσης ..."
+
+#: src/skins/menus.cc:89 src/skins-qt/menus.cc:80
+msgid "Playlist"
+msgstr "Λίστα αναπαραγωγής"
+
+#: src/skins/menus.cc:90 src/skins-qt/menus.cc:81
+msgid "Output"
+msgstr "Έξοδος"
+
+#: src/skins/menus.cc:91 src/skins-qt/menus.cc:82
+msgid "View"
+msgstr "Προβολή"
+
+#: src/skins/menus.cc:93 src/skins/menus.cc:161 src/skins/menus.cc:174
+#: src/skins/menus.cc:245 src/skins-qt/menus.cc:84 src/skins-qt/menus.cc:157
+#: src/skins-qt/menus.cc:171 src/skins-qt/menus.cc:242
+msgid "Services"
+msgstr "Υπηρεσίες"
+
+#: src/skins/menus.cc:95 src/skins-qt/menus.cc:86
+msgid "About ..."
+msgstr "Σχετικά με ..."
+
+#: src/skins/menus.cc:96 src/skins-qt/menus.cc:87
+msgid "Settings ..."
+msgstr "Ρυθμίσεις ..."
+
+#: src/skins/menus.cc:97 src/skins-qt/menus.cc:88
+msgid "Quit"
+msgstr "Έξοδος"
+
+#: src/skins/menus.cc:101 src/skins/menus.cc:235 src/skins-qt/menus.cc:92
+#: src/skins-qt/menus.cc:232
+msgid "Song Info ..."
+msgstr "Πληροφορίες τραγουδιού"
+
+#: src/skins/menus.cc:105 src/skins-qt/menus.cc:97
+msgid "Shuffle by Album"
+msgstr "Τυχαία εναλλαγή κατά άλμπουμ"
+
+#: src/skins/menus.cc:106 src/skins-qt/menus.cc:98
+msgid "No Playlist Advance"
+msgstr "Χωρίς προώθηση στο επόμενο"
+
+#: src/skins/menus.cc:117 src/skins-qt/menus.cc:109
+msgid "Set A-B Repeat"
+msgstr "Ορισμός σημείων επανάληψης A-B"
+
+#: src/skins/menus.cc:118 src/skins-qt/menus.cc:110
+msgid "Clear A-B Repeat"
+msgstr "Αφαίρεση σημείων επανάληψης A-B"
+
+#: src/skins/menus.cc:120 src/skins-qt/menus.cc:112
+msgid "Jump to Song ..."
+msgstr "Μετάβαση στο τραγούδι"
+
+#: src/skins/menus.cc:121 src/skins-qt/menus.cc:114
+msgid "Jump to Time ..."
+msgstr "Μετάβαση σε χρόνο ..."
+
+#: src/skins/menus.cc:125 src/skins-qt/menus.cc:119
+msgid "Play/Resume"
+msgstr "Αναπαραγωγή/Συνέχεια"
+
+#: src/skins/menus.cc:127 src/skins-qt/menus.cc:121
+msgid "New Playlist"
+msgstr "Νέα λίστα αναπαραγωγής"
+
+#: src/skins/menus.cc:128 src/skins-qt/menus.cc:122
+msgid "Rename Playlist ..."
+msgstr "Μετονομασία λίστας αναπαραγωγής"
+
+#: src/skins/menus.cc:129 src/skins-qt/menus.cc:123
+msgid "Remove Playlist"
+msgstr "Αφαίρεση λίστας αναπαραγωγής"
+
+#: src/skins/menus.cc:131 src/skins-qt/menus.cc:125
+msgid "Previous Playlist"
+msgstr "Προηγούμενη λίστα αναπαραγωγής"
+
+#: src/skins/menus.cc:132 src/skins-qt/menus.cc:126
+msgid "Next Playlist"
+msgstr "Επόμενη λίστα αναπαραγωγής"
+
+#: src/skins/menus.cc:134 src/skins-qt/menus.cc:128
+msgid "Import Playlist ..."
+msgstr "Εισαγωγή λίστας αναπαραγωγής ..."
+
+#: src/skins/menus.cc:135 src/skins-qt/menus.cc:129
+msgid "Export Playlist ..."
+msgstr "Εξαγωγή λίστας αναπαραγωγής ..."
+
+#: src/skins/menus.cc:137 src/skins-qt/menus.cc:131
+msgid "Playlist Manager ..."
+msgstr "Διαχειριστής λίστας αναπαραγωγής ..."
+
+#: src/skins/menus.cc:138 src/skins-qt/menus.cc:132
+msgid "Queue Manager ..."
+msgstr "Διαχειριστής σειράς αναμονής ..."
+
+#: src/skins/menus.cc:140 src/skins-qt/menus.cc:134
+msgid "Refresh Playlist"
+msgstr "Ανανέωση λίστας αναπαραγωγής"
+
+#: src/skins/menus.cc:144 src/skins-qt/menus.cc:138
+msgid "Show Playlist Editor"
+msgstr "Εμφάνιση πληροφοριών αναπαραγωγής"
+
+#: src/skins/menus.cc:145 src/skins-qt/menus.cc:139
+msgid "Show Equalizer"
+msgstr "Εμφάνιση ισοσταθμιστή"
+
+#: src/skins/menus.cc:147 src/skins-qt/menus.cc:141
+msgid "Show Remaining Time"
+msgstr "Εμφάνιση χρόνου που απομένει"
+
+#: src/skins/menus.cc:149 src/skins-qt/menus.cc:143
+msgid "Double Size"
+msgstr "Διπλό μέγεθος"
+
+#: src/skins/menus.cc:150 src/skins-qt/menus.cc:144
+msgid "Always on Top"
+msgstr "Πάντα στην κορυφή"
+
+#: src/skins/menus.cc:151 src/skins-qt/menus.cc:146
+msgid "On All Workspaces"
+msgstr "Σε όλους τους χώρους εργασίας"
+
+#: src/skins/menus.cc:153 src/skins-qt/menus.cc:149
+msgid "Roll Up Player"
+msgstr "Αναπαραγωγή σε ελαχιστοποίηση"
+
+#: src/skins/menus.cc:154 src/skins-qt/menus.cc:150
+msgid "Roll Up Playlist Editor"
+msgstr "Λίστα αναπαραγωγής σε ελαχιστοποίηση"
+
+#: src/skins/menus.cc:155 src/skins-qt/menus.cc:151
+msgid "Roll Up Equalizer"
+msgstr "Ισοσταθμιστής σε ελαχιστοποίηση"
+
+#: src/skins/menus.cc:163 src/skins-qt/menus.cc:159
+msgid "Add URL ..."
+msgstr "Προσθήκη διεύθυνσης ..."
+
+#: src/skins/menus.cc:164 src/skins-qt/menus.cc:161
+msgid "Add Files ..."
+msgstr "Προσθήκη αρχείων..."
+
+#: src/skins/menus.cc:168 src/skins/menus.cc:196 src/skins/menus.cc:212
+#: src/skins-qt/menus.cc:165 src/skins-qt/menus.cc:193
+#: src/skins-qt/menus.cc:209
+msgid "By Title"
+msgstr "Κατά τίτλο"
+
+#: src/skins/menus.cc:169 src/skins/menus.cc:203 src/skins/menus.cc:219
+#: src/skins-qt/menus.cc:166 src/skins-qt/menus.cc:200
+#: src/skins-qt/menus.cc:216
+msgid "By File Name"
+msgstr "Κατά όνομα αρχείου"
+
+#: src/skins/menus.cc:170 src/skins/menus.cc:204 src/skins/menus.cc:220
+#: src/skins-qt/menus.cc:167 src/skins-qt/menus.cc:201
+#: src/skins-qt/menus.cc:217
+msgid "By File Path"
+msgstr "Κατά διαδρομή αρχείου"
+
+#: src/skins/menus.cc:176 src/skins-qt/menus.cc:173
+msgid "Remove All"
+msgstr "Αφαίρεση όλων"
+
+#: src/skins/menus.cc:177 src/skins-qt/menus.cc:174
+msgid "Clear Queue"
+msgstr "Εκκαθάριση σειράς"
+
+#: src/skins/menus.cc:179 src/skins-qt/menus.cc:176
+msgid "Remove Unavailable Files"
+msgstr "Αφαίρεση μη διαθέσιμων αρχείων"
+
+#: src/skins/menus.cc:180 src/skins-qt/menus.cc:177
+msgid "Remove Duplicates"
+msgstr "Αφαίρεση διπλότυπων"
+
+#: src/skins/menus.cc:182 src/skins-qt/menus.cc:179
+msgid "Remove Unselected"
+msgstr "Αφαίρεση μη επιλεγμένων"
+
+#: src/skins/menus.cc:183 src/skins-qt/menus.cc:180
+msgid "Remove Selected"
+msgstr "Αφαίρεση επιλεγμένων"
+
+#: src/skins/menus.cc:187 src/skins-qt/menus.cc:184
+msgid "Search and Select"
+msgstr "Αναζήτηση και επιλογή"
+
+#: src/skins/menus.cc:189 src/skins-qt/menus.cc:186
+msgid "Invert Selection"
+msgstr "Αντιστροφή επιλογής"
+
+#: src/skins/menus.cc:190 src/skins-qt/menus.cc:187
+msgid "Select None"
+msgstr "Επιλογή κανενός"
+
+#: src/skins/menus.cc:191 src/skins-qt/menus.cc:188
+msgid "Select All"
+msgstr "Επιλογή όλων"
+
+#: src/skins/menus.cc:195 src/skins/menus.cc:211 src/skins-qt/menus.cc:192
+#: src/skins-qt/menus.cc:208
+msgid "By Track Number"
+msgstr "Κατά αριθμό κομματιού"
+
+#: src/skins/menus.cc:197 src/skins/menus.cc:213 src/skins-qt/menus.cc:194
+#: src/skins-qt/menus.cc:210
+msgid "By Artist"
+msgstr "Κατά καλλιτέχνη"
+
+#: src/skins/menus.cc:198 src/skins/menus.cc:214 src/skins-qt/menus.cc:195
+#: src/skins-qt/menus.cc:211
+msgid "By Album"
+msgstr "Κατά άλμπουμ"
+
+#: src/skins/menus.cc:199 src/skins/menus.cc:215 src/skins-qt/menus.cc:196
+#: src/skins-qt/menus.cc:212
+msgid "By Album Artist"
+msgstr "Κατά καλλιτέχνη άλμπουμ"
+
+#: src/skins/menus.cc:200 src/skins/menus.cc:216 src/skins-qt/menus.cc:197
+#: src/skins-qt/menus.cc:213
+msgid "By Release Date"
+msgstr "Κατά ημερομηνία κυκλοφορίας"
+
+#: src/skins/menus.cc:201 src/skins/menus.cc:217 src/skins-qt/menus.cc:198
+#: src/skins-qt/menus.cc:214
+msgid "By Genre"
+msgstr "Κατά είδος"
+
+#: src/skins/menus.cc:202 src/skins/menus.cc:218 src/skins-qt/menus.cc:199
+#: src/skins-qt/menus.cc:215
+msgid "By Length"
+msgstr "Κατά διάρκεια"
+
+#: src/skins/menus.cc:205 src/skins/menus.cc:221 src/skins-qt/menus.cc:202
+#: src/skins-qt/menus.cc:218
+msgid "By Custom Title"
+msgstr "Κατά προσαρμοσμένο τίτλο"
+
+#: src/skins/menus.cc:206 src/skins/menus.cc:222 src/skins-qt/menus.cc:203
+#: src/skins-qt/menus.cc:219
+msgid "By Comment"
+msgstr "Κατά σχόλιο"
+
+#: src/skins/menus.cc:207 src/skins/menus.cc:223 src/skins-qt/menus.cc:204
+#: src/skins-qt/menus.cc:220
+msgid "By Disc Number"
+msgstr "Κατά αριθμό δίσκου"
+
+#: src/skins/menus.cc:227 src/skins-qt/menus.cc:224
+msgid "Randomize List"
+msgstr "Τυχαιοποίηση λίστας"
+
+#: src/skins/menus.cc:228 src/skins-qt/menus.cc:225
+msgid "Reverse List"
+msgstr "Αντίστροφη λίστα"
+
+#: src/skins/menus.cc:230 src/skins-qt/menus.cc:227
+msgid "Sort Selected"
+msgstr "Ταξινόμηση επιλεγμένων"
+
+#: src/skins/menus.cc:231 src/skins-qt/menus.cc:228
+msgid "Sort List"
+msgstr "Ταξινόμηση λίστας"
+
+#: src/skins/menus.cc:236 src/skins-qt/menus.cc:233
+msgid "Open Containing Folder"
+msgstr "Άνοιγμα φακέλου που περιέχεται"
+
+#: src/skins/menus.cc:238 src/skins-qt/menus.cc:235
+msgid "Cut"
+msgstr "Αποκοπή"
+
+#: src/skins/menus.cc:239 src/skins-qt/menus.cc:236
+msgid "Copy"
+msgstr "Αντιγραφή"
+
+#: src/skins/menus.cc:240 src/skins-qt/menus.cc:237
+msgid "Paste"
+msgstr "Επικόλληση"
+
+#: src/skins/menus.cc:241 src/skins-qt/menus.cc:238
+msgid "Paste at End"
+msgstr "Επικόλληση στο τέλος"
+
+#: src/skins/menus.cc:243 src/skins-qt/menus.cc:240
+msgid "Queue/Unqueue"
+msgstr "Προσθήκη/Αφαίρεση από την σειρά"
+
+#: src/skins/playlist-widget.cc:58 src/skins-qt/playlist-widget.cc:58
+#, c-format
+msgid "%s (%d of %d)"
+msgstr "%s (%d από %d)"
+
+#: src/skins/playlistwin.cc:491 src/skins-qt/playlistwin.cc:478
+msgid "Audacious Playlist Editor"
+msgstr "Επεξεργαστής λίστας αναπαραγωγής Audacious"
+
+#: src/skins/plugin.cc:53 src/skins-qt/plugin.cc:65
+msgid "Winamp Classic Interface"
+msgstr "Κλασική διεπαφή Winamp"
+
+#: src/skins-qt/menus.cc:75
+msgid "Open Folder ..."
+msgstr "Άνοιγμα φακέλου ..."
+
+#: src/skins-qt/menus.cc:93
+msgid "Playback History ..."
+msgstr "Ιστορικό αναπαραγωγής ..."
+
+#: src/skins-qt/menus.cc:160
+msgid "Add Folder ..."
+msgstr "Προσθήκη φακέλου ..."
+
+#: src/skins-qt/search-select.cc:62 src/skins/search-select.cc:77
+msgid "Search entries in active playlist"
+msgstr "Αναζήτηση καταχωρήσεων σε ενεργή λίστα αναπαραγωγής"
+
+#: src/skins-qt/search-select.cc:70 src/skins/search-select.cc:83
+msgid ""
+"Select entries in playlist by filling one or more fields. Fields use regular "
+"expressions syntax, case-insensitive. If you don't know how regular "
+"expressions work, simply insert a literal portion of what you're searching "
+"for."
+msgstr ""
+"Επιλογή καταχωρήσεων στην λίστα αναπαραγωγής συμπληρώνοντας ένα ή "
+"περισσότερα πεδία. Τα πεδία χρησιμοποιούν τη σύνταξη έκφρασης με διάκριση "
+"πεζών-κεφαλαίων. Αν δεν ξέρετε πώς λειτουργούν οι κανονικές εκφράσεις, απλά "
+"εισάγετε ένα μικρό τμήμα από αυτό που αναζητάτε."
+
+#: src/skins-qt/search-select.cc:75 src/skins/search-select.cc:91
+msgid "Title:"
+msgstr "Τίτλος:"
+
+#: src/skins-qt/search-select.cc:79 src/skins/search-select.cc:96
+msgid "Album:"
+msgstr "Αλμπουμ:"
+
+#: src/skins-qt/search-select.cc:82 src/skins/search-select.cc:101
+msgid "Artist:"
+msgstr "Καλλιτέχνης:"
+
+#: src/skins-qt/search-select.cc:85 src/skins/search-select.cc:106
+msgid "File Name:"
+msgstr "Όνομα αρχείου:"
+
+#: src/skins-qt/search-select.cc:88 src/skins/search-select.cc:134
+msgid "Clear previous selection before searching"
+msgstr "Εκκαθάριση προηγούμενων επιλογών πριν από την αναζήτηση"
+
+#: src/skins-qt/search-select.cc:89 src/skins/search-select.cc:137
+msgid "Automatically toggle queue for matching entries"
+msgstr "Αυτόματη εναλλαγή σειράς αναμονής για τις καταχωρήσεις που ταιριάζουν"
+
+#: src/skins-qt/search-select.cc:90 src/skins/search-select.cc:140
+msgid "Create a new playlist with matching entries"
+msgstr "Δημιουργία νέας λίστας αναπαραγωγής με τις καταχωρήσεις που ταιριάζουν"
+
+#: src/skins-qt/search-select.cc:101 src/skins/search-select.cc:78
+msgid "Search"
+msgstr "Αναζήτηση"
+
+#: src/skins-qt/skins_cfg.cc:198 src/skins/skins_cfg.cc:182
+msgid "Player:"
+msgstr "Πρόγραμμα αναπαραγωγής:"
+
+#: src/skins-qt/skins_cfg.cc:200 src/skins/skins_cfg.cc:184
+msgid "Select main player window font:"
+msgstr "Επιλογή γραμματοσειράς του κυρίως παραθύρου αναπαραγωγής:"
+
+#: src/skins-qt/skins_cfg.cc:201 src/skins/skins_cfg.cc:185
+msgid "Playlist:"
+msgstr "Λίστα αναπαραγωγής:"
+
+#: src/skins-qt/skins_cfg.cc:203 src/skins/skins_cfg.cc:187
+msgid "Select playlist font:"
+msgstr "Επιλογή γραμματοσειράς για τη λίστα αναπαραγωγής:"
+
+#: src/skins-qt/skins_cfg.cc:207 src/skins/skins_cfg.cc:191
+msgid "<b>Skin</b>"
+msgstr "<b>Εμφάνιση</b>"
+
+#: src/skins-qt/skins_cfg.cc:211 src/skins/skins_cfg.cc:193
+msgid "Display active titlebar when any window is focused"
+msgstr ""
+"Εμφάνιση ενεργής γραμμής τίτλου όταν οποιοδήποτε παράθυρο είναι εστιασμένο"
+
+#: src/skins-qt/skins_cfg.cc:213 src/skins/skins_cfg.cc:195
+msgid "<b>Fonts</b>"
+msgstr "<b>Γραμματοσειρές</b>"
+
+#: src/skins-qt/skins_cfg.cc:215 src/skins/skins_cfg.cc:197
+msgid "Use bitmap fonts (supports ASCII only)"
+msgstr "Χρήση γραμματοσειρών bitmap (υποστηρίζει μόνο ASCII)"
+
+#: src/skins-qt/skins_cfg.cc:217 src/skins/skins_cfg.cc:199
+msgid "Scroll song title"
+msgstr "Κύλιση τίτλου τραγουδιού"
+
+#: src/skins-qt/skins_cfg.cc:219 src/skins/skins_cfg.cc:201
+msgid "Scroll song title in both directions"
+msgstr "Κύλιση τίτλου τραγουδιού και στις δύο κατευθύνσεις"
+
+#: src/skins-qt/skins_cfg.cc:224 src/skins/skins_cfg.cc:206
+msgid "Analyzer"
+msgstr "Αναλυτής"
+
+#: src/skins-qt/skins_cfg.cc:225 src/skins/skins_cfg.cc:207
+msgid "Scope"
+msgstr "Κυματομορφή"
+
+#: src/skins-qt/skins_cfg.cc:226 src/skins/skins_cfg.cc:208
+msgid "Voiceprint / VU meter"
+msgstr "Ηχητικό αποτύπωμα / Μετρητής VU"
+
+#: src/skins-qt/skins_cfg.cc:227 src/skins/skins_cfg.cc:209
+msgid "Off"
+msgstr "Κλειστό"
+
+#: src/skins-qt/skins_cfg.cc:231 src/skins-qt/skins_cfg.cc:256
+#: src/skins-qt/skins_cfg.cc:262 src/skins/skins_cfg.cc:213
+#: src/skins/skins_cfg.cc:238 src/skins/skins_cfg.cc:244
+msgid "Normal"
+msgstr "Κανονικά"
+
+#: src/skins-qt/skins_cfg.cc:232 src/skins-qt/skins_cfg.cc:257
+#: src/skins/skins_cfg.cc:214 src/skins/skins_cfg.cc:239
+msgid "Fire"
+msgstr "Φωτεινός"
+
+#: src/skins-qt/skins_cfg.cc:233 src/skins/skins_cfg.cc:215
+msgid "Vertical lines"
+msgstr "Κατακόρυφες γραμμές"
+
+#: src/skins-qt/skins_cfg.cc:237 src/skins/skins_cfg.cc:219
+msgid "Lines"
+msgstr "Γραμμές"
+
+#: src/skins-qt/skins_cfg.cc:238 src/skins/skins_cfg.cc:220
+msgid "Bars"
+msgstr "Μπάρες"
+
+#: src/skins-qt/skins_cfg.cc:242 src/skins/skins_cfg.cc:224
+msgid "Slowest"
+msgstr "Πολύ αργά"
+
+#: src/skins-qt/skins_cfg.cc:243 src/skins/skins_cfg.cc:225
+msgid "Slow"
+msgstr "Αργά"
+
+#: src/skins-qt/skins_cfg.cc:244 src/skins/skins_cfg.cc:226
+#: src/soxr/sox-resampler.cc:180
+msgid "Medium"
+msgstr "Μεσαία"
+
+#: src/skins-qt/skins_cfg.cc:245 src/skins/skins_cfg.cc:227
+msgid "Fast"
+msgstr "Γρήγορα"
+
+#: src/skins-qt/skins_cfg.cc:246 src/skins/skins_cfg.cc:228
+msgid "Fastest"
+msgstr "Πολύ γρήγορα"
+
+#: src/skins-qt/skins_cfg.cc:250 src/skins/skins_cfg.cc:232
+msgid "Dots"
+msgstr "Αποσιωπητικά"
+
+#: src/skins-qt/skins_cfg.cc:251 src/skins/skins_cfg.cc:233
+msgid "Line"
+msgstr "Γραμμές"
+
+#: src/skins-qt/skins_cfg.cc:252 src/skins/skins_cfg.cc:234
+msgid "Solid"
+msgstr "Συμπαγές"
+
+#: src/skins-qt/skins_cfg.cc:258 src/skins/skins_cfg.cc:240
+msgid "Ice"
+msgstr "Ψυχρός"
+
+#: src/skins-qt/skins_cfg.cc:263 src/skins/skins_cfg.cc:245
+msgid "Smooth"
+msgstr "Ομαλά"
+
+#: src/skins-qt/skins_cfg.cc:267 src/skins/skins_cfg.cc:249
+msgid "Coloring:"
+msgstr "Χρωματισμός:"
+
+#: src/skins-qt/skins_cfg.cc:270 src/skins/skins_cfg.cc:252
+msgid "Style:"
+msgstr "Στυλ:"
+
+#: src/skins-qt/skins_cfg.cc:273 src/skins/skins_cfg.cc:255
+msgid "Falloff:"
+msgstr "Μείωση:"
+
+#: src/skins-qt/skins_cfg.cc:276 src/skins/skins_cfg.cc:258
+msgid "Peak falloff:"
+msgstr "Μείωση κορυφής:"
+
+#: src/skins-qt/skins_cfg.cc:282 src/skins/skins_cfg.cc:264
+msgid "Scope Style:"
+msgstr "Στυλ κυματομορφής:"
+
+#: src/skins-qt/skins_cfg.cc:285 src/skins/skins_cfg.cc:267
+msgid "Voiceprint Coloring:"
+msgstr "Χρωματισμός ηχητικού αποτυπώματος:"
+
+#: src/skins-qt/skins_cfg.cc:288 src/skins/skins_cfg.cc:270
+msgid "VU Meter Style:"
+msgstr "Στυλ μετρητή VU:"
+
+#: src/skins-qt/skins_cfg.cc:294 src/skins/skins_cfg.cc:276
+msgid "<b>Type</b>"
+msgstr "<b>Τύπος</b>"
+
+#: src/skins-qt/skins_cfg.cc:295 src/skins/skins_cfg.cc:277
+msgid "Visualization type:"
+msgstr "Τύπος οπτικού εφέ:"
+
+#: src/skins-qt/skins_cfg.cc:298 src/skins/skins_cfg.cc:280
+msgid "<b>Analyzer</b>"
+msgstr "<b>Αναλυτής</b>"
+
+#: src/skins-qt/skins_cfg.cc:299 src/skins/skins_cfg.cc:281
+msgid "Show peaks"
+msgstr "Εμφάνιση κορυφών"
+
+#: src/skins-qt/skins_cfg.cc:308 src/skins/skins_cfg.cc:290
+msgid "Visualization"
+msgstr "Οπτικό εφέ"
+
+#: src/skins-qt/skinselector.cc:98 src/skins/skinselector.cc:111
+msgid "Archived Winamp 2.x skin"
+msgstr "Αρχειοθετημένη εμφάνιση Winamp 2.x"
+
+#: src/skins-qt/skinselector.cc:102 src/skins/skinselector.cc:115
+msgid "Unarchived Winamp 2.x skin"
+msgstr "Αποαρχειοθετημένη εμφάνιση Winamp 2.x"
+
+#: src/sndfile/plugin.cc:38
+msgid "Sndfile Plugin"
+msgstr "Πρόσθετο Sndfile"
+
+#: src/sndfile/plugin.cc:372
+msgid ""
+"Based on the xmms_sndfile plugin:\n"
+"Copyright (C) 2000, 2002 Erik de Castro Lopo\n"
+"\n"
+"Adapted for Audacious by Tony Vroon <chainsaw@gentoo.org>\n"
+"\n"
+"This program is free software; you can redistribute it and/or modify it "
+"under the terms of the GNU General Public License as published by the Free "
+"Software Foundation; either version 2 of the License, or (at your option) "
+"any later version.\n"
+"\n"
+"This program is distributed in the hope that it will be useful, but WITHOUT "
+"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
+"FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for "
+"more details.\n"
+"\n"
+"You should have received a copy of the GNU General Public License along with "
+"this program; if not, write to the Free Software Foundation, Inc., 51 "
+"Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA."
+msgstr ""
+"Βασισμένο στο πρόσθετο xmms_sndfile:\n"
+"Πνευματικά δικαιώματα (C) 2000, 2002, Erik de Castro Lopo\n"
+"\n"
+"Προσαρμοσμένο για το Audacious από τον Tony Vroon <chainsaw@gentoo.org>\n"
+"\n"
+"Το πρόγραμμα αυτό είναι ελεύθερο λογισμικό. Επιτρέπεται η αναδιανομή ή/και "
+"τροποποίησή του υπό τους όρους της άδειας GNU General Public, όπως αυτή έχει "
+"δημοσιευθεί από το Ίδρυμα Ελεύθερου Λογισμικού είτε την έκδοση 2 είτε (κατά "
+"την επιλογή σας) σε οποιαδήποτε μεταγενέστερη έκδοση της.\n"
+"\n"
+"Διανέμεται με την ελπίδα ότι θα είναι χρήσιμο, αλλά ΧΩΡΙΣ ΚΑΜΙΑ ΕΓΓΥΗΣΗ, "
+"χωρίς καν την υπονοούμενη εγγύηση της ΕΜΠΟΡΕΥΣΙΜΟΤΗΤΑΣ ή ΚΑΤΑΛΛΗΛΟΤΗΤΑΣ ΓΙΑ "
+"ΕΝΑ ΣΥΓΚΕΚΡΙΜΕΝΟ ΣΚΟΠΟ. Για περισσότερες λεπτομέρειες δείτε την άδεια GNU "
+"General Public.\n"
+"\n"
+"Θα πρέπει να έχετε λάβει ένα αντίγραφο της άδειας GNU General Public μαζί με "
+"αυτό το πρόγραμμα. Εάν όχι, γράψτε στο Free Software Foundation, Inc., 51 "
+"Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA."
+
+#: src/sndio/sndio.cc:43
+msgid "Sndio Output"
+msgstr "Έξοδος Sndio"
+
+#: src/sndio/sndio.cc:98
+msgid "Device (blank for default):"
+msgstr "Συσκευή (κενό ως προεπιλογή):"
+
+#: src/sndio/sndio.cc:100
+msgid "Save and restore volume:"
+msgstr "Αποθήκευση και επαναφορά της έντασης:"
+
+#: src/sndio/sndio.cc:181
+#, c-format
+msgid "Sndio error: Unsupported audio format (%d)"
+msgstr "Σφάλμα Sndio: Μη υποστηριζόμενη μορφή ήχου (%d)"
+
+#: src/sndio/sndio.cc:192
+msgid "Sndio error: sio_open() failed"
+msgstr "Σφάλμα Sndio: αποτυχία sio_open()"
+
+#: src/sndio/sndio.cc:221
+msgid "Sndio error: sio_setpar() failed"
+msgstr "Σφάλμα Sndio: αποτυχία sio_setpar()"
+
+#: src/sndio/sndio.cc:233
+msgid "Sndio error: sio_start() failed"
+msgstr "Σφάλμα Sndio: αποτυχία session_start()"
+
+#: src/songchange/song_change.cc:30
+msgid "Song Change"
+msgstr "Αλλαγή τραγουδιού"
+
+#: src/songchange/song_change.cc:256
+msgid "<b>Commands</b>"
+msgstr "<b>Εντολές</b>"
+
+#: src/songchange/song_change.cc:258
+msgid "Command to run when starting a new song:"
+msgstr "Εντολή όταν αρχίζει νέο τραγούδι:"
+
+#: src/songchange/song_change.cc:261
+msgid "Command to run when stopping a song:"
+msgstr "Εντολή στη διακοπή ενός τραγουδιού:"
+
+#: src/songchange/song_change.cc:264
+msgid "Command to run at the end of a song:"
+msgstr "Εντολή στο τέλος ενός τραγουδιού:"
+
+#: src/songchange/song_change.cc:267
+msgid "Command to run at the end of the playlist:"
+msgstr "Εντολή στο τέλος της λίστας αναπαραγωγής:"
+
+#: src/songchange/song_change.cc:270
+msgid "Command to run when song title changes (for network streams):"
+msgstr "Εντολή όταν αλλάζει ο τίτλος του τραγουδιού (για ροές στο διαδίκτυο):"
+
+#: src/songchange/song_change.cc:273
+msgid ""
+"You can use the following format codes, which will be replaced before "
+"running the command.\n"
+"Not all are useful though for the song-stopped or end-of-playlist command."
+msgstr ""
+"Μπορείτε να χρησιμοποιήσετε τους παρακάτω κωδικούς μορφοποίησης, οι οποίοι "
+"θα αντικατασταθούν πριν από την εκτέλεση της εντολής.\n"
+"Ωστόσο, δεν λειτουργούν όλοι για τις εντολές διακοπής ενός τραγουδιού ή "
+"τέλος της λίστας αναπαραγωγής."
+
+#: src/songchange/song_change.cc:276
+msgid ""
+"%a: Artist\n"
+"%b: Album\n"
+"%c: Number of channels\n"
+"%f: File name (full path)\n"
+"%F: Frequency (Hertz)\n"
+"%l: Length (milliseconds)\n"
+"%n or %s: Formatted title (see playlist settings)\n"
+"%p: Currently playing (1 or 0)\n"
+"%r: Rate (bits per second)\n"
+"%t: Playlist position\n"
+"%T: Title (unformatted)"
+msgstr ""
+"%a: Καλλιτέχνης\n"
+"%b: Άλμπουμ\n"
+"%c: Αριθμός καναλιών\n"
+"%f: Όνομα αρχείου (πλήρης διαδρομή)\n"
+"%F: Συχνότητα (Hertz)\n"
+"%l: Διάρκεια (milliseconds)\n"
+"%n ή %s: Μορφοποιημένος τίτλος (βλέπε ρυθμίσεις λίστας αναπαραγωγής)\n"
+"%p: Παίζεται τώρα (1 ή 0)\n"
+"%r: Ρυθμός (bit ανά δευτερόλεπτο)\n"
+"%t: Θέση στη λίστα αναπαραγωγής\n"
+"%T: Τίτλος (μη μορφοποιημένος)"
+
+#: src/songchange/song_change.cc:287
+msgid ""
+"Parameters passed to the shell should be enclosed in quotation marks.\n"
+"Unquoted parameters may lead to unexpected results."
+msgstr ""
+"Οι παράμετροι για το κέλυφος πρέπει να περικλείονται με εισαγωγικά.\n"
+"Παράμετροι χωρίς εισαγωγικά μπορεί να οδηγήσουν σε απρόβλεπτα αποτελέσματα."
+
+#: src/song-info-qt/song-info.cc:30
+msgid "Song Info"
+msgstr "Πληροφορίες τραγουδιού"
+
+#: src/soxr/sox-resampler.cc:44
+msgid "SoX Resampler"
+msgstr "Ανασχεδίαση SoX"
+
+#: src/soxr/sox-resampler.cc:172
+msgid ""
+"SoX Resampler Plugin for Audacious\n"
+"Copyright 2013 Michał Lipski\n"
+"\n"
+"Based on Sample Rate Converter Plugin:\n"
+"Copyright 2010-2012 John Lindgren"
+msgstr ""
+"Πρόσθετο Ανασχεδίαση SoΧ για το Audacious\n"
+"Πνευματικά δικαιώματα 2013 Michał Lipski\n"
+"\n"
+"Βασίζεται στο πρόσθετο Μετατροπή ρυθμού δειγματοληψίας\n"
+"Πνευματικά δικαιώματα 2010-2012 John Lindgren"
+
+#: src/soxr/sox-resampler.cc:178
+msgid "Quick"
+msgstr "Γρήγορη"
+
+#: src/soxr/sox-resampler.cc:179
+msgid "Low"
+msgstr "Χαμηλή"
+
+#: src/soxr/sox-resampler.cc:181
+msgid "High"
+msgstr "Υψηλή"
+
+#: src/soxr/sox-resampler.cc:182
+msgid "Very High"
+msgstr "Πολύ υψηλή"
+
+#: src/soxr/sox-resampler.cc:183
+msgid "Ultra High"
+msgstr "Υπέρ υψηλή"
+
+#: src/soxr/sox-resampler.cc:187
+msgid "Minimum"
+msgstr "Ελάχιστη"
+
+#: src/soxr/sox-resampler.cc:188
+msgid "Intermediate"
+msgstr "Ενδιάμεση"
+
+#: src/soxr/sox-resampler.cc:193
+msgid "Quality:"
+msgstr "Ποιότητα:"
+
+#: src/soxr/sox-resampler.cc:196
+msgid "Phase:"
+msgstr "Φάση:"
+
+#: src/soxr/sox-resampler.cc:200
+msgid "Allow aliasing"
+msgstr "Να επιτρέπεται η χρήση ψευδώνυμων "
+
+#: src/soxr/sox-resampler.cc:202
+msgid "Use steep filter"
+msgstr "Άμεση χρήση φίλτρου"
+
+#: src/speedpitch/speed-pitch.cc:54
+msgid "Speed and Pitch"
+msgstr "Ταχύτητα και Χροιά"
+
+#: src/speedpitch/speed-pitch.cc:247
+msgid "<b>Speed</b>"
+msgstr "<b>Ταχύτητα</b>"
+
+#: src/speedpitch/speed-pitch.cc:248
+msgid "Decouple from pitch"
+msgstr "Αποσύνδεση από τη χροιά"
+
+#: src/speedpitch/speed-pitch.cc:250 src/speedpitch/speed-pitch.cc:258
+msgid "Multiplier:"
+msgstr "Πολλαπλασιαστής:"
+
+#: src/speedpitch/speed-pitch.cc:254
+msgid "<b>Pitch</b>"
+msgstr "<b>Χροιά</b>"
+
+#: src/statusicon-qt/statusicon.cc:45 src/statusicon/statusicon.cc:47
+msgid "Status Icon"
+msgstr "Εικονίδιο κατάστασης"
+
+#: src/statusicon-qt/statusicon.cc:68
+msgid ""
+"Status Icon Plugin (partial port for Qt interface)\n"
+"\n"
+"Copyright 2005-2007 Giacomo Lozito <james@develia.org>\n"
+"Copyright 2010 Michał Lipski <tallica@o2.pl>\n"
+"Copyright 2015 Eugene Paskevich <eugene@raptor.kiev.ua>\n"
+"\n"
+"This plugin provides a status icon, placed in\n"
+"the system tray area of the window manager."
+msgstr ""
+"Πρόσθετο Εικονίδιο κατάστασης (τμήμα της διεπαφής Qt)\n"
+"\n"
+"Πνευματικά δικαιώματα 2005-2007 Giacomo Lozito <james@develia.org>\n"
+"Πνευματικά δικαιώματα2010 Michał Lipski <tallica@o2.pl>\n"
+"Πνευματικά δικαιώματα 2015 Eugene Paskevich <eugene@raptor.kiev.ua>\n"
+"\n"
+"Το πρόσθετο αυτό παρέχει ένα εικονίδιο κατάστασης σε\n"
+"περιοχή του συστήματος."
+
+#: src/statusicon-qt/statusicon.cc:95 src/statusicon/statusicon.cc:398
+msgid "<b>Mouse Scroll Action</b>"
+msgstr "<b>Ενέργεια του δρομέα κύλισης στο ποντίκι</b>"
+
+#: src/statusicon-qt/statusicon.cc:96 src/statusicon/statusicon.cc:399
+msgid "Change volume"
+msgstr "Αλλαγή έντασης"
+
+#: src/statusicon-qt/statusicon.cc:99 src/statusicon/statusicon.cc:402
+msgid "Change playing song"
+msgstr "Αλλαγή τραγουδιού που αναπαράγεται"
+
+#: src/statusicon-qt/statusicon.cc:102 src/statusicon/statusicon.cc:405
+msgid "<b>Middle Click Action</b>"
+msgstr "<b>Ενέργεια μεσαίου κλικ</b>"
+
+#: src/statusicon-qt/statusicon.cc:103 src/statusicon/statusicon.cc:406
+msgid "Pause/Resume playback"
+msgstr "Παύση/συνέχιση αναπαραγωγής"
+
+#: src/statusicon-qt/statusicon.cc:106 src/statusicon/statusicon.cc:409
+msgid "Play next song"
+msgstr "Αναπαραγωγή επόμενου τραγουδιού"
+
+#: src/statusicon-qt/statusicon.cc:109 src/statusicon/statusicon.cc:412
+msgid "<b>Other Settings</b>"
+msgstr "<b>Άλλες ρυθμίσεις</b>"
+
+#: src/statusicon-qt/statusicon.cc:110 src/statusicon/statusicon.cc:413
+msgid "Disable the popup window"
+msgstr "Απενεργοποίηση του αναδυόμενου παραθύρου"
+
+#: src/statusicon-qt/statusicon.cc:112 src/statusicon/statusicon.cc:415
+msgid "Close to the system tray"
+msgstr "Κλείσιμο στο εικονίδιο κατάστασης"
+
+#: src/statusicon-qt/statusicon.cc:114 src/statusicon/statusicon.cc:417
+msgid "Advance in playlist when scrolling upward"
+msgstr "Μετακίνηση στη λίστα αναπαραγωγής με κύλιση προς τα επάνω"
+
+#: src/statusicon-qt/statusicon.cc:129 src/statusicon/statusicon.cc:301
+msgid "Se_ttings ..."
+msgstr "Ρυ_θμίσεις ..."
+
+#: src/statusicon/statusicon.cc:391
+msgid ""
+"Status Icon Plugin\n"
+"\n"
+"Copyright 2005-2007 Giacomo Lozito <james@develia.org>\n"
+"Copyright 2010 Michał Lipski <tallica@o2.pl>\n"
+"\n"
+"This plugin provides a status icon, placed in\n"
+"the system tray area of the window manager."
+msgstr ""
+"Πρόσθετο Εικονίδιο κατάστασης \n"
+"\n"
+"Πνευματικά δικαιώματα 2005-2007 Giacomo Lozito <james@develia.org>\n"
+"Πνευματικά δικαιώματα 2010 Michał Lipski <tallica@o2.pl>\n"
+"\n"
+"Το πρόσθετο αυτό παρέχει ένα εικονίδιο κατάστασης σε\n"
+"περιοχή του συστήματος."
+
+#: src/stereo_plugin/stereo.cc:19
+msgid "Extra Stereo"
+msgstr "Επιπλέον στερεοφωνικό"
+
+#: src/stereo_plugin/stereo.cc:36
+msgid ""
+"Extra Stereo Plugin\n"
+"\n"
+"By Johan Levin, 1999"
+msgstr ""
+"Πρόσθετο Επιπλέον στερεοφωνικό\n"
+"\n"
+"Από τον Johan Levin, 1999"
+
+#: src/stereo_plugin/stereo.cc:44
+msgid "<b>Extra Stereo</b>"
+msgstr "<b>Επιπλέον στερεοφωνικό</b>"
+
+#: src/streamtuner/icecast-model.cc:126 src/streamtuner/shoutcast-model.cc:131
+msgid "Type"
+msgstr "Τύπος"
+
+#: src/streamtuner/icecast-model.cc:132
+msgid "Current Song"
+msgstr "Τρέχον τραγούδι"
+
+#: src/streamtuner/icecast-model.cc:164
+msgid "Other"
+msgstr "Άλλο"
+
+#: src/streamtuner/ihr-model.cc:63
+msgid "Market"
+msgstr "Αγορά"
+
+#: src/streamtuner/ihr-model.cc:156
+msgid "Call Letters"
+msgstr "Γράμματα κλήσης"
+
+#: src/streamtuner/ihr-model.cc:162
+msgid "Description"
+msgstr "Περιγραφή"
+
+#: src/streamtuner/shoutcast-model.cc:128
+msgid "Listeners"
+msgstr "Ακροατές"
+
+#: src/streamtuner/shoutcast-model.cc:188
+msgid "Top 500 Stations"
+msgstr "500 κορυφαίοι σταθμοί"
+
+#: src/streamtuner/shoutcast-model.cc:189
+msgid "Alternative"
+msgstr "Εναλλακτική"
+
+#: src/streamtuner/shoutcast-model.cc:190
+msgid "Blues"
+msgstr "Blues"
+
+#: src/streamtuner/shoutcast-model.cc:191
+msgid "Classical"
+msgstr "Κλασική Μουσική"
+
+#: src/streamtuner/shoutcast-model.cc:192
+msgid "Country"
+msgstr "Country"
+
+#: src/streamtuner/shoutcast-model.cc:193
+msgid "Decades"
+msgstr "Δεκαετίες"
+
+#: src/streamtuner/shoutcast-model.cc:194
+msgid "Easy Listening"
+msgstr "Easy Listening"
+
+#: src/streamtuner/shoutcast-model.cc:195
+msgid "Electronic"
+msgstr "Ηλεκτρονική"
+
+#: src/streamtuner/shoutcast-model.cc:196
+msgid "Folk"
+msgstr "Folk"
+
+#: src/streamtuner/shoutcast-model.cc:197
+msgid "Inspirational"
+msgstr "Inspirational"
+
+#: src/streamtuner/shoutcast-model.cc:198
+msgid "International"
+msgstr "Διεθνής"
+
+#: src/streamtuner/shoutcast-model.cc:199
+msgid "Jazz"
+msgstr "Jazz"
+
+#: src/streamtuner/shoutcast-model.cc:200
+msgid "Latin"
+msgstr "Λάτιν"
+
+#: src/streamtuner/shoutcast-model.cc:201
+msgid "Metal"
+msgstr "Metal"
+
+#: src/streamtuner/shoutcast-model.cc:203
+msgid "New Age"
+msgstr "New Age"
+
+#: src/streamtuner/shoutcast-model.cc:204
+msgid "Pop"
+msgstr "Pop"
+
+#: src/streamtuner/shoutcast-model.cc:205
+msgid "Public Radio"
+msgstr "Δημόσιο Ράδιο"
+
+#: src/streamtuner/shoutcast-model.cc:206
+msgid "R&B and Urban"
+msgstr "R&B και Urban"
+
+#: src/streamtuner/shoutcast-model.cc:207
+msgid "Rap"
+msgstr "Rap"
+
+#: src/streamtuner/shoutcast-model.cc:208
+msgid "Reggae"
+msgstr "Reggae"
+
+#: src/streamtuner/shoutcast-model.cc:209
+msgid "Rock"
+msgstr "Rock"
+
+#: src/streamtuner/shoutcast-model.cc:210
+msgid "Seasonal and Holiday"
+msgstr "Εποχής και Εορτών"
+
+#: src/streamtuner/shoutcast-model.cc:211
+msgid "Soundtracks"
+msgstr "Κομμάτια τραγουδιών "
+
+#: src/streamtuner/shoutcast-model.cc:212
+msgid "Talk"
+msgstr "Μίλησε"
+
+#: src/streamtuner/shoutcast-model.cc:213
+msgid "Themes"
+msgstr "Θέματα"
+
+#: src/streamtuner/streamtuner.cc:59
+msgid "Shoutcast"
+msgstr "Shoutcast"
+
+#: src/streamtuner/streamtuner.cc:60
+msgid "Icecast"
+msgstr "Icecast"
+
+#: src/streamtuner/streamtuner.cc:71
+msgid "Stream Tuner"
+msgstr "Ρυθμιστής αναμετάδοσης "
+
+#: src/tonegen/tonegen.cc:45
+msgid "Tone Generator"
+msgstr "Γεννήτρια τόνων"
+
+#: src/tonegen/tonegen.cc:92
+#, c-format
+msgid "%s %.1f Hz"
+msgstr "%s %.1f Hz"
+
+#: src/tonegen/tonegen.cc:92
+msgid "Tone Generator: "
+msgstr "Γεννήτρια τόνων: "
+
+#: src/tonegen/tonegen.cc:161
+msgid ""
+"Sine tone generator by Håvard Kvålen <havardk@xmms.org>\n"
+"Modified by Daniel J. Peng <danielpeng@bigfoot.com>\n"
+"\n"
+"To use it, add a URL: tone://frequency1;frequency2;frequency3;...\n"
+"e.g. tone://2000;2005 to play a 2000 Hz tone and a 2005 Hz tone"
+msgstr ""
+"Γεννήτρια τόνων Sine από τον Håvard Kvålen <havardk@xmms.org>\n"
+"Τροποποιήθηκε από τον Daniel J. Peng <danielpeng@bigfoot.com>\n"
+"\n"
+"Για να την χρησιμοποιήσετε, προσθέστε ένα URL: tone://"
+"frequency1;frequency2;frequency3;..\n"
+"π.χ. τόνος://2000;2005 για να παίξει ένα τόνο 2000 Hz και ένα τόνο 2005 Hz"
+
+#: src/ui-common/dialogs-qt.cc:40
+msgid ""
+"\n"
+"(Further messages have been hidden.)"
+msgstr ""
+"\n"
+"(Έχουν κρυφτεί περισσότερα μηνύματα.)"
+
+#: src/ui-common/dialogs-qt.cc:52
+msgid "Working ..."
+msgstr "Εργασία ..."
+
+#: src/ui-common/dialogs-qt.cc:73
+msgid "Information"
+msgstr "Πληροφόρηση"
+
+#: src/ui-common/menu-ops-gtk.cc:132 src/ui-common/menu-ops-qt.cc:113
+#, c-format
+msgid "%s does not appear to be a valid folder."
+msgstr "Ο φάκελος %s δεν φαίνεται να είναι σωστός."
+
+#: src/voice_removal/voice_removal.cc:28
+msgid "Voice Removal"
+msgstr "Αφαίρεση φωνής"
+
+#: src/vorbis/vorbis.cc:433
+msgid ""
+"Audacious Ogg Vorbis Decoder\n"
+"\n"
+"Based on the Xiph.org Foundation's Ogg Vorbis Plugin:\n"
+"http://www.xiph.org/\n"
+"\n"
+"Original code by:\n"
+"Tony Arcieri <bascule@inferno.tusculum.edu>\n"
+"\n"
+"Contributions from:\n"
+"Chris Montgomery <monty@xiph.org>\n"
+"Peter Alm <peter@xmms.org>\n"
+"Michael Smith <msmith@labyrinth.edu.au>\n"
+"Jack Moffitt <jack@icecast.org>\n"
+"Jorn Baayen <jorn@nl.linux.org>\n"
+"Håvard Kvålen <havardk@xmms.org>\n"
+"Gian-Carlo Pascutto <gcp@sjeng.org>\n"
+"Eugene Zagidullin <e.asphyx@gmail.com>"
+msgstr ""
+"Αποκωδικοποιητής Ogg Vorbis για το Audacious\n"
+"\n"
+"Βασισμένος στο πρόσθετο Ogg Vorbis του Ιδρύματος http://www.xiph.org/\n"
+"\n"
+"Πρωτότυπος κώδικας από τον:\n"
+"Tony Arcieri <bascule@inferno.tusculum.edu>\n"
+"\n"
+"Συνεισφορές από τους:\n"
+"Chris Montgomery <monty@xiph.org>\n"
+"Peter Alm <peter@xmms.org>\n"
+"Michael Smith <msmith@labyrinth.edu.au>\n"
+"Jack Moffitt <jack@icecast.org>\n"
+"Jorn Baayen <jorn@nl.linux.org>\n"
+"Håvard Kvålen <havardk@xmms.org>\n"
+"Gian-Carlo Pascutto <gcp@sjeng.org>\n"
+"Eugene Zagidullin <e.asphyx@gmail.com>"
+
+#: src/vorbis/vorbis.h:18
+msgid "Ogg Vorbis Decoder"
+msgstr "Αποκωδικοποιητής Ogg Vorbis"
+
+#: src/vtx/info.cc:24
+#, c-format
+msgid "Details about %s"
+msgstr "Λεπτομέρειες για %s"
+
+#: src/vtx/info.cc:26
+msgid ""
+"Title: %t\n"
+"Author: %a\n"
+"From: %f\n"
+"Tracker: %T\n"
+"Comment: %C\n"
+"Chip type: %c\n"
+"Stereo: %s\n"
+"Loop: %l\n"
+"Chip freq: %F\n"
+"Player Freq: %P\n"
+"Year: %y"
+msgstr ""
+"Τίτλος: % t\n"
+"Δημιουργός: %a\n"
+"Από: %f\n"
+"Tracker: %Τ\n"
+"Σχόλιο: %C\n"
+"Τύπος chip: %c\n"
+"Στερεοφωνικό: %s\n"
+"Κύκλος: %l\n"
+"Συχν. Chip: %F\n"
+"Συχν. αναπαραγωγής: %P\n"
+"Έτος: %y"
+
+#: src/vtx/vtx.cc:38
+msgid "VTX Decoder"
+msgstr "Αποκωδικοποιητής VTX"
+
+#: src/vtx/vtx.cc:178
+msgid ""
+"Vortex file format player by Sashnov Alexander <sashnov@ngs.ru>\n"
+"Based on in_vtx.dll by Roman Sherbakov <v_soft@microfor.ru>\n"
+"Audacious plugin by Pavel Vymetalek <pvymetalek@seznam.cz>"
+msgstr ""
+"Αναπαραγωγή αρχείων τύπου VTX του Sashnov Alexander <sashnov@ngs.ru>\n"
+"Βασισμένο στο in_vtx.dll του Roman Sherbakov <v_soft@microfor.ru>\n"
+"Πρόσθετο για το Audacious από τον Pavel Vymetalek <pvymetalek@seznam.cz>"
+
+#: src/vumeter-qt/vumeter_qt.cc:31 src/vumeter/vumeter.cc:69
+msgid ""
+"VU Meter Plugin for Audacious\n"
+"Copyright 2017-2019 Marc Sánchez Fauste"
+msgstr ""
+"Πρόσθετο Μετρητή VU για το Audacious\n"
+"Πνευματικά δικαιώματα 2017-2019 Marc Sánchez Fauste"
+
+#: src/vumeter-qt/vumeter_qt.cc:35 src/vumeter/vumeter.cc:73
+msgid "<b>VU Meter Settings</b>"
+msgstr "<b>Μετρητής VU Ρυθμίσεις</b>"
+
+#: src/vumeter-qt/vumeter_qt.cc:37 src/vumeter/vumeter.cc:75
+msgid "Peak hold time:"
+msgstr "Χρόνος κορυφής:"
+
+#: src/vumeter-qt/vumeter_qt.cc:42 src/vumeter/vumeter.cc:80
+msgid "Fall-off time:"
+msgstr "Χρόνος πτώσης:"
+
+#: src/vumeter-qt/vumeter_qt.cc:44 src/vumeter/vumeter.cc:82
+msgid "dB/second"
+msgstr "dB/δευτερόλεπτο"
+
+#: src/vumeter-qt/vumeter_qt.cc:46 src/vumeter/vumeter.cc:85
+msgid "Display legend"
+msgstr "Εμφάνιση μετρητή"
+
+#: src/vumeter-qt/vumeter_qt.h:37 src/vumeter/vumeter.cc:47
+msgid "VU Meter"
+msgstr "Μετρητής VU"
+
+#: src/waveout/waveout.cc:43
+msgid "Win32 waveOut"
+msgstr "Win32 waveOut"
+
+#: src/waveout/waveout.cc:69
+msgid ""
+"Win32 waveOut Plugin for Audacious\n"
+"Copyright 2016 John Lindgren"
+msgstr ""
+"Πρόσθετο Win32 waveOut για το Audacious\n"
+"Πνευματικά δικαιώματα 2016 John Lindgren"
+
+#: src/wavpack/wavpack.cc:25
+msgid "WavPack Decoder"
+msgstr "Αποκωδικοποιητής WavPack"
+
+#: src/wavpack/wavpack.cc:207
+msgid "lossy (hybrid)"
+msgstr "με απώλεια (υβριδικός)"
+
+#: src/wavpack/wavpack.cc:209
+msgid "lossy"
+msgstr "με απώλεια"
+
+#: src/wavpack/wavpack.cc:247
+msgid ""
+"Copyright 2006 William Pitcock <nenolod@nenolod.net>\n"
+"\n"
+"Some of the plugin code was by Miles Egan."
+msgstr ""
+"Πνευματικά δικαιώματα 2006 William Pitcock <nenolod@nenolod.net>\n"
+"\n"
+"Μερικός κώδικας από τον Miles Egan."
+
+#: src/xsf/plugin.cc:74
+msgid "2SF Decoder"
+msgstr "Αποκωδικοποιητής 2SF"
+
+#: src/xsf/plugin.cc:429
+msgid "32728 Hz"
+msgstr "32728 Hz"
+
+#: src/xsf/plugin.cc:432
+msgid "65456 Hz"
+msgstr "65456 Hz"
+
+#: src/xsf/plugin.cc:438
+msgid "Cosine"
+msgstr "Συνημιτόνιο"
+
+#: src/xsf/plugin.cc:439
+msgid "Sharp"
+msgstr "Έντονο"
+
+#: src/xsf/plugin.cc:443
+msgid "<b>XSF Configuration</b>"
+msgstr "<b>Ρύθμιση XSF</b>"
+
+#: src/xsf/plugin.cc:445
+msgid "Default fade time:"
+msgstr "Προεπιλεγμένος χρόνος:"
+
+#: src/xsf/plugin.cc:447
+msgid "Interpolation mode:"
+msgstr "Λειτουργία παρεμβολής:"
+
+#: src/xspf/xspf.cc:95
+msgid "XML Shareable Playlists (XSPF)"
+msgstr "Διαμοιραζόμενες λίστες αναπαραγωγής ΧΜL (XSPF)"

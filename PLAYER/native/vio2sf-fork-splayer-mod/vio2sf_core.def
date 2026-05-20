@@ -1,0 +1,3 @@
+LIBRARY vio2sf
+EXPORTS
+	XSFSetup
