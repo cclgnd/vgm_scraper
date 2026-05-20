@@ -800,6 +800,7 @@ class PlayerShell(BackgroundWindow):
         self.browser_tree.setHeaderHidden(True)
         self.browser_tree.setIndentation(20)
         self.browser_tree.itemSelectionChanged.connect(self._on_browser_selection_changed)
+        self.browser_tree.itemClicked.connect(self._on_browser_item_clicked)
         self.browser_tree.itemDoubleClicked.connect(self._on_browser_item_opened)
         self._populate_browser_placeholder("Backend not loaded")
         browser_layout.addWidget(self.browser_tree, 1)
@@ -924,7 +925,7 @@ class PlayerShell(BackgroundWindow):
         self.job_status_label.setAlignment(Qt.AlignCenter)
         self.job_status_label.setFont(self._pixel_font(6))
         self.job_status_label.setStyleSheet(f"color: {Palette.muted.name()};")
-        self.job_status_label.setMinimumWidth(220)
+        self.job_status_label.setMinimumWidth(180)
         player_layout.addWidget(self.job_status_label)
         layout.addWidget(player)
         return col
@@ -965,20 +966,29 @@ class PlayerShell(BackgroundWindow):
             maker_item.setForeground(0, Palette.magenta)
             maker_item.setData(0, Qt.UserRole, {"type": "maker"})
             self.browser_tree.addTopLevelItem(maker_item)
-            maker_item.setExpanded(True)
 
             for console in sorted(makers[maker], key=lambda row: row.get("display_name") or ""):
                 console_item = QTreeWidgetItem([console.get("display_name") or "Unknown Console"])
                 console_item.setForeground(0, Palette.cyan)
                 console_item.setData(0, Qt.UserRole, {"type": "console", "data": console})
                 maker_item.addChild(console_item)
-                console_item.setExpanded(True)
 
                 for game in sorted(console.get("games", []), key=lambda row: row.get("title") or ""):
                     game_item = QTreeWidgetItem([game.get("title") or "Unknown Game"])
                     game_item.setForeground(0, Palette.yellow)
                     game_item.setData(0, Qt.UserRole, {"type": "game", "data": game})
                     console_item.addChild(game_item)
+
+    def _on_browser_item_clicked(self, item: QTreeWidgetItem):
+        payload = item.data(0, Qt.UserRole) if item else {}
+        payload_type = payload.get("type") if isinstance(payload, dict) else ""
+        if payload_type in {"maker", "console"}:
+            item.setExpanded(not item.isExpanded())
+        elif payload_type == "game":
+            if item.childCount():
+                item.setExpanded(not item.isExpanded())
+            else:
+                self._open_game_item(item, retry_failed=False)
 
     def _on_browser_selection_changed(self):
         item = self.browser_tree.currentItem()
@@ -996,8 +1006,8 @@ class PlayerShell(BackgroundWindow):
 
     def _on_browser_item_opened(self, item: QTreeWidgetItem):
         payload = item.data(0, Qt.UserRole) if item else {}
-        if isinstance(payload, dict) and payload.get("type") == "game":
-            self._open_game_item(item, retry_failed=False)
+        if isinstance(payload, dict) and payload.get("type") == "track":
+            self._execute_file(payload["data"])
 
     def _open_selected_game(self):
         item = self._selected_game_item()
@@ -1079,6 +1089,17 @@ class PlayerShell(BackgroundWindow):
         self.file_status_label.setText((file_row.get("availability_status") or "").replace("_", " ").upper())
         self.file_status_label.setStyleSheet(self._badge_style(self._status_color(file_row.get("availability_status"))))
 
+    def _execute_file(self, file_row: dict):
+        self._show_file_info(file_row)
+        title = file_row.get("title") or "Unknown file"
+        for index in range(self.queue_list.count()):
+            if title in self.queue_list.item(index).text():
+                self.queue_list.setCurrentRow(index)
+                break
+        self.provenance_label.setText("Queued for playback. Audio engine wiring comes next.")
+        self.file_status_label.setText("QUEUED")
+        self.file_status_label.setStyleSheet(self._badge_style(Palette.green))
+
     def _file_row_text(self, file_row: dict) -> str:
         number = file_row.get("track_number")
         prefix = f"{number:02d} " if isinstance(number, int) else ""
@@ -1148,13 +1169,9 @@ class PlayerShell(BackgroundWindow):
         retrieval_active = stats.get("retrieval_jobs_pending", 0) + stats.get("retrieval_jobs_downloading", 0)
         retrieval_done = stats.get("retrieval_jobs_completed", 0)
         retrieval_failed = stats.get("retrieval_jobs_failed", 0)
-        resources = stats.get("resource_nodes", 0)
-        games = stats.get("games", 0)
-
         self.job_status_label.setText(
             f"JOBS C{crawl_active}/{crawl_done}/{crawl_failed} "
-            f"R{retrieval_active}/{retrieval_done}/{retrieval_failed} "
-            f"G{games} RES{resources}"
+            f"R{retrieval_active}/{retrieval_done}/{retrieval_failed}"
         )
         color = Palette.red if crawl_failed or retrieval_failed else Palette.green
         self.job_status_label.setStyleSheet(f"color: {color.name()};")
