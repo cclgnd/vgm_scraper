@@ -20,24 +20,26 @@ tracks.
 
 ## Screen Layout
 
-Use a stable four-zone layout.
+Use a stable two-column layout. Each column occupies 50% of the window width and
+resizes evenly when the user drags the lateral window edges.
 
 ```text
-+--------------------------------------------------------------------+
-| Header: app title | search | source/status | settings              |
-+----------------------+---------------------------------------------+
-| Catalog browser      | Track table                                  |
-| Maker separators     | # | Title | Status | Duration | Format       |
-| Console folders      |                                             |
-| Game rows            |                                             |
-|                      |                                             |
-| Selected-game action |                                             |
-+----------------------+--------------------------+------------------+
-| Queue / current game strip                       | Inspector       |
-| compact, collapsible                             | jobs, details   |
-+--------------------------------------------------------------------+
-| Playback bar: previous | play/pause | next | timeline | volume     |
-+--------------------------------------------------------------------+
++------------------------------------------------------------------------+
+| Header: app title | search | source/status | settings                  |
++------------------------------------+-----------------------------------+
+| Left column                         | Right column                      |
+|                                    | General game info                 |
+| File browser                        | from Libretro/resources           |
+| Maker separators                    |                                   |
+| Console folders                     | Image/artwork window              |
+| Game rows                           |                                   |
+| Track/file rows                     | File info                         |
+|                                    | selected file/status/provenance   |
+| Game/file action row                |                                   |
+|                                    | Playback row                      |
+| Playlist queue                      | prev | play | stop | next | etc.  |
+|                                    | timeline | volume                 |
++------------------------------------+-----------------------------------+
 ```
 
 ### Header
@@ -51,6 +53,21 @@ The header is for global actions only:
 
 Do not put play, download, or per-game actions here.
 
+### Left Column: Browser And Queue
+
+The left column is the work list. It contains the file browser and playlist
+queue stacked vertically. Both sections stretch with window height. The file
+browser gets priority and should be as tall as possible so many folders/games
+are visible at once.
+
+Recommended vertical split:
+
+- File browser: about 65-75% of left-column height.
+- Action row: compact fixed height.
+- Playlist queue: about 25-35% of left-column height.
+
+The split can be user-resizable later, but the default must favor the browser.
+
 ### Catalog Browser
 
 The browser follows the agreed catalog shape:
@@ -60,7 +77,8 @@ The browser follows the agreed catalog shape:
 - Game rows live under consoles.
 - Collections are not part of this view for now.
 
-Selecting a game reveals a single contextual action:
+Selecting a game reveals contextual actions in the separator row between browser
+and queue:
 
 - `Play Selected Game` if verified/local playable files exist.
 - `Open Game` if availability has not been verified yet.
@@ -68,10 +86,11 @@ Selecting a game reveals a single contextual action:
 
 This button belongs near the selected game, not in the playback bar.
 
-### Track Table
+### Track/File Rows
 
-The track table is the source of the playable playlist. If a row is hidden by
-the current filter, it is not part of play-selected-game.
+The browser may use a tree or table, but the file rows inside an opened game are
+the source of the playable playlist. If a row is hidden by the current filter,
+it is not part of play-selected-game.
 
 Columns:
 
@@ -94,22 +113,63 @@ SFX filtering:
   so the table does not jump around.
 - No per-track category flag is needed in the catalog.
 
-### Inspector
+### Right Column: Game Info, Art, File Info, Player
 
-The inspector is for additional info and job state:
+The right column is the listening surface. From top to bottom:
 
-- Selected console/game/track metadata.
+1. General game info scraped from Libretro/resources and compatible game image
+   databases.
+2. Image/artwork window.
+3. Selected file info.
+4. Player controls.
+
+This creates a clear reading order: what game this is, what it looks like, what
+file is selected, then how to play it.
+
+### General Game Info
+
+This area is for the selected game, not the selected file:
+
+- Game title.
+- Console.
+- Maker shown through the console relationship, if useful.
+- Year, developer/publisher, genre, region, or description when available.
+- Source attribution for scraped metadata.
+
+Metadata is helpful here, but not required in the browser tree.
+
+### Image Window
+
+The image window should preserve the old UI's best quality: a strong arcade
+visual identity. It can show:
+
+- Box art.
+- Screenshot.
+- Title screen.
+- Fallback neon/pixel artwork from the saved assets.
+
+Image controls, if needed, should be minimal. Avoid scattering `next visual`
+style buttons around the player controls.
+
+### File Info
+
+The file info area sits directly above the player buttons. It is for the
+selected or currently playing file:
+
+- Track title.
+- Status: Online, Obtaining file, Local, Failed.
+- Duration when known.
+- Format.
 - Provenance summary for the selected item.
 - Verification/retrieval job history.
 - Error details for failed files.
 - Manual retry for selected file.
 
-Metadata is helpful here, but not required in the browser tree.
-
 ### Queue Strip
 
-The queue is a separate view of what will play. It should not mutate when the
-track table updates live during verification.
+The queue lives under the browser in the left column. It is a separate view of
+what will play. It should not mutate when the browser updates live during
+verification.
 
 Rules:
 
@@ -119,11 +179,12 @@ Rules:
 
 ### Playback Bar
 
-Playback controls are always bottom-aligned and never mixed with scraping or
-catalog actions:
+Playback controls live in one horizontal row at the bottom of the right column
+and never mix with scraping or catalog actions:
 
 - Previous.
 - Play/pause.
+- Stop.
 - Next.
 - Seek timeline.
 - Time display.
@@ -148,8 +209,9 @@ Avoid `candidate` in user-facing UI.
 
 - Global actions go in the header.
 - Game actions go beside or below the selected game area.
-- File actions go inside the track row context menu or inspector.
-- Playback actions go only in the playback bar.
+- Game/file availability actions go in the compact row between browser and queue.
+- File details and file retry live in the file info area.
+- Playback actions go only in the single player row.
 - Debug actions go in the inspector or a hidden developer panel.
 
 This is the main fix for the old button mess.
@@ -183,4 +245,3 @@ The clean UI should depend on narrow interfaces:
 
 The UI must not import acquisition internals, database managers, or scraper
 classes directly.
-
