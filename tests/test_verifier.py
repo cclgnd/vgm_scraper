@@ -55,6 +55,30 @@ class GameVerifierTests(unittest.TestCase):
             self.assertEqual(1, result["hidden_short_file_count"])
             self.assertEqual(["Visible Unknown", "Visible Music"], [row["title"] for row in result["files"]])
 
+    def test_open_game_retries_failed_resource_on_manual_demand(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            db = DatabaseManager(os.path.join(tmp, "test.db"))
+            source_id = db.add_source("test", "https://example.test", "web")
+            console_id = db.add_console("genesis", "Sega Genesis", "Sega")
+            game_id = db.add_game(console_id, "Sonic")
+            resource_id = db.add_resource_node(
+                source_id=source_id,
+                node_type="pack",
+                title="Sonic",
+                url="https://example.test/sonic",
+                download_url="https://example.test/Sonic.zip",
+                format=".zip",
+            )
+            db.link_resource_to_game(resource_id, game_id, is_primary=1, confidence=1.0)
+            db.add_audition_event(resource_id=resource_id, game_id=game_id, event_type="resource_verification_failed", status="failed")
+
+            verifier = GameVerifier(db, tmp)
+            verifier.zip_probe = FakeZipProbe()
+            result = verifier.open_game(game_id)
+
+            self.assertEqual("obtaining_file", result["status"])
+            self.assertEqual(2, len(result["files"]))
+
 
 if __name__ == "__main__":
     unittest.main()

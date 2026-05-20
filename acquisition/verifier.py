@@ -26,6 +26,8 @@ class GameVerifier:
             return {"status": "already_listed", **existing}
 
         resources = self.db.get_game_resources(game_id, include_failed=retry_failed)
+        if not resources and not retry_failed:
+            resources = self.db.get_game_resources(game_id, include_failed=True)
         if not resources:
             return {"status": "no_online_resource", **existing}
 

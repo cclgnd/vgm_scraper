@@ -1,6 +1,7 @@
 """Remote ZIP member listing with HTTP range support."""
 
 import os
+import re
 import struct
 from dataclasses import dataclass
 
@@ -39,15 +40,33 @@ class RemoteZipProbe:
         head = requests.head(url, headers=headers, allow_redirects=True, timeout=self.timeout)
         length = int(head.headers.get("Content-Length", "0") or 0)
         if length <= 0:
+            data, length = self._fetch_length_or_body_from_range(url, headers)
+            if data:
+                return data, length
+        if length <= 0:
             return b"", 0
 
         start = max(0, length - self.TAIL_BYTES)
         range_headers = dict(headers)
         range_headers["Range"] = f"bytes={start}-{length - 1}"
         response = requests.get(url, headers=range_headers, timeout=self.timeout)
+        if response.status_code == 200 and response.content:
+            return response.content, len(response.content)
         if response.status_code != 206:
             return b"", length
         return response.content, length
+
+    def _fetch_length_or_body_from_range(self, url: str, headers: dict[str, str]) -> tuple[bytes, int]:
+        range_headers = dict(headers)
+        range_headers["Range"] = "bytes=0-0"
+        response = requests.get(url, headers=range_headers, timeout=self.timeout)
+        if response.status_code == 200 and response.content:
+            return response.content, len(response.content)
+        content_range = response.headers.get("Content-Range", "")
+        match = re.search(r"/(\d+)$", content_range)
+        if match:
+            return b"", int(match.group(1))
+        return b"", int(response.headers.get("Content-Length", "0") or 0)
 
     def _parse_tail(self, data: bytes, content_length: int) -> list[ZipMember]:
         eocd_index = data.rfind(self.EOCD_SIGNATURE)
