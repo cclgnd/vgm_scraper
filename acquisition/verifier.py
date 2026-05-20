@@ -3,6 +3,7 @@
 import os
 import re
 import threading
+from urllib.parse import unquote
 
 from vgm_scraper.acquisition.downloader import Downloader
 from vgm_scraper.acquisition.duration import DurationProbe
@@ -104,7 +105,7 @@ class GameVerifier:
             source_url=resource.get("url") or resource.get("download_url") or "",
         )
         track_id = self.db.get_or_create_track(
-            title=self._display_title(resource.get("download_url") or resource.get("title") or "Track"),
+            title=self._display_title(resource.get("title") or resource.get("download_url") or "Track"),
             collection_id=collection_id,
             game_id=game_id,
             track_number=1,
@@ -129,7 +130,7 @@ class GameVerifier:
 
     @staticmethod
     def _display_title(path_or_url: str) -> str:
-        name = path_or_url.replace("\\", "/").rstrip("/").split("/")[-1]
+        name = unquote(path_or_url).replace("\\", "/").rstrip("/").split("/")[-1]
         stem = os.path.splitext(name)[0]
         stem = re.sub(r"^\d+[\s\-_.]+", "", stem)
         return stem or name or "Unknown Track"

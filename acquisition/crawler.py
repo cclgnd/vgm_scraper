@@ -85,8 +85,9 @@ class WebCrawler:
             details=f"Found via {source.name} at {resource.url}"
         )
 
-        # If this is a pack/album, create catalog entries (console + game only)
-        if resource.node_type in ("pack", "album", "collection"):
+        # Catalog needs an openable game row for both archive packs and direct
+        # per-track resources. Track rows are still created lazily on game open.
+        if resource.node_type in ("pack", "album", "collection", "track"):
             self._create_game_entry(source, resource, resource_id)
 
     def _create_game_entry(self, source: BaseSource, resource: DiscoveredResource, resource_id: int):

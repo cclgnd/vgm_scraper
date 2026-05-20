@@ -182,7 +182,8 @@ class GenericWebScraper:
 
     @staticmethod
     def _title_from_link(link: PageLink, path: str) -> str:
-        if link.text and len(link.text) > 2 and not re.fullmatch(r"download|get|zip|file", link.text, re.I):
+        generic_label = r"download|get|zip|file|track|song|music|vgm|vgz|here|link"
+        if link.text and len(link.text) > 2 and not re.fullmatch(generic_label, link.text, re.I):
             return link.text[:200]
 
         filename = unquote(os.path.basename(path)).strip()

@@ -64,6 +64,7 @@ class GenericWebScraperTests(unittest.TestCase):
         resources = scraper.discover(max_depth=0)
 
         self.assertEqual(["https://example.test/pack.spc"], [resource.download_url for resource in resources])
+        self.assertEqual(["pack"], [resource.title for resource in resources])
 
 
 if __name__ == "__main__":
