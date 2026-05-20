@@ -357,6 +357,7 @@ class PlayerShell(BackgroundWindow):
         self._build()
         self._start_meter_demo()
         QTimer.singleShot(0, self._load_catalog_tree)
+        self._start_backend_stats_poll()
 
     def _font(self, size: int, bold=False) -> QFont:
         f = QFont(self.ui_font, size)
@@ -919,6 +920,12 @@ class PlayerShell(BackgroundWindow):
         player_layout.addWidget(IconButton("next", "Next", Palette.cyan))
         self.meter = LufsMeter(self.pixel_font)
         player_layout.addWidget(self.meter, 1)
+        self.job_status_label = QLabel("JOBS --")
+        self.job_status_label.setAlignment(Qt.AlignCenter)
+        self.job_status_label.setFont(self._pixel_font(6))
+        self.job_status_label.setStyleSheet(f"color: {Palette.muted.name()};")
+        self.job_status_label.setMinimumWidth(220)
+        player_layout.addWidget(self.job_status_label)
         layout.addWidget(player)
         return col
 
@@ -1120,6 +1127,37 @@ class PlayerShell(BackgroundWindow):
         self._meter_timer = QTimer(self)
         self._meter_timer.timeout.connect(self._tick_meter)
         self._meter_timer.start(70)
+
+    def _start_backend_stats_poll(self):
+        self._stats_timer = QTimer(self)
+        self._stats_timer.timeout.connect(self._refresh_backend_stats)
+        self._stats_timer.start(4000)
+        QTimer.singleShot(250, self._refresh_backend_stats)
+
+    def _refresh_backend_stats(self):
+        try:
+            stats = self.api.stats()
+        except PlayerApiError:
+            self.job_status_label.setText("JOBS OFFLINE")
+            self.job_status_label.setStyleSheet(f"color: {Palette.red.name()};")
+            return
+
+        crawl_active = stats.get("crawl_jobs_running", 0)
+        crawl_done = stats.get("crawl_jobs_completed", 0)
+        crawl_failed = stats.get("crawl_jobs_failed", 0)
+        retrieval_active = stats.get("retrieval_jobs_pending", 0) + stats.get("retrieval_jobs_downloading", 0)
+        retrieval_done = stats.get("retrieval_jobs_completed", 0)
+        retrieval_failed = stats.get("retrieval_jobs_failed", 0)
+        resources = stats.get("resource_nodes", 0)
+        games = stats.get("games", 0)
+
+        self.job_status_label.setText(
+            f"JOBS C{crawl_active}/{crawl_done}/{crawl_failed} "
+            f"R{retrieval_active}/{retrieval_done}/{retrieval_failed} "
+            f"G{games} RES{resources}"
+        )
+        color = Palette.red if crawl_failed or retrieval_failed else Palette.green
+        self.job_status_label.setStyleSheet(f"color: {color.name()};")
 
     def _tick_meter(self):
         self._meter_phase += 0.17

@@ -30,6 +30,9 @@ class PlayerApiClient:
     def retry_game(self, game_id: int) -> dict:
         return self._post(f"/api/games/{game_id}/retry")
 
+    def stats(self) -> dict:
+        return self._get("/api/stats")
+
     def _get(self, path: str) -> dict:
         return self._request("GET", path)
 
