@@ -23,3 +23,27 @@ gui_settings.json
 .ruff_cache/
 .idea/
 .vscode/
+desktop.ini
+
+# Imported UI reference junk
+UI/**/__pycache__/
+UI/**/*.pyc
+UI/**/*.log
+UI/**/*.db
+UI/**/*.db-shm
+UI/**/*.db-wal
+UI/**/backups/
+UI/**/archive/
+UI/**/scratch/
+UI/**/*.zip
+UI/**/*.ps1
+UI/**/*.ps
+UI/**/*.BAT
+UI/**/*.pyw
+UI/**/*.spc
+UI/**/*.vgm
+UI/**/*.wav
+UI/**/audio/
+UI/**/docs/audio_engine_vision.md
+UI/**/services/audio_engine.py
+UI/**/vendor/bin/
