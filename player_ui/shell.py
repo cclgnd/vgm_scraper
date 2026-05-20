@@ -343,9 +343,10 @@ class PlayerShell(BackgroundWindow):
         self.ui_font, self.pixel_font = load_fonts()
         self.logo_font = choose_logo_font()
         self._drag_pos = None
+        self._was_dragging = False
         self.setWindowTitle("Chiptune Palace")
         self.resize(1240, 850)
-        self.setMinimumSize(980, 680)
+        self.setMinimumSize(720, 520)
         if (ASSETS / "icon.png").exists():
             self.setWindowIcon(QIcon(str(ASSETS / "icon.png")))
         self._build()
@@ -738,6 +739,7 @@ class PlayerShell(BackgroundWindow):
     def mousePressEvent(self, event):
         if event.button() == Qt.LeftButton and event.position().y() <= 78:
             self._drag_pos = event.globalPosition().toPoint() - self.frameGeometry().topLeft()
+            self._was_dragging = False
             event.accept()
             return
         super().mousePressEvent(event)
@@ -745,13 +747,29 @@ class PlayerShell(BackgroundWindow):
     def mouseMoveEvent(self, event):
         if self._drag_pos is not None and event.buttons() & Qt.LeftButton and not self.isMaximized():
             self.move(event.globalPosition().toPoint() - self._drag_pos)
+            self._was_dragging = True
             event.accept()
             return
         super().mouseMoveEvent(event)
 
     def mouseReleaseEvent(self, event):
+        if self._drag_pos is not None and self._was_dragging and not self.isMaximized():
+            self._snap_to_half_screen(event.globalPosition().toPoint())
         self._drag_pos = None
+        self._was_dragging = False
         super().mouseReleaseEvent(event)
+
+    def _snap_to_half_screen(self, global_pos):
+        screen = QApplication.screenAt(global_pos) or self.screen()
+        if screen is None:
+            return
+        area = screen.availableGeometry()
+        threshold = 24
+        half_width = max(self.minimumWidth(), area.width() // 2)
+        if global_pos.x() <= area.left() + threshold:
+            self.setGeometry(area.left(), area.top(), half_width, area.height())
+        elif global_pos.x() >= area.right() - threshold:
+            self.setGeometry(area.right() - half_width + 1, area.top(), half_width, area.height())
 
     def _build_left_column(self) -> QWidget:
         col = QWidget()
