@@ -1,0 +1,25 @@
+# Python caches
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Runtime data
+*.db
+*.db-shm
+*.db-wal
+logs/
+vgm_downloads/
+gui_output.txt
+gui_settings.json
+
+# Local tooling/editor state
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.idea/
+.vscode/
