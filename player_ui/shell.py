@@ -394,6 +394,7 @@ class PlayerShell(BackgroundWindow):
         content_layout.addWidget(divider)
         content_layout.addWidget(right, 1)
         outer.addWidget(content, 1)
+        outer.addWidget(self._build_job_status_bar())
 
         self.setStyleSheet(f"""
             QWidget {{
@@ -921,14 +922,20 @@ class PlayerShell(BackgroundWindow):
         player_layout.addWidget(IconButton("next", "Next", Palette.cyan))
         self.meter = LufsMeter(self.pixel_font)
         player_layout.addWidget(self.meter, 1)
-        self.job_status_label = QLabel("JOBS --")
-        self.job_status_label.setAlignment(Qt.AlignCenter)
-        self.job_status_label.setFont(self._pixel_font(6))
-        self.job_status_label.setStyleSheet(f"color: {Palette.muted.name()};")
-        self.job_status_label.setMinimumWidth(180)
-        player_layout.addWidget(self.job_status_label)
         layout.addWidget(player)
         return col
+
+    def _build_job_status_bar(self) -> QWidget:
+        bar = QWidget()
+        bar.setFixedHeight(28)
+        layout = QHBoxLayout(bar)
+        layout.setContentsMargins(18, 2, 18, 0)
+        self.job_status_label = QLabel("SCRAPER JOBS --")
+        self.job_status_label.setAlignment(Qt.AlignLeft | Qt.AlignVCenter)
+        self.job_status_label.setFont(self._pixel_font(6))
+        self.job_status_label.setStyleSheet("color: #ffffff;")
+        layout.addWidget(self.job_status_label, 1)
+        return bar
 
     def _populate_browser_placeholder(self, text: str):
         self.browser_tree.clear()
@@ -1159,8 +1166,8 @@ class PlayerShell(BackgroundWindow):
         try:
             stats = self.api.stats()
         except PlayerApiError:
-            self.job_status_label.setText("JOBS OFFLINE")
-            self.job_status_label.setStyleSheet(f"color: {Palette.red.name()};")
+            self.job_status_label.setText("SCRAPER JOBS  BACKEND OFFLINE")
+            self.job_status_label.setStyleSheet("color: #ffffff;")
             return
 
         crawl_active = stats.get("crawl_jobs_running", 0)
@@ -1169,12 +1176,14 @@ class PlayerShell(BackgroundWindow):
         retrieval_active = stats.get("retrieval_jobs_pending", 0) + stats.get("retrieval_jobs_downloading", 0)
         retrieval_done = stats.get("retrieval_jobs_completed", 0)
         retrieval_failed = stats.get("retrieval_jobs_failed", 0)
+        resources = stats.get("resource_nodes", 0)
+        games = stats.get("games", 0)
         self.job_status_label.setText(
-            f"JOBS C{crawl_active}/{crawl_done}/{crawl_failed} "
-            f"R{retrieval_active}/{retrieval_done}/{retrieval_failed}"
+            f"SCRAPER JOBS  CRAWL {crawl_active}/{crawl_done}/{crawl_failed}  "
+            f"RETRIEVAL {retrieval_active}/{retrieval_done}/{retrieval_failed}  "
+            f"GAMES {games}  RESOURCES {resources}"
         )
-        color = Palette.red if crawl_failed or retrieval_failed else Palette.green
-        self.job_status_label.setStyleSheet(f"color: {color.name()};")
+        self.job_status_label.setStyleSheet("color: #ffffff;")
 
     def _tick_meter(self):
         self._meter_phase += 0.17
