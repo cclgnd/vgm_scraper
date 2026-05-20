@@ -54,6 +54,16 @@ class RetrievalManager:
                 "message": "No acquisition source found for this track",
             }
 
+        active_job = self.db.get_active_retrieval_job(track_id)
+        if active_job:
+            return {
+                "status": "obtaining_file",
+                "track_id": track_id,
+                "job_id": active_job["id"],
+                "resource_id": active_job["resource_id"],
+                "message": f"Retrieval job already {active_job['status']}",
+            }
+
         # Pick best resource (primary first, then highest confidence)
         best_resource = resources[0]
 

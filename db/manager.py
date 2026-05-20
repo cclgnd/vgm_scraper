@@ -628,6 +628,17 @@ class DatabaseManager:
             ).fetchall()
             return [dict(r) for r in rows]
 
+    def get_active_retrieval_job(self, track_id: int) -> dict | None:
+        with self.connect() as conn:
+            row = conn.execute(
+                """SELECT * FROM retrieval_jobs
+                   WHERE track_id = ? AND status IN ('pending', 'downloading')
+                   ORDER BY created_at DESC
+                   LIMIT 1""",
+                (track_id,),
+            ).fetchone()
+            return dict(row) if row else None
+
     def add_local_file(self, track_id: int, file_path: str, size_bytes: int = None,
                        fingerprint: str = "", is_available: int = 1) -> int:
         with self.connect() as conn:

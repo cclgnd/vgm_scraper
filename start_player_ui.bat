@@ -14,12 +14,12 @@ if errorlevel 1 (
     exit /b 1
 )
 
-echo Starting hidden scraper backend if needed...
+echo Restarting hidden scraper backend...
 powershell -NoProfile -ExecutionPolicy Bypass -Command ^
   "$base='http://127.0.0.1:8765';" ^
-  "$up=$false;" ^
-  "try { Invoke-RestMethod -Uri ($base + '/api/stats') -TimeoutSec 1 | Out-Null; $up=$true } catch {}" ^
-  "if (-not $up) { Start-Process -WindowStyle Hidden -WorkingDirectory '%PACKAGE_PARENT%' -FilePath 'python' -ArgumentList @('-m','vgm_scraper','api-start') }" ^
+  "Get-CimInstance Win32_Process -Filter \"name = 'python.exe'\" | Where-Object { $_.CommandLine -like '*vgm_scraper api-start*' } | ForEach-Object { Stop-Process -Id $_.ProcessId -Force };" ^
+  "Start-Sleep -Milliseconds 500;" ^
+  "Start-Process -WindowStyle Hidden -WorkingDirectory '%PACKAGE_PARENT%' -FilePath 'python' -ArgumentList @('-m','vgm_scraper','api-start');" ^
   "for ($i=0; $i -lt 25; $i++) { try { Invoke-RestMethod -Uri ($base + '/api/stats') -TimeoutSec 1 | Out-Null; exit 0 } catch { Start-Sleep -Milliseconds 250 } }" ^
   "exit 1"
 
