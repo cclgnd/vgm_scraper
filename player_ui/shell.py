@@ -38,6 +38,7 @@ from PySide6.QtWidgets import (
 )
 
 from player_ui.api_client import PlayerApiClient, PlayerApiError
+from player_ui.audio_adapter import AudioAdapterError, PlayerAudioAdapter
 
 
 ROOT = Path(__file__).resolve().parent
@@ -345,8 +346,11 @@ class PlayerShell(BackgroundWindow):
         self.ui_font, self.pixel_font = load_fonts()
         self.logo_font = choose_logo_font()
         self.api = PlayerApiClient()
+        self.audio = PlayerAudioAdapter()
         self.selected_game_id = None
         self.selected_game_title = ""
+        self.current_file_row = None
+        self.pending_retrieval_track_id = None
         self._drag_pos = None
         self._was_dragging = False
         self.setWindowTitle("Chiptune Palace")
@@ -836,6 +840,7 @@ class PlayerShell(BackgroundWindow):
         self.queue_list = QListWidget()
         self.queue_list.setMinimumWidth(0)
         self.queue_list.setSizePolicy(QSizePolicy.Ignored, QSizePolicy.Expanding)
+        self.queue_list.itemDoubleClicked.connect(self._execute_queue_item)
         queue_layout.addWidget(self.queue_list, 1)
         layout.addWidget(queue, 1)
         return col
@@ -916,10 +921,18 @@ class PlayerShell(BackgroundWindow):
         player_layout = QHBoxLayout(player)
         player_layout.setContentsMargins(14, 12, 14, 12)
         player_layout.setSpacing(10)
-        player_layout.addWidget(IconButton("prev", "Previous", Palette.cyan))
-        player_layout.addWidget(IconButton("play", "Play / pause", Palette.magenta))
-        player_layout.addWidget(IconButton("stop", "Stop", Palette.red))
-        player_layout.addWidget(IconButton("next", "Next", Palette.cyan))
+        prev_button = IconButton("prev", "Previous", Palette.cyan)
+        play_button = IconButton("play", "Play / pause", Palette.magenta)
+        stop_button = IconButton("stop", "Stop", Palette.red)
+        next_button = IconButton("next", "Next", Palette.cyan)
+        prev_button.clicked.connect(lambda: self._step_queue(-1))
+        play_button.clicked.connect(self._toggle_play_pause)
+        stop_button.clicked.connect(self._stop_playback)
+        next_button.clicked.connect(lambda: self._step_queue(1))
+        player_layout.addWidget(prev_button)
+        player_layout.addWidget(play_button)
+        player_layout.addWidget(stop_button)
+        player_layout.addWidget(next_button)
         self.meter = LufsMeter(self.pixel_font)
         player_layout.addWidget(self.meter, 1)
         layout.addWidget(player)
@@ -1075,7 +1088,9 @@ class PlayerShell(BackgroundWindow):
             track_item.setForeground(0, self._status_color(file_row.get("availability_status")))
             track_item.setData(0, Qt.UserRole, {"type": "track", "data": file_row})
             game_item.addChild(track_item)
-            self.queue_list.addItem(QListWidgetItem(text))
+            queue_item = QListWidgetItem(text)
+            queue_item.setData(Qt.UserRole, file_row)
+            self.queue_list.addItem(queue_item)
 
         if files:
             self._show_file_info(files[0])
@@ -1095,6 +1110,7 @@ class PlayerShell(BackgroundWindow):
         self.provenance_label.setText("Availability verified by scraper API after game open.")
         self.file_status_label.setText((file_row.get("availability_status") or "").replace("_", " ").upper())
         self.file_status_label.setStyleSheet(self._badge_style(self._status_color(file_row.get("availability_status"))))
+        self.current_file_row = file_row
 
     def _execute_file(self, file_row: dict):
         self._show_file_info(file_row)
@@ -1103,9 +1119,127 @@ class PlayerShell(BackgroundWindow):
             if title in self.queue_list.item(index).text():
                 self.queue_list.setCurrentRow(index)
                 break
-        self.provenance_label.setText("Queued for playback. Audio engine wiring comes next.")
-        self.file_status_label.setText("QUEUED")
+        self._play_or_request_file(file_row)
+
+    def _play_or_request_file(self, file_row: dict):
+        track_id = file_row.get("id")
+        if track_id is None:
+            self._show_playback_error("Missing track id")
+            return
+
+        try:
+            status = self.api.track_status(track_id)
+        except PlayerApiError as exc:
+            self._show_playback_error(str(exc))
+            return
+
+        local_path = status.get("local_path")
+        if status.get("availability_status") == "local" and local_path:
+            self._play_local_path(local_path)
+            return
+
+        try:
+            request = self.api.request_track(track_id)
+        except PlayerApiError as exc:
+            self._show_playback_error(str(exc))
+            return
+
+        if request.get("status") == "local" and request.get("local_path"):
+            self._play_local_path(request["local_path"])
+            return
+        if request.get("status") in {"failed", "no_source"}:
+            self._show_playback_error(request.get("message") or request.get("error") or request["status"])
+            return
+
+        self.pending_retrieval_track_id = track_id
+        self.provenance_label.setText("Waiting for scraper to deliver file path or error.")
+        self.file_status_label.setText("OBTAINING FILE")
+        self.file_status_label.setStyleSheet(self._badge_style(Palette.cyan))
+        self._start_retrieval_poll()
+
+    def _start_retrieval_poll(self):
+        if not hasattr(self, "_retrieval_timer"):
+            self._retrieval_timer = QTimer(self)
+            self._retrieval_timer.timeout.connect(self._poll_pending_retrieval)
+        if not self._retrieval_timer.isActive():
+            self._retrieval_timer.start(1000)
+
+    def _poll_pending_retrieval(self):
+        if self.pending_retrieval_track_id is None:
+            self._retrieval_timer.stop()
+            return
+
+        try:
+            status = self.api.track_status(self.pending_retrieval_track_id)
+        except PlayerApiError as exc:
+            self.provenance_label.setText(str(exc))
+            return
+
+        local_path = status.get("local_path")
+        availability = status.get("availability_status")
+        if availability == "local" and local_path:
+            self._retrieval_timer.stop()
+            self.pending_retrieval_track_id = None
+            self._play_local_path(local_path)
+        elif availability == "failed":
+            self._retrieval_timer.stop()
+            self.pending_retrieval_track_id = None
+            self._show_playback_error("Scraper reported failed retrieval.")
+        else:
+            self.file_status_label.setText("OBTAINING FILE")
+            self.file_status_label.setStyleSheet(self._badge_style(Palette.cyan))
+
+    def _play_local_path(self, local_path: str):
+        try:
+            backend_name = self.audio.play_file(local_path)
+        except AudioAdapterError as exc:
+            self._show_playback_error(str(exc))
+            return
+
+        self.provenance_label.setText(f"Playing local file with {backend_name}.")
+        self.file_status_label.setText("PLAYING")
         self.file_status_label.setStyleSheet(self._badge_style(Palette.green))
+
+    def _toggle_play_pause(self):
+        if self.current_file_row is None:
+            return
+        try:
+            playing = self.audio.toggle_pause()
+        except AudioAdapterError as exc:
+            self._show_playback_error(str(exc))
+            return
+        self.file_status_label.setText("PLAYING" if playing else "PAUSED")
+        self.file_status_label.setStyleSheet(self._badge_style(Palette.green if playing else Palette.yellow))
+
+    def _stop_playback(self):
+        self.audio.stop()
+        self.file_status_label.setText("STOPPED")
+        self.file_status_label.setStyleSheet(self._badge_style(Palette.yellow))
+
+    def _step_queue(self, delta: int):
+        if self.queue_list.count() == 0:
+            return
+        row = self.queue_list.currentRow()
+        if row < 0:
+            row = 0 if delta >= 0 else self.queue_list.count() - 1
+        else:
+            row = max(0, min(self.queue_list.count() - 1, row + delta))
+        self.queue_list.setCurrentRow(row)
+        item = self.queue_list.item(row)
+        if item is not None:
+            file_row = item.data(Qt.UserRole)
+            if isinstance(file_row, dict):
+                self._execute_file(file_row)
+
+    def _execute_queue_item(self, item: QListWidgetItem):
+        file_row = item.data(Qt.UserRole)
+        if isinstance(file_row, dict):
+            self._execute_file(file_row)
+
+    def _show_playback_error(self, message: str):
+        self.provenance_label.setText(message)
+        self.file_status_label.setText("FAILED")
+        self.file_status_label.setStyleSheet(self._badge_style(Palette.red))
 
     def _file_row_text(self, file_row: dict) -> str:
         number = file_row.get("track_number")

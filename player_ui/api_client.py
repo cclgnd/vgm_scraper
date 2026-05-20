@@ -30,6 +30,12 @@ class PlayerApiClient:
     def retry_game(self, game_id: int) -> dict:
         return self._post(f"/api/games/{game_id}/retry")
 
+    def request_track(self, track_id: int) -> dict:
+        return self._post(f"/api/tracks/{track_id}/request")
+
+    def track_status(self, track_id: int) -> dict:
+        return self._get(f"/api/tracks/{track_id}")
+
     def stats(self) -> dict:
         return self._get("/api/stats")
 

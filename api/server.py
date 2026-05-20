@@ -245,6 +245,7 @@ class APIServer:
         self.retrieval = retrieval
         self.verifier = verifier
         self.server = None
+        self._jobs_running = False
 
     def start(self):
         """Start the API server in a background thread."""
@@ -257,10 +258,23 @@ class APIServer:
                               retrieval=self.retrieval, verifier=self.verifier, **kwargs)
 
         self.server = HTTPServer((self.host, self.port), handler_factory)
+        self._jobs_running = True
+        jobs_thread = threading.Thread(target=self._process_retrieval_jobs_loop, daemon=True)
+        jobs_thread.start()
         thread = threading.Thread(target=self.server.serve_forever, daemon=True)
         thread.start()
         print(f"API server started at http://{self.host}:{self.port}")
 
     def stop(self):
+        self._jobs_running = False
         if self.server:
             self.server.shutdown()
+
+    def _process_retrieval_jobs_loop(self):
+        while self._jobs_running:
+            try:
+                self.retrieval.process_pending_jobs()
+            except Exception:
+                pass
+            import time
+            time.sleep(1.0)
