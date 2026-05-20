@@ -37,6 +37,8 @@ from PySide6.QtWidgets import (
     QWidget,
 )
 
+from player_ui.api_client import PlayerApiClient, PlayerApiError
+
 
 ROOT = Path(__file__).resolve().parent
 ASSETS = ROOT / "assets"
@@ -342,6 +344,9 @@ class PlayerShell(BackgroundWindow):
         super().__init__()
         self.ui_font, self.pixel_font = load_fonts()
         self.logo_font = choose_logo_font()
+        self.api = PlayerApiClient()
+        self.selected_game_id = None
+        self.selected_game_title = ""
         self._drag_pos = None
         self._was_dragging = False
         self.setWindowTitle("Chiptune Palace")
@@ -351,6 +356,7 @@ class PlayerShell(BackgroundWindow):
             self.setWindowIcon(QIcon(str(ASSETS / "icon.png")))
         self._build()
         self._start_meter_demo()
+        QTimer.singleShot(0, self._load_catalog_tree)
 
     def _font(self, size: int, bold=False) -> QFont:
         f = QFont(self.ui_font, size)
@@ -787,13 +793,15 @@ class PlayerShell(BackgroundWindow):
         title.setFont(self._pixel_font(7))
         title.setStyleSheet(f"color: {Palette.cyan.name()}; letter-spacing: 1px;")
         browser_layout.addWidget(title)
-        tree = QTreeWidget()
-        tree.setMinimumWidth(0)
-        tree.setSizePolicy(QSizePolicy.Ignored, QSizePolicy.Expanding)
-        tree.setHeaderHidden(True)
-        tree.setIndentation(20)
-        self._populate_browser(tree)
-        browser_layout.addWidget(tree, 1)
+        self.browser_tree = QTreeWidget()
+        self.browser_tree.setMinimumWidth(0)
+        self.browser_tree.setSizePolicy(QSizePolicy.Ignored, QSizePolicy.Expanding)
+        self.browser_tree.setHeaderHidden(True)
+        self.browser_tree.setIndentation(20)
+        self.browser_tree.itemSelectionChanged.connect(self._on_browser_selection_changed)
+        self.browser_tree.itemDoubleClicked.connect(self._on_browser_item_opened)
+        self._populate_browser_placeholder("Backend not loaded")
+        browser_layout.addWidget(self.browser_tree, 1)
         layout.addWidget(browser, 3)
 
         actions = QWidget()
@@ -807,6 +815,8 @@ class PlayerShell(BackgroundWindow):
         open_game.setToolTip("Open selected game and verify availability")
         retry_failed = NeonCommandButton("Retry", "retry", Palette.yellow)
         retry_failed.setToolTip("Retry failed selected game or file")
+        open_game.clicked.connect(self._open_selected_game)
+        retry_failed.clicked.connect(self._retry_selected_game)
         action_layout.addWidget(play_game)
         action_layout.addWidget(open_game)
         action_layout.addWidget(retry_failed)
@@ -820,12 +830,10 @@ class PlayerShell(BackgroundWindow):
         qtitle.setFont(self._pixel_font(7))
         qtitle.setStyleSheet(f"color: {Palette.magenta.name()}; letter-spacing: 1px;")
         queue_layout.addWidget(qtitle)
-        qlist = QListWidget()
-        qlist.setMinimumWidth(0)
-        qlist.setSizePolicy(QSizePolicy.Ignored, QSizePolicy.Expanding)
-        for track in ["01 Opening", "02 Metal Man", "03 Bubble Man", "04 Air Man", "05 Quick Man", "06 Dr. Wily Stage 1", "moved to sfx"]:
-            qlist.addItem(QListWidgetItem(track))
-        queue_layout.addWidget(qlist, 1)
+        self.queue_list = QListWidget()
+        self.queue_list.setMinimumWidth(0)
+        self.queue_list.setSizePolicy(QSizePolicy.Ignored, QSizePolicy.Expanding)
+        queue_layout.addWidget(self.queue_list, 1)
         layout.addWidget(queue, 1)
         return col
 
@@ -842,21 +850,21 @@ class PlayerShell(BackgroundWindow):
         info.setFixedHeight(142)
         grid = QGridLayout(info)
         grid.setContentsMargins(16, 14, 16, 14)
-        game = QLabel("MEGA MAN 2")
-        game.setFont(self._font(20, bold=True))
-        game.setStyleSheet(f"color: {Palette.yellow.name()};")
-        meta = QLabel("NES / Capcom / 1988\nLibretro metadata ready. Box art and title screen available.\nSource: verified archive resource, best candidate selected.")
-        meta.setStyleSheet(f"color: {Palette.muted.name()};")
-        meta.setWordWrap(True)
-        meta.setMinimumHeight(52)
-        ready = QLabel("LOCAL READY")
-        ready.setAlignment(Qt.AlignCenter)
-        ready.setFont(self._pixel_font(7))
-        ready.setStyleSheet(f"color: {Palette.green.name()}; border: 1px solid rgba(57, 255, 20, 50); background: rgba(57, 255, 20, 20); border-radius: 6px; padding: 10px;")
-        ready.setFixedWidth(172)
-        grid.addWidget(game, 0, 0)
-        grid.addWidget(meta, 1, 0)
-        grid.addWidget(ready, 0, 1, 2, 1)
+        self.game_title_label = QLabel("NO GAME SELECTED")
+        self.game_title_label.setFont(self._font(20, bold=True))
+        self.game_title_label.setStyleSheet(f"color: {Palette.yellow.name()};")
+        self.game_meta_label = QLabel("Load backend catalog, then open a game to verify file availability.")
+        self.game_meta_label.setStyleSheet(f"color: {Palette.muted.name()};")
+        self.game_meta_label.setWordWrap(True)
+        self.game_meta_label.setMinimumHeight(52)
+        self.game_status_label = QLabel("WAITING")
+        self.game_status_label.setAlignment(Qt.AlignCenter)
+        self.game_status_label.setFont(self._pixel_font(7))
+        self.game_status_label.setStyleSheet(f"color: {Palette.cyan.name()}; border: 1px solid rgba(0, 212, 255, 50); background: rgba(0, 212, 255, 18); border-radius: 6px; padding: 10px;")
+        self.game_status_label.setFixedWidth(172)
+        grid.addWidget(self.game_title_label, 0, 0)
+        grid.addWidget(self.game_meta_label, 1, 0)
+        grid.addWidget(self.game_status_label, 0, 1, 2, 1)
         layout.addWidget(info)
 
         art_panel = GlassPanel(Palette.magenta)
@@ -880,23 +888,23 @@ class PlayerShell(BackgroundWindow):
         file_text_layout = QVBoxLayout(file_text)
         file_text_layout.setContentsMargins(0, 0, 0, 0)
         file_text_layout.setSpacing(7)
-        now_title = QLabel("02 Metal Man")
-        now_title.setFont(self._font(14, bold=True))
-        now_title.setStyleSheet(f"color: {Palette.text.name()};")
-        now_meta = QLabel("Local / VGZ / 01:12")
-        now_meta.setStyleSheet(f"color: {Palette.muted.name()};")
-        provenance = QLabel("Provenance: archive member verified after game open.")
-        provenance.setWordWrap(True)
-        provenance.setStyleSheet(f"color: {Palette.muted.name()};")
-        file_text_layout.addWidget(now_title)
-        file_text_layout.addWidget(now_meta)
-        file_text_layout.addWidget(provenance)
+        self.now_title_label = QLabel("No file selected")
+        self.now_title_label.setFont(self._font(14, bold=True))
+        self.now_title_label.setStyleSheet(f"color: {Palette.text.name()};")
+        self.now_meta_label = QLabel("")
+        self.now_meta_label.setStyleSheet(f"color: {Palette.muted.name()};")
+        self.provenance_label = QLabel("File availability appears after game open.")
+        self.provenance_label.setWordWrap(True)
+        self.provenance_label.setStyleSheet(f"color: {Palette.muted.name()};")
+        file_text_layout.addWidget(self.now_title_label)
+        file_text_layout.addWidget(self.now_meta_label)
+        file_text_layout.addWidget(self.provenance_label)
         file_layout.addWidget(file_text, 1)
-        local = QLabel("LOCAL")
-        local.setAlignment(Qt.AlignCenter)
-        local.setFont(self._pixel_font(7))
-        local.setStyleSheet(f"color: {Palette.green.name()}; border: 1px solid rgba(57, 255, 20, 50); background: rgba(57, 255, 20, 20); border-radius: 6px; padding: 10px;")
-        file_layout.addWidget(local)
+        self.file_status_label = QLabel("")
+        self.file_status_label.setAlignment(Qt.AlignCenter)
+        self.file_status_label.setFont(self._pixel_font(7))
+        self.file_status_label.setStyleSheet(f"color: {Palette.cyan.name()}; border: 1px solid rgba(0, 212, 255, 50); background: rgba(0, 212, 255, 18); border-radius: 6px; padding: 10px;")
+        file_layout.addWidget(self.file_status_label)
         layout.addWidget(file_info)
 
         player = GlassPanel(Palette.cyan)
@@ -914,47 +922,198 @@ class PlayerShell(BackgroundWindow):
         layout.addWidget(player)
         return col
 
-    def _populate_browser(self, tree: QTreeWidget):
-        data = {
-            "NINTENDO": {
-                "Nintendo Entertainment System": {
-                    "Mega Man 2": ["01 Opening    00:43 VGM", "02 Metal Man  01:12 VGZ", "03 Bubble Man Obtaining file"],
-                    "Super Mario World": [],
-                },
-                "Super Nintendo": {"Chrono Trigger": []},
-            },
-            "SEGA": {
-                "Mega Drive / Genesis": {
-                    "Streets of Rage 2": ["01 Go Straight 02:18 VGZ", "02 In The Bar Failed"],
-                    "Sonic the Hedgehog 2": [],
-                }
-            },
-            "SONY": {"PlayStation": {"Ridge Racer Type 4": []}},
-        }
-        for maker, consoles in data.items():
+    def _populate_browser_placeholder(self, text: str):
+        self.browser_tree.clear()
+        item = QTreeWidgetItem([text])
+        item.setForeground(0, Palette.muted)
+        item.setData(0, Qt.UserRole, {"type": "status"})
+        self.browser_tree.addTopLevelItem(item)
+
+    def _load_catalog_tree(self):
+        try:
+            tree = self.api.tree()
+        except PlayerApiError as exc:
+            self._populate_browser_placeholder("Backend offline")
+            self._set_game_status("OFFLINE", Palette.red)
+            self.game_meta_label.setText(str(exc))
+            return
+
+        self._populate_catalog_tree(tree)
+        self._set_game_status("READY", Palette.green)
+        self.game_meta_label.setText("Catalog loaded. Select a game, then open it to verify files.")
+
+    def _populate_catalog_tree(self, consoles: list[dict]):
+        self.browser_tree.clear()
+        makers: dict[str, list[dict]] = {}
+        for console in consoles:
+            maker = (console.get("maker") or "Unknown Maker").upper()
+            makers.setdefault(maker, []).append(console)
+
+        if not makers:
+            self._populate_browser_placeholder("No catalog entries")
+            return
+
+        for maker in sorted(makers):
             maker_item = QTreeWidgetItem([maker])
             maker_item.setForeground(0, Palette.magenta)
-            tree.addTopLevelItem(maker_item)
+            maker_item.setData(0, Qt.UserRole, {"type": "maker"})
+            self.browser_tree.addTopLevelItem(maker_item)
             maker_item.setExpanded(True)
-            for console, games in consoles.items():
-                console_item = QTreeWidgetItem([console])
+
+            for console in sorted(makers[maker], key=lambda row: row.get("display_name") or ""):
+                console_item = QTreeWidgetItem([console.get("display_name") or "Unknown Console"])
                 console_item.setForeground(0, Palette.cyan)
+                console_item.setData(0, Qt.UserRole, {"type": "console", "data": console})
                 maker_item.addChild(console_item)
                 console_item.setExpanded(True)
-                for game, tracks in games.items():
-                    game_item = QTreeWidgetItem([game])
+
+                for game in sorted(console.get("games", []), key=lambda row: row.get("title") or ""):
+                    game_item = QTreeWidgetItem([game.get("title") or "Unknown Game"])
                     game_item.setForeground(0, Palette.yellow)
+                    game_item.setData(0, Qt.UserRole, {"type": "game", "data": game})
                     console_item.addChild(game_item)
-                    game_item.setExpanded(True)
-                    for track in tracks:
-                        track_item = QTreeWidgetItem([track])
-                        if "Failed" in track:
-                            track_item.setForeground(0, Palette.red)
-                        elif "Obtaining" in track:
-                            track_item.setForeground(0, Palette.cyan)
-                        else:
-                            track_item.setForeground(0, Palette.text)
-                        game_item.addChild(track_item)
+
+    def _on_browser_selection_changed(self):
+        item = self.browser_tree.currentItem()
+        payload = item.data(0, Qt.UserRole) if item else {}
+        payload_type = payload.get("type") if isinstance(payload, dict) else ""
+        if payload_type == "game":
+            game = payload["data"]
+            self.selected_game_id = game.get("id")
+            self.selected_game_title = game.get("title") or ""
+            self.game_title_label.setText(self.selected_game_title.upper())
+            self.game_meta_label.setText("Open game to verify online files.")
+            self._set_game_status("ONLINE", Palette.cyan)
+        elif payload_type == "track":
+            self._show_file_info(payload["data"])
+
+    def _on_browser_item_opened(self, item: QTreeWidgetItem):
+        payload = item.data(0, Qt.UserRole) if item else {}
+        if isinstance(payload, dict) and payload.get("type") == "game":
+            self._open_game_item(item, retry_failed=False)
+
+    def _open_selected_game(self):
+        item = self._selected_game_item()
+        if item is not None:
+            self._open_game_item(item, retry_failed=False)
+
+    def _retry_selected_game(self):
+        item = self._selected_game_item()
+        if item is not None:
+            self._open_game_item(item, retry_failed=True)
+
+    def _selected_game_item(self) -> QTreeWidgetItem | None:
+        item = self.browser_tree.currentItem()
+        while item is not None:
+            payload = item.data(0, Qt.UserRole)
+            if isinstance(payload, dict) and payload.get("type") == "game":
+                return item
+            item = item.parent()
+        return None
+
+    def _open_game_item(self, game_item: QTreeWidgetItem, retry_failed: bool):
+        payload = game_item.data(0, Qt.UserRole)
+        game = payload.get("data", {}) if isinstance(payload, dict) else {}
+        game_id = game.get("id")
+        if game_id is None:
+            return
+
+        self.selected_game_id = game_id
+        self.selected_game_title = game.get("title") or ""
+        self.game_title_label.setText(self.selected_game_title.upper())
+        self._set_game_status("OBTAINING", Palette.cyan)
+        self.game_meta_label.setText("Verifying file availability...")
+
+        try:
+            result = self.api.retry_game(game_id) if retry_failed else self.api.game_files(game_id)
+        except PlayerApiError as exc:
+            self._set_game_status("FAILED", Palette.red)
+            self.game_meta_label.setText(str(exc))
+            return
+
+        self._replace_game_files(game_item, result.get("files", []))
+        status = result.get("status", "unknown")
+        color = Palette.green if status in {"already_listed", "obtaining_file"} else Palette.red
+        self._set_game_status(status.replace("_", " ").upper(), color)
+        hidden = result.get("hidden_short_file_count", 0)
+        suffix = f" Hidden SFX: {hidden}." if hidden else ""
+        self.game_meta_label.setText(f"{len(result.get('files', []))} verified file rows exposed.{suffix}")
+        game_item.setExpanded(True)
+
+    def _replace_game_files(self, game_item: QTreeWidgetItem, files: list[dict]):
+        while game_item.childCount():
+            game_item.removeChild(game_item.child(0))
+
+        self.queue_list.clear()
+        for file_row in files:
+            text = self._file_row_text(file_row)
+            track_item = QTreeWidgetItem([text])
+            track_item.setForeground(0, self._status_color(file_row.get("availability_status")))
+            track_item.setData(0, Qt.UserRole, {"type": "track", "data": file_row})
+            game_item.addChild(track_item)
+            self.queue_list.addItem(QListWidgetItem(text))
+
+        if files:
+            self._show_file_info(files[0])
+        else:
+            self.now_title_label.setText("No verified files")
+            self.now_meta_label.setText("")
+            self.provenance_label.setText("No compatible file rows exposed for this game.")
+            self.file_status_label.setText("")
+
+    def _show_file_info(self, file_row: dict):
+        self.now_title_label.setText(file_row.get("title") or "Unknown file")
+        duration = self._format_duration(file_row.get("duration_seconds"))
+        fmt = (file_row.get("format_hint") or "").lstrip(".").upper()
+        status = (file_row.get("availability_status") or "").replace("_", " ").title()
+        parts = [part for part in (status, fmt, duration) if part]
+        self.now_meta_label.setText(" / ".join(parts))
+        self.provenance_label.setText("Availability verified by scraper API after game open.")
+        self.file_status_label.setText((file_row.get("availability_status") or "").replace("_", " ").upper())
+        self.file_status_label.setStyleSheet(self._badge_style(self._status_color(file_row.get("availability_status"))))
+
+    def _file_row_text(self, file_row: dict) -> str:
+        number = file_row.get("track_number")
+        prefix = f"{number:02d} " if isinstance(number, int) else ""
+        duration = self._format_duration(file_row.get("duration_seconds"))
+        fmt = (file_row.get("format_hint") or "").lstrip(".").upper()
+        status = (file_row.get("availability_status") or "").replace("_", " ").title()
+        tail = " ".join(part for part in (duration, fmt, status) if part)
+        return f"{prefix}{file_row.get('title') or 'Unknown'} {tail}".strip()
+
+    @staticmethod
+    def _format_duration(value) -> str:
+        if value is None:
+            return ""
+        seconds = max(0, int(round(float(value))))
+        hours, rem = divmod(seconds, 3600)
+        minutes, seconds = divmod(rem, 60)
+        if hours:
+            return f"{hours:02d}:{minutes:02d}:{seconds:02d}"
+        return f"{minutes:02d}:{seconds:02d}"
+
+    @staticmethod
+    def _status_color(status: str | None) -> QColor:
+        if status == "local":
+            return Palette.green
+        if status == "failed":
+            return Palette.red
+        if status == "obtaining_file":
+            return Palette.cyan
+        return Palette.text
+
+    def _set_game_status(self, text: str, color: QColor):
+        self.game_status_label.setText(text)
+        self.game_status_label.setStyleSheet(self._badge_style(color))
+
+    @staticmethod
+    def _badge_style(color: QColor) -> str:
+        return (
+            f"color: {color.name()}; "
+            f"border: 1px solid rgba({color.red()}, {color.green()}, {color.blue()}, 50); "
+            f"background: rgba({color.red()}, {color.green()}, {color.blue()}, 18); "
+            "border-radius: 6px; padding: 10px;"
+        )
 
     def _start_meter_demo(self):
         self._meter_phase = 0.0
