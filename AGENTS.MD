@@ -150,6 +150,17 @@ Do not store acquisition details inside catalog tables. Keep them separate and l
 
 ---
 
+## Agent Workflow Rules
+
+- **STRICT RULE**: We are going to make small changes, without extra assumptions, only specific changes, no extra ideas, and absolutely no unapproved changes.
+- Do not add features or perform refactors unless explicitly requested and approved by the user.
+
+---Show your chain of thought
+
+-Aim for excellence, "create logo" request from user means to read the context first and not simply create any random logo with no rules or purpose
+,think as if the final product must make millions of people fall in love and appreciate the effort and how well thought it is.
+-after user input,list the changes you are about to make and ask for confirmation before proceeding.
+
 ## Expected Output from Agent
 
 When making changes, please provide:
