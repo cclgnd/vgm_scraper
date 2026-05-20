@@ -16,6 +16,7 @@ from PySide6.QtGui import (
     QPainterPath,
     QPen,
     QPixmap,
+    QLinearGradient,
 )
 from PySide6.QtWidgets import (
     QApplication,
@@ -49,22 +50,42 @@ class Palette:
     red = QColor("#ff4268")
     text = QColor("#f5f7ff")
     muted = QColor("#aab2d4")
-    panel = QColor(7, 12, 26, 168)
-    panel_dark = QColor(2, 4, 13, 190)
+    panel = QColor(7, 12, 26, 92)
+    panel_dark = QColor(2, 4, 13, 118)
 
 
-def load_fonts() -> str:
+def load_fonts() -> tuple[str, str]:
     font_path = ASSETS / "PressStart2P-Regular.ttf"
+    pixel_font = "Consolas"
     if font_path.exists():
         font_id = QFontDatabase.addApplicationFont(str(font_path))
         families = QFontDatabase.applicationFontFamilies(font_id)
         if families:
-            return families[0]
-    return "Consolas"
+            pixel_font = families[0]
+            
+    ui_font = "Segoe UI"
+    return ui_font, pixel_font
+
+
+def choose_logo_font() -> str:
+    preferred = (
+        "Playstation",
+        "PlayStation",
+        "PlayStation 2",
+        "PS2P",
+        "Arial Black",
+        "Segoe UI Black",
+        "Segoe UI",
+    )
+    families = {family.lower(): family for family in QFontDatabase.families()}
+    for name in preferred:
+        found = families.get(name.lower())
+        if found:
+            return found
+    return "Arial"
 
 
 def make_blurred_pixmap(source: QPixmap, size, radius: int = 22) -> QPixmap:
-    """Render a QGraphicsBlurEffect into a reusable pixmap."""
     from PySide6.QtWidgets import QGraphicsBlurEffect, QGraphicsPixmapItem, QGraphicsScene
 
     scaled = source.scaled(size, Qt.KeepAspectRatioByExpanding, Qt.SmoothTransformation)
@@ -90,25 +111,22 @@ def make_blurred_pixmap(source: QPixmap, size, radius: int = 22) -> QPixmap:
 class BackgroundWindow(QMainWindow):
     def __init__(self):
         super().__init__()
+        self.setWindowFlags(Qt.FramelessWindowHint | Qt.Window)
+        self.setAttribute(Qt.WA_TranslucentBackground, True)
         self._bg_source = QPixmap(str(ASSETS / "cyberpunk_bg.jpg"))
         self._bg_blurred = QPixmap()
         self._last_bg_size = None
-        self.setWindowFlags(Qt.FramelessWindowHint | Qt.Window)
-        self.setAttribute(Qt.WA_TranslucentBackground, True)
 
     def paintEvent(self, event):
         painter = QPainter(self)
         painter.setRenderHint(QPainter.Antialiasing)
         if not self._bg_source.isNull():
             if self._last_bg_size != self.size():
-                self._bg_blurred = make_blurred_pixmap(self._bg_source, self.size())
+                self._bg_blurred = make_blurred_pixmap(self._bg_source, self.size(), 30)
                 self._last_bg_size = self.size()
             painter.drawPixmap(self.rect(), self._bg_blurred)
-        painter.fillRect(self.rect(), QColor(2, 3, 12, 136))
-        border = QPen(Palette.magenta, 1.4)
-        painter.setPen(border)
-        painter.setBrush(QColor(1, 4, 16, 80))
-        painter.drawRect(self.rect().adjusted(6, 6, -7, -7))
+        
+        painter.fillRect(self.rect(), QColor(2, 3, 12, 96))
         super().paintEvent(event)
 
 
@@ -123,12 +141,24 @@ class GlassPanel(QFrame):
         painter = QPainter(self)
         painter.setRenderHint(QPainter.Antialiasing)
         r = QRectF(self.rect()).adjusted(0.5, 0.5, -0.5, -0.5)
+        
         painter.setBrush(Palette.panel)
-        painter.setPen(QPen(self.accent, 1.15))
-        painter.drawRoundedRect(r, 7, 7)
-        painter.setPen(QPen(QColor(self.accent.red(), self.accent.green(), self.accent.blue(), 60), 1))
-        painter.drawRoundedRect(r.adjusted(4, 4, -4, -4), 5, 5)
-        super().paintEvent(event)
+        painter.setPen(QPen(QColor(255, 255, 255, 15), 1.0))
+        painter.drawRoundedRect(r, 8, 8)
+        
+        painter.setPen(QPen(QColor(255, 255, 255, 35), 1.0))
+        painter.drawPath(self._top_edge_path(r, 8))
+        
+        painter.setPen(QPen(QColor(self.accent.red(), self.accent.green(), self.accent.blue(), 200), 2.0))
+        painter.drawLine(r.topLeft() + QPointF(12, 0), r.topRight() - QPointF(12, 0))
+
+    def _top_edge_path(self, r: QRectF, radius: float) -> QPainterPath:
+        path = QPainterPath()
+        path.moveTo(r.left(), r.top() + radius)
+        path.arcTo(r.left(), r.top(), radius * 2, radius * 2, 180, -90)
+        path.lineTo(r.right() - radius, r.top())
+        path.arcTo(r.right() - radius * 2, r.top(), radius * 2, radius * 2, 90, -90)
+        return path
 
 
 class IconButton(QPushButton):
@@ -150,41 +180,43 @@ class IconButton(QPushButton):
         hovered = self.underMouse()
         pressed = self.isDown()
         bg_alpha = 210 if pressed else (185 if hovered else 145)
-        painter.setBrush(QColor(5, 9, 24, bg_alpha))
-        painter.setPen(QPen(self.accent, 1.5))
+        painter.setBrush(QColor(5, 9, 24, min(bg_alpha, 118)))
+        painter.setPen(QPen(QColor(255, 255, 255, 20), 1.0))
         painter.drawRoundedRect(r, 8, 8)
-        painter.setPen(QPen(QColor(self.accent.red(), self.accent.green(), self.accent.blue(), 80), 1))
-        painter.drawRoundedRect(r.adjusted(4, 4, -4, -4), 5, 5)
-        self._draw_icon(painter, r.center())
+        if hovered:
+            painter.setPen(QPen(self.accent, 1.0))
+            painter.drawRoundedRect(r, 8, 8)
+        self._draw_icon(painter, r.center(), hovered)
 
-    def _draw_icon(self, painter: QPainter, center):
-        pen = QPen(self.accent, 2.2, Qt.SolidLine, Qt.RoundCap, Qt.RoundJoin)
+    def _draw_icon(self, painter: QPainter, center, hovered: bool):
+        color = self.accent if hovered else Palette.text
+        pen = QPen(color, 2.2, Qt.SolidLine, Qt.RoundCap, Qt.RoundJoin)
         painter.setPen(pen)
         painter.setBrush(Qt.NoBrush)
         cx, cy = center.x(), center.y()
         name = self.icon_name
         if name == "play":
             path = QPainterPath()
-            path.moveTo(cx - 6, cy - 9)
-            path.lineTo(cx + 8, cy)
-            path.lineTo(cx - 6, cy + 9)
+            path.moveTo(cx - 5, cy - 8)
+            path.lineTo(cx + 7, cy)
+            path.lineTo(cx - 5, cy + 8)
             path.closeSubpath()
-            painter.setBrush(self.accent)
+            painter.setBrush(color)
             painter.drawPath(path)
         elif name == "pause":
-            painter.fillRect(QRectF(cx - 8, cy - 9, 5, 18), self.accent)
-            painter.fillRect(QRectF(cx + 3, cy - 9, 5, 18), self.accent)
+            painter.fillRect(QRectF(cx - 7, cy - 8, 4, 16), color)
+            painter.fillRect(QRectF(cx + 3, cy - 8, 4, 16), color)
         elif name == "stop":
-            painter.setBrush(self.accent)
-            painter.drawRoundedRect(QRectF(cx - 8, cy - 8, 16, 16), 2, 2)
+            painter.setBrush(color)
+            painter.drawRoundedRect(QRectF(cx - 7, cy - 7, 14, 14), 2, 2)
         elif name == "prev":
             painter.drawLine(QPointF(cx - 10, cy - 9), QPointF(cx - 10, cy + 9))
-            self._triangle(painter, cx + 2, cy, -1)
-            self._triangle(painter, cx + 11, cy, -1)
+            self._triangle(painter, cx + 2, cy, -1, color)
+            self._triangle(painter, cx + 11, cy, -1, color)
         elif name == "next":
             painter.drawLine(QPointF(cx + 10, cy - 9), QPointF(cx + 10, cy + 9))
-            self._triangle(painter, cx - 2, cy, 1)
-            self._triangle(painter, cx - 11, cy, 1)
+            self._triangle(painter, cx - 2, cy, 1, color)
+            self._triangle(painter, cx - 11, cy, 1, color)
         elif name == "min":
             painter.drawLine(QPointF(cx - 10, cy + 6), QPointF(cx + 10, cy + 6))
         elif name == "max":
@@ -207,9 +239,17 @@ class IconButton(QPushButton):
             painter.drawLine(QPointF(cx - 5, cy - 10), QPointF(cx + 2, cy - 10))
         elif name == "retry":
             painter.drawArc(QRectF(cx - 11, cy - 11, 22, 22), 40 * 16, 275 * 16)
-            self._triangle(painter, cx + 9, cy - 8, 1)
+            self._triangle(painter, cx + 9, cy - 8, 1, color)
+        elif name == "heart":
+            painter.setBrush(color)
+            painter.setPen(Qt.NoPen)
+            path = QPainterPath()
+            path.moveTo(cx, cy + 5)
+            path.cubicTo(cx - 10, cy - 5, cx - 5, cy - 10, cx, cy - 3)
+            path.cubicTo(cx + 5, cy - 10, cx + 10, cy - 5, cx, cy + 5)
+            painter.drawPath(path)
 
-    def _triangle(self, painter, cx, cy, direction):
+    def _triangle(self, painter, cx, cy, direction, color):
         path = QPainterPath()
         if direction > 0:
             path.moveTo(cx - 6, cy - 8)
@@ -220,10 +260,9 @@ class IconButton(QPushButton):
             path.lineTo(cx - 5, cy)
             path.lineTo(cx + 6, cy + 8)
         path.closeSubpath()
-        painter.setBrush(self.accent)
+        painter.setBrush(color)
         painter.drawPath(path)
         painter.setBrush(Qt.NoBrush)
-
 
 class NeonCommandButton(QPushButton):
     def __init__(self, text: str, icon_name: str, accent: QColor = Palette.cyan, parent=None):
@@ -239,28 +278,25 @@ class NeonCommandButton(QPushButton):
         painter = QPainter(self)
         painter.setRenderHint(QPainter.Antialiasing)
         r = QRectF(self.rect()).adjusted(1, 1, -1, -1)
-        painter.setBrush(QColor(5, 9, 24, 178 if self.underMouse() else 140))
-        painter.setPen(QPen(self.accent, 1.5))
+        hovered = self.underMouse()
+        painter.setBrush(QColor(5, 9, 24, 118 if hovered else 82))
+        painter.setPen(QPen(self.accent if hovered else QColor(255, 255, 255, 30), 1.5))
         painter.drawRoundedRect(r, 8, 8)
         icon_rect = QRectF(r.left() + 14, r.center().y() - 10, 20, 20)
-        IconButton(self.icon_name, "", self.accent)._draw_icon(painter, icon_rect.center())
-        painter.setPen(self.accent)
+        IconButton(self.icon_name, "", self.accent)._draw_icon(painter, icon_rect.center(), hovered)
+        painter.setPen(Palette.text)
         painter.drawText(r.adjusted(44, 0, -8, 0), Qt.AlignVCenter | Qt.AlignLeft, self.text())
 
 
 class LufsMeter(QWidget):
-    """LUFS-style loudness meter.
-
-    The current shell uses simulated values. The audio engine can later feed
-    integrated/short-term LUFS and peak values through set_levels().
-    """
-
-    def __init__(self, parent=None):
+    """LUFS-style loudness meter."""
+    def __init__(self, pixel_font: str, parent=None):
         super().__init__(parent)
+        self.pixel_font = pixel_font
         self.short_lufs = -42.0
         self.integrated_lufs = -24.0
         self.peak_db = -12.0
-        self.setMinimumHeight(42)
+        self.setMinimumHeight(38)
 
     def set_levels(self, short_lufs: float, integrated_lufs: float, peak_db: float):
         self.short_lufs = float(short_lufs)
@@ -272,11 +308,14 @@ class LufsMeter(QWidget):
         painter = QPainter(self)
         painter.setRenderHint(QPainter.Antialiasing)
         r = QRectF(self.rect()).adjusted(2, 4, -2, -4)
-        painter.setPen(QPen(Palette.cyan, 1))
-        painter.setBrush(QColor(2, 4, 13, 185))
+        
+        painter.setPen(QPen(QColor(255, 255, 255, 20), 1))
+        painter.setBrush(QColor(2, 4, 13, 96))
         painter.drawRoundedRect(r, 6, 6)
         label_w = 98
         meter = r.adjusted(label_w, 9, -72, -9)
+        
+        painter.setFont(QFont(self.pixel_font, 6))
         painter.setPen(Palette.muted)
         painter.drawText(QRectF(r.left() + 10, r.top(), label_w - 16, r.height()), Qt.AlignVCenter, "LUFS")
 
@@ -301,18 +340,25 @@ class LufsMeter(QWidget):
 class PlayerShell(BackgroundWindow):
     def __init__(self):
         super().__init__()
-        self.font_family = load_fonts()
+        self.ui_font, self.pixel_font = load_fonts()
+        self.logo_font = choose_logo_font()
+        self._drag_pos = None
         self.setWindowTitle("Chiptune Palace")
         self.resize(1240, 850)
         self.setMinimumSize(980, 680)
         if (ASSETS / "icon.png").exists():
             self.setWindowIcon(QIcon(str(ASSETS / "icon.png")))
-        self._drag_pos = None
         self._build()
         self._start_meter_demo()
 
-    def _font(self, size: int) -> QFont:
-        f = QFont(self.font_family, size)
+    def _font(self, size: int, bold=False) -> QFont:
+        f = QFont(self.ui_font, size)
+        if bold:
+            f.setBold(True)
+        return f
+
+    def _pixel_font(self, size: int) -> QFont:
+        f = QFont(self.pixel_font, size)
         f.setLetterSpacing(QFont.PercentageSpacing, 100)
         return f
 
@@ -336,7 +382,7 @@ class PlayerShell(BackgroundWindow):
         content_layout.addWidget(left, 1)
         divider = QFrame()
         divider.setFixedWidth(1)
-        divider.setStyleSheet(f"background: rgba({Palette.cyan.red()}, {Palette.cyan.green()}, {Palette.cyan.blue()}, 120);")
+        divider.setStyleSheet(f"background: rgba(255, 255, 255, 20);")
         content_layout.addWidget(divider)
         content_layout.addWidget(right, 1)
         outer.addWidget(content, 1)
@@ -344,76 +390,368 @@ class PlayerShell(BackgroundWindow):
         self.setStyleSheet(f"""
             QWidget {{
                 color: {Palette.text.name()};
-                font-family: "{self.font_family}";
-                font-size: 8px;
+                font-family: "{self.ui_font}";
+                font-size: 13px;
                 background: transparent;
             }}
             QLineEdit {{
                 color: {Palette.text.name()};
-                background: rgba(6, 8, 20, 150);
-                border: 1px solid {Palette.magenta.name()};
+                background: rgba(6, 8, 20, 82);
+                border: 1px solid rgba(255, 255, 255, 30);
                 border-radius: 6px;
-                padding: 8px 10px;
+                padding: 8px 12px;
                 selection-background-color: {Palette.magenta.name()};
             }}
+            QLineEdit:focus {{
+                border: 1px solid {Palette.cyan.name()};
+            }}
             QTreeWidget, QListWidget {{
-                background: rgba(4, 8, 20, 86);
+                background: transparent;
                 border: 0;
                 color: {Palette.text.name()};
                 outline: 0;
             }}
             QTreeWidget::item, QListWidget::item {{
-                min-height: 25px;
+                min-height: 32px;
+                padding: 4px;
+                border-radius: 4px;
+            }}
+            QTreeWidget::item:hover, QListWidget::item:hover {{
+                background: rgba(255, 255, 255, 10);
             }}
             QTreeWidget::item:selected, QListWidget::item:selected {{
                 background: rgba(0, 212, 255, 42);
+                color: {Palette.cyan.name()};
             }}
             QSplitter::handle {{
-                background: rgba(0, 212, 255, 100);
+                background: transparent;
+            }}
+            QScrollBar:vertical {{
+                border: none;
+                background: rgba(0,0,0,0);
+                width: 6px;
+                margin: 0px 0px 0px 0px;
+            }}
+            QScrollBar::handle:vertical {{
+                background: rgba(255,255,255,30);
+                min-height: 20px;
+                border-radius: 3px;
+            }}
+            QScrollBar::handle:vertical:hover {{
+                background: rgba(255,255,255,60);
+            }}
+            QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical {{
+                border: none;
+                background: none;
             }}
         """)
 
     def _build_header(self) -> QWidget:
         panel = GlassPanel(Palette.magenta)
         panel.setFixedHeight(66)
+        
+        # 3-section layout to keep logo perfectly centered
         layout = QHBoxLayout(panel)
-        layout.setContentsMargins(18, 8, 8, 8)
-        layout.setSpacing(12)
+        layout.setContentsMargins(18, 8, 18, 8)
+        layout.setSpacing(0)
 
-        title = QLabel("CHIPTUNE PALACE")
-        title.setFont(self._font(17))
-        title.setStyleSheet(f"color: {Palette.cyan.name()};")
-        layout.addWidget(title)
-
+        # Left Section (Search)
+        left_container = QWidget()
+        left_layout = QHBoxLayout(left_container)
+        left_layout.setContentsMargins(0, 0, 0, 0)
         search = QLineEdit()
         search.setPlaceholderText("Search consoles, games, files...")
-        search.setFont(self._font(8))
-        layout.addWidget(search, 1)
+        left_layout.addWidget(search, 1)
+        layout.addWidget(left_container, 1)
 
+        # Center Section (Logo)
+        center_container = QWidget()
+        center_layout = QHBoxLayout(center_container)
+        center_layout.setContentsMargins(0, 0, 0, 0)
+        center_layout.setSpacing(10)
+        center_layout.setAlignment(Qt.AlignCenter)
+        
+        class AnimatedLogo(QWidget):
+            def __init__(self, logo_font_name):
+                super().__init__()
+                self.logo_font_name = logo_font_name
+                self.setFixedSize(500, 60)
+                self.phase = 0.0
+                self.frame_count = 0
+                
+                # 8-bit star particles
+                self.stars = []
+                for _ in range(35):
+                    self.stars.append({
+                        'x': random.uniform(0, 500),
+                        'y': random.uniform(0, 60),
+                        'speed': random.uniform(0.2, 0.8),
+                        'size': random.choice([2, 3, 4]),
+                        'type': random.choice(['4pt', '5pt', 'sparkle']),
+                        'twinkle_offset': random.uniform(0, math.pi * 2)
+                    })
+                
+                # SMW floating star
+                self.smw_star = None
+                self.smw_trail = []
+                self.smw_spawn_counter = 0
+                self.SMW_SPAWN_INTERVAL = 1800  # ~60 seconds at 30fps
+                
+                # Quiet equalizer strip behind the title.
+                self.eq_bars = []
+                for i in range(44):
+                    self.eq_bars.append({
+                        'height': random.uniform(4, 18),
+                        'target': random.uniform(4, 20),
+                        'speed': random.uniform(0.035, 0.11)
+                    })
+                
+                self.timer = QTimer(self)
+                self.timer.timeout.connect(self.animate)
+                self.timer.start(33)
+
+            def animate(self):
+                self.phase += 0.04
+                self.frame_count += 1
+                
+                # Update EQ bars
+                for bar in self.eq_bars:
+                    bar['height'] += (bar['target'] - bar['height']) * bar['speed']
+                    if abs(bar['height'] - bar['target']) < 0.5:
+                        bar['target'] = random.uniform(4, 22)
+                
+                # SMW star logic
+                self.smw_spawn_counter += 1
+                if self.smw_spawn_counter >= self.SMW_SPAWN_INTERVAL and self.smw_star is None:
+                    self.smw_star = {'x': -20, 'y': random.uniform(10, 50), 'size': 8}
+                    self.smw_trail = []
+                    self.smw_spawn_counter = 0
+                
+                if self.smw_star:
+                    self.smw_star['x'] += 1.5
+                    if self.frame_count % 3 == 0:
+                        self.smw_trail.append({
+                            'x': self.smw_star['x'],
+                            'y': self.smw_star['y'],
+                            'life': 1.0
+                        })
+                    for t in self.smw_trail:
+                        t['life'] -= 0.02
+                    self.smw_trail = [t for t in self.smw_trail if t['life'] > 0]
+                    
+                    if self.smw_star['x'] > 500:
+                        self.smw_star = None
+                        self.smw_trail = []
+
+                self.update()
+
+            def _draw_8bit_star(self, painter, x, y, size, star_type, alpha=255):
+                color = QColor(255, 255, 200, alpha)
+                painter.setBrush(color)
+                painter.setPen(Qt.NoPen)
+                
+                if star_type == '4pt':
+                    s = size
+                    points = [
+                        QPointF(x, y - s),
+                        QPointF(x + s*0.3, y - s*0.3),
+                        QPointF(x + s, y),
+                        QPointF(x + s*0.3, y + s*0.3),
+                        QPointF(x, y + s),
+                        QPointF(x - s*0.3, y + s*0.3),
+                        QPointF(x - s, y),
+                        QPointF(x - s*0.3, y - s*0.3)
+                    ]
+                    painter.drawPolygon(points)
+                elif star_type == '5pt':
+                    s = size
+                    points = []
+                    for i in range(5):
+                        angle = math.radians(i * 72 - 90)
+                        points.append(QPointF(x + math.cos(angle) * s, y + math.sin(angle) * s))
+                        angle = math.radians(i * 72 - 90 + 36)
+                        points.append(QPointF(x + math.cos(angle) * s * 0.4, y + math.sin(angle) * s * 0.4))
+                    painter.drawPolygon(points)
+                else:
+                    painter.fillRect(QRectF(x - size//2, y - 1, size, 2), color)
+                    painter.fillRect(QRectF(x - 1, y - size//2, 2, size), color)
+
+            def _draw_smw_star(self, painter, x, y, size):
+                yellow = QColor(255, 220, 50)
+                painter.setBrush(yellow)
+                painter.setPen(QColor(200, 170, 30))
+                
+                points = []
+                for i in range(5):
+                    angle = math.radians(i * 72 - 90)
+                    points.append(QPointF(x + math.cos(angle) * size, y + math.sin(angle) * size))
+                    angle = math.radians(i * 72 - 90 + 36)
+                    points.append(QPointF(x + math.cos(angle) * size * 0.45, y + math.sin(angle) * size * 0.45))
+                painter.drawPolygon(points)
+                
+                painter.setBrush(QColor(0, 0, 0))
+                painter.setPen(Qt.NoPen)
+                painter.drawEllipse(QPointF(x - 2, y - 1), 1.5, 1.5)
+                painter.drawEllipse(QPointF(x + 2, y - 1), 1.5, 1.5)
+
+            def _draw_equalizer_strip(self, painter, w, h):
+                bar_width = 5
+                bar_spacing = 5
+                total_width = len(self.eq_bars) * bar_width + (len(self.eq_bars) - 1) * bar_spacing
+                start_x = (w - total_width) / 2
+                base_y = h - 6
+
+                glow = QLinearGradient(0, 0, w, 0)
+                glow.setColorAt(0.0, QColor(0, 0, 0, 0))
+                glow.setColorAt(0.5, QColor(57, 255, 20, 16))
+                glow.setColorAt(1.0, QColor(0, 0, 0, 0))
+                painter.fillRect(QRectF(0, base_y - 30, w, 30), glow)
+
+                for i, bar in enumerate(self.eq_bars):
+                    x = start_x + i * (bar_width + bar_spacing)
+                    bar_h = bar['height']
+                    zone = i / max(1, len(self.eq_bars) - 1)
+                    if zone < 0.54:
+                        color = QColor(57, 255, 20, 52)
+                    elif zone < 0.78:
+                        color = QColor(255, 228, 94, 56)
+                    else:
+                        color = QColor(255, 66, 104, 60)
+
+                    painter.setBrush(color)
+                    painter.setPen(Qt.NoPen)
+                    painter.drawRoundedRect(QRectF(x, base_y - bar_h, bar_width, bar_h), 1.5, 1.5)
+
+            def paintEvent(self, e):
+                p = QPainter(self)
+                p.setRenderHint(QPainter.Antialiasing)
+                w, h = self.width(), self.height()
+                
+                # 1. Background glow
+                bg_grad = QLinearGradient(0, h/2, w, h/2)
+                bg_grad.setColorAt(0, QColor(0, 0, 0, 0))
+                bg_grad.setColorAt(0.5, QColor(0, 212, 255, 15))
+                bg_grad.setColorAt(1, QColor(0, 0, 0, 0))
+                p.fillRect(self.rect(), bg_grad)
+                
+                # 2. 8-bit Star Particles
+                for star in self.stars:
+                    star['x'] += star['speed']
+                    if star['x'] > w + 10:
+                        star['x'] = -10
+                        star['y'] = random.uniform(0, h)
+                    
+                    twinkle = int(120 + math.sin(self.phase * 2 + star['twinkle_offset']) * 80)
+                    self._draw_8bit_star(p, star['x'], star['y'], star['size'], star['type'], twinkle)
+                
+                # 3. SMW Star & Trail
+                if self.smw_star:
+                    for t in self.smw_trail:
+                        alpha = int(t['life'] * 180)
+                        p.setBrush(QColor(255, 220, 100, alpha))
+                        p.setPen(Qt.NoPen)
+                        p.drawEllipse(QPointF(t['x'], t['y']), t['life'] * 3, t['life'] * 3)
+                    
+                    self._draw_smw_star(p, self.smw_star['x'], self.smw_star['y'], self.smw_star['size'])
+                
+                # 4. Quiet equalizer strip
+                self._draw_equalizer_strip(p, w, h)
+                
+                # 5. Text
+                font = QFont(self.logo_font_name, 24, QFont.Black)
+                font.setLetterSpacing(QFont.PercentageSpacing, 100)
+                font.setItalic(False)
+                
+                text_path = QPainterPath()
+                text_path.addText(0, 0, font, "CHIPTUNE PALACE")
+                br = text_path.boundingRect()
+                
+                p.translate(w/2 - br.width()/2, h/2 + br.height()/3)
+                
+                p.translate(2, 2)
+                p.setBrush(QColor(0, 0, 0, 180))
+                p.setPen(Qt.NoPen)
+                p.drawPath(text_path)
+                p.translate(-2, -2)
+                
+                text_grad = QLinearGradient(0, -br.height(), 0, 0)
+                text_grad.setColorAt(0, QColor(255, 255, 255))
+                text_grad.setColorAt(0.5, QColor(0, 180, 220))
+                text_grad.setColorAt(1, QColor(0, 60, 120))
+                
+                p.setBrush(text_grad)
+                p.setPen(QPen(QColor(255, 255, 255, 100), 0.8))
+                p.drawPath(text_path)
+                
+                p.setClipPath(text_path)
+                p.setBrush(QColor(0, 0, 0, 40))
+                for y in range(int(-br.height()), 10, 3):
+                    p.drawRect(0, y, br.width(), 2)
+                p.setClipping(False)
+                
+        logo_icon = AnimatedLogo(self.logo_font)
+        center_layout.addWidget(logo_icon)
+        
+        layout.addWidget(center_container, 1)
+
+        # Right Section (Status & Config)
+        right_container = QWidget()
+        right_layout = QHBoxLayout(right_container)
+        right_layout.setContentsMargins(0, 0, 0, 0)
+        right_layout.setSpacing(8)
+        right_layout.addStretch(1)
+        
         status = QLabel("BACKEND ONLINE")
-        status.setFont(self._font(8))
+        status.setFont(self._pixel_font(7))
         status.setStyleSheet(f"color: {Palette.green.name()};")
-        layout.addWidget(status)
+        right_layout.addWidget(status)
 
         cfg = IconButton("gear", "Settings", Palette.yellow)
-        cfg.setFixedWidth(54)
-        layout.addWidget(cfg)
+        cfg.setFixedWidth(42)
+        right_layout.addWidget(cfg)
 
-        minimize = IconButton("min", "Minimize", Palette.green)
-        minimize.setFixedWidth(48)
+        minimize = IconButton("min", "Minimize", Palette.cyan)
+        minimize.setFixedWidth(42)
         minimize.clicked.connect(self.showMinimized)
-        layout.addWidget(minimize)
+        right_layout.addWidget(minimize)
 
-        maximize = IconButton("max", "Maximize / restore", Palette.yellow)
-        maximize.setFixedWidth(48)
+        maximize = IconButton("max", "Maximize / restore", Palette.cyan)
+        maximize.setFixedWidth(42)
         maximize.clicked.connect(self._toggle_maximized)
-        layout.addWidget(maximize)
+        right_layout.addWidget(maximize)
 
         close = IconButton("close", "Close", Palette.red)
-        close.setFixedWidth(48)
+        close.setFixedWidth(42)
         close.clicked.connect(self.close)
-        layout.addWidget(close)
+        right_layout.addWidget(close)
+
+        layout.addWidget(right_container, 1)
+
         return panel
+
+    def _toggle_maximized(self):
+        if self.isMaximized():
+            self.showNormal()
+        else:
+            self.showMaximized()
+
+    def mousePressEvent(self, event):
+        if event.button() == Qt.LeftButton and event.position().y() <= 78:
+            self._drag_pos = event.globalPosition().toPoint() - self.frameGeometry().topLeft()
+            event.accept()
+            return
+        super().mousePressEvent(event)
+
+    def mouseMoveEvent(self, event):
+        if self._drag_pos is not None and event.buttons() & Qt.LeftButton and not self.isMaximized():
+            self.move(event.globalPosition().toPoint() - self._drag_pos)
+            event.accept()
+            return
+        super().mouseMoveEvent(event)
+
+    def mouseReleaseEvent(self, event):
+        self._drag_pos = None
+        super().mouseReleaseEvent(event)
 
     def _build_left_column(self) -> QWidget:
         col = QWidget()
@@ -428,15 +766,14 @@ class PlayerShell(BackgroundWindow):
         browser_layout = QVBoxLayout(browser)
         browser_layout.setContentsMargins(12, 10, 12, 12)
         title = QLabel("FILE BROWSER")
-        title.setFont(self._font(8))
-        title.setStyleSheet(f"color: {Palette.cyan.name()};")
+        title.setFont(self._pixel_font(7))
+        title.setStyleSheet(f"color: {Palette.cyan.name()}; letter-spacing: 1px;")
         browser_layout.addWidget(title)
         tree = QTreeWidget()
         tree.setMinimumWidth(0)
         tree.setSizePolicy(QSizePolicy.Ignored, QSizePolicy.Expanding)
         tree.setHeaderHidden(True)
         tree.setIndentation(20)
-        tree.setFont(self._font(8))
         self._populate_browser(tree)
         browser_layout.addWidget(tree, 1)
         layout.addWidget(browser, 3)
@@ -462,13 +799,12 @@ class PlayerShell(BackgroundWindow):
         queue_layout = QVBoxLayout(queue)
         queue_layout.setContentsMargins(12, 10, 12, 12)
         qtitle = QLabel("PLAYLIST QUEUE")
-        qtitle.setFont(self._font(8))
-        qtitle.setStyleSheet(f"color: {Palette.magenta.name()};")
+        qtitle.setFont(self._pixel_font(7))
+        qtitle.setStyleSheet(f"color: {Palette.magenta.name()}; letter-spacing: 1px;")
         queue_layout.addWidget(qtitle)
         qlist = QListWidget()
         qlist.setMinimumWidth(0)
         qlist.setSizePolicy(QSizePolicy.Ignored, QSizePolicy.Expanding)
-        qlist.setFont(self._font(8))
         for track in ["01 Opening", "02 Metal Man", "03 Bubble Man", "04 Air Man", "05 Quick Man", "06 Dr. Wily Stage 1", "moved to sfx"]:
             qlist.addItem(QListWidgetItem(track))
         queue_layout.addWidget(qlist, 1)
@@ -489,17 +825,16 @@ class PlayerShell(BackgroundWindow):
         grid = QGridLayout(info)
         grid.setContentsMargins(16, 14, 16, 14)
         game = QLabel("MEGA MAN 2")
-        game.setFont(self._font(14))
+        game.setFont(self._font(20, bold=True))
         game.setStyleSheet(f"color: {Palette.yellow.name()};")
         meta = QLabel("NES / Capcom / 1988\nLibretro metadata ready. Box art and title screen available.\nSource: verified archive resource, best candidate selected.")
-        meta.setFont(self._font(8))
         meta.setStyleSheet(f"color: {Palette.muted.name()};")
         meta.setWordWrap(True)
         meta.setMinimumHeight(52)
         ready = QLabel("LOCAL READY")
         ready.setAlignment(Qt.AlignCenter)
-        ready.setFont(self._font(8))
-        ready.setStyleSheet(f"color: {Palette.green.name()}; border: 1px solid {Palette.green.name()}; border-radius: 6px; padding: 10px;")
+        ready.setFont(self._pixel_font(7))
+        ready.setStyleSheet(f"color: {Palette.green.name()}; border: 1px solid rgba(57, 255, 20, 50); background: rgba(57, 255, 20, 20); border-radius: 6px; padding: 10px;")
         ready.setFixedWidth(172)
         grid.addWidget(game, 0, 0)
         grid.addWidget(meta, 1, 0)
@@ -512,12 +847,10 @@ class PlayerShell(BackgroundWindow):
         art_layout.setContentsMargins(14, 14, 14, 14)
         art = QLabel()
         pix = QPixmap(str(ASSETS / "cyberpunk_art_2.png"))
-        art.setPixmap(pix)
-        art.setScaledContents(True)
-        art.setMinimumWidth(0)
-        art.setSizePolicy(QSizePolicy.Ignored, QSizePolicy.Ignored)
-        art.setMinimumHeight(250)
-        art_layout.addWidget(art)
+        if not pix.isNull():
+            art.setPixmap(pix.scaledToHeight(250, Qt.SmoothTransformation))
+        art.setAlignment(Qt.AlignCenter)
+        art_layout.addWidget(art, 0, Qt.AlignCenter)
         layout.addWidget(art_panel, 1)
 
         file_info = GlassPanel(Palette.cyan)
@@ -530,13 +863,11 @@ class PlayerShell(BackgroundWindow):
         file_text_layout.setContentsMargins(0, 0, 0, 0)
         file_text_layout.setSpacing(7)
         now_title = QLabel("02 Metal Man")
-        now_title.setFont(self._font(9))
+        now_title.setFont(self._font(14, bold=True))
         now_title.setStyleSheet(f"color: {Palette.text.name()};")
         now_meta = QLabel("Local / VGZ / 01:12")
-        now_meta.setFont(self._font(8))
         now_meta.setStyleSheet(f"color: {Palette.muted.name()};")
         provenance = QLabel("Provenance: archive member verified after game open.")
-        provenance.setFont(self._font(8))
         provenance.setWordWrap(True)
         provenance.setStyleSheet(f"color: {Palette.muted.name()};")
         file_text_layout.addWidget(now_title)
@@ -545,8 +876,8 @@ class PlayerShell(BackgroundWindow):
         file_layout.addWidget(file_text, 1)
         local = QLabel("LOCAL")
         local.setAlignment(Qt.AlignCenter)
-        local.setFont(self._font(8))
-        local.setStyleSheet(f"color: {Palette.green.name()}; border: 1px solid {Palette.green.name()}; border-radius: 6px; padding: 10px;")
+        local.setFont(self._pixel_font(7))
+        local.setStyleSheet(f"color: {Palette.green.name()}; border: 1px solid rgba(57, 255, 20, 50); background: rgba(57, 255, 20, 20); border-radius: 6px; padding: 10px;")
         file_layout.addWidget(local)
         layout.addWidget(file_info)
 
@@ -560,7 +891,7 @@ class PlayerShell(BackgroundWindow):
         player_layout.addWidget(IconButton("play", "Play / pause", Palette.magenta))
         player_layout.addWidget(IconButton("stop", "Stop", Palette.red))
         player_layout.addWidget(IconButton("next", "Next", Palette.cyan))
-        self.meter = LufsMeter()
+        self.meter = LufsMeter(self.pixel_font)
         player_layout.addWidget(self.meter, 1)
         layout.addWidget(player)
         return col
@@ -604,7 +935,7 @@ class PlayerShell(BackgroundWindow):
                         elif "Obtaining" in track:
                             track_item.setForeground(0, Palette.cyan)
                         else:
-                            track_item.setForeground(0, Palette.green)
+                            track_item.setForeground(0, Palette.text)
                         game_item.addChild(track_item)
 
     def _start_meter_demo(self):
@@ -621,25 +952,6 @@ class PlayerShell(BackgroundWindow):
         integrated = -21.0
         peak = short + 8
         self.meter.set_levels(short, integrated, peak)
-
-    def _toggle_maximized(self):
-        if self.isMaximized():
-            self.showNormal()
-        else:
-            self.showMaximized()
-
-    def mousePressEvent(self, event):
-        if event.button() == Qt.LeftButton and event.position().y() < 76:
-            self._drag_pos = event.globalPosition().toPoint() - self.frameGeometry().topLeft()
-            event.accept()
-
-    def mouseMoveEvent(self, event):
-        if self._drag_pos and event.buttons() & Qt.LeftButton and not self.isMaximized():
-            self.move(event.globalPosition().toPoint() - self._drag_pos)
-            event.accept()
-
-    def mouseReleaseEvent(self, event):
-        self._drag_pos = None
 
 
 def main():
