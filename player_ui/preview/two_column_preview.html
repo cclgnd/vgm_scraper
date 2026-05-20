@@ -1,0 +1,440 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Chiptune Palace Two Column Preview</title>
+  <style>
+    @font-face {
+      font-family: "Press Start";
+      src: url("../assets/PressStart2P-Regular.ttf") format("truetype");
+    }
+
+    :root {
+      --bg: #05060f;
+      --panel: rgba(7, 12, 26, 0.82);
+      --panel-soft: rgba(17, 24, 48, 0.72);
+      --cyan: #00d4ff;
+      --magenta: #ff00df;
+      --green: #39ff14;
+      --yellow: #ffe45e;
+      --red: #ff4268;
+      --text: #f5f7ff;
+      --muted: #8791b5;
+      --line: rgba(0, 212, 255, 0.45);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background:
+        linear-gradient(rgba(2, 3, 10, 0.28), rgba(2, 3, 10, 0.88)),
+        url("../assets/cyberpunk_bg.jpg") center / cover fixed;
+      color: var(--text);
+      font-family: "Press Start", Consolas, monospace;
+      letter-spacing: 0;
+    }
+
+    .app {
+      width: min(1220px, calc(100vw - 24px));
+      height: min(820px, calc(100vh - 24px));
+      margin: 12px auto;
+      border: 1px solid rgba(255, 0, 223, 0.55);
+      background: rgba(1, 4, 16, 0.72);
+      box-shadow:
+        0 0 0 1px rgba(0, 212, 255, 0.25) inset,
+        0 0 34px rgba(255, 0, 223, 0.24),
+        0 0 58px rgba(0, 212, 255, 0.18);
+      display: grid;
+      grid-template-rows: 62px 1fr;
+      overflow: hidden;
+    }
+
+    .header {
+      display: grid;
+      grid-template-columns: 260px 1fr auto auto;
+      gap: 10px;
+      align-items: center;
+      padding: 12px 14px;
+      border-bottom: 1px solid var(--line);
+      background: rgba(3, 5, 14, 0.82);
+    }
+
+    .brand {
+      color: var(--cyan);
+      font-size: 13px;
+      text-shadow: 0 0 10px rgba(0, 212, 255, 0.95);
+    }
+
+    .search {
+      height: 34px;
+      border: 1px solid var(--magenta);
+      background: rgba(6, 8, 20, 0.92);
+      color: var(--text);
+      padding: 0 12px;
+      font: inherit;
+      font-size: 9px;
+      outline: none;
+      min-width: 0;
+    }
+
+    .status {
+      color: var(--green);
+      font-size: 8px;
+      white-space: nowrap;
+    }
+
+    .icon-button {
+      height: 34px;
+      min-width: 42px;
+      border: 1px solid var(--yellow);
+      background: rgba(7, 8, 18, 0.72);
+      color: var(--yellow);
+      font: inherit;
+      font-size: 10px;
+    }
+
+    .main {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+      min-height: 0;
+    }
+
+    .column {
+      min-width: 0;
+      min-height: 0;
+      padding: 12px;
+    }
+
+    .left {
+      border-right: 1px solid var(--line);
+      display: grid;
+      grid-template-rows: minmax(0, 1fr) 46px minmax(150px, 31%);
+      gap: 10px;
+    }
+
+    .right {
+      display: grid;
+      grid-template-rows: 122px minmax(250px, 1fr) 116px 86px;
+      gap: 10px;
+    }
+
+    .panel {
+      min-height: 0;
+      border: 1px solid rgba(0, 212, 255, 0.46);
+      background: var(--panel);
+      box-shadow: 0 0 20px rgba(0, 212, 255, 0.08) inset;
+      overflow: hidden;
+    }
+
+    .panel-title {
+      height: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 10px;
+      background: linear-gradient(90deg, rgba(0, 212, 255, 0.22), rgba(255, 0, 223, 0.12));
+      border-bottom: 1px solid rgba(0, 212, 255, 0.28);
+      color: var(--cyan);
+      font-size: 9px;
+    }
+
+    .tree,
+    .queue,
+    .info-list {
+      margin: 0;
+      padding: 9px 10px;
+      list-style: none;
+      overflow: auto;
+      height: calc(100% - 30px);
+      font-size: 9px;
+      line-height: 2.08;
+    }
+
+    .tree li,
+    .queue li {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .maker {
+      color: var(--magenta);
+      margin-top: 6px;
+    }
+
+    .console {
+      color: var(--cyan);
+      padding-left: 14px;
+    }
+
+    .game {
+      color: var(--yellow);
+      padding-left: 30px;
+    }
+
+    .track {
+      color: var(--green);
+      padding-left: 46px;
+    }
+
+    .muted {
+      color: var(--muted);
+    }
+
+    .obtaining {
+      color: var(--cyan);
+    }
+
+    .failed {
+      color: var(--red);
+    }
+
+    .actions {
+      display: grid;
+      grid-template-columns: 1.1fr 1fr 1fr;
+      gap: 8px;
+      align-items: center;
+    }
+
+    .action {
+      height: 36px;
+      border: 1px solid var(--cyan);
+      background: rgba(5, 9, 24, 0.85);
+      color: var(--cyan);
+      font: inherit;
+      font-size: 8px;
+    }
+
+    .action.primary {
+      border-color: var(--green);
+      color: var(--green);
+      box-shadow: 0 0 14px rgba(57, 255, 20, 0.15);
+    }
+
+    .game-info {
+      padding: 12px;
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 8px;
+      align-content: start;
+    }
+
+    .game-title {
+      color: var(--yellow);
+      font-size: 15px;
+      line-height: 1.5;
+    }
+
+    .game-meta {
+      color: var(--muted);
+      font-size: 8px;
+      line-height: 1.9;
+    }
+
+    .pill {
+      align-self: start;
+      border: 1px solid var(--green);
+      color: var(--green);
+      padding: 8px 9px;
+      font-size: 8px;
+      white-space: nowrap;
+    }
+
+    .art {
+      position: relative;
+      display: grid;
+      place-items: center;
+      padding: 12px;
+    }
+
+    .art img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border: 1px solid rgba(255, 0, 223, 0.65);
+      box-shadow: 0 0 28px rgba(255, 0, 223, 0.2);
+    }
+
+    .file-info {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 10px;
+      padding: 12px;
+      align-items: center;
+    }
+
+    .now-title {
+      color: var(--text);
+      font-size: 10px;
+      line-height: 1.7;
+    }
+
+    .now-meta {
+      color: var(--muted);
+      font-size: 8px;
+      line-height: 1.8;
+    }
+
+    .local-badge {
+      color: var(--green);
+      border: 1px solid var(--green);
+      padding: 9px;
+      font-size: 8px;
+    }
+
+    .player {
+      padding: 10px;
+      display: grid;
+      grid-template-columns: auto auto auto auto 1fr auto;
+      gap: 9px;
+      align-items: center;
+    }
+
+    .player button {
+      height: 34px;
+      min-width: 56px;
+      border: 1px solid var(--cyan);
+      background: rgba(4, 8, 18, 0.88);
+      color: var(--cyan);
+      font: inherit;
+      font-size: 8px;
+    }
+
+    .player .play {
+      min-width: 72px;
+      border-color: var(--magenta);
+      color: var(--text);
+      box-shadow: 0 0 18px rgba(255, 0, 223, 0.25);
+    }
+
+    .timeline {
+      height: 8px;
+      background: rgba(0, 212, 255, 0.18);
+      border: 1px solid rgba(0, 212, 255, 0.38);
+      position: relative;
+    }
+
+    .timeline::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      width: 39%;
+      background: linear-gradient(90deg, var(--cyan), var(--magenta));
+    }
+
+    .time {
+      color: var(--cyan);
+      font-size: 8px;
+      white-space: nowrap;
+    }
+  </style>
+</head>
+<body>
+  <div class="app">
+    <header class="header">
+      <div class="brand">CHIPTUNE PALACE</div>
+      <input class="search" value="" placeholder="Search consoles, games, files...">
+      <div class="status">BACKEND ONLINE</div>
+      <button class="icon-button">SET</button>
+    </header>
+
+    <main class="main">
+      <section class="column left">
+        <div class="panel">
+          <div class="panel-title">
+            <span>FILE BROWSER</span>
+            <span>Online + Local</span>
+          </div>
+          <ul class="tree">
+            <li class="maker">NINTENDO</li>
+            <li class="console">Nintendo Entertainment System</li>
+            <li class="game">Mega Man 2</li>
+            <li class="track">01 Opening <span class="muted">00:43 VGM</span></li>
+            <li class="track">02 Metal Man <span class="muted">01:12 VGM</span></li>
+            <li class="track obtaining">03 Bubble Man - Obtaining file</li>
+            <li class="game">Super Mario World</li>
+            <li class="console">Super Nintendo</li>
+            <li class="game">Chrono Trigger</li>
+            <li class="maker">SEGA</li>
+            <li class="console">Mega Drive / Genesis</li>
+            <li class="game">Streets of Rage 2</li>
+            <li class="track">01 Go Straight <span class="muted">02:18 VGZ</span></li>
+            <li class="track failed">02 In The Bar - Failed</li>
+            <li class="game">Sonic the Hedgehog 2</li>
+            <li class="maker">SONY</li>
+            <li class="console">PlayStation</li>
+            <li class="game">Ridge Racer Type 4</li>
+          </ul>
+        </div>
+
+        <div class="actions">
+          <button class="action primary">PLAY SELECTED GAME</button>
+          <button class="action">OPEN GAME</button>
+          <button class="action">RETRY FAILED</button>
+        </div>
+
+        <div class="panel">
+          <div class="panel-title">
+            <span>PLAYLIST QUEUE</span>
+            <span>7 files</span>
+          </div>
+          <ul class="queue">
+            <li>01 Opening</li>
+            <li>02 Metal Man</li>
+            <li>03 Bubble Man</li>
+            <li>04 Air Man</li>
+            <li>05 Quick Man</li>
+            <li>06 Dr. Wily Stage 1</li>
+            <li class="muted">moved to sfx</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="column right">
+        <div class="panel game-info">
+          <div>
+            <div class="game-title">MEGA MAN 2</div>
+            <div class="game-meta">
+              NES / Capcom / 1988<br>
+              Libretro metadata ready. Box art and title screen available.<br>
+              Source: verified archive resource, best candidate selected.
+            </div>
+          </div>
+          <div class="pill">LOCAL READY</div>
+        </div>
+
+        <div class="panel art">
+          <img src="../assets/cyberpunk_art_2.png" alt="Game artwork preview">
+        </div>
+
+        <div class="panel file-info">
+          <div>
+            <div class="now-title">02 Metal Man</div>
+            <div class="now-meta">
+              Local / VGZ / 01:12<br>
+              Provenance: archive member verified after game open.
+            </div>
+          </div>
+          <div class="local-badge">LOCAL</div>
+        </div>
+
+        <div class="panel player">
+          <button>PREV</button>
+          <button class="play">PLAY</button>
+          <button>STOP</button>
+          <button>NEXT</button>
+          <div class="timeline"></div>
+          <div class="time">00:28 / 01:12</div>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
