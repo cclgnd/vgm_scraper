@@ -59,6 +59,9 @@ class APIHandler(BaseHTTPRequestHandler):
         elif path.startswith("/api/tracks/"):
             track_id = path.split("/")[-1]
             self._handle_track_status(int(track_id))
+        elif path.startswith("/api/games/") and path.endswith("/cover"):
+            game_id = path.split("/")[-2]
+            self._handle_game_cover(int(game_id))
         elif path.startswith("/api/games/") and path.endswith("/audition"):
             game_id = path.split("/")[-2]
             self._handle_game_audition(int(game_id))
@@ -127,6 +130,41 @@ class APIHandler(BaseHTTPRequestHandler):
     def _handle_track_status(self, track_id):
         status = self.retrieval.get_track_status(track_id)
         self._send_json(status)
+
+    def _handle_game_cover(self, game_id):
+        game = self.db.get_game(game_id)
+        if not game:
+            self._send_json({"error": "Game not found"}, 404)
+            return
+            
+        cover_url = game.get("cover_art_url")
+        if not cover_url:
+            self._send_json({"error": "No cover art available"}, 404)
+            return
+
+        import os
+        from urllib.request import Request, urlopen
+        from vgm_scraper.config import DEFAULT_DOWNLOAD_DIR
+        
+        covers_dir = os.path.join(DEFAULT_DOWNLOAD_DIR, "covers")
+        os.makedirs(covers_dir, exist_ok=True)
+        
+        ext = os.path.splitext(cover_url)[1]
+        if not ext:
+            ext = ".jpg"
+        local_filename = f"game_{game_id}{ext}"
+        local_path = os.path.join(covers_dir, local_filename)
+        
+        if not os.path.exists(local_path):
+            try:
+                req = Request(cover_url, headers={'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'})
+                with urlopen(req, timeout=10) as response, open(local_path, 'wb') as f:
+                    f.write(response.read())
+            except Exception as exc:
+                self._send_json({"error": str(exc)}, 500)
+                return
+                
+        self._send_json({"game_id": game_id, "cover_art_url": cover_url, "local_path": local_path})
 
     def _handle_game_audition(self, game_id):
         latest = self.db.get_latest_audition_event(game_id=game_id)

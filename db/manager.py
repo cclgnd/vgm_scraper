@@ -121,7 +121,7 @@ class DatabaseManager:
             rows = conn.execute("SELECT * FROM consoles ORDER BY display_name").fetchall()
             return [dict(r) for r in rows]
 
-    def add_game(self, console_id: int, title: str, release_year: int = None, publisher: str = "") -> int:
+    def add_game(self, console_id: int, title: str, release_year: int = None, publisher: str = "", developer: str = "", genre: str = "", description: str = "", cover_art_url: str = "") -> int:
         with self.connect() as conn:
             existing = conn.execute(
                 "SELECT id FROM games WHERE console_id = ? AND title = ?",
@@ -130,10 +130,37 @@ class DatabaseManager:
             if existing:
                 return existing["id"]
             cursor = conn.execute(
-                "INSERT INTO games (console_id, title, release_year, publisher) VALUES (?, ?, ?, ?)",
-                (console_id, title, release_year, publisher)
+                "INSERT INTO games (console_id, title, release_year, publisher, developer, genre, description, cover_art_url) VALUES (?, ?, ?, ?, ?, ?, ?, ?)",
+                (console_id, title, release_year, publisher, developer, genre, description, cover_art_url)
             )
             return cursor.lastrowid
+
+    def update_game_metadata(self, game_id: int, release_year: int = None, publisher: str = None, developer: str = None, genre: str = None, description: str = None, cover_art_url: str = None):
+        with self.connect() as conn:
+            updates = []
+            params = []
+            if release_year is not None:
+                updates.append("release_year = ?")
+                params.append(release_year)
+            if publisher is not None:
+                updates.append("publisher = ?")
+                params.append(publisher)
+            if developer is not None:
+                updates.append("developer = ?")
+                params.append(developer)
+            if genre is not None:
+                updates.append("genre = ?")
+                params.append(genre)
+            if description is not None:
+                updates.append("description = ?")
+                params.append(description)
+            if cover_art_url is not None:
+                updates.append("cover_art_url = ?")
+                params.append(cover_art_url)
+            
+            if updates:
+                params.append(game_id)
+                conn.execute(f"UPDATE games SET {', '.join(updates)} WHERE id = ?", params)
 
     def get_game(self, game_id: int) -> dict | None:
         with self.connect() as conn:

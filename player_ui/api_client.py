@@ -25,7 +25,10 @@ class PlayerApiClient:
         return self._get("/api/tree").get("tree", [])
 
     def game_files(self, game_id: int) -> dict:
-        return self._get(f"/api/games/{game_id}/files")
+        return self._get(f"/api/games/{game_id}/files", timeout=10.0)
+
+    def game_cover(self, game_id: int) -> dict:
+        return self._get(f"/api/games/{game_id}/cover", timeout=10.0)
 
     def retry_game(self, game_id: int) -> dict:
         return self._post(f"/api/games/{game_id}/retry")
@@ -39,17 +42,17 @@ class PlayerApiClient:
     def stats(self) -> dict:
         return self._get("/api/stats")
 
-    def _get(self, path: str) -> dict:
-        return self._request("GET", path)
+    def _get(self, path: str, timeout: float = None) -> dict:
+        return self._request("GET", path, timeout=timeout)
 
     def _post(self, path: str) -> dict:
         return self._request("POST", path)
 
-    def _request(self, method: str, path: str) -> dict:
+    def _request(self, method: str, path: str, timeout: float = None) -> dict:
         url = f"{self.base_url}{path}"
         request = Request(url, data=b"" if method == "POST" else None, method=method)
         try:
-            with urlopen(request, timeout=self.timeout) as response:
+            with urlopen(request, timeout=timeout or self.timeout) as response:
                 raw = response.read().decode("utf-8")
         except HTTPError as exc:
             raise PlayerApiError(f"API {method} {path} failed: HTTP {exc.code}") from exc

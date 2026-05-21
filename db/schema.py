@@ -18,6 +18,7 @@ CREATE TABLE IF NOT EXISTS consoles (
     display_name TEXT NOT NULL,
     maker TEXT,
     generation TEXT,
+    logo_url TEXT,
     created_at TEXT DEFAULT CURRENT_TIMESTAMP
 );
 
@@ -27,6 +28,10 @@ CREATE TABLE IF NOT EXISTS games (
     title TEXT NOT NULL,
     release_year INTEGER,
     publisher TEXT,
+    developer TEXT,
+    genre TEXT,
+    description TEXT,
+    cover_art_url TEXT,
     created_at TEXT DEFAULT CURRENT_TIMESTAMP,
     FOREIGN KEY (console_id) REFERENCES consoles(id),
     UNIQUE(console_id, title)
