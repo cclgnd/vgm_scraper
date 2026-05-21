@@ -822,11 +822,17 @@ class PlayerShell(BackgroundWindow):
         open_game.setToolTip("Open selected game and verify availability")
         retry_failed = NeonCommandButton("Retry", "retry", Palette.yellow)
         retry_failed.setToolTip("Retry failed selected game or file")
+        random_run = NeonCommandButton("Random Run", "play", Palette.magenta)
+        random_run.setToolTip("Load and play a random playlist")
+        
         open_game.clicked.connect(self._open_selected_game)
         retry_failed.clicked.connect(self._retry_selected_game)
+        random_run.clicked.connect(self._load_random_run)
+        
         action_layout.addWidget(play_game)
         action_layout.addWidget(open_game)
         action_layout.addWidget(retry_failed)
+        action_layout.addWidget(random_run)
         layout.addWidget(actions)
 
         queue = GlassPanel(Palette.magenta)
@@ -879,12 +885,12 @@ class PlayerShell(BackgroundWindow):
         art_panel.setMinimumWidth(0)
         art_layout = QVBoxLayout(art_panel)
         art_layout.setContentsMargins(14, 14, 14, 14)
-        art = QLabel()
+        self.game_art_label = QLabel()
         pix = QPixmap(str(ASSETS / "cyberpunk_art_2.png"))
         if not pix.isNull():
-            art.setPixmap(pix.scaledToHeight(250, Qt.SmoothTransformation))
-        art.setAlignment(Qt.AlignCenter)
-        art_layout.addWidget(art, 0, Qt.AlignCenter)
+            self.game_art_label.setPixmap(pix.scaledToHeight(250, Qt.SmoothTransformation))
+        self.game_art_label.setAlignment(Qt.AlignCenter)
+        art_layout.addWidget(self.game_art_label, 0, Qt.AlignCenter)
         layout.addWidget(art_panel, 1)
 
         file_info = GlassPanel(Palette.cyan)
@@ -1059,7 +1065,24 @@ class PlayerShell(BackgroundWindow):
         self.selected_game_title = game.get("title") or ""
         self.game_title_label.setText(self.selected_game_title.upper())
         self._set_game_status("OBTAINING", Palette.cyan)
-        self.game_meta_label.setText("Verifying file availability...")
+        
+        # Build metadata string
+        meta_parts = []
+        if game.get("developer"):
+            meta_parts.append(game["developer"])
+        elif game.get("publisher"):
+            meta_parts.append(game["publisher"])
+        if game.get("release_year"):
+            meta_parts.append(str(game["release_year"]))
+        if game.get("genre"):
+            meta_parts.append(game["genre"])
+            
+        meta_str = " • ".join(meta_parts)
+        if not meta_str:
+            meta_str = "Verifying file availability..."
+        self.game_meta_label.setText(meta_str)
+        
+        self._load_game_cover_async(game_id)
 
         try:
             result = self.api.retry_game(game_id) if retry_failed else self.api.game_files(game_id)
@@ -1085,10 +1108,13 @@ class PlayerShell(BackgroundWindow):
         for file_row in files:
             text = self._file_row_text(file_row)
             track_item = QTreeWidgetItem([text])
-            track_item.setForeground(0, self._status_color(file_row.get("availability_status")))
+            color = self._status_color(file_row.get("availability_status"))
+            track_item.setForeground(0, color)
+            track_item.setIcon(0, self._generate_dot_icon(color))
             track_item.setData(0, Qt.UserRole, {"type": "track", "data": file_row})
             game_item.addChild(track_item)
             queue_item = QListWidgetItem(text)
+            queue_item.setIcon(self._generate_dot_icon(color))
             queue_item.setData(Qt.UserRole, file_row)
             self.queue_list.addItem(queue_item)
 
@@ -1199,6 +1225,19 @@ class PlayerShell(BackgroundWindow):
         self.provenance_label.setText(f"Playing local file with {backend_name}.")
         self.file_status_label.setText("PLAYING")
         self.file_status_label.setStyleSheet(self._badge_style(Palette.green))
+        self._pre_cache_next_track()
+
+    def _pre_cache_next_track(self):
+        row = self.queue_list.currentRow()
+        if row < 0 or row >= self.queue_list.count() - 1:
+            return
+        item = self.queue_list.item(row + 1)
+        file_row = item.data(Qt.UserRole)
+        if isinstance(file_row, dict) and file_row.get("availability_status") != "local":
+            track_id = file_row.get("id")
+            if track_id:
+                import threading
+                threading.Thread(target=lambda: self.api.request_track(track_id), daemon=True).start()
 
     def _toggle_play_pause(self):
         if self.current_file_row is None:
@@ -1260,6 +1299,63 @@ class PlayerShell(BackgroundWindow):
         if hours:
             return f"{hours:02d}:{minutes:02d}:{seconds:02d}"
         return f"{minutes:02d}:{seconds:02d}"
+
+    def _generate_dot_icon(self, color: QColor) -> QIcon:
+        pixmap = QPixmap(16, 16)
+        pixmap.fill(Qt.transparent)
+        painter = QPainter(pixmap)
+        painter.setRenderHint(QPainter.Antialiasing)
+        painter.setBrush(color)
+        painter.setPen(Qt.NoPen)
+        painter.drawEllipse(QRectF(4, 4, 8, 8))
+        painter.end()
+        return QIcon(pixmap)
+
+    def _load_game_cover_async(self, game_id: int):
+        import threading
+        def worker():
+            try:
+                res = self.api.game_cover(game_id)
+                local_path = res.get("local_path")
+                if local_path:
+                    QTimer.singleShot(0, lambda: self._apply_game_cover(local_path))
+            except Exception:
+                pass
+        threading.Thread(target=worker, daemon=True).start()
+
+    def _apply_game_cover(self, local_path: str):
+        pix = QPixmap(local_path)
+        if not pix.isNull():
+            self.game_art_label.setPixmap(pix.scaledToHeight(250, Qt.SmoothTransformation))
+
+    def _load_random_run(self):
+        try:
+            tree = self.api.tree()
+            all_games = []
+            for console in tree:
+                for game in console.get("games", []):
+                    if game.get("has_files"):
+                        all_games.append(game)
+            if not all_games:
+                return
+            game = random.choice(all_games)
+            # Find it in the tree
+            root = self.browser_tree.invisibleRootItem()
+            for i in range(root.childCount()):
+                maker = root.child(i)
+                for j in range(maker.childCount()):
+                    console_item = maker.child(j)
+                    for k in range(console_item.childCount()):
+                        game_item = console_item.child(k)
+                        data = game_item.data(0, Qt.UserRole)
+                        if isinstance(data, dict) and data.get("data", {}).get("id") == game.get("id"):
+                            self.browser_tree.setCurrentItem(game_item)
+                            self._open_game_item(game_item, retry_failed=False)
+                            # Auto-play first track
+                            QTimer.singleShot(500, lambda: self._step_queue(1) if self.queue_list.count() else None)
+                            return
+        except Exception:
+            pass
 
     @staticmethod
     def _status_color(status: str | None) -> QColor:
@@ -1327,6 +1423,10 @@ class PlayerShell(BackgroundWindow):
         integrated = -21.0
         peak = short + 8
         self.meter.set_levels(short, integrated, peak)
+        
+        if self.audio.is_track_ended():
+            # Automatically step to next track
+            self._step_queue(1)
 
 
 def main():

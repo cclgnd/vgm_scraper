@@ -66,3 +66,13 @@ class PlayerAudioAdapter:
             except Exception:
                 pass
         self._engine = None
+
+    def is_playing(self) -> bool:
+        return bool(self._output and self._output.playing)
+
+    def is_track_ended(self) -> bool:
+        if not self._output or not self._engine:
+            return False
+        if hasattr(self._engine, 'track_ended'):
+            return self._engine.track_ended()
+        return False
