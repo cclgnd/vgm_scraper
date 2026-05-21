@@ -34,6 +34,7 @@ class GameVerifier:
         for resource in resources:
             exposed = self._expose_resource_files(game_id, resource)
             if exposed:
+                self._fetch_zophar_metadata(game_id, resource)
                 self.db.add_audition_event(
                     resource_id=resource["id"],
                     game_id=game_id,
@@ -62,6 +63,59 @@ class GameVerifier:
         if self._is_supported_direct_file(download_url):
             return [self._create_direct_track(game_id, resource)]
         return []
+
+    def _fetch_zophar_metadata(self, game_id: int, resource: dict):
+        url = resource.get("url")
+        if not url or "zophar.net/music/" not in url:
+            return
+            
+        import urllib.request
+        from bs4 import BeautifulSoup
+        
+        try:
+            req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
+            with urllib.request.urlopen(req, timeout=10) as response:
+                html = response.read().decode('utf-8')
+                
+            soup = BeautifulSoup(html, 'html.parser')
+            
+            # Find the cover art
+            cover_url = None
+            cover_img = soup.select_one('#music_cover img')
+            if cover_img and cover_img.has_attr('src'):
+                cover_url = cover_img['src']
+                
+            # Find metadata table
+            developer = None
+            publisher = None
+            release_year = None
+            
+            music_info = soup.select_one('#music_info')
+            if music_info:
+                for tr in music_info.select('tr'):
+                    tds = tr.select('td')
+                    if len(tds) >= 2:
+                        label = tds[0].text.strip().lower()
+                        value = tds[1].text.strip()
+                        if 'developer' in label:
+                            developer = value
+                        elif 'publisher' in label:
+                            publisher = value
+                        elif 'release year' in label:
+                            try:
+                                release_year = int(value)
+                            except ValueError:
+                                pass
+                                
+            self.db.update_game_metadata(
+                game_id,
+                release_year=release_year,
+                publisher=publisher,
+                developer=developer,
+                cover_art_url=cover_url
+            )
+        except Exception:
+            pass
 
     def _create_member_tracks(self, game_id: int, archive_resource: dict, members) -> list[int]:
         collection_id = self.db.get_or_create_collection(
